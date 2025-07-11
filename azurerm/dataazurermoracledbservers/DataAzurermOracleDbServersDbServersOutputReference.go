@@ -26,6 +26,7 @@ type DataAzurermOracleDbServersDbServersOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ComputeModel() *string
 	CpuCoreCount() *float64
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -142,6 +143,16 @@ func (j *jsiiProxy_DataAzurermOracleDbServersDbServersOutputReference) ComplexOb
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermOracleDbServersDbServersOutputReference) ComputeModel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"computeModel",
 		&returns,
 	)
 	return returns

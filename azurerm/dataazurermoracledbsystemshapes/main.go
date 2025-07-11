@@ -97,6 +97,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermOracleDbSystemShapes.DataAzurermOracleDbSystemShapesDbSystemShapesOutputReference",
 		reflect.TypeOf((*DataAzurermOracleDbSystemShapesDbSystemShapesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "areServerTypesSupported", GoGetter: "AreServerTypesSupported"},
 			_jsii_.MemberProperty{JsiiProperty: "availableCoreCount", GoGetter: "AvailableCoreCount"},
 			_jsii_.MemberProperty{JsiiProperty: "availableCoreCountPerNode", GoGetter: "AvailableCoreCountPerNode"},
 			_jsii_.MemberProperty{JsiiProperty: "availableDataStorageInTbs", GoGetter: "AvailableDataStorageInTbs"},
@@ -108,8 +109,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "computeModel", GoGetter: "ComputeModel"},
 			_jsii_.MemberProperty{JsiiProperty: "coreCountIncrement", GoGetter: "CoreCountIncrement"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "displayName", GoGetter: "DisplayName"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},

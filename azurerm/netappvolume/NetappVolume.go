@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/netapp_volume azurerm_netapp_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/netapp_volume azurerm_netapp_volume}.
 type NetappVolume interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -29,6 +29,8 @@ type NetappVolume interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	CoolAccess() NetappVolumeCoolAccessOutputReference
+	CoolAccessInput() *NetappVolumeCoolAccess
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -196,12 +198,14 @@ type NetappVolume interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCoolAccess(value *NetappVolumeCoolAccess)
 	PutDataProtectionBackupPolicy(value *NetappVolumeDataProtectionBackupPolicy)
 	PutDataProtectionReplication(value *NetappVolumeDataProtectionReplication)
 	PutDataProtectionSnapshotPolicy(value *NetappVolumeDataProtectionSnapshotPolicy)
 	PutExportPolicyRule(value interface{})
 	PutTimeouts(value *NetappVolumeTimeouts)
 	ResetAzureVmwareDataStoreEnabled()
+	ResetCoolAccess()
 	ResetCreateFromSnapshotResourceId()
 	ResetDataProtectionBackupPolicy()
 	ResetDataProtectionReplication()
@@ -310,6 +314,26 @@ func (j *jsiiProxy_NetappVolume) ConstructNodeMetadata() *map[string]interface{}
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) CoolAccess() NetappVolumeCoolAccessOutputReference {
+	var returns NetappVolumeCoolAccessOutputReference
+	_jsii_.Get(
+		j,
+		"coolAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) CoolAccessInput() *NetappVolumeCoolAccess {
+	var returns *NetappVolumeCoolAccess
+	_jsii_.Get(
+		j,
+		"coolAccessInput",
 		&returns,
 	)
 	return returns
@@ -1056,7 +1080,7 @@ func (j *jsiiProxy_NetappVolume) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
 func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolumeConfig) NetappVolume {
 	_init_.Initialize()
 
@@ -1074,7 +1098,7 @@ func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolum
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
 func NewNetappVolume_Override(n NetappVolume, scope constructs.Construct, id *string, config *NetappVolumeConfig) {
 	_init_.Initialize()
 
@@ -1803,6 +1827,17 @@ func (n *jsiiProxy_NetappVolume) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (n *jsiiProxy_NetappVolume) PutCoolAccess(value *NetappVolumeCoolAccess) {
+	if err := n.validatePutCoolAccessParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putCoolAccess",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetappVolume) PutDataProtectionBackupPolicy(value *NetappVolumeDataProtectionBackupPolicy) {
 	if err := n.validatePutDataProtectionBackupPolicyParameters(value); err != nil {
 		panic(err)
@@ -1862,6 +1897,14 @@ func (n *jsiiProxy_NetappVolume) ResetAzureVmwareDataStoreEnabled() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetAzureVmwareDataStoreEnabled",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappVolume) ResetCoolAccess() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetCoolAccess",
 		nil, // no parameters
 	)
 }

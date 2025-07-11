@@ -13,6 +13,7 @@ import (
 
 type DataAzurermOracleDbSystemShapesDbSystemShapesOutputReference interface {
 	cdktf.ComplexObject
+	AreServerTypesSupported() cdktf.IResolvable
 	AvailableCoreCount() *float64
 	AvailableCoreCountPerNode() *float64
 	AvailableDataStorageInTbs() *float64
@@ -31,12 +32,14 @@ type DataAzurermOracleDbSystemShapesDbSystemShapesOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ComputeModel() *string
 	CoreCountIncrement() *float64
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DisplayName() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataAzurermOracleDbSystemShapesDbSystemShapes
@@ -97,6 +100,16 @@ type DataAzurermOracleDbSystemShapesDbSystemShapesOutputReference interface {
 // The jsii proxy struct for DataAzurermOracleDbSystemShapesDbSystemShapesOutputReference
 type jsiiProxy_DataAzurermOracleDbSystemShapesDbSystemShapesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataAzurermOracleDbSystemShapesDbSystemShapesOutputReference) AreServerTypesSupported() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"areServerTypesSupported",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAzurermOracleDbSystemShapesDbSystemShapesOutputReference) AvailableCoreCount() *float64 {
@@ -199,6 +212,16 @@ func (j *jsiiProxy_DataAzurermOracleDbSystemShapesDbSystemShapesOutputReference)
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermOracleDbSystemShapesDbSystemShapesOutputReference) ComputeModel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"computeModel",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermOracleDbSystemShapesDbSystemShapesOutputReference) CoreCountIncrement() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -214,6 +237,16 @@ func (j *jsiiProxy_DataAzurermOracleDbSystemShapesDbSystemShapesOutputReference)
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermOracleDbSystemShapesDbSystemShapesOutputReference) DisplayName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayName",
 		&returns,
 	)
 	return returns

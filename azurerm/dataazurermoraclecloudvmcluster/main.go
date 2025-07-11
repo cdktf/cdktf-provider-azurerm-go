@@ -20,6 +20,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "cloudExadataInfrastructureId", GoGetter: "CloudExadataInfrastructureId"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterName", GoGetter: "ClusterName"},
 			_jsii_.MemberProperty{JsiiProperty: "compartmentId", GoGetter: "CompartmentId"},
+			_jsii_.MemberProperty{JsiiProperty: "computeModel", GoGetter: "ComputeModel"},
 			_jsii_.MemberProperty{JsiiProperty: "computeNodes", GoGetter: "ComputeNodes"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},

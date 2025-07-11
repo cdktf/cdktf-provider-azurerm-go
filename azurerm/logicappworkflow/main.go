@@ -395,6 +395,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "openAuthenticationPolicy", GoGetter: "OpenAuthenticationPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "openAuthenticationPolicyInput", GoGetter: "OpenAuthenticationPolicyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putOpenAuthenticationPolicy", GoMethod: "PutOpenAuthenticationPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedCallerIpAddressRange", GoMethod: "ResetAllowedCallerIpAddressRange"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOpenAuthenticationPolicy", GoMethod: "ResetOpenAuthenticationPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

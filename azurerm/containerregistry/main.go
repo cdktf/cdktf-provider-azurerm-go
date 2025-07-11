@@ -28,6 +28,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "dataEndpointEnabled", GoGetter: "DataEndpointEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "dataEndpointEnabledInput", GoGetter: "DataEndpointEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "dataEndpointHostNames", GoGetter: "DataEndpointHostNames"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "encryption", GoGetter: "Encryption"},
 			_jsii_.MemberProperty{JsiiProperty: "encryptionInput", GoGetter: "EncryptionInput"},

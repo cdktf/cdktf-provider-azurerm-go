@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/virtual_hub azurerm_virtual_hub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/virtual_hub azurerm_virtual_hub}.
 type VirtualHub interface {
 	cdktf.TerraformResource
 	AddressPrefix() *string
 	SetAddressPrefix(val *string)
 	AddressPrefixInput() *string
+	BranchToBranchTrafficEnabled() interface{}
+	SetBranchToBranchTrafficEnabled(val interface{})
+	BranchToBranchTrafficEnabledInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -144,6 +147,7 @@ type VirtualHub interface {
 	PutRoute(value interface{})
 	PutTimeouts(value *VirtualHubTimeouts)
 	ResetAddressPrefix()
+	ResetBranchToBranchTrafficEnabled()
 	ResetHubRoutingPreference()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -188,6 +192,26 @@ func (j *jsiiProxy_VirtualHub) AddressPrefixInput() *string {
 	_jsii_.Get(
 		j,
 		"addressPrefixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualHub) BranchToBranchTrafficEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"branchToBranchTrafficEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualHub) BranchToBranchTrafficEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"branchToBranchTrafficEnabledInput",
 		&returns,
 	)
 	return returns
@@ -604,7 +628,7 @@ func (j *jsiiProxy_VirtualHub) VirtualWanIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/virtual_hub azurerm_virtual_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/virtual_hub azurerm_virtual_hub} Resource.
 func NewVirtualHub(scope constructs.Construct, id *string, config *VirtualHubConfig) VirtualHub {
 	_init_.Initialize()
 
@@ -622,7 +646,7 @@ func NewVirtualHub(scope constructs.Construct, id *string, config *VirtualHubCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/virtual_hub azurerm_virtual_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/virtual_hub azurerm_virtual_hub} Resource.
 func NewVirtualHub_Override(v VirtualHub, scope constructs.Construct, id *string, config *VirtualHubConfig) {
 	_init_.Initialize()
 
@@ -640,6 +664,17 @@ func (j *jsiiProxy_VirtualHub)SetAddressPrefix(val *string) {
 	_jsii_.Set(
 		j,
 		"addressPrefix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualHub)SetBranchToBranchTrafficEnabled(val interface{}) {
+	if err := j.validateSetBranchToBranchTrafficEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"branchToBranchTrafficEnabled",
 		val,
 	)
 }
@@ -1190,6 +1225,14 @@ func (v *jsiiProxy_VirtualHub) ResetAddressPrefix() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetAddressPrefix",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualHub) ResetBranchToBranchTrafficEnabled() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetBranchToBranchTrafficEnabled",
 		nil, // no parameters
 	)
 }

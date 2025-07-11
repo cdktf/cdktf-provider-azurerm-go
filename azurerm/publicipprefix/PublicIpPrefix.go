@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/public_ip_prefix azurerm_public_ip_prefix}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/public_ip_prefix azurerm_public_ip_prefix}.
 type PublicIpPrefix interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,6 +27,9 @@ type PublicIpPrefix interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomIpPrefixId() *string
+	SetCustomIpPrefixId(val *string)
+	CustomIpPrefixIdInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -138,6 +141,7 @@ type PublicIpPrefix interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *PublicIpPrefixTimeouts)
+	ResetCustomIpPrefixId()
 	ResetId()
 	ResetIpVersion()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -202,6 +206,26 @@ func (j *jsiiProxy_PublicIpPrefix) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PublicIpPrefix) CustomIpPrefixId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customIpPrefixId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PublicIpPrefix) CustomIpPrefixIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customIpPrefixIdInput",
 		&returns,
 	)
 	return returns
@@ -558,7 +582,7 @@ func (j *jsiiProxy_PublicIpPrefix) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/public_ip_prefix azurerm_public_ip_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/public_ip_prefix azurerm_public_ip_prefix} Resource.
 func NewPublicIpPrefix(scope constructs.Construct, id *string, config *PublicIpPrefixConfig) PublicIpPrefix {
 	_init_.Initialize()
 
@@ -576,7 +600,7 @@ func NewPublicIpPrefix(scope constructs.Construct, id *string, config *PublicIpP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/public_ip_prefix azurerm_public_ip_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/public_ip_prefix azurerm_public_ip_prefix} Resource.
 func NewPublicIpPrefix_Override(p PublicIpPrefix, scope constructs.Construct, id *string, config *PublicIpPrefixConfig) {
 	_init_.Initialize()
 
@@ -605,6 +629,17 @@ func (j *jsiiProxy_PublicIpPrefix)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PublicIpPrefix)SetCustomIpPrefixId(val *string) {
+	if err := j.validateSetCustomIpPrefixIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customIpPrefixId",
 		val,
 	)
 }
@@ -1126,6 +1161,14 @@ func (p *jsiiProxy_PublicIpPrefix) PutTimeouts(value *PublicIpPrefixTimeouts) {
 		p,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PublicIpPrefix) ResetCustomIpPrefixId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCustomIpPrefixId",
+		nil, // no parameters
 	)
 }
 

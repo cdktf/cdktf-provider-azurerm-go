@@ -55,6 +55,14 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSetNetworkInterfaceOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_WindowsVirtualMachineScaleSetNetworkInterfaceOutputReference) validateSetAuxiliaryModeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineScaleSetNetworkInterfaceOutputReference) validateSetAuxiliarySkuParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsVirtualMachineScaleSetNetworkInterfaceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

@@ -79,6 +79,10 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference) validateSetTransparentHugePageParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference) validateSetTransparentHugePageDefragParameters(val *string) error {
 	return nil
 }

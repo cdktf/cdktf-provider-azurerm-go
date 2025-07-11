@@ -115,6 +115,10 @@ func (j *jsiiProxy_OracleExadataInfrastructure) validateSetCustomerContactsParam
 	return nil
 }
 
+func (j *jsiiProxy_OracleExadataInfrastructure) validateSetDatabaseServerTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OracleExadataInfrastructure) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }
@@ -148,6 +152,10 @@ func (j *jsiiProxy_OracleExadataInfrastructure) validateSetShapeParameters(val *
 }
 
 func (j *jsiiProxy_OracleExadataInfrastructure) validateSetStorageCountParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_OracleExadataInfrastructure) validateSetStorageServerTypeParameters(val *string) error {
 	return nil
 }
 

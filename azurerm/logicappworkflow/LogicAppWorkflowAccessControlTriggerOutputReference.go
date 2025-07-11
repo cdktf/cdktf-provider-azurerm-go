@@ -70,6 +70,7 @@ type LogicAppWorkflowAccessControlTriggerOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutOpenAuthenticationPolicy(value interface{})
+	ResetAllowedCallerIpAddressRange()
 	ResetOpenAuthenticationPolicy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -484,6 +485,14 @@ func (l *jsiiProxy_LogicAppWorkflowAccessControlTriggerOutputReference) PutOpenA
 		l,
 		"putOpenAuthenticationPolicy",
 		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LogicAppWorkflowAccessControlTriggerOutputReference) ResetAllowedCallerIpAddressRange() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAllowedCallerIpAddressRange",
+		nil, // no parameters
 	)
 }
 

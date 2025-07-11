@@ -59,6 +59,10 @@ func (j *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) validateSetCom
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) validateSetDefaultNginxControllerParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) validateSetDnsZoneIdsParameters(val *[]*string) error {
 	return nil
 }

@@ -348,6 +348,14 @@ func (j *jsiiProxy_PublicIpPrefix) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_PublicIpPrefix) validateSetCustomIpPrefixIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PublicIpPrefix) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

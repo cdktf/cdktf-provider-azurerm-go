@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/oracle_autonomous_database azurerm_oracle_autonomous_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/oracle_autonomous_database azurerm_oracle_autonomous_database}.
 type OracleAutonomousDatabase interface {
 	cdktf.TerraformResource
 	AdminPassword() *string
 	SetAdminPassword(val *string)
 	AdminPasswordInput() *string
+	AllowedIps() *[]*string
+	SetAllowedIps(val *[]*string)
+	AllowedIpsInput() *[]*string
 	AutoScalingEnabled() interface{}
 	SetAutoScalingEnabled(val interface{})
 	AutoScalingEnabledInput() interface{}
@@ -176,14 +179,17 @@ type OracleAutonomousDatabase interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutLongTermBackupSchedule(value *OracleAutonomousDatabaseLongTermBackupSchedule)
 	PutTimeouts(value *OracleAutonomousDatabaseTimeouts)
+	ResetAllowedIps()
 	ResetCustomerContacts()
 	ResetId()
 	ResetLongTermBackupSchedule()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSubnetId()
 	ResetTags()
 	ResetTimeouts()
+	ResetVirtualNetworkId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -217,6 +223,26 @@ func (j *jsiiProxy_OracleAutonomousDatabase) AdminPasswordInput() *string {
 	_jsii_.Get(
 		j,
 		"adminPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OracleAutonomousDatabase) AllowedIps() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedIps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OracleAutonomousDatabase) AllowedIpsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedIpsInput",
 		&returns,
 	)
 	return returns
@@ -843,7 +869,7 @@ func (j *jsiiProxy_OracleAutonomousDatabase) VirtualNetworkIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/oracle_autonomous_database azurerm_oracle_autonomous_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/oracle_autonomous_database azurerm_oracle_autonomous_database} Resource.
 func NewOracleAutonomousDatabase(scope constructs.Construct, id *string, config *OracleAutonomousDatabaseConfig) OracleAutonomousDatabase {
 	_init_.Initialize()
 
@@ -861,7 +887,7 @@ func NewOracleAutonomousDatabase(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/oracle_autonomous_database azurerm_oracle_autonomous_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/oracle_autonomous_database azurerm_oracle_autonomous_database} Resource.
 func NewOracleAutonomousDatabase_Override(o OracleAutonomousDatabase, scope constructs.Construct, id *string, config *OracleAutonomousDatabaseConfig) {
 	_init_.Initialize()
 
@@ -879,6 +905,17 @@ func (j *jsiiProxy_OracleAutonomousDatabase)SetAdminPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"adminPassword",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OracleAutonomousDatabase)SetAllowedIps(val *[]*string) {
+	if err := j.validateSetAllowedIpsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedIps",
 		val,
 	)
 }
@@ -1557,6 +1594,14 @@ func (o *jsiiProxy_OracleAutonomousDatabase) PutTimeouts(value *OracleAutonomous
 	)
 }
 
+func (o *jsiiProxy_OracleAutonomousDatabase) ResetAllowedIps() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAllowedIps",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OracleAutonomousDatabase) ResetCustomerContacts() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1589,6 +1634,14 @@ func (o *jsiiProxy_OracleAutonomousDatabase) ResetOverrideLogicalId() {
 	)
 }
 
+func (o *jsiiProxy_OracleAutonomousDatabase) ResetSubnetId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSubnetId",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OracleAutonomousDatabase) ResetTags() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1601,6 +1654,14 @@ func (o *jsiiProxy_OracleAutonomousDatabase) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OracleAutonomousDatabase) ResetVirtualNetworkId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetVirtualNetworkId",
 		nil, // no parameters
 	)
 }

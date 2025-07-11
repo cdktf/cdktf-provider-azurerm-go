@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/dev_center_dev_box_definition azurerm_dev_center_dev_box_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/dev_center_dev_box_definition azurerm_dev_center_dev_box_definition}.
 type DevCenterDevBoxDefinition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -42,6 +42,9 @@ type DevCenterDevBoxDefinition interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HibernateSupportEnabled() interface{}
+	SetHibernateSupportEnabled(val interface{})
+	HibernateSupportEnabledInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -128,6 +131,7 @@ type DevCenterDevBoxDefinition interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DevCenterDevBoxDefinitionTimeouts)
+	ResetHibernateSupportEnabled()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_DevCenterDevBoxDefinition) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevCenterDevBoxDefinition) HibernateSupportEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hibernateSupportEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevCenterDevBoxDefinition) HibernateSupportEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hibernateSupportEnabledInput",
 		&returns,
 	)
 	return returns
@@ -473,7 +497,7 @@ func (j *jsiiProxy_DevCenterDevBoxDefinition) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/dev_center_dev_box_definition azurerm_dev_center_dev_box_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/dev_center_dev_box_definition azurerm_dev_center_dev_box_definition} Resource.
 func NewDevCenterDevBoxDefinition(scope constructs.Construct, id *string, config *DevCenterDevBoxDefinitionConfig) DevCenterDevBoxDefinition {
 	_init_.Initialize()
 
@@ -491,7 +515,7 @@ func NewDevCenterDevBoxDefinition(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/dev_center_dev_box_definition azurerm_dev_center_dev_box_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/dev_center_dev_box_definition azurerm_dev_center_dev_box_definition} Resource.
 func NewDevCenterDevBoxDefinition_Override(d DevCenterDevBoxDefinition, scope constructs.Construct, id *string, config *DevCenterDevBoxDefinitionConfig) {
 	_init_.Initialize()
 
@@ -547,6 +571,17 @@ func (j *jsiiProxy_DevCenterDevBoxDefinition)SetForEach(val cdktf.ITerraformIter
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevCenterDevBoxDefinition)SetHibernateSupportEnabled(val interface{}) {
+	if err := j.validateSetHibernateSupportEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hibernateSupportEnabled",
 		val,
 	)
 }
@@ -1008,6 +1043,14 @@ func (d *jsiiProxy_DevCenterDevBoxDefinition) PutTimeouts(value *DevCenterDevBox
 		d,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DevCenterDevBoxDefinition) ResetHibernateSupportEnabled() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHibernateSupportEnabled",
+		nil, // no parameters
 	)
 }
 

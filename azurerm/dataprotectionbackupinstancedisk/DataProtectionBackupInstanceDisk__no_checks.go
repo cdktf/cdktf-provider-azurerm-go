@@ -135,6 +135,10 @@ func (j *jsiiProxy_DataProtectionBackupInstanceDisk) validateSetSnapshotResource
 	return nil
 }
 
+func (j *jsiiProxy_DataProtectionBackupInstanceDisk) validateSetSnapshotSubscriptionIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataProtectionBackupInstanceDisk) validateSetVaultIdParameters(val *string) error {
 	return nil
 }

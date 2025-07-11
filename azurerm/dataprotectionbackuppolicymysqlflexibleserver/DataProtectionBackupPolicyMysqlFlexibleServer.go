@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/data_protection_backup_policy_mysql_flexible_server azurerm_data_protection_backup_policy_mysql_flexible_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/data_protection_backup_policy_mysql_flexible_server azurerm_data_protection_backup_policy_mysql_flexible_server}.
 type DataProtectionBackupPolicyMysqlFlexibleServer interface {
 	cdktf.TerraformResource
 	BackupRepeatingTimeIntervals() *[]*string
@@ -474,7 +474,7 @@ func (j *jsiiProxy_DataProtectionBackupPolicyMysqlFlexibleServer) VaultIdInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/data_protection_backup_policy_mysql_flexible_server azurerm_data_protection_backup_policy_mysql_flexible_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/data_protection_backup_policy_mysql_flexible_server azurerm_data_protection_backup_policy_mysql_flexible_server} Resource.
 func NewDataProtectionBackupPolicyMysqlFlexibleServer(scope constructs.Construct, id *string, config *DataProtectionBackupPolicyMysqlFlexibleServerConfig) DataProtectionBackupPolicyMysqlFlexibleServer {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewDataProtectionBackupPolicyMysqlFlexibleServer(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/data_protection_backup_policy_mysql_flexible_server azurerm_data_protection_backup_policy_mysql_flexible_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/data_protection_backup_policy_mysql_flexible_server azurerm_data_protection_backup_policy_mysql_flexible_server} Resource.
 func NewDataProtectionBackupPolicyMysqlFlexibleServer_Override(d DataProtectionBackupPolicyMysqlFlexibleServer, scope constructs.Construct, id *string, config *DataProtectionBackupPolicyMysqlFlexibleServerConfig) {
 	_init_.Initialize()
 

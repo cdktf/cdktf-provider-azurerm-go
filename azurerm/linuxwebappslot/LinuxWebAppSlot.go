@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/linux_web_app_slot azurerm_linux_web_app_slot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/linux_web_app_slot azurerm_linux_web_app_slot}.
 type LinuxWebAppSlot interface {
 	cdktf.TerraformResource
 	AppMetadata() cdktf.StringMap
@@ -140,6 +140,9 @@ type LinuxWebAppSlot interface {
 	VirtualNetworkSubnetId() *string
 	SetVirtualNetworkSubnetId(val *string)
 	VirtualNetworkSubnetIdInput() *string
+	VnetImagePullEnabled() interface{}
+	SetVnetImagePullEnabled(val interface{})
+	VnetImagePullEnabledInput() interface{}
 	WebdeployPublishBasicAuthenticationEnabled() interface{}
 	SetWebdeployPublishBasicAuthenticationEnabled(val interface{})
 	WebdeployPublishBasicAuthenticationEnabledInput() interface{}
@@ -224,6 +227,7 @@ type LinuxWebAppSlot interface {
 	ResetTimeouts()
 	ResetVirtualNetworkBackupRestoreEnabled()
 	ResetVirtualNetworkSubnetId()
+	ResetVnetImagePullEnabled()
 	ResetWebdeployPublishBasicAuthenticationEnabled()
 	ResetZipDeployFile()
 	SynthesizeAttributes() *map[string]interface{}
@@ -1024,6 +1028,26 @@ func (j *jsiiProxy_LinuxWebAppSlot) VirtualNetworkSubnetIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LinuxWebAppSlot) VnetImagePullEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vnetImagePullEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxWebAppSlot) VnetImagePullEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vnetImagePullEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LinuxWebAppSlot) WebdeployPublishBasicAuthenticationEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1065,7 +1089,7 @@ func (j *jsiiProxy_LinuxWebAppSlot) ZipDeployFileInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/linux_web_app_slot azurerm_linux_web_app_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/linux_web_app_slot azurerm_linux_web_app_slot} Resource.
 func NewLinuxWebAppSlot(scope constructs.Construct, id *string, config *LinuxWebAppSlotConfig) LinuxWebAppSlot {
 	_init_.Initialize()
 
@@ -1083,7 +1107,7 @@ func NewLinuxWebAppSlot(scope constructs.Construct, id *string, config *LinuxWeb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/linux_web_app_slot azurerm_linux_web_app_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/linux_web_app_slot azurerm_linux_web_app_slot} Resource.
 func NewLinuxWebAppSlot_Override(l LinuxWebAppSlot, scope constructs.Construct, id *string, config *LinuxWebAppSlotConfig) {
 	_init_.Initialize()
 
@@ -1345,6 +1369,17 @@ func (j *jsiiProxy_LinuxWebAppSlot)SetVirtualNetworkSubnetId(val *string) {
 	_jsii_.Set(
 		j,
 		"virtualNetworkSubnetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LinuxWebAppSlot)SetVnetImagePullEnabled(val interface{}) {
+	if err := j.validateSetVnetImagePullEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vnetImagePullEnabled",
 		val,
 	)
 }
@@ -2011,6 +2046,14 @@ func (l *jsiiProxy_LinuxWebAppSlot) ResetVirtualNetworkSubnetId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetVirtualNetworkSubnetId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxWebAppSlot) ResetVnetImagePullEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetVnetImagePullEnabled",
 		nil, // no parameters
 	)
 }

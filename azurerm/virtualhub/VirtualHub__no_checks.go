@@ -103,6 +103,10 @@ func (j *jsiiProxy_VirtualHub) validateSetAddressPrefixParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_VirtualHub) validateSetBranchToBranchTrafficEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualHub) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -277,6 +277,14 @@ func (j *jsiiProxy_OracleAutonomousDatabase) validateSetAdminPasswordParameters(
 	return nil
 }
 
+func (j *jsiiProxy_OracleAutonomousDatabase) validateSetAllowedIpsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OracleAutonomousDatabase) validateSetAutoScalingEnabledParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

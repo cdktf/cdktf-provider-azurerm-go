@@ -28,6 +28,9 @@ type KubernetesClusterWebAppRoutingOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DefaultNginxController() *string
+	SetDefaultNginxController(val *string)
+	DefaultNginxControllerInput() *string
 	DnsZoneIds() *[]*string
 	SetDnsZoneIds(val *[]*string)
 	DnsZoneIdsInput() *[]*string
@@ -68,6 +71,7 @@ type KubernetesClusterWebAppRoutingOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDefaultNginxController()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -108,6 +112,26 @@ func (j *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) CreationStack(
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) DefaultNginxController() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultNginxController",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) DefaultNginxControllerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultNginxControllerInput",
 		&returns,
 	)
 	return returns
@@ -229,6 +253,17 @@ func (j *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference)SetComplexObjec
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference)SetDefaultNginxController(val *string) {
+	if err := j.validateSetDefaultNginxControllerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultNginxController",
 		val,
 	)
 }
@@ -461,6 +496,14 @@ func (k *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) InterpolationF
 	)
 
 	return returns
+}
+
+func (k *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) ResetDefaultNginxController() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetDefaultNginxController",
+		nil, // no parameters
+	)
 }
 
 func (k *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

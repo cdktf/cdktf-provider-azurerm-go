@@ -13,6 +13,12 @@ import (
 
 type LinuxVirtualMachineScaleSetNetworkInterfaceOutputReference interface {
 	cdktf.ComplexObject
+	AuxiliaryMode() *string
+	SetAuxiliaryMode(val *string)
+	AuxiliaryModeInput() *string
+	AuxiliarySku() *string
+	SetAuxiliarySku(val *string)
+	AuxiliarySkuInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -85,6 +91,8 @@ type LinuxVirtualMachineScaleSetNetworkInterfaceOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutIpConfiguration(value interface{})
+	ResetAuxiliaryMode()
+	ResetAuxiliarySku()
 	ResetDnsServers()
 	ResetEnableAcceleratedNetworking()
 	ResetEnableIpForwarding()
@@ -103,6 +111,46 @@ type LinuxVirtualMachineScaleSetNetworkInterfaceOutputReference interface {
 // The jsii proxy struct for LinuxVirtualMachineScaleSetNetworkInterfaceOutputReference
 type jsiiProxy_LinuxVirtualMachineScaleSetNetworkInterfaceOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_LinuxVirtualMachineScaleSetNetworkInterfaceOutputReference) AuxiliaryMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"auxiliaryMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxVirtualMachineScaleSetNetworkInterfaceOutputReference) AuxiliaryModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"auxiliaryModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxVirtualMachineScaleSetNetworkInterfaceOutputReference) AuxiliarySku() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"auxiliarySku",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxVirtualMachineScaleSetNetworkInterfaceOutputReference) AuxiliarySkuInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"auxiliarySkuInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_LinuxVirtualMachineScaleSetNetworkInterfaceOutputReference) ComplexObjectIndex() interface{} {
@@ -340,6 +388,28 @@ func NewLinuxVirtualMachineScaleSetNetworkInterfaceOutputReference_Override(l Li
 		"@cdktf/provider-azurerm.linuxVirtualMachineScaleSet.LinuxVirtualMachineScaleSetNetworkInterfaceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
+	)
+}
+
+func (j *jsiiProxy_LinuxVirtualMachineScaleSetNetworkInterfaceOutputReference)SetAuxiliaryMode(val *string) {
+	if err := j.validateSetAuxiliaryModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"auxiliaryMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LinuxVirtualMachineScaleSetNetworkInterfaceOutputReference)SetAuxiliarySku(val *string) {
+	if err := j.validateSetAuxiliarySkuParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"auxiliarySku",
+		val,
 	)
 }
 
@@ -658,6 +728,22 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetNetworkInterfaceOutputReference) P
 		l,
 		"putIpConfiguration",
 		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetNetworkInterfaceOutputReference) ResetAuxiliaryMode() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAuxiliaryMode",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetNetworkInterfaceOutputReference) ResetAuxiliarySku() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAuxiliarySku",
+		nil, // no parameters
 	)
 }
 

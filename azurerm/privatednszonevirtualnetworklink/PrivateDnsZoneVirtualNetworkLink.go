@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/private_dns_zone_virtual_network_link azurerm_private_dns_zone_virtual_network_link}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/private_dns_zone_virtual_network_link azurerm_private_dns_zone_virtual_network_link}.
 type PrivateDnsZoneVirtualNetworkLink interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,6 +67,9 @@ type PrivateDnsZoneVirtualNetworkLink interface {
 	RegistrationEnabled() interface{}
 	SetRegistrationEnabled(val interface{})
 	RegistrationEnabledInput() interface{}
+	ResolutionPolicy() *string
+	SetResolutionPolicy(val *string)
+	ResolutionPolicyInput() *string
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
@@ -133,6 +136,7 @@ type PrivateDnsZoneVirtualNetworkLink interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegistrationEnabled()
+	ResetResolutionPolicy()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -363,6 +367,26 @@ func (j *jsiiProxy_PrivateDnsZoneVirtualNetworkLink) RegistrationEnabledInput() 
 	return returns
 }
 
+func (j *jsiiProxy_PrivateDnsZoneVirtualNetworkLink) ResolutionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resolutionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivateDnsZoneVirtualNetworkLink) ResolutionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resolutionPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PrivateDnsZoneVirtualNetworkLink) ResourceGroupName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -474,7 +498,7 @@ func (j *jsiiProxy_PrivateDnsZoneVirtualNetworkLink) VirtualNetworkIdInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/private_dns_zone_virtual_network_link azurerm_private_dns_zone_virtual_network_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/private_dns_zone_virtual_network_link azurerm_private_dns_zone_virtual_network_link} Resource.
 func NewPrivateDnsZoneVirtualNetworkLink(scope constructs.Construct, id *string, config *PrivateDnsZoneVirtualNetworkLinkConfig) PrivateDnsZoneVirtualNetworkLink {
 	_init_.Initialize()
 
@@ -492,7 +516,7 @@ func NewPrivateDnsZoneVirtualNetworkLink(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/private_dns_zone_virtual_network_link azurerm_private_dns_zone_virtual_network_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/private_dns_zone_virtual_network_link azurerm_private_dns_zone_virtual_network_link} Resource.
 func NewPrivateDnsZoneVirtualNetworkLink_Override(p PrivateDnsZoneVirtualNetworkLink, scope constructs.Construct, id *string, config *PrivateDnsZoneVirtualNetworkLinkConfig) {
 	_init_.Initialize()
 
@@ -611,6 +635,17 @@ func (j *jsiiProxy_PrivateDnsZoneVirtualNetworkLink)SetRegistrationEnabled(val i
 	_jsii_.Set(
 		j,
 		"registrationEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PrivateDnsZoneVirtualNetworkLink)SetResolutionPolicy(val *string) {
+	if err := j.validateSetResolutionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resolutionPolicy",
 		val,
 	)
 }
@@ -1032,6 +1067,14 @@ func (p *jsiiProxy_PrivateDnsZoneVirtualNetworkLink) ResetRegistrationEnabled() 
 	_jsii_.InvokeVoid(
 		p,
 		"resetRegistrationEnabled",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PrivateDnsZoneVirtualNetworkLink) ResetResolutionPolicy() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetResolutionPolicy",
 		nil, // no parameters
 	)
 }

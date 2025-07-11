@@ -45,12 +45,15 @@ type KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TransparentHugePage() *string
+	SetTransparentHugePage(val *string)
 	TransparentHugePageDefrag() *string
 	SetTransparentHugePageDefrag(val *string)
 	TransparentHugePageDefragInput() *string
 	TransparentHugePageEnabled() *string
 	SetTransparentHugePageEnabled(val *string)
 	TransparentHugePageEnabledInput() *string
+	TransparentHugePageInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -78,6 +81,7 @@ type KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference interface {
 	PutSysctlConfig(value *KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfig)
 	ResetSwapFileSizeMb()
 	ResetSysctlConfig()
+	ResetTransparentHugePage()
 	ResetTransparentHugePageDefrag()
 	ResetTransparentHugePageEnabled()
 	// Produce the Token's value at resolution time.
@@ -205,6 +209,16 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference)
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference) TransparentHugePage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transparentHugePage",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference) TransparentHugePageDefrag() *string {
 	var returns *string
 	_jsii_.Get(
@@ -240,6 +254,16 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference)
 	_jsii_.Get(
 		j,
 		"transparentHugePageEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference) TransparentHugePageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transparentHugePageInput",
 		&returns,
 	)
 	return returns
@@ -335,6 +359,17 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference)
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference)SetTransparentHugePage(val *string) {
+	if err := j.validateSetTransparentHugePageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"transparentHugePage",
 		val,
 	)
 }
@@ -570,6 +605,14 @@ func (k *jsiiProxy_KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference)
 	_jsii_.InvokeVoid(
 		k,
 		"resetSysctlConfig",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference) ResetTransparentHugePage() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetTransparentHugePage",
 		nil, // no parameters
 	)
 }

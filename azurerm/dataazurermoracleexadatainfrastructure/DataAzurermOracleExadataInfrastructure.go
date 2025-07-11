@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/data-sources/oracle_exadata_infrastructure azurerm_oracle_exadata_infrastructure}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/data-sources/oracle_exadata_infrastructure azurerm_oracle_exadata_infrastructure}.
 type DataAzurermOracleExadataInfrastructure interface {
 	cdktf.TerraformDataSource
 	ActivatedStorageCount() *float64
@@ -21,6 +21,7 @@ type DataAzurermOracleExadataInfrastructure interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ComputeCount() *float64
+	ComputeModel() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -29,6 +30,7 @@ type DataAzurermOracleExadataInfrastructure interface {
 	SetCount(val interface{})
 	CpuCount() *float64
 	CustomerContacts() *[]*string
+	DatabaseServerType() *string
 	DataStorageSizeInTbs() *float64
 	DbNodeStorageSizeInGbs() *float64
 	DbServerVersion() *string
@@ -84,6 +86,7 @@ type DataAzurermOracleExadataInfrastructure interface {
 	ResourceGroupNameInput() *string
 	Shape() *string
 	StorageCount() *float64
+	StorageServerType() *string
 	StorageServerVersion() *string
 	Tags() cdktf.StringMap
 	// Experimental.
@@ -197,6 +200,16 @@ func (j *jsiiProxy_DataAzurermOracleExadataInfrastructure) ComputeCount() *float
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermOracleExadataInfrastructure) ComputeModel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"computeModel",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermOracleExadataInfrastructure) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -232,6 +245,16 @@ func (j *jsiiProxy_DataAzurermOracleExadataInfrastructure) CustomerContacts() *[
 	_jsii_.Get(
 		j,
 		"customerContacts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermOracleExadataInfrastructure) DatabaseServerType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseServerType",
 		&returns,
 	)
 	return returns
@@ -597,6 +620,16 @@ func (j *jsiiProxy_DataAzurermOracleExadataInfrastructure) StorageCount() *float
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermOracleExadataInfrastructure) StorageServerType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageServerType",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermOracleExadataInfrastructure) StorageServerVersion() *string {
 	var returns *string
 	_jsii_.Get(
@@ -698,7 +731,7 @@ func (j *jsiiProxy_DataAzurermOracleExadataInfrastructure) Zones() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/data-sources/oracle_exadata_infrastructure azurerm_oracle_exadata_infrastructure} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/data-sources/oracle_exadata_infrastructure azurerm_oracle_exadata_infrastructure} Data Source.
 func NewDataAzurermOracleExadataInfrastructure(scope constructs.Construct, id *string, config *DataAzurermOracleExadataInfrastructureConfig) DataAzurermOracleExadataInfrastructure {
 	_init_.Initialize()
 
@@ -716,7 +749,7 @@ func NewDataAzurermOracleExadataInfrastructure(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/data-sources/oracle_exadata_infrastructure azurerm_oracle_exadata_infrastructure} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/data-sources/oracle_exadata_infrastructure azurerm_oracle_exadata_infrastructure} Data Source.
 func NewDataAzurermOracleExadataInfrastructure_Override(d DataAzurermOracleExadataInfrastructure, scope constructs.Construct, id *string, config *DataAzurermOracleExadataInfrastructureConfig) {
 	_init_.Initialize()
 

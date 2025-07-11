@@ -103,6 +103,10 @@ func (j *jsiiProxy_OracleAutonomousDatabase) validateSetAdminPasswordParameters(
 	return nil
 }
 
+func (j *jsiiProxy_OracleAutonomousDatabase) validateSetAllowedIpsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OracleAutonomousDatabase) validateSetAutoScalingEnabledParameters(val interface{}) error {
 	return nil
 }

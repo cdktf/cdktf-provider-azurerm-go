@@ -395,6 +395,14 @@ func (j *jsiiProxy_OracleExadataInfrastructure) validateSetCustomerContactsParam
 	return nil
 }
 
+func (j *jsiiProxy_OracleExadataInfrastructure) validateSetDatabaseServerTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OracleExadataInfrastructure) validateSetDisplayNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -498,6 +506,14 @@ func (j *jsiiProxy_OracleExadataInfrastructure) validateSetShapeParameters(val *
 }
 
 func (j *jsiiProxy_OracleExadataInfrastructure) validateSetStorageCountParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_OracleExadataInfrastructure) validateSetStorageServerTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

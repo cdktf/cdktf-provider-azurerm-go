@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster}.
 type KubernetesCluster interface {
 	cdktf.TerraformResource
 	AciConnectorLinux() KubernetesClusterAciConnectorLinuxOutputReference
@@ -47,6 +47,9 @@ type KubernetesCluster interface {
 	// Experimental.
 	SetCount(val interface{})
 	CurrentKubernetesVersion() *string
+	CustomCaTrustCertificatesBase64() *[]*string
+	SetCustomCaTrustCertificatesBase64(val *[]*string)
+	CustomCaTrustCertificatesBase64Input() *[]*string
 	DefaultNodePool() KubernetesClusterDefaultNodePoolOutputReference
 	DefaultNodePoolInput() *KubernetesClusterDefaultNodePool
 	// Experimental.
@@ -294,6 +297,7 @@ type KubernetesCluster interface {
 	ResetAzurePolicyEnabled()
 	ResetConfidentialComputing()
 	ResetCostAnalysisEnabled()
+	ResetCustomCaTrustCertificatesBase64()
 	ResetDiskEncryptionSetId()
 	ResetDnsPrefix()
 	ResetDnsPrefixPrivateCluster()
@@ -565,6 +569,26 @@ func (j *jsiiProxy_KubernetesCluster) CurrentKubernetesVersion() *string {
 	_jsii_.Get(
 		j,
 		"currentKubernetesVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) CustomCaTrustCertificatesBase64() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customCaTrustCertificatesBase64",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) CustomCaTrustCertificatesBase64Input() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customCaTrustCertificatesBase64Input",
 		&returns,
 	)
 	return returns
@@ -1771,7 +1795,7 @@ func (j *jsiiProxy_KubernetesCluster) WorkloadIdentityEnabledInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
 func NewKubernetesCluster(scope constructs.Construct, id *string, config *KubernetesClusterConfig) KubernetesCluster {
 	_init_.Initialize()
 
@@ -1789,7 +1813,7 @@ func NewKubernetesCluster(scope constructs.Construct, id *string, config *Kubern
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
 func NewKubernetesCluster_Override(k KubernetesCluster, scope constructs.Construct, id *string, config *KubernetesClusterConfig) {
 	_init_.Initialize()
 
@@ -1851,6 +1875,17 @@ func (j *jsiiProxy_KubernetesCluster)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesCluster)SetCustomCaTrustCertificatesBase64(val *[]*string) {
+	if err := j.validateSetCustomCaTrustCertificatesBase64Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customCaTrustCertificatesBase64",
 		val,
 	)
 }
@@ -2908,6 +2943,14 @@ func (k *jsiiProxy_KubernetesCluster) ResetCostAnalysisEnabled() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetCostAnalysisEnabled",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetCustomCaTrustCertificatesBase64() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetCustomCaTrustCertificatesBase64",
 		nil, // no parameters
 	)
 }

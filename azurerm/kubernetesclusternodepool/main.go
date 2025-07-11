@@ -296,6 +296,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSysctlConfig", GoMethod: "PutSysctlConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSwapFileSizeMb", GoMethod: "ResetSwapFileSizeMb"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSysctlConfig", GoMethod: "ResetSysctlConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTransparentHugePage", GoMethod: "ResetTransparentHugePage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTransparentHugePageDefrag", GoMethod: "ResetTransparentHugePageDefrag"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTransparentHugePageEnabled", GoMethod: "ResetTransparentHugePageEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -306,10 +307,12 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "transparentHugePage", GoGetter: "TransparentHugePage"},
 			_jsii_.MemberProperty{JsiiProperty: "transparentHugePageDefrag", GoGetter: "TransparentHugePageDefrag"},
 			_jsii_.MemberProperty{JsiiProperty: "transparentHugePageDefragInput", GoGetter: "TransparentHugePageDefragInput"},
 			_jsii_.MemberProperty{JsiiProperty: "transparentHugePageEnabled", GoGetter: "TransparentHugePageEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "transparentHugePageEnabledInput", GoGetter: "TransparentHugePageEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "transparentHugePageInput", GoGetter: "TransparentHugePageInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_KubernetesClusterNodePoolLinuxOsConfigOutputReference{}

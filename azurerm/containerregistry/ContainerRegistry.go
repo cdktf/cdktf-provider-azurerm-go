@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/container_registry azurerm_container_registry}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/container_registry azurerm_container_registry}.
 type ContainerRegistry interface {
 	cdktf.TerraformResource
 	AdminEnabled() interface{}
@@ -38,6 +38,7 @@ type ContainerRegistry interface {
 	DataEndpointEnabled() interface{}
 	SetDataEndpointEnabled(val interface{})
 	DataEndpointEnabledInput() interface{}
+	DataEndpointHostNames() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -323,6 +324,16 @@ func (j *jsiiProxy_ContainerRegistry) DataEndpointEnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"dataEndpointEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerRegistry) DataEndpointHostNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dataEndpointHostNames",
 		&returns,
 	)
 	return returns
@@ -819,7 +830,7 @@ func (j *jsiiProxy_ContainerRegistry) ZoneRedundancyEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/container_registry azurerm_container_registry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/container_registry azurerm_container_registry} Resource.
 func NewContainerRegistry(scope constructs.Construct, id *string, config *ContainerRegistryConfig) ContainerRegistry {
 	_init_.Initialize()
 
@@ -837,7 +848,7 @@ func NewContainerRegistry(scope constructs.Construct, id *string, config *Contai
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/container_registry azurerm_container_registry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/container_registry azurerm_container_registry} Resource.
 func NewContainerRegistry_Override(c ContainerRegistry, scope constructs.Construct, id *string, config *ContainerRegistryConfig) {
 	_init_.Initialize()
 

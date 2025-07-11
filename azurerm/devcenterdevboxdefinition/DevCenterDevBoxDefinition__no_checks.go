@@ -107,6 +107,10 @@ func (j *jsiiProxy_DevCenterDevBoxDefinition) validateSetDevCenterIdParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DevCenterDevBoxDefinition) validateSetHibernateSupportEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevCenterDevBoxDefinition) validateSetIdParameters(val *string) error {
 	return nil
 }

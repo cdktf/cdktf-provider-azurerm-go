@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/oracle_exadata_infrastructure azurerm_oracle_exadata_infrastructure}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/oracle_exadata_infrastructure azurerm_oracle_exadata_infrastructure}.
 type OracleExadataInfrastructure interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -33,6 +33,9 @@ type OracleExadataInfrastructure interface {
 	CustomerContacts() *[]*string
 	SetCustomerContacts(val *[]*string)
 	CustomerContactsInput() *[]*string
+	DatabaseServerType() *string
+	SetDatabaseServerType(val *string)
+	DatabaseServerTypeInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -84,6 +87,9 @@ type OracleExadataInfrastructure interface {
 	StorageCount() *float64
 	SetStorageCount(val *float64)
 	StorageCountInput() *float64
+	StorageServerType() *string
+	SetStorageServerType(val *string)
+	StorageServerTypeInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -144,11 +150,13 @@ type OracleExadataInfrastructure interface {
 	PutMaintenanceWindow(value interface{})
 	PutTimeouts(value *OracleExadataInfrastructureTimeouts)
 	ResetCustomerContacts()
+	ResetDatabaseServerType()
 	ResetId()
 	ResetMaintenanceWindow()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStorageServerType()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -244,6 +252,26 @@ func (j *jsiiProxy_OracleExadataInfrastructure) CustomerContactsInput() *[]*stri
 	_jsii_.Get(
 		j,
 		"customerContactsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OracleExadataInfrastructure) DatabaseServerType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseServerType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OracleExadataInfrastructure) DatabaseServerTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseServerTypeInput",
 		&returns,
 	)
 	return returns
@@ -499,6 +527,26 @@ func (j *jsiiProxy_OracleExadataInfrastructure) StorageCountInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_OracleExadataInfrastructure) StorageServerType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageServerType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OracleExadataInfrastructure) StorageServerTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageServerTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OracleExadataInfrastructure) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -590,7 +638,7 @@ func (j *jsiiProxy_OracleExadataInfrastructure) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/oracle_exadata_infrastructure azurerm_oracle_exadata_infrastructure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/oracle_exadata_infrastructure azurerm_oracle_exadata_infrastructure} Resource.
 func NewOracleExadataInfrastructure(scope constructs.Construct, id *string, config *OracleExadataInfrastructureConfig) OracleExadataInfrastructure {
 	_init_.Initialize()
 
@@ -608,7 +656,7 @@ func NewOracleExadataInfrastructure(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/oracle_exadata_infrastructure azurerm_oracle_exadata_infrastructure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/oracle_exadata_infrastructure azurerm_oracle_exadata_infrastructure} Resource.
 func NewOracleExadataInfrastructure_Override(o OracleExadataInfrastructure, scope constructs.Construct, id *string, config *OracleExadataInfrastructureConfig) {
 	_init_.Initialize()
 
@@ -659,6 +707,17 @@ func (j *jsiiProxy_OracleExadataInfrastructure)SetCustomerContacts(val *[]*strin
 	_jsii_.Set(
 		j,
 		"customerContacts",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OracleExadataInfrastructure)SetDatabaseServerType(val *string) {
+	if err := j.validateSetDatabaseServerTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"databaseServerType",
 		val,
 	)
 }
@@ -782,6 +841,17 @@ func (j *jsiiProxy_OracleExadataInfrastructure)SetStorageCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"storageCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OracleExadataInfrastructure)SetStorageServerType(val *string) {
+	if err := j.validateSetStorageServerTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageServerType",
 		val,
 	)
 }
@@ -1191,6 +1261,14 @@ func (o *jsiiProxy_OracleExadataInfrastructure) ResetCustomerContacts() {
 	)
 }
 
+func (o *jsiiProxy_OracleExadataInfrastructure) ResetDatabaseServerType() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDatabaseServerType",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OracleExadataInfrastructure) ResetId() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1211,6 +1289,14 @@ func (o *jsiiProxy_OracleExadataInfrastructure) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OracleExadataInfrastructure) ResetStorageServerType() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetStorageServerType",
 		nil, // no parameters
 	)
 }

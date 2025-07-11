@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/data_protection_backup_instance_disk azurerm_data_protection_backup_instance_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/data_protection_backup_instance_disk azurerm_data_protection_backup_instance_disk}.
 type DataProtectionBackupInstanceDisk interface {
 	cdktf.TerraformResource
 	BackupPolicyId() *string
@@ -73,6 +73,9 @@ type DataProtectionBackupInstanceDisk interface {
 	SnapshotResourceGroupName() *string
 	SetSnapshotResourceGroupName(val *string)
 	SnapshotResourceGroupNameInput() *string
+	SnapshotSubscriptionId() *string
+	SetSnapshotSubscriptionId(val *string)
+	SnapshotSubscriptionIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -132,6 +135,7 @@ type DataProtectionBackupInstanceDisk interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSnapshotSubscriptionId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -401,6 +405,26 @@ func (j *jsiiProxy_DataProtectionBackupInstanceDisk) SnapshotResourceGroupNameIn
 	return returns
 }
 
+func (j *jsiiProxy_DataProtectionBackupInstanceDisk) SnapshotSubscriptionId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshotSubscriptionId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataProtectionBackupInstanceDisk) SnapshotSubscriptionIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshotSubscriptionIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataProtectionBackupInstanceDisk) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -472,7 +496,7 @@ func (j *jsiiProxy_DataProtectionBackupInstanceDisk) VaultIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/data_protection_backup_instance_disk azurerm_data_protection_backup_instance_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/data_protection_backup_instance_disk azurerm_data_protection_backup_instance_disk} Resource.
 func NewDataProtectionBackupInstanceDisk(scope constructs.Construct, id *string, config *DataProtectionBackupInstanceDiskConfig) DataProtectionBackupInstanceDisk {
 	_init_.Initialize()
 
@@ -490,7 +514,7 @@ func NewDataProtectionBackupInstanceDisk(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/data_protection_backup_instance_disk azurerm_data_protection_backup_instance_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/data_protection_backup_instance_disk azurerm_data_protection_backup_instance_disk} Resource.
 func NewDataProtectionBackupInstanceDisk_Override(d DataProtectionBackupInstanceDisk, scope constructs.Construct, id *string, config *DataProtectionBackupInstanceDiskConfig) {
 	_init_.Initialize()
 
@@ -631,6 +655,17 @@ func (j *jsiiProxy_DataProtectionBackupInstanceDisk)SetSnapshotResourceGroupName
 	_jsii_.Set(
 		j,
 		"snapshotResourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataProtectionBackupInstanceDisk)SetSnapshotSubscriptionId(val *string) {
+	if err := j.validateSetSnapshotSubscriptionIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"snapshotSubscriptionId",
 		val,
 	)
 }
@@ -1022,6 +1057,14 @@ func (d *jsiiProxy_DataProtectionBackupInstanceDisk) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataProtectionBackupInstanceDisk) ResetSnapshotSubscriptionId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSnapshotSubscriptionId",
 		nil, // no parameters
 	)
 }

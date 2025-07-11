@@ -211,6 +211,10 @@ func (j *jsiiProxy_LinuxWebAppSlot) validateSetVirtualNetworkSubnetIdParameters(
 	return nil
 }
 
+func (j *jsiiProxy_LinuxWebAppSlot) validateSetVnetImagePullEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinuxWebAppSlot) validateSetWebdeployPublishBasicAuthenticationEnabledParameters(val interface{}) error {
 	return nil
 }
