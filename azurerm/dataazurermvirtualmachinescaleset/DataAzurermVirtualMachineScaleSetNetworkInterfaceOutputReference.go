@@ -13,6 +13,8 @@ import (
 
 type DataAzurermVirtualMachineScaleSetNetworkInterfaceOutputReference interface {
 	cdktf.ComplexObject
+	AuxiliaryMode() *string
+	AuxiliarySku() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -84,6 +86,26 @@ type DataAzurermVirtualMachineScaleSetNetworkInterfaceOutputReference interface 
 // The jsii proxy struct for DataAzurermVirtualMachineScaleSetNetworkInterfaceOutputReference
 type jsiiProxy_DataAzurermVirtualMachineScaleSetNetworkInterfaceOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataAzurermVirtualMachineScaleSetNetworkInterfaceOutputReference) AuxiliaryMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"auxiliaryMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermVirtualMachineScaleSetNetworkInterfaceOutputReference) AuxiliarySku() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"auxiliarySku",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAzurermVirtualMachineScaleSetNetworkInterfaceOutputReference) ComplexObjectIndex() interface{} {

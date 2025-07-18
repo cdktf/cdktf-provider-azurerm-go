@@ -211,6 +211,10 @@ func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) validateSetNameParameters
 	return nil
 }
 
+func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) validateSetNetworkApiVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) validateSetPlatformFaultDomainCountParameters(val *float64) error {
 	return nil
 }

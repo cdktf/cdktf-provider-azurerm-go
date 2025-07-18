@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/eventhub azurerm_eventhub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/eventhub azurerm_eventhub}.
 type Eventhub interface {
 	cdktf.TerraformResource
 	CaptureDescription() EventhubCaptureDescriptionOutputReference
@@ -79,6 +79,8 @@ type Eventhub interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	RetentionDescription() EventhubRetentionDescriptionOutputReference
+	RetentionDescriptionInput() *EventhubRetentionDescription
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
@@ -134,15 +136,18 @@ type Eventhub interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCaptureDescription(value *EventhubCaptureDescription)
+	PutRetentionDescription(value *EventhubRetentionDescription)
 	PutTimeouts(value *EventhubTimeouts)
 	ResetCaptureDescription()
 	ResetId()
+	ResetMessageRetention()
 	ResetNamespaceId()
 	ResetNamespaceName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetResourceGroupName()
+	ResetRetentionDescription()
 	ResetStatus()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -463,6 +468,26 @@ func (j *jsiiProxy_Eventhub) ResourceGroupNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Eventhub) RetentionDescription() EventhubRetentionDescriptionOutputReference {
+	var returns EventhubRetentionDescriptionOutputReference
+	_jsii_.Get(
+		j,
+		"retentionDescription",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Eventhub) RetentionDescriptionInput() *EventhubRetentionDescription {
+	var returns *EventhubRetentionDescription
+	_jsii_.Get(
+		j,
+		"retentionDescriptionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Eventhub) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -534,7 +559,7 @@ func (j *jsiiProxy_Eventhub) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/eventhub azurerm_eventhub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/eventhub azurerm_eventhub} Resource.
 func NewEventhub(scope constructs.Construct, id *string, config *EventhubConfig) Eventhub {
 	_init_.Initialize()
 
@@ -552,7 +577,7 @@ func NewEventhub(scope constructs.Construct, id *string, config *EventhubConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/eventhub azurerm_eventhub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/eventhub azurerm_eventhub} Resource.
 func NewEventhub_Override(e Eventhub, scope constructs.Construct, id *string, config *EventhubConfig) {
 	_init_.Initialize()
 
@@ -1083,6 +1108,17 @@ func (e *jsiiProxy_Eventhub) PutCaptureDescription(value *EventhubCaptureDescrip
 	)
 }
 
+func (e *jsiiProxy_Eventhub) PutRetentionDescription(value *EventhubRetentionDescription) {
+	if err := e.validatePutRetentionDescriptionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putRetentionDescription",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_Eventhub) PutTimeouts(value *EventhubTimeouts) {
 	if err := e.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1106,6 +1142,14 @@ func (e *jsiiProxy_Eventhub) ResetId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Eventhub) ResetMessageRetention() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetMessageRetention",
 		nil, // no parameters
 	)
 }
@@ -1138,6 +1182,14 @@ func (e *jsiiProxy_Eventhub) ResetResourceGroupName() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetResourceGroupName",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Eventhub) ResetRetentionDescription() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRetentionDescription",
 		nil, // no parameters
 	)
 }

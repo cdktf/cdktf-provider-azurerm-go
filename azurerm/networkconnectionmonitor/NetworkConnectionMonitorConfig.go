@@ -24,36 +24,36 @@ type NetworkConnectionMonitorConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// endpoint block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/network_connection_monitor#endpoint NetworkConnectionMonitor#endpoint}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/network_connection_monitor#endpoint NetworkConnectionMonitor#endpoint}
 	Endpoint interface{} `field:"required" json:"endpoint" yaml:"endpoint"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/network_connection_monitor#location NetworkConnectionMonitor#location}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/network_connection_monitor#location NetworkConnectionMonitor#location}.
 	Location *string `field:"required" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/network_connection_monitor#name NetworkConnectionMonitor#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/network_connection_monitor#name NetworkConnectionMonitor#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/network_connection_monitor#network_watcher_id NetworkConnectionMonitor#network_watcher_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/network_connection_monitor#network_watcher_id NetworkConnectionMonitor#network_watcher_id}.
 	NetworkWatcherId *string `field:"required" json:"networkWatcherId" yaml:"networkWatcherId"`
 	// test_configuration block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/network_connection_monitor#test_configuration NetworkConnectionMonitor#test_configuration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/network_connection_monitor#test_configuration NetworkConnectionMonitor#test_configuration}
 	TestConfiguration interface{} `field:"required" json:"testConfiguration" yaml:"testConfiguration"`
 	// test_group block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/network_connection_monitor#test_group NetworkConnectionMonitor#test_group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/network_connection_monitor#test_group NetworkConnectionMonitor#test_group}
 	TestGroup interface{} `field:"required" json:"testGroup" yaml:"testGroup"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/network_connection_monitor#id NetworkConnectionMonitor#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/network_connection_monitor#id NetworkConnectionMonitor#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/network_connection_monitor#notes NetworkConnectionMonitor#notes}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/network_connection_monitor#notes NetworkConnectionMonitor#notes}.
 	Notes *string `field:"optional" json:"notes" yaml:"notes"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/network_connection_monitor#output_workspace_resource_ids NetworkConnectionMonitor#output_workspace_resource_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/network_connection_monitor#output_workspace_resource_ids NetworkConnectionMonitor#output_workspace_resource_ids}.
 	OutputWorkspaceResourceIds *[]*string `field:"optional" json:"outputWorkspaceResourceIds" yaml:"outputWorkspaceResourceIds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/network_connection_monitor#tags NetworkConnectionMonitor#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/network_connection_monitor#tags NetworkConnectionMonitor#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/network_connection_monitor#timeouts NetworkConnectionMonitor#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/network_connection_monitor#timeouts NetworkConnectionMonitor#timeouts}
 	Timeouts *NetworkConnectionMonitorTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

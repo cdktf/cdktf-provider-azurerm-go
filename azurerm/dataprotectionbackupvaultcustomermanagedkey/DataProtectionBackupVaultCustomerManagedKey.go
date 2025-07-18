@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/data_protection_backup_vault_customer_managed_key azurerm_data_protection_backup_vault_customer_managed_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/data_protection_backup_vault_customer_managed_key azurerm_data_protection_backup_vault_customer_managed_key}.
 type DataProtectionBackupVaultCustomerManagedKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_DataProtectionBackupVaultCustomerManagedKey) TimeoutsInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/data_protection_backup_vault_customer_managed_key azurerm_data_protection_backup_vault_customer_managed_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/data_protection_backup_vault_customer_managed_key azurerm_data_protection_backup_vault_customer_managed_key} Resource.
 func NewDataProtectionBackupVaultCustomerManagedKey(scope constructs.Construct, id *string, config *DataProtectionBackupVaultCustomerManagedKeyConfig) DataProtectionBackupVaultCustomerManagedKey {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewDataProtectionBackupVaultCustomerManagedKey(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/data_protection_backup_vault_customer_managed_key azurerm_data_protection_backup_vault_customer_managed_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/data_protection_backup_vault_customer_managed_key azurerm_data_protection_backup_vault_customer_managed_key} Resource.
 func NewDataProtectionBackupVaultCustomerManagedKey_Override(d DataProtectionBackupVaultCustomerManagedKey, scope constructs.Construct, id *string, config *DataProtectionBackupVaultCustomerManagedKeyConfig) {
 	_init_.Initialize()
 

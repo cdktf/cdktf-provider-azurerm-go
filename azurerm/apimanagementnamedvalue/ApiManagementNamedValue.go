@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/api_management_named_value azurerm_api_management_named_value}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/api_management_named_value azurerm_api_management_named_value}.
 type ApiManagementNamedValue interface {
 	cdktf.TerraformResource
 	ApiManagementName() *string
@@ -522,7 +522,7 @@ func (j *jsiiProxy_ApiManagementNamedValue) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/api_management_named_value azurerm_api_management_named_value} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/api_management_named_value azurerm_api_management_named_value} Resource.
 func NewApiManagementNamedValue(scope constructs.Construct, id *string, config *ApiManagementNamedValueConfig) ApiManagementNamedValue {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewApiManagementNamedValue(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/api_management_named_value azurerm_api_management_named_value} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/api_management_named_value azurerm_api_management_named_value} Resource.
 func NewApiManagementNamedValue_Override(a ApiManagementNamedValue, scope constructs.Construct, id *string, config *ApiManagementNamedValueConfig) {
 	_init_.Initialize()
 

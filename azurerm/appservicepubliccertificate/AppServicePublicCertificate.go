@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/app_service_public_certificate azurerm_app_service_public_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/app_service_public_certificate azurerm_app_service_public_certificate}.
 type AppServicePublicCertificate interface {
 	cdktf.TerraformResource
 	AppServiceName() *string
@@ -460,7 +460,7 @@ func (j *jsiiProxy_AppServicePublicCertificate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/app_service_public_certificate azurerm_app_service_public_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/app_service_public_certificate azurerm_app_service_public_certificate} Resource.
 func NewAppServicePublicCertificate(scope constructs.Construct, id *string, config *AppServicePublicCertificateConfig) AppServicePublicCertificate {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewAppServicePublicCertificate(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/app_service_public_certificate azurerm_app_service_public_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/app_service_public_certificate azurerm_app_service_public_certificate} Resource.
 func NewAppServicePublicCertificate_Override(a AppServicePublicCertificate, scope constructs.Construct, id *string, config *AppServicePublicCertificateConfig) {
 	_init_.Initialize()
 

@@ -79,6 +79,10 @@ func (j *jsiiProxy_VpnGatewayConnectionVpnLinkOutputReference) validateSetConnec
 	return nil
 }
 
+func (j *jsiiProxy_VpnGatewayConnectionVpnLinkOutputReference) validateSetDpdTimeoutSecondsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpnGatewayConnectionVpnLinkOutputReference) validateSetEgressNatRuleIdsParameters(val *[]*string) error {
 	return nil
 }

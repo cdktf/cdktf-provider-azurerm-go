@@ -206,6 +206,14 @@ func (j *jsiiProxy_KubernetesFluxConfigurationGitRepositoryOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesFluxConfigurationGitRepositoryOutputReference) validateSetProviderParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesFluxConfigurationGitRepositoryOutputReference) validateSetReferenceTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

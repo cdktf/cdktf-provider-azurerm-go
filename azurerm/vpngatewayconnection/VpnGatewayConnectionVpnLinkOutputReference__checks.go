@@ -264,6 +264,14 @@ func (j *jsiiProxy_VpnGatewayConnectionVpnLinkOutputReference) validateSetConnec
 	return nil
 }
 
+func (j *jsiiProxy_VpnGatewayConnectionVpnLinkOutputReference) validateSetDpdTimeoutSecondsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VpnGatewayConnectionVpnLinkOutputReference) validateSetEgressNatRuleIdsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

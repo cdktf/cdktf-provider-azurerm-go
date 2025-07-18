@@ -79,6 +79,10 @@ func (e *jsiiProxy_Eventhub) validatePutCaptureDescriptionParameters(value *Even
 	return nil
 }
 
+func (e *jsiiProxy_Eventhub) validatePutRetentionDescriptionParameters(value *EventhubRetentionDescription) error {
+	return nil
+}
+
 func (e *jsiiProxy_Eventhub) validatePutTimeoutsParameters(value *EventhubTimeouts) error {
 	return nil
 }

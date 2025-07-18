@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set}.
 type OrchestratedVirtualMachineScaleSet interface {
 	cdktf.TerraformResource
 	AdditionalCapabilities() OrchestratedVirtualMachineScaleSetAdditionalCapabilitiesOutputReference
@@ -88,6 +88,9 @@ type OrchestratedVirtualMachineScaleSet interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NetworkApiVersion() *string
+	SetNetworkApiVersion(val *string)
+	NetworkApiVersionInput() *string
 	NetworkInterface() OrchestratedVirtualMachineScaleSetNetworkInterfaceList
 	NetworkInterfaceInput() interface{}
 	// The tree node.
@@ -237,6 +240,7 @@ type OrchestratedVirtualMachineScaleSet interface {
 	ResetInstances()
 	ResetLicenseType()
 	ResetMaxBidPrice()
+	ResetNetworkApiVersion()
 	ResetNetworkInterface()
 	ResetOsDisk()
 	ResetOsProfile()
@@ -703,6 +707,26 @@ func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) NameInput() *string {
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) NetworkApiVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkApiVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) NetworkApiVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkApiVersionInput",
 		&returns,
 	)
 	return returns
@@ -1229,7 +1253,7 @@ func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set} Resource.
 func NewOrchestratedVirtualMachineScaleSet(scope constructs.Construct, id *string, config *OrchestratedVirtualMachineScaleSetConfig) OrchestratedVirtualMachineScaleSet {
 	_init_.Initialize()
 
@@ -1247,7 +1271,7 @@ func NewOrchestratedVirtualMachineScaleSet(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set} Resource.
 func NewOrchestratedVirtualMachineScaleSet_Override(o OrchestratedVirtualMachineScaleSet, scope constructs.Construct, id *string, config *OrchestratedVirtualMachineScaleSetConfig) {
 	_init_.Initialize()
 
@@ -1424,6 +1448,17 @@ func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet)SetNetworkApiVersion(val *string) {
+	if err := j.validateSetNetworkApiVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkApiVersion",
 		val,
 	)
 }
@@ -2224,6 +2259,14 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) ResetMaxBidPrice() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetMaxBidPrice",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) ResetNetworkApiVersion() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetNetworkApiVersion",
 		nil, // no parameters
 	)
 }

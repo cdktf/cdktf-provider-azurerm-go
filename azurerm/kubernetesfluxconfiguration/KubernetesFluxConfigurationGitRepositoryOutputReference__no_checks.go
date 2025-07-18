@@ -79,6 +79,10 @@ func (j *jsiiProxy_KubernetesFluxConfigurationGitRepositoryOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesFluxConfigurationGitRepositoryOutputReference) validateSetProviderParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesFluxConfigurationGitRepositoryOutputReference) validateSetReferenceTypeParameters(val *string) error {
 	return nil
 }

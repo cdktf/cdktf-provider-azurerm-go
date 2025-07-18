@@ -75,6 +75,10 @@ func (c *jsiiProxy_ContainerAppEnvironment) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAppEnvironment) validatePutIdentityParameters(value *ContainerAppEnvironmentIdentity) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAppEnvironment) validatePutTimeoutsParameters(value *ContainerAppEnvironmentTimeouts) error {
 	return nil
 }

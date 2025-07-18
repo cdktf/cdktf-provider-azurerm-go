@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/container_app_environment azurerm_container_app_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/container_app_environment azurerm_container_app_environment}.
 type ContainerAppEnvironment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -47,6 +47,8 @@ type ContainerAppEnvironment interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	Identity() ContainerAppEnvironmentIdentityOutputReference
+	IdentityInput() *ContainerAppEnvironmentIdentity
 	IdInput() *string
 	InfrastructureResourceGroupName() *string
 	SetInfrastructureResourceGroupName(val *string)
@@ -153,10 +155,12 @@ type ContainerAppEnvironment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutIdentity(value *ContainerAppEnvironmentIdentity)
 	PutTimeouts(value *ContainerAppEnvironmentTimeouts)
 	PutWorkloadProfile(value interface{})
 	ResetDaprApplicationInsightsConnectionString()
 	ResetId()
+	ResetIdentity()
 	ResetInfrastructureResourceGroupName()
 	ResetInfrastructureSubnetId()
 	ResetInternalLoadBalancerEnabled()
@@ -323,6 +327,26 @@ func (j *jsiiProxy_ContainerAppEnvironment) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppEnvironment) Identity() ContainerAppEnvironmentIdentityOutputReference {
+	var returns ContainerAppEnvironmentIdentityOutputReference
+	_jsii_.Get(
+		j,
+		"identity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppEnvironment) IdentityInput() *ContainerAppEnvironmentIdentity {
+	var returns *ContainerAppEnvironmentIdentity
+	_jsii_.Get(
+		j,
+		"identityInput",
 		&returns,
 	)
 	return returns
@@ -709,7 +733,7 @@ func (j *jsiiProxy_ContainerAppEnvironment) ZoneRedundancyEnabledInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
 func NewContainerAppEnvironment(scope constructs.Construct, id *string, config *ContainerAppEnvironmentConfig) ContainerAppEnvironment {
 	_init_.Initialize()
 
@@ -727,7 +751,7 @@ func NewContainerAppEnvironment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
 func NewContainerAppEnvironment_Override(c ContainerAppEnvironment, scope constructs.Construct, id *string, config *ContainerAppEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -1302,6 +1326,17 @@ func (c *jsiiProxy_ContainerAppEnvironment) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (c *jsiiProxy_ContainerAppEnvironment) PutIdentity(value *ContainerAppEnvironmentIdentity) {
+	if err := c.validatePutIdentityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putIdentity",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerAppEnvironment) PutTimeouts(value *ContainerAppEnvironmentTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1336,6 +1371,14 @@ func (c *jsiiProxy_ContainerAppEnvironment) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAppEnvironment) ResetIdentity() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIdentity",
 		nil, // no parameters
 	)
 }

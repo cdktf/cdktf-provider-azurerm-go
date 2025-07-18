@@ -44,6 +44,9 @@ type KubernetesFluxConfigurationGitRepositoryOutputReference interface {
 	LocalAuthReference() *string
 	SetLocalAuthReference(val *string)
 	LocalAuthReferenceInput() *string
+	Provider() *string
+	SetProvider(val *string)
+	ProviderInput() *string
 	ReferenceType() *string
 	SetReferenceType(val *string)
 	ReferenceTypeInput() *string
@@ -101,6 +104,7 @@ type KubernetesFluxConfigurationGitRepositoryOutputReference interface {
 	ResetHttpsKeyBase64()
 	ResetHttpsUser()
 	ResetLocalAuthReference()
+	ResetProvider()
 	ResetSshKnownHostsBase64()
 	ResetSshPrivateKeyBase64()
 	ResetSyncIntervalInSeconds()
@@ -245,6 +249,26 @@ func (j *jsiiProxy_KubernetesFluxConfigurationGitRepositoryOutputReference) Loca
 	_jsii_.Get(
 		j,
 		"localAuthReferenceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesFluxConfigurationGitRepositoryOutputReference) Provider() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesFluxConfigurationGitRepositoryOutputReference) ProviderInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"providerInput",
 		&returns,
 	)
 	return returns
@@ -511,6 +535,17 @@ func (j *jsiiProxy_KubernetesFluxConfigurationGitRepositoryOutputReference)SetLo
 	_jsii_.Set(
 		j,
 		"localAuthReference",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesFluxConfigurationGitRepositoryOutputReference)SetProvider(val *string) {
+	if err := j.validateSetProviderParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provider",
 		val,
 	)
 }
@@ -828,6 +863,14 @@ func (k *jsiiProxy_KubernetesFluxConfigurationGitRepositoryOutputReference) Rese
 	_jsii_.InvokeVoid(
 		k,
 		"resetLocalAuthReference",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesFluxConfigurationGitRepositoryOutputReference) ResetProvider() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetProvider",
 		nil, // no parameters
 	)
 }

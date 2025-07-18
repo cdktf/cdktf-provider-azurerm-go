@@ -76,6 +76,7 @@ type MssqlJobStepOutputTargetOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetJobCredentialId()
 	ResetSchemaName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -553,6 +554,14 @@ func (m *jsiiProxy_MssqlJobStepOutputTargetOutputReference) InterpolationForAttr
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MssqlJobStepOutputTargetOutputReference) ResetJobCredentialId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetJobCredentialId",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MssqlJobStepOutputTargetOutputReference) ResetSchemaName() {

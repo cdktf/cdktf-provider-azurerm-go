@@ -55,6 +55,14 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetNetworkInterfaceOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_OrchestratedVirtualMachineScaleSetNetworkInterfaceOutputReference) validateSetAuxiliaryModeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OrchestratedVirtualMachineScaleSetNetworkInterfaceOutputReference) validateSetAuxiliarySkuParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OrchestratedVirtualMachineScaleSetNetworkInterfaceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

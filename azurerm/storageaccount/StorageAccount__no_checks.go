@@ -235,6 +235,10 @@ func (j *jsiiProxy_StorageAccount) validateSetNfsv3EnabledParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_StorageAccount) validateSetProvisionedBillingModelVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageAccount) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

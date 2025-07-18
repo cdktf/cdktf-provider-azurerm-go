@@ -53,6 +53,9 @@ type NetappVolumeExportPolicyRuleOutputReference interface {
 	Kerberos5ReadWriteEnabled() interface{}
 	SetKerberos5ReadWriteEnabled(val interface{})
 	Kerberos5ReadWriteEnabledInput() interface{}
+	Protocol() *[]*string
+	SetProtocol(val *[]*string)
+	ProtocolInput() *[]*string
 	ProtocolsEnabled() *[]*string
 	SetProtocolsEnabled(val *[]*string)
 	ProtocolsEnabledInput() *[]*string
@@ -106,6 +109,7 @@ type NetappVolumeExportPolicyRuleOutputReference interface {
 	ResetKerberos5PReadWriteEnabled()
 	ResetKerberos5ReadOnlyEnabled()
 	ResetKerberos5ReadWriteEnabled()
+	ResetProtocol()
 	ResetProtocolsEnabled()
 	ResetRootAccessEnabled()
 	ResetUnixReadOnly()
@@ -310,6 +314,26 @@ func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) Kerberos5ReadWri
 	_jsii_.Get(
 		j,
 		"kerberos5ReadWriteEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) Protocol() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"protocol",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) ProtocolInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"protocolInput",
 		&returns,
 	)
 	return returns
@@ -569,6 +593,17 @@ func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference)SetKerberos5ReadW
 	_jsii_.Set(
 		j,
 		"kerberos5ReadWriteEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference)SetProtocol(val *[]*string) {
+	if err := j.validateSetProtocolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"protocol",
 		val,
 	)
 }
@@ -880,6 +915,14 @@ func (n *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) ResetKerberos5Re
 	_jsii_.InvokeVoid(
 		n,
 		"resetKerberos5ReadWriteEnabled",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) ResetProtocol() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetProtocol",
 		nil, // no parameters
 	)
 }

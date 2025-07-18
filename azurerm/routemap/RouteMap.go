@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/route_map azurerm_route_map}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/route_map azurerm_route_map}.
 type RouteMap interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_RouteMap) VirtualHubIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/route_map azurerm_route_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/route_map azurerm_route_map} Resource.
 func NewRouteMap(scope constructs.Construct, id *string, config *RouteMapConfig) RouteMap {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewRouteMap(scope constructs.Construct, id *string, config *RouteMapConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/route_map azurerm_route_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/route_map azurerm_route_map} Resource.
 func NewRouteMap_Override(r RouteMap, scope constructs.Construct, id *string, config *RouteMapConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/storage_account azurerm_storage_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/storage_account azurerm_storage_account}.
 type StorageAccount interface {
 	cdktf.TerraformResource
 	AccessTier() *string
@@ -159,6 +159,9 @@ type StorageAccount interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProvisionedBillingModelVersion() *string
+	SetProvisionedBillingModelVersion(val *string)
+	ProvisionedBillingModelVersionInput() *string
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -322,6 +325,7 @@ type StorageAccount interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProvisionedBillingModelVersion()
 	ResetPublicNetworkAccessEnabled()
 	ResetQueueEncryptionKeyType()
 	ResetQueueProperties()
@@ -1362,6 +1366,26 @@ func (j *jsiiProxy_StorageAccount) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_StorageAccount) ProvisionedBillingModelVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"provisionedBillingModelVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) ProvisionedBillingModelVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"provisionedBillingModelVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageAccount) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -2033,7 +2057,7 @@ func (j *jsiiProxy_StorageAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/storage_account azurerm_storage_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/storage_account azurerm_storage_account} Resource.
 func NewStorageAccount(scope constructs.Construct, id *string, config *StorageAccountConfig) StorageAccount {
 	_init_.Initialize()
 
@@ -2051,7 +2075,7 @@ func NewStorageAccount(scope constructs.Construct, id *string, config *StorageAc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/storage_account azurerm_storage_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/storage_account azurerm_storage_account} Resource.
 func NewStorageAccount_Override(s StorageAccount, scope constructs.Construct, id *string, config *StorageAccountConfig) {
 	_init_.Initialize()
 
@@ -2335,6 +2359,17 @@ func (j *jsiiProxy_StorageAccount)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageAccount)SetProvisionedBillingModelVersion(val *string) {
+	if err := j.validateSetProvisionedBillingModelVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisionedBillingModelVersion",
 		val,
 	)
 }
@@ -3111,6 +3146,14 @@ func (s *jsiiProxy_StorageAccount) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageAccount) ResetProvisionedBillingModelVersion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetProvisionedBillingModelVersion",
 		nil, // no parameters
 	)
 }

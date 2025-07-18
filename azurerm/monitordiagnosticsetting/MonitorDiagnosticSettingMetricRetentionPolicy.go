@@ -5,9 +5,9 @@ package monitordiagnosticsetting
 
 
 type MonitorDiagnosticSettingMetricRetentionPolicy struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/monitor_diagnostic_setting#enabled MonitorDiagnosticSetting#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/monitor_diagnostic_setting#enabled MonitorDiagnosticSetting#enabled}.
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/monitor_diagnostic_setting#days MonitorDiagnosticSetting#days}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/monitor_diagnostic_setting#days MonitorDiagnosticSetting#days}.
 	Days *float64 `field:"optional" json:"days" yaml:"days"`
 }
 

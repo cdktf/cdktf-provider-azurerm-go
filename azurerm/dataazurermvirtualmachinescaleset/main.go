@@ -419,6 +419,8 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermVirtualMachineScaleSet.DataAzurermVirtualMachineScaleSetNetworkInterfaceOutputReference",
 		reflect.TypeOf((*DataAzurermVirtualMachineScaleSetNetworkInterfaceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "auxiliaryMode", GoGetter: "AuxiliaryMode"},
+			_jsii_.MemberProperty{JsiiProperty: "auxiliarySku", GoGetter: "AuxiliarySku"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},

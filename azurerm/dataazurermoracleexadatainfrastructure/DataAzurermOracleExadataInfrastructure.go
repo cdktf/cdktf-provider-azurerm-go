@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/data-sources/oracle_exadata_infrastructure azurerm_oracle_exadata_infrastructure}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/data-sources/oracle_exadata_infrastructure azurerm_oracle_exadata_infrastructure}.
 type DataAzurermOracleExadataInfrastructure interface {
 	cdktf.TerraformDataSource
 	ActivatedStorageCount() *float64
@@ -731,7 +731,7 @@ func (j *jsiiProxy_DataAzurermOracleExadataInfrastructure) Zones() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/data-sources/oracle_exadata_infrastructure azurerm_oracle_exadata_infrastructure} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/data-sources/oracle_exadata_infrastructure azurerm_oracle_exadata_infrastructure} Data Source.
 func NewDataAzurermOracleExadataInfrastructure(scope constructs.Construct, id *string, config *DataAzurermOracleExadataInfrastructureConfig) DataAzurermOracleExadataInfrastructure {
 	_init_.Initialize()
 
@@ -749,7 +749,7 @@ func NewDataAzurermOracleExadataInfrastructure(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/data-sources/oracle_exadata_infrastructure azurerm_oracle_exadata_infrastructure} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/data-sources/oracle_exadata_infrastructure azurerm_oracle_exadata_infrastructure} Data Source.
 func NewDataAzurermOracleExadataInfrastructure_Override(d DataAzurermOracleExadataInfrastructure, scope constructs.Construct, id *string, config *DataAzurermOracleExadataInfrastructureConfig) {
 	_init_.Initialize()
 

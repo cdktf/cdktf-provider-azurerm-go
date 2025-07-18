@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance}.
 type MssqlManagedInstance interface {
 	cdktf.TerraformResource
 	AdministratorLogin() *string
@@ -948,7 +948,7 @@ func (j *jsiiProxy_MssqlManagedInstance) ZoneRedundantEnabledInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance} Resource.
 func NewMssqlManagedInstance(scope constructs.Construct, id *string, config *MssqlManagedInstanceConfig) MssqlManagedInstance {
 	_init_.Initialize()
 
@@ -966,7 +966,7 @@ func NewMssqlManagedInstance(scope constructs.Construct, id *string, config *Mss
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.36.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance} Resource.
 func NewMssqlManagedInstance_Override(m MssqlManagedInstance, scope constructs.Construct, id *string, config *MssqlManagedInstanceConfig) {
 	_init_.Initialize()
 

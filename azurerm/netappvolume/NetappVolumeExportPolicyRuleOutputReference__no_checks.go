@@ -91,6 +91,10 @@ func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) validateSetKerbe
 	return nil
 }
 
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) validateSetProtocolParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) validateSetProtocolsEnabledParameters(val *[]*string) error {
 	return nil
 }

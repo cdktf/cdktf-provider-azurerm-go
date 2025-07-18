@@ -39,6 +39,9 @@ type VpnGatewayConnectionVpnLinkOutputReference interface {
 	CreationStack() *[]*string
 	CustomBgpAddress() VpnGatewayConnectionVpnLinkCustomBgpAddressList
 	CustomBgpAddressInput() interface{}
+	DpdTimeoutSeconds() *float64
+	SetDpdTimeoutSeconds(val *float64)
+	DpdTimeoutSecondsInput() *float64
 	EgressNatRuleIds() *[]*string
 	SetEgressNatRuleIds(val *[]*string)
 	EgressNatRuleIdsInput() *[]*string
@@ -113,6 +116,7 @@ type VpnGatewayConnectionVpnLinkOutputReference interface {
 	ResetBgpEnabled()
 	ResetConnectionMode()
 	ResetCustomBgpAddress()
+	ResetDpdTimeoutSeconds()
 	ResetEgressNatRuleIds()
 	ResetIngressNatRuleIds()
 	ResetIpsecPolicy()
@@ -242,6 +246,26 @@ func (j *jsiiProxy_VpnGatewayConnectionVpnLinkOutputReference) CustomBgpAddressI
 	_jsii_.Get(
 		j,
 		"customBgpAddressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpnGatewayConnectionVpnLinkOutputReference) DpdTimeoutSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dpdTimeoutSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpnGatewayConnectionVpnLinkOutputReference) DpdTimeoutSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dpdTimeoutSecondsInput",
 		&returns,
 	)
 	return returns
@@ -586,6 +610,17 @@ func (j *jsiiProxy_VpnGatewayConnectionVpnLinkOutputReference)SetConnectionMode(
 	_jsii_.Set(
 		j,
 		"connectionMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpnGatewayConnectionVpnLinkOutputReference)SetDpdTimeoutSeconds(val *float64) {
+	if err := j.validateSetDpdTimeoutSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dpdTimeoutSeconds",
 		val,
 	)
 }
@@ -969,6 +1004,14 @@ func (v *jsiiProxy_VpnGatewayConnectionVpnLinkOutputReference) ResetCustomBgpAdd
 	_jsii_.InvokeVoid(
 		v,
 		"resetCustomBgpAddress",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpnGatewayConnectionVpnLinkOutputReference) ResetDpdTimeoutSeconds() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetDpdTimeoutSeconds",
 		nil, // no parameters
 	)
 }
