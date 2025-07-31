@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/dynatrace_monitor azurerm_dynatrace_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/dynatrace_monitor azurerm_dynatrace_monitor}.
 type DynatraceMonitor interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,8 @@ type DynatraceMonitor interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnvironmentProperties() DynatraceMonitorEnvironmentPropertiesList
+	EnvironmentPropertiesInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -133,10 +135,12 @@ type DynatraceMonitor interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEnvironmentProperties(value interface{})
 	PutIdentity(value *DynatraceMonitorIdentity)
 	PutPlan(value *DynatraceMonitorPlan)
 	PutTimeouts(value *DynatraceMonitorTimeouts)
 	PutUser(value *DynatraceMonitorUser)
+	ResetEnvironmentProperties()
 	ResetId()
 	ResetMonitoringEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -207,6 +211,26 @@ func (j *jsiiProxy_DynatraceMonitor) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynatraceMonitor) EnvironmentProperties() DynatraceMonitorEnvironmentPropertiesList {
+	var returns DynatraceMonitorEnvironmentPropertiesList
+	_jsii_.Get(
+		j,
+		"environmentProperties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynatraceMonitor) EnvironmentPropertiesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"environmentPropertiesInput",
 		&returns,
 	)
 	return returns
@@ -543,7 +567,7 @@ func (j *jsiiProxy_DynatraceMonitor) UserInput() *DynatraceMonitorUser {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/dynatrace_monitor azurerm_dynatrace_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/dynatrace_monitor azurerm_dynatrace_monitor} Resource.
 func NewDynatraceMonitor(scope constructs.Construct, id *string, config *DynatraceMonitorConfig) DynatraceMonitor {
 	_init_.Initialize()
 
@@ -561,7 +585,7 @@ func NewDynatraceMonitor(scope constructs.Construct, id *string, config *Dynatra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/dynatrace_monitor azurerm_dynatrace_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/dynatrace_monitor azurerm_dynatrace_monitor} Resource.
 func NewDynatraceMonitor_Override(d DynatraceMonitor, scope constructs.Construct, id *string, config *DynatraceMonitorConfig) {
 	_init_.Initialize()
 
@@ -1070,6 +1094,17 @@ func (d *jsiiProxy_DynatraceMonitor) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_DynatraceMonitor) PutEnvironmentProperties(value interface{}) {
+	if err := d.validatePutEnvironmentPropertiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putEnvironmentProperties",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DynatraceMonitor) PutIdentity(value *DynatraceMonitorIdentity) {
 	if err := d.validatePutIdentityParameters(value); err != nil {
 		panic(err)
@@ -1111,6 +1146,14 @@ func (d *jsiiProxy_DynatraceMonitor) PutUser(value *DynatraceMonitorUser) {
 		d,
 		"putUser",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DynatraceMonitor) ResetEnvironmentProperties() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEnvironmentProperties",
+		nil, // no parameters
 	)
 }
 

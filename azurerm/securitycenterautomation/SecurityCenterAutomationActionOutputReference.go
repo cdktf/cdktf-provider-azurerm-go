@@ -78,6 +78,7 @@ type SecurityCenterAutomationActionOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetConnectionString()
 	ResetTriggerUrl()
+	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -568,6 +569,14 @@ func (s *jsiiProxy_SecurityCenterAutomationActionOutputReference) ResetTriggerUr
 	_jsii_.InvokeVoid(
 		s,
 		"resetTriggerUrl",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityCenterAutomationActionOutputReference) ResetType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetType",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/email_communication_service_domain_sender_username azurerm_email_communication_service_domain_sender_username}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/email_communication_service_domain_sender_username azurerm_email_communication_service_domain_sender_username}.
 type EmailCommunicationServiceDomainSenderUsername interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_EmailCommunicationServiceDomainSenderUsername) TimeoutsInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/email_communication_service_domain_sender_username azurerm_email_communication_service_domain_sender_username} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/email_communication_service_domain_sender_username azurerm_email_communication_service_domain_sender_username} Resource.
 func NewEmailCommunicationServiceDomainSenderUsername(scope constructs.Construct, id *string, config *EmailCommunicationServiceDomainSenderUsernameConfig) EmailCommunicationServiceDomainSenderUsername {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewEmailCommunicationServiceDomainSenderUsername(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/email_communication_service_domain_sender_username azurerm_email_communication_service_domain_sender_username} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/email_communication_service_domain_sender_username azurerm_email_communication_service_domain_sender_username} Resource.
 func NewEmailCommunicationServiceDomainSenderUsername_Override(e EmailCommunicationServiceDomainSenderUsername, scope constructs.Construct, id *string, config *EmailCommunicationServiceDomainSenderUsernameConfig) {
 	_init_.Initialize()
 

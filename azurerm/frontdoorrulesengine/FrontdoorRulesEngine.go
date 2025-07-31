@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/frontdoor_rules_engine azurerm_frontdoor_rules_engine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/frontdoor_rules_engine azurerm_frontdoor_rules_engine}.
 type FrontdoorRulesEngine interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_FrontdoorRulesEngine) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/frontdoor_rules_engine azurerm_frontdoor_rules_engine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/frontdoor_rules_engine azurerm_frontdoor_rules_engine} Resource.
 func NewFrontdoorRulesEngine(scope constructs.Construct, id *string, config *FrontdoorRulesEngineConfig) FrontdoorRulesEngine {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewFrontdoorRulesEngine(scope constructs.Construct, id *string, config *Fro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/frontdoor_rules_engine azurerm_frontdoor_rules_engine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/frontdoor_rules_engine azurerm_frontdoor_rules_engine} Resource.
 func NewFrontdoorRulesEngine_Override(f FrontdoorRulesEngine, scope constructs.Construct, id *string, config *FrontdoorRulesEngineConfig) {
 	_init_.Initialize()
 

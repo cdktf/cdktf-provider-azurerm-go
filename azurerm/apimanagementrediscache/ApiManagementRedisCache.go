@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/api_management_redis_cache azurerm_api_management_redis_cache}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/api_management_redis_cache azurerm_api_management_redis_cache}.
 type ApiManagementRedisCache interface {
 	cdktf.TerraformResource
 	ApiManagementId() *string
@@ -475,7 +475,7 @@ func (j *jsiiProxy_ApiManagementRedisCache) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/api_management_redis_cache azurerm_api_management_redis_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/api_management_redis_cache azurerm_api_management_redis_cache} Resource.
 func NewApiManagementRedisCache(scope constructs.Construct, id *string, config *ApiManagementRedisCacheConfig) ApiManagementRedisCache {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewApiManagementRedisCache(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/api_management_redis_cache azurerm_api_management_redis_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/api_management_redis_cache azurerm_api_management_redis_cache} Resource.
 func NewApiManagementRedisCache_Override(a ApiManagementRedisCache, scope constructs.Construct, id *string, config *ApiManagementRedisCacheConfig) {
 	_init_.Initialize()
 

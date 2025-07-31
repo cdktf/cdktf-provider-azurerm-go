@@ -5,7 +5,7 @@ package dataazurermpolicydefinitionbuiltin
 
 
 type DataAzurermPolicyDefinitionBuiltInTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/data-sources/policy_definition_built_in#read DataAzurermPolicyDefinitionBuiltIn#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/data-sources/policy_definition_built_in#read DataAzurermPolicyDefinitionBuiltIn#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

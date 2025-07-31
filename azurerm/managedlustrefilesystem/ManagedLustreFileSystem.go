@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/managed_lustre_file_system azurerm_managed_lustre_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/managed_lustre_file_system azurerm_managed_lustre_file_system}.
 type ManagedLustreFileSystem interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -76,6 +76,8 @@ type ManagedLustreFileSystem interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	RootSquash() ManagedLustreFileSystemRootSquashOutputReference
+	RootSquashInput() *ManagedLustreFileSystemRootSquash
 	SkuName() *string
 	SetSkuName(val *string)
 	SkuNameInput() *string
@@ -146,6 +148,7 @@ type ManagedLustreFileSystem interface {
 	PutHsmSetting(value *ManagedLustreFileSystemHsmSetting)
 	PutIdentity(value *ManagedLustreFileSystemIdentity)
 	PutMaintenanceWindow(value *ManagedLustreFileSystemMaintenanceWindow)
+	PutRootSquash(value *ManagedLustreFileSystemRootSquash)
 	PutTimeouts(value *ManagedLustreFileSystemTimeouts)
 	ResetEncryptionKey()
 	ResetHsmSetting()
@@ -154,6 +157,7 @@ type ManagedLustreFileSystem interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRootSquash()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -474,6 +478,26 @@ func (j *jsiiProxy_ManagedLustreFileSystem) ResourceGroupNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ManagedLustreFileSystem) RootSquash() ManagedLustreFileSystemRootSquashOutputReference {
+	var returns ManagedLustreFileSystemRootSquashOutputReference
+	_jsii_.Get(
+		j,
+		"rootSquash",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedLustreFileSystem) RootSquashInput() *ManagedLustreFileSystemRootSquash {
+	var returns *ManagedLustreFileSystemRootSquash
+	_jsii_.Get(
+		j,
+		"rootSquashInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ManagedLustreFileSystem) SkuName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -625,7 +649,7 @@ func (j *jsiiProxy_ManagedLustreFileSystem) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/managed_lustre_file_system azurerm_managed_lustre_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/managed_lustre_file_system azurerm_managed_lustre_file_system} Resource.
 func NewManagedLustreFileSystem(scope constructs.Construct, id *string, config *ManagedLustreFileSystemConfig) ManagedLustreFileSystem {
 	_init_.Initialize()
 
@@ -643,7 +667,7 @@ func NewManagedLustreFileSystem(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/managed_lustre_file_system azurerm_managed_lustre_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/managed_lustre_file_system azurerm_managed_lustre_file_system} Resource.
 func NewManagedLustreFileSystem_Override(m ManagedLustreFileSystem, scope constructs.Construct, id *string, config *ManagedLustreFileSystemConfig) {
 	_init_.Initialize()
 
@@ -1218,6 +1242,17 @@ func (m *jsiiProxy_ManagedLustreFileSystem) PutMaintenanceWindow(value *ManagedL
 	)
 }
 
+func (m *jsiiProxy_ManagedLustreFileSystem) PutRootSquash(value *ManagedLustreFileSystemRootSquash) {
+	if err := m.validatePutRootSquashParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putRootSquash",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_ManagedLustreFileSystem) PutTimeouts(value *ManagedLustreFileSystemTimeouts) {
 	if err := m.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1265,6 +1300,14 @@ func (m *jsiiProxy_ManagedLustreFileSystem) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ManagedLustreFileSystem) ResetRootSquash() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRootSquash",
 		nil, // no parameters
 	)
 }

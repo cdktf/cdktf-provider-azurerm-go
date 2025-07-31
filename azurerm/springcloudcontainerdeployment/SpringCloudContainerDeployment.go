@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/spring_cloud_container_deployment azurerm_spring_cloud_container_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/spring_cloud_container_deployment azurerm_spring_cloud_container_deployment}.
 type SpringCloudContainerDeployment interface {
 	cdktf.TerraformResource
 	AddonJson() *string
@@ -618,7 +618,7 @@ func (j *jsiiProxy_SpringCloudContainerDeployment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/spring_cloud_container_deployment azurerm_spring_cloud_container_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/spring_cloud_container_deployment azurerm_spring_cloud_container_deployment} Resource.
 func NewSpringCloudContainerDeployment(scope constructs.Construct, id *string, config *SpringCloudContainerDeploymentConfig) SpringCloudContainerDeployment {
 	_init_.Initialize()
 
@@ -636,7 +636,7 @@ func NewSpringCloudContainerDeployment(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/spring_cloud_container_deployment azurerm_spring_cloud_container_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/spring_cloud_container_deployment azurerm_spring_cloud_container_deployment} Resource.
 func NewSpringCloudContainerDeployment_Override(s SpringCloudContainerDeployment, scope constructs.Construct, id *string, config *SpringCloudContainerDeploymentConfig) {
 	_init_.Initialize()
 

@@ -5,11 +5,11 @@ package sentinelmetadata
 
 
 type SentinelMetadataAuthor struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/sentinel_metadata#email SentinelMetadata#email}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/sentinel_metadata#email SentinelMetadata#email}.
 	Email *string `field:"optional" json:"email" yaml:"email"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/sentinel_metadata#link SentinelMetadata#link}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/sentinel_metadata#link SentinelMetadata#link}.
 	Link *string `field:"optional" json:"link" yaml:"link"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/sentinel_metadata#name SentinelMetadata#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/sentinel_metadata#name SentinelMetadata#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

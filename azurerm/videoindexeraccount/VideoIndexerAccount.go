@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/video_indexer_account azurerm_video_indexer_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/video_indexer_account azurerm_video_indexer_account}.
 type VideoIndexerAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -64,6 +64,9 @@ type VideoIndexerAccount interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicNetworkAccess() *string
+	SetPublicNetworkAccess(val *string)
+	PublicNetworkAccessInput() *string
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceGroupName() *string
@@ -132,6 +135,7 @@ type VideoIndexerAccount interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPublicNetworkAccess()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -352,6 +356,26 @@ func (j *jsiiProxy_VideoIndexerAccount) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VideoIndexerAccount) PublicNetworkAccess() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicNetworkAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VideoIndexerAccount) PublicNetworkAccessInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VideoIndexerAccount) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -473,7 +497,7 @@ func (j *jsiiProxy_VideoIndexerAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/video_indexer_account azurerm_video_indexer_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/video_indexer_account azurerm_video_indexer_account} Resource.
 func NewVideoIndexerAccount(scope constructs.Construct, id *string, config *VideoIndexerAccountConfig) VideoIndexerAccount {
 	_init_.Initialize()
 
@@ -491,7 +515,7 @@ func NewVideoIndexerAccount(scope constructs.Construct, id *string, config *Vide
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/video_indexer_account azurerm_video_indexer_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/video_indexer_account azurerm_video_indexer_account} Resource.
 func NewVideoIndexerAccount_Override(v VideoIndexerAccount, scope constructs.Construct, id *string, config *VideoIndexerAccountConfig) {
 	_init_.Initialize()
 
@@ -599,6 +623,17 @@ func (j *jsiiProxy_VideoIndexerAccount)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VideoIndexerAccount)SetPublicNetworkAccess(val *string) {
+	if err := j.validateSetPublicNetworkAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publicNetworkAccess",
 		val,
 	)
 }
@@ -1023,6 +1058,14 @@ func (v *jsiiProxy_VideoIndexerAccount) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VideoIndexerAccount) ResetPublicNetworkAccess() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetPublicNetworkAccess",
 		nil, // no parameters
 	)
 }

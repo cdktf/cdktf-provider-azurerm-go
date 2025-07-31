@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/dev_center_project_pool azurerm_dev_center_project_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/dev_center_project_pool azurerm_dev_center_project_pool}.
 type DevCenterProjectPool interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,9 @@ type DevCenterProjectPool interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	ManagedVirtualNetworkRegions() *[]*string
+	SetManagedVirtualNetworkRegions(val *[]*string)
+	ManagedVirtualNetworkRegionsInput() *[]*string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -135,6 +138,7 @@ type DevCenterProjectPool interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DevCenterProjectPoolTimeouts)
 	ResetId()
+	ResetManagedVirtualNetworkRegions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -369,6 +373,26 @@ func (j *jsiiProxy_DevCenterProjectPool) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DevCenterProjectPool) ManagedVirtualNetworkRegions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"managedVirtualNetworkRegions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevCenterProjectPool) ManagedVirtualNetworkRegionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"managedVirtualNetworkRegionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DevCenterProjectPool) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -520,7 +544,7 @@ func (j *jsiiProxy_DevCenterProjectPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/dev_center_project_pool azurerm_dev_center_project_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/dev_center_project_pool azurerm_dev_center_project_pool} Resource.
 func NewDevCenterProjectPool(scope constructs.Construct, id *string, config *DevCenterProjectPoolConfig) DevCenterProjectPool {
 	_init_.Initialize()
 
@@ -538,7 +562,7 @@ func NewDevCenterProjectPool(scope constructs.Construct, id *string, config *Dev
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/dev_center_project_pool azurerm_dev_center_project_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/dev_center_project_pool azurerm_dev_center_project_pool} Resource.
 func NewDevCenterProjectPool_Override(d DevCenterProjectPool, scope constructs.Construct, id *string, config *DevCenterProjectPoolConfig) {
 	_init_.Initialize()
 
@@ -660,6 +684,17 @@ func (j *jsiiProxy_DevCenterProjectPool)SetLocation(val *string) {
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevCenterProjectPool)SetManagedVirtualNetworkRegions(val *[]*string) {
+	if err := j.validateSetManagedVirtualNetworkRegionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedVirtualNetworkRegions",
 		val,
 	)
 }
@@ -1084,6 +1119,14 @@ func (d *jsiiProxy_DevCenterProjectPool) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevCenterProjectPool) ResetManagedVirtualNetworkRegions() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetManagedVirtualNetworkRegions",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster}.
 type OracleCloudVmCluster interface {
 	cdktf.TerraformResource
 	BackupSubnetCidr() *string
@@ -63,6 +63,8 @@ type OracleCloudVmCluster interface {
 	Domain() *string
 	SetDomain(val *string)
 	DomainInput() *string
+	FileSystemConfiguration() OracleCloudVmClusterFileSystemConfigurationList
+	FileSystemConfigurationInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -198,6 +200,7 @@ type OracleCloudVmCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDataCollectionOptions(value *OracleCloudVmClusterDataCollectionOptions)
+	PutFileSystemConfiguration(value interface{})
 	PutTimeouts(value *OracleCloudVmClusterTimeouts)
 	ResetBackupSubnetCidr()
 	ResetClusterName()
@@ -206,6 +209,7 @@ type OracleCloudVmCluster interface {
 	ResetDataStorageSizeInTbs()
 	ResetDbNodeStorageSizeInGbs()
 	ResetDomain()
+	ResetFileSystemConfiguration()
 	ResetId()
 	ResetLocalBackupEnabled()
 	ResetMemorySizeInGbs()
@@ -503,6 +507,26 @@ func (j *jsiiProxy_OracleCloudVmCluster) DomainInput() *string {
 	_jsii_.Get(
 		j,
 		"domainInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OracleCloudVmCluster) FileSystemConfiguration() OracleCloudVmClusterFileSystemConfigurationList {
+	var returns OracleCloudVmClusterFileSystemConfigurationList
+	_jsii_.Get(
+		j,
+		"fileSystemConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OracleCloudVmCluster) FileSystemConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fileSystemConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -1039,7 +1063,7 @@ func (j *jsiiProxy_OracleCloudVmCluster) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster} Resource.
 func NewOracleCloudVmCluster(scope constructs.Construct, id *string, config *OracleCloudVmClusterConfig) OracleCloudVmCluster {
 	_init_.Initialize()
 
@@ -1057,7 +1081,7 @@ func NewOracleCloudVmCluster(scope constructs.Construct, id *string, config *Ora
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster} Resource.
 func NewOracleCloudVmCluster_Override(o OracleCloudVmCluster, scope constructs.Construct, id *string, config *OracleCloudVmClusterConfig) {
 	_init_.Initialize()
 
@@ -1819,6 +1843,17 @@ func (o *jsiiProxy_OracleCloudVmCluster) PutDataCollectionOptions(value *OracleC
 	)
 }
 
+func (o *jsiiProxy_OracleCloudVmCluster) PutFileSystemConfiguration(value interface{}) {
+	if err := o.validatePutFileSystemConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putFileSystemConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OracleCloudVmCluster) PutTimeouts(value *OracleCloudVmClusterTimeouts) {
 	if err := o.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1882,6 +1917,14 @@ func (o *jsiiProxy_OracleCloudVmCluster) ResetDomain() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetDomain",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OracleCloudVmCluster) ResetFileSystemConfiguration() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetFileSystemConfiguration",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/log_analytics_cluster_customer_managed_key azurerm_log_analytics_cluster_customer_managed_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/log_analytics_cluster_customer_managed_key azurerm_log_analytics_cluster_customer_managed_key}.
 type LogAnalyticsClusterCustomerManagedKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_LogAnalyticsClusterCustomerManagedKey) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/log_analytics_cluster_customer_managed_key azurerm_log_analytics_cluster_customer_managed_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/log_analytics_cluster_customer_managed_key azurerm_log_analytics_cluster_customer_managed_key} Resource.
 func NewLogAnalyticsClusterCustomerManagedKey(scope constructs.Construct, id *string, config *LogAnalyticsClusterCustomerManagedKeyConfig) LogAnalyticsClusterCustomerManagedKey {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewLogAnalyticsClusterCustomerManagedKey(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/log_analytics_cluster_customer_managed_key azurerm_log_analytics_cluster_customer_managed_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/log_analytics_cluster_customer_managed_key azurerm_log_analytics_cluster_customer_managed_key} Resource.
 func NewLogAnalyticsClusterCustomerManagedKey_Override(l LogAnalyticsClusterCustomerManagedKey, scope constructs.Construct, id *string, config *LogAnalyticsClusterCustomerManagedKeyConfig) {
 	_init_.Initialize()
 

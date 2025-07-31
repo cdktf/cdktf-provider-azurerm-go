@@ -238,6 +238,17 @@ func (s *jsiiProxy_Subnet) validatePutDelegationParameters(value interface{}) er
 	return nil
 }
 
+func (s *jsiiProxy_Subnet) validatePutIpAddressPoolParameters(value *SubnetIpAddressPool) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_Subnet) validatePutTimeoutsParameters(value *SubnetTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

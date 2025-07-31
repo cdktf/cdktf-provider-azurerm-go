@@ -131,6 +131,10 @@ func (j *jsiiProxy_DevCenterProjectPool) validateSetLocationParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_DevCenterProjectPool) validateSetManagedVirtualNetworkRegionsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevCenterProjectPool) validateSetNameParameters(val *string) error {
 	return nil
 }

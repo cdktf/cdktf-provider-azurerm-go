@@ -79,6 +79,10 @@ func (o *jsiiProxy_OracleCloudVmCluster) validatePutDataCollectionOptionsParamet
 	return nil
 }
 
+func (o *jsiiProxy_OracleCloudVmCluster) validatePutFileSystemConfigurationParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OracleCloudVmCluster) validatePutTimeoutsParameters(value *OracleCloudVmClusterTimeouts) error {
 	return nil
 }

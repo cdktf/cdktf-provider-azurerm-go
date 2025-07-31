@@ -91,6 +91,10 @@ func (m *jsiiProxy_ManagedLustreFileSystem) validatePutMaintenanceWindowParamete
 	return nil
 }
 
+func (m *jsiiProxy_ManagedLustreFileSystem) validatePutRootSquashParameters(value *ManagedLustreFileSystemRootSquash) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedLustreFileSystem) validatePutTimeoutsParameters(value *ManagedLustreFileSystemTimeouts) error {
 	return nil
 }

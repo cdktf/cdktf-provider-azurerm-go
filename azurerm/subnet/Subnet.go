@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/subnet azurerm_subnet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/subnet azurerm_subnet}.
 type Subnet interface {
 	cdktf.TerraformResource
 	AddressPrefixes() *[]*string
@@ -50,6 +50,8 @@ type Subnet interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpAddressPool() SubnetIpAddressPoolOutputReference
+	IpAddressPoolInput() *SubnetIpAddressPool
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -139,10 +141,13 @@ type Subnet interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDelegation(value interface{})
+	PutIpAddressPool(value *SubnetIpAddressPool)
 	PutTimeouts(value *SubnetTimeouts)
+	ResetAddressPrefixes()
 	ResetDefaultOutboundAccessEnabled()
 	ResetDelegation()
 	ResetId()
+	ResetIpAddressPool()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -324,6 +329,26 @@ func (j *jsiiProxy_Subnet) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Subnet) IpAddressPool() SubnetIpAddressPoolOutputReference {
+	var returns SubnetIpAddressPoolOutputReference
+	_jsii_.Get(
+		j,
+		"ipAddressPool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Subnet) IpAddressPoolInput() *SubnetIpAddressPool {
+	var returns *SubnetIpAddressPool
+	_jsii_.Get(
+		j,
+		"ipAddressPoolInput",
 		&returns,
 	)
 	return returns
@@ -570,7 +595,7 @@ func (j *jsiiProxy_Subnet) VirtualNetworkNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/subnet azurerm_subnet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/subnet azurerm_subnet} Resource.
 func NewSubnet(scope constructs.Construct, id *string, config *SubnetConfig) Subnet {
 	_init_.Initialize()
 
@@ -588,7 +613,7 @@ func NewSubnet(scope constructs.Construct, id *string, config *SubnetConfig) Sub
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/subnet azurerm_subnet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/subnet azurerm_subnet} Resource.
 func NewSubnet_Override(s Subnet, scope constructs.Construct, id *string, config *SubnetConfig) {
 	_init_.Initialize()
 
@@ -1141,6 +1166,17 @@ func (s *jsiiProxy_Subnet) PutDelegation(value interface{}) {
 	)
 }
 
+func (s *jsiiProxy_Subnet) PutIpAddressPool(value *SubnetIpAddressPool) {
+	if err := s.validatePutIpAddressPoolParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putIpAddressPool",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_Subnet) PutTimeouts(value *SubnetTimeouts) {
 	if err := s.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1149,6 +1185,14 @@ func (s *jsiiProxy_Subnet) PutTimeouts(value *SubnetTimeouts) {
 		s,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_Subnet) ResetAddressPrefixes() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAddressPrefixes",
+		nil, // no parameters
 	)
 }
 
@@ -1172,6 +1216,14 @@ func (s *jsiiProxy_Subnet) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Subnet) ResetIpAddressPool() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIpAddressPool",
 		nil, // no parameters
 	)
 }

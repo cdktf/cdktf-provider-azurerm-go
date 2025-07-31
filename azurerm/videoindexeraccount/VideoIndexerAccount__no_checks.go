@@ -131,6 +131,10 @@ func (j *jsiiProxy_VideoIndexerAccount) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_VideoIndexerAccount) validateSetPublicNetworkAccessParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VideoIndexerAccount) validateSetResourceGroupNameParameters(val *string) error {
 	return nil
 }

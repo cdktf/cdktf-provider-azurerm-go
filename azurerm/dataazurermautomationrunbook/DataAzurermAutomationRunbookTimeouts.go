@@ -5,7 +5,7 @@ package dataazurermautomationrunbook
 
 
 type DataAzurermAutomationRunbookTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/data-sources/automation_runbook#read DataAzurermAutomationRunbook#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/data-sources/automation_runbook#read DataAzurermAutomationRunbook#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

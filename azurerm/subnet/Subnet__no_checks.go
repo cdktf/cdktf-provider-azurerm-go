@@ -79,6 +79,10 @@ func (s *jsiiProxy_Subnet) validatePutDelegationParameters(value interface{}) er
 	return nil
 }
 
+func (s *jsiiProxy_Subnet) validatePutIpAddressPoolParameters(value *SubnetIpAddressPool) error {
+	return nil
+}
+
 func (s *jsiiProxy_Subnet) validatePutTimeoutsParameters(value *SubnetTimeouts) error {
 	return nil
 }

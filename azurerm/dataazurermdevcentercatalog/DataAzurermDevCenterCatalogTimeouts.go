@@ -5,7 +5,7 @@ package dataazurermdevcentercatalog
 
 
 type DataAzurermDevCenterCatalogTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/data-sources/dev_center_catalog#read DataAzurermDevCenterCatalog#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/data-sources/dev_center_catalog#read DataAzurermDevCenterCatalog#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

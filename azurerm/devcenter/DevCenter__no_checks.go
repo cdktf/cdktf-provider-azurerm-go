@@ -123,6 +123,10 @@ func (j *jsiiProxy_DevCenter) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_DevCenter) validateSetProjectCatalogItemSyncEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevCenter) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

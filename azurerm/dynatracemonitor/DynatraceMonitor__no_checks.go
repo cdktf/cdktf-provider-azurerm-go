@@ -75,6 +75,10 @@ func (d *jsiiProxy_DynatraceMonitor) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (d *jsiiProxy_DynatraceMonitor) validatePutEnvironmentPropertiesParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DynatraceMonitor) validatePutIdentityParameters(value *DynatraceMonitorIdentity) error {
 	return nil
 }

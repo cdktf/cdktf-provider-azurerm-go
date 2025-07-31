@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/dev_center azurerm_dev_center}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/dev_center azurerm_dev_center}.
 type DevCenter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -57,6 +57,9 @@ type DevCenter interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	ProjectCatalogItemSyncEnabled() interface{}
+	SetProjectCatalogItemSyncEnabled(val interface{})
+	ProjectCatalogItemSyncEnabledInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -131,6 +134,7 @@ type DevCenter interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProjectCatalogItemSyncEnabled()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -341,6 +345,26 @@ func (j *jsiiProxy_DevCenter) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DevCenter) ProjectCatalogItemSyncEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"projectCatalogItemSyncEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevCenter) ProjectCatalogItemSyncEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"projectCatalogItemSyncEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DevCenter) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -462,7 +486,7 @@ func (j *jsiiProxy_DevCenter) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/dev_center azurerm_dev_center} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/dev_center azurerm_dev_center} Resource.
 func NewDevCenter(scope constructs.Construct, id *string, config *DevCenterConfig) DevCenter {
 	_init_.Initialize()
 
@@ -480,7 +504,7 @@ func NewDevCenter(scope constructs.Construct, id *string, config *DevCenterConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/dev_center azurerm_dev_center} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/dev_center azurerm_dev_center} Resource.
 func NewDevCenter_Override(d DevCenter, scope constructs.Construct, id *string, config *DevCenterConfig) {
 	_init_.Initialize()
 
@@ -569,6 +593,17 @@ func (j *jsiiProxy_DevCenter)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevCenter)SetProjectCatalogItemSyncEnabled(val interface{}) {
+	if err := j.validateSetProjectCatalogItemSyncEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectCatalogItemSyncEnabled",
 		val,
 	)
 }
@@ -1009,6 +1044,14 @@ func (d *jsiiProxy_DevCenter) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevCenter) ResetProjectCatalogItemSyncEnabled() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProjectCatalogItemSyncEnabled",
 		nil, // no parameters
 	)
 }

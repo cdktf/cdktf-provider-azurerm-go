@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/management_group_policy_set_definition azurerm_management_group_policy_set_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/management_group_policy_set_definition azurerm_management_group_policy_set_definition}.
 type ManagementGroupPolicySetDefinition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -545,7 +545,7 @@ func (j *jsiiProxy_ManagementGroupPolicySetDefinition) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/management_group_policy_set_definition azurerm_management_group_policy_set_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/management_group_policy_set_definition azurerm_management_group_policy_set_definition} Resource.
 func NewManagementGroupPolicySetDefinition(scope constructs.Construct, id *string, config *ManagementGroupPolicySetDefinitionConfig) ManagementGroupPolicySetDefinition {
 	_init_.Initialize()
 
@@ -563,7 +563,7 @@ func NewManagementGroupPolicySetDefinition(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.37.0/docs/resources/management_group_policy_set_definition azurerm_management_group_policy_set_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/management_group_policy_set_definition azurerm_management_group_policy_set_definition} Resource.
 func NewManagementGroupPolicySetDefinition_Override(m ManagementGroupPolicySetDefinition, scope constructs.Construct, id *string, config *ManagementGroupPolicySetDefinitionConfig) {
 	_init_.Initialize()
 
