@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/stream_analytics_job_storage_account azurerm_stream_analytics_job_storage_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/resources/stream_analytics_job_storage_account azurerm_stream_analytics_job_storage_account}.
 type StreamAnalyticsJobStorageAccount interface {
 	cdktf.TerraformResource
 	AuthenticationMode() *string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_StreamAnalyticsJobStorageAccount) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/stream_analytics_job_storage_account azurerm_stream_analytics_job_storage_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/resources/stream_analytics_job_storage_account azurerm_stream_analytics_job_storage_account} Resource.
 func NewStreamAnalyticsJobStorageAccount(scope constructs.Construct, id *string, config *StreamAnalyticsJobStorageAccountConfig) StreamAnalyticsJobStorageAccount {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewStreamAnalyticsJobStorageAccount(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/stream_analytics_job_storage_account azurerm_stream_analytics_job_storage_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/resources/stream_analytics_job_storage_account azurerm_stream_analytics_job_storage_account} Resource.
 func NewStreamAnalyticsJobStorageAccount_Override(s StreamAnalyticsJobStorageAccount, scope constructs.Construct, id *string, config *StreamAnalyticsJobStorageAccountConfig) {
 	_init_.Initialize()
 

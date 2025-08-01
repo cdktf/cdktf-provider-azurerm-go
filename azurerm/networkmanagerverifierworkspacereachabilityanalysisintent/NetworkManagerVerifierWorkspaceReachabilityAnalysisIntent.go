@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/network_manager_verifier_workspace_reachability_analysis_intent azurerm_network_manager_verifier_workspace_reachability_analysis_intent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/resources/network_manager_verifier_workspace_reachability_analysis_intent azurerm_network_manager_verifier_workspace_reachability_analysis_intent}.
 type NetworkManagerVerifierWorkspaceReachabilityAnalysisIntent interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -473,7 +473,7 @@ func (j *jsiiProxy_NetworkManagerVerifierWorkspaceReachabilityAnalysisIntent) Ve
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/network_manager_verifier_workspace_reachability_analysis_intent azurerm_network_manager_verifier_workspace_reachability_analysis_intent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/resources/network_manager_verifier_workspace_reachability_analysis_intent azurerm_network_manager_verifier_workspace_reachability_analysis_intent} Resource.
 func NewNetworkManagerVerifierWorkspaceReachabilityAnalysisIntent(scope constructs.Construct, id *string, config *NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentConfig) NetworkManagerVerifierWorkspaceReachabilityAnalysisIntent {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewNetworkManagerVerifierWorkspaceReachabilityAnalysisIntent(scope construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/network_manager_verifier_workspace_reachability_analysis_intent azurerm_network_manager_verifier_workspace_reachability_analysis_intent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/resources/network_manager_verifier_workspace_reachability_analysis_intent azurerm_network_manager_verifier_workspace_reachability_analysis_intent} Resource.
 func NewNetworkManagerVerifierWorkspaceReachabilityAnalysisIntent_Override(n NetworkManagerVerifierWorkspaceReachabilityAnalysisIntent, scope constructs.Construct, id *string, config *NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentConfig) {
 	_init_.Initialize()
 

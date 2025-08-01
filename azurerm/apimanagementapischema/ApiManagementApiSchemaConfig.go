@@ -22,30 +22,30 @@ type ApiManagementApiSchemaConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/api_management_api_schema#api_management_name ApiManagementApiSchema#api_management_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/resources/api_management_api_schema#api_management_name ApiManagementApiSchema#api_management_name}.
 	ApiManagementName *string `field:"required" json:"apiManagementName" yaml:"apiManagementName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/api_management_api_schema#api_name ApiManagementApiSchema#api_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/resources/api_management_api_schema#api_name ApiManagementApiSchema#api_name}.
 	ApiName *string `field:"required" json:"apiName" yaml:"apiName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/api_management_api_schema#content_type ApiManagementApiSchema#content_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/resources/api_management_api_schema#content_type ApiManagementApiSchema#content_type}.
 	ContentType *string `field:"required" json:"contentType" yaml:"contentType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/api_management_api_schema#resource_group_name ApiManagementApiSchema#resource_group_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/resources/api_management_api_schema#resource_group_name ApiManagementApiSchema#resource_group_name}.
 	ResourceGroupName *string `field:"required" json:"resourceGroupName" yaml:"resourceGroupName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/api_management_api_schema#schema_id ApiManagementApiSchema#schema_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/resources/api_management_api_schema#schema_id ApiManagementApiSchema#schema_id}.
 	SchemaId *string `field:"required" json:"schemaId" yaml:"schemaId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/api_management_api_schema#components ApiManagementApiSchema#components}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/resources/api_management_api_schema#components ApiManagementApiSchema#components}.
 	Components *string `field:"optional" json:"components" yaml:"components"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/api_management_api_schema#definitions ApiManagementApiSchema#definitions}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/resources/api_management_api_schema#definitions ApiManagementApiSchema#definitions}.
 	Definitions *string `field:"optional" json:"definitions" yaml:"definitions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/api_management_api_schema#id ApiManagementApiSchema#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/resources/api_management_api_schema#id ApiManagementApiSchema#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/api_management_api_schema#timeouts ApiManagementApiSchema#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/resources/api_management_api_schema#timeouts ApiManagementApiSchema#timeouts}
 	Timeouts *ApiManagementApiSchemaTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/resources/api_management_api_schema#value ApiManagementApiSchema#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/resources/api_management_api_schema#value ApiManagementApiSchema#value}.
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

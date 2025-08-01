@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/data-sources/tenant_template_deployment azurerm_tenant_template_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/data-sources/tenant_template_deployment azurerm_tenant_template_deployment}.
 type DataAzurermTenantTemplateDeployment interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -323,7 +323,7 @@ func (j *jsiiProxy_DataAzurermTenantTemplateDeployment) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/data-sources/tenant_template_deployment azurerm_tenant_template_deployment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/data-sources/tenant_template_deployment azurerm_tenant_template_deployment} Data Source.
 func NewDataAzurermTenantTemplateDeployment(scope constructs.Construct, id *string, config *DataAzurermTenantTemplateDeploymentConfig) DataAzurermTenantTemplateDeployment {
 	_init_.Initialize()
 
@@ -341,7 +341,7 @@ func NewDataAzurermTenantTemplateDeployment(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.0/docs/data-sources/tenant_template_deployment azurerm_tenant_template_deployment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/data-sources/tenant_template_deployment azurerm_tenant_template_deployment} Data Source.
 func NewDataAzurermTenantTemplateDeployment_Override(d DataAzurermTenantTemplateDeployment, scope constructs.Construct, id *string, config *DataAzurermTenantTemplateDeploymentConfig) {
 	_init_.Initialize()
 
