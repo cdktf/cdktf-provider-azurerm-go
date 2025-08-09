@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/data-sources/dev_center_attached_network azurerm_dev_center_attached_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/data-sources/dev_center_attached_network azurerm_dev_center_attached_network}.
 type DataAzurermDevCenterAttachedNetwork interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataAzurermDevCenterAttachedNetwork) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/data-sources/dev_center_attached_network azurerm_dev_center_attached_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/data-sources/dev_center_attached_network azurerm_dev_center_attached_network} Data Source.
 func NewDataAzurermDevCenterAttachedNetwork(scope constructs.Construct, id *string, config *DataAzurermDevCenterAttachedNetworkConfig) DataAzurermDevCenterAttachedNetwork {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataAzurermDevCenterAttachedNetwork(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/data-sources/dev_center_attached_network azurerm_dev_center_attached_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/data-sources/dev_center_attached_network azurerm_dev_center_attached_network} Data Source.
 func NewDataAzurermDevCenterAttachedNetwork_Override(d DataAzurermDevCenterAttachedNetwork, scope constructs.Construct, id *string, config *DataAzurermDevCenterAttachedNetworkConfig) {
 	_init_.Initialize()
 

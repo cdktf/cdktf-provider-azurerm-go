@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/data-sources/oracle_gi_versions azurerm_oracle_gi_versions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/data-sources/oracle_gi_versions azurerm_oracle_gi_versions}.
 type DataAzurermOracleGiVersions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -53,6 +53,9 @@ type DataAzurermOracleGiVersions interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Shape() *string
+	SetShape(val *string)
+	ShapeInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -62,6 +65,9 @@ type DataAzurermOracleGiVersions interface {
 	Timeouts() DataAzurermOracleGiVersionsTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	Versions() *[]*string
+	Zone() *string
+	SetZone(val *string)
+	ZoneInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -92,7 +98,9 @@ type DataAzurermOracleGiVersions interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetShape()
 	ResetTimeouts()
+	ResetZone()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -262,6 +270,26 @@ func (j *jsiiProxy_DataAzurermOracleGiVersions) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermOracleGiVersions) Shape() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"shape",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermOracleGiVersions) ShapeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"shapeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermOracleGiVersions) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -322,8 +350,28 @@ func (j *jsiiProxy_DataAzurermOracleGiVersions) Versions() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermOracleGiVersions) Zone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zone",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/data-sources/oracle_gi_versions azurerm_oracle_gi_versions} Data Source.
+func (j *jsiiProxy_DataAzurermOracleGiVersions) ZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/data-sources/oracle_gi_versions azurerm_oracle_gi_versions} Data Source.
 func NewDataAzurermOracleGiVersions(scope constructs.Construct, id *string, config *DataAzurermOracleGiVersionsConfig) DataAzurermOracleGiVersions {
 	_init_.Initialize()
 
@@ -341,7 +389,7 @@ func NewDataAzurermOracleGiVersions(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/data-sources/oracle_gi_versions azurerm_oracle_gi_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/data-sources/oracle_gi_versions azurerm_oracle_gi_versions} Data Source.
 func NewDataAzurermOracleGiVersions_Override(d DataAzurermOracleGiVersions, scope constructs.Construct, id *string, config *DataAzurermOracleGiVersionsConfig) {
 	_init_.Initialize()
 
@@ -416,6 +464,28 @@ func (j *jsiiProxy_DataAzurermOracleGiVersions)SetProvider(val cdktf.TerraformPr
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAzurermOracleGiVersions)SetShape(val *string) {
+	if err := j.validateSetShapeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"shape",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAzurermOracleGiVersions)SetZone(val *string) {
+	if err := j.validateSetZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zone",
 		val,
 	)
 }
@@ -732,10 +802,26 @@ func (d *jsiiProxy_DataAzurermOracleGiVersions) ResetOverrideLogicalId() {
 	)
 }
 
+func (d *jsiiProxy_DataAzurermOracleGiVersions) ResetShape() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetShape",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataAzurermOracleGiVersions) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAzurermOracleGiVersions) ResetZone() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZone",
 		nil, // no parameters
 	)
 }

@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAzurermOracleDbSystemShapes) validateSetLocationParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermOracleDbSystemShapes) validateSetZoneParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAzurermOracleDbSystemShapesParameters(scope constructs.Construct, id *string, config *DataAzurermOracleDbSystemShapesConfig) error {
 	return nil
 }

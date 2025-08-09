@@ -5,7 +5,7 @@ package monitordiagnosticsetting
 
 
 type MonitorDiagnosticSettingEnabledMetric struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/resources/monitor_diagnostic_setting#category MonitorDiagnosticSetting#category}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/monitor_diagnostic_setting#category MonitorDiagnosticSetting#category}.
 	Category *string `field:"required" json:"category" yaml:"category"`
 }
 

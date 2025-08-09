@@ -246,6 +246,22 @@ func (j *jsiiProxy_DataAzurermOracleGiVersions) validateSetLocationParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermOracleGiVersions) validateSetShapeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataAzurermOracleGiVersions) validateSetZoneParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAzurermOracleGiVersionsParameters(scope constructs.Construct, id *string, config *DataAzurermOracleGiVersionsConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

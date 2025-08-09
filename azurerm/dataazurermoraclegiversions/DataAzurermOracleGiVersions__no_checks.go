@@ -91,6 +91,14 @@ func (j *jsiiProxy_DataAzurermOracleGiVersions) validateSetLocationParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermOracleGiVersions) validateSetShapeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAzurermOracleGiVersions) validateSetZoneParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAzurermOracleGiVersionsParameters(scope constructs.Construct, id *string, config *DataAzurermOracleGiVersionsConfig) error {
 	return nil
 }

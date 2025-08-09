@@ -5,7 +5,7 @@ package provider
 
 
 type AzurermProviderFeaturesStorage struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs#data_plane_available AzurermProvider#data_plane_available}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs#data_plane_available AzurermProvider#data_plane_available}.
 	DataPlaneAvailable interface{} `field:"optional" json:"dataPlaneAvailable" yaml:"dataPlaneAvailable"`
 }
 

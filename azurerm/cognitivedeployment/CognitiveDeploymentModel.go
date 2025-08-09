@@ -5,11 +5,11 @@ package cognitivedeployment
 
 
 type CognitiveDeploymentModel struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/resources/cognitive_deployment#format CognitiveDeployment#format}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/cognitive_deployment#format CognitiveDeployment#format}.
 	Format *string `field:"required" json:"format" yaml:"format"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/resources/cognitive_deployment#name CognitiveDeployment#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/cognitive_deployment#name CognitiveDeployment#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/resources/cognitive_deployment#version CognitiveDeployment#version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/cognitive_deployment#version CognitiveDeployment#version}.
 	Version *string `field:"optional" json:"version" yaml:"version"`
 }
 

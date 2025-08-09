@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/data-sources/oracle_db_system_shapes azurerm_oracle_db_system_shapes}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/data-sources/oracle_db_system_shapes azurerm_oracle_db_system_shapes}.
 type DataAzurermOracleDbSystemShapes interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -62,6 +62,9 @@ type DataAzurermOracleDbSystemShapes interface {
 	TerraformResourceType() *string
 	Timeouts() DataAzurermOracleDbSystemShapesTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Zone() *string
+	SetZone(val *string)
+	ZoneInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -93,6 +96,7 @@ type DataAzurermOracleDbSystemShapes interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
+	ResetZone()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -322,8 +326,28 @@ func (j *jsiiProxy_DataAzurermOracleDbSystemShapes) TimeoutsInput() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermOracleDbSystemShapes) Zone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zone",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/data-sources/oracle_db_system_shapes azurerm_oracle_db_system_shapes} Data Source.
+func (j *jsiiProxy_DataAzurermOracleDbSystemShapes) ZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/data-sources/oracle_db_system_shapes azurerm_oracle_db_system_shapes} Data Source.
 func NewDataAzurermOracleDbSystemShapes(scope constructs.Construct, id *string, config *DataAzurermOracleDbSystemShapesConfig) DataAzurermOracleDbSystemShapes {
 	_init_.Initialize()
 
@@ -341,7 +365,7 @@ func NewDataAzurermOracleDbSystemShapes(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/data-sources/oracle_db_system_shapes azurerm_oracle_db_system_shapes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/data-sources/oracle_db_system_shapes azurerm_oracle_db_system_shapes} Data Source.
 func NewDataAzurermOracleDbSystemShapes_Override(d DataAzurermOracleDbSystemShapes, scope constructs.Construct, id *string, config *DataAzurermOracleDbSystemShapesConfig) {
 	_init_.Initialize()
 
@@ -416,6 +440,17 @@ func (j *jsiiProxy_DataAzurermOracleDbSystemShapes)SetProvider(val cdktf.Terrafo
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAzurermOracleDbSystemShapes)SetZone(val *string) {
+	if err := j.validateSetZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zone",
 		val,
 	)
 }
@@ -736,6 +771,14 @@ func (d *jsiiProxy_DataAzurermOracleDbSystemShapes) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAzurermOracleDbSystemShapes) ResetZone() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZone",
 		nil, // no parameters
 	)
 }

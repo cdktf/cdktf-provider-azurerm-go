@@ -5,7 +5,7 @@ package dataazurermstoragetableentities
 
 
 type DataAzurermStorageTableEntitiesTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/data-sources/storage_table_entities#read DataAzurermStorageTableEntities#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/data-sources/storage_table_entities#read DataAzurermStorageTableEntities#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

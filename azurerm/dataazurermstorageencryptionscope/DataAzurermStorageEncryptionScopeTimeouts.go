@@ -5,7 +5,7 @@ package dataazurermstorageencryptionscope
 
 
 type DataAzurermStorageEncryptionScopeTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/data-sources/storage_encryption_scope#read DataAzurermStorageEncryptionScope#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/data-sources/storage_encryption_scope#read DataAzurermStorageEncryptionScope#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

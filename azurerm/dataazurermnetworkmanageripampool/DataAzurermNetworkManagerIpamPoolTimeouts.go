@@ -5,7 +5,7 @@ package dataazurermnetworkmanageripampool
 
 
 type DataAzurermNetworkManagerIpamPoolTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.38.1/docs/data-sources/network_manager_ipam_pool#read DataAzurermNetworkManagerIpamPool#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/data-sources/network_manager_ipam_pool#read DataAzurermNetworkManagerIpamPool#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 
