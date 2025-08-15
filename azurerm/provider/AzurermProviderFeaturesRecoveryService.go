@@ -5,11 +5,11 @@ package provider
 
 
 type AzurermProviderFeaturesRecoveryService struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs#purge_protected_items_from_vault_on_destroy AzurermProvider#purge_protected_items_from_vault_on_destroy}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs#purge_protected_items_from_vault_on_destroy AzurermProvider#purge_protected_items_from_vault_on_destroy}.
 	PurgeProtectedItemsFromVaultOnDestroy interface{} `field:"optional" json:"purgeProtectedItemsFromVaultOnDestroy" yaml:"purgeProtectedItemsFromVaultOnDestroy"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs#vm_backup_stop_protection_and_retain_data_on_destroy AzurermProvider#vm_backup_stop_protection_and_retain_data_on_destroy}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs#vm_backup_stop_protection_and_retain_data_on_destroy AzurermProvider#vm_backup_stop_protection_and_retain_data_on_destroy}.
 	VmBackupStopProtectionAndRetainDataOnDestroy interface{} `field:"optional" json:"vmBackupStopProtectionAndRetainDataOnDestroy" yaml:"vmBackupStopProtectionAndRetainDataOnDestroy"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs#vm_backup_suspend_protection_and_retain_data_on_destroy AzurermProvider#vm_backup_suspend_protection_and_retain_data_on_destroy}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs#vm_backup_suspend_protection_and_retain_data_on_destroy AzurermProvider#vm_backup_suspend_protection_and_retain_data_on_destroy}.
 	VmBackupSuspendProtectionAndRetainDataOnDestroy interface{} `field:"optional" json:"vmBackupSuspendProtectionAndRetainDataOnDestroy" yaml:"vmBackupSuspendProtectionAndRetainDataOnDestroy"`
 }
 

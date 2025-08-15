@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/data-sources/logic_app_standard azurerm_logic_app_standard}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/logic_app_standard azurerm_logic_app_standard}.
 type DataAzurermLogicAppStandard interface {
 	cdktf.TerraformDataSource
 	AppServicePlanId() *string
@@ -74,8 +74,7 @@ type DataAzurermLogicAppStandard interface {
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
 	ScmPublishBasicAuthenticationEnabled() cdktf.IResolvable
-	SiteConfig() DataAzurermLogicAppStandardSiteConfigOutputReference
-	SiteConfigInput() *DataAzurermLogicAppStandardSiteConfig
+	SiteConfig() DataAzurermLogicAppStandardSiteConfigList
 	SiteCredential() DataAzurermLogicAppStandardSiteCredentialList
 	StorageAccountAccessKey() *string
 	StorageAccountName() *string
@@ -117,13 +116,11 @@ type DataAzurermLogicAppStandard interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutSiteConfig(value *DataAzurermLogicAppStandardSiteConfig)
 	PutTimeouts(value *DataAzurermLogicAppStandardTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetSiteConfig()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -494,21 +491,11 @@ func (j *jsiiProxy_DataAzurermLogicAppStandard) ScmPublishBasicAuthenticationEna
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandard) SiteConfig() DataAzurermLogicAppStandardSiteConfigOutputReference {
-	var returns DataAzurermLogicAppStandardSiteConfigOutputReference
+func (j *jsiiProxy_DataAzurermLogicAppStandard) SiteConfig() DataAzurermLogicAppStandardSiteConfigList {
+	var returns DataAzurermLogicAppStandardSiteConfigList
 	_jsii_.Get(
 		j,
 		"siteConfig",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandard) SiteConfigInput() *DataAzurermLogicAppStandardSiteConfig {
-	var returns *DataAzurermLogicAppStandardSiteConfig
-	_jsii_.Get(
-		j,
-		"siteConfigInput",
 		&returns,
 	)
 	return returns
@@ -645,7 +632,7 @@ func (j *jsiiProxy_DataAzurermLogicAppStandard) VirtualNetworkSubnetId() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/data-sources/logic_app_standard azurerm_logic_app_standard} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/logic_app_standard azurerm_logic_app_standard} Data Source.
 func NewDataAzurermLogicAppStandard(scope constructs.Construct, id *string, config *DataAzurermLogicAppStandardConfig) DataAzurermLogicAppStandard {
 	_init_.Initialize()
 
@@ -663,7 +650,7 @@ func NewDataAzurermLogicAppStandard(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/data-sources/logic_app_standard azurerm_logic_app_standard} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/logic_app_standard azurerm_logic_app_standard} Data Source.
 func NewDataAzurermLogicAppStandard_Override(d DataAzurermLogicAppStandard, scope constructs.Construct, id *string, config *DataAzurermLogicAppStandardConfig) {
 	_init_.Initialize()
 
@@ -1038,17 +1025,6 @@ func (d *jsiiProxy_DataAzurermLogicAppStandard) OverrideLogicalId(newLogicalId *
 	)
 }
 
-func (d *jsiiProxy_DataAzurermLogicAppStandard) PutSiteConfig(value *DataAzurermLogicAppStandardSiteConfig) {
-	if err := d.validatePutSiteConfigParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putSiteConfig",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataAzurermLogicAppStandard) PutTimeouts(value *DataAzurermLogicAppStandardTimeouts) {
 	if err := d.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1072,14 +1048,6 @@ func (d *jsiiProxy_DataAzurermLogicAppStandard) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandard) ResetSiteConfig() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSiteConfig",
 		nil, // no parameters
 	)
 }

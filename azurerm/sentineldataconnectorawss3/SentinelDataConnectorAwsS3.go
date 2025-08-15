@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/sentinel_data_connector_aws_s3 azurerm_sentinel_data_connector_aws_s3}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/sentinel_data_connector_aws_s3 azurerm_sentinel_data_connector_aws_s3}.
 type SentinelDataConnectorAwsS3 interface {
 	cdktf.TerraformResource
 	AwsRoleArn() *string
@@ -449,7 +449,7 @@ func (j *jsiiProxy_SentinelDataConnectorAwsS3) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/sentinel_data_connector_aws_s3 azurerm_sentinel_data_connector_aws_s3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/sentinel_data_connector_aws_s3 azurerm_sentinel_data_connector_aws_s3} Resource.
 func NewSentinelDataConnectorAwsS3(scope constructs.Construct, id *string, config *SentinelDataConnectorAwsS3Config) SentinelDataConnectorAwsS3 {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewSentinelDataConnectorAwsS3(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/sentinel_data_connector_aws_s3 azurerm_sentinel_data_connector_aws_s3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/sentinel_data_connector_aws_s3 azurerm_sentinel_data_connector_aws_s3} Resource.
 func NewSentinelDataConnectorAwsS3_Override(s SentinelDataConnectorAwsS3, scope constructs.Construct, id *string, config *SentinelDataConnectorAwsS3Config) {
 	_init_.Initialize()
 

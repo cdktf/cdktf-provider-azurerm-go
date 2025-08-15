@@ -67,6 +67,10 @@ func (j *jsiiProxy_MachineLearningWorkspaceManagedNetworkOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_MachineLearningWorkspaceManagedNetworkOutputReference) validateSetProvisionOnCreationEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MachineLearningWorkspaceManagedNetworkOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

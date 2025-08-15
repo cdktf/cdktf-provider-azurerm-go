@@ -5,7 +5,7 @@ package batchaccount
 
 
 type BatchAccountEncryption struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/batch_account#key_vault_key_id BatchAccount#key_vault_key_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/batch_account#key_vault_key_id BatchAccount#key_vault_key_id}.
 	KeyVaultKeyId *string `field:"optional" json:"keyVaultKeyId" yaml:"keyVaultKeyId"`
 }
 

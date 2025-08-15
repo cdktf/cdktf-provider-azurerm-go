@@ -19,10 +19,6 @@ func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionHeadersList
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionHeadersList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionHeadersList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

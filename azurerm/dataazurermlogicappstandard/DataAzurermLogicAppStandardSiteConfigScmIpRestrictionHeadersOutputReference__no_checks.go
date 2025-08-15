@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersO
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference) validateSetInternalValueParameters(val *DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeaders) error {
 	return nil
 }
 
@@ -68,22 +68,6 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersO
 }
 
 func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference) validateSetXAzureFdidParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference) validateSetXFdHealthProbeParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference) validateSetXForwardedForParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference) validateSetXForwardedHostParameters(val *[]*string) error {
 	return nil
 }
 

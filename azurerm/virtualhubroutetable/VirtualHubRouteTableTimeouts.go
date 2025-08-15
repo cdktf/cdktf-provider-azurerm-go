@@ -5,13 +5,13 @@ package virtualhubroutetable
 
 
 type VirtualHubRouteTableTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/virtual_hub_route_table#create VirtualHubRouteTable#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/virtual_hub_route_table#create VirtualHubRouteTable#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/virtual_hub_route_table#delete VirtualHubRouteTable#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/virtual_hub_route_table#delete VirtualHubRouteTable#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/virtual_hub_route_table#read VirtualHubRouteTable#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/virtual_hub_route_table#read VirtualHubRouteTable#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/virtual_hub_route_table#update VirtualHubRouteTable#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/virtual_hub_route_table#update VirtualHubRouteTable#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

@@ -22,32 +22,32 @@ type ChaosStudioExperimentConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/chaos_studio_experiment#location ChaosStudioExperiment#location}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/chaos_studio_experiment#location ChaosStudioExperiment#location}.
 	Location *string `field:"required" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/chaos_studio_experiment#name ChaosStudioExperiment#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/chaos_studio_experiment#name ChaosStudioExperiment#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/chaos_studio_experiment#resource_group_name ChaosStudioExperiment#resource_group_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/chaos_studio_experiment#resource_group_name ChaosStudioExperiment#resource_group_name}.
 	ResourceGroupName *string `field:"required" json:"resourceGroupName" yaml:"resourceGroupName"`
 	// selectors block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/chaos_studio_experiment#selectors ChaosStudioExperiment#selectors}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/chaos_studio_experiment#selectors ChaosStudioExperiment#selectors}
 	Selectors interface{} `field:"required" json:"selectors" yaml:"selectors"`
 	// steps block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/chaos_studio_experiment#steps ChaosStudioExperiment#steps}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/chaos_studio_experiment#steps ChaosStudioExperiment#steps}
 	Steps interface{} `field:"required" json:"steps" yaml:"steps"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/chaos_studio_experiment#id ChaosStudioExperiment#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/chaos_studio_experiment#id ChaosStudioExperiment#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// identity block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/chaos_studio_experiment#identity ChaosStudioExperiment#identity}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/chaos_studio_experiment#identity ChaosStudioExperiment#identity}
 	Identity *ChaosStudioExperimentIdentity `field:"optional" json:"identity" yaml:"identity"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/chaos_studio_experiment#timeouts ChaosStudioExperiment#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/chaos_studio_experiment#timeouts ChaosStudioExperiment#timeouts}
 	Timeouts *ChaosStudioExperimentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -5,7 +5,7 @@ package dataazurermlb
 
 
 type DataAzurermLbTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/data-sources/lb#read DataAzurermLb#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/lb#read DataAzurermLb#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

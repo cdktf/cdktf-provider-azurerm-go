@@ -7,7 +7,7 @@ package cosmosdbsqlcontainer
 type CosmosdbSqlContainerIndexingPolicyCompositeIndex struct {
 	// index block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/cosmosdb_sql_container#index CosmosdbSqlContainer#index}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/cosmosdb_sql_container#index CosmosdbSqlContainer#index}
 	Index interface{} `field:"required" json:"index" yaml:"index"`
 }
 

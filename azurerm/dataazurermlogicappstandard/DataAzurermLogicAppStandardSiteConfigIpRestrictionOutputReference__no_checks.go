@@ -47,15 +47,7 @@ func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputReference) validatePutHeadersParameters(value interface{}) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputReference) validateSetActionParameters(val *string) error {
 	return nil
 }
 
@@ -67,23 +59,7 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputReference) validateSetIpAddressParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputReference) validateSetNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputReference) validateSetPriorityParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputReference) validateSetServiceTagParameters(val *string) error {
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputReference) validateSetInternalValueParameters(val *DataAzurermLogicAppStandardSiteConfigIpRestriction) error {
 	return nil
 }
 
@@ -92,10 +68,6 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputRefer
 }
 
 func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputReference) validateSetVirtualNetworkSubnetIdParameters(val *string) error {
 	return nil
 }
 

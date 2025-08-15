@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/data-sources/log_analytics_workspace_table azurerm_log_analytics_workspace_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/log_analytics_workspace_table azurerm_log_analytics_workspace_table}.
 type DataAzurermLogAnalyticsWorkspaceTable interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -368,7 +368,7 @@ func (j *jsiiProxy_DataAzurermLogAnalyticsWorkspaceTable) WorkspaceIdInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/data-sources/log_analytics_workspace_table azurerm_log_analytics_workspace_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/log_analytics_workspace_table azurerm_log_analytics_workspace_table} Data Source.
 func NewDataAzurermLogAnalyticsWorkspaceTable(scope constructs.Construct, id *string, config *DataAzurermLogAnalyticsWorkspaceTableConfig) DataAzurermLogAnalyticsWorkspaceTable {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewDataAzurermLogAnalyticsWorkspaceTable(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/data-sources/log_analytics_workspace_table azurerm_log_analytics_workspace_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/log_analytics_workspace_table azurerm_log_analytics_workspace_table} Data Source.
 func NewDataAzurermLogAnalyticsWorkspaceTable_Override(d DataAzurermLogAnalyticsWorkspaceTable, scope constructs.Construct, id *string, config *DataAzurermLogAnalyticsWorkspaceTableConfig) {
 	_init_.Initialize()
 

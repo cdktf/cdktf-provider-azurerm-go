@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/network_security_rule azurerm_network_security_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/network_security_rule azurerm_network_security_rule}.
 type NetworkSecurityRule interface {
 	cdktf.TerraformResource
 	Access() *string
@@ -759,7 +759,7 @@ func (j *jsiiProxy_NetworkSecurityRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/network_security_rule azurerm_network_security_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/network_security_rule azurerm_network_security_rule} Resource.
 func NewNetworkSecurityRule(scope constructs.Construct, id *string, config *NetworkSecurityRuleConfig) NetworkSecurityRule {
 	_init_.Initialize()
 
@@ -777,7 +777,7 @@ func NewNetworkSecurityRule(scope constructs.Construct, id *string, config *Netw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/network_security_rule azurerm_network_security_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/network_security_rule azurerm_network_security_rule} Resource.
 func NewNetworkSecurityRule_Override(n NetworkSecurityRule, scope constructs.Construct, id *string, config *NetworkSecurityRuleConfig) {
 	_init_.Initialize()
 

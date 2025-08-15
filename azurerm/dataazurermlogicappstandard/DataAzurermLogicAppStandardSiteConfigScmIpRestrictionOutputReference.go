@@ -14,8 +14,6 @@ import (
 type DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference interface {
 	cdktf.ComplexObject
 	Action() *string
-	SetAction(val *string)
-	ActionInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,21 +32,12 @@ type DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference interf
 	// Experimental.
 	Fqn() *string
 	Headers() DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersList
-	HeadersInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAzurermLogicAppStandardSiteConfigScmIpRestriction
+	SetInternalValue(val *DataAzurermLogicAppStandardSiteConfigScmIpRestriction)
 	IpAddress() *string
-	SetIpAddress(val *string)
-	IpAddressInput() *string
 	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	Priority() *float64
-	SetPriority(val *float64)
-	PriorityInput() *float64
 	ServiceTag() *string
-	SetServiceTag(val *string)
-	ServiceTagInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -58,8 +47,6 @@ type DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference interf
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	VirtualNetworkSubnetId() *string
-	SetVirtualNetworkSubnetId(val *string)
-	VirtualNetworkSubnetIdInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -84,14 +71,6 @@ type DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutHeaders(value interface{})
-	ResetAction()
-	ResetHeaders()
-	ResetIpAddress()
-	ResetName()
-	ResetPriority()
-	ResetServiceTag()
-	ResetVirtualNetworkSubnetId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -112,16 +91,6 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputRe
 	_jsii_.Get(
 		j,
 		"action",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) ActionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"actionInput",
 		&returns,
 	)
 	return returns
@@ -177,18 +146,8 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) HeadersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"headersInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) InternalValue() *DataAzurermLogicAppStandardSiteConfigScmIpRestriction {
+	var returns *DataAzurermLogicAppStandardSiteConfigScmIpRestriction
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -207,31 +166,11 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) IpAddressInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ipAddressInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"name",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
 		&returns,
 	)
 	return returns
@@ -247,31 +186,11 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) PriorityInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"priorityInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) ServiceTag() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"serviceTag",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) ServiceTagInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"serviceTagInput",
 		&returns,
 	)
 	return returns
@@ -307,16 +226,6 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) VirtualNetworkSubnetIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"virtualNetworkSubnetIdInput",
-		&returns,
-	)
-	return returns
-}
-
 
 func NewDataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference {
 	_init_.Initialize()
@@ -345,17 +254,6 @@ func NewDataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference_Ove
 	)
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference)SetAction(val *string) {
-	if err := j.validateSetActionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"action",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -378,57 +276,13 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputRe
 	)
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference)SetInternalValue(val *DataAzurermLogicAppStandardSiteConfigScmIpRestriction) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference)SetIpAddress(val *string) {
-	if err := j.validateSetIpAddressParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"ipAddress",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference)SetPriority(val *float64) {
-	if err := j.validateSetPriorityParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"priority",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference)SetServiceTag(val *string) {
-	if err := j.validateSetServiceTagParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"serviceTag",
 		val,
 	)
 }
@@ -451,17 +305,6 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputRe
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference)SetVirtualNetworkSubnetId(val *string) {
-	if err := j.validateSetVirtualNetworkSubnetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"virtualNetworkSubnetId",
 		val,
 	)
 }
@@ -650,73 +493,6 @@ func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputRe
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) PutHeaders(value interface{}) {
-	if err := d.validatePutHeadersParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putHeaders",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) ResetAction() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAction",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) ResetHeaders() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetHeaders",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) ResetIpAddress() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetIpAddress",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) ResetName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetName",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) ResetPriority() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetPriority",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) ResetServiceTag() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetServiceTag",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) ResetVirtualNetworkSubnetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetVirtualNetworkSubnetId",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

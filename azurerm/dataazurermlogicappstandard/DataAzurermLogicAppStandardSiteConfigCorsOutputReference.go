@@ -14,8 +14,6 @@ import (
 type DataAzurermLogicAppStandardSiteConfigCorsOutputReference interface {
 	cdktf.ComplexObject
 	AllowedOrigins() *[]*string
-	SetAllowedOrigins(val *[]*string)
-	AllowedOriginsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,9 +33,7 @@ type DataAzurermLogicAppStandardSiteConfigCorsOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataAzurermLogicAppStandardSiteConfigCors
 	SetInternalValue(val *DataAzurermLogicAppStandardSiteConfigCors)
-	SupportCredentials() interface{}
-	SetSupportCredentials(val interface{})
-	SupportCredentialsInput() interface{}
+	SupportCredentials() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,7 +66,6 @@ type DataAzurermLogicAppStandardSiteConfigCorsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetSupportCredentials()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -91,16 +86,6 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigCorsOutputReference) All
 	_jsii_.Get(
 		j,
 		"allowedOrigins",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigCorsOutputReference) AllowedOriginsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"allowedOriginsInput",
 		&returns,
 	)
 	return returns
@@ -156,21 +141,11 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigCorsOutputReference) Int
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigCorsOutputReference) SupportCredentials() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigCorsOutputReference) SupportCredentials() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"supportCredentials",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigCorsOutputReference) SupportCredentialsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"supportCredentialsInput",
 		&returns,
 	)
 	return returns
@@ -197,41 +172,30 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigCorsOutputReference) Ter
 }
 
 
-func NewDataAzurermLogicAppStandardSiteConfigCorsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataAzurermLogicAppStandardSiteConfigCorsOutputReference {
+func NewDataAzurermLogicAppStandardSiteConfigCorsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAzurermLogicAppStandardSiteConfigCorsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataAzurermLogicAppStandardSiteConfigCorsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataAzurermLogicAppStandardSiteConfigCorsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataAzurermLogicAppStandardSiteConfigCorsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigCorsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataAzurermLogicAppStandardSiteConfigCorsOutputReference_Override(d DataAzurermLogicAppStandardSiteConfigCorsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataAzurermLogicAppStandardSiteConfigCorsOutputReference_Override(d DataAzurermLogicAppStandardSiteConfigCorsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigCorsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigCorsOutputReference)SetAllowedOrigins(val *[]*string) {
-	if err := j.validateSetAllowedOriginsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"allowedOrigins",
-		val,
 	)
 }
 
@@ -264,17 +228,6 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigCorsOutputReference)SetI
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigCorsOutputReference)SetSupportCredentials(val interface{}) {
-	if err := j.validateSetSupportCredentialsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"supportCredentials",
 		val,
 	)
 }
@@ -485,14 +438,6 @@ func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigCorsOutputReference) Int
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigCorsOutputReference) ResetSupportCredentials() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSupportCredentials",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigCorsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

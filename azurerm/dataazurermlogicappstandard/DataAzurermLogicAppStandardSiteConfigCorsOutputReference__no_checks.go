@@ -51,10 +51,6 @@ func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigCorsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigCorsOutputReference) validateSetAllowedOriginsParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigCorsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -67,10 +63,6 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigCorsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigCorsOutputReference) validateSetSupportCredentialsParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigCorsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
@@ -79,7 +71,7 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigCorsOutputReference) val
 	return nil
 }
 
-func validateNewDataAzurermLogicAppStandardSiteConfigCorsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataAzurermLogicAppStandardSiteConfigCorsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

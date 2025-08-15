@@ -47,27 +47,7 @@ func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validatePutCorsParameters(value *DataAzurermLogicAppStandardSiteConfigCors) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validatePutIpRestrictionParameters(value interface{}) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validatePutScmIpRestrictionParameters(value interface{}) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateSetAlwaysOnParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateSetAppScaleLimitParameters(val *float64) error {
 	return nil
 }
 
@@ -79,59 +59,7 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateSetDotnetFrameworkVersionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateSetElasticInstanceMinimumParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateSetFtpsStateParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateSetHealthCheckPathParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateSetHttp2EnabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateSetInternalValueParameters(val *DataAzurermLogicAppStandardSiteConfig) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateSetLinuxFxVersionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateSetMinTlsVersionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateSetPreWarmedInstanceCountParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateSetPublicNetworkAccessEnabledParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateSetRuntimeScaleMonitoringEnabledParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateSetScmMinTlsVersionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateSetScmTypeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateSetScmUseMainIpRestrictionParameters(val interface{}) error {
 	return nil
 }
 
@@ -143,19 +71,7 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateSetUse32BitWorkerProcessParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateSetVnetRouteAllEnabledParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateSetWebsocketsEnabledParameters(val interface{}) error {
-	return nil
-}
-
-func validateNewDataAzurermLogicAppStandardSiteConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataAzurermLogicAppStandardSiteConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

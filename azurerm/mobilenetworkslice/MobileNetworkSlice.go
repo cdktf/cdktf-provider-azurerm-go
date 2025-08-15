@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/mobile_network_slice azurerm_mobile_network_slice}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/mobile_network_slice azurerm_mobile_network_slice}.
 type MobileNetworkSlice interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -72,6 +72,12 @@ type MobileNetworkSlice interface {
 	RawOverrides() interface{}
 	SingleNetworkSliceSelectionAssistanceInformation() MobileNetworkSliceSingleNetworkSliceSelectionAssistanceInformationOutputReference
 	SingleNetworkSliceSelectionAssistanceInformationInput() *MobileNetworkSliceSingleNetworkSliceSelectionAssistanceInformation
+	SliceDifferentiator() *string
+	SetSliceDifferentiator(val *string)
+	SliceDifferentiatorInput() *string
+	SliceServiceType() *float64
+	SetSliceServiceType(val *float64)
+	SliceServiceTypeInput() *float64
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -133,6 +139,9 @@ type MobileNetworkSlice interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSingleNetworkSliceSelectionAssistanceInformation()
+	ResetSliceDifferentiator()
+	ResetSliceServiceType()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -403,6 +412,46 @@ func (j *jsiiProxy_MobileNetworkSlice) SingleNetworkSliceSelectionAssistanceInfo
 	return returns
 }
 
+func (j *jsiiProxy_MobileNetworkSlice) SliceDifferentiator() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sliceDifferentiator",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MobileNetworkSlice) SliceDifferentiatorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sliceDifferentiatorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MobileNetworkSlice) SliceServiceType() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"sliceServiceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MobileNetworkSlice) SliceServiceTypeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"sliceServiceTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MobileNetworkSlice) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -474,7 +523,7 @@ func (j *jsiiProxy_MobileNetworkSlice) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/mobile_network_slice azurerm_mobile_network_slice} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/mobile_network_slice azurerm_mobile_network_slice} Resource.
 func NewMobileNetworkSlice(scope constructs.Construct, id *string, config *MobileNetworkSliceConfig) MobileNetworkSlice {
 	_init_.Initialize()
 
@@ -492,7 +541,7 @@ func NewMobileNetworkSlice(scope constructs.Construct, id *string, config *Mobil
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/mobile_network_slice azurerm_mobile_network_slice} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/mobile_network_slice azurerm_mobile_network_slice} Resource.
 func NewMobileNetworkSlice_Override(m MobileNetworkSlice, scope constructs.Construct, id *string, config *MobileNetworkSliceConfig) {
 	_init_.Initialize()
 
@@ -622,6 +671,28 @@ func (j *jsiiProxy_MobileNetworkSlice)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MobileNetworkSlice)SetSliceDifferentiator(val *string) {
+	if err := j.validateSetSliceDifferentiatorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sliceDifferentiator",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MobileNetworkSlice)SetSliceServiceType(val *float64) {
+	if err := j.validateSetSliceServiceTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sliceServiceType",
 		val,
 	)
 }
@@ -1032,6 +1103,30 @@ func (m *jsiiProxy_MobileNetworkSlice) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MobileNetworkSlice) ResetSingleNetworkSliceSelectionAssistanceInformation() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSingleNetworkSliceSelectionAssistanceInformation",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MobileNetworkSlice) ResetSliceDifferentiator() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSliceDifferentiator",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MobileNetworkSlice) ResetSliceServiceType() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSliceServiceType",
 		nil, // no parameters
 	)
 }

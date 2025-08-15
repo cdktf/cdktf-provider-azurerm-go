@@ -5,13 +5,13 @@ package redisfirewallrule
 
 
 type RedisFirewallRuleTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/redis_firewall_rule#create RedisFirewallRule#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/redis_firewall_rule#create RedisFirewallRule#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/redis_firewall_rule#delete RedisFirewallRule#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/redis_firewall_rule#delete RedisFirewallRule#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/redis_firewall_rule#read RedisFirewallRule#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/redis_firewall_rule#read RedisFirewallRule#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/redis_firewall_rule#update RedisFirewallRule#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/redis_firewall_rule#update RedisFirewallRule#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

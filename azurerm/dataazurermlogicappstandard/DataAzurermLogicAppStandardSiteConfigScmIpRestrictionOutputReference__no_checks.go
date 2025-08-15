@@ -47,15 +47,7 @@ func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) validatePutHeadersParameters(value interface{}) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) validateSetActionParameters(val *string) error {
 	return nil
 }
 
@@ -67,23 +59,7 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) validateSetIpAddressParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) validateSetNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) validateSetPriorityParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) validateSetServiceTagParameters(val *string) error {
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) validateSetInternalValueParameters(val *DataAzurermLogicAppStandardSiteConfigScmIpRestriction) error {
 	return nil
 }
 
@@ -92,10 +68,6 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputRe
 }
 
 func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference) validateSetVirtualNetworkSubnetIdParameters(val *string) error {
 	return nil
 }
 

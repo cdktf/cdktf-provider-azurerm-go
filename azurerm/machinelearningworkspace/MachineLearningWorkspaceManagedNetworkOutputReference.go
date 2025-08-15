@@ -35,6 +35,9 @@ type MachineLearningWorkspaceManagedNetworkOutputReference interface {
 	IsolationMode() *string
 	SetIsolationMode(val *string)
 	IsolationModeInput() *string
+	ProvisionOnCreationEnabled() interface{}
+	SetProvisionOnCreationEnabled(val interface{})
+	ProvisionOnCreationEnabledInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type MachineLearningWorkspaceManagedNetworkOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetIsolationMode()
+	ResetProvisionOnCreationEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_MachineLearningWorkspaceManagedNetworkOutputReference) Isolat
 	_jsii_.Get(
 		j,
 		"isolationModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MachineLearningWorkspaceManagedNetworkOutputReference) ProvisionOnCreationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"provisionOnCreationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MachineLearningWorkspaceManagedNetworkOutputReference) ProvisionOnCreationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"provisionOnCreationEnabledInput",
 		&returns,
 	)
 	return returns
@@ -241,6 +265,17 @@ func (j *jsiiProxy_MachineLearningWorkspaceManagedNetworkOutputReference)SetIsol
 	_jsii_.Set(
 		j,
 		"isolationMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MachineLearningWorkspaceManagedNetworkOutputReference)SetProvisionOnCreationEnabled(val interface{}) {
+	if err := j.validateSetProvisionOnCreationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisionOnCreationEnabled",
 		val,
 	)
 }
@@ -457,6 +492,14 @@ func (m *jsiiProxy_MachineLearningWorkspaceManagedNetworkOutputReference) ResetI
 	_jsii_.InvokeVoid(
 		m,
 		"resetIsolationMode",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MachineLearningWorkspaceManagedNetworkOutputReference) ResetProvisionOnCreationEnabled() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetProvisionOnCreationEnabled",
 		nil, // no parameters
 	)
 }

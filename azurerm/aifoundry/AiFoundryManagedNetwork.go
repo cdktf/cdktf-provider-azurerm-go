@@ -5,7 +5,7 @@ package aifoundry
 
 
 type AiFoundryManagedNetwork struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/ai_foundry#isolation_mode AiFoundry#isolation_mode}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/ai_foundry#isolation_mode AiFoundry#isolation_mode}.
 	IsolationMode *string `field:"optional" json:"isolationMode" yaml:"isolationMode"`
 }
 

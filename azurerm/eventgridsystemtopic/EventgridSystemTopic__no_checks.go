@@ -135,6 +135,10 @@ func (j *jsiiProxy_EventgridSystemTopic) validateSetSourceArmResourceIdParameter
 	return nil
 }
 
+func (j *jsiiProxy_EventgridSystemTopic) validateSetSourceResourceIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventgridSystemTopic) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

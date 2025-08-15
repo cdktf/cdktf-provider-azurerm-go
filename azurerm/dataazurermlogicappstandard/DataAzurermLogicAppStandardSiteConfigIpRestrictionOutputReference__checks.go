@@ -93,48 +93,9 @@ func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputReference) validatePutHeadersParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataAzurermLogicAppStandardSiteConfigIpRestrictionHeaders:
-		value := value.(*[]*DataAzurermLogicAppStandardSiteConfigIpRestrictionHeaders)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataAzurermLogicAppStandardSiteConfigIpRestrictionHeaders:
-		value_ := value.([]*DataAzurermLogicAppStandardSiteConfigIpRestrictionHeaders)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataAzurermLogicAppStandardSiteConfigIpRestrictionHeaders; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
 func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputReference) validateSetActionParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -205,57 +166,9 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataAzurermLogicAppStandardSiteConfigIpRestriction:
-		val := val.(*DataAzurermLogicAppStandardSiteConfigIpRestriction)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataAzurermLogicAppStandardSiteConfigIpRestriction:
-		val_ := val.(DataAzurermLogicAppStandardSiteConfigIpRestriction)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataAzurermLogicAppStandardSiteConfigIpRestriction; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputReference) validateSetIpAddressParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputReference) validateSetNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputReference) validateSetPriorityParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputReference) validateSetServiceTagParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputReference) validateSetInternalValueParameters(val *DataAzurermLogicAppStandardSiteConfigIpRestriction) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -270,14 +183,6 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputRefer
 }
 
 func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputReference) validateSetVirtualNetworkSubnetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

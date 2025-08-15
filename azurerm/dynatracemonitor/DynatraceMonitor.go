@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/dynatrace_monitor azurerm_dynatrace_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/dynatrace_monitor azurerm_dynatrace_monitor}.
 type DynatraceMonitor interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -567,7 +567,7 @@ func (j *jsiiProxy_DynatraceMonitor) UserInput() *DynatraceMonitorUser {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/dynatrace_monitor azurerm_dynatrace_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/dynatrace_monitor azurerm_dynatrace_monitor} Resource.
 func NewDynatraceMonitor(scope constructs.Construct, id *string, config *DynatraceMonitorConfig) DynatraceMonitor {
 	_init_.Initialize()
 
@@ -585,7 +585,7 @@ func NewDynatraceMonitor(scope constructs.Construct, id *string, config *Dynatra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/dynatrace_monitor azurerm_dynatrace_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/dynatrace_monitor azurerm_dynatrace_monitor} Resource.
 func NewDynatraceMonitor_Override(d DynatraceMonitor, scope constructs.Construct, id *string, config *DynatraceMonitorConfig) {
 	_init_.Initialize()
 

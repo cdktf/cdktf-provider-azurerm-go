@@ -5,9 +5,9 @@ package cosmosdbcassandratable
 
 
 type CosmosdbCassandraTableSchemaColumn struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/cosmosdb_cassandra_table#name CosmosdbCassandraTable#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/cosmosdb_cassandra_table#name CosmosdbCassandraTable#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/cosmosdb_cassandra_table#type CosmosdbCassandraTable#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/cosmosdb_cassandra_table#type CosmosdbCassandraTable#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

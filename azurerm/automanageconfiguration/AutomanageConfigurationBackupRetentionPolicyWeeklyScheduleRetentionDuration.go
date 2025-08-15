@@ -5,9 +5,9 @@ package automanageconfiguration
 
 
 type AutomanageConfigurationBackupRetentionPolicyWeeklyScheduleRetentionDuration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/automanage_configuration#count AutomanageConfiguration#count}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/automanage_configuration#count AutomanageConfiguration#count}.
 	Count *float64 `field:"optional" json:"count" yaml:"count"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/automanage_configuration#duration_type AutomanageConfiguration#duration_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/automanage_configuration#duration_type AutomanageConfiguration#duration_type}.
 	DurationType *string `field:"optional" json:"durationType" yaml:"durationType"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/monitor_diagnostic_setting azurerm_monitor_diagnostic_setting}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/monitor_diagnostic_setting azurerm_monitor_diagnostic_setting}.
 type MonitorDiagnosticSetting interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -596,7 +596,7 @@ func (j *jsiiProxy_MonitorDiagnosticSetting) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/monitor_diagnostic_setting azurerm_monitor_diagnostic_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/monitor_diagnostic_setting azurerm_monitor_diagnostic_setting} Resource.
 func NewMonitorDiagnosticSetting(scope constructs.Construct, id *string, config *MonitorDiagnosticSettingConfig) MonitorDiagnosticSetting {
 	_init_.Initialize()
 
@@ -614,7 +614,7 @@ func NewMonitorDiagnosticSetting(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/monitor_diagnostic_setting azurerm_monitor_diagnostic_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/monitor_diagnostic_setting azurerm_monitor_diagnostic_setting} Resource.
 func NewMonitorDiagnosticSetting_Override(m MonitorDiagnosticSetting, scope constructs.Construct, id *string, config *MonitorDiagnosticSettingConfig) {
 	_init_.Initialize()
 

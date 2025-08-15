@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/arc_private_link_scope azurerm_arc_private_link_scope}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/arc_private_link_scope azurerm_arc_private_link_scope}.
 type ArcPrivateLinkScope interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -451,7 +451,7 @@ func (j *jsiiProxy_ArcPrivateLinkScope) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/arc_private_link_scope azurerm_arc_private_link_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/arc_private_link_scope azurerm_arc_private_link_scope} Resource.
 func NewArcPrivateLinkScope(scope constructs.Construct, id *string, config *ArcPrivateLinkScopeConfig) ArcPrivateLinkScope {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewArcPrivateLinkScope(scope constructs.Construct, id *string, config *ArcP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/arc_private_link_scope azurerm_arc_private_link_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/arc_private_link_scope azurerm_arc_private_link_scope} Resource.
 func NewArcPrivateLinkScope_Override(a ArcPrivateLinkScope, scope constructs.Construct, id *string, config *ArcPrivateLinkScopeConfig) {
 	_init_.Initialize()
 

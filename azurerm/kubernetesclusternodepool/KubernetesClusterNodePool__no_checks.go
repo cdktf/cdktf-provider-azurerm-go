@@ -139,6 +139,10 @@ func (j *jsiiProxy_KubernetesClusterNodePool) validateSetFipsEnabledParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterNodePool) validateSetGpuDriverParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterNodePool) validateSetGpuInstanceParameters(val *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/data-sources/eventgrid_partner_registration azurerm_eventgrid_partner_registration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/eventgrid_partner_registration azurerm_eventgrid_partner_registration}.
 type DataAzurermEventgridPartnerRegistration interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_DataAzurermEventgridPartnerRegistration) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/data-sources/eventgrid_partner_registration azurerm_eventgrid_partner_registration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/eventgrid_partner_registration azurerm_eventgrid_partner_registration} Data Source.
 func NewDataAzurermEventgridPartnerRegistration(scope constructs.Construct, id *string, config *DataAzurermEventgridPartnerRegistrationConfig) DataAzurermEventgridPartnerRegistration {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewDataAzurermEventgridPartnerRegistration(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/data-sources/eventgrid_partner_registration azurerm_eventgrid_partner_registration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/eventgrid_partner_registration azurerm_eventgrid_partner_registration} Data Source.
 func NewDataAzurermEventgridPartnerRegistration_Override(d DataAzurermEventgridPartnerRegistration, scope constructs.Construct, id *string, config *DataAzurermEventgridPartnerRegistrationConfig) {
 	_init_.Initialize()
 

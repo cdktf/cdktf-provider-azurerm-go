@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/eventgrid_system_topic azurerm_eventgrid_system_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/eventgrid_system_topic azurerm_eventgrid_system_topic}.
 type EventgridSystemTopic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -52,6 +52,7 @@ type EventgridSystemTopic interface {
 	SetLocation(val *string)
 	LocationInput() *string
 	MetricArmResourceId() *string
+	MetricResourceId() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -73,6 +74,9 @@ type EventgridSystemTopic interface {
 	SourceArmResourceId() *string
 	SetSourceArmResourceId(val *string)
 	SourceArmResourceIdInput() *string
+	SourceResourceId() *string
+	SetSourceResourceId(val *string)
+	SourceResourceIdInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -137,6 +141,8 @@ type EventgridSystemTopic interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSourceArmResourceId()
+	ResetSourceResourceId()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -317,6 +323,16 @@ func (j *jsiiProxy_EventgridSystemTopic) MetricArmResourceId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_EventgridSystemTopic) MetricResourceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metricResourceId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EventgridSystemTopic) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -417,6 +433,26 @@ func (j *jsiiProxy_EventgridSystemTopic) SourceArmResourceIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_EventgridSystemTopic) SourceResourceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceResourceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventgridSystemTopic) SourceResourceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceResourceIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EventgridSystemTopic) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -508,7 +544,7 @@ func (j *jsiiProxy_EventgridSystemTopic) TopicTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/eventgrid_system_topic azurerm_eventgrid_system_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/eventgrid_system_topic azurerm_eventgrid_system_topic} Resource.
 func NewEventgridSystemTopic(scope constructs.Construct, id *string, config *EventgridSystemTopicConfig) EventgridSystemTopic {
 	_init_.Initialize()
 
@@ -526,7 +562,7 @@ func NewEventgridSystemTopic(scope constructs.Construct, id *string, config *Eve
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/eventgrid_system_topic azurerm_eventgrid_system_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/eventgrid_system_topic azurerm_eventgrid_system_topic} Resource.
 func NewEventgridSystemTopic_Override(e EventgridSystemTopic, scope constructs.Construct, id *string, config *EventgridSystemTopicConfig) {
 	_init_.Initialize()
 
@@ -656,6 +692,17 @@ func (j *jsiiProxy_EventgridSystemTopic)SetSourceArmResourceId(val *string) {
 	_jsii_.Set(
 		j,
 		"sourceArmResourceId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EventgridSystemTopic)SetSourceResourceId(val *string) {
+	if err := j.validateSetSourceResourceIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceResourceId",
 		val,
 	)
 }
@@ -1077,6 +1124,22 @@ func (e *jsiiProxy_EventgridSystemTopic) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EventgridSystemTopic) ResetSourceArmResourceId() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetSourceArmResourceId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EventgridSystemTopic) ResetSourceResourceId() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetSourceResourceId",
 		nil, // no parameters
 	)
 }

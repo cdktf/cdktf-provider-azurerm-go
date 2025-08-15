@@ -13,12 +13,8 @@ import (
 
 type DataAzurermLogicAppStandardSiteConfigOutputReference interface {
 	cdktf.ComplexObject
-	AlwaysOn() interface{}
-	SetAlwaysOn(val interface{})
-	AlwaysOnInput() interface{}
+	AlwaysOn() cdktf.IResolvable
 	AppScaleLimit() *float64
-	SetAppScaleLimit(val *float64)
-	AppScaleLimitInput() *float64
 	AutoSwapSlotName() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -30,60 +26,31 @@ type DataAzurermLogicAppStandardSiteConfigOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	Cors() DataAzurermLogicAppStandardSiteConfigCorsOutputReference
-	CorsInput() *DataAzurermLogicAppStandardSiteConfigCors
+	Cors() DataAzurermLogicAppStandardSiteConfigCorsList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
 	DotnetFrameworkVersion() *string
-	SetDotnetFrameworkVersion(val *string)
-	DotnetFrameworkVersionInput() *string
 	ElasticInstanceMinimum() *float64
-	SetElasticInstanceMinimum(val *float64)
-	ElasticInstanceMinimumInput() *float64
 	// Experimental.
 	Fqn() *string
 	FtpsState() *string
-	SetFtpsState(val *string)
-	FtpsStateInput() *string
 	HealthCheckPath() *string
-	SetHealthCheckPath(val *string)
-	HealthCheckPathInput() *string
-	Http2Enabled() interface{}
-	SetHttp2Enabled(val interface{})
-	Http2EnabledInput() interface{}
+	Http2Enabled() cdktf.IResolvable
 	InternalValue() *DataAzurermLogicAppStandardSiteConfig
 	SetInternalValue(val *DataAzurermLogicAppStandardSiteConfig)
 	IpRestriction() DataAzurermLogicAppStandardSiteConfigIpRestrictionList
-	IpRestrictionInput() interface{}
 	LinuxFxVersion() *string
-	SetLinuxFxVersion(val *string)
-	LinuxFxVersionInput() *string
 	MinTlsVersion() *string
-	SetMinTlsVersion(val *string)
-	MinTlsVersionInput() *string
 	PreWarmedInstanceCount() *float64
-	SetPreWarmedInstanceCount(val *float64)
-	PreWarmedInstanceCountInput() *float64
-	PublicNetworkAccessEnabled() interface{}
-	SetPublicNetworkAccessEnabled(val interface{})
-	PublicNetworkAccessEnabledInput() interface{}
-	RuntimeScaleMonitoringEnabled() interface{}
-	SetRuntimeScaleMonitoringEnabled(val interface{})
-	RuntimeScaleMonitoringEnabledInput() interface{}
+	PublicNetworkAccessEnabled() cdktf.IResolvable
+	RuntimeScaleMonitoringEnabled() cdktf.IResolvable
 	ScmIpRestriction() DataAzurermLogicAppStandardSiteConfigScmIpRestrictionList
-	ScmIpRestrictionInput() interface{}
 	ScmMinTlsVersion() *string
-	SetScmMinTlsVersion(val *string)
-	ScmMinTlsVersionInput() *string
 	ScmType() *string
-	SetScmType(val *string)
-	ScmTypeInput() *string
-	ScmUseMainIpRestriction() interface{}
-	SetScmUseMainIpRestriction(val interface{})
-	ScmUseMainIpRestrictionInput() interface{}
+	ScmUseMainIpRestriction() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -92,15 +59,9 @@ type DataAzurermLogicAppStandardSiteConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Use32BitWorkerProcess() interface{}
-	SetUse32BitWorkerProcess(val interface{})
-	Use32BitWorkerProcessInput() interface{}
-	VnetRouteAllEnabled() interface{}
-	SetVnetRouteAllEnabled(val interface{})
-	VnetRouteAllEnabledInput() interface{}
-	WebsocketsEnabled() interface{}
-	SetWebsocketsEnabled(val interface{})
-	WebsocketsEnabledInput() interface{}
+	Use32BitWorkerProcess() cdktf.IResolvable
+	VnetRouteAllEnabled() cdktf.IResolvable
+	WebsocketsEnabled() cdktf.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -125,30 +86,6 @@ type DataAzurermLogicAppStandardSiteConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCors(value *DataAzurermLogicAppStandardSiteConfigCors)
-	PutIpRestriction(value interface{})
-	PutScmIpRestriction(value interface{})
-	ResetAlwaysOn()
-	ResetAppScaleLimit()
-	ResetCors()
-	ResetDotnetFrameworkVersion()
-	ResetElasticInstanceMinimum()
-	ResetFtpsState()
-	ResetHealthCheckPath()
-	ResetHttp2Enabled()
-	ResetIpRestriction()
-	ResetLinuxFxVersion()
-	ResetMinTlsVersion()
-	ResetPreWarmedInstanceCount()
-	ResetPublicNetworkAccessEnabled()
-	ResetRuntimeScaleMonitoringEnabled()
-	ResetScmIpRestriction()
-	ResetScmMinTlsVersion()
-	ResetScmType()
-	ResetScmUseMainIpRestriction()
-	ResetUse32BitWorkerProcess()
-	ResetVnetRouteAllEnabled()
-	ResetWebsocketsEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -164,21 +101,11 @@ type jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) AlwaysOn() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) AlwaysOn() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"alwaysOn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) AlwaysOnInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"alwaysOnInput",
 		&returns,
 	)
 	return returns
@@ -189,16 +116,6 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) AppScal
 	_jsii_.Get(
 		j,
 		"appScaleLimit",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) AppScaleLimitInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"appScaleLimitInput",
 		&returns,
 	)
 	return returns
@@ -234,21 +151,11 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) Complex
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) Cors() DataAzurermLogicAppStandardSiteConfigCorsOutputReference {
-	var returns DataAzurermLogicAppStandardSiteConfigCorsOutputReference
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) Cors() DataAzurermLogicAppStandardSiteConfigCorsList {
+	var returns DataAzurermLogicAppStandardSiteConfigCorsList
 	_jsii_.Get(
 		j,
 		"cors",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) CorsInput() *DataAzurermLogicAppStandardSiteConfigCors {
-	var returns *DataAzurermLogicAppStandardSiteConfigCors
-	_jsii_.Get(
-		j,
-		"corsInput",
 		&returns,
 	)
 	return returns
@@ -274,31 +181,11 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) DotnetF
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) DotnetFrameworkVersionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"dotnetFrameworkVersionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ElasticInstanceMinimum() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"elasticInstanceMinimum",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ElasticInstanceMinimumInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"elasticInstanceMinimumInput",
 		&returns,
 	)
 	return returns
@@ -324,16 +211,6 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) FtpsSta
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) FtpsStateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ftpsStateInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) HealthCheckPath() *string {
 	var returns *string
 	_jsii_.Get(
@@ -344,31 +221,11 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) HealthC
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) HealthCheckPathInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"healthCheckPathInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) Http2Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) Http2Enabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"http2Enabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) Http2EnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"http2EnabledInput",
 		&returns,
 	)
 	return returns
@@ -394,31 +251,11 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) IpRestr
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) IpRestrictionInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"ipRestrictionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) LinuxFxVersion() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"linuxFxVersion",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) LinuxFxVersionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"linuxFxVersionInput",
 		&returns,
 	)
 	return returns
@@ -434,16 +271,6 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) MinTlsV
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) MinTlsVersionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"minTlsVersionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) PreWarmedInstanceCount() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -454,18 +281,8 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) PreWarm
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) PreWarmedInstanceCountInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"preWarmedInstanceCountInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) PublicNetworkAccessEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) PublicNetworkAccessEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"publicNetworkAccessEnabled",
@@ -474,31 +291,11 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) PublicN
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) PublicNetworkAccessEnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"publicNetworkAccessEnabledInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) RuntimeScaleMonitoringEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) RuntimeScaleMonitoringEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"runtimeScaleMonitoringEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) RuntimeScaleMonitoringEnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"runtimeScaleMonitoringEnabledInput",
 		&returns,
 	)
 	return returns
@@ -514,31 +311,11 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ScmIpRe
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ScmIpRestrictionInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"scmIpRestrictionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ScmMinTlsVersion() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"scmMinTlsVersion",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ScmMinTlsVersionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"scmMinTlsVersionInput",
 		&returns,
 	)
 	return returns
@@ -554,31 +331,11 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ScmType
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ScmTypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"scmTypeInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ScmUseMainIpRestriction() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ScmUseMainIpRestriction() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"scmUseMainIpRestriction",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ScmUseMainIpRestrictionInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"scmUseMainIpRestrictionInput",
 		&returns,
 	)
 	return returns
@@ -604,8 +361,8 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) Use32BitWorkerProcess() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) Use32BitWorkerProcess() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"use32BitWorkerProcess",
@@ -614,18 +371,8 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) Use32Bi
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) Use32BitWorkerProcessInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"use32BitWorkerProcessInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) VnetRouteAllEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) VnetRouteAllEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"vnetRouteAllEnabled",
@@ -634,18 +381,8 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) VnetRou
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) VnetRouteAllEnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"vnetRouteAllEnabledInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) WebsocketsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) WebsocketsEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"websocketsEnabled",
@@ -654,63 +391,31 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) Websock
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) WebsocketsEnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"websocketsEnabledInput",
-		&returns,
-	)
-	return returns
-}
 
-
-func NewDataAzurermLogicAppStandardSiteConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataAzurermLogicAppStandardSiteConfigOutputReference {
+func NewDataAzurermLogicAppStandardSiteConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAzurermLogicAppStandardSiteConfigOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataAzurermLogicAppStandardSiteConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataAzurermLogicAppStandardSiteConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataAzurermLogicAppStandardSiteConfigOutputReference_Override(d DataAzurermLogicAppStandardSiteConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataAzurermLogicAppStandardSiteConfigOutputReference_Override(d DataAzurermLogicAppStandardSiteConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetAlwaysOn(val interface{}) {
-	if err := j.validateSetAlwaysOnParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"alwaysOn",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetAppScaleLimit(val *float64) {
-	if err := j.validateSetAppScaleLimitParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"appScaleLimit",
-		val,
 	)
 }
 
@@ -736,61 +441,6 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetDotnetFrameworkVersion(val *string) {
-	if err := j.validateSetDotnetFrameworkVersionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"dotnetFrameworkVersion",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetElasticInstanceMinimum(val *float64) {
-	if err := j.validateSetElasticInstanceMinimumParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"elasticInstanceMinimum",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetFtpsState(val *string) {
-	if err := j.validateSetFtpsStateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"ftpsState",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetHealthCheckPath(val *string) {
-	if err := j.validateSetHealthCheckPathParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"healthCheckPath",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetHttp2Enabled(val interface{}) {
-	if err := j.validateSetHttp2EnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"http2Enabled",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetInternalValue(val *DataAzurermLogicAppStandardSiteConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -798,94 +448,6 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetInter
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetLinuxFxVersion(val *string) {
-	if err := j.validateSetLinuxFxVersionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"linuxFxVersion",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetMinTlsVersion(val *string) {
-	if err := j.validateSetMinTlsVersionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"minTlsVersion",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetPreWarmedInstanceCount(val *float64) {
-	if err := j.validateSetPreWarmedInstanceCountParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"preWarmedInstanceCount",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetPublicNetworkAccessEnabled(val interface{}) {
-	if err := j.validateSetPublicNetworkAccessEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"publicNetworkAccessEnabled",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetRuntimeScaleMonitoringEnabled(val interface{}) {
-	if err := j.validateSetRuntimeScaleMonitoringEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"runtimeScaleMonitoringEnabled",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetScmMinTlsVersion(val *string) {
-	if err := j.validateSetScmMinTlsVersionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"scmMinTlsVersion",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetScmType(val *string) {
-	if err := j.validateSetScmTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"scmType",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetScmUseMainIpRestriction(val interface{}) {
-	if err := j.validateSetScmUseMainIpRestrictionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"scmUseMainIpRestriction",
 		val,
 	)
 }
@@ -908,39 +470,6 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetTerra
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetUse32BitWorkerProcess(val interface{}) {
-	if err := j.validateSetUse32BitWorkerProcessParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"use32BitWorkerProcess",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetVnetRouteAllEnabled(val interface{}) {
-	if err := j.validateSetVnetRouteAllEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"vnetRouteAllEnabled",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetWebsocketsEnabled(val interface{}) {
-	if err := j.validateSetWebsocketsEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"websocketsEnabled",
 		val,
 	)
 }
@@ -1129,207 +658,6 @@ func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) Interpo
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) PutCors(value *DataAzurermLogicAppStandardSiteConfigCors) {
-	if err := d.validatePutCorsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putCors",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) PutIpRestriction(value interface{}) {
-	if err := d.validatePutIpRestrictionParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putIpRestriction",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) PutScmIpRestriction(value interface{}) {
-	if err := d.validatePutScmIpRestrictionParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putScmIpRestriction",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetAlwaysOn() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAlwaysOn",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetAppScaleLimit() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAppScaleLimit",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetCors() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCors",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetDotnetFrameworkVersion() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDotnetFrameworkVersion",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetElasticInstanceMinimum() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetElasticInstanceMinimum",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetFtpsState() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetFtpsState",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetHealthCheckPath() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetHealthCheckPath",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetHttp2Enabled() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetHttp2Enabled",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetIpRestriction() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetIpRestriction",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetLinuxFxVersion() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetLinuxFxVersion",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetMinTlsVersion() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetMinTlsVersion",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetPreWarmedInstanceCount() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetPreWarmedInstanceCount",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetPublicNetworkAccessEnabled() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetPublicNetworkAccessEnabled",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetRuntimeScaleMonitoringEnabled() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRuntimeScaleMonitoringEnabled",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetScmIpRestriction() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetScmIpRestriction",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetScmMinTlsVersion() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetScmMinTlsVersion",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetScmType() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetScmType",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetScmUseMainIpRestriction() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetScmUseMainIpRestriction",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetUse32BitWorkerProcess() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetUse32BitWorkerProcess",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetVnetRouteAllEnabled() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetVnetRouteAllEnabled",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetWebsocketsEnabled() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetWebsocketsEnabled",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

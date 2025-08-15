@@ -39,6 +39,9 @@ type KubernetesClusterDefaultNodePoolOutputReference interface {
 	FipsEnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
+	GpuDriver() *string
+	SetGpuDriver(val *string)
+	GpuDriverInput() *string
 	GpuInstance() *string
 	SetGpuInstance(val *string)
 	GpuInstanceInput() *string
@@ -175,6 +178,7 @@ type KubernetesClusterDefaultNodePoolOutputReference interface {
 	ResetAutoScalingEnabled()
 	ResetCapacityReservationGroupId()
 	ResetFipsEnabled()
+	ResetGpuDriver()
 	ResetGpuInstance()
 	ResetHostEncryptionEnabled()
 	ResetHostGroupId()
@@ -317,6 +321,26 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) Fqn() *strin
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) GpuDriver() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gpuDriver",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) GpuDriverInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gpuDriverInput",
 		&returns,
 	)
 	return returns
@@ -1095,6 +1119,17 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference)SetFipsEnable
 	)
 }
 
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference)SetGpuDriver(val *string) {
+	if err := j.validateSetGpuDriverParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gpuDriver",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference)SetGpuInstance(val *string) {
 	if err := j.validateSetGpuInstanceParameters(val); err != nil {
 		panic(err)
@@ -1697,6 +1732,14 @@ func (k *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) ResetFipsEna
 	_jsii_.InvokeVoid(
 		k,
 		"resetFipsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) ResetGpuDriver() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetGpuDriver",
 		nil, // no parameters
 	)
 }

@@ -30,8 +30,8 @@ type DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeaders
+	SetInternalValue(val *DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeaders)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -41,17 +41,9 @@ type DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	XAzureFdid() *[]*string
-	SetXAzureFdid(val *[]*string)
-	XAzureFdidInput() *[]*string
 	XFdHealthProbe() *[]*string
-	SetXFdHealthProbe(val *[]*string)
-	XFdHealthProbeInput() *[]*string
 	XForwardedFor() *[]*string
-	SetXForwardedFor(val *[]*string)
-	XForwardedForInput() *[]*string
 	XForwardedHost() *[]*string
-	SetXForwardedHost(val *[]*string)
-	XForwardedHostInput() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -76,10 +68,6 @@ type DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetXAzureFdid()
-	ResetXFdHealthProbe()
-	ResetXForwardedFor()
-	ResetXForwardedHost()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -135,8 +123,8 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersO
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference) InternalValue() *DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeaders {
+	var returns *DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeaders
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -175,31 +163,11 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersO
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference) XAzureFdidInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"xAzureFdidInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference) XFdHealthProbe() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"xFdHealthProbe",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference) XFdHealthProbeInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"xFdHealthProbeInput",
 		&returns,
 	)
 	return returns
@@ -215,31 +183,11 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersO
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference) XForwardedForInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"xForwardedForInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference) XForwardedHost() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"xForwardedHost",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference) XForwardedHostInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"xForwardedHostInput",
 		&returns,
 	)
 	return returns
@@ -295,7 +243,7 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersO
 	)
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference)SetInternalValue(val *DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeaders) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,50 +272,6 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersO
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference)SetXAzureFdid(val *[]*string) {
-	if err := j.validateSetXAzureFdidParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"xAzureFdid",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference)SetXFdHealthProbe(val *[]*string) {
-	if err := j.validateSetXFdHealthProbeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"xFdHealthProbe",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference)SetXForwardedFor(val *[]*string) {
-	if err := j.validateSetXForwardedForParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"xForwardedFor",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference)SetXForwardedHost(val *[]*string) {
-	if err := j.validateSetXForwardedHostParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"xForwardedHost",
 		val,
 	)
 }
@@ -556,38 +460,6 @@ func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersO
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference) ResetXAzureFdid() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetXAzureFdid",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference) ResetXFdHealthProbe() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetXFdHealthProbe",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference) ResetXForwardedFor() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetXForwardedFor",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference) ResetXForwardedHost() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetXForwardedHost",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

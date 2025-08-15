@@ -55,10 +55,6 @@ func (d *jsiiProxy_DataAzurermLogicAppStandard) validateOverrideLogicalIdParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLogicAppStandard) validatePutSiteConfigParameters(value *DataAzurermLogicAppStandardSiteConfig) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataAzurermLogicAppStandard) validatePutTimeoutsParameters(value *DataAzurermLogicAppStandardTimeouts) error {
 	return nil
 }

@@ -5,7 +5,7 @@ package dataazurermcdnfrontdoorprofile
 
 
 type DataAzurermCdnFrontdoorProfileTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/data-sources/cdn_frontdoor_profile#read DataAzurermCdnFrontdoorProfile#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/cdn_frontdoor_profile#read DataAzurermCdnFrontdoorProfile#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

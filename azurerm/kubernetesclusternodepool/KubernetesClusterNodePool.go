@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool}.
 type KubernetesClusterNodePool interface {
 	cdktf.TerraformResource
 	AutoScalingEnabled() interface{}
@@ -51,6 +51,9 @@ type KubernetesClusterNodePool interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GpuDriver() *string
+	SetGpuDriver(val *string)
+	GpuDriverInput() *string
 	GpuInstance() *string
 	SetGpuInstance(val *string)
 	GpuInstanceInput() *string
@@ -240,6 +243,7 @@ type KubernetesClusterNodePool interface {
 	ResetCapacityReservationGroupId()
 	ResetEvictionPolicy()
 	ResetFipsEnabled()
+	ResetGpuDriver()
 	ResetGpuInstance()
 	ResetHostEncryptionEnabled()
 	ResetHostGroupId()
@@ -454,6 +458,26 @@ func (j *jsiiProxy_KubernetesClusterNodePool) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePool) GpuDriver() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gpuDriver",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePool) GpuDriverInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gpuDriverInput",
 		&returns,
 	)
 	return returns
@@ -1340,7 +1364,7 @@ func (j *jsiiProxy_KubernetesClusterNodePool) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool} Resource.
 func NewKubernetesClusterNodePool(scope constructs.Construct, id *string, config *KubernetesClusterNodePoolConfig) KubernetesClusterNodePool {
 	_init_.Initialize()
 
@@ -1358,7 +1382,7 @@ func NewKubernetesClusterNodePool(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.39.0/docs/resources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool} Resource.
 func NewKubernetesClusterNodePool_Override(k KubernetesClusterNodePool, scope constructs.Construct, id *string, config *KubernetesClusterNodePoolConfig) {
 	_init_.Initialize()
 
@@ -1447,6 +1471,17 @@ func (j *jsiiProxy_KubernetesClusterNodePool)SetForEach(val cdktf.ITerraformIter
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePool)SetGpuDriver(val *string) {
+	if err := j.validateSetGpuDriverParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gpuDriver",
 		val,
 	)
 }
@@ -2302,6 +2337,14 @@ func (k *jsiiProxy_KubernetesClusterNodePool) ResetFipsEnabled() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetFipsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterNodePool) ResetGpuDriver() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetGpuDriver",
 		nil, // no parameters
 	)
 }

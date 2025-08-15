@@ -87,6 +87,10 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetF
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetGpuDriverParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetGpuInstanceParameters(val *string) error {
 	return nil
 }
