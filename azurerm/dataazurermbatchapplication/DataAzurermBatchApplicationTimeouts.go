@@ -5,7 +5,7 @@ package dataazurermbatchapplication
 
 
 type DataAzurermBatchApplicationTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/batch_application#read DataAzurermBatchApplication#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/batch_application#read DataAzurermBatchApplication#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

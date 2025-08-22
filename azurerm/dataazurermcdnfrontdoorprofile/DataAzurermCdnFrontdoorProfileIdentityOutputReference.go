@@ -31,8 +31,6 @@ type DataAzurermCdnFrontdoorProfileIdentityOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	IdentityIds() *[]*string
-	SetIdentityIds(val *[]*string)
-	IdentityIdsInput() *[]*string
 	InternalValue() *DataAzurermCdnFrontdoorProfileIdentity
 	SetInternalValue(val *DataAzurermCdnFrontdoorProfileIdentity)
 	PrincipalId() *string
@@ -46,8 +44,6 @@ type DataAzurermCdnFrontdoorProfileIdentityOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Type() *string
-	SetType(val *string)
-	TypeInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,7 +68,6 @@ type DataAzurermCdnFrontdoorProfileIdentityOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetIdentityIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -138,16 +133,6 @@ func (j *jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityOutputReference) Identi
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityOutputReference) IdentityIdsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"identityIdsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityOutputReference) InternalValue() *DataAzurermCdnFrontdoorProfileIdentity {
 	var returns *DataAzurermCdnFrontdoorProfileIdentity
 	_jsii_.Get(
@@ -208,40 +193,30 @@ func (j *jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityOutputReference) Type()
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityOutputReference) TypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"typeInput",
-		&returns,
-	)
-	return returns
-}
 
-
-func NewDataAzurermCdnFrontdoorProfileIdentityOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataAzurermCdnFrontdoorProfileIdentityOutputReference {
+func NewDataAzurermCdnFrontdoorProfileIdentityOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAzurermCdnFrontdoorProfileIdentityOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataAzurermCdnFrontdoorProfileIdentityOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataAzurermCdnFrontdoorProfileIdentityOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.dataAzurermCdnFrontdoorProfile.DataAzurermCdnFrontdoorProfileIdentityOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataAzurermCdnFrontdoorProfileIdentityOutputReference_Override(d DataAzurermCdnFrontdoorProfileIdentityOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataAzurermCdnFrontdoorProfileIdentityOutputReference_Override(d DataAzurermCdnFrontdoorProfileIdentityOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.dataAzurermCdnFrontdoorProfile.DataAzurermCdnFrontdoorProfileIdentityOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
@@ -264,17 +239,6 @@ func (j *jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityOutputReference)SetComp
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityOutputReference)SetIdentityIds(val *[]*string) {
-	if err := j.validateSetIdentityIdsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"identityIds",
 		val,
 	)
 }
@@ -308,17 +272,6 @@ func (j *jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityOutputReference)SetTerr
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityOutputReference)SetType(val *string) {
-	if err := j.validateSetTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"type",
 		val,
 	)
 }
@@ -507,14 +460,6 @@ func (d *jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityOutputReference) Interp
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityOutputReference) ResetIdentityIds() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetIdentityIds",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

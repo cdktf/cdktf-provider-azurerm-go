@@ -218,6 +218,37 @@ func (c *jsiiProxy_CdnFrontdoorProfile) validatePutIdentityParameters(value *Cdn
 	return nil
 }
 
+func (c *jsiiProxy_CdnFrontdoorProfile) validatePutLogScrubbingRuleParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*CdnFrontdoorProfileLogScrubbingRule:
+		value := value.(*[]*CdnFrontdoorProfileLogScrubbingRule)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*CdnFrontdoorProfileLogScrubbingRule:
+		value_ := value.([]*CdnFrontdoorProfileLogScrubbingRule)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CdnFrontdoorProfileLogScrubbingRule; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_CdnFrontdoorProfile) validatePutTimeoutsParameters(value *CdnFrontdoorProfileTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

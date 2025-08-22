@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/linux_function_app azurerm_linux_function_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/linux_function_app azurerm_linux_function_app}.
 type DataAzurermLinuxFunctionApp interface {
 	cdktf.TerraformDataSource
 	AppSettings() cdktf.StringMap
@@ -775,7 +775,7 @@ func (j *jsiiProxy_DataAzurermLinuxFunctionApp) WebdeployPublishBasicAuthenticat
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/linux_function_app azurerm_linux_function_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/linux_function_app azurerm_linux_function_app} Data Source.
 func NewDataAzurermLinuxFunctionApp(scope constructs.Construct, id *string, config *DataAzurermLinuxFunctionAppConfig) DataAzurermLinuxFunctionApp {
 	_init_.Initialize()
 
@@ -793,7 +793,7 @@ func NewDataAzurermLinuxFunctionApp(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/linux_function_app azurerm_linux_function_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/linux_function_app azurerm_linux_function_app} Data Source.
 func NewDataAzurermLinuxFunctionApp_Override(d DataAzurermLinuxFunctionApp, scope constructs.Construct, id *string, config *DataAzurermLinuxFunctionAppConfig) {
 	_init_.Initialize()
 

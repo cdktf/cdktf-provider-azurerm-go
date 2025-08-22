@@ -79,6 +79,10 @@ func (c *jsiiProxy_CdnFrontdoorProfile) validatePutIdentityParameters(value *Cdn
 	return nil
 }
 
+func (c *jsiiProxy_CdnFrontdoorProfile) validatePutLogScrubbingRuleParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnFrontdoorProfile) validatePutTimeoutsParameters(value *CdnFrontdoorProfileTimeouts) error {
 	return nil
 }

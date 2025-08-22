@@ -59,10 +59,6 @@ func (j *jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityOutputReference) validateSetIdentityIdsParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityOutputReference) validateSetInternalValueParameters(val *DataAzurermCdnFrontdoorProfileIdentity) error {
 	return nil
 }
@@ -75,11 +71,7 @@ func (j *jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityOutputReference) validateSetTypeParameters(val *string) error {
-	return nil
-}
-
-func validateNewDataAzurermCdnFrontdoorProfileIdentityOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataAzurermCdnFrontdoorProfileIdentityOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

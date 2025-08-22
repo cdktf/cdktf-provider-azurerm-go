@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/netapp_account_encryption azurerm_netapp_account_encryption}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/netapp_account_encryption azurerm_netapp_account_encryption}.
 type NetappAccountEncryption interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,6 +27,9 @@ type NetappAccountEncryption interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CrossTenantKeyVaultResourceId() *string
+	SetCrossTenantKeyVaultResourceId(val *string)
+	CrossTenantKeyVaultResourceIdInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -34,6 +37,9 @@ type NetappAccountEncryption interface {
 	EncryptionKey() *string
 	SetEncryptionKey(val *string)
 	EncryptionKeyInput() *string
+	FederatedClientId() *string
+	SetFederatedClientId(val *string)
+	FederatedClientIdInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -122,6 +128,8 @@ type NetappAccountEncryption interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *NetappAccountEncryptionTimeouts)
+	ResetCrossTenantKeyVaultResourceId()
+	ResetFederatedClientId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -187,6 +195,26 @@ func (j *jsiiProxy_NetappAccountEncryption) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NetappAccountEncryption) CrossTenantKeyVaultResourceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"crossTenantKeyVaultResourceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappAccountEncryption) CrossTenantKeyVaultResourceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"crossTenantKeyVaultResourceIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetappAccountEncryption) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -212,6 +240,26 @@ func (j *jsiiProxy_NetappAccountEncryption) EncryptionKeyInput() *string {
 	_jsii_.Get(
 		j,
 		"encryptionKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappAccountEncryption) FederatedClientId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"federatedClientId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappAccountEncryption) FederatedClientIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"federatedClientIdInput",
 		&returns,
 	)
 	return returns
@@ -428,7 +476,7 @@ func (j *jsiiProxy_NetappAccountEncryption) UserAssignedIdentityIdInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/netapp_account_encryption azurerm_netapp_account_encryption} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/netapp_account_encryption azurerm_netapp_account_encryption} Resource.
 func NewNetappAccountEncryption(scope constructs.Construct, id *string, config *NetappAccountEncryptionConfig) NetappAccountEncryption {
 	_init_.Initialize()
 
@@ -446,7 +494,7 @@ func NewNetappAccountEncryption(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/netapp_account_encryption azurerm_netapp_account_encryption} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/netapp_account_encryption azurerm_netapp_account_encryption} Resource.
 func NewNetappAccountEncryption_Override(n NetappAccountEncryption, scope constructs.Construct, id *string, config *NetappAccountEncryptionConfig) {
 	_init_.Initialize()
 
@@ -479,6 +527,17 @@ func (j *jsiiProxy_NetappAccountEncryption)SetCount(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_NetappAccountEncryption)SetCrossTenantKeyVaultResourceId(val *string) {
+	if err := j.validateSetCrossTenantKeyVaultResourceIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"crossTenantKeyVaultResourceId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NetappAccountEncryption)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -494,6 +553,17 @@ func (j *jsiiProxy_NetappAccountEncryption)SetEncryptionKey(val *string) {
 	_jsii_.Set(
 		j,
 		"encryptionKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappAccountEncryption)SetFederatedClientId(val *string) {
+	if err := j.validateSetFederatedClientIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"federatedClientId",
 		val,
 	)
 }
@@ -941,6 +1011,22 @@ func (n *jsiiProxy_NetappAccountEncryption) PutTimeouts(value *NetappAccountEncr
 		n,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetappAccountEncryption) ResetCrossTenantKeyVaultResourceId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetCrossTenantKeyVaultResourceId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappAccountEncryption) ResetFederatedClientId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetFederatedClientId",
+		nil, // no parameters
 	)
 }
 

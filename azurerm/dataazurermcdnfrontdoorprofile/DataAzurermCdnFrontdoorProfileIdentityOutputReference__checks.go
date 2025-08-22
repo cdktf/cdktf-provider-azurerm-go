@@ -166,14 +166,6 @@ func (j *jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityOutputReference) validateSetIdentityIdsParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityOutputReference) validateSetInternalValueParameters(val *DataAzurermCdnFrontdoorProfileIdentity) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -198,21 +190,21 @@ func (j *jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityOutputReference) validateSetTypeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func validateNewDataAzurermCdnFrontdoorProfileIdentityOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataAzurermCdnFrontdoorProfileIdentityOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	if complexObjectIndex == nil {
+		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
+	}
+
+	if complexObjectIsFromSet == nil {
+		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

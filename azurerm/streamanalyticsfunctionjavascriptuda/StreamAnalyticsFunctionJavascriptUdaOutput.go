@@ -5,7 +5,7 @@ package streamanalyticsfunctionjavascriptuda
 
 
 type StreamAnalyticsFunctionJavascriptUdaOutput struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/stream_analytics_function_javascript_uda#type StreamAnalyticsFunctionJavascriptUda#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/stream_analytics_function_javascript_uda#type StreamAnalyticsFunctionJavascriptUda#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

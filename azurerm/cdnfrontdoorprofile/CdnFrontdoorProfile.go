@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/cdn_frontdoor_profile azurerm_cdn_frontdoor_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/cdn_frontdoor_profile azurerm_cdn_frontdoor_profile}.
 type CdnFrontdoorProfile interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -48,6 +48,8 @@ type CdnFrontdoorProfile interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LogScrubbingRule() CdnFrontdoorProfileLogScrubbingRuleList
+	LogScrubbingRuleInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -128,9 +130,11 @@ type CdnFrontdoorProfile interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutIdentity(value *CdnFrontdoorProfileIdentity)
+	PutLogScrubbingRule(value interface{})
 	PutTimeouts(value *CdnFrontdoorProfileTimeouts)
 	ResetId()
 	ResetIdentity()
+	ResetLogScrubbingRule()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -280,6 +284,26 @@ func (j *jsiiProxy_CdnFrontdoorProfile) Lifecycle() *cdktf.TerraformResourceLife
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnFrontdoorProfile) LogScrubbingRule() CdnFrontdoorProfileLogScrubbingRuleList {
+	var returns CdnFrontdoorProfileLogScrubbingRuleList
+	_jsii_.Get(
+		j,
+		"logScrubbingRule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnFrontdoorProfile) LogScrubbingRuleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logScrubbingRuleInput",
 		&returns,
 	)
 	return returns
@@ -486,7 +510,7 @@ func (j *jsiiProxy_CdnFrontdoorProfile) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/cdn_frontdoor_profile azurerm_cdn_frontdoor_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/cdn_frontdoor_profile azurerm_cdn_frontdoor_profile} Resource.
 func NewCdnFrontdoorProfile(scope constructs.Construct, id *string, config *CdnFrontdoorProfileConfig) CdnFrontdoorProfile {
 	_init_.Initialize()
 
@@ -504,7 +528,7 @@ func NewCdnFrontdoorProfile(scope constructs.Construct, id *string, config *CdnF
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/cdn_frontdoor_profile azurerm_cdn_frontdoor_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/cdn_frontdoor_profile azurerm_cdn_frontdoor_profile} Resource.
 func NewCdnFrontdoorProfile_Override(c CdnFrontdoorProfile, scope constructs.Construct, id *string, config *CdnFrontdoorProfileConfig) {
 	_init_.Initialize()
 
@@ -1013,6 +1037,17 @@ func (c *jsiiProxy_CdnFrontdoorProfile) PutIdentity(value *CdnFrontdoorProfileId
 	)
 }
 
+func (c *jsiiProxy_CdnFrontdoorProfile) PutLogScrubbingRule(value interface{}) {
+	if err := c.validatePutLogScrubbingRuleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putLogScrubbingRule",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CdnFrontdoorProfile) PutTimeouts(value *CdnFrontdoorProfileTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1036,6 +1071,14 @@ func (c *jsiiProxy_CdnFrontdoorProfile) ResetIdentity() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetIdentity",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CdnFrontdoorProfile) ResetLogScrubbingRule() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLogScrubbingRule",
 		nil, // no parameters
 	)
 }

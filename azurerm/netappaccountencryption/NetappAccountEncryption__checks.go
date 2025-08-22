@@ -348,7 +348,23 @@ func (j *jsiiProxy_NetappAccountEncryption) validateSetCountParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_NetappAccountEncryption) validateSetCrossTenantKeyVaultResourceIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NetappAccountEncryption) validateSetEncryptionKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NetappAccountEncryption) validateSetFederatedClientIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

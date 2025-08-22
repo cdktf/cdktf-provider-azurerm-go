@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/mssql_job azurerm_mssql_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/mssql_job azurerm_mssql_job}.
 type MssqlJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_MssqlJob) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/mssql_job azurerm_mssql_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/mssql_job azurerm_mssql_job} Resource.
 func NewMssqlJob(scope constructs.Construct, id *string, config *MssqlJobConfig) MssqlJob {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewMssqlJob(scope constructs.Construct, id *string, config *MssqlJobConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/mssql_job azurerm_mssql_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/mssql_job azurerm_mssql_job} Resource.
 func NewMssqlJob_Override(m MssqlJob, scope constructs.Construct, id *string, config *MssqlJobConfig) {
 	_init_.Initialize()
 

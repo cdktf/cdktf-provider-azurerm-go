@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/maintenance_assignment_virtual_machine_scale_set azurerm_maintenance_assignment_virtual_machine_scale_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/maintenance_assignment_virtual_machine_scale_set azurerm_maintenance_assignment_virtual_machine_scale_set}.
 type MaintenanceAssignmentVirtualMachineScaleSet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_MaintenanceAssignmentVirtualMachineScaleSet) VirtualMachineSc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/maintenance_assignment_virtual_machine_scale_set azurerm_maintenance_assignment_virtual_machine_scale_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/maintenance_assignment_virtual_machine_scale_set azurerm_maintenance_assignment_virtual_machine_scale_set} Resource.
 func NewMaintenanceAssignmentVirtualMachineScaleSet(scope constructs.Construct, id *string, config *MaintenanceAssignmentVirtualMachineScaleSetConfig) MaintenanceAssignmentVirtualMachineScaleSet {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewMaintenanceAssignmentVirtualMachineScaleSet(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/maintenance_assignment_virtual_machine_scale_set azurerm_maintenance_assignment_virtual_machine_scale_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/maintenance_assignment_virtual_machine_scale_set azurerm_maintenance_assignment_virtual_machine_scale_set} Resource.
 func NewMaintenanceAssignmentVirtualMachineScaleSet_Override(m MaintenanceAssignmentVirtualMachineScaleSet, scope constructs.Construct, id *string, config *MaintenanceAssignmentVirtualMachineScaleSetConfig) {
 	_init_.Initialize()
 

@@ -5,7 +5,7 @@ package dataazurermfirewallpolicy
 
 
 type DataAzurermFirewallPolicyTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/firewall_policy#read DataAzurermFirewallPolicy#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/firewall_policy#read DataAzurermFirewallPolicy#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

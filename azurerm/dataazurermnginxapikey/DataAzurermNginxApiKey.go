@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/nginx_api_key azurerm_nginx_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/nginx_api_key azurerm_nginx_api_key}.
 type DataAzurermNginxApiKey interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_DataAzurermNginxApiKey) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/nginx_api_key azurerm_nginx_api_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/nginx_api_key azurerm_nginx_api_key} Data Source.
 func NewDataAzurermNginxApiKey(scope constructs.Construct, id *string, config *DataAzurermNginxApiKeyConfig) DataAzurermNginxApiKey {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewDataAzurermNginxApiKey(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/nginx_api_key azurerm_nginx_api_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/nginx_api_key azurerm_nginx_api_key} Data Source.
 func NewDataAzurermNginxApiKey_Override(d DataAzurermNginxApiKey, scope constructs.Construct, id *string, config *DataAzurermNginxApiKeyConfig) {
 	_init_.Initialize()
 

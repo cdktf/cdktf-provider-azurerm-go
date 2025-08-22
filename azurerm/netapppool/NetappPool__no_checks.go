@@ -111,6 +111,10 @@ func (j *jsiiProxy_NetappPool) validateSetCountParameters(val interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_NetappPool) validateSetCustomThroughputMibpsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappPool) validateSetEncryptionTypeParameters(val *string) error {
 	return nil
 }

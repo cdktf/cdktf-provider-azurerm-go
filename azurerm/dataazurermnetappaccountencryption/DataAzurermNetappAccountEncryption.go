@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/netapp_account_encryption azurerm_netapp_account_encryption}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/netapp_account_encryption azurerm_netapp_account_encryption}.
 type DataAzurermNetappAccountEncryption interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -23,11 +23,13 @@ type DataAzurermNetappAccountEncryption interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CrossTenantKeyVaultResourceId() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EncryptionKey() *string
+	FederatedClientId() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -144,6 +146,16 @@ func (j *jsiiProxy_DataAzurermNetappAccountEncryption) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermNetappAccountEncryption) CrossTenantKeyVaultResourceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"crossTenantKeyVaultResourceId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermNetappAccountEncryption) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -159,6 +171,16 @@ func (j *jsiiProxy_DataAzurermNetappAccountEncryption) EncryptionKey() *string {
 	_jsii_.Get(
 		j,
 		"encryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermNetappAccountEncryption) FederatedClientId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"federatedClientId",
 		&returns,
 	)
 	return returns
@@ -345,7 +367,7 @@ func (j *jsiiProxy_DataAzurermNetappAccountEncryption) UserAssignedIdentityId() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/netapp_account_encryption azurerm_netapp_account_encryption} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/netapp_account_encryption azurerm_netapp_account_encryption} Data Source.
 func NewDataAzurermNetappAccountEncryption(scope constructs.Construct, id *string, config *DataAzurermNetappAccountEncryptionConfig) DataAzurermNetappAccountEncryption {
 	_init_.Initialize()
 
@@ -363,7 +385,7 @@ func NewDataAzurermNetappAccountEncryption(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/netapp_account_encryption azurerm_netapp_account_encryption} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/netapp_account_encryption azurerm_netapp_account_encryption} Data Source.
 func NewDataAzurermNetappAccountEncryption_Override(d DataAzurermNetappAccountEncryption, scope constructs.Construct, id *string, config *DataAzurermNetappAccountEncryptionConfig) {
 	_init_.Initialize()
 

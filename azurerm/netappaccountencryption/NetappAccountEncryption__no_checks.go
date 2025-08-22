@@ -103,7 +103,15 @@ func (j *jsiiProxy_NetappAccountEncryption) validateSetCountParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_NetappAccountEncryption) validateSetCrossTenantKeyVaultResourceIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappAccountEncryption) validateSetEncryptionKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappAccountEncryption) validateSetFederatedClientIdParameters(val *string) error {
 	return nil
 }
 

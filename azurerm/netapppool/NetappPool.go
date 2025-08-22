@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/netapp_pool azurerm_netapp_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/netapp_pool azurerm_netapp_pool}.
 type NetappPool interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -33,6 +33,9 @@ type NetappPool interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomThroughputMibps() *float64
+	SetCustomThroughputMibps(val *float64)
+	CustomThroughputMibpsInput() *float64
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -141,6 +144,7 @@ type NetappPool interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *NetappPoolTimeouts)
 	ResetCoolAccessEnabled()
+	ResetCustomThroughputMibps()
 	ResetEncryptionType()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -242,6 +246,26 @@ func (j *jsiiProxy_NetappPool) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappPool) CustomThroughputMibps() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"customThroughputMibps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappPool) CustomThroughputMibpsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"customThroughputMibpsInput",
 		&returns,
 	)
 	return returns
@@ -568,7 +592,7 @@ func (j *jsiiProxy_NetappPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/netapp_pool azurerm_netapp_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/netapp_pool azurerm_netapp_pool} Resource.
 func NewNetappPool(scope constructs.Construct, id *string, config *NetappPoolConfig) NetappPool {
 	_init_.Initialize()
 
@@ -586,7 +610,7 @@ func NewNetappPool(scope constructs.Construct, id *string, config *NetappPoolCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/resources/netapp_pool azurerm_netapp_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/netapp_pool azurerm_netapp_pool} Resource.
 func NewNetappPool_Override(n NetappPool, scope constructs.Construct, id *string, config *NetappPoolConfig) {
 	_init_.Initialize()
 
@@ -637,6 +661,17 @@ func (j *jsiiProxy_NetappPool)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappPool)SetCustomThroughputMibps(val *float64) {
+	if err := j.validateSetCustomThroughputMibpsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customThroughputMibps",
 		val,
 	)
 }
@@ -1154,6 +1189,14 @@ func (n *jsiiProxy_NetappPool) ResetCoolAccessEnabled() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetCoolAccessEnabled",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappPool) ResetCustomThroughputMibps() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetCustomThroughputMibps",
 		nil, // no parameters
 	)
 }

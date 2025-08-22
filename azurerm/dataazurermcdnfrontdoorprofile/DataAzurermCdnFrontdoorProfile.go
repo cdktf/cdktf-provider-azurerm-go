@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/cdn_frontdoor_profile azurerm_cdn_frontdoor_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/cdn_frontdoor_profile azurerm_cdn_frontdoor_profile}.
 type DataAzurermCdnFrontdoorProfile interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -37,13 +37,13 @@ type DataAzurermCdnFrontdoorProfile interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
-	Identity() DataAzurermCdnFrontdoorProfileIdentityOutputReference
-	IdentityInput() *DataAzurermCdnFrontdoorProfileIdentity
+	Identity() DataAzurermCdnFrontdoorProfileIdentityList
 	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LogScrubbingRule() DataAzurermCdnFrontdoorProfileLogScrubbingRuleList
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -95,10 +95,8 @@ type DataAzurermCdnFrontdoorProfile interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutIdentity(value *DataAzurermCdnFrontdoorProfileIdentity)
 	PutTimeouts(value *DataAzurermCdnFrontdoorProfileTimeouts)
 	ResetId()
-	ResetIdentity()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -202,21 +200,11 @@ func (j *jsiiProxy_DataAzurermCdnFrontdoorProfile) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermCdnFrontdoorProfile) Identity() DataAzurermCdnFrontdoorProfileIdentityOutputReference {
-	var returns DataAzurermCdnFrontdoorProfileIdentityOutputReference
+func (j *jsiiProxy_DataAzurermCdnFrontdoorProfile) Identity() DataAzurermCdnFrontdoorProfileIdentityList {
+	var returns DataAzurermCdnFrontdoorProfileIdentityList
 	_jsii_.Get(
 		j,
 		"identity",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermCdnFrontdoorProfile) IdentityInput() *DataAzurermCdnFrontdoorProfileIdentity {
-	var returns *DataAzurermCdnFrontdoorProfileIdentity
-	_jsii_.Get(
-		j,
-		"identityInput",
 		&returns,
 	)
 	return returns
@@ -237,6 +225,16 @@ func (j *jsiiProxy_DataAzurermCdnFrontdoorProfile) Lifecycle() *cdktf.TerraformR
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermCdnFrontdoorProfile) LogScrubbingRule() DataAzurermCdnFrontdoorProfileLogScrubbingRuleList {
+	var returns DataAzurermCdnFrontdoorProfileLogScrubbingRuleList
+	_jsii_.Get(
+		j,
+		"logScrubbingRule",
 		&returns,
 	)
 	return returns
@@ -403,7 +401,7 @@ func (j *jsiiProxy_DataAzurermCdnFrontdoorProfile) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/cdn_frontdoor_profile azurerm_cdn_frontdoor_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/cdn_frontdoor_profile azurerm_cdn_frontdoor_profile} Data Source.
 func NewDataAzurermCdnFrontdoorProfile(scope constructs.Construct, id *string, config *DataAzurermCdnFrontdoorProfileConfig) DataAzurermCdnFrontdoorProfile {
 	_init_.Initialize()
 
@@ -421,7 +419,7 @@ func NewDataAzurermCdnFrontdoorProfile(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/cdn_frontdoor_profile azurerm_cdn_frontdoor_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/cdn_frontdoor_profile azurerm_cdn_frontdoor_profile} Data Source.
 func NewDataAzurermCdnFrontdoorProfile_Override(d DataAzurermCdnFrontdoorProfile, scope constructs.Construct, id *string, config *DataAzurermCdnFrontdoorProfileConfig) {
 	_init_.Initialize()
 
@@ -796,17 +794,6 @@ func (d *jsiiProxy_DataAzurermCdnFrontdoorProfile) OverrideLogicalId(newLogicalI
 	)
 }
 
-func (d *jsiiProxy_DataAzurermCdnFrontdoorProfile) PutIdentity(value *DataAzurermCdnFrontdoorProfileIdentity) {
-	if err := d.validatePutIdentityParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putIdentity",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataAzurermCdnFrontdoorProfile) PutTimeouts(value *DataAzurermCdnFrontdoorProfileTimeouts) {
 	if err := d.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -822,14 +809,6 @@ func (d *jsiiProxy_DataAzurermCdnFrontdoorProfile) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermCdnFrontdoorProfile) ResetIdentity() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetIdentity",
 		nil, // no parameters
 	)
 }

@@ -5,7 +5,7 @@ package dataazurermsourcecontroltoken
 
 
 type DataAzurermSourceControlTokenTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/source_control_token#read DataAzurermSourceControlToken#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/source_control_token#read DataAzurermSourceControlToken#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

@@ -5,7 +5,7 @@ package dataazurermkustodatabase
 
 
 type DataAzurermKustoDatabaseTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.40.0/docs/data-sources/kusto_database#read DataAzurermKustoDatabase#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/kusto_database#read DataAzurermKustoDatabase#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 
