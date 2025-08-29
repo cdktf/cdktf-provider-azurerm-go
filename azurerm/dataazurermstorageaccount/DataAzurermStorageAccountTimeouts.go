@@ -5,7 +5,7 @@ package dataazurermstorageaccount
 
 
 type DataAzurermStorageAccountTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/storage_account#read DataAzurermStorageAccount#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/data-sources/storage_account#read DataAzurermStorageAccount#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

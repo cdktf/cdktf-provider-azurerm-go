@@ -155,6 +155,10 @@ func (j *jsiiProxy_WindowsVirtualMachine) validateSetAllowExtensionOperationsPar
 	return nil
 }
 
+func (j *jsiiProxy_WindowsVirtualMachine) validateSetAutomaticUpdatesEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsVirtualMachine) validateSetAvailabilitySetIdParameters(val *string) error {
 	return nil
 }
@@ -244,6 +248,10 @@ func (j *jsiiProxy_WindowsVirtualMachine) validateSetNameParameters(val *string)
 }
 
 func (j *jsiiProxy_WindowsVirtualMachine) validateSetNetworkInterfaceIdsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WindowsVirtualMachine) validateSetOsManagedDiskIdParameters(val *string) error {
 	return nil
 }
 

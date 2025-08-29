@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/data_factory_managed_private_endpoint azurerm_data_factory_managed_private_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/data_factory_managed_private_endpoint azurerm_data_factory_managed_private_endpoint}.
 type DataFactoryManagedPrivateEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -451,7 +451,7 @@ func (j *jsiiProxy_DataFactoryManagedPrivateEndpoint) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/data_factory_managed_private_endpoint azurerm_data_factory_managed_private_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/data_factory_managed_private_endpoint azurerm_data_factory_managed_private_endpoint} Resource.
 func NewDataFactoryManagedPrivateEndpoint(scope constructs.Construct, id *string, config *DataFactoryManagedPrivateEndpointConfig) DataFactoryManagedPrivateEndpoint {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewDataFactoryManagedPrivateEndpoint(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/data_factory_managed_private_endpoint azurerm_data_factory_managed_private_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/data_factory_managed_private_endpoint azurerm_data_factory_managed_private_endpoint} Resource.
 func NewDataFactoryManagedPrivateEndpoint_Override(d DataFactoryManagedPrivateEndpoint, scope constructs.Construct, id *string, config *DataFactoryManagedPrivateEndpointConfig) {
 	_init_.Initialize()
 

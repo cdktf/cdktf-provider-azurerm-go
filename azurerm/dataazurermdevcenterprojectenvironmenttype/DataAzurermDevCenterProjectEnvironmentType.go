@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/dev_center_project_environment_type azurerm_dev_center_project_environment_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/data-sources/dev_center_project_environment_type azurerm_dev_center_project_environment_type}.
 type DataAzurermDevCenterProjectEnvironmentType interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_DataAzurermDevCenterProjectEnvironmentType) UserRoleAssignmen
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/dev_center_project_environment_type azurerm_dev_center_project_environment_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/data-sources/dev_center_project_environment_type azurerm_dev_center_project_environment_type} Data Source.
 func NewDataAzurermDevCenterProjectEnvironmentType(scope constructs.Construct, id *string, config *DataAzurermDevCenterProjectEnvironmentTypeConfig) DataAzurermDevCenterProjectEnvironmentType {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewDataAzurermDevCenterProjectEnvironmentType(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/dev_center_project_environment_type azurerm_dev_center_project_environment_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/data-sources/dev_center_project_environment_type azurerm_dev_center_project_environment_type} Data Source.
 func NewDataAzurermDevCenterProjectEnvironmentType_Override(d DataAzurermDevCenterProjectEnvironmentType, scope constructs.Construct, id *string, config *DataAzurermDevCenterProjectEnvironmentTypeConfig) {
 	_init_.Initialize()
 

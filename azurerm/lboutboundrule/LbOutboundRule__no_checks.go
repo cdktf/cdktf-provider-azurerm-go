@@ -147,6 +147,10 @@ func (j *jsiiProxy_LbOutboundRule) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_LbOutboundRule) validateSetTcpResetEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewLbOutboundRuleParameters(scope constructs.Construct, id *string, config *LbOutboundRuleConfig) error {
 	return nil
 }

@@ -111,6 +111,10 @@ func (j *jsiiProxy_IothubEndpointOutputReference) validateSetResourceGroupNamePa
 	return nil
 }
 
+func (j *jsiiProxy_IothubEndpointOutputReference) validateSetSubscriptionIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IothubEndpointOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

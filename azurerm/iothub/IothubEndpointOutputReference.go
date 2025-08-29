@@ -68,6 +68,9 @@ type IothubEndpointOutputReference interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	SubscriptionId() *string
+	SetSubscriptionId(val *string)
+	SubscriptionIdInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -115,6 +118,7 @@ type IothubEndpointOutputReference interface {
 	ResetMaxChunkSizeInBytes()
 	ResetName()
 	ResetResourceGroupName()
+	ResetSubscriptionId()
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -421,6 +425,26 @@ func (j *jsiiProxy_IothubEndpointOutputReference) ResourceGroupNameInput() *stri
 	return returns
 }
 
+func (j *jsiiProxy_IothubEndpointOutputReference) SubscriptionId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subscriptionId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IothubEndpointOutputReference) SubscriptionIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subscriptionIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IothubEndpointOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -650,6 +674,17 @@ func (j *jsiiProxy_IothubEndpointOutputReference)SetResourceGroupName(val *strin
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IothubEndpointOutputReference)SetSubscriptionId(val *string) {
+	if err := j.validateSetSubscriptionIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subscriptionId",
 		val,
 	)
 }
@@ -965,6 +1000,14 @@ func (i *jsiiProxy_IothubEndpointOutputReference) ResetResourceGroupName() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetResourceGroupName",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IothubEndpointOutputReference) ResetSubscriptionId() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetSubscriptionId",
 		nil, // no parameters
 	)
 }

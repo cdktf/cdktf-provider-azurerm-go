@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/bot_channels_registration azurerm_bot_channels_registration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/bot_channels_registration azurerm_bot_channels_registration}.
 type BotChannelsRegistration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -713,7 +713,7 @@ func (j *jsiiProxy_BotChannelsRegistration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/bot_channels_registration azurerm_bot_channels_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/bot_channels_registration azurerm_bot_channels_registration} Resource.
 func NewBotChannelsRegistration(scope constructs.Construct, id *string, config *BotChannelsRegistrationConfig) BotChannelsRegistration {
 	_init_.Initialize()
 
@@ -731,7 +731,7 @@ func NewBotChannelsRegistration(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/bot_channels_registration azurerm_bot_channels_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/bot_channels_registration azurerm_bot_channels_registration} Resource.
 func NewBotChannelsRegistration_Override(b BotChannelsRegistration, scope constructs.Construct, id *string, config *BotChannelsRegistrationConfig) {
 	_init_.Initialize()
 

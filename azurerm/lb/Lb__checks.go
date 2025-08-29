@@ -465,6 +465,14 @@ func (j *jsiiProxy_Lb) validateSetProvisionersParameters(val *[]interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_Lb) validateSetPublicIpAddressIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Lb) validateSetResourceGroupNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -482,6 +490,14 @@ func (j *jsiiProxy_Lb) validateSetSkuParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Lb) validateSetSkuTierParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Lb) validateSetSubnetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

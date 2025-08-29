@@ -123,6 +123,10 @@ func (j *jsiiProxy_LbRule) validateSetEnableTcpResetParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_LbRule) validateSetFloatingIpEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbRule) validateSetFrontendIpConfigurationNameParameters(val *string) error {
 	return nil
 }
@@ -164,6 +168,10 @@ func (j *jsiiProxy_LbRule) validateSetProtocolParameters(val *string) error {
 }
 
 func (j *jsiiProxy_LbRule) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LbRule) validateSetTcpResetEnabledParameters(val interface{}) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/data_share azurerm_data_share}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/data_share azurerm_data_share}.
 type DataShare interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -475,7 +475,7 @@ func (j *jsiiProxy_DataShare) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/data_share azurerm_data_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/data_share azurerm_data_share} Resource.
 func NewDataShare(scope constructs.Construct, id *string, config *DataShareConfig) DataShare {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewDataShare(scope constructs.Construct, id *string, config *DataShareConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/data_share azurerm_data_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/data_share azurerm_data_share} Resource.
 func NewDataShare_Override(d DataShare, scope constructs.Construct, id *string, config *DataShareConfig) {
 	_init_.Initialize()
 

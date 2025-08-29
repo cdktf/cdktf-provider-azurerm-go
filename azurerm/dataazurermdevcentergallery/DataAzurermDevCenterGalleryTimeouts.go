@@ -5,7 +5,7 @@ package dataazurermdevcentergallery
 
 
 type DataAzurermDevCenterGalleryTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/dev_center_gallery#read DataAzurermDevCenterGallery#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/data-sources/dev_center_gallery#read DataAzurermDevCenterGallery#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

@@ -98,6 +98,7 @@ type WindowsVirtualMachineOsDiskOutputReference interface {
 	ResetName()
 	ResetSecureVmDiskEncryptionSetId()
 	ResetSecurityEncryptionType()
+	ResetStorageAccountType()
 	ResetWriteAcceleratorEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -786,6 +787,14 @@ func (w *jsiiProxy_WindowsVirtualMachineOsDiskOutputReference) ResetSecurityEncr
 	_jsii_.InvokeVoid(
 		w,
 		"resetSecurityEncryptionType",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsVirtualMachineOsDiskOutputReference) ResetStorageAccountType() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetStorageAccountType",
 		nil, // no parameters
 	)
 }

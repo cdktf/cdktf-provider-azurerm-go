@@ -147,6 +147,10 @@ func (j *jsiiProxy_IothubEndpointEventhub) validateSetResourceGroupNameParameter
 	return nil
 }
 
+func (j *jsiiProxy_IothubEndpointEventhub) validateSetSubscriptionIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewIothubEndpointEventhubParameters(scope constructs.Construct, id *string, config *IothubEndpointEventhubConfig) error {
 	return nil
 }

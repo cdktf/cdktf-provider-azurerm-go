@@ -5,7 +5,7 @@ package newrelicmonitor
 
 
 type NewRelicMonitorIdentity struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/new_relic_monitor#type NewRelicMonitor#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/new_relic_monitor#type NewRelicMonitor#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

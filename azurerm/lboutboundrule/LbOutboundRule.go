@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/lb_outbound_rule azurerm_lb_outbound_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/lb_outbound_rule azurerm_lb_outbound_rule}.
 type LbOutboundRule interface {
 	cdktf.TerraformResource
 	AllocatedOutboundPorts() *float64
@@ -81,6 +81,9 @@ type LbOutboundRule interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	TcpResetEnabled() interface{}
+	SetTcpResetEnabled(val interface{})
+	TcpResetEnabledInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -142,6 +145,7 @@ type LbOutboundRule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTcpResetEnabled()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -471,6 +475,26 @@ func (j *jsiiProxy_LbOutboundRule) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LbOutboundRule) TcpResetEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tcpResetEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbOutboundRule) TcpResetEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tcpResetEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LbOutboundRule) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -522,7 +546,7 @@ func (j *jsiiProxy_LbOutboundRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/lb_outbound_rule azurerm_lb_outbound_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/lb_outbound_rule azurerm_lb_outbound_rule} Resource.
 func NewLbOutboundRule(scope constructs.Construct, id *string, config *LbOutboundRuleConfig) LbOutboundRule {
 	_init_.Initialize()
 
@@ -540,7 +564,7 @@ func NewLbOutboundRule(scope constructs.Construct, id *string, config *LbOutboun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/lb_outbound_rule azurerm_lb_outbound_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/lb_outbound_rule azurerm_lb_outbound_rule} Resource.
 func NewLbOutboundRule_Override(l LbOutboundRule, scope constructs.Construct, id *string, config *LbOutboundRuleConfig) {
 	_init_.Initialize()
 
@@ -703,6 +727,17 @@ func (j *jsiiProxy_LbOutboundRule)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbOutboundRule)SetTcpResetEnabled(val interface{}) {
+	if err := j.validateSetTcpResetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tcpResetEnabled",
 		val,
 	)
 }
@@ -1126,6 +1161,14 @@ func (l *jsiiProxy_LbOutboundRule) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbOutboundRule) ResetTcpResetEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTcpResetEnabled",
 		nil, // no parameters
 	)
 }

@@ -474,6 +474,14 @@ func (j *jsiiProxy_IothubEndpointEventhub) validateSetResourceGroupNameParameter
 	return nil
 }
 
+func (j *jsiiProxy_IothubEndpointEventhub) validateSetSubscriptionIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewIothubEndpointEventhubParameters(scope constructs.Construct, id *string, config *IothubEndpointEventhubConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

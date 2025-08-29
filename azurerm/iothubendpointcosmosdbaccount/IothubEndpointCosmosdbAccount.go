@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/iothub_endpoint_cosmosdb_account azurerm_iothub_endpoint_cosmosdb_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/iothub_endpoint_cosmosdb_account azurerm_iothub_endpoint_cosmosdb_account}.
 type IothubEndpointCosmosdbAccount interface {
 	cdktf.TerraformResource
 	AuthenticationType() *string
@@ -94,6 +94,9 @@ type IothubEndpointCosmosdbAccount interface {
 	SecondaryKey() *string
 	SetSecondaryKey(val *string)
 	SecondaryKeyInput() *string
+	SubscriptionId() *string
+	SetSubscriptionId(val *string)
+	SubscriptionIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -156,6 +159,7 @@ type IothubEndpointCosmosdbAccount interface {
 	ResetPartitionKeyTemplate()
 	ResetPrimaryKey()
 	ResetSecondaryKey()
+	ResetSubscriptionId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -565,6 +569,26 @@ func (j *jsiiProxy_IothubEndpointCosmosdbAccount) SecondaryKeyInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_IothubEndpointCosmosdbAccount) SubscriptionId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subscriptionId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IothubEndpointCosmosdbAccount) SubscriptionIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subscriptionIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IothubEndpointCosmosdbAccount) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -616,7 +640,7 @@ func (j *jsiiProxy_IothubEndpointCosmosdbAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/iothub_endpoint_cosmosdb_account azurerm_iothub_endpoint_cosmosdb_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/iothub_endpoint_cosmosdb_account azurerm_iothub_endpoint_cosmosdb_account} Resource.
 func NewIothubEndpointCosmosdbAccount(scope constructs.Construct, id *string, config *IothubEndpointCosmosdbAccountConfig) IothubEndpointCosmosdbAccount {
 	_init_.Initialize()
 
@@ -634,7 +658,7 @@ func NewIothubEndpointCosmosdbAccount(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/iothub_endpoint_cosmosdb_account azurerm_iothub_endpoint_cosmosdb_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/iothub_endpoint_cosmosdb_account azurerm_iothub_endpoint_cosmosdb_account} Resource.
 func NewIothubEndpointCosmosdbAccount_Override(i IothubEndpointCosmosdbAccount, scope constructs.Construct, id *string, config *IothubEndpointCosmosdbAccountConfig) {
 	_init_.Initialize()
 
@@ -852,6 +876,17 @@ func (j *jsiiProxy_IothubEndpointCosmosdbAccount)SetSecondaryKey(val *string) {
 	_jsii_.Set(
 		j,
 		"secondaryKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IothubEndpointCosmosdbAccount)SetSubscriptionId(val *string) {
+	if err := j.validateSetSubscriptionIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subscriptionId",
 		val,
 	)
 }
@@ -1280,6 +1315,14 @@ func (i *jsiiProxy_IothubEndpointCosmosdbAccount) ResetSecondaryKey() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetSecondaryKey",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IothubEndpointCosmosdbAccount) ResetSubscriptionId() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetSubscriptionId",
 		nil, // no parameters
 	)
 }

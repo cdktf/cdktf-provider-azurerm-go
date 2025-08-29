@@ -239,6 +239,10 @@ func (j *jsiiProxy_LinuxVirtualMachine) validateSetNetworkInterfaceIdsParameters
 	return nil
 }
 
+func (j *jsiiProxy_LinuxVirtualMachine) validateSetOsManagedDiskIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinuxVirtualMachine) validateSetPatchAssessmentModeParameters(val *string) error {
 	return nil
 }

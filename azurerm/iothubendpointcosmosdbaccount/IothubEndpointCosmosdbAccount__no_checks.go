@@ -163,6 +163,10 @@ func (j *jsiiProxy_IothubEndpointCosmosdbAccount) validateSetSecondaryKeyParamet
 	return nil
 }
 
+func (j *jsiiProxy_IothubEndpointCosmosdbAccount) validateSetSubscriptionIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewIothubEndpointCosmosdbAccountParameters(scope constructs.Construct, id *string, config *IothubEndpointCosmosdbAccountConfig) error {
 	return nil
 }

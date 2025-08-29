@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/lb_rule azurerm_lb_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/lb_rule azurerm_lb_rule}.
 type LbRule interface {
 	cdktf.TerraformResource
 	BackendAddressPoolIds() *[]*string
@@ -46,6 +46,9 @@ type LbRule interface {
 	EnableTcpReset() interface{}
 	SetEnableTcpReset(val interface{})
 	EnableTcpResetInput() interface{}
+	FloatingIpEnabled() interface{}
+	SetFloatingIpEnabled(val interface{})
+	FloatingIpEnabledInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -98,6 +101,9 @@ type LbRule interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	TcpResetEnabled() interface{}
+	SetTcpResetEnabled(val interface{})
+	TcpResetEnabledInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -154,6 +160,7 @@ type LbRule interface {
 	ResetDisableOutboundSnat()
 	ResetEnableFloatingIp()
 	ResetEnableTcpReset()
+	ResetFloatingIpEnabled()
 	ResetId()
 	ResetIdleTimeoutInMinutes()
 	ResetLoadDistribution()
@@ -161,6 +168,7 @@ type LbRule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProbeId()
+	ResetTcpResetEnabled()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -325,6 +333,26 @@ func (j *jsiiProxy_LbRule) EnableTcpResetInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enableTcpResetInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbRule) FloatingIpEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"floatingIpEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbRule) FloatingIpEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"floatingIpEnabledInput",
 		&returns,
 	)
 	return returns
@@ -600,6 +628,26 @@ func (j *jsiiProxy_LbRule) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LbRule) TcpResetEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tcpResetEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbRule) TcpResetEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tcpResetEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LbRule) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -651,7 +699,7 @@ func (j *jsiiProxy_LbRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/lb_rule azurerm_lb_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/lb_rule azurerm_lb_rule} Resource.
 func NewLbRule(scope constructs.Construct, id *string, config *LbRuleConfig) LbRule {
 	_init_.Initialize()
 
@@ -669,7 +717,7 @@ func NewLbRule(scope constructs.Construct, id *string, config *LbRuleConfig) LbR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/lb_rule azurerm_lb_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/lb_rule azurerm_lb_rule} Resource.
 func NewLbRule_Override(l LbRule, scope constructs.Construct, id *string, config *LbRuleConfig) {
 	_init_.Initialize()
 
@@ -761,6 +809,17 @@ func (j *jsiiProxy_LbRule)SetEnableTcpReset(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enableTcpReset",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbRule)SetFloatingIpEnabled(val interface{}) {
+	if err := j.validateSetFloatingIpEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"floatingIpEnabled",
 		val,
 	)
 }
@@ -898,6 +957,17 @@ func (j *jsiiProxy_LbRule)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbRule)SetTcpResetEnabled(val interface{}) {
+	if err := j.validateSetTcpResetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tcpResetEnabled",
 		val,
 	)
 }
@@ -1298,6 +1368,14 @@ func (l *jsiiProxy_LbRule) ResetEnableTcpReset() {
 	)
 }
 
+func (l *jsiiProxy_LbRule) ResetFloatingIpEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetFloatingIpEnabled",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LbRule) ResetId() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1334,6 +1412,14 @@ func (l *jsiiProxy_LbRule) ResetProbeId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetProbeId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbRule) ResetTcpResetEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTcpResetEnabled",
 		nil, // no parameters
 	)
 }

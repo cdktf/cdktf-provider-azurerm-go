@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine}.
 type LinuxVirtualMachine interface {
 	cdktf.TerraformResource
 	AdditionalCapabilities() LinuxVirtualMachineAdditionalCapabilitiesOutputReference
@@ -125,6 +125,9 @@ type LinuxVirtualMachine interface {
 	OsDiskInput() *LinuxVirtualMachineOsDisk
 	OsImageNotification() LinuxVirtualMachineOsImageNotificationOutputReference
 	OsImageNotificationInput() *LinuxVirtualMachineOsImageNotification
+	OsManagedDiskId() *string
+	SetOsManagedDiskId(val *string)
+	OsManagedDiskIdInput() *string
 	PatchAssessmentMode() *string
 	SetPatchAssessmentMode(val *string)
 	PatchAssessmentModeInput() *string
@@ -265,6 +268,7 @@ type LinuxVirtualMachine interface {
 	ResetAdditionalCapabilities()
 	ResetAdminPassword()
 	ResetAdminSshKey()
+	ResetAdminUsername()
 	ResetAllowExtensionOperations()
 	ResetAvailabilitySetId()
 	ResetBootDiagnostics()
@@ -286,6 +290,7 @@ type LinuxVirtualMachine interface {
 	ResetLicenseType()
 	ResetMaxBidPrice()
 	ResetOsImageNotification()
+	ResetOsManagedDiskId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -1007,6 +1012,26 @@ func (j *jsiiProxy_LinuxVirtualMachine) OsImageNotificationInput() *LinuxVirtual
 	return returns
 }
 
+func (j *jsiiProxy_LinuxVirtualMachine) OsManagedDiskId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osManagedDiskId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxVirtualMachine) OsManagedDiskIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osManagedDiskIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LinuxVirtualMachine) PatchAssessmentMode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1558,7 +1583,7 @@ func (j *jsiiProxy_LinuxVirtualMachine) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine} Resource.
 func NewLinuxVirtualMachine(scope constructs.Construct, id *string, config *LinuxVirtualMachineConfig) LinuxVirtualMachine {
 	_init_.Initialize()
 
@@ -1576,7 +1601,7 @@ func NewLinuxVirtualMachine(scope constructs.Construct, id *string, config *Linu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine} Resource.
 func NewLinuxVirtualMachine_Override(l LinuxVirtualMachine, scope constructs.Construct, id *string, config *LinuxVirtualMachineConfig) {
 	_init_.Initialize()
 
@@ -1874,6 +1899,17 @@ func (j *jsiiProxy_LinuxVirtualMachine)SetNetworkInterfaceIds(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"networkInterfaceIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LinuxVirtualMachine)SetOsManagedDiskId(val *string) {
+	if err := j.validateSetOsManagedDiskIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"osManagedDiskId",
 		val,
 	)
 }
@@ -2593,6 +2629,14 @@ func (l *jsiiProxy_LinuxVirtualMachine) ResetAdminSshKey() {
 	)
 }
 
+func (l *jsiiProxy_LinuxVirtualMachine) ResetAdminUsername() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAdminUsername",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LinuxVirtualMachine) ResetAllowExtensionOperations() {
 	_jsii_.InvokeVoid(
 		l,
@@ -2757,6 +2801,14 @@ func (l *jsiiProxy_LinuxVirtualMachine) ResetOsImageNotification() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOsImageNotification",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxVirtualMachine) ResetOsManagedDiskId() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetOsManagedDiskId",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/lb_rule azurerm_lb_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/data-sources/lb_rule azurerm_lb_rule}.
 type DataAzurermLbRule interface {
 	cdktf.TerraformDataSource
 	BackendAddressPoolId() *string
@@ -32,6 +32,7 @@ type DataAzurermLbRule interface {
 	DisableOutboundSnat() cdktf.IResolvable
 	EnableFloatingIp() cdktf.IResolvable
 	EnableTcpReset() cdktf.IResolvable
+	FloatingIpEnabled() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -67,6 +68,7 @@ type DataAzurermLbRule interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	TcpResetEnabled() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -210,6 +212,16 @@ func (j *jsiiProxy_DataAzurermLbRule) EnableTcpReset() cdktf.IResolvable {
 	_jsii_.Get(
 		j,
 		"enableTcpReset",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermLbRule) FloatingIpEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"floatingIpEnabled",
 		&returns,
 	)
 	return returns
@@ -405,6 +417,16 @@ func (j *jsiiProxy_DataAzurermLbRule) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermLbRule) TcpResetEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"tcpResetEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermLbRule) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -456,7 +478,7 @@ func (j *jsiiProxy_DataAzurermLbRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/lb_rule azurerm_lb_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/data-sources/lb_rule azurerm_lb_rule} Data Source.
 func NewDataAzurermLbRule(scope constructs.Construct, id *string, config *DataAzurermLbRuleConfig) DataAzurermLbRule {
 	_init_.Initialize()
 
@@ -474,7 +496,7 @@ func NewDataAzurermLbRule(scope constructs.Construct, id *string, config *DataAz
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/lb_rule azurerm_lb_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/data-sources/lb_rule azurerm_lb_rule} Data Source.
 func NewDataAzurermLbRule_Override(d DataAzurermLbRule, scope constructs.Construct, id *string, config *DataAzurermLbRuleConfig) {
 	_init_.Initialize()
 

@@ -5,9 +5,9 @@ package searchservice
 
 
 type SearchServiceIdentity struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/search_service#type SearchService#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/search_service#type SearchService#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/search_service#identity_ids SearchService#identity_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/search_service#identity_ids SearchService#identity_ids}.
 	IdentityIds *[]*string `field:"optional" json:"identityIds" yaml:"identityIds"`
 }
 

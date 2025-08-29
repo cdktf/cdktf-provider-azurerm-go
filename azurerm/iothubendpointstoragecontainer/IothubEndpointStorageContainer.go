@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/iothub_endpoint_storage_container azurerm_iothub_endpoint_storage_container}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/iothub_endpoint_storage_container azurerm_iothub_endpoint_storage_container}.
 type IothubEndpointStorageContainer interface {
 	cdktf.TerraformResource
 	AuthenticationType() *string
@@ -94,6 +94,9 @@ type IothubEndpointStorageContainer interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	SubscriptionId() *string
+	SetSubscriptionId(val *string)
+	SubscriptionIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -158,6 +161,7 @@ type IothubEndpointStorageContainer interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSubscriptionId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -567,6 +571,26 @@ func (j *jsiiProxy_IothubEndpointStorageContainer) ResourceGroupNameInput() *str
 	return returns
 }
 
+func (j *jsiiProxy_IothubEndpointStorageContainer) SubscriptionId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subscriptionId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IothubEndpointStorageContainer) SubscriptionIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subscriptionIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IothubEndpointStorageContainer) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -618,7 +642,7 @@ func (j *jsiiProxy_IothubEndpointStorageContainer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/iothub_endpoint_storage_container azurerm_iothub_endpoint_storage_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/iothub_endpoint_storage_container azurerm_iothub_endpoint_storage_container} Resource.
 func NewIothubEndpointStorageContainer(scope constructs.Construct, id *string, config *IothubEndpointStorageContainerConfig) IothubEndpointStorageContainer {
 	_init_.Initialize()
 
@@ -636,7 +660,7 @@ func NewIothubEndpointStorageContainer(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/iothub_endpoint_storage_container azurerm_iothub_endpoint_storage_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/iothub_endpoint_storage_container azurerm_iothub_endpoint_storage_container} Resource.
 func NewIothubEndpointStorageContainer_Override(i IothubEndpointStorageContainer, scope constructs.Construct, id *string, config *IothubEndpointStorageContainerConfig) {
 	_init_.Initialize()
 
@@ -854,6 +878,17 @@ func (j *jsiiProxy_IothubEndpointStorageContainer)SetResourceGroupName(val *stri
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IothubEndpointStorageContainer)SetSubscriptionId(val *string) {
+	if err := j.validateSetSubscriptionIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subscriptionId",
 		val,
 	)
 }
@@ -1298,6 +1333,14 @@ func (i *jsiiProxy_IothubEndpointStorageContainer) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IothubEndpointStorageContainer) ResetSubscriptionId() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetSubscriptionId",
 		nil, // no parameters
 	)
 }

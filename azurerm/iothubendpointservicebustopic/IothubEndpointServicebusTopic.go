@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/iothub_endpoint_servicebus_topic azurerm_iothub_endpoint_servicebus_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/iothub_endpoint_servicebus_topic azurerm_iothub_endpoint_servicebus_topic}.
 type IothubEndpointServicebusTopic interface {
 	cdktf.TerraformResource
 	AuthenticationType() *string
@@ -82,6 +82,9 @@ type IothubEndpointServicebusTopic interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	SubscriptionId() *string
+	SetSubscriptionId(val *string)
+	SubscriptionIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -143,6 +146,7 @@ type IothubEndpointServicebusTopic interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSubscriptionId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -472,6 +476,26 @@ func (j *jsiiProxy_IothubEndpointServicebusTopic) ResourceGroupNameInput() *stri
 	return returns
 }
 
+func (j *jsiiProxy_IothubEndpointServicebusTopic) SubscriptionId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subscriptionId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IothubEndpointServicebusTopic) SubscriptionIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subscriptionIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IothubEndpointServicebusTopic) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -523,7 +547,7 @@ func (j *jsiiProxy_IothubEndpointServicebusTopic) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/iothub_endpoint_servicebus_topic azurerm_iothub_endpoint_servicebus_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/iothub_endpoint_servicebus_topic azurerm_iothub_endpoint_servicebus_topic} Resource.
 func NewIothubEndpointServicebusTopic(scope constructs.Construct, id *string, config *IothubEndpointServicebusTopicConfig) IothubEndpointServicebusTopic {
 	_init_.Initialize()
 
@@ -541,7 +565,7 @@ func NewIothubEndpointServicebusTopic(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/iothub_endpoint_servicebus_topic azurerm_iothub_endpoint_servicebus_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/iothub_endpoint_servicebus_topic azurerm_iothub_endpoint_servicebus_topic} Resource.
 func NewIothubEndpointServicebusTopic_Override(i IothubEndpointServicebusTopic, scope constructs.Construct, id *string, config *IothubEndpointServicebusTopicConfig) {
 	_init_.Initialize()
 
@@ -715,6 +739,17 @@ func (j *jsiiProxy_IothubEndpointServicebusTopic)SetResourceGroupName(val *strin
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IothubEndpointServicebusTopic)SetSubscriptionId(val *string) {
+	if err := j.validateSetSubscriptionIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subscriptionId",
 		val,
 	)
 }
@@ -1135,6 +1170,14 @@ func (i *jsiiProxy_IothubEndpointServicebusTopic) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IothubEndpointServicebusTopic) ResetSubscriptionId() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetSubscriptionId",
 		nil, // no parameters
 	)
 }

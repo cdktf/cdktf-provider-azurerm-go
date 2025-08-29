@@ -98,6 +98,7 @@ type LinuxVirtualMachineOsDiskOutputReference interface {
 	ResetName()
 	ResetSecureVmDiskEncryptionSetId()
 	ResetSecurityEncryptionType()
+	ResetStorageAccountType()
 	ResetWriteAcceleratorEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -786,6 +787,14 @@ func (l *jsiiProxy_LinuxVirtualMachineOsDiskOutputReference) ResetSecurityEncryp
 	_jsii_.InvokeVoid(
 		l,
 		"resetSecurityEncryptionType",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxVirtualMachineOsDiskOutputReference) ResetStorageAccountType() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetStorageAccountType",
 		nil, // no parameters
 	)
 }

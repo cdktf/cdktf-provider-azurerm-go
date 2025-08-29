@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/windows_virtual_machine azurerm_windows_virtual_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/windows_virtual_machine azurerm_windows_virtual_machine}.
 type WindowsVirtualMachine interface {
 	cdktf.TerraformResource
 	AdditionalCapabilities() WindowsVirtualMachineAdditionalCapabilitiesOutputReference
@@ -28,6 +28,9 @@ type WindowsVirtualMachine interface {
 	AllowExtensionOperations() interface{}
 	SetAllowExtensionOperations(val interface{})
 	AllowExtensionOperationsInput() interface{}
+	AutomaticUpdatesEnabled() interface{}
+	SetAutomaticUpdatesEnabled(val interface{})
+	AutomaticUpdatesEnabledInput() interface{}
 	AvailabilitySetId() *string
 	SetAvailabilitySetId(val *string)
 	AvailabilitySetIdInput() *string
@@ -128,6 +131,9 @@ type WindowsVirtualMachine interface {
 	OsDiskInput() *WindowsVirtualMachineOsDisk
 	OsImageNotification() WindowsVirtualMachineOsImageNotificationOutputReference
 	OsImageNotificationInput() *WindowsVirtualMachineOsImageNotification
+	OsManagedDiskId() *string
+	SetOsManagedDiskId(val *string)
+	OsManagedDiskIdInput() *string
 	PatchAssessmentMode() *string
 	SetPatchAssessmentMode(val *string)
 	PatchAssessmentModeInput() *string
@@ -273,7 +279,10 @@ type WindowsVirtualMachine interface {
 	PutWinrmListener(value interface{})
 	ResetAdditionalCapabilities()
 	ResetAdditionalUnattendContent()
+	ResetAdminPassword()
+	ResetAdminUsername()
 	ResetAllowExtensionOperations()
+	ResetAutomaticUpdatesEnabled()
 	ResetAvailabilitySetId()
 	ResetBootDiagnostics()
 	ResetBypassPlatformSafetyChecksOnUserScheduleEnabled()
@@ -295,6 +304,7 @@ type WindowsVirtualMachine interface {
 	ResetLicenseType()
 	ResetMaxBidPrice()
 	ResetOsImageNotification()
+	ResetOsManagedDiskId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -433,6 +443,26 @@ func (j *jsiiProxy_WindowsVirtualMachine) AllowExtensionOperationsInput() interf
 	_jsii_.Get(
 		j,
 		"allowExtensionOperationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachine) AutomaticUpdatesEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"automaticUpdatesEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachine) AutomaticUpdatesEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"automaticUpdatesEnabledInput",
 		&returns,
 	)
 	return returns
@@ -1038,6 +1068,26 @@ func (j *jsiiProxy_WindowsVirtualMachine) OsImageNotificationInput() *WindowsVir
 	return returns
 }
 
+func (j *jsiiProxy_WindowsVirtualMachine) OsManagedDiskId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osManagedDiskId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachine) OsManagedDiskIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osManagedDiskIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WindowsVirtualMachine) PatchAssessmentMode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1629,7 +1679,7 @@ func (j *jsiiProxy_WindowsVirtualMachine) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/windows_virtual_machine azurerm_windows_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/windows_virtual_machine azurerm_windows_virtual_machine} Resource.
 func NewWindowsVirtualMachine(scope constructs.Construct, id *string, config *WindowsVirtualMachineConfig) WindowsVirtualMachine {
 	_init_.Initialize()
 
@@ -1647,7 +1697,7 @@ func NewWindowsVirtualMachine(scope constructs.Construct, id *string, config *Wi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/windows_virtual_machine azurerm_windows_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/windows_virtual_machine azurerm_windows_virtual_machine} Resource.
 func NewWindowsVirtualMachine_Override(w WindowsVirtualMachine, scope constructs.Construct, id *string, config *WindowsVirtualMachineConfig) {
 	_init_.Initialize()
 
@@ -1687,6 +1737,17 @@ func (j *jsiiProxy_WindowsVirtualMachine)SetAllowExtensionOperations(val interfa
 	_jsii_.Set(
 		j,
 		"allowExtensionOperations",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsVirtualMachine)SetAutomaticUpdatesEnabled(val interface{}) {
+	if err := j.validateSetAutomaticUpdatesEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"automaticUpdatesEnabled",
 		val,
 	)
 }
@@ -1956,6 +2017,17 @@ func (j *jsiiProxy_WindowsVirtualMachine)SetNetworkInterfaceIds(val *[]*string) 
 	_jsii_.Set(
 		j,
 		"networkInterfaceIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsVirtualMachine)SetOsManagedDiskId(val *string) {
+	if err := j.validateSetOsManagedDiskIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"osManagedDiskId",
 		val,
 	)
 }
@@ -2689,10 +2761,34 @@ func (w *jsiiProxy_WindowsVirtualMachine) ResetAdditionalUnattendContent() {
 	)
 }
 
+func (w *jsiiProxy_WindowsVirtualMachine) ResetAdminPassword() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAdminPassword",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsVirtualMachine) ResetAdminUsername() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAdminUsername",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WindowsVirtualMachine) ResetAllowExtensionOperations() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetAllowExtensionOperations",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsVirtualMachine) ResetAutomaticUpdatesEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAutomaticUpdatesEnabled",
 		nil, // no parameters
 	)
 }
@@ -2861,6 +2957,14 @@ func (w *jsiiProxy_WindowsVirtualMachine) ResetOsImageNotification() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOsImageNotification",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsVirtualMachine) ResetOsManagedDiskId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetOsManagedDiskId",
 		nil, // no parameters
 	)
 }

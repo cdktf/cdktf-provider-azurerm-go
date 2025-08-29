@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/kubernetes_fleet_manager azurerm_kubernetes_fleet_manager}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/data-sources/kubernetes_fleet_manager azurerm_kubernetes_fleet_manager}.
 type DataAzurermKubernetesFleetManager interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_DataAzurermKubernetesFleetManager) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/kubernetes_fleet_manager azurerm_kubernetes_fleet_manager} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/data-sources/kubernetes_fleet_manager azurerm_kubernetes_fleet_manager} Data Source.
 func NewDataAzurermKubernetesFleetManager(scope constructs.Construct, id *string, config *DataAzurermKubernetesFleetManagerConfig) DataAzurermKubernetesFleetManager {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewDataAzurermKubernetesFleetManager(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/data-sources/kubernetes_fleet_manager azurerm_kubernetes_fleet_manager} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/data-sources/kubernetes_fleet_manager azurerm_kubernetes_fleet_manager} Data Source.
 func NewDataAzurermKubernetesFleetManager_Override(d DataAzurermKubernetesFleetManager, scope constructs.Construct, id *string, config *DataAzurermKubernetesFleetManagerConfig) {
 	_init_.Initialize()
 

@@ -147,6 +147,10 @@ func (j *jsiiProxy_IothubEndpointServicebusTopic) validateSetResourceGroupNamePa
 	return nil
 }
 
+func (j *jsiiProxy_IothubEndpointServicebusTopic) validateSetSubscriptionIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewIothubEndpointServicebusTopicParameters(scope constructs.Construct, id *string, config *IothubEndpointServicebusTopicConfig) error {
 	return nil
 }

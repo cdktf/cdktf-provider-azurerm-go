@@ -159,6 +159,10 @@ func (j *jsiiProxy_KeyVault) validateSetPurgeProtectionEnabledParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_KeyVault) validateSetRbacAuthorizationEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KeyVault) validateSetResourceGroupNameParameters(val *string) error {
 	return nil
 }

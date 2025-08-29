@@ -163,6 +163,10 @@ func (j *jsiiProxy_IothubEndpointStorageContainer) validateSetResourceGroupNameP
 	return nil
 }
 
+func (j *jsiiProxy_IothubEndpointStorageContainer) validateSetSubscriptionIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewIothubEndpointStorageContainerParameters(scope constructs.Construct, id *string, config *IothubEndpointStorageContainerConfig) error {
 	return nil
 }

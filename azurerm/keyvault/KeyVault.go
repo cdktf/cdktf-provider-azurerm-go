@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/key_vault azurerm_key_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/key_vault azurerm_key_vault}.
 type KeyVault interface {
 	cdktf.TerraformResource
 	AccessPolicy() KeyVaultAccessPolicyList
@@ -88,6 +88,9 @@ type KeyVault interface {
 	PurgeProtectionEnabledInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	RbacAuthorizationEnabled() interface{}
+	SetRbacAuthorizationEnabled(val interface{})
+	RbacAuthorizationEnabledInput() interface{}
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
@@ -172,6 +175,7 @@ type KeyVault interface {
 	ResetOverrideLogicalId()
 	ResetPublicNetworkAccessEnabled()
 	ResetPurgeProtectionEnabled()
+	ResetRbacAuthorizationEnabled()
 	ResetSoftDeleteRetentionDays()
 	ResetTags()
 	ResetTimeouts()
@@ -563,6 +567,26 @@ func (j *jsiiProxy_KeyVault) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_KeyVault) RbacAuthorizationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rbacAuthorizationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KeyVault) RbacAuthorizationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rbacAuthorizationEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KeyVault) ResourceGroupName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -724,7 +748,7 @@ func (j *jsiiProxy_KeyVault) VaultUri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/key_vault azurerm_key_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/key_vault azurerm_key_vault} Resource.
 func NewKeyVault(scope constructs.Construct, id *string, config *KeyVaultConfig) KeyVault {
 	_init_.Initialize()
 
@@ -742,7 +766,7 @@ func NewKeyVault(scope constructs.Construct, id *string, config *KeyVaultConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.41.0/docs/resources/key_vault azurerm_key_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/key_vault azurerm_key_vault} Resource.
 func NewKeyVault_Override(k KeyVault, scope constructs.Construct, id *string, config *KeyVaultConfig) {
 	_init_.Initialize()
 
@@ -916,6 +940,17 @@ func (j *jsiiProxy_KeyVault)SetPurgeProtectionEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"purgeProtectionEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KeyVault)SetRbacAuthorizationEnabled(val interface{}) {
+	if err := j.validateSetRbacAuthorizationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rbacAuthorizationEnabled",
 		val,
 	)
 }
@@ -1456,6 +1491,14 @@ func (k *jsiiProxy_KeyVault) ResetPurgeProtectionEnabled() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetPurgeProtectionEnabled",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KeyVault) ResetRbacAuthorizationEnabled() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetRbacAuthorizationEnabled",
 		nil, // no parameters
 	)
 }
