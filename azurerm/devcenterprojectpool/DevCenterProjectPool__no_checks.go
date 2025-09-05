@@ -143,6 +143,10 @@ func (j *jsiiProxy_DevCenterProjectPool) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DevCenterProjectPool) validateSetSingleSignOnEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevCenterProjectPool) validateSetStopOnDisconnectGracePeriodMinutesParameters(val *float64) error {
 	return nil
 }

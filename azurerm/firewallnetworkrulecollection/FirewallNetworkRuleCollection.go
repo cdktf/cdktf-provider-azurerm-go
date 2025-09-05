@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/firewall_network_rule_collection azurerm_firewall_network_rule_collection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/resources/firewall_network_rule_collection azurerm_firewall_network_rule_collection}.
 type FirewallNetworkRuleCollection interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -472,7 +472,7 @@ func (j *jsiiProxy_FirewallNetworkRuleCollection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/firewall_network_rule_collection azurerm_firewall_network_rule_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/resources/firewall_network_rule_collection azurerm_firewall_network_rule_collection} Resource.
 func NewFirewallNetworkRuleCollection(scope constructs.Construct, id *string, config *FirewallNetworkRuleCollectionConfig) FirewallNetworkRuleCollection {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewFirewallNetworkRuleCollection(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/firewall_network_rule_collection azurerm_firewall_network_rule_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/resources/firewall_network_rule_collection azurerm_firewall_network_rule_collection} Resource.
 func NewFirewallNetworkRuleCollection_Override(f FirewallNetworkRuleCollection, scope constructs.Construct, id *string, config *FirewallNetworkRuleCollectionConfig) {
 	_init_.Initialize()
 

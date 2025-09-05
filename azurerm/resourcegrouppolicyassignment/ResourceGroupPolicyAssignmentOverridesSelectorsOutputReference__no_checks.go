@@ -67,6 +67,10 @@ func (j *jsiiProxy_ResourceGroupPolicyAssignmentOverridesSelectorsOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_ResourceGroupPolicyAssignmentOverridesSelectorsOutputReference) validateSetKindParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ResourceGroupPolicyAssignmentOverridesSelectorsOutputReference) validateSetNotInParameters(val *[]*string) error {
 	return nil
 }

@@ -79,6 +79,10 @@ func (s *jsiiProxy_SentinelAutomationRule) validatePutActionIncidentParameters(v
 	return nil
 }
 
+func (s *jsiiProxy_SentinelAutomationRule) validatePutActionIncidentTaskParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelAutomationRule) validatePutActionPlaybookParameters(value interface{}) error {
 	return nil
 }

@@ -67,6 +67,10 @@ func (j *jsiiProxy_SubscriptionPolicyAssignmentOverridesSelectorsOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_SubscriptionPolicyAssignmentOverridesSelectorsOutputReference) validateSetKindParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SubscriptionPolicyAssignmentOverridesSelectorsOutputReference) validateSetNotInParameters(val *[]*string) error {
 	return nil
 }

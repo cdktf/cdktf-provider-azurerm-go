@@ -36,6 +36,8 @@ type ResourceGroupPolicyAssignmentOverridesSelectorsOutputReference interface {
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Kind() *string
+	SetKind(val *string)
+	KindInput() *string
 	NotIn() *[]*string
 	SetNotIn(val *[]*string)
 	NotInInput() *[]*string
@@ -72,6 +74,7 @@ type ResourceGroupPolicyAssignmentOverridesSelectorsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetIn()
+	ResetKind()
 	ResetNotIn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -163,6 +166,16 @@ func (j *jsiiProxy_ResourceGroupPolicyAssignmentOverridesSelectorsOutputReferenc
 	_jsii_.Get(
 		j,
 		"kind",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ResourceGroupPolicyAssignmentOverridesSelectorsOutputReference) KindInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kindInput",
 		&returns,
 	)
 	return returns
@@ -276,6 +289,17 @@ func (j *jsiiProxy_ResourceGroupPolicyAssignmentOverridesSelectorsOutputReferenc
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ResourceGroupPolicyAssignmentOverridesSelectorsOutputReference)SetKind(val *string) {
+	if err := j.validateSetKindParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kind",
 		val,
 	)
 }
@@ -503,6 +527,14 @@ func (r *jsiiProxy_ResourceGroupPolicyAssignmentOverridesSelectorsOutputReferenc
 	_jsii_.InvokeVoid(
 		r,
 		"resetIn",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_ResourceGroupPolicyAssignmentOverridesSelectorsOutputReference) ResetKind() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetKind",
 		nil, // no parameters
 	)
 }

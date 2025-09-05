@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/virtual_machine_restore_point_collection azurerm_virtual_machine_restore_point_collection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/resources/virtual_machine_restore_point_collection azurerm_virtual_machine_restore_point_collection}.
 type VirtualMachineRestorePointCollection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -450,7 +450,7 @@ func (j *jsiiProxy_VirtualMachineRestorePointCollection) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/virtual_machine_restore_point_collection azurerm_virtual_machine_restore_point_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/resources/virtual_machine_restore_point_collection azurerm_virtual_machine_restore_point_collection} Resource.
 func NewVirtualMachineRestorePointCollection(scope constructs.Construct, id *string, config *VirtualMachineRestorePointCollectionConfig) VirtualMachineRestorePointCollection {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewVirtualMachineRestorePointCollection(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/virtual_machine_restore_point_collection azurerm_virtual_machine_restore_point_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/resources/virtual_machine_restore_point_collection azurerm_virtual_machine_restore_point_collection} Resource.
 func NewVirtualMachineRestorePointCollection_Override(v VirtualMachineRestorePointCollection, scope constructs.Construct, id *string, config *VirtualMachineRestorePointCollectionConfig) {
 	_init_.Initialize()
 

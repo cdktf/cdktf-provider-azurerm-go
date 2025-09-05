@@ -12,11 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/sentinel_automation_rule azurerm_sentinel_automation_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/resources/sentinel_automation_rule azurerm_sentinel_automation_rule}.
 type SentinelAutomationRule interface {
 	cdktf.TerraformResource
 	ActionIncident() SentinelAutomationRuleActionIncidentList
 	ActionIncidentInput() interface{}
+	ActionIncidentTask() SentinelAutomationRuleActionIncidentTaskList
+	ActionIncidentTaskInput() interface{}
 	ActionPlaybook() SentinelAutomationRuleActionPlaybookList
 	ActionPlaybookInput() interface{}
 	// Experimental.
@@ -141,9 +143,11 @@ type SentinelAutomationRule interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutActionIncident(value interface{})
+	PutActionIncidentTask(value interface{})
 	PutActionPlaybook(value interface{})
 	PutTimeouts(value *SentinelAutomationRuleTimeouts)
 	ResetActionIncident()
+	ResetActionIncidentTask()
 	ResetActionPlaybook()
 	ResetConditionJson()
 	ResetEnabled()
@@ -188,6 +192,26 @@ func (j *jsiiProxy_SentinelAutomationRule) ActionIncidentInput() interface{} {
 	_jsii_.Get(
 		j,
 		"actionIncidentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SentinelAutomationRule) ActionIncidentTask() SentinelAutomationRuleActionIncidentTaskList {
+	var returns SentinelAutomationRuleActionIncidentTaskList
+	_jsii_.Get(
+		j,
+		"actionIncidentTask",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SentinelAutomationRule) ActionIncidentTaskInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"actionIncidentTaskInput",
 		&returns,
 	)
 	return returns
@@ -594,7 +618,7 @@ func (j *jsiiProxy_SentinelAutomationRule) TriggersWhenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/sentinel_automation_rule azurerm_sentinel_automation_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/resources/sentinel_automation_rule azurerm_sentinel_automation_rule} Resource.
 func NewSentinelAutomationRule(scope constructs.Construct, id *string, config *SentinelAutomationRuleConfig) SentinelAutomationRule {
 	_init_.Initialize()
 
@@ -612,7 +636,7 @@ func NewSentinelAutomationRule(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/sentinel_automation_rule azurerm_sentinel_automation_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/resources/sentinel_automation_rule azurerm_sentinel_automation_rule} Resource.
 func NewSentinelAutomationRule_Override(s SentinelAutomationRule, scope constructs.Construct, id *string, config *SentinelAutomationRuleConfig) {
 	_init_.Initialize()
 
@@ -1165,6 +1189,17 @@ func (s *jsiiProxy_SentinelAutomationRule) PutActionIncident(value interface{}) 
 	)
 }
 
+func (s *jsiiProxy_SentinelAutomationRule) PutActionIncidentTask(value interface{}) {
+	if err := s.validatePutActionIncidentTaskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putActionIncidentTask",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SentinelAutomationRule) PutActionPlaybook(value interface{}) {
 	if err := s.validatePutActionPlaybookParameters(value); err != nil {
 		panic(err)
@@ -1191,6 +1226,14 @@ func (s *jsiiProxy_SentinelAutomationRule) ResetActionIncident() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetActionIncident",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SentinelAutomationRule) ResetActionIncidentTask() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetActionIncidentTask",
 		nil, // no parameters
 	)
 }

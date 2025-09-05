@@ -238,6 +238,37 @@ func (s *jsiiProxy_SentinelAutomationRule) validatePutActionIncidentParameters(v
 	return nil
 }
 
+func (s *jsiiProxy_SentinelAutomationRule) validatePutActionIncidentTaskParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*SentinelAutomationRuleActionIncidentTask:
+		value := value.(*[]*SentinelAutomationRuleActionIncidentTask)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*SentinelAutomationRuleActionIncidentTask:
+		value_ := value.([]*SentinelAutomationRuleActionIncidentTask)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SentinelAutomationRuleActionIncidentTask; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SentinelAutomationRule) validatePutActionPlaybookParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

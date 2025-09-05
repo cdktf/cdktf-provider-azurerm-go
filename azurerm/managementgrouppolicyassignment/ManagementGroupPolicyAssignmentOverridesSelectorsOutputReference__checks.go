@@ -198,6 +198,14 @@ func (j *jsiiProxy_ManagementGroupPolicyAssignmentOverridesSelectorsOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_ManagementGroupPolicyAssignmentOverridesSelectorsOutputReference) validateSetKindParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ManagementGroupPolicyAssignmentOverridesSelectorsOutputReference) validateSetNotInParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

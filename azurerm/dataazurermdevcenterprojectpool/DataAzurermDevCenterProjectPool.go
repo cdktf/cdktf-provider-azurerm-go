@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/data-sources/dev_center_project_pool azurerm_dev_center_project_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/data-sources/dev_center_project_pool azurerm_dev_center_project_pool}.
 type DataAzurermDevCenterProjectPool interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -60,6 +60,7 @@ type DataAzurermDevCenterProjectPool interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	SingleSignOnEnabled() cdktf.IResolvable
 	StopOnDisconnectGracePeriodMinutes() *float64
 	Tags() cdktf.StringMap
 	// Experimental.
@@ -330,6 +331,16 @@ func (j *jsiiProxy_DataAzurermDevCenterProjectPool) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermDevCenterProjectPool) SingleSignOnEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"singleSignOnEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermDevCenterProjectPool) StopOnDisconnectGracePeriodMinutes() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -401,7 +412,7 @@ func (j *jsiiProxy_DataAzurermDevCenterProjectPool) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/data-sources/dev_center_project_pool azurerm_dev_center_project_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/data-sources/dev_center_project_pool azurerm_dev_center_project_pool} Data Source.
 func NewDataAzurermDevCenterProjectPool(scope constructs.Construct, id *string, config *DataAzurermDevCenterProjectPoolConfig) DataAzurermDevCenterProjectPool {
 	_init_.Initialize()
 
@@ -419,7 +430,7 @@ func NewDataAzurermDevCenterProjectPool(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/data-sources/dev_center_project_pool azurerm_dev_center_project_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/data-sources/dev_center_project_pool azurerm_dev_center_project_pool} Data Source.
 func NewDataAzurermDevCenterProjectPool_Override(d DataAzurermDevCenterProjectPool, scope constructs.Construct, id *string, config *DataAzurermDevCenterProjectPoolConfig) {
 	_init_.Initialize()
 

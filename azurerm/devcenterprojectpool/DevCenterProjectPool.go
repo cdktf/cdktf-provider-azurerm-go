@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/dev_center_project_pool azurerm_dev_center_project_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/resources/dev_center_project_pool azurerm_dev_center_project_pool}.
 type DevCenterProjectPool interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -79,6 +79,9 @@ type DevCenterProjectPool interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SingleSignOnEnabled() interface{}
+	SetSingleSignOnEnabled(val interface{})
+	SingleSignOnEnabledInput() interface{}
 	StopOnDisconnectGracePeriodMinutes() *float64
 	SetStopOnDisconnectGracePeriodMinutes(val *float64)
 	StopOnDisconnectGracePeriodMinutesInput() *float64
@@ -142,6 +145,7 @@ type DevCenterProjectPool interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSingleSignOnEnabled()
 	ResetStopOnDisconnectGracePeriodMinutes()
 	ResetTags()
 	ResetTimeouts()
@@ -453,6 +457,26 @@ func (j *jsiiProxy_DevCenterProjectPool) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DevCenterProjectPool) SingleSignOnEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"singleSignOnEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevCenterProjectPool) SingleSignOnEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"singleSignOnEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DevCenterProjectPool) StopOnDisconnectGracePeriodMinutes() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -544,7 +568,7 @@ func (j *jsiiProxy_DevCenterProjectPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/dev_center_project_pool azurerm_dev_center_project_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/resources/dev_center_project_pool azurerm_dev_center_project_pool} Resource.
 func NewDevCenterProjectPool(scope constructs.Construct, id *string, config *DevCenterProjectPoolConfig) DevCenterProjectPool {
 	_init_.Initialize()
 
@@ -562,7 +586,7 @@ func NewDevCenterProjectPool(scope constructs.Construct, id *string, config *Dev
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/resources/dev_center_project_pool azurerm_dev_center_project_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/resources/dev_center_project_pool azurerm_dev_center_project_pool} Resource.
 func NewDevCenterProjectPool_Override(d DevCenterProjectPool, scope constructs.Construct, id *string, config *DevCenterProjectPoolConfig) {
 	_init_.Initialize()
 
@@ -725,6 +749,17 @@ func (j *jsiiProxy_DevCenterProjectPool)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevCenterProjectPool)SetSingleSignOnEnabled(val interface{}) {
+	if err := j.validateSetSingleSignOnEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"singleSignOnEnabled",
 		val,
 	)
 }
@@ -1135,6 +1170,14 @@ func (d *jsiiProxy_DevCenterProjectPool) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevCenterProjectPool) ResetSingleSignOnEnabled() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSingleSignOnEnabled",
 		nil, // no parameters
 	)
 }

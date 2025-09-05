@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/data-sources/managed_disks azurerm_managed_disks}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/data-sources/managed_disks azurerm_managed_disks}.
 type DataAzurermManagedDisks interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -323,7 +323,7 @@ func (j *jsiiProxy_DataAzurermManagedDisks) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/data-sources/managed_disks azurerm_managed_disks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/data-sources/managed_disks azurerm_managed_disks} Data Source.
 func NewDataAzurermManagedDisks(scope constructs.Construct, id *string, config *DataAzurermManagedDisksConfig) DataAzurermManagedDisks {
 	_init_.Initialize()
 
@@ -341,7 +341,7 @@ func NewDataAzurermManagedDisks(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.42.0/docs/data-sources/managed_disks azurerm_managed_disks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/data-sources/managed_disks azurerm_managed_disks} Data Source.
 func NewDataAzurermManagedDisks_Override(d DataAzurermManagedDisks, scope constructs.Construct, id *string, config *DataAzurermManagedDisksConfig) {
 	_init_.Initialize()
 
