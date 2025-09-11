@@ -14,6 +14,8 @@ func init() {
 		"@cdktf/provider-azurerm.netappVolume.NetappVolume",
 		reflect.TypeOf((*NetappVolume)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "acceptGrowCapacityPoolForShortTermCloneSplit", GoGetter: "AcceptGrowCapacityPoolForShortTermCloneSplit"},
+			_jsii_.MemberProperty{JsiiProperty: "acceptGrowCapacityPoolForShortTermCloneSplitInput", GoGetter: "AcceptGrowCapacityPoolForShortTermCloneSplitInput"},
 			_jsii_.MemberProperty{JsiiProperty: "accountName", GoGetter: "AccountName"},
 			_jsii_.MemberProperty{JsiiProperty: "accountNameInput", GoGetter: "AccountNameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -88,6 +90,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putExportPolicyRule", GoMethod: "PutExportPolicyRule"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAcceptGrowCapacityPoolForShortTermCloneSplit", GoMethod: "ResetAcceptGrowCapacityPoolForShortTermCloneSplit"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAzureVmwareDataStoreEnabled", GoMethod: "ResetAzureVmwareDataStoreEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCoolAccess", GoMethod: "ResetCoolAccess"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCreateFromSnapshotResourceId", GoMethod: "ResetCreateFromSnapshotResourceId"},

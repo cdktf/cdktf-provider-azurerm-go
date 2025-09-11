@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/resources/eventhub_namespace_schema_group azurerm_eventhub_namespace_schema_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/eventhub_namespace_schema_group azurerm_eventhub_namespace_schema_group}.
 type EventhubNamespaceSchemaGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_EventhubNamespaceSchemaGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/resources/eventhub_namespace_schema_group azurerm_eventhub_namespace_schema_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/eventhub_namespace_schema_group azurerm_eventhub_namespace_schema_group} Resource.
 func NewEventhubNamespaceSchemaGroup(scope constructs.Construct, id *string, config *EventhubNamespaceSchemaGroupConfig) EventhubNamespaceSchemaGroup {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewEventhubNamespaceSchemaGroup(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/resources/eventhub_namespace_schema_group azurerm_eventhub_namespace_schema_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/eventhub_namespace_schema_group azurerm_eventhub_namespace_schema_group} Resource.
 func NewEventhubNamespaceSchemaGroup_Override(e EventhubNamespaceSchemaGroup, scope constructs.Construct, id *string, config *EventhubNamespaceSchemaGroupConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster}.
 type KubernetesCluster interface {
 	cdktf.TerraformResource
 	AciConnectorLinux() KubernetesClusterAciConnectorLinuxOutputReference
@@ -29,6 +29,8 @@ type KubernetesCluster interface {
 	AzurePolicyEnabled() interface{}
 	SetAzurePolicyEnabled(val interface{})
 	AzurePolicyEnabledInput() interface{}
+	BootstrapProfile() KubernetesClusterBootstrapProfileOutputReference
+	BootstrapProfileInput() *KubernetesClusterBootstrapProfile
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ConfidentialComputing() KubernetesClusterConfidentialComputingOutputReference
@@ -265,6 +267,7 @@ type KubernetesCluster interface {
 	PutApiServerAccessProfile(value *KubernetesClusterApiServerAccessProfile)
 	PutAutoScalerProfile(value *KubernetesClusterAutoScalerProfile)
 	PutAzureActiveDirectoryRoleBasedAccessControl(value *KubernetesClusterAzureActiveDirectoryRoleBasedAccessControl)
+	PutBootstrapProfile(value *KubernetesClusterBootstrapProfile)
 	PutConfidentialComputing(value *KubernetesClusterConfidentialComputing)
 	PutDefaultNodePool(value *KubernetesClusterDefaultNodePool)
 	PutHttpProxyConfig(value *KubernetesClusterHttpProxyConfig)
@@ -295,6 +298,7 @@ type KubernetesCluster interface {
 	ResetAutoScalerProfile()
 	ResetAzureActiveDirectoryRoleBasedAccessControl()
 	ResetAzurePolicyEnabled()
+	ResetBootstrapProfile()
 	ResetConfidentialComputing()
 	ResetCostAnalysisEnabled()
 	ResetCustomCaTrustCertificatesBase64()
@@ -479,6 +483,26 @@ func (j *jsiiProxy_KubernetesCluster) AzurePolicyEnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"azurePolicyEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) BootstrapProfile() KubernetesClusterBootstrapProfileOutputReference {
+	var returns KubernetesClusterBootstrapProfileOutputReference
+	_jsii_.Get(
+		j,
+		"bootstrapProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) BootstrapProfileInput() *KubernetesClusterBootstrapProfile {
+	var returns *KubernetesClusterBootstrapProfile
+	_jsii_.Get(
+		j,
+		"bootstrapProfileInput",
 		&returns,
 	)
 	return returns
@@ -1795,7 +1819,7 @@ func (j *jsiiProxy_KubernetesCluster) WorkloadIdentityEnabledInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
 func NewKubernetesCluster(scope constructs.Construct, id *string, config *KubernetesClusterConfig) KubernetesCluster {
 	_init_.Initialize()
 
@@ -1813,7 +1837,7 @@ func NewKubernetesCluster(scope constructs.Construct, id *string, config *Kubern
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
 func NewKubernetesCluster_Override(k KubernetesCluster, scope constructs.Construct, id *string, config *KubernetesClusterConfig) {
 	_init_.Initialize()
 
@@ -2619,6 +2643,17 @@ func (k *jsiiProxy_KubernetesCluster) PutAzureActiveDirectoryRoleBasedAccessCont
 	)
 }
 
+func (k *jsiiProxy_KubernetesCluster) PutBootstrapProfile(value *KubernetesClusterBootstrapProfile) {
+	if err := k.validatePutBootstrapProfileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putBootstrapProfile",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KubernetesCluster) PutConfidentialComputing(value *KubernetesClusterConfidentialComputing) {
 	if err := k.validatePutConfidentialComputingParameters(value); err != nil {
 		panic(err)
@@ -2927,6 +2962,14 @@ func (k *jsiiProxy_KubernetesCluster) ResetAzurePolicyEnabled() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetAzurePolicyEnabled",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetBootstrapProfile() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetBootstrapProfile",
 		nil, // no parameters
 	)
 }

@@ -115,6 +115,10 @@ func validateNetappVolume_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_NetappVolume) validateSetAcceptGrowCapacityPoolForShortTermCloneSplitParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappVolume) validateSetAccountNameParameters(val *string) error {
 	return nil
 }

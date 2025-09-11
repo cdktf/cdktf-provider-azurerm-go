@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolume",
 		reflect.TypeOf((*DataAzurermNetappVolume)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "acceptGrowCapacityPoolForShortTermCloneSplit", GoGetter: "AcceptGrowCapacityPoolForShortTermCloneSplit"},
 			_jsii_.MemberProperty{JsiiProperty: "accountName", GoGetter: "AccountName"},
 			_jsii_.MemberProperty{JsiiProperty: "accountNameInput", GoGetter: "AccountNameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},

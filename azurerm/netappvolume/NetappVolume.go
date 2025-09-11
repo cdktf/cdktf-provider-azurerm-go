@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/resources/netapp_volume azurerm_netapp_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/netapp_volume azurerm_netapp_volume}.
 type NetappVolume interface {
 	cdktf.TerraformResource
+	AcceptGrowCapacityPoolForShortTermCloneSplit() *string
+	SetAcceptGrowCapacityPoolForShortTermCloneSplit(val *string)
+	AcceptGrowCapacityPoolForShortTermCloneSplitInput() *string
 	AccountName() *string
 	SetAccountName(val *string)
 	AccountNameInput() *string
@@ -204,6 +207,7 @@ type NetappVolume interface {
 	PutDataProtectionSnapshotPolicy(value *NetappVolumeDataProtectionSnapshotPolicy)
 	PutExportPolicyRule(value interface{})
 	PutTimeouts(value *NetappVolumeTimeouts)
+	ResetAcceptGrowCapacityPoolForShortTermCloneSplit()
 	ResetAzureVmwareDataStoreEnabled()
 	ResetCoolAccess()
 	ResetCreateFromSnapshotResourceId()
@@ -247,6 +251,26 @@ type NetappVolume interface {
 // The jsii proxy struct for NetappVolume
 type jsiiProxy_NetappVolume struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_NetappVolume) AcceptGrowCapacityPoolForShortTermCloneSplit() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"acceptGrowCapacityPoolForShortTermCloneSplit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) AcceptGrowCapacityPoolForShortTermCloneSplitInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"acceptGrowCapacityPoolForShortTermCloneSplitInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_NetappVolume) AccountName() *string {
@@ -1080,7 +1104,7 @@ func (j *jsiiProxy_NetappVolume) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
 func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolumeConfig) NetappVolume {
 	_init_.Initialize()
 
@@ -1098,7 +1122,7 @@ func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolum
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
 func NewNetappVolume_Override(n NetappVolume, scope constructs.Construct, id *string, config *NetappVolumeConfig) {
 	_init_.Initialize()
 
@@ -1106,6 +1130,17 @@ func NewNetappVolume_Override(n NetappVolume, scope constructs.Construct, id *st
 		"@cdktf/provider-azurerm.netappVolume.NetappVolume",
 		[]interface{}{scope, id, config},
 		n,
+	)
+}
+
+func (j *jsiiProxy_NetappVolume)SetAcceptGrowCapacityPoolForShortTermCloneSplit(val *string) {
+	if err := j.validateSetAcceptGrowCapacityPoolForShortTermCloneSplitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"acceptGrowCapacityPoolForShortTermCloneSplit",
+		val,
 	)
 }
 
@@ -1890,6 +1925,14 @@ func (n *jsiiProxy_NetappVolume) PutTimeouts(value *NetappVolumeTimeouts) {
 		n,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetappVolume) ResetAcceptGrowCapacityPoolForShortTermCloneSplit() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAcceptGrowCapacityPoolForShortTermCloneSplit",
+		nil, // no parameters
 	)
 }
 

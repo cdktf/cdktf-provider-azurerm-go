@@ -91,6 +91,10 @@ func (k *jsiiProxy_KubernetesCluster) validatePutAzureActiveDirectoryRoleBasedAc
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesCluster) validatePutBootstrapProfileParameters(value *KubernetesClusterBootstrapProfile) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesCluster) validatePutConfidentialComputingParameters(value *KubernetesClusterConfidentialComputing) error {
 	return nil
 }

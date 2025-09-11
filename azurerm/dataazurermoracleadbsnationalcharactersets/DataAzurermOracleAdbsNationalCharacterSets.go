@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/data-sources/oracle_adbs_national_character_sets azurerm_oracle_adbs_national_character_sets}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/data-sources/oracle_adbs_national_character_sets azurerm_oracle_adbs_national_character_sets}.
 type DataAzurermOracleAdbsNationalCharacterSets interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -323,7 +323,7 @@ func (j *jsiiProxy_DataAzurermOracleAdbsNationalCharacterSets) TimeoutsInput() i
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/data-sources/oracle_adbs_national_character_sets azurerm_oracle_adbs_national_character_sets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/data-sources/oracle_adbs_national_character_sets azurerm_oracle_adbs_national_character_sets} Data Source.
 func NewDataAzurermOracleAdbsNationalCharacterSets(scope constructs.Construct, id *string, config *DataAzurermOracleAdbsNationalCharacterSetsConfig) DataAzurermOracleAdbsNationalCharacterSets {
 	_init_.Initialize()
 
@@ -341,7 +341,7 @@ func NewDataAzurermOracleAdbsNationalCharacterSets(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/data-sources/oracle_adbs_national_character_sets azurerm_oracle_adbs_national_character_sets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/data-sources/oracle_adbs_national_character_sets azurerm_oracle_adbs_national_character_sets} Data Source.
 func NewDataAzurermOracleAdbsNationalCharacterSets_Override(d DataAzurermOracleAdbsNationalCharacterSets, scope constructs.Construct, id *string, config *DataAzurermOracleAdbsNationalCharacterSetsConfig) {
 	_init_.Initialize()
 

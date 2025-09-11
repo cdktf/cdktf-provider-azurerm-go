@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/data-sources/netapp_account azurerm_netapp_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/data-sources/netapp_account azurerm_netapp_account}.
 type DataAzurermNetappAccount interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_DataAzurermNetappAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/data-sources/netapp_account azurerm_netapp_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/data-sources/netapp_account azurerm_netapp_account} Data Source.
 func NewDataAzurermNetappAccount(scope constructs.Construct, id *string, config *DataAzurermNetappAccountConfig) DataAzurermNetappAccount {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewDataAzurermNetappAccount(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/data-sources/netapp_account azurerm_netapp_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/data-sources/netapp_account azurerm_netapp_account} Data Source.
 func NewDataAzurermNetappAccount_Override(d DataAzurermNetappAccount, scope constructs.Construct, id *string, config *DataAzurermNetappAccountConfig) {
 	_init_.Initialize()
 

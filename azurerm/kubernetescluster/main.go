@@ -28,6 +28,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "azureActiveDirectoryRoleBasedAccessControlInput", GoGetter: "AzureActiveDirectoryRoleBasedAccessControlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "azurePolicyEnabled", GoGetter: "AzurePolicyEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "azurePolicyEnabledInput", GoGetter: "AzurePolicyEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bootstrapProfile", GoGetter: "BootstrapProfile"},
+			_jsii_.MemberProperty{JsiiProperty: "bootstrapProfileInput", GoGetter: "BootstrapProfileInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "confidentialComputing", GoGetter: "ConfidentialComputing"},
 			_jsii_.MemberProperty{JsiiProperty: "confidentialComputingInput", GoGetter: "ConfidentialComputingInput"},
@@ -145,6 +147,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putApiServerAccessProfile", GoMethod: "PutApiServerAccessProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "putAutoScalerProfile", GoMethod: "PutAutoScalerProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "putAzureActiveDirectoryRoleBasedAccessControl", GoMethod: "PutAzureActiveDirectoryRoleBasedAccessControl"},
+			_jsii_.MemberMethod{JsiiMethod: "putBootstrapProfile", GoMethod: "PutBootstrapProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "putConfidentialComputing", GoMethod: "PutConfidentialComputing"},
 			_jsii_.MemberMethod{JsiiMethod: "putDefaultNodePool", GoMethod: "PutDefaultNodePool"},
 			_jsii_.MemberMethod{JsiiMethod: "putHttpProxyConfig", GoMethod: "PutHttpProxyConfig"},
@@ -176,6 +179,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoScalerProfile", GoMethod: "ResetAutoScalerProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAzureActiveDirectoryRoleBasedAccessControl", GoMethod: "ResetAzureActiveDirectoryRoleBasedAccessControl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAzurePolicyEnabled", GoMethod: "ResetAzurePolicyEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBootstrapProfile", GoMethod: "ResetBootstrapProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConfidentialComputing", GoMethod: "ResetConfidentialComputing"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCostAnalysisEnabled", GoMethod: "ResetCostAnalysisEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomCaTrustCertificatesBase64", GoMethod: "ResetCustomCaTrustCertificatesBase64"},
@@ -546,6 +550,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterBootstrapProfile",
+		reflect.TypeOf((*KubernetesClusterBootstrapProfile)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterBootstrapProfileOutputReference",
+		reflect.TypeOf((*KubernetesClusterBootstrapProfileOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "artifactSource", GoGetter: "ArtifactSource"},
+			_jsii_.MemberProperty{JsiiProperty: "artifactSourceInput", GoGetter: "ArtifactSourceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "containerRegistryId", GoGetter: "ContainerRegistryId"},
+			_jsii_.MemberProperty{JsiiProperty: "containerRegistryIdInput", GoGetter: "ContainerRegistryIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetArtifactSource", GoMethod: "ResetArtifactSource"},
+			_jsii_.MemberMethod{JsiiMethod: "resetContainerRegistryId", GoMethod: "ResetContainerRegistryId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_KubernetesClusterBootstrapProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -5,9 +5,9 @@ package chaosstudioexperiment
 
 
 type ChaosStudioExperimentSelectors struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/resources/chaos_studio_experiment#chaos_studio_target_ids ChaosStudioExperiment#chaos_studio_target_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/chaos_studio_experiment#chaos_studio_target_ids ChaosStudioExperiment#chaos_studio_target_ids}.
 	ChaosStudioTargetIds *[]*string `field:"required" json:"chaosStudioTargetIds" yaml:"chaosStudioTargetIds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.43.0/docs/resources/chaos_studio_experiment#name ChaosStudioExperiment#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/chaos_studio_experiment#name ChaosStudioExperiment#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 
