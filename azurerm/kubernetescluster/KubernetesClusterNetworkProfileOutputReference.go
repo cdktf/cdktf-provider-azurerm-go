@@ -13,6 +13,8 @@ import (
 
 type KubernetesClusterNetworkProfileOutputReference interface {
 	cdktf.ComplexObject
+	AdvancedNetworking() KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference
+	AdvancedNetworkingInput() *KubernetesClusterNetworkProfileAdvancedNetworking
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -107,8 +109,10 @@ type KubernetesClusterNetworkProfileOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAdvancedNetworking(value *KubernetesClusterNetworkProfileAdvancedNetworking)
 	PutLoadBalancerProfile(value *KubernetesClusterNetworkProfileLoadBalancerProfile)
 	PutNatGatewayProfile(value *KubernetesClusterNetworkProfileNatGatewayProfile)
+	ResetAdvancedNetworking()
 	ResetDnsServiceIp()
 	ResetIpVersions()
 	ResetLoadBalancerProfile()
@@ -136,6 +140,26 @@ type KubernetesClusterNetworkProfileOutputReference interface {
 // The jsii proxy struct for KubernetesClusterNetworkProfileOutputReference
 type jsiiProxy_KubernetesClusterNetworkProfileOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) AdvancedNetworking() KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference {
+	var returns KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference
+	_jsii_.Get(
+		j,
+		"advancedNetworking",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) AdvancedNetworkingInput() *KubernetesClusterNetworkProfileAdvancedNetworking {
+	var returns *KubernetesClusterNetworkProfileAdvancedNetworking
+	_jsii_.Get(
+		j,
+		"advancedNetworkingInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ComplexObjectIndex() interface{} {
@@ -920,6 +944,17 @@ func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) Interpolation
 	return returns
 }
 
+func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) PutAdvancedNetworking(value *KubernetesClusterNetworkProfileAdvancedNetworking) {
+	if err := k.validatePutAdvancedNetworkingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putAdvancedNetworking",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) PutLoadBalancerProfile(value *KubernetesClusterNetworkProfileLoadBalancerProfile) {
 	if err := k.validatePutLoadBalancerProfileParameters(value); err != nil {
 		panic(err)
@@ -939,6 +974,14 @@ func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) PutNatGateway
 		k,
 		"putNatGatewayProfile",
 		[]interface{}{value},
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ResetAdvancedNetworking() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetAdvancedNetworking",
+		nil, // no parameters
 	)
 }
 

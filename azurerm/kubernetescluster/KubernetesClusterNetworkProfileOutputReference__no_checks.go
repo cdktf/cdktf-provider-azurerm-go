@@ -47,6 +47,10 @@ func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateInter
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validatePutAdvancedNetworkingParameters(value *KubernetesClusterNetworkProfileAdvancedNetworking) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validatePutLoadBalancerProfileParameters(value *KubernetesClusterNetworkProfileLoadBalancerProfile) error {
 	return nil
 }

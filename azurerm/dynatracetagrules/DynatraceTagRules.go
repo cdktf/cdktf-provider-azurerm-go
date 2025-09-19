@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/dynatrace_tag_rules azurerm_dynatrace_tag_rules}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/dynatrace_tag_rules azurerm_dynatrace_tag_rules}.
 type DynatraceTagRules interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -428,7 +428,7 @@ func (j *jsiiProxy_DynatraceTagRules) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/dynatrace_tag_rules azurerm_dynatrace_tag_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/dynatrace_tag_rules azurerm_dynatrace_tag_rules} Resource.
 func NewDynatraceTagRules(scope constructs.Construct, id *string, config *DynatraceTagRulesConfig) DynatraceTagRules {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewDynatraceTagRules(scope constructs.Construct, id *string, config *Dynatr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/dynatrace_tag_rules azurerm_dynatrace_tag_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/dynatrace_tag_rules azurerm_dynatrace_tag_rules} Resource.
 func NewDynatraceTagRules_Override(d DynatraceTagRules, scope constructs.Construct, id *string, config *DynatraceTagRulesConfig) {
 	_init_.Initialize()
 

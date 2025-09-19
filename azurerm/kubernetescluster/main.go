@@ -2286,6 +2286,48 @@ func init() {
 		reflect.TypeOf((*KubernetesClusterNetworkProfile)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworking",
+		reflect.TypeOf((*KubernetesClusterNetworkProfileAdvancedNetworking)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference",
+		reflect.TypeOf((*KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "observabilityEnabled", GoGetter: "ObservabilityEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "observabilityEnabledInput", GoGetter: "ObservabilityEnabledInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetObservabilityEnabled", GoMethod: "ResetObservabilityEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecurityEnabled", GoMethod: "ResetSecurityEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "securityEnabled", GoGetter: "SecurityEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "securityEnabledInput", GoGetter: "SecurityEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileLoadBalancerProfile",
 		reflect.TypeOf((*KubernetesClusterNetworkProfileLoadBalancerProfile)(nil)).Elem(),
 	)
@@ -2390,6 +2432,8 @@ func init() {
 		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileOutputReference",
 		reflect.TypeOf((*KubernetesClusterNetworkProfileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "advancedNetworking", GoGetter: "AdvancedNetworking"},
+			_jsii_.MemberProperty{JsiiProperty: "advancedNetworkingInput", GoGetter: "AdvancedNetworkingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2433,8 +2477,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "podCidrInput", GoGetter: "PodCidrInput"},
 			_jsii_.MemberProperty{JsiiProperty: "podCidrs", GoGetter: "PodCidrs"},
 			_jsii_.MemberProperty{JsiiProperty: "podCidrsInput", GoGetter: "PodCidrsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAdvancedNetworking", GoMethod: "PutAdvancedNetworking"},
 			_jsii_.MemberMethod{JsiiMethod: "putLoadBalancerProfile", GoMethod: "PutLoadBalancerProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "putNatGatewayProfile", GoMethod: "PutNatGatewayProfile"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAdvancedNetworking", GoMethod: "ResetAdvancedNetworking"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDnsServiceIp", GoMethod: "ResetDnsServiceIp"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIpVersions", GoMethod: "ResetIpVersions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLoadBalancerProfile", GoMethod: "ResetLoadBalancerProfile"},

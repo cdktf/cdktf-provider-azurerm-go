@@ -79,6 +79,10 @@ func (k *jsiiProxy_KustoCluster) validatePutIdentityParameters(value *KustoClust
 	return nil
 }
 
+func (k *jsiiProxy_KustoCluster) validatePutLanguageExtensionParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoCluster) validatePutLanguageExtensionsParameters(value interface{}) error {
 	return nil
 }

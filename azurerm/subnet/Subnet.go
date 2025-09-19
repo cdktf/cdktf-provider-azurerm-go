@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/subnet azurerm_subnet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/subnet azurerm_subnet}.
 type Subnet interface {
 	cdktf.TerraformResource
 	AddressPrefixes() *[]*string
@@ -86,6 +86,9 @@ type Subnet interface {
 	ServiceEndpoints() *[]*string
 	SetServiceEndpoints(val *[]*string)
 	ServiceEndpointsInput() *[]*string
+	SharingScope() *string
+	SetSharingScope(val *string)
+	SharingScopeInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -155,6 +158,7 @@ type Subnet interface {
 	ResetPrivateLinkServiceNetworkPoliciesEnabled()
 	ResetServiceEndpointPolicyIds()
 	ResetServiceEndpoints()
+	ResetSharingScope()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -524,6 +528,26 @@ func (j *jsiiProxy_Subnet) ServiceEndpointsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_Subnet) SharingScope() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sharingScope",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Subnet) SharingScopeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sharingScopeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Subnet) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -595,7 +619,7 @@ func (j *jsiiProxy_Subnet) VirtualNetworkNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/subnet azurerm_subnet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/subnet azurerm_subnet} Resource.
 func NewSubnet(scope constructs.Construct, id *string, config *SubnetConfig) Subnet {
 	_init_.Initialize()
 
@@ -613,7 +637,7 @@ func NewSubnet(scope constructs.Construct, id *string, config *SubnetConfig) Sub
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/subnet azurerm_subnet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/subnet azurerm_subnet} Resource.
 func NewSubnet_Override(s Subnet, scope constructs.Construct, id *string, config *SubnetConfig) {
 	_init_.Initialize()
 
@@ -787,6 +811,17 @@ func (j *jsiiProxy_Subnet)SetServiceEndpoints(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"serviceEndpoints",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Subnet)SetSharingScope(val *string) {
+	if err := j.validateSetSharingScopeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sharingScope",
 		val,
 	)
 }
@@ -1264,6 +1299,14 @@ func (s *jsiiProxy_Subnet) ResetServiceEndpoints() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetServiceEndpoints",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Subnet) ResetSharingScope() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSharingScope",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/network_manager_routing_rule_collection azurerm_network_manager_routing_rule_collection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/network_manager_routing_rule_collection azurerm_network_manager_routing_rule_collection}.
 type NetworkManagerRoutingRuleCollection interface {
 	cdktf.TerraformResource
 	BgpRoutePropagationEnabled() interface{}
@@ -451,7 +451,7 @@ func (j *jsiiProxy_NetworkManagerRoutingRuleCollection) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/network_manager_routing_rule_collection azurerm_network_manager_routing_rule_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/network_manager_routing_rule_collection azurerm_network_manager_routing_rule_collection} Resource.
 func NewNetworkManagerRoutingRuleCollection(scope constructs.Construct, id *string, config *NetworkManagerRoutingRuleCollectionConfig) NetworkManagerRoutingRuleCollection {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewNetworkManagerRoutingRuleCollection(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/network_manager_routing_rule_collection azurerm_network_manager_routing_rule_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/network_manager_routing_rule_collection azurerm_network_manager_routing_rule_collection} Resource.
 func NewNetworkManagerRoutingRuleCollection_Override(n NetworkManagerRoutingRuleCollection, scope constructs.Construct, id *string, config *NetworkManagerRoutingRuleCollectionConfig) {
 	_init_.Initialize()
 

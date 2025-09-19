@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/kusto_cluster azurerm_kusto_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/kusto_cluster azurerm_kusto_cluster}.
 type KustoCluster interface {
 	cdktf.TerraformResource
 	AllowedFqdns() *[]*string
@@ -60,6 +60,8 @@ type KustoCluster interface {
 	Identity() KustoClusterIdentityOutputReference
 	IdentityInput() *KustoClusterIdentity
 	IdInput() *string
+	LanguageExtension() KustoClusterLanguageExtensionList
+	LanguageExtensionInput() interface{}
 	LanguageExtensions() KustoClusterLanguageExtensionsList
 	LanguageExtensionsInput() interface{}
 	// Experimental.
@@ -170,6 +172,7 @@ type KustoCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutIdentity(value *KustoClusterIdentity)
+	PutLanguageExtension(value interface{})
 	PutLanguageExtensions(value interface{})
 	PutOptimizedAutoScale(value *KustoClusterOptimizedAutoScale)
 	PutSku(value *KustoClusterSku)
@@ -182,6 +185,7 @@ type KustoCluster interface {
 	ResetDoubleEncryptionEnabled()
 	ResetId()
 	ResetIdentity()
+	ResetLanguageExtension()
 	ResetLanguageExtensions()
 	ResetOptimizedAutoScale()
 	ResetOutboundNetworkAccessRestricted()
@@ -440,6 +444,26 @@ func (j *jsiiProxy_KustoCluster) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KustoCluster) LanguageExtension() KustoClusterLanguageExtensionList {
+	var returns KustoClusterLanguageExtensionList
+	_jsii_.Get(
+		j,
+		"languageExtension",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KustoCluster) LanguageExtensionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"languageExtensionInput",
 		&returns,
 	)
 	return returns
@@ -856,7 +880,7 @@ func (j *jsiiProxy_KustoCluster) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/kusto_cluster azurerm_kusto_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/kusto_cluster azurerm_kusto_cluster} Resource.
 func NewKustoCluster(scope constructs.Construct, id *string, config *KustoClusterConfig) KustoCluster {
 	_init_.Initialize()
 
@@ -874,7 +898,7 @@ func NewKustoCluster(scope constructs.Construct, id *string, config *KustoCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/kusto_cluster azurerm_kusto_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/kusto_cluster azurerm_kusto_cluster} Resource.
 func NewKustoCluster_Override(k KustoCluster, scope constructs.Construct, id *string, config *KustoClusterConfig) {
 	_init_.Initialize()
 
@@ -1504,6 +1528,17 @@ func (k *jsiiProxy_KustoCluster) PutIdentity(value *KustoClusterIdentity) {
 	)
 }
 
+func (k *jsiiProxy_KustoCluster) PutLanguageExtension(value interface{}) {
+	if err := k.validatePutLanguageExtensionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putLanguageExtension",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KustoCluster) PutLanguageExtensions(value interface{}) {
 	if err := k.validatePutLanguageExtensionsParameters(value); err != nil {
 		panic(err)
@@ -1611,6 +1646,14 @@ func (k *jsiiProxy_KustoCluster) ResetIdentity() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetIdentity",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KustoCluster) ResetLanguageExtension() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetLanguageExtension",
 		nil, // no parameters
 	)
 }

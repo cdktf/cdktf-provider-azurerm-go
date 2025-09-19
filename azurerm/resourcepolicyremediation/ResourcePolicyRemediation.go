@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/resource_policy_remediation azurerm_resource_policy_remediation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/resource_policy_remediation azurerm_resource_policy_remediation}.
 type ResourcePolicyRemediation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -547,7 +547,7 @@ func (j *jsiiProxy_ResourcePolicyRemediation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/resource_policy_remediation azurerm_resource_policy_remediation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/resource_policy_remediation azurerm_resource_policy_remediation} Resource.
 func NewResourcePolicyRemediation(scope constructs.Construct, id *string, config *ResourcePolicyRemediationConfig) ResourcePolicyRemediation {
 	_init_.Initialize()
 
@@ -565,7 +565,7 @@ func NewResourcePolicyRemediation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/resources/resource_policy_remediation azurerm_resource_policy_remediation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/resource_policy_remediation azurerm_resource_policy_remediation} Resource.
 func NewResourcePolicyRemediation_Override(r ResourcePolicyRemediation, scope constructs.Construct, id *string, config *ResourcePolicyRemediationConfig) {
 	_init_.Initialize()
 

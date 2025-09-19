@@ -5,7 +5,7 @@ package dataazurermnginxapikey
 
 
 type DataAzurermNginxApiKeyTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/data-sources/nginx_api_key#read DataAzurermNginxApiKey#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/data-sources/nginx_api_key#read DataAzurermNginxApiKey#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

@@ -5,7 +5,7 @@ package dataazurermdevcenterattachednetwork
 
 
 type DataAzurermDevCenterAttachedNetworkTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.44.0/docs/data-sources/dev_center_attached_network#read DataAzurermDevCenterAttachedNetwork#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/data-sources/dev_center_attached_network#read DataAzurermDevCenterAttachedNetwork#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 
