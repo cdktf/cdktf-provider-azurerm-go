@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/mysql_flexible_server azurerm_mysql_flexible_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/mysql_flexible_server azurerm_mysql_flexible_server}.
 type MysqlFlexibleServer interface {
 	cdktf.TerraformResource
 	AdministratorLogin() *string
@@ -964,7 +964,7 @@ func (j *jsiiProxy_MysqlFlexibleServer) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/mysql_flexible_server azurerm_mysql_flexible_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/mysql_flexible_server azurerm_mysql_flexible_server} Resource.
 func NewMysqlFlexibleServer(scope constructs.Construct, id *string, config *MysqlFlexibleServerConfig) MysqlFlexibleServer {
 	_init_.Initialize()
 
@@ -982,7 +982,7 @@ func NewMysqlFlexibleServer(scope constructs.Construct, id *string, config *Mysq
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/mysql_flexible_server azurerm_mysql_flexible_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/mysql_flexible_server azurerm_mysql_flexible_server} Resource.
 func NewMysqlFlexibleServer_Override(m MysqlFlexibleServer, scope constructs.Construct, id *string, config *MysqlFlexibleServerConfig) {
 	_init_.Initialize()
 

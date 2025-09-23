@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/data-sources/api_connection azurerm_api_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/data-sources/api_connection azurerm_api_connection}.
 type DataAzurermApiConnection interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_DataAzurermApiConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/data-sources/api_connection azurerm_api_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/data-sources/api_connection azurerm_api_connection} Data Source.
 func NewDataAzurermApiConnection(scope constructs.Construct, id *string, config *DataAzurermApiConnectionConfig) DataAzurermApiConnection {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewDataAzurermApiConnection(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/data-sources/api_connection azurerm_api_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/data-sources/api_connection azurerm_api_connection} Data Source.
 func NewDataAzurermApiConnection_Override(d DataAzurermApiConnection, scope constructs.Construct, id *string, config *DataAzurermApiConnectionConfig) {
 	_init_.Initialize()
 

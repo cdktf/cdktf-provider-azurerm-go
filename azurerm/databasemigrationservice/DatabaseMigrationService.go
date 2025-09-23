@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/database_migration_service azurerm_database_migration_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/database_migration_service azurerm_database_migration_service}.
 type DatabaseMigrationService interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -473,7 +473,7 @@ func (j *jsiiProxy_DatabaseMigrationService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/database_migration_service azurerm_database_migration_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/database_migration_service azurerm_database_migration_service} Resource.
 func NewDatabaseMigrationService(scope constructs.Construct, id *string, config *DatabaseMigrationServiceConfig) DatabaseMigrationService {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewDatabaseMigrationService(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/database_migration_service azurerm_database_migration_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/database_migration_service azurerm_database_migration_service} Resource.
 func NewDatabaseMigrationService_Override(d DatabaseMigrationService, scope constructs.Construct, id *string, config *DatabaseMigrationServiceConfig) {
 	_init_.Initialize()
 

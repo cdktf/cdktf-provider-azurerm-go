@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/api_management_standalone_gateway azurerm_api_management_standalone_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/api_management_standalone_gateway azurerm_api_management_standalone_gateway}.
 type ApiManagementStandaloneGateway interface {
 	cdktf.TerraformResource
 	BackendSubnetId() *string
@@ -498,7 +498,7 @@ func (j *jsiiProxy_ApiManagementStandaloneGateway) VirtualNetworkTypeInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/api_management_standalone_gateway azurerm_api_management_standalone_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/api_management_standalone_gateway azurerm_api_management_standalone_gateway} Resource.
 func NewApiManagementStandaloneGateway(scope constructs.Construct, id *string, config *ApiManagementStandaloneGatewayConfig) ApiManagementStandaloneGateway {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewApiManagementStandaloneGateway(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/api_management_standalone_gateway azurerm_api_management_standalone_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/api_management_standalone_gateway azurerm_api_management_standalone_gateway} Resource.
 func NewApiManagementStandaloneGateway_Override(a ApiManagementStandaloneGateway, scope constructs.Construct, id *string, config *ApiManagementStandaloneGatewayConfig) {
 	_init_.Initialize()
 

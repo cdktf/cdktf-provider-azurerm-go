@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/data-sources/cosmosdb_sql_role_definition azurerm_cosmosdb_sql_role_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/data-sources/cosmosdb_sql_role_definition azurerm_cosmosdb_sql_role_definition}.
 type DataAzurermCosmosdbSqlRoleDefinition interface {
 	cdktf.TerraformDataSource
 	AccountName() *string
@@ -402,7 +402,7 @@ func (j *jsiiProxy_DataAzurermCosmosdbSqlRoleDefinition) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/data-sources/cosmosdb_sql_role_definition azurerm_cosmosdb_sql_role_definition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/data-sources/cosmosdb_sql_role_definition azurerm_cosmosdb_sql_role_definition} Data Source.
 func NewDataAzurermCosmosdbSqlRoleDefinition(scope constructs.Construct, id *string, config *DataAzurermCosmosdbSqlRoleDefinitionConfig) DataAzurermCosmosdbSqlRoleDefinition {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewDataAzurermCosmosdbSqlRoleDefinition(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/data-sources/cosmosdb_sql_role_definition azurerm_cosmosdb_sql_role_definition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/data-sources/cosmosdb_sql_role_definition azurerm_cosmosdb_sql_role_definition} Data Source.
 func NewDataAzurermCosmosdbSqlRoleDefinition_Override(d DataAzurermCosmosdbSqlRoleDefinition, scope constructs.Construct, id *string, config *DataAzurermCosmosdbSqlRoleDefinitionConfig) {
 	_init_.Initialize()
 

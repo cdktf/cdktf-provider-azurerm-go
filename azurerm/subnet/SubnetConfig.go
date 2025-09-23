@@ -22,42 +22,42 @@ type SubnetConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/subnet#name Subnet#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/subnet#name Subnet#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/subnet#resource_group_name Subnet#resource_group_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/subnet#resource_group_name Subnet#resource_group_name}.
 	ResourceGroupName *string `field:"required" json:"resourceGroupName" yaml:"resourceGroupName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/subnet#virtual_network_name Subnet#virtual_network_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/subnet#virtual_network_name Subnet#virtual_network_name}.
 	VirtualNetworkName *string `field:"required" json:"virtualNetworkName" yaml:"virtualNetworkName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/subnet#address_prefixes Subnet#address_prefixes}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/subnet#address_prefixes Subnet#address_prefixes}.
 	AddressPrefixes *[]*string `field:"optional" json:"addressPrefixes" yaml:"addressPrefixes"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/subnet#default_outbound_access_enabled Subnet#default_outbound_access_enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/subnet#default_outbound_access_enabled Subnet#default_outbound_access_enabled}.
 	DefaultOutboundAccessEnabled interface{} `field:"optional" json:"defaultOutboundAccessEnabled" yaml:"defaultOutboundAccessEnabled"`
 	// delegation block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/subnet#delegation Subnet#delegation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/subnet#delegation Subnet#delegation}
 	Delegation interface{} `field:"optional" json:"delegation" yaml:"delegation"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/subnet#id Subnet#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/subnet#id Subnet#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// ip_address_pool block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/subnet#ip_address_pool Subnet#ip_address_pool}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/subnet#ip_address_pool Subnet#ip_address_pool}
 	IpAddressPool *SubnetIpAddressPool `field:"optional" json:"ipAddressPool" yaml:"ipAddressPool"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/subnet#private_endpoint_network_policies Subnet#private_endpoint_network_policies}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/subnet#private_endpoint_network_policies Subnet#private_endpoint_network_policies}.
 	PrivateEndpointNetworkPolicies *string `field:"optional" json:"privateEndpointNetworkPolicies" yaml:"privateEndpointNetworkPolicies"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/subnet#private_link_service_network_policies_enabled Subnet#private_link_service_network_policies_enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/subnet#private_link_service_network_policies_enabled Subnet#private_link_service_network_policies_enabled}.
 	PrivateLinkServiceNetworkPoliciesEnabled interface{} `field:"optional" json:"privateLinkServiceNetworkPoliciesEnabled" yaml:"privateLinkServiceNetworkPoliciesEnabled"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/subnet#service_endpoint_policy_ids Subnet#service_endpoint_policy_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/subnet#service_endpoint_policy_ids Subnet#service_endpoint_policy_ids}.
 	ServiceEndpointPolicyIds *[]*string `field:"optional" json:"serviceEndpointPolicyIds" yaml:"serviceEndpointPolicyIds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/subnet#service_endpoints Subnet#service_endpoints}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/subnet#service_endpoints Subnet#service_endpoints}.
 	ServiceEndpoints *[]*string `field:"optional" json:"serviceEndpoints" yaml:"serviceEndpoints"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/subnet#sharing_scope Subnet#sharing_scope}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/subnet#sharing_scope Subnet#sharing_scope}.
 	SharingScope *string `field:"optional" json:"sharingScope" yaml:"sharingScope"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.0/docs/resources/subnet#timeouts Subnet#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/subnet#timeouts Subnet#timeouts}
 	Timeouts *SubnetTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 
