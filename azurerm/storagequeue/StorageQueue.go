@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/storage_queue azurerm_storage_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/storage_queue azurerm_storage_queue}.
 type StorageQueue interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -65,6 +65,9 @@ type StorageQueue interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceManagerId() *string
+	StorageAccountId() *string
+	SetStorageAccountId(val *string)
+	StorageAccountIdInput() *string
 	StorageAccountName() *string
 	SetStorageAccountName(val *string)
 	StorageAccountNameInput() *string
@@ -76,6 +79,7 @@ type StorageQueue interface {
 	TerraformResourceType() *string
 	Timeouts() StorageQueueTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Url() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -125,6 +129,8 @@ type StorageQueue interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStorageAccountId()
+	ResetStorageAccountName()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -344,6 +350,26 @@ func (j *jsiiProxy_StorageQueue) ResourceManagerId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StorageQueue) StorageAccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageAccountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageQueue) StorageAccountIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageAccountIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageQueue) StorageAccountName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -414,8 +440,18 @@ func (j *jsiiProxy_StorageQueue) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_StorageQueue) Url() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"url",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/storage_queue azurerm_storage_queue} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/storage_queue azurerm_storage_queue} Resource.
 func NewStorageQueue(scope constructs.Construct, id *string, config *StorageQueueConfig) StorageQueue {
 	_init_.Initialize()
 
@@ -433,7 +469,7 @@ func NewStorageQueue(scope constructs.Construct, id *string, config *StorageQueu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/storage_queue azurerm_storage_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/storage_queue azurerm_storage_queue} Resource.
 func NewStorageQueue_Override(s StorageQueue, scope constructs.Construct, id *string, config *StorageQueueConfig) {
 	_init_.Initialize()
 
@@ -541,6 +577,17 @@ func (j *jsiiProxy_StorageQueue)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageQueue)SetStorageAccountId(val *string) {
+	if err := j.validateSetStorageAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageAccountId",
 		val,
 	)
 }
@@ -940,6 +987,22 @@ func (s *jsiiProxy_StorageQueue) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageQueue) ResetStorageAccountId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStorageAccountId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageQueue) ResetStorageAccountName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStorageAccountName",
 		nil, // no parameters
 	)
 }

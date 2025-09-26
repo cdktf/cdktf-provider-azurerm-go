@@ -5,9 +5,9 @@ package mssqldatabase
 
 
 type MssqlDatabaseIdentity struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/mssql_database#identity_ids MssqlDatabase#identity_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/mssql_database#identity_ids MssqlDatabase#identity_ids}.
 	IdentityIds *[]*string `field:"required" json:"identityIds" yaml:"identityIds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/mssql_database#type MssqlDatabase#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/mssql_database#type MssqlDatabase#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

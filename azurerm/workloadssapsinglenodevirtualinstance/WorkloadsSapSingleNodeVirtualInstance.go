@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/workloads_sap_single_node_virtual_instance azurerm_workloads_sap_single_node_virtual_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/workloads_sap_single_node_virtual_instance azurerm_workloads_sap_single_node_virtual_instance}.
 type WorkloadsSapSingleNodeVirtualInstance interface {
 	cdktf.TerraformResource
 	AppLocation() *string
@@ -614,7 +614,7 @@ func (j *jsiiProxy_WorkloadsSapSingleNodeVirtualInstance) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/workloads_sap_single_node_virtual_instance azurerm_workloads_sap_single_node_virtual_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/workloads_sap_single_node_virtual_instance azurerm_workloads_sap_single_node_virtual_instance} Resource.
 func NewWorkloadsSapSingleNodeVirtualInstance(scope constructs.Construct, id *string, config *WorkloadsSapSingleNodeVirtualInstanceConfig) WorkloadsSapSingleNodeVirtualInstance {
 	_init_.Initialize()
 
@@ -632,7 +632,7 @@ func NewWorkloadsSapSingleNodeVirtualInstance(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/workloads_sap_single_node_virtual_instance azurerm_workloads_sap_single_node_virtual_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/workloads_sap_single_node_virtual_instance azurerm_workloads_sap_single_node_virtual_instance} Resource.
 func NewWorkloadsSapSingleNodeVirtualInstance_Override(w WorkloadsSapSingleNodeVirtualInstance, scope constructs.Construct, id *string, config *WorkloadsSapSingleNodeVirtualInstanceConfig) {
 	_init_.Initialize()
 

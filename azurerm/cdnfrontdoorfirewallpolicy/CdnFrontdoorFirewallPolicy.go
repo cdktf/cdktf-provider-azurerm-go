@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy}.
 type CdnFrontdoorFirewallPolicy interface {
 	cdktf.TerraformResource
+	CaptchaCookieExpirationInMinutes() *float64
+	SetCaptchaCookieExpirationInMinutes(val *float64)
+	CaptchaCookieExpirationInMinutesInput() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -153,6 +156,7 @@ type CdnFrontdoorFirewallPolicy interface {
 	PutLogScrubbing(value *CdnFrontdoorFirewallPolicyLogScrubbing)
 	PutManagedRule(value interface{})
 	PutTimeouts(value *CdnFrontdoorFirewallPolicyTimeouts)
+	ResetCaptchaCookieExpirationInMinutes()
 	ResetCustomBlockResponseBody()
 	ResetCustomBlockResponseStatusCode()
 	ResetCustomRule()
@@ -184,6 +188,26 @@ type CdnFrontdoorFirewallPolicy interface {
 // The jsii proxy struct for CdnFrontdoorFirewallPolicy
 type jsiiProxy_CdnFrontdoorFirewallPolicy struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) CaptchaCookieExpirationInMinutes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"captchaCookieExpirationInMinutes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) CaptchaCookieExpirationInMinutesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"captchaCookieExpirationInMinutesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) CdktfStack() cdktf.TerraformStack {
@@ -677,7 +701,7 @@ func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy} Resource.
 func NewCdnFrontdoorFirewallPolicy(scope constructs.Construct, id *string, config *CdnFrontdoorFirewallPolicyConfig) CdnFrontdoorFirewallPolicy {
 	_init_.Initialize()
 
@@ -695,7 +719,7 @@ func NewCdnFrontdoorFirewallPolicy(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy} Resource.
 func NewCdnFrontdoorFirewallPolicy_Override(c CdnFrontdoorFirewallPolicy, scope constructs.Construct, id *string, config *CdnFrontdoorFirewallPolicyConfig) {
 	_init_.Initialize()
 
@@ -703,6 +727,17 @@ func NewCdnFrontdoorFirewallPolicy_Override(c CdnFrontdoorFirewallPolicy, scope 
 		"@cdktf/provider-azurerm.cdnFrontdoorFirewallPolicy.CdnFrontdoorFirewallPolicy",
 		[]interface{}{scope, id, config},
 		c,
+	)
+}
+
+func (j *jsiiProxy_CdnFrontdoorFirewallPolicy)SetCaptchaCookieExpirationInMinutes(val *float64) {
+	if err := j.validateSetCaptchaCookieExpirationInMinutesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"captchaCookieExpirationInMinutes",
+		val,
 	)
 }
 
@@ -1300,6 +1335,14 @@ func (c *jsiiProxy_CdnFrontdoorFirewallPolicy) PutTimeouts(value *CdnFrontdoorFi
 		c,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CdnFrontdoorFirewallPolicy) ResetCaptchaCookieExpirationInMinutes() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCaptchaCookieExpirationInMinutes",
+		nil, // no parameters
 	)
 }
 

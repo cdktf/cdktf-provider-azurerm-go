@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/function_app_flex_consumption azurerm_function_app_flex_consumption}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/function_app_flex_consumption azurerm_function_app_flex_consumption}.
 type FunctionAppFlexConsumption interface {
 	cdktf.TerraformResource
 	AlwaysReady() FunctionAppFlexConsumptionAlwaysReadyList
@@ -65,6 +65,9 @@ type FunctionAppFlexConsumption interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	HostingEnvironmentId() *string
+	HttpConcurrency() *float64
+	SetHttpConcurrency(val *float64)
+	HttpConcurrencyInput() *float64
 	HttpsOnly() interface{}
 	SetHttpsOnly(val interface{})
 	HttpsOnlyInput() interface{}
@@ -221,6 +224,7 @@ type FunctionAppFlexConsumption interface {
 	ResetClientCertificateMode()
 	ResetConnectionString()
 	ResetEnabled()
+	ResetHttpConcurrency()
 	ResetHttpsOnly()
 	ResetId()
 	ResetIdentity()
@@ -541,6 +545,26 @@ func (j *jsiiProxy_FunctionAppFlexConsumption) HostingEnvironmentId() *string {
 	_jsii_.Get(
 		j,
 		"hostingEnvironmentId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FunctionAppFlexConsumption) HttpConcurrency() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"httpConcurrency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FunctionAppFlexConsumption) HttpConcurrencyInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"httpConcurrencyInput",
 		&returns,
 	)
 	return returns
@@ -1167,7 +1191,7 @@ func (j *jsiiProxy_FunctionAppFlexConsumption) ZipDeployFileInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/function_app_flex_consumption azurerm_function_app_flex_consumption} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/function_app_flex_consumption azurerm_function_app_flex_consumption} Resource.
 func NewFunctionAppFlexConsumption(scope constructs.Construct, id *string, config *FunctionAppFlexConsumptionConfig) FunctionAppFlexConsumption {
 	_init_.Initialize()
 
@@ -1185,7 +1209,7 @@ func NewFunctionAppFlexConsumption(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/function_app_flex_consumption azurerm_function_app_flex_consumption} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/function_app_flex_consumption azurerm_function_app_flex_consumption} Resource.
 func NewFunctionAppFlexConsumption_Override(f FunctionAppFlexConsumption, scope constructs.Construct, id *string, config *FunctionAppFlexConsumptionConfig) {
 	_init_.Initialize()
 
@@ -1285,6 +1309,17 @@ func (j *jsiiProxy_FunctionAppFlexConsumption)SetForEach(val cdktf.ITerraformIte
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FunctionAppFlexConsumption)SetHttpConcurrency(val *float64) {
+	if err := j.validateSetHttpConcurrencyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"httpConcurrency",
 		val,
 	)
 }
@@ -2048,6 +2083,14 @@ func (f *jsiiProxy_FunctionAppFlexConsumption) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FunctionAppFlexConsumption) ResetHttpConcurrency() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetHttpConcurrency",
 		nil, // no parameters
 	)
 }

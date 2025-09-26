@@ -75,6 +75,10 @@ func (j *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference) validateSetManagedHsmKeyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference) validateSetPrimaryUserAssignedIdentityIdParameters(val *string) error {
 	return nil
 }

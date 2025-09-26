@@ -187,6 +187,10 @@ func (j *jsiiProxy_MachineLearningWorkspace) validateSetResourceGroupNameParamet
 	return nil
 }
 
+func (j *jsiiProxy_MachineLearningWorkspace) validateSetServiceSideEncryptionEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MachineLearningWorkspace) validateSetSkuNameParameters(val *string) error {
 	return nil
 }

@@ -5,7 +5,7 @@ package dataazurermdevcenterproject
 
 
 type DataAzurermDevCenterProjectTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/data-sources/dev_center_project#read DataAzurermDevCenterProject#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/data-sources/dev_center_project#read DataAzurermDevCenterProject#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

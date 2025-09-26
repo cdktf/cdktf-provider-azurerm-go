@@ -529,6 +529,14 @@ func (j *jsiiProxy_FunctionAppFlexConsumption) validateSetEnabledParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_FunctionAppFlexConsumption) validateSetHttpConcurrencyParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FunctionAppFlexConsumption) validateSetHttpsOnlyParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

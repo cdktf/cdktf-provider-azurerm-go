@@ -16,6 +16,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "captchaCookieExpirationInMinutes", GoGetter: "CaptchaCookieExpirationInMinutes"},
+			_jsii_.MemberProperty{JsiiProperty: "captchaCookieExpirationInMinutesInput", GoGetter: "CaptchaCookieExpirationInMinutesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
@@ -74,6 +76,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "redirectUrlInput", GoGetter: "RedirectUrlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "requestBodyCheckEnabled", GoGetter: "RequestBodyCheckEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "requestBodyCheckEnabledInput", GoGetter: "RequestBodyCheckEnabledInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCaptchaCookieExpirationInMinutes", GoMethod: "ResetCaptchaCookieExpirationInMinutes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomBlockResponseBody", GoMethod: "ResetCustomBlockResponseBody"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomBlockResponseStatusCode", GoMethod: "ResetCustomBlockResponseStatusCode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomRule", GoMethod: "ResetCustomRule"},

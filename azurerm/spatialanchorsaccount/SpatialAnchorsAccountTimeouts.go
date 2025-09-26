@@ -5,13 +5,13 @@ package spatialanchorsaccount
 
 
 type SpatialAnchorsAccountTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/spatial_anchors_account#create SpatialAnchorsAccount#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/spatial_anchors_account#create SpatialAnchorsAccount#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/spatial_anchors_account#delete SpatialAnchorsAccount#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/spatial_anchors_account#delete SpatialAnchorsAccount#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/spatial_anchors_account#read SpatialAnchorsAccount#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/spatial_anchors_account#read SpatialAnchorsAccount#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/spatial_anchors_account#update SpatialAnchorsAccount#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/spatial_anchors_account#update SpatialAnchorsAccount#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

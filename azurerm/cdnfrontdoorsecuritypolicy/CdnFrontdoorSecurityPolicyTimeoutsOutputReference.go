@@ -49,6 +49,9 @@ type CdnFrontdoorSecurityPolicyTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Update() *string
+	SetUpdate(val *string)
+	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -76,6 +79,7 @@ type CdnFrontdoorSecurityPolicyTimeoutsOutputReference interface {
 	ResetCreate()
 	ResetDelete()
 	ResetRead()
+	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -221,6 +225,26 @@ func (j *jsiiProxy_CdnFrontdoorSecurityPolicyTimeoutsOutputReference) TerraformR
 	return returns
 }
 
+func (j *jsiiProxy_CdnFrontdoorSecurityPolicyTimeoutsOutputReference) Update() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"update",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnFrontdoorSecurityPolicyTimeoutsOutputReference) UpdateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewCdnFrontdoorSecurityPolicyTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CdnFrontdoorSecurityPolicyTimeoutsOutputReference {
 	_init_.Initialize()
@@ -333,6 +357,17 @@ func (j *jsiiProxy_CdnFrontdoorSecurityPolicyTimeoutsOutputReference)SetTerrafor
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CdnFrontdoorSecurityPolicyTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"update",
 		val,
 	)
 }
@@ -543,6 +578,14 @@ func (c *jsiiProxy_CdnFrontdoorSecurityPolicyTimeoutsOutputReference) ResetRead(
 	_jsii_.InvokeVoid(
 		c,
 		"resetRead",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CdnFrontdoorSecurityPolicyTimeoutsOutputReference) ResetUpdate() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetUpdate",
 		nil, // no parameters
 	)
 }

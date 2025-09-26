@@ -83,6 +83,10 @@ func (j *jsiiProxy_CdnFrontdoorSecurityPolicyTimeoutsOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_CdnFrontdoorSecurityPolicyTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewCdnFrontdoorSecurityPolicyTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

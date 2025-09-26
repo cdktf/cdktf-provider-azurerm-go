@@ -5,7 +5,7 @@ package dataazurermmonitordiagnosticcategories
 
 
 type DataAzurermMonitorDiagnosticCategoriesTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/data-sources/monitor_diagnostic_categories#read DataAzurermMonitorDiagnosticCategories#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/data-sources/monitor_diagnostic_categories#read DataAzurermMonitorDiagnosticCategories#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

@@ -5,9 +5,9 @@ package kubernetescluster
 
 
 type KubernetesClusterBootstrapProfile struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/kubernetes_cluster#artifact_source KubernetesCluster#artifact_source}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/kubernetes_cluster#artifact_source KubernetesCluster#artifact_source}.
 	ArtifactSource *string `field:"optional" json:"artifactSource" yaml:"artifactSource"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/kubernetes_cluster#container_registry_id KubernetesCluster#container_registry_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/kubernetes_cluster#container_registry_id KubernetesCluster#container_registry_id}.
 	ContainerRegistryId *string `field:"optional" json:"containerRegistryId" yaml:"containerRegistryId"`
 }
 

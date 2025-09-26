@@ -5,11 +5,11 @@ package routemap
 
 
 type RouteMapRuleAction struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/route_map#type RouteMap#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/route_map#type RouteMap#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// parameter block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/route_map#parameter RouteMap#parameter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/route_map#parameter RouteMap#parameter}
 	Parameter interface{} `field:"optional" json:"parameter" yaml:"parameter"`
 }
 

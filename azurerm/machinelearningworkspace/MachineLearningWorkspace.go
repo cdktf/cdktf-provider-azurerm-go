@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/machine_learning_workspace azurerm_machine_learning_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/machine_learning_workspace azurerm_machine_learning_workspace}.
 type MachineLearningWorkspace interface {
 	cdktf.TerraformResource
 	ApplicationInsightsId() *string
@@ -108,6 +108,9 @@ type MachineLearningWorkspace interface {
 	ResourceGroupNameInput() *string
 	ServerlessCompute() MachineLearningWorkspaceServerlessComputeOutputReference
 	ServerlessComputeInput() *MachineLearningWorkspaceServerlessCompute
+	ServiceSideEncryptionEnabled() interface{}
+	SetServiceSideEncryptionEnabled(val interface{})
+	ServiceSideEncryptionEnabledInput() interface{}
 	SkuName() *string
 	SetSkuName(val *string)
 	SkuNameInput() *string
@@ -194,6 +197,7 @@ type MachineLearningWorkspace interface {
 	ResetPrimaryUserAssignedIdentity()
 	ResetPublicNetworkAccessEnabled()
 	ResetServerlessCompute()
+	ResetServiceSideEncryptionEnabled()
 	ResetSkuName()
 	ResetTags()
 	ResetTimeouts()
@@ -736,6 +740,26 @@ func (j *jsiiProxy_MachineLearningWorkspace) ServerlessComputeInput() *MachineLe
 	return returns
 }
 
+func (j *jsiiProxy_MachineLearningWorkspace) ServiceSideEncryptionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"serviceSideEncryptionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MachineLearningWorkspace) ServiceSideEncryptionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"serviceSideEncryptionEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MachineLearningWorkspace) SkuName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -877,7 +901,7 @@ func (j *jsiiProxy_MachineLearningWorkspace) WorkspaceId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/machine_learning_workspace azurerm_machine_learning_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/machine_learning_workspace azurerm_machine_learning_workspace} Resource.
 func NewMachineLearningWorkspace(scope constructs.Construct, id *string, config *MachineLearningWorkspaceConfig) MachineLearningWorkspace {
 	_init_.Initialize()
 
@@ -895,7 +919,7 @@ func NewMachineLearningWorkspace(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/machine_learning_workspace azurerm_machine_learning_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/machine_learning_workspace azurerm_machine_learning_workspace} Resource.
 func NewMachineLearningWorkspace_Override(m MachineLearningWorkspace, scope constructs.Construct, id *string, config *MachineLearningWorkspaceConfig) {
 	_init_.Initialize()
 
@@ -1124,6 +1148,17 @@ func (j *jsiiProxy_MachineLearningWorkspace)SetResourceGroupName(val *string) {
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MachineLearningWorkspace)SetServiceSideEncryptionEnabled(val interface{}) {
+	if err := j.validateSetServiceSideEncryptionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceSideEncryptionEnabled",
 		val,
 	)
 }
@@ -1699,6 +1734,14 @@ func (m *jsiiProxy_MachineLearningWorkspace) ResetServerlessCompute() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetServerlessCompute",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MachineLearningWorkspace) ResetServiceSideEncryptionEnabled() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetServiceSideEncryptionEnabled",
 		nil, // no parameters
 	)
 }

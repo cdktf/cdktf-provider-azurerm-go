@@ -35,6 +35,9 @@ type KubernetesClusterApiServerAccessProfileOutputReference interface {
 	Fqn() *string
 	InternalValue() *KubernetesClusterApiServerAccessProfile
 	SetInternalValue(val *KubernetesClusterApiServerAccessProfile)
+	SubnetId() *string
+	SetSubnetId(val *string)
+	SubnetIdInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -43,6 +46,9 @@ type KubernetesClusterApiServerAccessProfileOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	VirtualNetworkIntegrationEnabled() interface{}
+	SetVirtualNetworkIntegrationEnabled(val interface{})
+	VirtualNetworkIntegrationEnabledInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -68,6 +74,8 @@ type KubernetesClusterApiServerAccessProfileOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAuthorizedIpRanges()
+	ResetSubnetId()
+	ResetVirtualNetworkIntegrationEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -153,6 +161,26 @@ func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) Inter
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) SubnetId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) SubnetIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -168,6 +196,26 @@ func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) Terra
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) VirtualNetworkIntegrationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"virtualNetworkIntegrationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) VirtualNetworkIntegrationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"virtualNetworkIntegrationEnabledInput",
 		&returns,
 	)
 	return returns
@@ -245,6 +293,17 @@ func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference)SetInt
 	)
 }
 
+func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference)SetSubnetId(val *string) {
+	if err := j.validateSetSubnetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subnetId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -263,6 +322,17 @@ func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference)SetTer
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference)SetVirtualNetworkIntegrationEnabled(val interface{}) {
+	if err := j.validateSetVirtualNetworkIntegrationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"virtualNetworkIntegrationEnabled",
 		val,
 	)
 }
@@ -457,6 +527,22 @@ func (k *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) Reset
 	_jsii_.InvokeVoid(
 		k,
 		"resetAuthorizedIpRanges",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) ResetSubnetId() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetSubnetId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) ResetVirtualNetworkIntegrationEnabled() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetVirtualNetworkIntegrationEnabled",
 		nil, // no parameters
 	)
 }

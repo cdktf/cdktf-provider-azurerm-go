@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/eventhub_namespace_authorization_rule azurerm_eventhub_namespace_authorization_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/eventhub_namespace_authorization_rule azurerm_eventhub_namespace_authorization_rule}.
 type EventhubNamespaceAuthorizationRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -541,7 +541,7 @@ func (j *jsiiProxy_EventhubNamespaceAuthorizationRule) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/eventhub_namespace_authorization_rule azurerm_eventhub_namespace_authorization_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/eventhub_namespace_authorization_rule azurerm_eventhub_namespace_authorization_rule} Resource.
 func NewEventhubNamespaceAuthorizationRule(scope constructs.Construct, id *string, config *EventhubNamespaceAuthorizationRuleConfig) EventhubNamespaceAuthorizationRule {
 	_init_.Initialize()
 
@@ -559,7 +559,7 @@ func NewEventhubNamespaceAuthorizationRule(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/eventhub_namespace_authorization_rule azurerm_eventhub_namespace_authorization_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/eventhub_namespace_authorization_rule azurerm_eventhub_namespace_authorization_rule} Resource.
 func NewEventhubNamespaceAuthorizationRule_Override(e EventhubNamespaceAuthorizationRule, scope constructs.Construct, id *string, config *EventhubNamespaceAuthorizationRuleConfig) {
 	_init_.Initialize()
 

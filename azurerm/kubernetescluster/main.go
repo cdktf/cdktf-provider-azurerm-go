@@ -402,10 +402,16 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthorizedIpRanges", GoMethod: "ResetAuthorizedIpRanges"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSubnetId", GoMethod: "ResetSubnetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVirtualNetworkIntegrationEnabled", GoMethod: "ResetVirtualNetworkIntegrationEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "subnetId", GoGetter: "SubnetId"},
+			_jsii_.MemberProperty{JsiiProperty: "subnetIdInput", GoGetter: "SubnetIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "virtualNetworkIntegrationEnabled", GoGetter: "VirtualNetworkIntegrationEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "virtualNetworkIntegrationEnabledInput", GoGetter: "VirtualNetworkIntegrationEnabledInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference{}

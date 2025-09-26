@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/kusto_cluster_principal_assignment azurerm_kusto_cluster_principal_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/kusto_cluster_principal_assignment azurerm_kusto_cluster_principal_assignment}.
 type KustoClusterPrincipalAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -517,7 +517,7 @@ func (j *jsiiProxy_KustoClusterPrincipalAssignment) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/kusto_cluster_principal_assignment azurerm_kusto_cluster_principal_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/kusto_cluster_principal_assignment azurerm_kusto_cluster_principal_assignment} Resource.
 func NewKustoClusterPrincipalAssignment(scope constructs.Construct, id *string, config *KustoClusterPrincipalAssignmentConfig) KustoClusterPrincipalAssignment {
 	_init_.Initialize()
 
@@ -535,7 +535,7 @@ func NewKustoClusterPrincipalAssignment(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/kusto_cluster_principal_assignment azurerm_kusto_cluster_principal_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/kusto_cluster_principal_assignment azurerm_kusto_cluster_principal_assignment} Resource.
 func NewKustoClusterPrincipalAssignment_Override(k KustoClusterPrincipalAssignment, scope constructs.Construct, id *string, config *KustoClusterPrincipalAssignmentConfig) {
 	_init_.Initialize()
 

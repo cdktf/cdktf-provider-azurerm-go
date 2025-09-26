@@ -41,6 +41,9 @@ type MysqlFlexibleServerCustomerManagedKeyOutputReference interface {
 	KeyVaultKeyId() *string
 	SetKeyVaultKeyId(val *string)
 	KeyVaultKeyIdInput() *string
+	ManagedHsmKeyId() *string
+	SetManagedHsmKeyId(val *string)
+	ManagedHsmKeyIdInput() *string
 	PrimaryUserAssignedIdentityId() *string
 	SetPrimaryUserAssignedIdentityId(val *string)
 	PrimaryUserAssignedIdentityIdInput() *string
@@ -79,6 +82,7 @@ type MysqlFlexibleServerCustomerManagedKeyOutputReference interface {
 	ResetGeoBackupKeyVaultKeyId()
 	ResetGeoBackupUserAssignedIdentityId()
 	ResetKeyVaultKeyId()
+	ResetManagedHsmKeyId()
 	ResetPrimaryUserAssignedIdentityId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -200,6 +204,26 @@ func (j *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference) KeyVaul
 	_jsii_.Get(
 		j,
 		"keyVaultKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference) ManagedHsmKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedHsmKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference) ManagedHsmKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedHsmKeyIdInput",
 		&returns,
 	)
 	return returns
@@ -335,6 +359,17 @@ func (j *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference)SetKeyVa
 	_jsii_.Set(
 		j,
 		"keyVaultKeyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference)SetManagedHsmKeyId(val *string) {
+	if err := j.validateSetManagedHsmKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedHsmKeyId",
 		val,
 	)
 }
@@ -578,6 +613,14 @@ func (m *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference) ResetKe
 	_jsii_.InvokeVoid(
 		m,
 		"resetKeyVaultKeyId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference) ResetManagedHsmKeyId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetManagedHsmKeyId",
 		nil, // no parameters
 	)
 }

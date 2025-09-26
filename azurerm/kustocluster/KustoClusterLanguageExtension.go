@@ -5,9 +5,9 @@ package kustocluster
 
 
 type KustoClusterLanguageExtension struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/kusto_cluster#image KustoCluster#image}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/kusto_cluster#image KustoCluster#image}.
 	Image *string `field:"required" json:"image" yaml:"image"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/kusto_cluster#name KustoCluster#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/kusto_cluster#name KustoCluster#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

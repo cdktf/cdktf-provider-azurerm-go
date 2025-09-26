@@ -7,13 +7,13 @@ package containerapp
 type ContainerAppTemplateAzureQueueScaleRule struct {
 	// authentication block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/container_app#authentication ContainerApp#authentication}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/container_app#authentication ContainerApp#authentication}
 	Authentication interface{} `field:"required" json:"authentication" yaml:"authentication"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/container_app#name ContainerApp#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/container_app#name ContainerApp#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/container_app#queue_length ContainerApp#queue_length}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/container_app#queue_length ContainerApp#queue_length}.
 	QueueLength *float64 `field:"required" json:"queueLength" yaml:"queueLength"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.45.1/docs/resources/container_app#queue_name ContainerApp#queue_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/container_app#queue_name ContainerApp#queue_name}.
 	QueueName *string `field:"required" json:"queueName" yaml:"queueName"`
 }
 

@@ -107,6 +107,10 @@ func validateCdnFrontdoorFirewallPolicy_IsTerraformResourceParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) validateSetCaptchaCookieExpirationInMinutesParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
