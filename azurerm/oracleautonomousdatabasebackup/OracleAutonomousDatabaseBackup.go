@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/oracle_autonomous_database_backup azurerm_oracle_autonomous_database_backup}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/oracle_autonomous_database_backup azurerm_oracle_autonomous_database_backup}.
 type OracleAutonomousDatabaseBackup interface {
 	cdktf.TerraformResource
 	AutonomousDatabaseId() *string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_OracleAutonomousDatabaseBackup) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/oracle_autonomous_database_backup azurerm_oracle_autonomous_database_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/oracle_autonomous_database_backup azurerm_oracle_autonomous_database_backup} Resource.
 func NewOracleAutonomousDatabaseBackup(scope constructs.Construct, id *string, config *OracleAutonomousDatabaseBackupConfig) OracleAutonomousDatabaseBackup {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewOracleAutonomousDatabaseBackup(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/oracle_autonomous_database_backup azurerm_oracle_autonomous_database_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/oracle_autonomous_database_backup azurerm_oracle_autonomous_database_backup} Resource.
 func NewOracleAutonomousDatabaseBackup_Override(o OracleAutonomousDatabaseBackup, scope constructs.Construct, id *string, config *OracleAutonomousDatabaseBackupConfig) {
 	_init_.Initialize()
 

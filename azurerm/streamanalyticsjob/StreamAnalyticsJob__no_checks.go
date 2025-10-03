@@ -79,7 +79,7 @@ func (s *jsiiProxy_StreamAnalyticsJob) validatePutIdentityParameters(value *Stre
 	return nil
 }
 
-func (s *jsiiProxy_StreamAnalyticsJob) validatePutJobStorageAccountParameters(value interface{}) error {
+func (s *jsiiProxy_StreamAnalyticsJob) validatePutJobStorageAccountParameters(value *StreamAnalyticsJobJobStorageAccount) error {
 	return nil
 }
 

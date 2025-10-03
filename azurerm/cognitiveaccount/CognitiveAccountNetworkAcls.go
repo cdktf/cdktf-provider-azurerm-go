@@ -5,15 +5,15 @@ package cognitiveaccount
 
 
 type CognitiveAccountNetworkAcls struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/cognitive_account#default_action CognitiveAccount#default_action}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/cognitive_account#default_action CognitiveAccount#default_action}.
 	DefaultAction *string `field:"required" json:"defaultAction" yaml:"defaultAction"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/cognitive_account#bypass CognitiveAccount#bypass}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/cognitive_account#bypass CognitiveAccount#bypass}.
 	Bypass *string `field:"optional" json:"bypass" yaml:"bypass"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/cognitive_account#ip_rules CognitiveAccount#ip_rules}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/cognitive_account#ip_rules CognitiveAccount#ip_rules}.
 	IpRules *[]*string `field:"optional" json:"ipRules" yaml:"ipRules"`
 	// virtual_network_rules block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/cognitive_account#virtual_network_rules CognitiveAccount#virtual_network_rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/cognitive_account#virtual_network_rules CognitiveAccount#virtual_network_rules}
 	VirtualNetworkRules interface{} `field:"optional" json:"virtualNetworkRules" yaml:"virtualNetworkRules"`
 }
 

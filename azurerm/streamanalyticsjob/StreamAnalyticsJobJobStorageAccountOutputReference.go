@@ -39,8 +39,8 @@ type StreamAnalyticsJobJobStorageAccountOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *StreamAnalyticsJobJobStorageAccount
+	SetInternalValue(val *StreamAnalyticsJobJobStorageAccount)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,6 +73,7 @@ type StreamAnalyticsJobJobStorageAccountOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAccountKey()
 	ResetAuthenticationMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -189,8 +190,8 @@ func (j *jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference) Fqn() *st
 	return returns
 }
 
-func (j *jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference) InternalValue() *StreamAnalyticsJobJobStorageAccount {
+	var returns *StreamAnalyticsJobJobStorageAccount
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -220,29 +221,29 @@ func (j *jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference) Terraform
 }
 
 
-func NewStreamAnalyticsJobJobStorageAccountOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) StreamAnalyticsJobJobStorageAccountOutputReference {
+func NewStreamAnalyticsJobJobStorageAccountOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StreamAnalyticsJobJobStorageAccountOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewStreamAnalyticsJobJobStorageAccountOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewStreamAnalyticsJobJobStorageAccountOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.streamAnalyticsJob.StreamAnalyticsJobJobStorageAccountOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewStreamAnalyticsJobJobStorageAccountOutputReference_Override(s StreamAnalyticsJobJobStorageAccountOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewStreamAnalyticsJobJobStorageAccountOutputReference_Override(s StreamAnalyticsJobJobStorageAccountOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.streamAnalyticsJob.StreamAnalyticsJobJobStorageAccountOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
 }
@@ -302,7 +303,7 @@ func (j *jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference)SetInternalValue(val *StreamAnalyticsJobJobStorageAccount) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,6 +520,14 @@ func (s *jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference) Interpola
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference) ResetAccountKey() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAccountKey",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference) ResetAuthenticationMode() {

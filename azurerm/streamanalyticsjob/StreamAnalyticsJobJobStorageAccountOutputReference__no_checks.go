@@ -71,7 +71,7 @@ func (j *jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference) validateSetInternalValueParameters(val *StreamAnalyticsJobJobStorageAccount) error {
 	return nil
 }
 
@@ -83,7 +83,7 @@ func (j *jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference) validateS
 	return nil
 }
 
-func validateNewStreamAnalyticsJobJobStorageAccountOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewStreamAnalyticsJobJobStorageAccountOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

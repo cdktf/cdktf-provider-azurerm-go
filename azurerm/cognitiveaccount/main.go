@@ -75,11 +75,15 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "networkAcls", GoGetter: "NetworkAcls"},
 			_jsii_.MemberProperty{JsiiProperty: "networkAclsInput", GoGetter: "NetworkAclsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "networkInjection", GoGetter: "NetworkInjection"},
+			_jsii_.MemberProperty{JsiiProperty: "networkInjectionInput", GoGetter: "NetworkInjectionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "outboundNetworkAccessRestricted", GoGetter: "OutboundNetworkAccessRestricted"},
 			_jsii_.MemberProperty{JsiiProperty: "outboundNetworkAccessRestrictedInput", GoGetter: "OutboundNetworkAccessRestrictedInput"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "primaryAccessKey", GoGetter: "PrimaryAccessKey"},
+			_jsii_.MemberProperty{JsiiProperty: "projectManagementEnabled", GoGetter: "ProjectManagementEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "projectManagementEnabledInput", GoGetter: "ProjectManagementEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "publicNetworkAccessEnabled", GoGetter: "PublicNetworkAccessEnabled"},
@@ -87,6 +91,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putCustomerManagedKey", GoMethod: "PutCustomerManagedKey"},
 			_jsii_.MemberMethod{JsiiMethod: "putIdentity", GoMethod: "PutIdentity"},
 			_jsii_.MemberMethod{JsiiMethod: "putNetworkAcls", GoMethod: "PutNetworkAcls"},
+			_jsii_.MemberMethod{JsiiMethod: "putNetworkInjection", GoMethod: "PutNetworkInjection"},
 			_jsii_.MemberMethod{JsiiMethod: "putStorage", GoMethod: "PutStorage"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "qnaRuntimeEndpoint", GoGetter: "QnaRuntimeEndpoint"},
@@ -106,8 +111,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMetricsAdvisorSuperUserName", GoMethod: "ResetMetricsAdvisorSuperUserName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMetricsAdvisorWebsiteName", GoMethod: "ResetMetricsAdvisorWebsiteName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNetworkAcls", GoMethod: "ResetNetworkAcls"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNetworkInjection", GoMethod: "ResetNetworkInjection"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOutboundNetworkAccessRestricted", GoMethod: "ResetOutboundNetworkAccessRestricted"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProjectManagementEnabled", GoMethod: "ResetProjectManagementEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPublicNetworkAccessEnabled", GoMethod: "ResetPublicNetworkAccessEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetQnaRuntimeEndpoint", GoMethod: "ResetQnaRuntimeEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStorage", GoMethod: "ResetStorage"},
@@ -335,6 +342,46 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CognitiveAccountNetworkAclsVirtualNetworkRulesOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.cognitiveAccount.CognitiveAccountNetworkInjection",
+		reflect.TypeOf((*CognitiveAccountNetworkInjection)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.cognitiveAccount.CognitiveAccountNetworkInjectionOutputReference",
+		reflect.TypeOf((*CognitiveAccountNetworkInjectionOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "scenario", GoGetter: "Scenario"},
+			_jsii_.MemberProperty{JsiiProperty: "scenarioInput", GoGetter: "ScenarioInput"},
+			_jsii_.MemberProperty{JsiiProperty: "subnetId", GoGetter: "SubnetId"},
+			_jsii_.MemberProperty{JsiiProperty: "subnetIdInput", GoGetter: "SubnetIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CognitiveAccountNetworkInjectionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

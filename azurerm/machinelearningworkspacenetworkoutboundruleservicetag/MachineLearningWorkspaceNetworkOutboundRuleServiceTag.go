@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/machine_learning_workspace_network_outbound_rule_service_tag azurerm_machine_learning_workspace_network_outbound_rule_service_tag}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/machine_learning_workspace_network_outbound_rule_service_tag azurerm_machine_learning_workspace_network_outbound_rule_service_tag}.
 type MachineLearningWorkspaceNetworkOutboundRuleServiceTag interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -449,7 +449,7 @@ func (j *jsiiProxy_MachineLearningWorkspaceNetworkOutboundRuleServiceTag) Worksp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/machine_learning_workspace_network_outbound_rule_service_tag azurerm_machine_learning_workspace_network_outbound_rule_service_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/machine_learning_workspace_network_outbound_rule_service_tag azurerm_machine_learning_workspace_network_outbound_rule_service_tag} Resource.
 func NewMachineLearningWorkspaceNetworkOutboundRuleServiceTag(scope constructs.Construct, id *string, config *MachineLearningWorkspaceNetworkOutboundRuleServiceTagConfig) MachineLearningWorkspaceNetworkOutboundRuleServiceTag {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewMachineLearningWorkspaceNetworkOutboundRuleServiceTag(scope constructs.C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/machine_learning_workspace_network_outbound_rule_service_tag azurerm_machine_learning_workspace_network_outbound_rule_service_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/machine_learning_workspace_network_outbound_rule_service_tag azurerm_machine_learning_workspace_network_outbound_rule_service_tag} Resource.
 func NewMachineLearningWorkspaceNetworkOutboundRuleServiceTag_Override(m MachineLearningWorkspaceNetworkOutboundRuleServiceTag, scope constructs.Construct, id *string, config *MachineLearningWorkspaceNetworkOutboundRuleServiceTagConfig) {
 	_init_.Initialize()
 

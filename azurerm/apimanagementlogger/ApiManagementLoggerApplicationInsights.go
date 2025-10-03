@@ -5,9 +5,9 @@ package apimanagementlogger
 
 
 type ApiManagementLoggerApplicationInsights struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/api_management_logger#connection_string ApiManagementLogger#connection_string}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/api_management_logger#connection_string ApiManagementLogger#connection_string}.
 	ConnectionString *string `field:"optional" json:"connectionString" yaml:"connectionString"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/api_management_logger#instrumentation_key ApiManagementLogger#instrumentation_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/api_management_logger#instrumentation_key ApiManagementLogger#instrumentation_key}.
 	InstrumentationKey *string `field:"optional" json:"instrumentationKey" yaml:"instrumentationKey"`
 }
 

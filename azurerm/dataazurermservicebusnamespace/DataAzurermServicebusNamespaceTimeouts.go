@@ -5,7 +5,7 @@ package dataazurermservicebusnamespace
 
 
 type DataAzurermServicebusNamespaceTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/data-sources/servicebus_namespace#read DataAzurermServicebusNamespace#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/data-sources/servicebus_namespace#read DataAzurermServicebusNamespace#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

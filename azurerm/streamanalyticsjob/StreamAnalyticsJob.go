@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/stream_analytics_job azurerm_stream_analytics_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/stream_analytics_job azurerm_stream_analytics_job}.
 type StreamAnalyticsJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -63,8 +63,8 @@ type StreamAnalyticsJob interface {
 	IdentityInput() *StreamAnalyticsJobIdentity
 	IdInput() *string
 	JobId() *string
-	JobStorageAccount() StreamAnalyticsJobJobStorageAccountList
-	JobStorageAccountInput() interface{}
+	JobStorageAccount() StreamAnalyticsJobJobStorageAccountOutputReference
+	JobStorageAccountInput() *StreamAnalyticsJobJobStorageAccount
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -163,7 +163,7 @@ type StreamAnalyticsJob interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutIdentity(value *StreamAnalyticsJobIdentity)
-	PutJobStorageAccount(value interface{})
+	PutJobStorageAccount(value *StreamAnalyticsJobJobStorageAccount)
 	PutTimeouts(value *StreamAnalyticsJobTimeouts)
 	ResetCompatibilityLevel()
 	ResetContentStoragePolicy()
@@ -452,8 +452,8 @@ func (j *jsiiProxy_StreamAnalyticsJob) JobId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StreamAnalyticsJob) JobStorageAccount() StreamAnalyticsJobJobStorageAccountList {
-	var returns StreamAnalyticsJobJobStorageAccountList
+func (j *jsiiProxy_StreamAnalyticsJob) JobStorageAccount() StreamAnalyticsJobJobStorageAccountOutputReference {
+	var returns StreamAnalyticsJobJobStorageAccountOutputReference
 	_jsii_.Get(
 		j,
 		"jobStorageAccount",
@@ -462,8 +462,8 @@ func (j *jsiiProxy_StreamAnalyticsJob) JobStorageAccount() StreamAnalyticsJobJob
 	return returns
 }
 
-func (j *jsiiProxy_StreamAnalyticsJob) JobStorageAccountInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StreamAnalyticsJob) JobStorageAccountInput() *StreamAnalyticsJobJobStorageAccount {
+	var returns *StreamAnalyticsJobJobStorageAccount
 	_jsii_.Get(
 		j,
 		"jobStorageAccountInput",
@@ -773,7 +773,7 @@ func (j *jsiiProxy_StreamAnalyticsJob) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/stream_analytics_job azurerm_stream_analytics_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/stream_analytics_job azurerm_stream_analytics_job} Resource.
 func NewStreamAnalyticsJob(scope constructs.Construct, id *string, config *StreamAnalyticsJobConfig) StreamAnalyticsJob {
 	_init_.Initialize()
 
@@ -791,7 +791,7 @@ func NewStreamAnalyticsJob(scope constructs.Construct, id *string, config *Strea
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/stream_analytics_job azurerm_stream_analytics_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/stream_analytics_job azurerm_stream_analytics_job} Resource.
 func NewStreamAnalyticsJob_Override(s StreamAnalyticsJob, scope constructs.Construct, id *string, config *StreamAnalyticsJobConfig) {
 	_init_.Initialize()
 
@@ -1421,7 +1421,7 @@ func (s *jsiiProxy_StreamAnalyticsJob) PutIdentity(value *StreamAnalyticsJobIden
 	)
 }
 
-func (s *jsiiProxy_StreamAnalyticsJob) PutJobStorageAccount(value interface{}) {
+func (s *jsiiProxy_StreamAnalyticsJob) PutJobStorageAccount(value *StreamAnalyticsJobJobStorageAccount) {
 	if err := s.validatePutJobStorageAccountParameters(value); err != nil {
 		panic(err)
 	}

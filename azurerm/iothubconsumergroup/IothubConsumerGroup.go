@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/iothub_consumer_group azurerm_iothub_consumer_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/iothub_consumer_group azurerm_iothub_consumer_group}.
 type IothubConsumerGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_IothubConsumerGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/iothub_consumer_group azurerm_iothub_consumer_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/iothub_consumer_group azurerm_iothub_consumer_group} Resource.
 func NewIothubConsumerGroup(scope constructs.Construct, id *string, config *IothubConsumerGroupConfig) IothubConsumerGroup {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewIothubConsumerGroup(scope constructs.Construct, id *string, config *Ioth
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/iothub_consumer_group azurerm_iothub_consumer_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/iothub_consumer_group azurerm_iothub_consumer_group} Resource.
 func NewIothubConsumerGroup_Override(i IothubConsumerGroup, scope constructs.Construct, id *string, config *IothubConsumerGroupConfig) {
 	_init_.Initialize()
 

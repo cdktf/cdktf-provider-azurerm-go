@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/data-sources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/data-sources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy}.
 type DataAzurermCdnFrontdoorFirewallPolicy interface {
 	cdktf.TerraformDataSource
 	CaptchaCookieExpirationInMinutes() *float64
@@ -412,7 +412,7 @@ func (j *jsiiProxy_DataAzurermCdnFrontdoorFirewallPolicy) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/data-sources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/data-sources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy} Data Source.
 func NewDataAzurermCdnFrontdoorFirewallPolicy(scope constructs.Construct, id *string, config *DataAzurermCdnFrontdoorFirewallPolicyConfig) DataAzurermCdnFrontdoorFirewallPolicy {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewDataAzurermCdnFrontdoorFirewallPolicy(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/data-sources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/data-sources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy} Data Source.
 func NewDataAzurermCdnFrontdoorFirewallPolicy_Override(d DataAzurermCdnFrontdoorFirewallPolicy, scope constructs.Construct, id *string, config *DataAzurermCdnFrontdoorFirewallPolicyConfig) {
 	_init_.Initialize()
 

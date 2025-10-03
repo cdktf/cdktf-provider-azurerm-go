@@ -218,32 +218,12 @@ func (s *jsiiProxy_StreamAnalyticsJob) validatePutIdentityParameters(value *Stre
 	return nil
 }
 
-func (s *jsiiProxy_StreamAnalyticsJob) validatePutJobStorageAccountParameters(value interface{}) error {
+func (s *jsiiProxy_StreamAnalyticsJob) validatePutJobStorageAccountParameters(value *StreamAnalyticsJobJobStorageAccount) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*StreamAnalyticsJobJobStorageAccount:
-		value := value.(*[]*StreamAnalyticsJobJobStorageAccount)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*StreamAnalyticsJobJobStorageAccount:
-		value_ := value.([]*StreamAnalyticsJobJobStorageAccount)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*StreamAnalyticsJobJobStorageAccount; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

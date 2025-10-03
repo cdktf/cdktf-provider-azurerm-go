@@ -87,6 +87,10 @@ func (c *jsiiProxy_CognitiveAccount) validatePutNetworkAclsParameters(value *Cog
 	return nil
 }
 
+func (c *jsiiProxy_CognitiveAccount) validatePutNetworkInjectionParameters(value *CognitiveAccountNetworkInjection) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitiveAccount) validatePutStorageParameters(value interface{}) error {
 	return nil
 }
@@ -180,6 +184,10 @@ func (j *jsiiProxy_CognitiveAccount) validateSetNameParameters(val *string) erro
 }
 
 func (j *jsiiProxy_CognitiveAccount) validateSetOutboundNetworkAccessRestrictedParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CognitiveAccount) validateSetProjectManagementEnabledParameters(val interface{}) error {
 	return nil
 }
 

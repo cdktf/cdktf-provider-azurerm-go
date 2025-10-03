@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/cognitive_account azurerm_cognitive_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/cognitive_account azurerm_cognitive_account}.
 type CognitiveAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -92,12 +92,17 @@ type CognitiveAccount interface {
 	NameInput() *string
 	NetworkAcls() CognitiveAccountNetworkAclsOutputReference
 	NetworkAclsInput() *CognitiveAccountNetworkAcls
+	NetworkInjection() CognitiveAccountNetworkInjectionOutputReference
+	NetworkInjectionInput() *CognitiveAccountNetworkInjection
 	// The tree node.
 	Node() constructs.Node
 	OutboundNetworkAccessRestricted() interface{}
 	SetOutboundNetworkAccessRestricted(val interface{})
 	OutboundNetworkAccessRestrictedInput() interface{}
 	PrimaryAccessKey() *string
+	ProjectManagementEnabled() interface{}
+	SetProjectManagementEnabled(val interface{})
+	ProjectManagementEnabledInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -180,6 +185,7 @@ type CognitiveAccount interface {
 	PutCustomerManagedKey(value *CognitiveAccountCustomerManagedKey)
 	PutIdentity(value *CognitiveAccountIdentity)
 	PutNetworkAcls(value *CognitiveAccountNetworkAcls)
+	PutNetworkInjection(value *CognitiveAccountNetworkInjection)
 	PutStorage(value interface{})
 	PutTimeouts(value *CognitiveAccountTimeouts)
 	ResetCustomerManagedKey()
@@ -196,10 +202,12 @@ type CognitiveAccount interface {
 	ResetMetricsAdvisorSuperUserName()
 	ResetMetricsAdvisorWebsiteName()
 	ResetNetworkAcls()
+	ResetNetworkInjection()
 	ResetOutboundNetworkAccessRestricted()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProjectManagementEnabled()
 	ResetPublicNetworkAccessEnabled()
 	ResetQnaRuntimeEndpoint()
 	ResetStorage()
@@ -663,6 +671,26 @@ func (j *jsiiProxy_CognitiveAccount) NetworkAclsInput() *CognitiveAccountNetwork
 	return returns
 }
 
+func (j *jsiiProxy_CognitiveAccount) NetworkInjection() CognitiveAccountNetworkInjectionOutputReference {
+	var returns CognitiveAccountNetworkInjectionOutputReference
+	_jsii_.Get(
+		j,
+		"networkInjection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitiveAccount) NetworkInjectionInput() *CognitiveAccountNetworkInjection {
+	var returns *CognitiveAccountNetworkInjection
+	_jsii_.Get(
+		j,
+		"networkInjectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CognitiveAccount) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -698,6 +726,26 @@ func (j *jsiiProxy_CognitiveAccount) PrimaryAccessKey() *string {
 	_jsii_.Get(
 		j,
 		"primaryAccessKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitiveAccount) ProjectManagementEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"projectManagementEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitiveAccount) ProjectManagementEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"projectManagementEnabledInput",
 		&returns,
 	)
 	return returns
@@ -914,7 +962,7 @@ func (j *jsiiProxy_CognitiveAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/cognitive_account azurerm_cognitive_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/cognitive_account azurerm_cognitive_account} Resource.
 func NewCognitiveAccount(scope constructs.Construct, id *string, config *CognitiveAccountConfig) CognitiveAccount {
 	_init_.Initialize()
 
@@ -932,7 +980,7 @@ func NewCognitiveAccount(scope constructs.Construct, id *string, config *Cogniti
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.46.0/docs/resources/cognitive_account azurerm_cognitive_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/cognitive_account azurerm_cognitive_account} Resource.
 func NewCognitiveAccount_Override(c CognitiveAccount, scope constructs.Construct, id *string, config *CognitiveAccountConfig) {
 	_init_.Initialize()
 
@@ -1153,6 +1201,17 @@ func (j *jsiiProxy_CognitiveAccount)SetOutboundNetworkAccessRestricted(val inter
 	_jsii_.Set(
 		j,
 		"outboundNetworkAccessRestricted",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitiveAccount)SetProjectManagementEnabled(val interface{}) {
+	if err := j.validateSetProjectManagementEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectManagementEnabled",
 		val,
 	)
 }
@@ -1617,6 +1676,17 @@ func (c *jsiiProxy_CognitiveAccount) PutNetworkAcls(value *CognitiveAccountNetwo
 	)
 }
 
+func (c *jsiiProxy_CognitiveAccount) PutNetworkInjection(value *CognitiveAccountNetworkInjection) {
+	if err := c.validatePutNetworkInjectionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNetworkInjection",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CognitiveAccount) PutStorage(value interface{}) {
 	if err := c.validatePutStorageParameters(value); err != nil {
 		panic(err)
@@ -1751,6 +1821,14 @@ func (c *jsiiProxy_CognitiveAccount) ResetNetworkAcls() {
 	)
 }
 
+func (c *jsiiProxy_CognitiveAccount) ResetNetworkInjection() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNetworkInjection",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CognitiveAccount) ResetOutboundNetworkAccessRestricted() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1763,6 +1841,14 @@ func (c *jsiiProxy_CognitiveAccount) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitiveAccount) ResetProjectManagementEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetProjectManagementEnabled",
 		nil, // no parameters
 	)
 }
