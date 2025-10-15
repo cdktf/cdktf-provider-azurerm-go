@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/backup_protected_file_share azurerm_backup_protected_file_share}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/backup_protected_file_share azurerm_backup_protected_file_share}.
 type BackupProtectedFileShare interface {
 	cdktf.TerraformResource
 	BackupPolicyId() *string
@@ -449,7 +449,7 @@ func (j *jsiiProxy_BackupProtectedFileShare) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/backup_protected_file_share azurerm_backup_protected_file_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/backup_protected_file_share azurerm_backup_protected_file_share} Resource.
 func NewBackupProtectedFileShare(scope constructs.Construct, id *string, config *BackupProtectedFileShareConfig) BackupProtectedFileShare {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewBackupProtectedFileShare(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/backup_protected_file_share azurerm_backup_protected_file_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/backup_protected_file_share azurerm_backup_protected_file_share} Resource.
 func NewBackupProtectedFileShare_Override(b BackupProtectedFileShare, scope constructs.Construct, id *string, config *BackupProtectedFileShareConfig) {
 	_init_.Initialize()
 

@@ -7,9 +7,9 @@ package chaosstudioexperiment
 type ChaosStudioExperimentSteps struct {
 	// branch block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/chaos_studio_experiment#branch ChaosStudioExperiment#branch}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/chaos_studio_experiment#branch ChaosStudioExperiment#branch}
 	Branch interface{} `field:"required" json:"branch" yaml:"branch"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/chaos_studio_experiment#name ChaosStudioExperiment#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/chaos_studio_experiment#name ChaosStudioExperiment#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

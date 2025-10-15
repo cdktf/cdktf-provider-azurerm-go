@@ -12,11 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster}.
 type KubernetesCluster interface {
 	cdktf.TerraformResource
 	AciConnectorLinux() KubernetesClusterAciConnectorLinuxOutputReference
 	AciConnectorLinuxInput() *KubernetesClusterAciConnectorLinux
+	AiToolchainOperatorEnabled() interface{}
+	SetAiToolchainOperatorEnabled(val interface{})
+	AiToolchainOperatorEnabledInput() interface{}
 	ApiServerAccessProfile() KubernetesClusterApiServerAccessProfileOutputReference
 	ApiServerAccessProfileInput() *KubernetesClusterApiServerAccessProfile
 	AutomaticUpgradeChannel() *string
@@ -293,6 +296,7 @@ type KubernetesCluster interface {
 	PutWindowsProfile(value *KubernetesClusterWindowsProfile)
 	PutWorkloadAutoscalerProfile(value *KubernetesClusterWorkloadAutoscalerProfile)
 	ResetAciConnectorLinux()
+	ResetAiToolchainOperatorEnabled()
 	ResetApiServerAccessProfile()
 	ResetAutomaticUpgradeChannel()
 	ResetAutoScalerProfile()
@@ -383,6 +387,26 @@ func (j *jsiiProxy_KubernetesCluster) AciConnectorLinuxInput() *KubernetesCluste
 	_jsii_.Get(
 		j,
 		"aciConnectorLinuxInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) AiToolchainOperatorEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"aiToolchainOperatorEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) AiToolchainOperatorEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"aiToolchainOperatorEnabledInput",
 		&returns,
 	)
 	return returns
@@ -1819,7 +1843,7 @@ func (j *jsiiProxy_KubernetesCluster) WorkloadIdentityEnabledInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
 func NewKubernetesCluster(scope constructs.Construct, id *string, config *KubernetesClusterConfig) KubernetesCluster {
 	_init_.Initialize()
 
@@ -1837,7 +1861,7 @@ func NewKubernetesCluster(scope constructs.Construct, id *string, config *Kubern
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
 func NewKubernetesCluster_Override(k KubernetesCluster, scope constructs.Construct, id *string, config *KubernetesClusterConfig) {
 	_init_.Initialize()
 
@@ -1845,6 +1869,17 @@ func NewKubernetesCluster_Override(k KubernetesCluster, scope constructs.Constru
 		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesCluster",
 		[]interface{}{scope, id, config},
 		k,
+	)
+}
+
+func (j *jsiiProxy_KubernetesCluster)SetAiToolchainOperatorEnabled(val interface{}) {
+	if err := j.validateSetAiToolchainOperatorEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aiToolchainOperatorEnabled",
+		val,
 	)
 }
 
@@ -2922,6 +2957,14 @@ func (k *jsiiProxy_KubernetesCluster) ResetAciConnectorLinux() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetAciConnectorLinux",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetAiToolchainOperatorEnabled() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetAiToolchainOperatorEnabled",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/windows_virtual_machine_scale_set azurerm_windows_virtual_machine_scale_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/windows_virtual_machine_scale_set azurerm_windows_virtual_machine_scale_set}.
 type WindowsVirtualMachineScaleSet interface {
 	cdktf.TerraformResource
 	AdditionalCapabilities() WindowsVirtualMachineScaleSetAdditionalCapabilitiesOutputReference
@@ -154,6 +154,12 @@ type WindowsVirtualMachineScaleSet interface {
 	ProximityPlacementGroupIdInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	ResilientVmCreationEnabled() interface{}
+	SetResilientVmCreationEnabled(val interface{})
+	ResilientVmCreationEnabledInput() interface{}
+	ResilientVmDeletionEnabled() interface{}
+	SetResilientVmDeletionEnabled(val interface{})
+	ResilientVmDeletionEnabledInput() interface{}
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
@@ -309,6 +315,8 @@ type WindowsVirtualMachineScaleSet interface {
 	ResetPriority()
 	ResetProvisionVmAgent()
 	ResetProximityPlacementGroupId()
+	ResetResilientVmCreationEnabled()
+	ResetResilientVmDeletionEnabled()
 	ResetRollingUpgradePolicy()
 	ResetScaleIn()
 	ResetSecret()
@@ -1215,6 +1223,46 @@ func (j *jsiiProxy_WindowsVirtualMachineScaleSet) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_WindowsVirtualMachineScaleSet) ResilientVmCreationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"resilientVmCreationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineScaleSet) ResilientVmCreationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"resilientVmCreationEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineScaleSet) ResilientVmDeletionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"resilientVmDeletionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineScaleSet) ResilientVmDeletionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"resilientVmDeletionEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WindowsVirtualMachineScaleSet) ResourceGroupName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1656,7 +1704,7 @@ func (j *jsiiProxy_WindowsVirtualMachineScaleSet) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/windows_virtual_machine_scale_set azurerm_windows_virtual_machine_scale_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/windows_virtual_machine_scale_set azurerm_windows_virtual_machine_scale_set} Resource.
 func NewWindowsVirtualMachineScaleSet(scope constructs.Construct, id *string, config *WindowsVirtualMachineScaleSetConfig) WindowsVirtualMachineScaleSet {
 	_init_.Initialize()
 
@@ -1674,7 +1722,7 @@ func NewWindowsVirtualMachineScaleSet(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/windows_virtual_machine_scale_set azurerm_windows_virtual_machine_scale_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/windows_virtual_machine_scale_set azurerm_windows_virtual_machine_scale_set} Resource.
 func NewWindowsVirtualMachineScaleSet_Override(w WindowsVirtualMachineScaleSet, scope constructs.Construct, id *string, config *WindowsVirtualMachineScaleSetConfig) {
 	_init_.Initialize()
 
@@ -2024,6 +2072,28 @@ func (j *jsiiProxy_WindowsVirtualMachineScaleSet)SetProximityPlacementGroupId(va
 	_jsii_.Set(
 		j,
 		"proximityPlacementGroupId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineScaleSet)SetResilientVmCreationEnabled(val interface{}) {
+	if err := j.validateSetResilientVmCreationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resilientVmCreationEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineScaleSet)SetResilientVmDeletionEnabled(val interface{}) {
+	if err := j.validateSetResilientVmDeletionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resilientVmDeletionEnabled",
 		val,
 	)
 }
@@ -2977,6 +3047,22 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSet) ResetProximityPlacementGroupId
 	_jsii_.InvokeVoid(
 		w,
 		"resetProximityPlacementGroupId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsVirtualMachineScaleSet) ResetResilientVmCreationEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetResilientVmCreationEnabled",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsVirtualMachineScaleSet) ResetResilientVmDeletionEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetResilientVmDeletionEnabled",
 		nil, // no parameters
 	)
 }

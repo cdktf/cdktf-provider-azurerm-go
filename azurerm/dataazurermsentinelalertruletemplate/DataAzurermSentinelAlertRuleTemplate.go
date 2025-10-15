@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/data-sources/sentinel_alert_rule_template azurerm_sentinel_alert_rule_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/data-sources/sentinel_alert_rule_template azurerm_sentinel_alert_rule_template}.
 type DataAzurermSentinelAlertRuleTemplate interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -393,7 +393,7 @@ func (j *jsiiProxy_DataAzurermSentinelAlertRuleTemplate) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/data-sources/sentinel_alert_rule_template azurerm_sentinel_alert_rule_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/data-sources/sentinel_alert_rule_template azurerm_sentinel_alert_rule_template} Data Source.
 func NewDataAzurermSentinelAlertRuleTemplate(scope constructs.Construct, id *string, config *DataAzurermSentinelAlertRuleTemplateConfig) DataAzurermSentinelAlertRuleTemplate {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewDataAzurermSentinelAlertRuleTemplate(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/data-sources/sentinel_alert_rule_template azurerm_sentinel_alert_rule_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/data-sources/sentinel_alert_rule_template azurerm_sentinel_alert_rule_template} Data Source.
 func NewDataAzurermSentinelAlertRuleTemplate_Override(d DataAzurermSentinelAlertRuleTemplate, scope constructs.Construct, id *string, config *DataAzurermSentinelAlertRuleTemplateConfig) {
 	_init_.Initialize()
 

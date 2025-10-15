@@ -279,6 +279,14 @@ func (j *jsiiProxy_LinuxVirtualMachineScaleSet) validateSetProximityPlacementGro
 	return nil
 }
 
+func (j *jsiiProxy_LinuxVirtualMachineScaleSet) validateSetResilientVmCreationEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LinuxVirtualMachineScaleSet) validateSetResilientVmDeletionEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinuxVirtualMachineScaleSet) validateSetResourceGroupNameParameters(val *string) error {
 	return nil
 }

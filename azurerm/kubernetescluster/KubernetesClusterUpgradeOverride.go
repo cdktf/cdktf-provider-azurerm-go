@@ -5,9 +5,9 @@ package kubernetescluster
 
 
 type KubernetesClusterUpgradeOverride struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/kubernetes_cluster#force_upgrade_enabled KubernetesCluster#force_upgrade_enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/kubernetes_cluster#force_upgrade_enabled KubernetesCluster#force_upgrade_enabled}.
 	ForceUpgradeEnabled interface{} `field:"required" json:"forceUpgradeEnabled" yaml:"forceUpgradeEnabled"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/kubernetes_cluster#effective_until KubernetesCluster#effective_until}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/kubernetes_cluster#effective_until KubernetesCluster#effective_until}.
 	EffectiveUntil *string `field:"optional" json:"effectiveUntil" yaml:"effectiveUntil"`
 }
 

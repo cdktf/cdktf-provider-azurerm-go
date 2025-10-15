@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/notification_hub_namespace azurerm_notification_hub_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/notification_hub_namespace azurerm_notification_hub_namespace}.
 type NotificationHubNamespace interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -70,6 +70,9 @@ type NotificationHubNamespace interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReplicationRegion() *string
+	SetReplicationRegion(val *string)
+	ReplicationRegionInput() *string
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
@@ -88,6 +91,9 @@ type NotificationHubNamespace interface {
 	TerraformResourceType() *string
 	Timeouts() NotificationHubNamespaceTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	ZoneRedundancyEnabled() interface{}
+	SetZoneRedundancyEnabled(val interface{})
+	ZoneRedundancyEnabledInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -137,8 +143,10 @@ type NotificationHubNamespace interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetReplicationRegion()
 	ResetTags()
 	ResetTimeouts()
+	ResetZoneRedundancyEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -387,6 +395,26 @@ func (j *jsiiProxy_NotificationHubNamespace) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NotificationHubNamespace) ReplicationRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replicationRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationHubNamespace) ReplicationRegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replicationRegionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NotificationHubNamespace) ResourceGroupName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -507,8 +535,28 @@ func (j *jsiiProxy_NotificationHubNamespace) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NotificationHubNamespace) ZoneRedundancyEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"zoneRedundancyEnabled",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/notification_hub_namespace azurerm_notification_hub_namespace} Resource.
+func (j *jsiiProxy_NotificationHubNamespace) ZoneRedundancyEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"zoneRedundancyEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/notification_hub_namespace azurerm_notification_hub_namespace} Resource.
 func NewNotificationHubNamespace(scope constructs.Construct, id *string, config *NotificationHubNamespaceConfig) NotificationHubNamespace {
 	_init_.Initialize()
 
@@ -526,7 +574,7 @@ func NewNotificationHubNamespace(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/notification_hub_namespace azurerm_notification_hub_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/notification_hub_namespace azurerm_notification_hub_namespace} Resource.
 func NewNotificationHubNamespace_Override(n NotificationHubNamespace, scope constructs.Construct, id *string, config *NotificationHubNamespaceConfig) {
 	_init_.Initialize()
 
@@ -660,6 +708,17 @@ func (j *jsiiProxy_NotificationHubNamespace)SetProvisioners(val *[]interface{}) 
 	)
 }
 
+func (j *jsiiProxy_NotificationHubNamespace)SetReplicationRegion(val *string) {
+	if err := j.validateSetReplicationRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replicationRegion",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NotificationHubNamespace)SetResourceGroupName(val *string) {
 	if err := j.validateSetResourceGroupNameParameters(val); err != nil {
 		panic(err)
@@ -689,6 +748,17 @@ func (j *jsiiProxy_NotificationHubNamespace)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationHubNamespace)SetZoneRedundancyEnabled(val interface{}) {
+	if err := j.validateSetZoneRedundancyEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zoneRedundancyEnabled",
 		val,
 	)
 }
@@ -1081,6 +1151,14 @@ func (n *jsiiProxy_NotificationHubNamespace) ResetOverrideLogicalId() {
 	)
 }
 
+func (n *jsiiProxy_NotificationHubNamespace) ResetReplicationRegion() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetReplicationRegion",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NotificationHubNamespace) ResetTags() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1093,6 +1171,14 @@ func (n *jsiiProxy_NotificationHubNamespace) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationHubNamespace) ResetZoneRedundancyEnabled() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetZoneRedundancyEnabled",
 		nil, // no parameters
 	)
 }

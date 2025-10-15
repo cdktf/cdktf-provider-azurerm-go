@@ -131,6 +131,10 @@ func (j *jsiiProxy_NotificationHubNamespace) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_NotificationHubNamespace) validateSetReplicationRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationHubNamespace) validateSetResourceGroupNameParameters(val *string) error {
 	return nil
 }
@@ -140,6 +144,10 @@ func (j *jsiiProxy_NotificationHubNamespace) validateSetSkuNameParameters(val *s
 }
 
 func (j *jsiiProxy_NotificationHubNamespace) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationHubNamespace) validateSetZoneRedundancyEnabledParameters(val interface{}) error {
 	return nil
 }
 

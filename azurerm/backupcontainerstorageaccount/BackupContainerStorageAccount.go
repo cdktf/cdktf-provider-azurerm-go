@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/backup_container_storage_account azurerm_backup_container_storage_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/backup_container_storage_account azurerm_backup_container_storage_account}.
 type BackupContainerStorageAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_BackupContainerStorageAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/backup_container_storage_account azurerm_backup_container_storage_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/backup_container_storage_account azurerm_backup_container_storage_account} Resource.
 func NewBackupContainerStorageAccount(scope constructs.Construct, id *string, config *BackupContainerStorageAccountConfig) BackupContainerStorageAccount {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewBackupContainerStorageAccount(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/backup_container_storage_account azurerm_backup_container_storage_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/backup_container_storage_account azurerm_backup_container_storage_account} Resource.
 func NewBackupContainerStorageAccount_Override(b BackupContainerStorageAccount, scope constructs.Construct, id *string, config *BackupContainerStorageAccountConfig) {
 	_init_.Initialize()
 

@@ -287,6 +287,14 @@ func (j *jsiiProxy_WindowsVirtualMachineScaleSet) validateSetProximityPlacementG
 	return nil
 }
 
+func (j *jsiiProxy_WindowsVirtualMachineScaleSet) validateSetResilientVmCreationEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineScaleSet) validateSetResilientVmDeletionEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsVirtualMachineScaleSet) validateSetResourceGroupNameParameters(val *string) error {
 	return nil
 }

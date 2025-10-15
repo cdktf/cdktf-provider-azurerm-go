@@ -207,6 +207,10 @@ func validateKubernetesCluster_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesCluster) validateSetAiToolchainOperatorEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesCluster) validateSetAutomaticUpgradeChannelParameters(val *string) error {
 	return nil
 }

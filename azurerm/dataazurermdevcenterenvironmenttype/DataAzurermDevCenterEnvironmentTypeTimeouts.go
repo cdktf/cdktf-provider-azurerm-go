@@ -5,7 +5,7 @@ package dataazurermdevcenterenvironmenttype
 
 
 type DataAzurermDevCenterEnvironmentTypeTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/data-sources/dev_center_environment_type#read DataAzurermDevCenterEnvironmentType#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/data-sources/dev_center_environment_type#read DataAzurermDevCenterEnvironmentType#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

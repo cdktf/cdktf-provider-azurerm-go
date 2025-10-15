@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/data-sources/storage_queue azurerm_storage_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/data-sources/storage_queue azurerm_storage_queue}.
 type DataAzurermStorageQueue interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -406,7 +406,7 @@ func (j *jsiiProxy_DataAzurermStorageQueue) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/data-sources/storage_queue azurerm_storage_queue} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/data-sources/storage_queue azurerm_storage_queue} Data Source.
 func NewDataAzurermStorageQueue(scope constructs.Construct, id *string, config *DataAzurermStorageQueueConfig) DataAzurermStorageQueue {
 	_init_.Initialize()
 
@@ -424,7 +424,7 @@ func NewDataAzurermStorageQueue(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/data-sources/storage_queue azurerm_storage_queue} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/data-sources/storage_queue azurerm_storage_queue} Data Source.
 func NewDataAzurermStorageQueue_Override(d DataAzurermStorageQueue, scope constructs.Construct, id *string, config *DataAzurermStorageQueueConfig) {
 	_init_.Initialize()
 

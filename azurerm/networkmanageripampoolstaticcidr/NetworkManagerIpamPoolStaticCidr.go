@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/network_manager_ipam_pool_static_cidr azurerm_network_manager_ipam_pool_static_cidr}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/network_manager_ipam_pool_static_cidr azurerm_network_manager_ipam_pool_static_cidr}.
 type NetworkManagerIpamPoolStaticCidr interface {
 	cdktf.TerraformResource
 	AddressPrefixes() *[]*string
@@ -428,7 +428,7 @@ func (j *jsiiProxy_NetworkManagerIpamPoolStaticCidr) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/network_manager_ipam_pool_static_cidr azurerm_network_manager_ipam_pool_static_cidr} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/network_manager_ipam_pool_static_cidr azurerm_network_manager_ipam_pool_static_cidr} Resource.
 func NewNetworkManagerIpamPoolStaticCidr(scope constructs.Construct, id *string, config *NetworkManagerIpamPoolStaticCidrConfig) NetworkManagerIpamPoolStaticCidr {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewNetworkManagerIpamPoolStaticCidr(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/network_manager_ipam_pool_static_cidr azurerm_network_manager_ipam_pool_static_cidr} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/network_manager_ipam_pool_static_cidr azurerm_network_manager_ipam_pool_static_cidr} Resource.
 func NewNetworkManagerIpamPoolStaticCidr_Override(n NetworkManagerIpamPoolStaticCidr, scope constructs.Construct, id *string, config *NetworkManagerIpamPoolStaticCidrConfig) {
 	_init_.Initialize()
 

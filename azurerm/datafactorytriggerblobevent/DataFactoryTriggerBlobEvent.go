@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/data_factory_trigger_blob_event azurerm_data_factory_trigger_blob_event}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/data_factory_trigger_blob_event azurerm_data_factory_trigger_blob_event}.
 type DataFactoryTriggerBlobEvent interface {
 	cdktf.TerraformResource
 	Activated() interface{}
@@ -617,7 +617,7 @@ func (j *jsiiProxy_DataFactoryTriggerBlobEvent) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/data_factory_trigger_blob_event azurerm_data_factory_trigger_blob_event} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/data_factory_trigger_blob_event azurerm_data_factory_trigger_blob_event} Resource.
 func NewDataFactoryTriggerBlobEvent(scope constructs.Construct, id *string, config *DataFactoryTriggerBlobEventConfig) DataFactoryTriggerBlobEvent {
 	_init_.Initialize()
 
@@ -635,7 +635,7 @@ func NewDataFactoryTriggerBlobEvent(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.47.0/docs/resources/data_factory_trigger_blob_event azurerm_data_factory_trigger_blob_event} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/data_factory_trigger_blob_event azurerm_data_factory_trigger_blob_event} Resource.
 func NewDataFactoryTriggerBlobEvent_Override(d DataFactoryTriggerBlobEvent, scope constructs.Construct, id *string, config *DataFactoryTriggerBlobEventConfig) {
 	_init_.Initialize()
 
