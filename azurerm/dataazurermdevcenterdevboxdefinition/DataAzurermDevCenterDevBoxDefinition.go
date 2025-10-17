@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/data-sources/dev_center_dev_box_definition azurerm_dev_center_dev_box_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/data-sources/dev_center_dev_box_definition azurerm_dev_center_dev_box_definition}.
 type DataAzurermDevCenterDevBoxDefinition interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_DataAzurermDevCenterDevBoxDefinition) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/data-sources/dev_center_dev_box_definition azurerm_dev_center_dev_box_definition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/data-sources/dev_center_dev_box_definition azurerm_dev_center_dev_box_definition} Data Source.
 func NewDataAzurermDevCenterDevBoxDefinition(scope constructs.Construct, id *string, config *DataAzurermDevCenterDevBoxDefinitionConfig) DataAzurermDevCenterDevBoxDefinition {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewDataAzurermDevCenterDevBoxDefinition(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/data-sources/dev_center_dev_box_definition azurerm_dev_center_dev_box_definition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/data-sources/dev_center_dev_box_definition azurerm_dev_center_dev_box_definition} Data Source.
 func NewDataAzurermDevCenterDevBoxDefinition_Override(d DataAzurermDevCenterDevBoxDefinition, scope constructs.Construct, id *string, config *DataAzurermDevCenterDevBoxDefinitionConfig) {
 	_init_.Initialize()
 

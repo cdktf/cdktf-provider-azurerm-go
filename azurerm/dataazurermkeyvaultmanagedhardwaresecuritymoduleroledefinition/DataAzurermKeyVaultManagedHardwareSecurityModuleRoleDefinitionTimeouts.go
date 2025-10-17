@@ -5,7 +5,7 @@ package dataazurermkeyvaultmanagedhardwaresecuritymoduleroledefinition
 
 
 type DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/data-sources/key_vault_managed_hardware_security_module_role_definition#read DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinition#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/data-sources/key_vault_managed_hardware_security_module_role_definition#read DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinition#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

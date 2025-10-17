@@ -5,9 +5,9 @@ package mssqlelasticpool
 
 
 type MssqlElasticpoolPerDatabaseSettings struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/mssql_elasticpool#max_capacity MssqlElasticpool#max_capacity}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/mssql_elasticpool#max_capacity MssqlElasticpool#max_capacity}.
 	MaxCapacity *float64 `field:"required" json:"maxCapacity" yaml:"maxCapacity"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/mssql_elasticpool#min_capacity MssqlElasticpool#min_capacity}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/mssql_elasticpool#min_capacity MssqlElasticpool#min_capacity}.
 	MinCapacity *float64 `field:"required" json:"minCapacity" yaml:"minCapacity"`
 }
 

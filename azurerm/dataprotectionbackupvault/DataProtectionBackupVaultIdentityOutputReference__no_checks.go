@@ -59,6 +59,10 @@ func (j *jsiiProxy_DataProtectionBackupVaultIdentityOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_DataProtectionBackupVaultIdentityOutputReference) validateSetIdentityIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataProtectionBackupVaultIdentityOutputReference) validateSetInternalValueParameters(val *DataProtectionBackupVaultIdentity) error {
 	return nil
 }

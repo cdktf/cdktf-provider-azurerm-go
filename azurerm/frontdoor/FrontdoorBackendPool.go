@@ -7,13 +7,13 @@ package frontdoor
 type FrontdoorBackendPool struct {
 	// backend block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/frontdoor#backend Frontdoor#backend}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/frontdoor#backend Frontdoor#backend}
 	Backend interface{} `field:"required" json:"backend" yaml:"backend"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/frontdoor#health_probe_name Frontdoor#health_probe_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/frontdoor#health_probe_name Frontdoor#health_probe_name}.
 	HealthProbeName *string `field:"required" json:"healthProbeName" yaml:"healthProbeName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/frontdoor#load_balancing_name Frontdoor#load_balancing_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/frontdoor#load_balancing_name Frontdoor#load_balancing_name}.
 	LoadBalancingName *string `field:"required" json:"loadBalancingName" yaml:"loadBalancingName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/frontdoor#name Frontdoor#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/frontdoor#name Frontdoor#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

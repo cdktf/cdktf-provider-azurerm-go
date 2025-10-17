@@ -5,9 +5,9 @@ package eventgridpartnernamespace
 
 
 type EventgridPartnerNamespaceInboundIpRule struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/eventgrid_partner_namespace#ip_mask EventgridPartnerNamespace#ip_mask}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/eventgrid_partner_namespace#ip_mask EventgridPartnerNamespace#ip_mask}.
 	IpMask *string `field:"required" json:"ipMask" yaml:"ipMask"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/eventgrid_partner_namespace#action EventgridPartnerNamespace#action}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/eventgrid_partner_namespace#action EventgridPartnerNamespace#action}.
 	Action *string `field:"optional" json:"action" yaml:"action"`
 }
 

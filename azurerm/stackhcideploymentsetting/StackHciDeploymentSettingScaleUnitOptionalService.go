@@ -5,7 +5,7 @@ package stackhcideploymentsetting
 
 
 type StackHciDeploymentSettingScaleUnitOptionalService struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/stack_hci_deployment_setting#custom_location StackHciDeploymentSetting#custom_location}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/stack_hci_deployment_setting#custom_location StackHciDeploymentSetting#custom_location}.
 	CustomLocation *string `field:"required" json:"customLocation" yaml:"customLocation"`
 }
 

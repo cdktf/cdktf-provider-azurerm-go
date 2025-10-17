@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/data_factory_linked_service_azure_function azurerm_data_factory_linked_service_azure_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/data_factory_linked_service_azure_function azurerm_data_factory_linked_service_azure_function}.
 type DataFactoryLinkedServiceAzureFunction interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -571,7 +571,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceAzureFunction) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/data_factory_linked_service_azure_function azurerm_data_factory_linked_service_azure_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/data_factory_linked_service_azure_function azurerm_data_factory_linked_service_azure_function} Resource.
 func NewDataFactoryLinkedServiceAzureFunction(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceAzureFunctionConfig) DataFactoryLinkedServiceAzureFunction {
 	_init_.Initialize()
 
@@ -589,7 +589,7 @@ func NewDataFactoryLinkedServiceAzureFunction(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/data_factory_linked_service_azure_function azurerm_data_factory_linked_service_azure_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/data_factory_linked_service_azure_function azurerm_data_factory_linked_service_azure_function} Resource.
 func NewDataFactoryLinkedServiceAzureFunction_Override(d DataFactoryLinkedServiceAzureFunction, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceAzureFunctionConfig) {
 	_init_.Initialize()
 

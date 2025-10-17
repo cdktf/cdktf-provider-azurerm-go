@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/management_group_policy_remediation azurerm_management_group_policy_remediation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/management_group_policy_remediation azurerm_management_group_policy_remediation}.
 type ManagementGroupPolicyRemediation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -523,7 +523,7 @@ func (j *jsiiProxy_ManagementGroupPolicyRemediation) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/management_group_policy_remediation azurerm_management_group_policy_remediation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/management_group_policy_remediation azurerm_management_group_policy_remediation} Resource.
 func NewManagementGroupPolicyRemediation(scope constructs.Construct, id *string, config *ManagementGroupPolicyRemediationConfig) ManagementGroupPolicyRemediation {
 	_init_.Initialize()
 
@@ -541,7 +541,7 @@ func NewManagementGroupPolicyRemediation(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/management_group_policy_remediation azurerm_management_group_policy_remediation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/management_group_policy_remediation azurerm_management_group_policy_remediation} Resource.
 func NewManagementGroupPolicyRemediation_Override(m ManagementGroupPolicyRemediation, scope constructs.Construct, id *string, config *ManagementGroupPolicyRemediationConfig) {
 	_init_.Initialize()
 

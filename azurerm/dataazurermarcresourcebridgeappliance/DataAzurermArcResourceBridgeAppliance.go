@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/data-sources/arc_resource_bridge_appliance azurerm_arc_resource_bridge_appliance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/data-sources/arc_resource_bridge_appliance azurerm_arc_resource_bridge_appliance}.
 type DataAzurermArcResourceBridgeAppliance interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_DataAzurermArcResourceBridgeAppliance) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/data-sources/arc_resource_bridge_appliance azurerm_arc_resource_bridge_appliance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/data-sources/arc_resource_bridge_appliance azurerm_arc_resource_bridge_appliance} Data Source.
 func NewDataAzurermArcResourceBridgeAppliance(scope constructs.Construct, id *string, config *DataAzurermArcResourceBridgeApplianceConfig) DataAzurermArcResourceBridgeAppliance {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewDataAzurermArcResourceBridgeAppliance(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/data-sources/arc_resource_bridge_appliance azurerm_arc_resource_bridge_appliance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/data-sources/arc_resource_bridge_appliance azurerm_arc_resource_bridge_appliance} Data Source.
 func NewDataAzurermArcResourceBridgeAppliance_Override(d DataAzurermArcResourceBridgeAppliance, scope constructs.Construct, id *string, config *DataAzurermArcResourceBridgeApplianceConfig) {
 	_init_.Initialize()
 

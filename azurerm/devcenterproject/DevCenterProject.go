@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/dev_center_project azurerm_dev_center_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/dev_center_project azurerm_dev_center_project}.
 type DevCenterProject interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -533,7 +533,7 @@ func (j *jsiiProxy_DevCenterProject) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/dev_center_project azurerm_dev_center_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/dev_center_project azurerm_dev_center_project} Resource.
 func NewDevCenterProject(scope constructs.Construct, id *string, config *DevCenterProjectConfig) DevCenterProject {
 	_init_.Initialize()
 
@@ -551,7 +551,7 @@ func NewDevCenterProject(scope constructs.Construct, id *string, config *DevCent
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/dev_center_project azurerm_dev_center_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/dev_center_project azurerm_dev_center_project} Resource.
 func NewDevCenterProject_Override(d DevCenterProject, scope constructs.Construct, id *string, config *DevCenterProjectConfig) {
 	_init_.Initialize()
 

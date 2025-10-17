@@ -5,7 +5,7 @@ package vmwareprivatecloud
 
 
 type VmwarePrivateCloudManagementCluster struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/vmware_private_cloud#size VmwarePrivateCloud#size}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/vmware_private_cloud#size VmwarePrivateCloud#size}.
 	Size *float64 `field:"required" json:"size" yaml:"size"`
 }
 

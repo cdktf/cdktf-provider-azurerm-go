@@ -5,7 +5,7 @@ package dynatracemonitor
 
 
 type DynatraceMonitorEnvironmentPropertiesEnvironmentInfo struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/dynatrace_monitor#environment_id DynatraceMonitor#environment_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/dynatrace_monitor#environment_id DynatraceMonitor#environment_id}.
 	EnvironmentId *string `field:"required" json:"environmentId" yaml:"environmentId"`
 }
 

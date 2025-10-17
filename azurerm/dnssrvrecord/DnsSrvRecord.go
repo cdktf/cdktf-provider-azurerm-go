@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/dns_srv_record azurerm_dns_srv_record}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/dns_srv_record azurerm_dns_srv_record}.
 type DnsSrvRecord interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -484,7 +484,7 @@ func (j *jsiiProxy_DnsSrvRecord) ZoneNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/dns_srv_record azurerm_dns_srv_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/dns_srv_record azurerm_dns_srv_record} Resource.
 func NewDnsSrvRecord(scope constructs.Construct, id *string, config *DnsSrvRecordConfig) DnsSrvRecord {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewDnsSrvRecord(scope constructs.Construct, id *string, config *DnsSrvRecor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/dns_srv_record azurerm_dns_srv_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/dns_srv_record azurerm_dns_srv_record} Resource.
 func NewDnsSrvRecord_Override(d DnsSrvRecord, scope constructs.Construct, id *string, config *DnsSrvRecordConfig) {
 	_init_.Initialize()
 

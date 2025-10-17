@@ -5,9 +5,9 @@ package applicationgateway
 
 
 type ApplicationGatewayFrontendPort struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/application_gateway#port ApplicationGateway#port}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/application_gateway#port ApplicationGateway#port}.
 	Port *float64 `field:"required" json:"port" yaml:"port"`
 }
 

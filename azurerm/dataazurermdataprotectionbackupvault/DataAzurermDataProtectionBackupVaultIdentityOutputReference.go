@@ -30,6 +30,7 @@ type DataAzurermDataProtectionBackupVaultIdentityOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IdentityIds() *[]*string
 	InternalValue() *DataAzurermDataProtectionBackupVaultIdentity
 	SetInternalValue(val *DataAzurermDataProtectionBackupVaultIdentity)
 	PrincipalId() *string
@@ -117,6 +118,16 @@ func (j *jsiiProxy_DataAzurermDataProtectionBackupVaultIdentityOutputReference) 
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermDataProtectionBackupVaultIdentityOutputReference) IdentityIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"identityIds",
 		&returns,
 	)
 	return returns

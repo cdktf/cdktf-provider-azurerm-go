@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/notification_hub_namespace azurerm_notification_hub_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/notification_hub_namespace azurerm_notification_hub_namespace}.
 type NotificationHubNamespace interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -556,7 +556,7 @@ func (j *jsiiProxy_NotificationHubNamespace) ZoneRedundancyEnabledInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/notification_hub_namespace azurerm_notification_hub_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/notification_hub_namespace azurerm_notification_hub_namespace} Resource.
 func NewNotificationHubNamespace(scope constructs.Construct, id *string, config *NotificationHubNamespaceConfig) NotificationHubNamespace {
 	_init_.Initialize()
 
@@ -574,7 +574,7 @@ func NewNotificationHubNamespace(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/notification_hub_namespace azurerm_notification_hub_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/notification_hub_namespace azurerm_notification_hub_namespace} Resource.
 func NewNotificationHubNamespace_Override(n NotificationHubNamespace, scope constructs.Construct, id *string, config *NotificationHubNamespaceConfig) {
 	_init_.Initialize()
 

@@ -30,6 +30,9 @@ type DataProtectionBackupVaultIdentityOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IdentityIds() *[]*string
+	SetIdentityIds(val *[]*string)
+	IdentityIdsInput() *[]*string
 	InternalValue() *DataProtectionBackupVaultIdentity
 	SetInternalValue(val *DataProtectionBackupVaultIdentity)
 	PrincipalId() *string
@@ -69,6 +72,7 @@ type DataProtectionBackupVaultIdentityOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIdentityIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -119,6 +123,26 @@ func (j *jsiiProxy_DataProtectionBackupVaultIdentityOutputReference) Fqn() *stri
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataProtectionBackupVaultIdentityOutputReference) IdentityIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"identityIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataProtectionBackupVaultIdentityOutputReference) IdentityIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"identityIdsInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +264,17 @@ func (j *jsiiProxy_DataProtectionBackupVaultIdentityOutputReference)SetComplexOb
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataProtectionBackupVaultIdentityOutputReference)SetIdentityIds(val *[]*string) {
+	if err := j.validateSetIdentityIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityIds",
 		val,
 	)
 }
@@ -472,6 +507,14 @@ func (d *jsiiProxy_DataProtectionBackupVaultIdentityOutputReference) Interpolati
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataProtectionBackupVaultIdentityOutputReference) ResetIdentityIds() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIdentityIds",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataProtectionBackupVaultIdentityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

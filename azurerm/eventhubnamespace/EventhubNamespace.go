@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/eventhub_namespace azurerm_eventhub_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/eventhub_namespace azurerm_eventhub_namespace}.
 type EventhubNamespace interface {
 	cdktf.TerraformResource
 	AutoInflateEnabled() interface{}
@@ -732,7 +732,7 @@ func (j *jsiiProxy_EventhubNamespace) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/eventhub_namespace azurerm_eventhub_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/eventhub_namespace azurerm_eventhub_namespace} Resource.
 func NewEventhubNamespace(scope constructs.Construct, id *string, config *EventhubNamespaceConfig) EventhubNamespace {
 	_init_.Initialize()
 
@@ -750,7 +750,7 @@ func NewEventhubNamespace(scope constructs.Construct, id *string, config *Eventh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.48.0/docs/resources/eventhub_namespace azurerm_eventhub_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/eventhub_namespace azurerm_eventhub_namespace} Resource.
 func NewEventhubNamespace_Override(e EventhubNamespace, scope constructs.Construct, id *string, config *EventhubNamespaceConfig) {
 	_init_.Initialize()
 
