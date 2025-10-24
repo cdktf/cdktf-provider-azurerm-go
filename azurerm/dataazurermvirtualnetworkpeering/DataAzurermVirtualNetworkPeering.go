@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/data-sources/virtual_network_peering azurerm_virtual_network_peering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/data-sources/virtual_network_peering azurerm_virtual_network_peering}.
 type DataAzurermVirtualNetworkPeering interface {
 	cdktf.TerraformDataSource
 	AllowForwardedTraffic() cdktf.IResolvable
@@ -412,7 +412,7 @@ func (j *jsiiProxy_DataAzurermVirtualNetworkPeering) VirtualNetworkIdInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/data-sources/virtual_network_peering azurerm_virtual_network_peering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/data-sources/virtual_network_peering azurerm_virtual_network_peering} Data Source.
 func NewDataAzurermVirtualNetworkPeering(scope constructs.Construct, id *string, config *DataAzurermVirtualNetworkPeeringConfig) DataAzurermVirtualNetworkPeering {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewDataAzurermVirtualNetworkPeering(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/data-sources/virtual_network_peering azurerm_virtual_network_peering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/data-sources/virtual_network_peering azurerm_virtual_network_peering} Data Source.
 func NewDataAzurermVirtualNetworkPeering_Override(d DataAzurermVirtualNetworkPeering, scope constructs.Construct, id *string, config *DataAzurermVirtualNetworkPeeringConfig) {
 	_init_.Initialize()
 

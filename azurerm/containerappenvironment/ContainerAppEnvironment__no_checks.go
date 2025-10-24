@@ -159,6 +159,10 @@ func (j *jsiiProxy_ContainerAppEnvironment) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAppEnvironment) validateSetPublicNetworkAccessParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAppEnvironment) validateSetResourceGroupNameParameters(val *string) error {
 	return nil
 }

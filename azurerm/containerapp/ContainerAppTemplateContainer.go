@@ -7,49 +7,49 @@ package containerapp
 type ContainerAppTemplateContainer struct {
 	// The amount of vCPU to allocate to the container.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/container_app#cpu ContainerApp#cpu}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/container_app#cpu ContainerApp#cpu}
 	Cpu *float64 `field:"required" json:"cpu" yaml:"cpu"`
 	// The image to use to create the container.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/container_app#image ContainerApp#image}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/container_app#image ContainerApp#image}
 	Image *string `field:"required" json:"image" yaml:"image"`
 	// The amount of memory to allocate to the container.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/container_app#memory ContainerApp#memory}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/container_app#memory ContainerApp#memory}
 	Memory *string `field:"required" json:"memory" yaml:"memory"`
 	// The name of the container.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/container_app#name ContainerApp#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/container_app#name ContainerApp#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// A list of args to pass to the container.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/container_app#args ContainerApp#args}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/container_app#args ContainerApp#args}
 	Args *[]*string `field:"optional" json:"args" yaml:"args"`
 	// A command to pass to the container to override the default.
 	//
 	// This is provided as a list of command line elements without spaces.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/container_app#command ContainerApp#command}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/container_app#command ContainerApp#command}
 	Command *[]*string `field:"optional" json:"command" yaml:"command"`
 	// env block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/container_app#env ContainerApp#env}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/container_app#env ContainerApp#env}
 	Env interface{} `field:"optional" json:"env" yaml:"env"`
 	// liveness_probe block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/container_app#liveness_probe ContainerApp#liveness_probe}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/container_app#liveness_probe ContainerApp#liveness_probe}
 	LivenessProbe interface{} `field:"optional" json:"livenessProbe" yaml:"livenessProbe"`
 	// readiness_probe block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/container_app#readiness_probe ContainerApp#readiness_probe}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/container_app#readiness_probe ContainerApp#readiness_probe}
 	ReadinessProbe interface{} `field:"optional" json:"readinessProbe" yaml:"readinessProbe"`
 	// startup_probe block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/container_app#startup_probe ContainerApp#startup_probe}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/container_app#startup_probe ContainerApp#startup_probe}
 	StartupProbe interface{} `field:"optional" json:"startupProbe" yaml:"startupProbe"`
 	// volume_mounts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/container_app#volume_mounts ContainerApp#volume_mounts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/container_app#volume_mounts ContainerApp#volume_mounts}
 	VolumeMounts interface{} `field:"optional" json:"volumeMounts" yaml:"volumeMounts"`
 }
 

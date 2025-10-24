@@ -5,7 +5,7 @@ package cdnfrontdoorprofile
 
 
 type CdnFrontdoorProfileLogScrubbingRule struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/cdn_frontdoor_profile#match_variable CdnFrontdoorProfile#match_variable}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/cdn_frontdoor_profile#match_variable CdnFrontdoorProfile#match_variable}.
 	MatchVariable *string `field:"required" json:"matchVariable" yaml:"matchVariable"`
 }
 

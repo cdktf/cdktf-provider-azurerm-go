@@ -5,11 +5,11 @@ package subscriptionpolicyassignment
 
 
 type SubscriptionPolicyAssignmentOverridesSelectors struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/subscription_policy_assignment#in SubscriptionPolicyAssignment#in}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/subscription_policy_assignment#in SubscriptionPolicyAssignment#in}.
 	In *[]*string `field:"optional" json:"in" yaml:"in"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/subscription_policy_assignment#kind SubscriptionPolicyAssignment#kind}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/subscription_policy_assignment#kind SubscriptionPolicyAssignment#kind}.
 	Kind *string `field:"optional" json:"kind" yaml:"kind"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/resources/subscription_policy_assignment#not_in SubscriptionPolicyAssignment#not_in}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/subscription_policy_assignment#not_in SubscriptionPolicyAssignment#not_in}.
 	NotIn *[]*string `field:"optional" json:"notIn" yaml:"notIn"`
 }
 

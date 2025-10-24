@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/data-sources/container_app_environment azurerm_container_app_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/data-sources/container_app_environment azurerm_container_app_environment}.
 type DataAzurermContainerAppEnvironment interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -60,6 +60,7 @@ type DataAzurermContainerAppEnvironment interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	PublicNetworkAccess() *string
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceGroupName() *string
@@ -355,6 +356,16 @@ func (j *jsiiProxy_DataAzurermContainerAppEnvironment) Provider() cdktf.Terrafor
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermContainerAppEnvironment) PublicNetworkAccess() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicNetworkAccess",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermContainerAppEnvironment) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -456,7 +467,7 @@ func (j *jsiiProxy_DataAzurermContainerAppEnvironment) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/data-sources/container_app_environment azurerm_container_app_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/data-sources/container_app_environment azurerm_container_app_environment} Data Source.
 func NewDataAzurermContainerAppEnvironment(scope constructs.Construct, id *string, config *DataAzurermContainerAppEnvironmentConfig) DataAzurermContainerAppEnvironment {
 	_init_.Initialize()
 
@@ -474,7 +485,7 @@ func NewDataAzurermContainerAppEnvironment(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/data-sources/container_app_environment azurerm_container_app_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/data-sources/container_app_environment azurerm_container_app_environment} Data Source.
 func NewDataAzurermContainerAppEnvironment_Override(d DataAzurermContainerAppEnvironment, scope constructs.Construct, id *string, config *DataAzurermContainerAppEnvironmentConfig) {
 	_init_.Initialize()
 

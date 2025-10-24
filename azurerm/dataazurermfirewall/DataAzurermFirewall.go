@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/data-sources/firewall azurerm_firewall}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/data-sources/firewall azurerm_firewall}.
 type DataAzurermFirewall interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -480,7 +480,7 @@ func (j *jsiiProxy_DataAzurermFirewall) Zones() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/data-sources/firewall azurerm_firewall} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/data-sources/firewall azurerm_firewall} Data Source.
 func NewDataAzurermFirewall(scope constructs.Construct, id *string, config *DataAzurermFirewallConfig) DataAzurermFirewall {
 	_init_.Initialize()
 
@@ -498,7 +498,7 @@ func NewDataAzurermFirewall(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.49.0/docs/data-sources/firewall azurerm_firewall} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/data-sources/firewall azurerm_firewall} Data Source.
 func NewDataAzurermFirewall_Override(d DataAzurermFirewall, scope constructs.Construct, id *string, config *DataAzurermFirewallConfig) {
 	_init_.Initialize()
 
