@@ -99,6 +99,10 @@ func (j *jsiiProxy_BotChannelMsTeams) validateSetBotNameParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_BotChannelMsTeams) validateSetCallingEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotChannelMsTeams) validateSetCallingWebHookParameters(val *string) error {
 	return nil
 }

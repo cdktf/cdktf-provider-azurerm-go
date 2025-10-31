@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/cdn_frontdoor_origin_group azurerm_cdn_frontdoor_origin_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/cdn_frontdoor_origin_group azurerm_cdn_frontdoor_origin_group}.
 type CdnFrontdoorOriginGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -475,7 +475,7 @@ func (j *jsiiProxy_CdnFrontdoorOriginGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/cdn_frontdoor_origin_group azurerm_cdn_frontdoor_origin_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/cdn_frontdoor_origin_group azurerm_cdn_frontdoor_origin_group} Resource.
 func NewCdnFrontdoorOriginGroup(scope constructs.Construct, id *string, config *CdnFrontdoorOriginGroupConfig) CdnFrontdoorOriginGroup {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewCdnFrontdoorOriginGroup(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/cdn_frontdoor_origin_group azurerm_cdn_frontdoor_origin_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/cdn_frontdoor_origin_group azurerm_cdn_frontdoor_origin_group} Resource.
 func NewCdnFrontdoorOriginGroup_Override(c CdnFrontdoorOriginGroup, scope constructs.Construct, id *string, config *CdnFrontdoorOriginGroupConfig) {
 	_init_.Initialize()
 

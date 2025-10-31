@@ -5,7 +5,7 @@ package dataazurermrolemanagementpolicy
 
 
 type DataAzurermRoleManagementPolicyTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/data-sources/role_management_policy#read DataAzurermRoleManagementPolicy#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/data-sources/role_management_policy#read DataAzurermRoleManagementPolicy#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

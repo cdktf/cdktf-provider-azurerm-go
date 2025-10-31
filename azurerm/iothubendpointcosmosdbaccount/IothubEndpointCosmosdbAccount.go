@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/iothub_endpoint_cosmosdb_account azurerm_iothub_endpoint_cosmosdb_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/iothub_endpoint_cosmosdb_account azurerm_iothub_endpoint_cosmosdb_account}.
 type IothubEndpointCosmosdbAccount interface {
 	cdktf.TerraformResource
 	AuthenticationType() *string
@@ -640,7 +640,7 @@ func (j *jsiiProxy_IothubEndpointCosmosdbAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/iothub_endpoint_cosmosdb_account azurerm_iothub_endpoint_cosmosdb_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/iothub_endpoint_cosmosdb_account azurerm_iothub_endpoint_cosmosdb_account} Resource.
 func NewIothubEndpointCosmosdbAccount(scope constructs.Construct, id *string, config *IothubEndpointCosmosdbAccountConfig) IothubEndpointCosmosdbAccount {
 	_init_.Initialize()
 
@@ -658,7 +658,7 @@ func NewIothubEndpointCosmosdbAccount(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/iothub_endpoint_cosmosdb_account azurerm_iothub_endpoint_cosmosdb_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/iothub_endpoint_cosmosdb_account azurerm_iothub_endpoint_cosmosdb_account} Resource.
 func NewIothubEndpointCosmosdbAccount_Override(i IothubEndpointCosmosdbAccount, scope constructs.Construct, id *string, config *IothubEndpointCosmosdbAccountConfig) {
 	_init_.Initialize()
 

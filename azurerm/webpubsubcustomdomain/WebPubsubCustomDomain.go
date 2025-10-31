@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/web_pubsub_custom_domain azurerm_web_pubsub_custom_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/web_pubsub_custom_domain azurerm_web_pubsub_custom_domain}.
 type WebPubsubCustomDomain interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_WebPubsubCustomDomain) WebPubsubIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/web_pubsub_custom_domain azurerm_web_pubsub_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/web_pubsub_custom_domain azurerm_web_pubsub_custom_domain} Resource.
 func NewWebPubsubCustomDomain(scope constructs.Construct, id *string, config *WebPubsubCustomDomainConfig) WebPubsubCustomDomain {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewWebPubsubCustomDomain(scope constructs.Construct, id *string, config *We
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/web_pubsub_custom_domain azurerm_web_pubsub_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/web_pubsub_custom_domain azurerm_web_pubsub_custom_domain} Resource.
 func NewWebPubsubCustomDomain_Override(w WebPubsubCustomDomain, scope constructs.Construct, id *string, config *WebPubsubCustomDomainConfig) {
 	_init_.Initialize()
 

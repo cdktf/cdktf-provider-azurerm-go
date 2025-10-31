@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/bot_channel_ms_teams azurerm_bot_channel_ms_teams}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/bot_channel_ms_teams azurerm_bot_channel_ms_teams}.
 type BotChannelMsTeams interface {
 	cdktf.TerraformResource
 	BotName() *string
 	SetBotName(val *string)
 	BotNameInput() *string
+	CallingEnabled() interface{}
+	SetCallingEnabled(val interface{})
+	CallingEnabledInput() interface{}
 	CallingWebHook() *string
 	SetCallingWebHook(val *string)
 	CallingWebHookInput() *string
@@ -128,6 +131,7 @@ type BotChannelMsTeams interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *BotChannelMsTeamsTimeouts)
+	ResetCallingEnabled()
 	ResetCallingWebHook()
 	ResetDeploymentEnvironment()
 	ResetEnableCalling()
@@ -169,6 +173,26 @@ func (j *jsiiProxy_BotChannelMsTeams) BotNameInput() *string {
 	_jsii_.Get(
 		j,
 		"botNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotChannelMsTeams) CallingEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"callingEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotChannelMsTeams) CallingEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"callingEnabledInput",
 		&returns,
 	)
 	return returns
@@ -475,7 +499,7 @@ func (j *jsiiProxy_BotChannelMsTeams) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/bot_channel_ms_teams azurerm_bot_channel_ms_teams} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/bot_channel_ms_teams azurerm_bot_channel_ms_teams} Resource.
 func NewBotChannelMsTeams(scope constructs.Construct, id *string, config *BotChannelMsTeamsConfig) BotChannelMsTeams {
 	_init_.Initialize()
 
@@ -493,7 +517,7 @@ func NewBotChannelMsTeams(scope constructs.Construct, id *string, config *BotCha
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/bot_channel_ms_teams azurerm_bot_channel_ms_teams} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/bot_channel_ms_teams azurerm_bot_channel_ms_teams} Resource.
 func NewBotChannelMsTeams_Override(b BotChannelMsTeams, scope constructs.Construct, id *string, config *BotChannelMsTeamsConfig) {
 	_init_.Initialize()
 
@@ -511,6 +535,17 @@ func (j *jsiiProxy_BotChannelMsTeams)SetBotName(val *string) {
 	_jsii_.Set(
 		j,
 		"botName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BotChannelMsTeams)SetCallingEnabled(val interface{}) {
+	if err := j.validateSetCallingEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"callingEnabled",
 		val,
 	)
 }
@@ -1010,6 +1045,14 @@ func (b *jsiiProxy_BotChannelMsTeams) PutTimeouts(value *BotChannelMsTeamsTimeou
 		b,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BotChannelMsTeams) ResetCallingEnabled() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetCallingEnabled",
+		nil, // no parameters
 	)
 }
 

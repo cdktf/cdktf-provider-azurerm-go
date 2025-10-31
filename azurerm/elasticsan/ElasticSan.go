@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/elastic_san azurerm_elastic_san}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/elastic_san azurerm_elastic_san}.
 type ElasticSan interface {
 	cdktf.TerraformResource
 	BaseSizeInTib() *float64
@@ -576,7 +576,7 @@ func (j *jsiiProxy_ElasticSan) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/elastic_san azurerm_elastic_san} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/elastic_san azurerm_elastic_san} Resource.
 func NewElasticSan(scope constructs.Construct, id *string, config *ElasticSanConfig) ElasticSan {
 	_init_.Initialize()
 
@@ -594,7 +594,7 @@ func NewElasticSan(scope constructs.Construct, id *string, config *ElasticSanCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.50.0/docs/resources/elastic_san azurerm_elastic_san} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/elastic_san azurerm_elastic_san} Resource.
 func NewElasticSan_Override(e ElasticSan, scope constructs.Construct, id *string, config *ElasticSanConfig) {
 	_init_.Initialize()
 

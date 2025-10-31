@@ -1,0 +1,17 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
+package oracleresourceanchor
+
+
+type OracleResourceAnchorTimeouts struct {
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/oracle_resource_anchor#create OracleResourceAnchor#create}.
+	Create *string `field:"optional" json:"create" yaml:"create"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/oracle_resource_anchor#delete OracleResourceAnchor#delete}.
+	Delete *string `field:"optional" json:"delete" yaml:"delete"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/oracle_resource_anchor#read OracleResourceAnchor#read}.
+	Read *string `field:"optional" json:"read" yaml:"read"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/oracle_resource_anchor#update OracleResourceAnchor#update}.
+	Update *string `field:"optional" json:"update" yaml:"update"`
+}
+
