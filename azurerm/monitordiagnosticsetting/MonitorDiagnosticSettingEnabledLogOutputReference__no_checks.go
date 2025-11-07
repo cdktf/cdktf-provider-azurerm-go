@@ -43,7 +43,7 @@ func (m *jsiiProxy_MonitorDiagnosticSettingEnabledLogOutputReference) validateGe
 	return nil
 }
 
-func (m *jsiiProxy_MonitorDiagnosticSettingEnabledLogOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorDiagnosticSettingEnabledLogOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MonitorDiagnosticSettingEnabledLogOutputReference) validatePu
 	return nil
 }
 
-func (m *jsiiProxy_MonitorDiagnosticSettingEnabledLogOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorDiagnosticSettingEnabledLogOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DynatraceMonitorUserOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (d *jsiiProxy_DynatraceMonitorUserOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DynatraceMonitorUserOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DynatraceMonitorUserOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DynatraceMonitorUserOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_SubnetDelegationList) validateGetParameters(index *float64) e
 	return nil
 }
 
-func (s *jsiiProxy_SubnetDelegationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SubnetDelegationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

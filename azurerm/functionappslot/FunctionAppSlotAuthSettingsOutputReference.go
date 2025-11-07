@@ -100,7 +100,7 @@ type FunctionAppSlotAuthSettingsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutActiveDirectory(value *FunctionAppSlotAuthSettingsActiveDirectory)
 	PutFacebook(value *FunctionAppSlotAuthSettingsFacebook)
 	PutGoogle(value *FunctionAppSlotAuthSettingsGoogle)
@@ -121,7 +121,7 @@ type FunctionAppSlotAuthSettingsOutputReference interface {
 	ResetUnauthenticatedClientAction()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -836,8 +836,8 @@ func (f *jsiiProxy_FunctionAppSlotAuthSettingsOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (f *jsiiProxy_FunctionAppSlotAuthSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := f.validateInterpolationForAttributeParameters(property); err != nil {
+func (f *jsiiProxy_FunctionAppSlotAuthSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -845,7 +845,7 @@ func (f *jsiiProxy_FunctionAppSlotAuthSettingsOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1011,8 +1011,8 @@ func (f *jsiiProxy_FunctionAppSlotAuthSettingsOutputReference) ResetUnauthentica
 	)
 }
 
-func (f *jsiiProxy_FunctionAppSlotAuthSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FunctionAppSlotAuthSettingsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1020,7 +1020,7 @@ func (f *jsiiProxy_FunctionAppSlotAuthSettingsOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

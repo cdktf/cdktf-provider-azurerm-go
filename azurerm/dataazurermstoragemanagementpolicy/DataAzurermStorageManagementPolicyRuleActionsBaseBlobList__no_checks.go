@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermStorageManagementPolicyRuleActionsBaseBlobList) va
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermStorageManagementPolicyRuleActionsBaseBlobList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermStorageManagementPolicyRuleActionsBaseBlobList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

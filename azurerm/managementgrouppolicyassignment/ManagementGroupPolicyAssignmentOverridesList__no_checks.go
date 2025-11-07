@@ -15,7 +15,7 @@ func (m *jsiiProxy_ManagementGroupPolicyAssignmentOverridesList) validateGetPara
 	return nil
 }
 
-func (m *jsiiProxy_ManagementGroupPolicyAssignmentOverridesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagementGroupPolicyAssignmentOverridesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

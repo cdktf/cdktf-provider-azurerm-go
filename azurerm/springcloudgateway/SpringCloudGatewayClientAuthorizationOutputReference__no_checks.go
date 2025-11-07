@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpringCloudGatewayClientAuthorizationOutputReference) validat
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudGatewayClientAuthorizationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpringCloudGatewayClientAuthorizationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudGatewayClientAuthorizationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpringCloudGatewayClientAuthorizationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

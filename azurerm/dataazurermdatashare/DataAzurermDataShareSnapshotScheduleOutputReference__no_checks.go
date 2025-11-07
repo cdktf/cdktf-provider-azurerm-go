@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermDataShareSnapshotScheduleOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDataShareSnapshotScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermDataShareSnapshotScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDataShareSnapshotScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermDataShareSnapshotScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermApiManagementGatewayTimeoutsOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApiManagementGatewayTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermApiManagementGatewayTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApiManagementGatewayTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermApiManagementGatewayTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

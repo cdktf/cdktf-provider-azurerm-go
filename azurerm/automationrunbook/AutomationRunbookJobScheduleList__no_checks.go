@@ -15,7 +15,7 @@ func (a *jsiiProxy_AutomationRunbookJobScheduleList) validateGetParameters(index
 	return nil
 }
 
-func (a *jsiiProxy_AutomationRunbookJobScheduleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutomationRunbookJobScheduleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

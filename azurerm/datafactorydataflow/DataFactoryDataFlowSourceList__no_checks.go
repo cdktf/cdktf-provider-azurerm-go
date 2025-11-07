@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataFactoryDataFlowSourceList) validateGetParameters(index *f
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryDataFlowSourceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryDataFlowSourceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

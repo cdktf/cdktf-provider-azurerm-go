@@ -43,11 +43,11 @@ func (a *jsiiProxy_ArcResourceBridgeApplianceIdentityOutputReference) validateGe
 	return nil
 }
 
-func (a *jsiiProxy_ArcResourceBridgeApplianceIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ArcResourceBridgeApplianceIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ArcResourceBridgeApplianceIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ArcResourceBridgeApplianceIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

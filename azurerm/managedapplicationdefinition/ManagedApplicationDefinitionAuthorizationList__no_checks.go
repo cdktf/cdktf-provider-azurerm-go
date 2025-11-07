@@ -15,7 +15,7 @@ func (m *jsiiProxy_ManagedApplicationDefinitionAuthorizationList) validateGetPar
 	return nil
 }
 
-func (m *jsiiProxy_ManagedApplicationDefinitionAuthorizationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedApplicationDefinitionAuthorizationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

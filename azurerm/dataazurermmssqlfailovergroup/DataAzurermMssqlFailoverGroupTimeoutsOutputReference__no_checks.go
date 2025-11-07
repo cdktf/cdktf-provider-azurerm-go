@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermMssqlFailoverGroupTimeoutsOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMssqlFailoverGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermMssqlFailoverGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMssqlFailoverGroupTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermMssqlFailoverGroupTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

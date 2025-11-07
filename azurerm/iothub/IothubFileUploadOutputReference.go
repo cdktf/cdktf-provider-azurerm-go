@@ -90,7 +90,7 @@ type IothubFileUploadOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetAuthenticationType()
 	ResetDefaultTtl()
 	ResetIdentityId()
@@ -100,7 +100,7 @@ type IothubFileUploadOutputReference interface {
 	ResetSasTtl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -715,8 +715,8 @@ func (i *jsiiProxy_IothubFileUploadOutputReference) InterpolationAsList() cdktf.
 	return returns
 }
 
-func (i *jsiiProxy_IothubFileUploadOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IothubFileUploadOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -724,7 +724,7 @@ func (i *jsiiProxy_IothubFileUploadOutputReference) InterpolationForAttribute(pr
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -787,8 +787,8 @@ func (i *jsiiProxy_IothubFileUploadOutputReference) ResetSasTtl() {
 	)
 }
 
-func (i *jsiiProxy_IothubFileUploadOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IothubFileUploadOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -796,7 +796,7 @@ func (i *jsiiProxy_IothubFileUploadOutputReference) Resolve(_context cdktf.IReso
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -43,11 +43,11 @@ func (p *jsiiProxy_PimEligibleRoleAssignmentTimeoutsOutputReference) validateGet
 	return nil
 }
 
-func (p *jsiiProxy_PimEligibleRoleAssignmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PimEligibleRoleAssignmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PimEligibleRoleAssignmentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PimEligibleRoleAssignmentTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

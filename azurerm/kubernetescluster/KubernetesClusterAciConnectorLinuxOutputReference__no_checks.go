@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesClusterAciConnectorLinuxOutputReference) validateGe
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterAciConnectorLinuxOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterAciConnectorLinuxOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterAciConnectorLinuxOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterAciConnectorLinuxOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

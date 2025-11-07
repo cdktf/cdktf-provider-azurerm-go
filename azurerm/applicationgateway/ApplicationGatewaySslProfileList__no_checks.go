@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApplicationGatewaySslProfileList) validateGetParameters(index
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewaySslProfileList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationGatewaySslProfileList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

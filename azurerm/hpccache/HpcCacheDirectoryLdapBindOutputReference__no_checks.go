@@ -43,11 +43,11 @@ func (h *jsiiProxy_HpcCacheDirectoryLdapBindOutputReference) validateGetStringMa
 	return nil
 }
 
-func (h *jsiiProxy_HpcCacheDirectoryLdapBindOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HpcCacheDirectoryLdapBindOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HpcCacheDirectoryLdapBindOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HpcCacheDirectoryLdapBindOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

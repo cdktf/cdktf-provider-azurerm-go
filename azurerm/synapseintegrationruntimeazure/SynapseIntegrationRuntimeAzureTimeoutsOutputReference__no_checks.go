@@ -43,11 +43,11 @@ func (s *jsiiProxy_SynapseIntegrationRuntimeAzureTimeoutsOutputReference) valida
 	return nil
 }
 
-func (s *jsiiProxy_SynapseIntegrationRuntimeAzureTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SynapseIntegrationRuntimeAzureTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SynapseIntegrationRuntimeAzureTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SynapseIntegrationRuntimeAzureTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

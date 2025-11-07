@@ -43,11 +43,11 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigura
 	return nil
 }
 
-func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTagOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTagOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTagOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTagOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

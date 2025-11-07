@@ -15,7 +15,7 @@ func (f *jsiiProxy_FunctionAppFlexConsumptionSiteConfigIpRestrictionHeadersList)
 	return nil
 }
 
-func (f *jsiiProxy_FunctionAppFlexConsumptionSiteConfigIpRestrictionHeadersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FunctionAppFlexConsumptionSiteConfigIpRestrictionHeadersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

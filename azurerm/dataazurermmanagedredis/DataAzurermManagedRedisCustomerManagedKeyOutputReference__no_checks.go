@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermManagedRedisCustomerManagedKeyOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermManagedRedisCustomerManagedKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermManagedRedisCustomerManagedKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermManagedRedisCustomerManagedKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermManagedRedisCustomerManagedKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

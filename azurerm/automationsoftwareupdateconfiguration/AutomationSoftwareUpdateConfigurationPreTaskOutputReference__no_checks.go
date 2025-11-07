@@ -43,11 +43,11 @@ func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationPreTaskOutputReference) 
 	return nil
 }
 
-func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationPreTaskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationPreTaskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationPreTaskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationPreTaskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

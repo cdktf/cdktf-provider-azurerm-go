@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataProtectionBackupPolicyDiskRetentionRuleList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupPolicyDiskRetentionRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataProtectionBackupPolicyDiskRetentionRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

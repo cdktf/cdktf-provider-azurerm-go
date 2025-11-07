@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPo
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostActionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

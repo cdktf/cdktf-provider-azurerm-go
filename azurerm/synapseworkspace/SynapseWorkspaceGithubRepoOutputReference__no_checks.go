@@ -43,11 +43,11 @@ func (s *jsiiProxy_SynapseWorkspaceGithubRepoOutputReference) validateGetStringM
 	return nil
 }
 
-func (s *jsiiProxy_SynapseWorkspaceGithubRepoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SynapseWorkspaceGithubRepoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SynapseWorkspaceGithubRepoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SynapseWorkspaceGithubRepoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

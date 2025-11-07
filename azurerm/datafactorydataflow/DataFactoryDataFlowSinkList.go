@@ -41,7 +41,7 @@ type DataFactoryDataFlowSinkList interface {
 	Get(index *float64) DataFactoryDataFlowSinkOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (d *jsiiProxy_DataFactoryDataFlowSinkList) Get(index *float64) DataFactoryD
 	return returns
 }
 
-func (d *jsiiProxy_DataFactoryDataFlowSinkList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataFactoryDataFlowSinkList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (d *jsiiProxy_DataFactoryDataFlowSinkList) Resolve(_context cdktf.IResolveC
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

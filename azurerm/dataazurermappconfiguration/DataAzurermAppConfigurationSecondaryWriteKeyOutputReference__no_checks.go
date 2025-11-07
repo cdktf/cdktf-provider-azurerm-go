@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermAppConfigurationSecondaryWriteKeyOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermAppConfigurationSecondaryWriteKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermAppConfigurationSecondaryWriteKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermAppConfigurationSecondaryWriteKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermAppConfigurationSecondaryWriteKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

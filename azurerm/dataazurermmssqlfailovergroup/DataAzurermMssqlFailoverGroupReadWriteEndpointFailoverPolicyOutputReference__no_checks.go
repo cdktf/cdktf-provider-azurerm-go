@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermMssqlFailoverGroupReadWriteEndpointFailoverPolicyO
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMssqlFailoverGroupReadWriteEndpointFailoverPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermMssqlFailoverGroupReadWriteEndpointFailoverPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMssqlFailoverGroupReadWriteEndpointFailoverPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermMssqlFailoverGroupReadWriteEndpointFailoverPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

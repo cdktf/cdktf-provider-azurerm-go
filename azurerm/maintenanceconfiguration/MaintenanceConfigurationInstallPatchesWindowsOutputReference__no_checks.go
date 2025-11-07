@@ -43,11 +43,11 @@ func (m *jsiiProxy_MaintenanceConfigurationInstallPatchesWindowsOutputReference)
 	return nil
 }
 
-func (m *jsiiProxy_MaintenanceConfigurationInstallPatchesWindowsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MaintenanceConfigurationInstallPatchesWindowsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MaintenanceConfigurationInstallPatchesWindowsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MaintenanceConfigurationInstallPatchesWindowsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

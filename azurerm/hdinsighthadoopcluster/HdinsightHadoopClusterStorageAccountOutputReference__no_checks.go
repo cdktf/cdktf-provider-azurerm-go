@@ -43,11 +43,11 @@ func (h *jsiiProxy_HdinsightHadoopClusterStorageAccountOutputReference) validate
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightHadoopClusterStorageAccountOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HdinsightHadoopClusterStorageAccountOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightHadoopClusterStorageAccountOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightHadoopClusterStorageAccountOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppConfigurationEncryptionOutputReference) validateGetStringM
 	return nil
 }
 
-func (a *jsiiProxy_AppConfigurationEncryptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppConfigurationEncryptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppConfigurationEncryptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppConfigurationEncryptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermDevTestVirtualNetworkAllowedSubnetsList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDevTestVirtualNetworkAllowedSubnetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermDevTestVirtualNetworkAllowedSubnetsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

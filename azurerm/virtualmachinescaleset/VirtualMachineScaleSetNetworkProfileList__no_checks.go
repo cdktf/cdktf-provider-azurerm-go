@@ -15,7 +15,7 @@ func (v *jsiiProxy_VirtualMachineScaleSetNetworkProfileList) validateGetParamete
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineScaleSetNetworkProfileList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineScaleSetNetworkProfileList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

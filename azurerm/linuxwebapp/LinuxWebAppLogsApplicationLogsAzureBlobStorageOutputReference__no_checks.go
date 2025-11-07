@@ -43,11 +43,11 @@ func (l *jsiiProxy_LinuxWebAppLogsApplicationLogsAzureBlobStorageOutputReference
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppLogsApplicationLogsAzureBlobStorageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxWebAppLogsApplicationLogsAzureBlobStorageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppLogsApplicationLogsAzureBlobStorageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxWebAppLogsApplicationLogsAzureBlobStorageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

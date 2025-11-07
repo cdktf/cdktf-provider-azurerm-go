@@ -43,7 +43,7 @@ func (l *jsiiProxy_LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPoli
 	return nil
 }
 
-func (l *jsiiProxy_LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPoli
 	return nil
 }
 
-func (l *jsiiProxy_LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

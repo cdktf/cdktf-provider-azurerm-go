@@ -43,7 +43,7 @@ func (a *jsiiProxy_AiServicesNetworkAclsOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (a *jsiiProxy_AiServicesNetworkAclsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AiServicesNetworkAclsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AiServicesNetworkAclsOutputReference) validatePutVirtualNetwo
 	return nil
 }
 
-func (a *jsiiProxy_AiServicesNetworkAclsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AiServicesNetworkAclsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

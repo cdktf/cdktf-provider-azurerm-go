@@ -43,11 +43,11 @@ func (s *jsiiProxy_SynapseRoleAssignmentTimeoutsOutputReference) validateGetStri
 	return nil
 }
 
-func (s *jsiiProxy_SynapseRoleAssignmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SynapseRoleAssignmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SynapseRoleAssignmentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SynapseRoleAssignmentTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

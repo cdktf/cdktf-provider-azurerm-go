@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualDesktopScalingPlanTimeoutsOutputReference) validateGet
 	return nil
 }
 
-func (v *jsiiProxy_VirtualDesktopScalingPlanTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualDesktopScalingPlanTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualDesktopScalingPlanTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualDesktopScalingPlanTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

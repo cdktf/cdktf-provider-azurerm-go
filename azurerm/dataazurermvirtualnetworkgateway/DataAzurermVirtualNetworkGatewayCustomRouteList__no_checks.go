@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermVirtualNetworkGatewayCustomRouteList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermVirtualNetworkGatewayCustomRouteList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermVirtualNetworkGatewayCustomRouteList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

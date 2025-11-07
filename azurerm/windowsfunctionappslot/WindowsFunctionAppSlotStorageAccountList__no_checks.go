@@ -15,7 +15,7 @@ func (w *jsiiProxy_WindowsFunctionAppSlotStorageAccountList) validateGetParamete
 	return nil
 }
 
-func (w *jsiiProxy_WindowsFunctionAppSlotStorageAccountList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsFunctionAppSlotStorageAccountList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

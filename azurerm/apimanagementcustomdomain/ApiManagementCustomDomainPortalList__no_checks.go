@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApiManagementCustomDomainPortalList) validateGetParameters(in
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementCustomDomainPortalList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementCustomDomainPortalList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

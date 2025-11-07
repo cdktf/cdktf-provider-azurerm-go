@@ -43,11 +43,11 @@ func (s *jsiiProxy_SiteRecoveryReplicatedVmUnmanagedDiskOutputReference) validat
 	return nil
 }
 
-func (s *jsiiProxy_SiteRecoveryReplicatedVmUnmanagedDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SiteRecoveryReplicatedVmUnmanagedDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SiteRecoveryReplicatedVmUnmanagedDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SiteRecoveryReplicatedVmUnmanagedDiskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageSyncGroupTimeoutsOutputReference) validateGetStringMap
 	return nil
 }
 
-func (s *jsiiProxy_StorageSyncGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageSyncGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageSyncGroupTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageSyncGroupTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApiManagementCustomDomainDeveloperPortalOutputReference) vali
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementCustomDomainDeveloperPortalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiManagementCustomDomainDeveloperPortalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementCustomDomainDeveloperPortalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementCustomDomainDeveloperPortalOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSetRollingUpgradePolicyOutputRefere
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineScaleSetRollingUpgradePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsVirtualMachineScaleSetRollingUpgradePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineScaleSetRollingUpgradePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsVirtualMachineScaleSetRollingUpgradePolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

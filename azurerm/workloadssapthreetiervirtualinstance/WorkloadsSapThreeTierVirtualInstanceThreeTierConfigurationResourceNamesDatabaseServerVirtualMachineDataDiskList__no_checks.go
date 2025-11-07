@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationRes
 	return nil
 }
 
-func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

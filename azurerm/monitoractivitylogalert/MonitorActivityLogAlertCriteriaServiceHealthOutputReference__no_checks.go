@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitorActivityLogAlertCriteriaServiceHealthOutputReference) 
 	return nil
 }
 
-func (m *jsiiProxy_MonitorActivityLogAlertCriteriaServiceHealthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorActivityLogAlertCriteriaServiceHealthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorActivityLogAlertCriteriaServiceHealthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorActivityLogAlertCriteriaServiceHealthOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (p *jsiiProxy_PaloAltoLocalRulestackPrefixListTimeoutsOutputReference) vali
 	return nil
 }
 
-func (p *jsiiProxy_PaloAltoLocalRulestackPrefixListTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PaloAltoLocalRulestackPrefixListTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PaloAltoLocalRulestackPrefixListTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PaloAltoLocalRulestackPrefixListTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

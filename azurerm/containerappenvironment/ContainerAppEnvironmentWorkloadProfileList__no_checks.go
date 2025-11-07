@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerAppEnvironmentWorkloadProfileList) validateGetParame
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppEnvironmentWorkloadProfileList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppEnvironmentWorkloadProfileList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

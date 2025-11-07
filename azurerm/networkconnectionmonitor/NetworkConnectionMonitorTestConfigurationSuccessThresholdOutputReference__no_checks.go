@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkConnectionMonitorTestConfigurationSuccessThresholdOutp
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectionMonitorTestConfigurationSuccessThresholdOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkConnectionMonitorTestConfigurationSuccessThresholdOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectionMonitorTestConfigurationSuccessThresholdOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkConnectionMonitorTestConfigurationSuccessThresholdOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

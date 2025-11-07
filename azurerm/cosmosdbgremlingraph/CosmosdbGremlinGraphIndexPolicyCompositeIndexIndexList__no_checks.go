@@ -15,7 +15,7 @@ func (c *jsiiProxy_CosmosdbGremlinGraphIndexPolicyCompositeIndexIndexList) valid
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbGremlinGraphIndexPolicyCompositeIndexIndexList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbGremlinGraphIndexPolicyCompositeIndexIndexList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

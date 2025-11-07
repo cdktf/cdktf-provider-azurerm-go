@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesClusterMicrosoftDefenderOutputReference) validateGe
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterMicrosoftDefenderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterMicrosoftDefenderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterMicrosoftDefenderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterMicrosoftDefenderOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

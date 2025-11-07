@@ -15,7 +15,7 @@ func (w *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsLogScrubbingRuleLis
 	return nil
 }
 
-func (w *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsLogScrubbingRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsLogScrubbingRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

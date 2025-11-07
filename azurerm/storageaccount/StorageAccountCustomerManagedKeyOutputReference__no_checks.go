@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageAccountCustomerManagedKeyOutputReference) validateGetS
 	return nil
 }
 
-func (s *jsiiProxy_StorageAccountCustomerManagedKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageAccountCustomerManagedKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageAccountCustomerManagedKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageAccountCustomerManagedKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

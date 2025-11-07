@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermImageDataDiskOutputReference) validateGetStringMap
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermImageDataDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermImageDataDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermImageDataDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermImageDataDiskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

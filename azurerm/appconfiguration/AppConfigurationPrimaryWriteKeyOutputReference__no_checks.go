@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppConfigurationPrimaryWriteKeyOutputReference) validateGetSt
 	return nil
 }
 
-func (a *jsiiProxy_AppConfigurationPrimaryWriteKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppConfigurationPrimaryWriteKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppConfigurationPrimaryWriteKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppConfigurationPrimaryWriteKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

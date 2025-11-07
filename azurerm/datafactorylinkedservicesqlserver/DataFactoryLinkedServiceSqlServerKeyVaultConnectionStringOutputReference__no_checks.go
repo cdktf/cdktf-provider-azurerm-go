@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFactoryLinkedServiceSqlServerKeyVaultConnectionStringOutp
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryLinkedServiceSqlServerKeyVaultConnectionStringOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFactoryLinkedServiceSqlServerKeyVaultConnectionStringOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryLinkedServiceSqlServerKeyVaultConnectionStringOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryLinkedServiceSqlServerKeyVaultConnectionStringOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

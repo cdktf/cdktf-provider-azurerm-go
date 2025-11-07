@@ -43,11 +43,11 @@ func (f *jsiiProxy_FunctionAppFlexConsumptionAuthSettingsV2LoginOutputReference)
 	return nil
 }
 
-func (f *jsiiProxy_FunctionAppFlexConsumptionAuthSettingsV2LoginOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FunctionAppFlexConsumptionAuthSettingsV2LoginOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FunctionAppFlexConsumptionAuthSettingsV2LoginOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FunctionAppFlexConsumptionAuthSettingsV2LoginOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

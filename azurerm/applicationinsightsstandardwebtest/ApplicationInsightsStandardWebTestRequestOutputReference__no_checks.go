@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApplicationInsightsStandardWebTestRequestOutputReference) val
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationInsightsStandardWebTestRequestOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApplicationInsightsStandardWebTestRequestOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_ApplicationInsightsStandardWebTestRequestOutputReference) val
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationInsightsStandardWebTestRequestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationInsightsStandardWebTestRequestOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (b *jsiiProxy_BatchAccountNetworkProfileAccountAccessIpRuleList) validateGe
 	return nil
 }
 
-func (b *jsiiProxy_BatchAccountNetworkProfileAccountAccessIpRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchAccountNetworkProfileAccountAccessIpRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

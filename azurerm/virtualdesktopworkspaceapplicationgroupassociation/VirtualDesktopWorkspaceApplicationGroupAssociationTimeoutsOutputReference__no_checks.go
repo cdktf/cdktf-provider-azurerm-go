@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociationTimeoutsOut
 	return nil
 }
 
-func (v *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

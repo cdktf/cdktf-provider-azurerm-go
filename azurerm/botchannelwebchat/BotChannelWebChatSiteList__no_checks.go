@@ -15,7 +15,7 @@ func (b *jsiiProxy_BotChannelWebChatSiteList) validateGetParameters(index *float
 	return nil
 }
 
-func (b *jsiiProxy_BotChannelWebChatSiteList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BotChannelWebChatSiteList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

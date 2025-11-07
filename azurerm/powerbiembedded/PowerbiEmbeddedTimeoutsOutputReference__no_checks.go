@@ -43,11 +43,11 @@ func (p *jsiiProxy_PowerbiEmbeddedTimeoutsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (p *jsiiProxy_PowerbiEmbeddedTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerbiEmbeddedTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PowerbiEmbeddedTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerbiEmbeddedTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

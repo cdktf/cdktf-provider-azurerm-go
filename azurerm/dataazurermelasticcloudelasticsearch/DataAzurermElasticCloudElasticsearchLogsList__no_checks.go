@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermElasticCloudElasticsearchLogsList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermElasticCloudElasticsearchLogsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermElasticCloudElasticsearchLogsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

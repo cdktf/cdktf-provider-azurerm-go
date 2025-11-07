@@ -15,7 +15,7 @@ func (h *jsiiProxy_HdinsightHbaseClusterRolesWorkerNodeAutoscaleRecurrenceSchedu
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightHbaseClusterRolesWorkerNodeAutoscaleRecurrenceScheduleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightHbaseClusterRolesWorkerNodeAutoscaleRecurrenceScheduleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

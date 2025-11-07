@@ -43,11 +43,11 @@ func (w *jsiiProxy_WindowsVirtualMachineTimeoutsOutputReference) validateGetStri
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsVirtualMachineTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsVirtualMachineTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

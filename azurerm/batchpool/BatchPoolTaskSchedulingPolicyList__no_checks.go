@@ -15,7 +15,7 @@ func (b *jsiiProxy_BatchPoolTaskSchedulingPolicyList) validateGetParameters(inde
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolTaskSchedulingPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchPoolTaskSchedulingPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

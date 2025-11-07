@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermWindowsFunctionAppSiteConfigScmIpRestrictionList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermWindowsFunctionAppSiteConfigScmIpRestrictionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermWindowsFunctionAppSiteConfigScmIpRestrictionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

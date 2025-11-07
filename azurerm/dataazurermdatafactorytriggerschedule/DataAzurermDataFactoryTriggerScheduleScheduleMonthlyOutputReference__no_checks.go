@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermDataFactoryTriggerScheduleScheduleMonthlyOutputRef
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDataFactoryTriggerScheduleScheduleMonthlyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermDataFactoryTriggerScheduleScheduleMonthlyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDataFactoryTriggerScheduleScheduleMonthlyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermDataFactoryTriggerScheduleScheduleMonthlyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

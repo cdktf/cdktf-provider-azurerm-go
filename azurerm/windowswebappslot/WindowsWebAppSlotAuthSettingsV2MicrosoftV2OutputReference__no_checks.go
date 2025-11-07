@@ -43,11 +43,11 @@ func (w *jsiiProxy_WindowsWebAppSlotAuthSettingsV2MicrosoftV2OutputReference) va
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppSlotAuthSettingsV2MicrosoftV2OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsWebAppSlotAuthSettingsV2MicrosoftV2OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppSlotAuthSettingsV2MicrosoftV2OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsWebAppSlotAuthSettingsV2MicrosoftV2OutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

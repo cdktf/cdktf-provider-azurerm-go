@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataFactoryDatasetPostgresqlSchemaColumnList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryDatasetPostgresqlSchemaColumnList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryDatasetPostgresqlSchemaColumnList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

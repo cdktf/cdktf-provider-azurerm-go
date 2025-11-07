@@ -15,7 +15,7 @@ func (w *jsiiProxy_WebApplicationFirewallPolicyManagedRulesManagedRuleSetList) v
 	return nil
 }
 
-func (w *jsiiProxy_WebApplicationFirewallPolicyManagedRulesManagedRuleSetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WebApplicationFirewallPolicyManagedRulesManagedRuleSetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

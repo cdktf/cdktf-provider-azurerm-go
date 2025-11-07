@@ -43,11 +43,11 @@ func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenc
 	return nil
 }
 
-func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

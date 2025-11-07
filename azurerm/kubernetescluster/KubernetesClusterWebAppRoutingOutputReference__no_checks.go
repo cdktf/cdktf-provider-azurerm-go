@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) validateGetStr
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

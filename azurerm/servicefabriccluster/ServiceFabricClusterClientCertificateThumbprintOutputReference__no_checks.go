@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServiceFabricClusterClientCertificateThumbprintOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricClusterClientCertificateThumbprintOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceFabricClusterClientCertificateThumbprintOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricClusterClientCertificateThumbprintOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceFabricClusterClientCertificateThumbprintOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

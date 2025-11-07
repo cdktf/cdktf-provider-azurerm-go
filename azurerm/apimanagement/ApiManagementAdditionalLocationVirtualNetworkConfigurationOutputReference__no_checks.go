@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApiManagementAdditionalLocationVirtualNetworkConfigurationOut
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementAdditionalLocationVirtualNetworkConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiManagementAdditionalLocationVirtualNetworkConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementAdditionalLocationVirtualNetworkConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementAdditionalLocationVirtualNetworkConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

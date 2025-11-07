@@ -43,11 +43,11 @@ func (d *jsiiProxy_DigitalTwinsInstanceIdentityOutputReference) validateGetStrin
 	return nil
 }
 
-func (d *jsiiProxy_DigitalTwinsInstanceIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DigitalTwinsInstanceIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DigitalTwinsInstanceIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DigitalTwinsInstanceIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

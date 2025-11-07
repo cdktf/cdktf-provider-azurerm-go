@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermLinuxFunctionAppSiteConfigApplicationStackDockerOu
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLinuxFunctionAppSiteConfigApplicationStackDockerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermLinuxFunctionAppSiteConfigApplicationStackDockerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLinuxFunctionAppSiteConfigApplicationStackDockerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermLinuxFunctionAppSiteConfigApplicationStackDockerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

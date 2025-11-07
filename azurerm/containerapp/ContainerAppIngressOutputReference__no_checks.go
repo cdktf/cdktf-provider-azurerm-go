@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerAppIngressOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppIngressOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAppIngressOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (c *jsiiProxy_ContainerAppIngressOutputReference) validatePutTrafficWeightP
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppIngressOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppIngressOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

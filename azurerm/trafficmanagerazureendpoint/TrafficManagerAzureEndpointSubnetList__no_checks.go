@@ -15,7 +15,7 @@ func (t *jsiiProxy_TrafficManagerAzureEndpointSubnetList) validateGetParameters(
 	return nil
 }
 
-func (t *jsiiProxy_TrafficManagerAzureEndpointSubnetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TrafficManagerAzureEndpointSubnetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (e *jsiiProxy_ExpressRouteConnectionRoutingPropagatedRouteTableOutputRefere
 	return nil
 }
 
-func (e *jsiiProxy_ExpressRouteConnectionRoutingPropagatedRouteTableOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ExpressRouteConnectionRoutingPropagatedRouteTableOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ExpressRouteConnectionRoutingPropagatedRouteTableOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ExpressRouteConnectionRoutingPropagatedRouteTableOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

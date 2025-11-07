@@ -43,11 +43,11 @@ func (s *jsiiProxy_SiteRecoveryFabricTimeoutsOutputReference) validateGetStringM
 	return nil
 }
 
-func (s *jsiiProxy_SiteRecoveryFabricTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SiteRecoveryFabricTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SiteRecoveryFabricTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SiteRecoveryFabricTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

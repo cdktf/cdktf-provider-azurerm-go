@@ -43,11 +43,11 @@ func (r *jsiiProxy_RecoveryServicesVaultResourceGuardAssociationTimeoutsOutputRe
 	return nil
 }
 
-func (r *jsiiProxy_RecoveryServicesVaultResourceGuardAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RecoveryServicesVaultResourceGuardAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RecoveryServicesVaultResourceGuardAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RecoveryServicesVaultResourceGuardAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

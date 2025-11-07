@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitorActivityLogAlertActionOutputReference) validateGetStri
 	return nil
 }
 
-func (m *jsiiProxy_MonitorActivityLogAlertActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorActivityLogAlertActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorActivityLogAlertActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorActivityLogAlertActionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

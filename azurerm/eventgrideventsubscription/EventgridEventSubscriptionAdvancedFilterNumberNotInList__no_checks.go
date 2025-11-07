@@ -15,7 +15,7 @@ func (e *jsiiProxy_EventgridEventSubscriptionAdvancedFilterNumberNotInList) vali
 	return nil
 }
 
-func (e *jsiiProxy_EventgridEventSubscriptionAdvancedFilterNumberNotInList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventgridEventSubscriptionAdvancedFilterNumberNotInList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

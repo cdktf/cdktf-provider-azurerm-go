@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApiManagementSignUpOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementSignUpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiManagementSignUpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_ApiManagementSignUpOutputReference) validatePutTermsOfService
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementSignUpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementSignUpOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

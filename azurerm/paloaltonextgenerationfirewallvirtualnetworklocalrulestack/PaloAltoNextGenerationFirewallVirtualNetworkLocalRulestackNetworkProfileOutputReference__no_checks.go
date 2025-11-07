@@ -43,7 +43,7 @@ func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackNet
 	return nil
 }
 
-func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackNetworkProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackNetworkProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackNet
 	return nil
 }
 
-func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackNetworkProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackNetworkProfileOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

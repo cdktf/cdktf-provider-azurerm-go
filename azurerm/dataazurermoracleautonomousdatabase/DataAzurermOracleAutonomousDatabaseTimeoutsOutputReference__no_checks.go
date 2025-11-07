@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermOracleAutonomousDatabaseTimeoutsOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermOracleAutonomousDatabaseTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermOracleAutonomousDatabaseTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermOracleAutonomousDatabaseTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermOracleAutonomousDatabaseTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

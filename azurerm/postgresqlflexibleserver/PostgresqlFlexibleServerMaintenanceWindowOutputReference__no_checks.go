@@ -43,11 +43,11 @@ func (p *jsiiProxy_PostgresqlFlexibleServerMaintenanceWindowOutputReference) val
 	return nil
 }
 
-func (p *jsiiProxy_PostgresqlFlexibleServerMaintenanceWindowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PostgresqlFlexibleServerMaintenanceWindowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PostgresqlFlexibleServerMaintenanceWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PostgresqlFlexibleServerMaintenanceWindowOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

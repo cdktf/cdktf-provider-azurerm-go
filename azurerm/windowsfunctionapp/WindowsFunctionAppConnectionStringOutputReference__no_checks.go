@@ -43,11 +43,11 @@ func (w *jsiiProxy_WindowsFunctionAppConnectionStringOutputReference) validateGe
 	return nil
 }
 
-func (w *jsiiProxy_WindowsFunctionAppConnectionStringOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsFunctionAppConnectionStringOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WindowsFunctionAppConnectionStringOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsFunctionAppConnectionStringOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

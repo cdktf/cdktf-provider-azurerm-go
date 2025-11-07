@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermBatchPoolTaskSchedulingPolicyOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermBatchPoolTaskSchedulingPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermBatchPoolTaskSchedulingPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermBatchPoolTaskSchedulingPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermBatchPoolTaskSchedulingPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

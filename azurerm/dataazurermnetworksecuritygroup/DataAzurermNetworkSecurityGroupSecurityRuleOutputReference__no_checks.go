@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermNetworkSecurityGroupSecurityRuleOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNetworkSecurityGroupSecurityRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermNetworkSecurityGroupSecurityRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNetworkSecurityGroupSecurityRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermNetworkSecurityGroupSecurityRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

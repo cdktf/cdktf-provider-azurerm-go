@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApplicationGatewayWafConfigurationOutputReference) validateGe
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayWafConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApplicationGatewayWafConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (a *jsiiProxy_ApplicationGatewayWafConfigurationOutputReference) validatePu
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayWafConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationGatewayWafConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

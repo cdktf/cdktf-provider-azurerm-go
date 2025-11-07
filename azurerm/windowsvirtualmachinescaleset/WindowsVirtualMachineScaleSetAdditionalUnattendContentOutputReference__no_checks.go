@@ -43,11 +43,11 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSetAdditionalUnattendContentOutputR
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineScaleSetAdditionalUnattendContentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsVirtualMachineScaleSetAdditionalUnattendContentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineScaleSetAdditionalUnattendContentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsVirtualMachineScaleSetAdditionalUnattendContentOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

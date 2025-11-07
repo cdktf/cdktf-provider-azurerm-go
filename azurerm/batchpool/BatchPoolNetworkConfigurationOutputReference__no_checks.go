@@ -43,7 +43,7 @@ func (b *jsiiProxy_BatchPoolNetworkConfigurationOutputReference) validateGetStri
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolNetworkConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BatchPoolNetworkConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (b *jsiiProxy_BatchPoolNetworkConfigurationOutputReference) validatePutEndp
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolNetworkConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchPoolNetworkConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

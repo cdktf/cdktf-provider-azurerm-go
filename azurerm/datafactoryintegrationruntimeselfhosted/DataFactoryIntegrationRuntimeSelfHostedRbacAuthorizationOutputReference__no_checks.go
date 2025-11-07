@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

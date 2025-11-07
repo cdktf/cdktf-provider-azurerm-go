@@ -43,11 +43,11 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetTerminationNotificationOutp
 	return nil
 }
 
-func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetTerminationNotificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetTerminationNotificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetTerminationNotificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetTerminationNotificationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

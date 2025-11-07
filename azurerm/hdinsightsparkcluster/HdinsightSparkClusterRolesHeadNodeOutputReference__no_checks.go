@@ -43,7 +43,7 @@ func (h *jsiiProxy_HdinsightSparkClusterRolesHeadNodeOutputReference) validateGe
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightSparkClusterRolesHeadNodeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HdinsightSparkClusterRolesHeadNodeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (h *jsiiProxy_HdinsightSparkClusterRolesHeadNodeOutputReference) validatePu
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightSparkClusterRolesHeadNodeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightSparkClusterRolesHeadNodeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

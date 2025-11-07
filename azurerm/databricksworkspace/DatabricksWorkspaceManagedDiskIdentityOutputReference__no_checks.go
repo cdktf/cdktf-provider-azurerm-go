@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatabricksWorkspaceManagedDiskIdentityOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DatabricksWorkspaceManagedDiskIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabricksWorkspaceManagedDiskIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabricksWorkspaceManagedDiskIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabricksWorkspaceManagedDiskIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

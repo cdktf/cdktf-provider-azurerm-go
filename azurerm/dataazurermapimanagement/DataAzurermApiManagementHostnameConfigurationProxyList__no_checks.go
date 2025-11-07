@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermApiManagementHostnameConfigurationProxyList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApiManagementHostnameConfigurationProxyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermApiManagementHostnameConfigurationProxyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

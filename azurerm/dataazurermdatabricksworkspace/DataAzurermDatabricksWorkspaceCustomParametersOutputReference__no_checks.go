@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermDatabricksWorkspaceCustomParametersOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDatabricksWorkspaceCustomParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermDatabricksWorkspaceCustomParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDatabricksWorkspaceCustomParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermDatabricksWorkspaceCustomParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

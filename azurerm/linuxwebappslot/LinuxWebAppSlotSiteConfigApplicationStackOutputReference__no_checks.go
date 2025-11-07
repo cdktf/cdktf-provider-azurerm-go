@@ -43,11 +43,11 @@ func (l *jsiiProxy_LinuxWebAppSlotSiteConfigApplicationStackOutputReference) val
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppSlotSiteConfigApplicationStackOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxWebAppSlotSiteConfigApplicationStackOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppSlotSiteConfigApplicationStackOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxWebAppSlotSiteConfigApplicationStackOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

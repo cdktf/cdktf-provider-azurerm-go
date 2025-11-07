@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermContainerAppTemplateList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermContainerAppTemplateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermContainerAppTemplateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

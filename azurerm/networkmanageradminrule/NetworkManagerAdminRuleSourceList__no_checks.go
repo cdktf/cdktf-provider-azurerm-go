@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkManagerAdminRuleSourceList) validateGetParameters(inde
 	return nil
 }
 
-func (n *jsiiProxy_NetworkManagerAdminRuleSourceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkManagerAdminRuleSourceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

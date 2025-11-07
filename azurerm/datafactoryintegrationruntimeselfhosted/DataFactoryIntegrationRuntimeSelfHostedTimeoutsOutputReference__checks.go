@@ -85,17 +85,17 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHostedTimeoutsOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHostedTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHostedTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHostedTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHostedTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

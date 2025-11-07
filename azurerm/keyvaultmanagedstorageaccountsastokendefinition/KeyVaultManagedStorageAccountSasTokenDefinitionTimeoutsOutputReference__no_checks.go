@@ -43,11 +43,11 @@ func (k *jsiiProxy_KeyVaultManagedStorageAccountSasTokenDefinitionTimeoutsOutput
 	return nil
 }
 
-func (k *jsiiProxy_KeyVaultManagedStorageAccountSasTokenDefinitionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KeyVaultManagedStorageAccountSasTokenDefinitionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KeyVaultManagedStorageAccountSasTokenDefinitionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyVaultManagedStorageAccountSasTokenDefinitionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

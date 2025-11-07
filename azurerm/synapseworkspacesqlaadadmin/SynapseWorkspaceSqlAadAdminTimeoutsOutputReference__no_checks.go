@@ -43,11 +43,11 @@ func (s *jsiiProxy_SynapseWorkspaceSqlAadAdminTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (s *jsiiProxy_SynapseWorkspaceSqlAadAdminTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SynapseWorkspaceSqlAadAdminTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SynapseWorkspaceSqlAadAdminTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SynapseWorkspaceSqlAadAdminTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

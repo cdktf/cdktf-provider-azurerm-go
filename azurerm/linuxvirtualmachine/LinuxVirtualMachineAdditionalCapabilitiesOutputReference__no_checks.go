@@ -43,11 +43,11 @@ func (l *jsiiProxy_LinuxVirtualMachineAdditionalCapabilitiesOutputReference) val
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineAdditionalCapabilitiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxVirtualMachineAdditionalCapabilitiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineAdditionalCapabilitiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxVirtualMachineAdditionalCapabilitiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

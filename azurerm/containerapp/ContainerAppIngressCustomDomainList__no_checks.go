@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerAppIngressCustomDomainList) validateGetParameters(in
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppIngressCustomDomainList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppIngressCustomDomainList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

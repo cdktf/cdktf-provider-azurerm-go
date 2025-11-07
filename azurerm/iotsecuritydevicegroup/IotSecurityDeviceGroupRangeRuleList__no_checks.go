@@ -15,7 +15,7 @@ func (i *jsiiProxy_IotSecurityDeviceGroupRangeRuleList) validateGetParameters(in
 	return nil
 }
 
-func (i *jsiiProxy_IotSecurityDeviceGroupRangeRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotSecurityDeviceGroupRangeRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (k *jsiiProxy_KeyVaultCertificateCertificatePolicySecretPropertiesOutputRef
 	return nil
 }
 
-func (k *jsiiProxy_KeyVaultCertificateCertificatePolicySecretPropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KeyVaultCertificateCertificatePolicySecretPropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KeyVaultCertificateCertificatePolicySecretPropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyVaultCertificateCertificatePolicySecretPropertiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

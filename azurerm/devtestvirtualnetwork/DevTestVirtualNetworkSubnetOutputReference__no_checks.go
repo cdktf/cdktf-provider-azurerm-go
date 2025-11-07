@@ -43,7 +43,7 @@ func (d *jsiiProxy_DevTestVirtualNetworkSubnetOutputReference) validateGetString
 	return nil
 }
 
-func (d *jsiiProxy_DevTestVirtualNetworkSubnetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DevTestVirtualNetworkSubnetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DevTestVirtualNetworkSubnetOutputReference) validatePutShared
 	return nil
 }
 
-func (d *jsiiProxy_DevTestVirtualNetworkSubnetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DevTestVirtualNetworkSubnetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

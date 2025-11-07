@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitorActionGroupAutomationRunbookReceiverOutputReference) v
 	return nil
 }
 
-func (m *jsiiProxy_MonitorActionGroupAutomationRunbookReceiverOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorActionGroupAutomationRunbookReceiverOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorActionGroupAutomationRunbookReceiverOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorActionGroupAutomationRunbookReceiverOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

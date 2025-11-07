@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermSentinelAlertRuleAnomalyThresholdObservationList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSentinelAlertRuleAnomalyThresholdObservationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermSentinelAlertRuleAnomalyThresholdObservationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

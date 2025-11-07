@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServiceFabricManagedClusterNodeTypeList) validateGetParameter
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricManagedClusterNodeTypeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceFabricManagedClusterNodeTypeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

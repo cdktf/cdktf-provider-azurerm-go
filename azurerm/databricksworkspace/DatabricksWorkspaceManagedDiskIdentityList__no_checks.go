@@ -15,7 +15,7 @@ func (d *jsiiProxy_DatabricksWorkspaceManagedDiskIdentityList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DatabricksWorkspaceManagedDiskIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabricksWorkspaceManagedDiskIdentityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

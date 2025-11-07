@@ -43,11 +43,11 @@ func (l *jsiiProxy_LinuxFunctionAppSlotIdentityOutputReference) validateGetStrin
 	return nil
 }
 
-func (l *jsiiProxy_LinuxFunctionAppSlotIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxFunctionAppSlotIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LinuxFunctionAppSlotIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxFunctionAppSlotIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

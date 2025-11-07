@@ -43,7 +43,7 @@ func (l *jsiiProxy_LinuxFunctionAppBackupOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (l *jsiiProxy_LinuxFunctionAppBackupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxFunctionAppBackupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LinuxFunctionAppBackupOutputReference) validatePutSchedulePar
 	return nil
 }
 
-func (l *jsiiProxy_LinuxFunctionAppBackupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxFunctionAppBackupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageAccountLocalUserSshAuthorizedKeyOutputReference) valid
 	return nil
 }
 
-func (s *jsiiProxy_StorageAccountLocalUserSshAuthorizedKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageAccountLocalUserSshAuthorizedKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageAccountLocalUserSshAuthorizedKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageAccountLocalUserSshAuthorizedKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

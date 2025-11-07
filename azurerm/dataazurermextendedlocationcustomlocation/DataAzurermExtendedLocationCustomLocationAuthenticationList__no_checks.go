@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermExtendedLocationCustomLocationAuthenticationList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermExtendedLocationCustomLocationAuthenticationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermExtendedLocationCustomLocationAuthenticationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

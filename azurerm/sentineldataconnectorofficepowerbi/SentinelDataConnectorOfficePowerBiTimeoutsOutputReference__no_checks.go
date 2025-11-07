@@ -43,11 +43,11 @@ func (s *jsiiProxy_SentinelDataConnectorOfficePowerBiTimeoutsOutputReference) va
 	return nil
 }
 
-func (s *jsiiProxy_SentinelDataConnectorOfficePowerBiTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SentinelDataConnectorOfficePowerBiTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SentinelDataConnectorOfficePowerBiTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelDataConnectorOfficePowerBiTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

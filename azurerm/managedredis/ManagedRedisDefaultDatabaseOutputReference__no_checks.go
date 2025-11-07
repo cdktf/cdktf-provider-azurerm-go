@@ -43,7 +43,7 @@ func (m *jsiiProxy_ManagedRedisDefaultDatabaseOutputReference) validateGetString
 	return nil
 }
 
-func (m *jsiiProxy_ManagedRedisDefaultDatabaseOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ManagedRedisDefaultDatabaseOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_ManagedRedisDefaultDatabaseOutputReference) validatePutModule
 	return nil
 }
 
-func (m *jsiiProxy_ManagedRedisDefaultDatabaseOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedRedisDefaultDatabaseOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermHdinsightClusterGatewayList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermHdinsightClusterGatewayList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermHdinsightClusterGatewayList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

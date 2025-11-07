@@ -85,9 +85,9 @@ func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupOutputRef
 	return nil
 }
 
-func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -155,9 +155,9 @@ func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupOutputRef
 	return nil
 }
 
-func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

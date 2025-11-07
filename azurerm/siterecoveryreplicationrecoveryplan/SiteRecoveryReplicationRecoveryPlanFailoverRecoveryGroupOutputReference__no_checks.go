@@ -43,7 +43,7 @@ func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupOutpu
 	return nil
 }
 
-func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupOutpu
 	return nil
 }
 
-func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFactoryLinkedServiceCosmosdbMongoapiTimeoutsOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryLinkedServiceCosmosdbMongoapiTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFactoryLinkedServiceCosmosdbMongoapiTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryLinkedServiceCosmosdbMongoapiTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryLinkedServiceCosmosdbMongoapiTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

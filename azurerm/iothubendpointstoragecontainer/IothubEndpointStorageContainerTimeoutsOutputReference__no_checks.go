@@ -43,11 +43,11 @@ func (i *jsiiProxy_IothubEndpointStorageContainerTimeoutsOutputReference) valida
 	return nil
 }
 
-func (i *jsiiProxy_IothubEndpointStorageContainerTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IothubEndpointStorageContainerTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IothubEndpointStorageContainerTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IothubEndpointStorageContainerTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

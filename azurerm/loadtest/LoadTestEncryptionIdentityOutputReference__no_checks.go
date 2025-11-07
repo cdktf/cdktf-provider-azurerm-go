@@ -43,11 +43,11 @@ func (l *jsiiProxy_LoadTestEncryptionIdentityOutputReference) validateGetStringM
 	return nil
 }
 
-func (l *jsiiProxy_LoadTestEncryptionIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoadTestEncryptionIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoadTestEncryptionIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoadTestEncryptionIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

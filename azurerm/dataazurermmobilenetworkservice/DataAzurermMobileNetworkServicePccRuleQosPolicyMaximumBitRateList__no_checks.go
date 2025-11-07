@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermMobileNetworkServicePccRuleQosPolicyMaximumBitRate
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMobileNetworkServicePccRuleQosPolicyMaximumBitRateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermMobileNetworkServicePccRuleQosPolicyMaximumBitRateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApiManagementIdentityProviderGoogleTimeoutsOutputReference) v
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementIdentityProviderGoogleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiManagementIdentityProviderGoogleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementIdentityProviderGoogleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementIdentityProviderGoogleTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (i *jsiiProxy_IotSecuritySolutionAdditionalWorkspaceList) validateGetParame
 	return nil
 }
 
-func (i *jsiiProxy_IotSecuritySolutionAdditionalWorkspaceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotSecuritySolutionAdditionalWorkspaceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

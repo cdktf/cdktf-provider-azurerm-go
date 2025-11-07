@@ -15,7 +15,7 @@ func (h *jsiiProxy_HealthcareFhirServiceOciArtifactList) validateGetParameters(i
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareFhirServiceOciArtifactList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HealthcareFhirServiceOciArtifactList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

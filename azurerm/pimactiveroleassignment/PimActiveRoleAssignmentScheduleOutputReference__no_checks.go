@@ -43,7 +43,7 @@ func (p *jsiiProxy_PimActiveRoleAssignmentScheduleOutputReference) validateGetSt
 	return nil
 }
 
-func (p *jsiiProxy_PimActiveRoleAssignmentScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PimActiveRoleAssignmentScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PimActiveRoleAssignmentScheduleOutputReference) validatePutEx
 	return nil
 }
 
-func (p *jsiiProxy_PimActiveRoleAssignmentScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PimActiveRoleAssignmentScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

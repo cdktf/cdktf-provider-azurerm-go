@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermArcMachineOsProfileWindowsPatchList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermArcMachineOsProfileWindowsPatchList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermArcMachineOsProfileWindowsPatchList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

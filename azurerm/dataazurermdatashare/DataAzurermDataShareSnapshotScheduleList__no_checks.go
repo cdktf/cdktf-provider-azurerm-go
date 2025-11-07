@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermDataShareSnapshotScheduleList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDataShareSnapshotScheduleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermDataShareSnapshotScheduleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (b *jsiiProxy_BotChannelDirectlineSiteList) validateGetParameters(index *fl
 	return nil
 }
 
-func (b *jsiiProxy_BotChannelDirectlineSiteList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BotChannelDirectlineSiteList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

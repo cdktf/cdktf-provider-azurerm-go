@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermDynatraceMonitorIdentityList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDynatraceMonitorIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermDynatraceMonitorIdentityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

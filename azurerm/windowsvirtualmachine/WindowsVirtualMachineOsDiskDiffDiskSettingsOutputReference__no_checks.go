@@ -43,11 +43,11 @@ func (w *jsiiProxy_WindowsVirtualMachineOsDiskDiffDiskSettingsOutputReference) v
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineOsDiskDiffDiskSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsVirtualMachineOsDiskDiffDiskSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineOsDiskDiffDiskSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsVirtualMachineOsDiskDiffDiskSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

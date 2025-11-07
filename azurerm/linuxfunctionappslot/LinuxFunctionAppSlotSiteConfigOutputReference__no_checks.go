@@ -43,7 +43,7 @@ func (l *jsiiProxy_LinuxFunctionAppSlotSiteConfigOutputReference) validateGetStr
 	return nil
 }
 
-func (l *jsiiProxy_LinuxFunctionAppSlotSiteConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxFunctionAppSlotSiteConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (l *jsiiProxy_LinuxFunctionAppSlotSiteConfigOutputReference) validatePutScm
 	return nil
 }
 
-func (l *jsiiProxy_LinuxFunctionAppSlotSiteConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxFunctionAppSlotSiteConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

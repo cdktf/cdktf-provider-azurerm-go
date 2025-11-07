@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermKeyVaultCertificateCertificatePolicyLifetimeAction
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKeyVaultCertificateCertificatePolicyLifetimeActionActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermKeyVaultCertificateCertificatePolicyLifetimeActionActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKeyVaultCertificateCertificatePolicyLifetimeActionActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermKeyVaultCertificateCertificatePolicyLifetimeActionActionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

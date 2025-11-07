@@ -43,11 +43,11 @@ func (m *jsiiProxy_MssqlServerDnsAliasTimeoutsOutputReference) validateGetString
 	return nil
 }
 
-func (m *jsiiProxy_MssqlServerDnsAliasTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlServerDnsAliasTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MssqlServerDnsAliasTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlServerDnsAliasTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

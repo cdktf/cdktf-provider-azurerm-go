@@ -15,7 +15,7 @@ func (v *jsiiProxy_VirtualDesktopScalingPlanScheduleList) validateGetParameters(
 	return nil
 }
 
-func (v *jsiiProxy_VirtualDesktopScalingPlanScheduleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualDesktopScalingPlanScheduleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

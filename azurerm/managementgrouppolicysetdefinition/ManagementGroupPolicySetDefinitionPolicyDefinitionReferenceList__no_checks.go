@@ -15,7 +15,7 @@ func (m *jsiiProxy_ManagementGroupPolicySetDefinitionPolicyDefinitionReferenceLi
 	return nil
 }
 
-func (m *jsiiProxy_ManagementGroupPolicySetDefinitionPolicyDefinitionReferenceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagementGroupPolicySetDefinitionPolicyDefinitionReferenceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermCosmosdbRestorableDatabaseAccountsAccountsList) va
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermCosmosdbRestorableDatabaseAccountsAccountsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermCosmosdbRestorableDatabaseAccountsAccountsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

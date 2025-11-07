@@ -43,7 +43,7 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSetSecretOutputReference) validateG
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineScaleSetSecretOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsVirtualMachineScaleSetSecretOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSetSecretOutputReference) validateP
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineScaleSetSecretOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsVirtualMachineScaleSetSecretOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

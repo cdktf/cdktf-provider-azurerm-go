@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpringCloudAppMysqlAssociationTimeoutsOutputReference) valida
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudAppMysqlAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpringCloudAppMysqlAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudAppMysqlAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpringCloudAppMysqlAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

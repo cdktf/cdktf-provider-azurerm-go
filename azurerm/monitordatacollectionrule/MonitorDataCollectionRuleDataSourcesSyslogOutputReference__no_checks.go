@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesSyslogOutputReference) va
 	return nil
 }
 
-func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesSyslogOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesSyslogOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesSyslogOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesSyslogOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

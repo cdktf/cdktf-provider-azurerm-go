@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitorAutoscaleSettingProfileCapacityOutputReference) valida
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAutoscaleSettingProfileCapacityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorAutoscaleSettingProfileCapacityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAutoscaleSettingProfileCapacityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorAutoscaleSettingProfileCapacityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

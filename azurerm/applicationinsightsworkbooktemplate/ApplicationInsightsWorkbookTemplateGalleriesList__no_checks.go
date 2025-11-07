@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApplicationInsightsWorkbookTemplateGalleriesList) validateGet
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationInsightsWorkbookTemplateGalleriesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationInsightsWorkbookTemplateGalleriesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

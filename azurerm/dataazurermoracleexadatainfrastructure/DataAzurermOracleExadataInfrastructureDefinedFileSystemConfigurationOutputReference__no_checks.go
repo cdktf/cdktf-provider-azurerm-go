@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermOracleExadataInfrastructureDefinedFileSystemConfig
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermOracleExadataInfrastructureDefinedFileSystemConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermOracleExadataInfrastructureDefinedFileSystemConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermOracleExadataInfrastructureDefinedFileSystemConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermOracleExadataInfrastructureDefinedFileSystemConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (e *jsiiProxy_EventgridEventSubscriptionAdvancedFilterBoolEqualsList) valid
 	return nil
 }
 
-func (e *jsiiProxy_EventgridEventSubscriptionAdvancedFilterBoolEqualsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventgridEventSubscriptionAdvancedFilterBoolEqualsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitorAlertProcessingRuleSuppressionScheduleRecurrenceWeekly
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAlertProcessingRuleSuppressionScheduleRecurrenceWeeklyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorAlertProcessingRuleSuppressionScheduleRecurrenceWeeklyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAlertProcessingRuleSuppressionScheduleRecurrenceWeeklyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorAlertProcessingRuleSuppressionScheduleRecurrenceWeeklyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

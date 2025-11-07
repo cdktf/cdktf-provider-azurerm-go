@@ -43,11 +43,11 @@ func (i *jsiiProxy_IothubFileUploadOutputReference) validateGetStringMapAttribut
 	return nil
 }
 
-func (i *jsiiProxy_IothubFileUploadOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IothubFileUploadOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IothubFileUploadOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IothubFileUploadOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

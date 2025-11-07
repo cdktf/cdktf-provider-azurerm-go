@@ -43,7 +43,7 @@ func (c *jsiiProxy_CdnEndpointGlobalDeliveryRuleOutputReference) validateGetStri
 	return nil
 }
 
-func (c *jsiiProxy_CdnEndpointGlobalDeliveryRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CdnEndpointGlobalDeliveryRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -71,7 +71,7 @@ func (c *jsiiProxy_CdnEndpointGlobalDeliveryRuleOutputReference) validatePutUrlR
 	return nil
 }
 
-func (c *jsiiProxy_CdnEndpointGlobalDeliveryRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnEndpointGlobalDeliveryRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

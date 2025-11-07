@@ -15,7 +15,7 @@ func (v *jsiiProxy_VirtualMachineScaleSetOsProfileSecretsVaultCertificatesList) 
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineScaleSetOsProfileSecretsVaultCertificatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineScaleSetOsProfileSecretsVaultCertificatesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (w *jsiiProxy_WindowsWebAppAuthSettingsActiveDirectoryOutputReference) vali
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppAuthSettingsActiveDirectoryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsWebAppAuthSettingsActiveDirectoryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppAuthSettingsActiveDirectoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsWebAppAuthSettingsActiveDirectoryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

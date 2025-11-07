@@ -43,11 +43,11 @@ func (g *jsiiProxy_GalleryApplicationTimeoutsOutputReference) validateGetStringM
 	return nil
 }
 
-func (g *jsiiProxy_GalleryApplicationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GalleryApplicationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GalleryApplicationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GalleryApplicationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitHostNetworkIntentList) vali
 	return nil
 }
 
-func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitHostNetworkIntentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitHostNetworkIntentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

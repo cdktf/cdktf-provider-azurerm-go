@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceTimeoutsOutputReference) 
 	return nil
 }
 
-func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

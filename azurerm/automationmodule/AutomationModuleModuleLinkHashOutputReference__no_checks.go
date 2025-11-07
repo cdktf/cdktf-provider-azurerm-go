@@ -43,11 +43,11 @@ func (a *jsiiProxy_AutomationModuleModuleLinkHashOutputReference) validateGetStr
 	return nil
 }
 
-func (a *jsiiProxy_AutomationModuleModuleLinkHashOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutomationModuleModuleLinkHashOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AutomationModuleModuleLinkHashOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutomationModuleModuleLinkHashOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

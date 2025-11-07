@@ -43,11 +43,11 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSetAdditionalCapabilitiesOutputRefe
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineScaleSetAdditionalCapabilitiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsVirtualMachineScaleSetAdditionalCapabilitiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineScaleSetAdditionalCapabilitiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsVirtualMachineScaleSetAdditionalCapabilitiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

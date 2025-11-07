@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetappAccountEncryptionTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (n *jsiiProxy_NetappAccountEncryptionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetappAccountEncryptionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetappAccountEncryptionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetappAccountEncryptionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

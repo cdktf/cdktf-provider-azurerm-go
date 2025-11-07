@@ -43,11 +43,11 @@ func (w *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutpu
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

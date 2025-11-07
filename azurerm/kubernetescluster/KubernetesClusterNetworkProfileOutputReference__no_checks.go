@@ -43,7 +43,7 @@ func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateGetSt
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validatePutNa
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

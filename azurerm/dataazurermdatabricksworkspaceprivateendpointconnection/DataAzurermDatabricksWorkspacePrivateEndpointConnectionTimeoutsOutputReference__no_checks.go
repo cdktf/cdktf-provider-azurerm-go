@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermDatabricksWorkspacePrivateEndpointConnectionTimeou
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDatabricksWorkspacePrivateEndpointConnectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermDatabricksWorkspacePrivateEndpointConnectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDatabricksWorkspacePrivateEndpointConnectionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermDatabricksWorkspacePrivateEndpointConnectionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

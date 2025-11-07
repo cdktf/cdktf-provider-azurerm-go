@@ -43,11 +43,11 @@ func (k *jsiiProxy_KustoClusterVirtualNetworkConfigurationOutputReference) valid
 	return nil
 }
 
-func (k *jsiiProxy_KustoClusterVirtualNetworkConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KustoClusterVirtualNetworkConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KustoClusterVirtualNetworkConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KustoClusterVirtualNetworkConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

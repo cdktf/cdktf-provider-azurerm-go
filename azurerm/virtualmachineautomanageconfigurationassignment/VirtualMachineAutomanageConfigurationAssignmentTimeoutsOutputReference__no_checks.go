@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualMachineAutomanageConfigurationAssignmentTimeoutsOutput
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineAutomanageConfigurationAssignmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualMachineAutomanageConfigurationAssignmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineAutomanageConfigurationAssignmentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineAutomanageConfigurationAssignmentTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

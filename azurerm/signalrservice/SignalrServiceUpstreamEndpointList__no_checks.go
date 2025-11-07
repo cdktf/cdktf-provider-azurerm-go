@@ -15,7 +15,7 @@ func (s *jsiiProxy_SignalrServiceUpstreamEndpointList) validateGetParameters(ind
 	return nil
 }
 
-func (s *jsiiProxy_SignalrServiceUpstreamEndpointList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SignalrServiceUpstreamEndpointList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

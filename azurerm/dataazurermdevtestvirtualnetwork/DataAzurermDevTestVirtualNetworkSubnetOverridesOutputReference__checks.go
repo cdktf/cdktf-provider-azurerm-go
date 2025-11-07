@@ -85,17 +85,17 @@ func (d *jsiiProxy_DataAzurermDevTestVirtualNetworkSubnetOverridesOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDevTestVirtualNetworkSubnetOverridesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DataAzurermDevTestVirtualNetworkSubnetOverridesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDevTestVirtualNetworkSubnetOverridesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataAzurermDevTestVirtualNetworkSubnetOverridesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

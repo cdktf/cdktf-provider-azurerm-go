@@ -43,11 +43,11 @@ func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanoramaPanoramaO
 	return nil
 }
 
-func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanoramaPanoramaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanoramaPanoramaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanoramaPanoramaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanoramaPanoramaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

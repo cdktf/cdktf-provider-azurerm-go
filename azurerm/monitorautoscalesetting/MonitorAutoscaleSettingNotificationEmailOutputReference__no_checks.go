@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitorAutoscaleSettingNotificationEmailOutputReference) vali
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAutoscaleSettingNotificationEmailOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorAutoscaleSettingNotificationEmailOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAutoscaleSettingNotificationEmailOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorAutoscaleSettingNotificationEmailOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (r *jsiiProxy_ResourceGroupCostManagementViewDatasetGroupingOutputReference
 	return nil
 }
 
-func (r *jsiiProxy_ResourceGroupCostManagementViewDatasetGroupingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ResourceGroupCostManagementViewDatasetGroupingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_ResourceGroupCostManagementViewDatasetGroupingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResourceGroupCostManagementViewDatasetGroupingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

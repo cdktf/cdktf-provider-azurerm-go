@@ -43,7 +43,7 @@ func (s *jsiiProxy_SubnetDelegationOutputReference) validateGetStringMapAttribut
 	return nil
 }
 
-func (s *jsiiProxy_SubnetDelegationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SubnetDelegationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SubnetDelegationOutputReference) validatePutServiceDelegation
 	return nil
 }
 
-func (s *jsiiProxy_SubnetDelegationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SubnetDelegationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_StreamAnalyticsStreamInputEventhubV2SerializationOutputRefere
 	return nil
 }
 
-func (s *jsiiProxy_StreamAnalyticsStreamInputEventhubV2SerializationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StreamAnalyticsStreamInputEventhubV2SerializationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StreamAnalyticsStreamInputEventhubV2SerializationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StreamAnalyticsStreamInputEventhubV2SerializationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

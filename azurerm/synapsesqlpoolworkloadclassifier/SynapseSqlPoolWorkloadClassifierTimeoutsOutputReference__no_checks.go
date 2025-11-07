@@ -43,11 +43,11 @@ func (s *jsiiProxy_SynapseSqlPoolWorkloadClassifierTimeoutsOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_SynapseSqlPoolWorkloadClassifierTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SynapseSqlPoolWorkloadClassifierTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SynapseSqlPoolWorkloadClassifierTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SynapseSqlPoolWorkloadClassifierTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

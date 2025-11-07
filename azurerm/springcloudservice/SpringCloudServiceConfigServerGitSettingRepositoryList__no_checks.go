@@ -15,7 +15,7 @@ func (s *jsiiProxy_SpringCloudServiceConfigServerGitSettingRepositoryList) valid
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudServiceConfigServerGitSettingRepositoryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpringCloudServiceConfigServerGitSettingRepositoryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

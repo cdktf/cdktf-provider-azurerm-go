@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermContainerAppTemplateInitContainerVolumeMountsList)
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermContainerAppTemplateInitContainerVolumeMountsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermContainerAppTemplateInitContainerVolumeMountsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermBatchPoolStartTaskContainerList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermBatchPoolStartTaskContainerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermBatchPoolStartTaskContainerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

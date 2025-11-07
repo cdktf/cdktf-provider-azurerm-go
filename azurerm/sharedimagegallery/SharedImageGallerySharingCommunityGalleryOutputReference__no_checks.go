@@ -43,11 +43,11 @@ func (s *jsiiProxy_SharedImageGallerySharingCommunityGalleryOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_SharedImageGallerySharingCommunityGalleryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SharedImageGallerySharingCommunityGalleryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SharedImageGallerySharingCommunityGalleryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SharedImageGallerySharingCommunityGalleryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

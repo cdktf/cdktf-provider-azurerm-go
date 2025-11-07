@@ -15,7 +15,7 @@ func (s *jsiiProxy_StreamAnalyticsFunctionJavascriptUdfInputList) validateGetPar
 	return nil
 }
 
-func (s *jsiiProxy_StreamAnalyticsFunctionJavascriptUdfInputList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StreamAnalyticsFunctionJavascriptUdfInputList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (e *jsiiProxy_EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnric
 	return nil
 }
 
-func (e *jsiiProxy_EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

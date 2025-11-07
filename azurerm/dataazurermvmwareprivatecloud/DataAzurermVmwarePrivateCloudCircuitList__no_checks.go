@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermVmwarePrivateCloudCircuitList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermVmwarePrivateCloudCircuitList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermVmwarePrivateCloudCircuitList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (t *jsiiProxy_TrafficManagerProfileDnsConfigOutputReference) validateGetStr
 	return nil
 }
 
-func (t *jsiiProxy_TrafficManagerProfileDnsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TrafficManagerProfileDnsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TrafficManagerProfileDnsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TrafficManagerProfileDnsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

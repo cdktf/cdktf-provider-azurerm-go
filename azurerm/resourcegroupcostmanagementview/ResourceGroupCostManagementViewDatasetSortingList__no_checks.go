@@ -15,7 +15,7 @@ func (r *jsiiProxy_ResourceGroupCostManagementViewDatasetSortingList) validateGe
 	return nil
 }
 
-func (r *jsiiProxy_ResourceGroupCostManagementViewDatasetSortingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResourceGroupCostManagementViewDatasetSortingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

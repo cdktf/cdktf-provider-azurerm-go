@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermVirtualDesktopHostPoolScheduledAgentUpdatesOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermVirtualDesktopHostPoolScheduledAgentUpdatesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermVirtualDesktopHostPoolScheduledAgentUpdatesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermVirtualDesktopHostPoolScheduledAgentUpdatesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermVirtualDesktopHostPoolScheduledAgentUpdatesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

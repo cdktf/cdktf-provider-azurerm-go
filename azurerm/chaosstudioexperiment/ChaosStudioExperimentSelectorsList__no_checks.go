@@ -15,7 +15,7 @@ func (c *jsiiProxy_ChaosStudioExperimentSelectorsList) validateGetParameters(ind
 	return nil
 }
 
-func (c *jsiiProxy_ChaosStudioExperimentSelectorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChaosStudioExperimentSelectorsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

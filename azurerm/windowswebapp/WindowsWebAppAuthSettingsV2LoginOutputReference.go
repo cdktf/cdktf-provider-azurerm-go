@@ -96,7 +96,7 @@ type WindowsWebAppAuthSettingsV2LoginOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetAllowedExternalRedirectUrls()
 	ResetCookieExpirationConvention()
 	ResetCookieExpirationTime()
@@ -110,7 +110,7 @@ type WindowsWebAppAuthSettingsV2LoginOutputReference interface {
 	ResetValidateNonce()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -787,8 +787,8 @@ func (w *jsiiProxy_WindowsWebAppAuthSettingsV2LoginOutputReference) Interpolatio
 	return returns
 }
 
-func (w *jsiiProxy_WindowsWebAppAuthSettingsV2LoginOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+func (w *jsiiProxy_WindowsWebAppAuthSettingsV2LoginOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -796,7 +796,7 @@ func (w *jsiiProxy_WindowsWebAppAuthSettingsV2LoginOutputReference) Interpolatio
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -891,8 +891,8 @@ func (w *jsiiProxy_WindowsWebAppAuthSettingsV2LoginOutputReference) ResetValidat
 	)
 }
 
-func (w *jsiiProxy_WindowsWebAppAuthSettingsV2LoginOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_WindowsWebAppAuthSettingsV2LoginOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -900,7 +900,7 @@ func (w *jsiiProxy_WindowsWebAppAuthSettingsV2LoginOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -15,7 +15,7 @@ func (k *jsiiProxy_KubernetesClusterWebAppRoutingWebAppRoutingIdentityList) vali
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterWebAppRoutingWebAppRoutingIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterWebAppRoutingWebAppRoutingIdentityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

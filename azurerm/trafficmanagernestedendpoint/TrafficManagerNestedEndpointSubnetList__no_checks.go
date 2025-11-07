@@ -15,7 +15,7 @@ func (t *jsiiProxy_TrafficManagerNestedEndpointSubnetList) validateGetParameters
 	return nil
 }
 
-func (t *jsiiProxy_TrafficManagerNestedEndpointSubnetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TrafficManagerNestedEndpointSubnetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

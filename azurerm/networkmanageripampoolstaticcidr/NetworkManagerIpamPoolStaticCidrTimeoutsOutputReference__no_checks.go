@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkManagerIpamPoolStaticCidrTimeoutsOutputReference) vali
 	return nil
 }
 
-func (n *jsiiProxy_NetworkManagerIpamPoolStaticCidrTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkManagerIpamPoolStaticCidrTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkManagerIpamPoolStaticCidrTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkManagerIpamPoolStaticCidrTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

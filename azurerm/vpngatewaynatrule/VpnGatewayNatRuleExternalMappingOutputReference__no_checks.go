@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpnGatewayNatRuleExternalMappingOutputReference) validateGetS
 	return nil
 }
 
-func (v *jsiiProxy_VpnGatewayNatRuleExternalMappingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpnGatewayNatRuleExternalMappingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpnGatewayNatRuleExternalMappingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpnGatewayNatRuleExternalMappingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitorScheduledQueryRulesAlertV2CriteriaList) validateGetPar
 	return nil
 }
 
-func (m *jsiiProxy_MonitorScheduledQueryRulesAlertV2CriteriaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorScheduledQueryRulesAlertV2CriteriaList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

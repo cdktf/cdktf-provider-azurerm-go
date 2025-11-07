@@ -43,7 +43,7 @@ func (c *jsiiProxy_CosmosdbSqlContainerIndexingPolicyOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbSqlContainerIndexingPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CosmosdbSqlContainerIndexingPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (c *jsiiProxy_CosmosdbSqlContainerIndexingPolicyOutputReference) validatePu
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbSqlContainerIndexingPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbSqlContainerIndexingPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

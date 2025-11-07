@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApiManagementApiDiagnosticBackendRequestDataMaskingHeadersLis
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementApiDiagnosticBackendRequestDataMaskingHeadersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementApiDiagnosticBackendRequestDataMaskingHeadersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

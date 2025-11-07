@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermDevTestVirtualNetworkSubnetOverridesList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDevTestVirtualNetworkSubnetOverridesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermDevTestVirtualNetworkSubnetOverridesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

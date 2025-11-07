@@ -15,7 +15,7 @@ func (b *jsiiProxy_BatchPoolUserAccountsWindowsUserConfigurationList) validateGe
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolUserAccountsWindowsUserConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchPoolUserAccountsWindowsUserConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

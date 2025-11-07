@@ -29,9 +29,9 @@ func (a *jsiiProxy_AnalysisServicesServerIpv4FirewallRuleList) validateGetParame
 	return nil
 }
 
-func (a *jsiiProxy_AnalysisServicesServerIpv4FirewallRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_AnalysisServicesServerIpv4FirewallRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -43,11 +43,11 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetOsProfileLinuxConfiguration
 	return nil
 }
 
-func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

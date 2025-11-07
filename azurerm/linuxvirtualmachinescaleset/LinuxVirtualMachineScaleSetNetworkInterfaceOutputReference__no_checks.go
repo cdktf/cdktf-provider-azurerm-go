@@ -43,7 +43,7 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetNetworkInterfaceOutputReference) v
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineScaleSetNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetNetworkInterfaceOutputReference) v
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineScaleSetNetworkInterfaceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetNetworkInterfaceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

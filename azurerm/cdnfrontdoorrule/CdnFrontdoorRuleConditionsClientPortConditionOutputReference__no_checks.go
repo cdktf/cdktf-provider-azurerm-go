@@ -43,11 +43,11 @@ func (c *jsiiProxy_CdnFrontdoorRuleConditionsClientPortConditionOutputReference)
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorRuleConditionsClientPortConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CdnFrontdoorRuleConditionsClientPortConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorRuleConditionsClientPortConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnFrontdoorRuleConditionsClientPortConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

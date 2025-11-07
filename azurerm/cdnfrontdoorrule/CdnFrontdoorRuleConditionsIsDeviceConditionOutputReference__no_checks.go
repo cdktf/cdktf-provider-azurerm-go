@@ -43,11 +43,11 @@ func (c *jsiiProxy_CdnFrontdoorRuleConditionsIsDeviceConditionOutputReference) v
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorRuleConditionsIsDeviceConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CdnFrontdoorRuleConditionsIsDeviceConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorRuleConditionsIsDeviceConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnFrontdoorRuleConditionsIsDeviceConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

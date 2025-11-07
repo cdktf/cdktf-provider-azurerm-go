@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualNetworkGatewayCustomRouteOutputReference) validateGetS
 	return nil
 }
 
-func (v *jsiiProxy_VirtualNetworkGatewayCustomRouteOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualNetworkGatewayCustomRouteOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualNetworkGatewayCustomRouteOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualNetworkGatewayCustomRouteOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

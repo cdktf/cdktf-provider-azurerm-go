@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFactoryLinkedServiceAzureDatabricksTimeoutsOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryLinkedServiceAzureDatabricksTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureDatabricksTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryLinkedServiceAzureDatabricksTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureDatabricksTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

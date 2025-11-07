@@ -43,11 +43,11 @@ func (b *jsiiProxy_BatchPoolMountAzureBlobFileSystemOutputReference) validateGet
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolMountAzureBlobFileSystemOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BatchPoolMountAzureBlobFileSystemOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolMountAzureBlobFileSystemOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchPoolMountAzureBlobFileSystemOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

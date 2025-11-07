@@ -15,7 +15,7 @@ func (s *jsiiProxy_SystemCenterVirtualMachineManagerVirtualMachineInstanceNetwor
 	return nil
 }
 
-func (s *jsiiProxy_SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterfaceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterfaceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

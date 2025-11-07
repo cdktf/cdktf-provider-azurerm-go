@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualMachineScaleSetRollingUpgradePolicyOutputReference) va
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineScaleSetRollingUpgradePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualMachineScaleSetRollingUpgradePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineScaleSetRollingUpgradePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineScaleSetRollingUpgradePolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

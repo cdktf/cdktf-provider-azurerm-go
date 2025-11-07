@@ -43,11 +43,11 @@ func (h *jsiiProxy_HpcCacheNfsTargetNamespaceJunctionOutputReference) validateGe
 	return nil
 }
 
-func (h *jsiiProxy_HpcCacheNfsTargetNamespaceJunctionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HpcCacheNfsTargetNamespaceJunctionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HpcCacheNfsTargetNamespaceJunctionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HpcCacheNfsTargetNamespaceJunctionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

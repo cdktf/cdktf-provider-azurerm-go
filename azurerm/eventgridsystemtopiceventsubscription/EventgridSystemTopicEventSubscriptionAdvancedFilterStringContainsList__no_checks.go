@@ -15,7 +15,7 @@ func (e *jsiiProxy_EventgridSystemTopicEventSubscriptionAdvancedFilterStringCont
 	return nil
 }
 
-func (e *jsiiProxy_EventgridSystemTopicEventSubscriptionAdvancedFilterStringContainsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventgridSystemTopicEventSubscriptionAdvancedFilterStringContainsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

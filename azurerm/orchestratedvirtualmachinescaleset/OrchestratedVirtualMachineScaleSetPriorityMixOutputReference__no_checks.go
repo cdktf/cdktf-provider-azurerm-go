@@ -43,11 +43,11 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetPriorityMixOutputReference)
 	return nil
 }
 
-func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetPriorityMixOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetPriorityMixOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetPriorityMixOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetPriorityMixOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

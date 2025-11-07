@@ -43,11 +43,11 @@ func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) va
 	return nil
 }
 
-func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

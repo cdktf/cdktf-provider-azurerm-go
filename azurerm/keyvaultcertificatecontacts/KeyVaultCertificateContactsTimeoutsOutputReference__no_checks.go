@@ -43,11 +43,11 @@ func (k *jsiiProxy_KeyVaultCertificateContactsTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (k *jsiiProxy_KeyVaultCertificateContactsTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KeyVaultCertificateContactsTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KeyVaultCertificateContactsTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyVaultCertificateContactsTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

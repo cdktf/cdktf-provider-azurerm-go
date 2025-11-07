@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermRedisCachePatchScheduleList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermRedisCachePatchScheduleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermRedisCachePatchScheduleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

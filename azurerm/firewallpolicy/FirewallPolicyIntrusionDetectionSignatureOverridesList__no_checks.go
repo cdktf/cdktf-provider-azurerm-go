@@ -15,7 +15,7 @@ func (f *jsiiProxy_FirewallPolicyIntrusionDetectionSignatureOverridesList) valid
 	return nil
 }
 
-func (f *jsiiProxy_FirewallPolicyIntrusionDetectionSignatureOverridesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirewallPolicyIntrusionDetectionSignatureOverridesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

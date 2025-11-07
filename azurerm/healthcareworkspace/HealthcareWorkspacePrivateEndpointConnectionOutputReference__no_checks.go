@@ -43,11 +43,11 @@ func (h *jsiiProxy_HealthcareWorkspacePrivateEndpointConnectionOutputReference) 
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareWorkspacePrivateEndpointConnectionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HealthcareWorkspacePrivateEndpointConnectionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareWorkspacePrivateEndpointConnectionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HealthcareWorkspacePrivateEndpointConnectionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

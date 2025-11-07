@@ -15,7 +15,7 @@ func (b *jsiiProxy_BatchPoolStartTaskContainerList) validateGetParameters(index 
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolStartTaskContainerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchPoolStartTaskContainerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

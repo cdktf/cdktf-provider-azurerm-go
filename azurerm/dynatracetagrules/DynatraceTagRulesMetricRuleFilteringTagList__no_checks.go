@@ -15,7 +15,7 @@ func (d *jsiiProxy_DynatraceTagRulesMetricRuleFilteringTagList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DynatraceTagRulesMetricRuleFilteringTagList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DynatraceTagRulesMetricRuleFilteringTagList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

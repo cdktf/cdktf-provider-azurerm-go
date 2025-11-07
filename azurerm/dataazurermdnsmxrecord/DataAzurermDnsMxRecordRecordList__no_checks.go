@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermDnsMxRecordRecordList) validateGetParameters(index
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDnsMxRecordRecordList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermDnsMxRecordRecordList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

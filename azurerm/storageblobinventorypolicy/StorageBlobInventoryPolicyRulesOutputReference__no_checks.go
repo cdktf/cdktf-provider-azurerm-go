@@ -43,7 +43,7 @@ func (s *jsiiProxy_StorageBlobInventoryPolicyRulesOutputReference) validateGetSt
 	return nil
 }
 
-func (s *jsiiProxy_StorageBlobInventoryPolicyRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageBlobInventoryPolicyRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_StorageBlobInventoryPolicyRulesOutputReference) validatePutFi
 	return nil
 }
 
-func (s *jsiiProxy_StorageBlobInventoryPolicyRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageBlobInventoryPolicyRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (f *jsiiProxy_FrontdoorRulesEngineRuleActionRequestHeaderList) validateGetP
 	return nil
 }
 
-func (f *jsiiProxy_FrontdoorRulesEngineRuleActionRequestHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FrontdoorRulesEngineRuleActionRequestHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

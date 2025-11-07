@@ -43,11 +43,11 @@ func (l *jsiiProxy_LinuxWebAppBackupScheduleOutputReference) validateGetStringMa
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppBackupScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxWebAppBackupScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppBackupScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxWebAppBackupScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

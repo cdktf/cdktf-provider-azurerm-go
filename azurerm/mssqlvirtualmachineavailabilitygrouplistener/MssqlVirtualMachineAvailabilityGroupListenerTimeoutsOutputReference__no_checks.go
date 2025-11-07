@@ -43,11 +43,11 @@ func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListenerTimeoutsOutputRef
 	return nil
 }
 
-func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListenerTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListenerTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListenerTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListenerTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

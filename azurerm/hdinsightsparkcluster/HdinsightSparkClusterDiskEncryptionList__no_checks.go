@@ -15,7 +15,7 @@ func (h *jsiiProxy_HdinsightSparkClusterDiskEncryptionList) validateGetParameter
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightSparkClusterDiskEncryptionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightSparkClusterDiskEncryptionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

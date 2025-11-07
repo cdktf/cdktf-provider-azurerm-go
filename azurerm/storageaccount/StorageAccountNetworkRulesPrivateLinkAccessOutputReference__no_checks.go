@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageAccountNetworkRulesPrivateLinkAccessOutputReference) v
 	return nil
 }
 
-func (s *jsiiProxy_StorageAccountNetworkRulesPrivateLinkAccessOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageAccountNetworkRulesPrivateLinkAccessOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageAccountNetworkRulesPrivateLinkAccessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageAccountNetworkRulesPrivateLinkAccessOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

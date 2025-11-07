@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermVirtualNetworkGatewayCustomRouteOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermVirtualNetworkGatewayCustomRouteOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermVirtualNetworkGatewayCustomRouteOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermVirtualNetworkGatewayCustomRouteOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermVirtualNetworkGatewayCustomRouteOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

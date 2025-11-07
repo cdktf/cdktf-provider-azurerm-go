@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermApiManagementGatewayLocationDataList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApiManagementGatewayLocationDataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermApiManagementGatewayLocationDataList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

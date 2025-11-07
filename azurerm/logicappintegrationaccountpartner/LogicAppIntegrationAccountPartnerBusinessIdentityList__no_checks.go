@@ -15,7 +15,7 @@ func (l *jsiiProxy_LogicAppIntegrationAccountPartnerBusinessIdentityList) valida
 	return nil
 }
 
-func (l *jsiiProxy_LogicAppIntegrationAccountPartnerBusinessIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogicAppIntegrationAccountPartnerBusinessIdentityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

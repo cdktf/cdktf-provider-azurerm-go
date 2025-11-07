@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorageRetentionRuleOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorageRetentionRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorageRetentionRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorageRetentionRuleOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorageRetentionRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorageRetentionRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModuleNetworkAclsOutputReferen
 	return nil
 }
 
-func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModuleNetworkAclsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModuleNetworkAclsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModuleNetworkAclsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModuleNetworkAclsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

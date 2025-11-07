@@ -43,7 +43,7 @@ func (l *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerOutputReference) v
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (l *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerOutputReference) v
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

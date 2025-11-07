@@ -43,11 +43,11 @@ func (h *jsiiProxy_HdinsightHadoopClusterRolesWorkerNodeScriptActionsOutputRefer
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightHadoopClusterRolesWorkerNodeScriptActionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HdinsightHadoopClusterRolesWorkerNodeScriptActionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightHadoopClusterRolesWorkerNodeScriptActionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightHadoopClusterRolesWorkerNodeScriptActionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

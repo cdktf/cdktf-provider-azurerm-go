@@ -43,11 +43,11 @@ func (m *jsiiProxy_ManagedLustreFileSystemHsmSettingOutputReference) validateGet
 	return nil
 }
 
-func (m *jsiiProxy_ManagedLustreFileSystemHsmSettingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ManagedLustreFileSystemHsmSettingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ManagedLustreFileSystemHsmSettingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedLustreFileSystemHsmSettingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (s *jsiiProxy_StackHciLogicalNetworkSubnetOutputReference) validateGetStrin
 	return nil
 }
 
-func (s *jsiiProxy_StackHciLogicalNetworkSubnetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StackHciLogicalNetworkSubnetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_StackHciLogicalNetworkSubnetOutputReference) validatePutRoute
 	return nil
 }
 
-func (s *jsiiProxy_StackHciLogicalNetworkSubnetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StackHciLogicalNetworkSubnetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

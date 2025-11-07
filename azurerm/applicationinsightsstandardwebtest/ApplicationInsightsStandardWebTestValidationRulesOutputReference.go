@@ -74,7 +74,7 @@ type ApplicationInsightsStandardWebTestValidationRulesOutputReference interface 
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutContent(value *ApplicationInsightsStandardWebTestValidationRulesContent)
 	ResetContent()
 	ResetExpectedStatusCode()
@@ -82,7 +82,7 @@ type ApplicationInsightsStandardWebTestValidationRulesOutputReference interface 
 	ResetSslCheckEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -531,8 +531,8 @@ func (a *jsiiProxy_ApplicationInsightsStandardWebTestValidationRulesOutputRefere
 	return returns
 }
 
-func (a *jsiiProxy_ApplicationInsightsStandardWebTestValidationRulesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_ApplicationInsightsStandardWebTestValidationRulesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -540,7 +540,7 @@ func (a *jsiiProxy_ApplicationInsightsStandardWebTestValidationRulesOutputRefere
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -590,8 +590,8 @@ func (a *jsiiProxy_ApplicationInsightsStandardWebTestValidationRulesOutputRefere
 	)
 }
 
-func (a *jsiiProxy_ApplicationInsightsStandardWebTestValidationRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_ApplicationInsightsStandardWebTestValidationRulesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -599,7 +599,7 @@ func (a *jsiiProxy_ApplicationInsightsStandardWebTestValidationRulesOutputRefere
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

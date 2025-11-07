@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesClusterOmsAgentOmsAgentIdentityOutputReference) val
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterOmsAgentOmsAgentIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterOmsAgentOmsAgentIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterOmsAgentOmsAgentIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterOmsAgentOmsAgentIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

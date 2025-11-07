@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermAppServiceEnvironmentV3ClusterSettingOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermAppServiceEnvironmentV3ClusterSettingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermAppServiceEnvironmentV3ClusterSettingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermAppServiceEnvironmentV3ClusterSettingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermAppServiceEnvironmentV3ClusterSettingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

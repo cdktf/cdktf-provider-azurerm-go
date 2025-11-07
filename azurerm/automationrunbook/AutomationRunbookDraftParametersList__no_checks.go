@@ -15,7 +15,7 @@ func (a *jsiiProxy_AutomationRunbookDraftParametersList) validateGetParameters(i
 	return nil
 }
 
-func (a *jsiiProxy_AutomationRunbookDraftParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutomationRunbookDraftParametersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermElasticSanSkuList) validateGetParameters(index *fl
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermElasticSanSkuList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermElasticSanSkuList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

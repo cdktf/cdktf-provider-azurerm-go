@@ -43,11 +43,11 @@ func (v *jsiiProxy_VideoIndexerAccountIdentityOutputReference) validateGetString
 	return nil
 }
 
-func (v *jsiiProxy_VideoIndexerAccountIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VideoIndexerAccountIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VideoIndexerAccountIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VideoIndexerAccountIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

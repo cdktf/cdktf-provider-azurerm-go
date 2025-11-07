@@ -85,17 +85,17 @@ func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationRootCertificateOut
 	return nil
 }
 
-func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationRootCertificateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationRootCertificateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationRootCertificateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationRootCertificateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

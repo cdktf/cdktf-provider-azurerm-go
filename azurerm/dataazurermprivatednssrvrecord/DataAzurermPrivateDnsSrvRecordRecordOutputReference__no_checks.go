@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermPrivateDnsSrvRecordRecordOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermPrivateDnsSrvRecordRecordOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermPrivateDnsSrvRecordRecordOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermPrivateDnsSrvRecordRecordOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermPrivateDnsSrvRecordRecordOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

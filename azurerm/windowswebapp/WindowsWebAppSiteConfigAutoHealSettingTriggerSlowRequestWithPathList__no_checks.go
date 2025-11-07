@@ -15,7 +15,7 @@ func (w *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithP
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPathList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPathList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

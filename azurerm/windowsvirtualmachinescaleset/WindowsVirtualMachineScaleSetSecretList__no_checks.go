@@ -15,7 +15,7 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSetSecretList) validateGetParameter
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineScaleSetSecretList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsVirtualMachineScaleSetSecretList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

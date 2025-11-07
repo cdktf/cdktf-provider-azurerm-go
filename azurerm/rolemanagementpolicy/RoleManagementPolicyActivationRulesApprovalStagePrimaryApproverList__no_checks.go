@@ -15,7 +15,7 @@ func (r *jsiiProxy_RoleManagementPolicyActivationRulesApprovalStagePrimaryApprov
 	return nil
 }
 
-func (r *jsiiProxy_RoleManagementPolicyActivationRulesApprovalStagePrimaryApproverList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RoleManagementPolicyActivationRulesApprovalStagePrimaryApproverList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

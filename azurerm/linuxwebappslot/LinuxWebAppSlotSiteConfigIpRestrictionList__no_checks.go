@@ -15,7 +15,7 @@ func (l *jsiiProxy_LinuxWebAppSlotSiteConfigIpRestrictionList) validateGetParame
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppSlotSiteConfigIpRestrictionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxWebAppSlotSiteConfigIpRestrictionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (l *jsiiProxy_LbFrontendIpConfigurationOutputReference) validateGetStringMa
 	return nil
 }
 
-func (l *jsiiProxy_LbFrontendIpConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LbFrontendIpConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LbFrontendIpConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbFrontendIpConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

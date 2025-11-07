@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppConfigurationFeatureTargetingFilterOutputReference) valida
 	return nil
 }
 
-func (a *jsiiProxy_AppConfigurationFeatureTargetingFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppConfigurationFeatureTargetingFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AppConfigurationFeatureTargetingFilterOutputReference) valida
 	return nil
 }
 
-func (a *jsiiProxy_AppConfigurationFeatureTargetingFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppConfigurationFeatureTargetingFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

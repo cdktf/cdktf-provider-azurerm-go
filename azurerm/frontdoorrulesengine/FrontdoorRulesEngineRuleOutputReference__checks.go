@@ -85,9 +85,9 @@ func (f *jsiiProxy_FrontdoorRulesEngineRuleOutputReference) validateGetStringMap
 	return nil
 }
 
-func (f *jsiiProxy_FrontdoorRulesEngineRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (f *jsiiProxy_FrontdoorRulesEngineRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -135,9 +135,9 @@ func (f *jsiiProxy_FrontdoorRulesEngineRuleOutputReference) validatePutMatchCond
 	return nil
 }
 
-func (f *jsiiProxy_FrontdoorRulesEngineRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (f *jsiiProxy_FrontdoorRulesEngineRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

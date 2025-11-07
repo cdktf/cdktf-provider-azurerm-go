@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesClusterMaintenanceWindowNotAllowedOutputReference) 
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterMaintenanceWindowNotAllowedOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterMaintenanceWindowNotAllowedOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterMaintenanceWindowNotAllowedOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterMaintenanceWindowNotAllowedOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

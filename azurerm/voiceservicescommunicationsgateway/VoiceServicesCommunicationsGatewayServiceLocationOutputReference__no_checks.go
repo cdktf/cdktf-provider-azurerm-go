@@ -43,11 +43,11 @@ func (v *jsiiProxy_VoiceServicesCommunicationsGatewayServiceLocationOutputRefere
 	return nil
 }
 
-func (v *jsiiProxy_VoiceServicesCommunicationsGatewayServiceLocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VoiceServicesCommunicationsGatewayServiceLocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VoiceServicesCommunicationsGatewayServiceLocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VoiceServicesCommunicationsGatewayServiceLocationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

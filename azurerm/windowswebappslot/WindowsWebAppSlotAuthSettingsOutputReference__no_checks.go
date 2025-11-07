@@ -43,7 +43,7 @@ func (w *jsiiProxy_WindowsWebAppSlotAuthSettingsOutputReference) validateGetStri
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppSlotAuthSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsWebAppSlotAuthSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -71,7 +71,7 @@ func (w *jsiiProxy_WindowsWebAppSlotAuthSettingsOutputReference) validatePutTwit
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppSlotAuthSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsWebAppSlotAuthSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermNginxDeploymentWebApplicationFirewallStatusBotSign
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNginxDeploymentWebApplicationFirewallStatusBotSignaturesPackageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermNginxDeploymentWebApplicationFirewallStatusBotSignaturesPackageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

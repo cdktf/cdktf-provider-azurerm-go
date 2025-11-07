@@ -43,7 +43,7 @@ func (m *jsiiProxy_MssqlVirtualMachineAssessmentOutputReference) validateGetStri
 	return nil
 }
 
-func (m *jsiiProxy_MssqlVirtualMachineAssessmentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlVirtualMachineAssessmentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MssqlVirtualMachineAssessmentOutputReference) validatePutSche
 	return nil
 }
 
-func (m *jsiiProxy_MssqlVirtualMachineAssessmentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlVirtualMachineAssessmentOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

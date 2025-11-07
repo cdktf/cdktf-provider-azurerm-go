@@ -43,7 +43,7 @@ func (m *jsiiProxy_MaintenanceConfigurationInstallPatchesOutputReference) valida
 	return nil
 }
 
-func (m *jsiiProxy_MaintenanceConfigurationInstallPatchesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MaintenanceConfigurationInstallPatchesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (m *jsiiProxy_MaintenanceConfigurationInstallPatchesOutputReference) valida
 	return nil
 }
 
-func (m *jsiiProxy_MaintenanceConfigurationInstallPatchesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MaintenanceConfigurationInstallPatchesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

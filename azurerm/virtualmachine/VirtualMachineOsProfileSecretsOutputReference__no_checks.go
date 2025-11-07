@@ -43,7 +43,7 @@ func (v *jsiiProxy_VirtualMachineOsProfileSecretsOutputReference) validateGetStr
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineOsProfileSecretsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualMachineOsProfileSecretsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (v *jsiiProxy_VirtualMachineOsProfileSecretsOutputReference) validatePutVau
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineOsProfileSecretsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineOsProfileSecretsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

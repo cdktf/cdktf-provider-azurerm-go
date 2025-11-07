@@ -43,7 +43,7 @@ func (p *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationOutputReference) 
 	return nil
 }
 
-func (p *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (p *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationOutputReference) 
 	return nil
 }
 
-func (p *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (l *jsiiProxy_LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyL
 	return nil
 }
 
-func (l *jsiiProxy_LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

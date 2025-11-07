@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleKeyTimeoutsOu
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleKeyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleKeyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleKeyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleKeyTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

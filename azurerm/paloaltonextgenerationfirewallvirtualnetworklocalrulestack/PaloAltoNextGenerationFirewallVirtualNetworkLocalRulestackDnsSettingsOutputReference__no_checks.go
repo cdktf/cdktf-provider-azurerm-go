@@ -43,11 +43,11 @@ func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackDns
 	return nil
 }
 
-func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackDnsSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackDnsSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackDnsSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackDnsSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

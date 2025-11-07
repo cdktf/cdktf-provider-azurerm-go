@@ -43,11 +43,11 @@ func (m *jsiiProxy_MachineLearningWorkspaceFeatureStoreOutputReference) validate
 	return nil
 }
 
-func (m *jsiiProxy_MachineLearningWorkspaceFeatureStoreOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MachineLearningWorkspaceFeatureStoreOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MachineLearningWorkspaceFeatureStoreOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MachineLearningWorkspaceFeatureStoreOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

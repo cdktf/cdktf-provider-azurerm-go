@@ -43,11 +43,11 @@ func (w *jsiiProxy_WindowsWebAppSlotLogsHttpLogsAzureBlobStorageOutputReference)
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppSlotLogsHttpLogsAzureBlobStorageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsWebAppSlotLogsHttpLogsAzureBlobStorageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppSlotLogsHttpLogsAzureBlobStorageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsWebAppSlotLogsHttpLogsAzureBlobStorageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermWindowsWebAppAuthSettingsV2LoginOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermWindowsWebAppAuthSettingsV2LoginOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermWindowsWebAppAuthSettingsV2LoginOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermWindowsWebAppAuthSettingsV2LoginOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermWindowsWebAppAuthSettingsV2LoginOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

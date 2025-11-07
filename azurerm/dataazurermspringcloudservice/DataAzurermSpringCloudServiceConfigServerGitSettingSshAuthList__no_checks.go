@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermSpringCloudServiceConfigServerGitSettingSshAuthLis
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSpringCloudServiceConfigServerGitSettingSshAuthList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermSpringCloudServiceConfigServerGitSettingSshAuthList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

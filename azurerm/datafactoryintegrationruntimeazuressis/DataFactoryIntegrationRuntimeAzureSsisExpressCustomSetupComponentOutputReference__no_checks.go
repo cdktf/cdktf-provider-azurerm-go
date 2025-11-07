@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCompo
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCompo
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

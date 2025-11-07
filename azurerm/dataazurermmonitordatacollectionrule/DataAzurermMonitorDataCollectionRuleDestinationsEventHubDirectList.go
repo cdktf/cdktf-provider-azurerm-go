@@ -39,7 +39,7 @@ type DataAzurermMonitorDataCollectionRuleDestinationsEventHubDirectList interfac
 	Get(index *float64) DataAzurermMonitorDataCollectionRuleDestinationsEventHubDirectOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (d *jsiiProxy_DataAzurermMonitorDataCollectionRuleDestinationsEventHubDirec
 	return returns
 }
 
-func (d *jsiiProxy_DataAzurermMonitorDataCollectionRuleDestinationsEventHubDirectList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataAzurermMonitorDataCollectionRuleDestinationsEventHubDirectList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (d *jsiiProxy_DataAzurermMonitorDataCollectionRuleDestinationsEventHubDirec
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

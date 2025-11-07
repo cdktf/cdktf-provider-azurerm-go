@@ -43,11 +43,11 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurati
 	return nil
 }
 
-func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

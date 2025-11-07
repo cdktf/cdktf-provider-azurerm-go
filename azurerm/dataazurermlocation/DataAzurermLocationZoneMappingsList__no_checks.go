@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermLocationZoneMappingsList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLocationZoneMappingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermLocationZoneMappingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

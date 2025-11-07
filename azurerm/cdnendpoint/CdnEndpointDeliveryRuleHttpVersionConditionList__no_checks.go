@@ -15,7 +15,7 @@ func (c *jsiiProxy_CdnEndpointDeliveryRuleHttpVersionConditionList) validateGetP
 	return nil
 }
 
-func (c *jsiiProxy_CdnEndpointDeliveryRuleHttpVersionConditionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnEndpointDeliveryRuleHttpVersionConditionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

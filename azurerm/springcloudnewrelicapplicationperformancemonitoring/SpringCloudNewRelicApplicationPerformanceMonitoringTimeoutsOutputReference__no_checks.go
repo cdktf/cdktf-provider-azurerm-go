@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpringCloudNewRelicApplicationPerformanceMonitoringTimeoutsOu
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudNewRelicApplicationPerformanceMonitoringTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpringCloudNewRelicApplicationPerformanceMonitoringTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudNewRelicApplicationPerformanceMonitoringTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpringCloudNewRelicApplicationPerformanceMonitoringTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

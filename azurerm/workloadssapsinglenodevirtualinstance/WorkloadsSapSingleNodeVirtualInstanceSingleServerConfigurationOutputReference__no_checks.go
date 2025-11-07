@@ -43,7 +43,7 @@ func (w *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfiguratio
 	return nil
 }
 
-func (w *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (w *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfiguratio
 	return nil
 }
 
-func (w *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (f *jsiiProxy_FrontdoorFirewallPolicyCustomRuleMatchConditionList) validate
 	return nil
 }
 
-func (f *jsiiProxy_FrontdoorFirewallPolicyCustomRuleMatchConditionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FrontdoorFirewallPolicyCustomRuleMatchConditionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

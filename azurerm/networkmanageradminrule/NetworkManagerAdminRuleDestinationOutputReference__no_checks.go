@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkManagerAdminRuleDestinationOutputReference) validateGe
 	return nil
 }
 
-func (n *jsiiProxy_NetworkManagerAdminRuleDestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkManagerAdminRuleDestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkManagerAdminRuleDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkManagerAdminRuleDestinationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

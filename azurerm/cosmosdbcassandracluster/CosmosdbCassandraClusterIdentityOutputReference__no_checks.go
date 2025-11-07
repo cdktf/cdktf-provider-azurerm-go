@@ -43,11 +43,11 @@ func (c *jsiiProxy_CosmosdbCassandraClusterIdentityOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbCassandraClusterIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CosmosdbCassandraClusterIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbCassandraClusterIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbCassandraClusterIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermServicebusQueueAuthorizationRuleTimeoutsOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermServicebusQueueAuthorizationRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermServicebusQueueAuthorizationRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermServicebusQueueAuthorizationRuleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermServicebusQueueAuthorizationRuleTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

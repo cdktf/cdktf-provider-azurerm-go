@@ -43,11 +43,11 @@ func (b *jsiiProxy_BotChannelEmailTimeoutsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (b *jsiiProxy_BotChannelEmailTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BotChannelEmailTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BotChannelEmailTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BotChannelEmailTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

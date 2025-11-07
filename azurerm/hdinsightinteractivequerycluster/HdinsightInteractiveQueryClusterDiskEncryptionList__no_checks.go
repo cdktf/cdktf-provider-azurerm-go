@@ -15,7 +15,7 @@ func (h *jsiiProxy_HdinsightInteractiveQueryClusterDiskEncryptionList) validateG
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightInteractiveQueryClusterDiskEncryptionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightInteractiveQueryClusterDiskEncryptionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

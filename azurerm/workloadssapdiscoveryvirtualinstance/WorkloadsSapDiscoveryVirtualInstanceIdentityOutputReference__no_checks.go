@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkloadsSapDiscoveryVirtualInstanceIdentityOutputReference) 
 	return nil
 }
 
-func (w *jsiiProxy_WorkloadsSapDiscoveryVirtualInstanceIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkloadsSapDiscoveryVirtualInstanceIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkloadsSapDiscoveryVirtualInstanceIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkloadsSapDiscoveryVirtualInstanceIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

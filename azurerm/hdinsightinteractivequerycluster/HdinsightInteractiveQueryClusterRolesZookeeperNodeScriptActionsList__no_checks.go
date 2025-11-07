@@ -15,7 +15,7 @@ func (h *jsiiProxy_HdinsightInteractiveQueryClusterRolesZookeeperNodeScriptActio
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightInteractiveQueryClusterRolesZookeeperNodeScriptActionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightInteractiveQueryClusterRolesZookeeperNodeScriptActionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

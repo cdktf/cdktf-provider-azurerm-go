@@ -15,7 +15,7 @@ func (h *jsiiProxy_HdinsightHbaseClusterStorageAccountList) validateGetParameter
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightHbaseClusterStorageAccountList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightHbaseClusterStorageAccountList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

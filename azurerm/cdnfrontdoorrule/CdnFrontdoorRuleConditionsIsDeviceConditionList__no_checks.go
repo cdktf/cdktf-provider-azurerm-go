@@ -15,7 +15,7 @@ func (c *jsiiProxy_CdnFrontdoorRuleConditionsIsDeviceConditionList) validateGetP
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorRuleConditionsIsDeviceConditionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnFrontdoorRuleConditionsIsDeviceConditionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

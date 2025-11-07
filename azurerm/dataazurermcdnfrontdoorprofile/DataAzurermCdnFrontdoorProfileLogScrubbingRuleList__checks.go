@@ -27,9 +27,9 @@ func (d *jsiiProxy_DataAzurermCdnFrontdoorProfileLogScrubbingRuleList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermCdnFrontdoorProfileLogScrubbingRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataAzurermCdnFrontdoorProfileLogScrubbingRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

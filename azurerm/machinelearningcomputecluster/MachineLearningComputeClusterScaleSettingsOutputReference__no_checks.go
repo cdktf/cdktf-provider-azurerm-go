@@ -43,11 +43,11 @@ func (m *jsiiProxy_MachineLearningComputeClusterScaleSettingsOutputReference) va
 	return nil
 }
 
-func (m *jsiiProxy_MachineLearningComputeClusterScaleSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MachineLearningComputeClusterScaleSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MachineLearningComputeClusterScaleSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MachineLearningComputeClusterScaleSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

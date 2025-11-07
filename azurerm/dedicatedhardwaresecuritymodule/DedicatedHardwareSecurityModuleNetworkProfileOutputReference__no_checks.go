@@ -43,11 +43,11 @@ func (d *jsiiProxy_DedicatedHardwareSecurityModuleNetworkProfileOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DedicatedHardwareSecurityModuleNetworkProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DedicatedHardwareSecurityModuleNetworkProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DedicatedHardwareSecurityModuleNetworkProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DedicatedHardwareSecurityModuleNetworkProfileOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (v *jsiiProxy_VirtualHubConnectionRoutingOutputReference) validateGetString
 	return nil
 }
 
-func (v *jsiiProxy_VirtualHubConnectionRoutingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualHubConnectionRoutingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (v *jsiiProxy_VirtualHubConnectionRoutingOutputReference) validatePutStatic
 	return nil
 }
 
-func (v *jsiiProxy_VirtualHubConnectionRoutingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualHubConnectionRoutingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

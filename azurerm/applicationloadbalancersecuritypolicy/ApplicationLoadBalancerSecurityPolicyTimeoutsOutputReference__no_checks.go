@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApplicationLoadBalancerSecurityPolicyTimeoutsOutputReference)
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationLoadBalancerSecurityPolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApplicationLoadBalancerSecurityPolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationLoadBalancerSecurityPolicyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationLoadBalancerSecurityPolicyTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

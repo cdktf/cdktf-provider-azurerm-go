@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermSnapshotEncryptionSettingsDiskEncryptionKeyList) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSnapshotEncryptionSettingsDiskEncryptionKeyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermSnapshotEncryptionSettingsDiskEncryptionKeyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

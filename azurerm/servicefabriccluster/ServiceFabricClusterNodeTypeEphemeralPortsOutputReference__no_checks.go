@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServiceFabricClusterNodeTypeEphemeralPortsOutputReference) va
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricClusterNodeTypeEphemeralPortsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceFabricClusterNodeTypeEphemeralPortsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricClusterNodeTypeEphemeralPortsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceFabricClusterNodeTypeEphemeralPortsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

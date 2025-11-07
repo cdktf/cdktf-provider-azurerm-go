@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitorAlertProcessingRuleSuppressionConditionAlertRuleNameOu
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAlertProcessingRuleSuppressionConditionAlertRuleNameOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorAlertProcessingRuleSuppressionConditionAlertRuleNameOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAlertProcessingRuleSuppressionConditionAlertRuleNameOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorAlertProcessingRuleSuppressionConditionAlertRuleNameOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

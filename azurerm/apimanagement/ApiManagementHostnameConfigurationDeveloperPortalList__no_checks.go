@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApiManagementHostnameConfigurationDeveloperPortalList) valida
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementHostnameConfigurationDeveloperPortalList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementHostnameConfigurationDeveloperPortalList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

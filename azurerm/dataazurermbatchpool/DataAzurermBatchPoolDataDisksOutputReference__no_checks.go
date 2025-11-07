@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermBatchPoolDataDisksOutputReference) validateGetStri
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermBatchPoolDataDisksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermBatchPoolDataDisksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermBatchPoolDataDisksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermBatchPoolDataDisksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

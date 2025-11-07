@@ -43,11 +43,11 @@ func (l *jsiiProxy_LinuxWebAppSiteConfigScmIpRestrictionHeadersOutputReference) 
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppSiteConfigScmIpRestrictionHeadersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxWebAppSiteConfigScmIpRestrictionHeadersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppSiteConfigScmIpRestrictionHeadersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxWebAppSiteConfigScmIpRestrictionHeadersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

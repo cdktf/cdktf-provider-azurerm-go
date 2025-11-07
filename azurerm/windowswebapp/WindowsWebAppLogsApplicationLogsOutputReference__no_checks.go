@@ -43,7 +43,7 @@ func (w *jsiiProxy_WindowsWebAppLogsApplicationLogsOutputReference) validateGetS
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppLogsApplicationLogsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsWebAppLogsApplicationLogsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (w *jsiiProxy_WindowsWebAppLogsApplicationLogsOutputReference) validatePutA
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppLogsApplicationLogsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsWebAppLogsApplicationLogsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

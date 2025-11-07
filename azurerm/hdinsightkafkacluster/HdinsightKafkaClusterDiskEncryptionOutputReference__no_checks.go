@@ -43,11 +43,11 @@ func (h *jsiiProxy_HdinsightKafkaClusterDiskEncryptionOutputReference) validateG
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightKafkaClusterDiskEncryptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HdinsightKafkaClusterDiskEncryptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightKafkaClusterDiskEncryptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightKafkaClusterDiskEncryptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

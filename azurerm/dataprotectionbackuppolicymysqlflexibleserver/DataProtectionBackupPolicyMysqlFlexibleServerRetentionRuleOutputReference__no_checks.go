@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleOut
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleOut
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

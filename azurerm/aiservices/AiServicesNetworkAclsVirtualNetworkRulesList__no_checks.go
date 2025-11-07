@@ -15,7 +15,7 @@ func (a *jsiiProxy_AiServicesNetworkAclsVirtualNetworkRulesList) validateGetPara
 	return nil
 }
 
-func (a *jsiiProxy_AiServicesNetworkAclsVirtualNetworkRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AiServicesNetworkAclsVirtualNetworkRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

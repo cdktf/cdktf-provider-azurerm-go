@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermAppServicePlanSkuOutputReference) validateGetStrin
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermAppServicePlanSkuOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermAppServicePlanSkuOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermAppServicePlanSkuOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermAppServicePlanSkuOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

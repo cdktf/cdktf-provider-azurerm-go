@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerAppJobEventTriggerConfigScaleRulesAuthenticationList
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppJobEventTriggerConfigScaleRulesAuthenticationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppJobEventTriggerConfigScaleRulesAuthenticationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

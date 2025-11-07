@@ -75,13 +75,13 @@ type BotChannelWebChatSiteOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetEndpointParametersEnabled()
 	ResetStorageEnabled()
 	ResetUserUploadEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -541,8 +541,8 @@ func (b *jsiiProxy_BotChannelWebChatSiteOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (b *jsiiProxy_BotChannelWebChatSiteOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BotChannelWebChatSiteOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -550,7 +550,7 @@ func (b *jsiiProxy_BotChannelWebChatSiteOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -581,8 +581,8 @@ func (b *jsiiProxy_BotChannelWebChatSiteOutputReference) ResetUserUploadEnabled(
 	)
 }
 
-func (b *jsiiProxy_BotChannelWebChatSiteOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BotChannelWebChatSiteOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -590,7 +590,7 @@ func (b *jsiiProxy_BotChannelWebChatSiteOutputReference) Resolve(_context cdktf.
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

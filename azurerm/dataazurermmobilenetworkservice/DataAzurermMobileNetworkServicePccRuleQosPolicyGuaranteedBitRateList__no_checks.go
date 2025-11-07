@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermMobileNetworkServicePccRuleQosPolicyGuaranteedBitR
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMobileNetworkServicePccRuleQosPolicyGuaranteedBitRateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermMobileNetworkServicePccRuleQosPolicyGuaranteedBitRateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

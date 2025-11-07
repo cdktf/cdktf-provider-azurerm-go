@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermManagedRedisDefaultDatabaseOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermManagedRedisDefaultDatabaseOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermManagedRedisDefaultDatabaseOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermManagedRedisDefaultDatabaseOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermManagedRedisDefaultDatabaseOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

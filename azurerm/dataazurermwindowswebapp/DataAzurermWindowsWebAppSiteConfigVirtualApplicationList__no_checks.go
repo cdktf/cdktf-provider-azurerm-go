@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermWindowsWebAppSiteConfigVirtualApplicationList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermWindowsWebAppSiteConfigVirtualApplicationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermWindowsWebAppSiteConfigVirtualApplicationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

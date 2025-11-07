@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerAppTemplateCustomScaleRuleOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppTemplateCustomScaleRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAppTemplateCustomScaleRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ContainerAppTemplateCustomScaleRuleOutputReference) validateP
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppTemplateCustomScaleRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppTemplateCustomScaleRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

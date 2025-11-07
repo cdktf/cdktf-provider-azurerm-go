@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermDevCenterNetworkConnectionTimeoutsOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDevCenterNetworkConnectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermDevCenterNetworkConnectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDevCenterNetworkConnectionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermDevCenterNetworkConnectionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

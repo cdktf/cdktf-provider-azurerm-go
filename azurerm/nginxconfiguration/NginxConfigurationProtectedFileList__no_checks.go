@@ -15,7 +15,7 @@ func (n *jsiiProxy_NginxConfigurationProtectedFileList) validateGetParameters(in
 	return nil
 }
 
-func (n *jsiiProxy_NginxConfigurationProtectedFileList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NginxConfigurationProtectedFileList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

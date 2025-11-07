@@ -15,7 +15,7 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSetWinrmListenerList) validateGetPa
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineScaleSetWinrmListenerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsVirtualMachineScaleSetWinrmListenerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

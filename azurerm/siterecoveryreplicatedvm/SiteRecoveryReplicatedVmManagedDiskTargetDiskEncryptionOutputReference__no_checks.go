@@ -43,7 +43,7 @@ func (s *jsiiProxy_SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionOutput
 	return nil
 }
 
-func (s *jsiiProxy_SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionOutput
 	return nil
 }
 
-func (s *jsiiProxy_SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (v *jsiiProxy_VmwarePrivateCloudCircuitOutputReference) validateGetStringMa
 	return nil
 }
 
-func (v *jsiiProxy_VmwarePrivateCloudCircuitOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VmwarePrivateCloudCircuitOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VmwarePrivateCloudCircuitOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VmwarePrivateCloudCircuitOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

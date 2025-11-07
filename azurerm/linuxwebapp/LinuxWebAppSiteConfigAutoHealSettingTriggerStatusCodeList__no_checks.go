@@ -15,7 +15,7 @@ func (l *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeList) va
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

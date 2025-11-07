@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermMssqlFailoverGroupPartnerServerList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMssqlFailoverGroupPartnerServerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermMssqlFailoverGroupPartnerServerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

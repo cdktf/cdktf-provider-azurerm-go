@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpringCloudAppCosmosdbAssociationTimeoutsOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudAppCosmosdbAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpringCloudAppCosmosdbAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudAppCosmosdbAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpringCloudAppCosmosdbAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

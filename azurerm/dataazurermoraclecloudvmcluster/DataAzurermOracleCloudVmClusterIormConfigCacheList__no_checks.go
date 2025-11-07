@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermOracleCloudVmClusterIormConfigCacheList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermOracleCloudVmClusterIormConfigCacheList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermOracleCloudVmClusterIormConfigCacheList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

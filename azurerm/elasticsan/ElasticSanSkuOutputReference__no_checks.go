@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElasticSanSkuOutputReference) validateGetStringMapAttributePa
 	return nil
 }
 
-func (e *jsiiProxy_ElasticSanSkuOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElasticSanSkuOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElasticSanSkuOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticSanSkuOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

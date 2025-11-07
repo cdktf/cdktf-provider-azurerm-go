@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesFluxConfigurationBlobStorageServicePrincipalOutputR
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesFluxConfigurationBlobStorageServicePrincipalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesFluxConfigurationBlobStorageServicePrincipalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesFluxConfigurationBlobStorageServicePrincipalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesFluxConfigurationBlobStorageServicePrincipalOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (m *jsiiProxy_ManagedApplicationDefinitionAuthorizationOutputReference) val
 	return nil
 }
 
-func (m *jsiiProxy_ManagedApplicationDefinitionAuthorizationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ManagedApplicationDefinitionAuthorizationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ManagedApplicationDefinitionAuthorizationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedApplicationDefinitionAuthorizationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

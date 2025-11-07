@@ -43,7 +43,7 @@ func (h *jsiiProxy_HpcCacheDirectoryLdapOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (h *jsiiProxy_HpcCacheDirectoryLdapOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HpcCacheDirectoryLdapOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (h *jsiiProxy_HpcCacheDirectoryLdapOutputReference) validatePutBindParamete
 	return nil
 }
 
-func (h *jsiiProxy_HpcCacheDirectoryLdapOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HpcCacheDirectoryLdapOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

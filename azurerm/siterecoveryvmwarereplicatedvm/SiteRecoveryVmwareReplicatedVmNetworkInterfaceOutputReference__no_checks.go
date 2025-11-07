@@ -43,11 +43,11 @@ func (s *jsiiProxy_SiteRecoveryVmwareReplicatedVmNetworkInterfaceOutputReference
 	return nil
 }
 
-func (s *jsiiProxy_SiteRecoveryVmwareReplicatedVmNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SiteRecoveryVmwareReplicatedVmNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SiteRecoveryVmwareReplicatedVmNetworkInterfaceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SiteRecoveryVmwareReplicatedVmNetworkInterfaceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

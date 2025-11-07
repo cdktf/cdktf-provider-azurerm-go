@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

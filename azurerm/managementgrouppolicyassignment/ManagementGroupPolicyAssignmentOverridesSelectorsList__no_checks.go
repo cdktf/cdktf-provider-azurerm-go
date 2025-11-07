@@ -15,7 +15,7 @@ func (m *jsiiProxy_ManagementGroupPolicyAssignmentOverridesSelectorsList) valida
 	return nil
 }
 
-func (m *jsiiProxy_ManagementGroupPolicyAssignmentOverridesSelectorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagementGroupPolicyAssignmentOverridesSelectorsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

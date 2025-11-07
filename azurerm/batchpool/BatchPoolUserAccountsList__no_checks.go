@@ -15,7 +15,7 @@ func (b *jsiiProxy_BatchPoolUserAccountsList) validateGetParameters(index *float
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolUserAccountsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchPoolUserAccountsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -79,7 +79,7 @@ type DataFactoryDataFlowSinkOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutDataset(value *DataFactoryDataFlowSinkDataset)
 	PutFlowlet(value *DataFactoryDataFlowSinkFlowlet)
 	PutLinkedService(value *DataFactoryDataFlowSinkLinkedService)
@@ -93,7 +93,7 @@ type DataFactoryDataFlowSinkOutputReference interface {
 	ResetSchemaLinkedService()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -591,8 +591,8 @@ func (d *jsiiProxy_DataFactoryDataFlowSinkOutputReference) InterpolationAsList()
 	return returns
 }
 
-func (d *jsiiProxy_DataFactoryDataFlowSinkOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataFactoryDataFlowSinkOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -600,7 +600,7 @@ func (d *jsiiProxy_DataFactoryDataFlowSinkOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -710,8 +710,8 @@ func (d *jsiiProxy_DataFactoryDataFlowSinkOutputReference) ResetSchemaLinkedServ
 	)
 }
 
-func (d *jsiiProxy_DataFactoryDataFlowSinkOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataFactoryDataFlowSinkOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -719,7 +719,7 @@ func (d *jsiiProxy_DataFactoryDataFlowSinkOutputReference) Resolve(_context cdkt
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_SentinelThreatIntelligenceIndicatorKillChainPhaseOutputRefere
 	return nil
 }
 
-func (s *jsiiProxy_SentinelThreatIntelligenceIndicatorKillChainPhaseOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SentinelThreatIntelligenceIndicatorKillChainPhaseOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SentinelThreatIntelligenceIndicatorKillChainPhaseOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelThreatIntelligenceIndicatorKillChainPhaseOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

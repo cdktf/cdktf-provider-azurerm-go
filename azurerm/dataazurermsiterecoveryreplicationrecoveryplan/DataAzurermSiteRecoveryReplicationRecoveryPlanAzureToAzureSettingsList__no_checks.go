@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermSiteRecoveryReplicationRecoveryPlanAzureToAzureSet
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermSiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

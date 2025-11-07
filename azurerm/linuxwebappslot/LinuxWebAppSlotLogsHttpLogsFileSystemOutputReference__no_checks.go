@@ -43,11 +43,11 @@ func (l *jsiiProxy_LinuxWebAppSlotLogsHttpLogsFileSystemOutputReference) validat
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppSlotLogsHttpLogsFileSystemOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxWebAppSlotLogsHttpLogsFileSystemOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppSlotLogsHttpLogsFileSystemOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxWebAppSlotLogsHttpLogsFileSystemOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

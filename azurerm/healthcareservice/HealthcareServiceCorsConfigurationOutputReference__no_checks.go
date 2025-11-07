@@ -43,11 +43,11 @@ func (h *jsiiProxy_HealthcareServiceCorsConfigurationOutputReference) validateGe
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareServiceCorsConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HealthcareServiceCorsConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareServiceCorsConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HealthcareServiceCorsConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (m *jsiiProxy_MobileNetworkSimPolicySliceDataNetworkSessionAggregateMaximum
 	return nil
 }
 
-func (m *jsiiProxy_MobileNetworkSimPolicySliceDataNetworkSessionAggregateMaximumBitRateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MobileNetworkSimPolicySliceDataNetworkSessionAggregateMaximumBitRateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MobileNetworkSimPolicySliceDataNetworkSessionAggregateMaximumBitRateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MobileNetworkSimPolicySliceDataNetworkSessionAggregateMaximumBitRateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

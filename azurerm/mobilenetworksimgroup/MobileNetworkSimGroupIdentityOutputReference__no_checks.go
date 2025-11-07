@@ -43,11 +43,11 @@ func (m *jsiiProxy_MobileNetworkSimGroupIdentityOutputReference) validateGetStri
 	return nil
 }
 
-func (m *jsiiProxy_MobileNetworkSimGroupIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MobileNetworkSimGroupIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MobileNetworkSimGroupIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MobileNetworkSimGroupIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (e *jsiiProxy_EventhubCaptureDescriptionDestinationOutputReference) validat
 	return nil
 }
 
-func (e *jsiiProxy_EventhubCaptureDescriptionDestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventhubCaptureDescriptionDestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventhubCaptureDescriptionDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventhubCaptureDescriptionDestinationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

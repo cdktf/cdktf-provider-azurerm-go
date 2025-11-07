@@ -43,11 +43,11 @@ func (f *jsiiProxy_FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeadersOu
 	return nil
 }
 
-func (f *jsiiProxy_FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeadersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeadersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeadersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeadersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

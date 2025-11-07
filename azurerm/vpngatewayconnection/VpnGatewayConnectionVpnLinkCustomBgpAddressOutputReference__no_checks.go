@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpnGatewayConnectionVpnLinkCustomBgpAddressOutputReference) v
 	return nil
 }
 
-func (v *jsiiProxy_VpnGatewayConnectionVpnLinkCustomBgpAddressOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpnGatewayConnectionVpnLinkCustomBgpAddressOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpnGatewayConnectionVpnLinkCustomBgpAddressOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpnGatewayConnectionVpnLinkCustomBgpAddressOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

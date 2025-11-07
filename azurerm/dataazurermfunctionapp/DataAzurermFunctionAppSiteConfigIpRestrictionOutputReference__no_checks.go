@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermFunctionAppSiteConfigIpRestrictionOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermFunctionAppSiteConfigIpRestrictionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermFunctionAppSiteConfigIpRestrictionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermFunctionAppSiteConfigIpRestrictionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermFunctionAppSiteConfigIpRestrictionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

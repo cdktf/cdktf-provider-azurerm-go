@@ -43,7 +43,7 @@ func (l *jsiiProxy_LinuxFunctionAppSiteConfigIpRestrictionOutputReference) valid
 	return nil
 }
 
-func (l *jsiiProxy_LinuxFunctionAppSiteConfigIpRestrictionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxFunctionAppSiteConfigIpRestrictionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LinuxFunctionAppSiteConfigIpRestrictionOutputReference) valid
 	return nil
 }
 
-func (l *jsiiProxy_LinuxFunctionAppSiteConfigIpRestrictionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxFunctionAppSiteConfigIpRestrictionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

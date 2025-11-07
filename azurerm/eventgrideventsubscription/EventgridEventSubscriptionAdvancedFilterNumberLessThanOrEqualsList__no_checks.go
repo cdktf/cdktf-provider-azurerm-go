@@ -15,7 +15,7 @@ func (e *jsiiProxy_EventgridEventSubscriptionAdvancedFilterNumberLessThanOrEqual
 	return nil
 }
 
-func (e *jsiiProxy_EventgridEventSubscriptionAdvancedFilterNumberLessThanOrEqualsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventgridEventSubscriptionAdvancedFilterNumberLessThanOrEqualsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

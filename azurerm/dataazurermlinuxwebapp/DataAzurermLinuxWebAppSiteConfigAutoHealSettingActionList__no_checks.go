@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermLinuxWebAppSiteConfigAutoHealSettingActionList) va
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLinuxWebAppSiteConfigAutoHealSettingActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermLinuxWebAppSiteConfigAutoHealSettingActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

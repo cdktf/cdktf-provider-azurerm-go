@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermMonitorActionGroupWebhookReceiverAadAuthOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMonitorActionGroupWebhookReceiverAadAuthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermMonitorActionGroupWebhookReceiverAadAuthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMonitorActionGroupWebhookReceiverAadAuthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermMonitorActionGroupWebhookReceiverAadAuthOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

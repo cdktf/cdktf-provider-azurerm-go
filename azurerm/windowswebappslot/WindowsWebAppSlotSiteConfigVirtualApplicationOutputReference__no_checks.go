@@ -43,7 +43,7 @@ func (w *jsiiProxy_WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference)
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (w *jsiiProxy_WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference)
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

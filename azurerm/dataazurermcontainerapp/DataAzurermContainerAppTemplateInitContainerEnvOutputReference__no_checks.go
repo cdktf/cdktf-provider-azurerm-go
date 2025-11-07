@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermContainerAppTemplateInitContainerEnvOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermContainerAppTemplateInitContainerEnvOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermContainerAppTemplateInitContainerEnvOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermContainerAppTemplateInitContainerEnvOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermContainerAppTemplateInitContainerEnvOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

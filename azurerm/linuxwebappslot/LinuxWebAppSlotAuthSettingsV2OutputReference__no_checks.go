@@ -43,7 +43,7 @@ func (l *jsiiProxy_LinuxWebAppSlotAuthSettingsV2OutputReference) validateGetStri
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppSlotAuthSettingsV2OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxWebAppSlotAuthSettingsV2OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -87,7 +87,7 @@ func (l *jsiiProxy_LinuxWebAppSlotAuthSettingsV2OutputReference) validatePutTwit
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppSlotAuthSettingsV2OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxWebAppSlotAuthSettingsV2OutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

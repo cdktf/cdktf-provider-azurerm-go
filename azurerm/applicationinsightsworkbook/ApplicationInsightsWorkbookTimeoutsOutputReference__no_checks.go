@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApplicationInsightsWorkbookTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationInsightsWorkbookTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApplicationInsightsWorkbookTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationInsightsWorkbookTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationInsightsWorkbookTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

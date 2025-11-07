@@ -15,7 +15,7 @@ func (v *jsiiProxy_VirtualMachineOsProfileSecretsList) validateGetParameters(ind
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineOsProfileSecretsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineOsProfileSecretsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

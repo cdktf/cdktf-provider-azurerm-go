@@ -15,7 +15,7 @@ func (v *jsiiProxy_VirtualMachineOsProfileLinuxConfigSshKeysList) validateGetPar
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineOsProfileLinuxConfigSshKeysList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineOsProfileLinuxConfigSshKeysList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

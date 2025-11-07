@@ -43,7 +43,7 @@ func (w *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) va
 	return nil
 }
 
-func (w *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (w *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) va
 	return nil
 }
 
-func (w *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

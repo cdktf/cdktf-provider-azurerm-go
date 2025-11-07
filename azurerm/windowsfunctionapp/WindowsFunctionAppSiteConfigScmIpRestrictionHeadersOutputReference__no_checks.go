@@ -43,11 +43,11 @@ func (w *jsiiProxy_WindowsFunctionAppSiteConfigScmIpRestrictionHeadersOutputRefe
 	return nil
 }
 
-func (w *jsiiProxy_WindowsFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WindowsFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermAppConfigurationSecondaryReadKeyOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermAppConfigurationSecondaryReadKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermAppConfigurationSecondaryReadKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermAppConfigurationSecondaryReadKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermAppConfigurationSecondaryReadKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

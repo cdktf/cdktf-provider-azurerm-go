@@ -43,7 +43,7 @@ func (i *jsiiProxy_IothubCloudToDeviceOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (i *jsiiProxy_IothubCloudToDeviceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IothubCloudToDeviceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_IothubCloudToDeviceOutputReference) validatePutFeedbackParame
 	return nil
 }
 
-func (i *jsiiProxy_IothubCloudToDeviceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IothubCloudToDeviceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

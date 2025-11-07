@@ -43,11 +43,11 @@ func (c *jsiiProxy_CosmosdbGremlinDatabaseTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbGremlinDatabaseTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CosmosdbGremlinDatabaseTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbGremlinDatabaseTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbGremlinDatabaseTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

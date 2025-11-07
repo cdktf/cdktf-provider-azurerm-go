@@ -43,7 +43,7 @@ func (a *jsiiProxy_AutomanageConfigurationBackupRetentionPolicyWeeklyScheduleOut
 	return nil
 }
 
-func (a *jsiiProxy_AutomanageConfigurationBackupRetentionPolicyWeeklyScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutomanageConfigurationBackupRetentionPolicyWeeklyScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AutomanageConfigurationBackupRetentionPolicyWeeklyScheduleOut
 	return nil
 }
 
-func (a *jsiiProxy_AutomanageConfigurationBackupRetentionPolicyWeeklyScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutomanageConfigurationBackupRetentionPolicyWeeklyScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

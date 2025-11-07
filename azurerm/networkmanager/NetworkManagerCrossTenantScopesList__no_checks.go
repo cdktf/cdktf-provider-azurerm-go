@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkManagerCrossTenantScopesList) validateGetParameters(in
 	return nil
 }
 
-func (n *jsiiProxy_NetworkManagerCrossTenantScopesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkManagerCrossTenantScopesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

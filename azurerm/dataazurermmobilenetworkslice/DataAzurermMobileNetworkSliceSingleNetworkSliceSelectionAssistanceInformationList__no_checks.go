@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermMobileNetworkSliceSingleNetworkSliceSelectionAssis
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMobileNetworkSliceSingleNetworkSliceSelectionAssistanceInformationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermMobileNetworkSliceSingleNetworkSliceSelectionAssistanceInformationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

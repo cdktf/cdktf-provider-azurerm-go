@@ -43,11 +43,11 @@ func (p *jsiiProxy_PostgresqlFlexibleServerTimeoutsOutputReference) validateGetS
 	return nil
 }
 
-func (p *jsiiProxy_PostgresqlFlexibleServerTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PostgresqlFlexibleServerTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PostgresqlFlexibleServerTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PostgresqlFlexibleServerTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

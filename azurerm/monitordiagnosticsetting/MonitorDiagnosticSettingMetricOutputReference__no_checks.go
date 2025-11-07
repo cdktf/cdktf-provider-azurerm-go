@@ -43,7 +43,7 @@ func (m *jsiiProxy_MonitorDiagnosticSettingMetricOutputReference) validateGetStr
 	return nil
 }
 
-func (m *jsiiProxy_MonitorDiagnosticSettingMetricOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorDiagnosticSettingMetricOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MonitorDiagnosticSettingMetricOutputReference) validatePutRet
 	return nil
 }
 
-func (m *jsiiProxy_MonitorDiagnosticSettingMetricOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorDiagnosticSettingMetricOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

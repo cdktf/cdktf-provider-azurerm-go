@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataFactoryLinkedServiceSftpKeyVaultPasswordList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryLinkedServiceSftpKeyVaultPasswordList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryLinkedServiceSftpKeyVaultPasswordList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

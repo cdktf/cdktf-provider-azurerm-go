@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermCdnFrontdoorProfileIdentityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

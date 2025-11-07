@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApiManagementApiOperationRequestOutputReference) validateGetS
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementApiOperationRequestOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiManagementApiOperationRequestOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (a *jsiiProxy_ApiManagementApiOperationRequestOutputReference) validatePutR
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementApiOperationRequestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementApiOperationRequestOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

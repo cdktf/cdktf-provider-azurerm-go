@@ -43,11 +43,11 @@ func (w *jsiiProxy_WindowsWebAppSlotStorageAccountOutputReference) validateGetSt
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppSlotStorageAccountOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsWebAppSlotStorageAccountOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppSlotStorageAccountOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsWebAppSlotStorageAccountOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

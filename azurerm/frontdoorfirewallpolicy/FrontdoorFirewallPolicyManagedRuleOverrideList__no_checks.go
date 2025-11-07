@@ -15,7 +15,7 @@ func (f *jsiiProxy_FrontdoorFirewallPolicyManagedRuleOverrideList) validateGetPa
 	return nil
 }
 
-func (f *jsiiProxy_FrontdoorFirewallPolicyManagedRuleOverrideList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FrontdoorFirewallPolicyManagedRuleOverrideList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

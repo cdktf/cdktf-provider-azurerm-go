@@ -85,17 +85,17 @@ func (m *jsiiProxy_MonitorActionGroupLogicAppReceiverOutputReference) validateGe
 	return nil
 }
 
-func (m *jsiiProxy_MonitorActionGroupLogicAppReceiverOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (m *jsiiProxy_MonitorActionGroupLogicAppReceiverOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (m *jsiiProxy_MonitorActionGroupLogicAppReceiverOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (m *jsiiProxy_MonitorActionGroupLogicAppReceiverOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

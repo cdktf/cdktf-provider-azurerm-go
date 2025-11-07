@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermApplicationGatewayGatewayIpConfigurationList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApplicationGatewayGatewayIpConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermApplicationGatewayGatewayIpConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

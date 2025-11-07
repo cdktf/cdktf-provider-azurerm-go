@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermVmwarePrivateCloudManagementClusterOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermVmwarePrivateCloudManagementClusterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermVmwarePrivateCloudManagementClusterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermVmwarePrivateCloudManagementClusterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermVmwarePrivateCloudManagementClusterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

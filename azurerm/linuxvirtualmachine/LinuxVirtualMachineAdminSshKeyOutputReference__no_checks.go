@@ -43,11 +43,11 @@ func (l *jsiiProxy_LinuxVirtualMachineAdminSshKeyOutputReference) validateGetStr
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineAdminSshKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxVirtualMachineAdminSshKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineAdminSshKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxVirtualMachineAdminSshKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

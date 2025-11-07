@@ -43,11 +43,11 @@ func (l *jsiiProxy_LighthouseAssignmentTimeoutsOutputReference) validateGetStrin
 	return nil
 }
 
-func (l *jsiiProxy_LighthouseAssignmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LighthouseAssignmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LighthouseAssignmentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LighthouseAssignmentTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

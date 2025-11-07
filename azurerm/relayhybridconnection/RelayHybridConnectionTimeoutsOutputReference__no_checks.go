@@ -43,11 +43,11 @@ func (r *jsiiProxy_RelayHybridConnectionTimeoutsOutputReference) validateGetStri
 	return nil
 }
 
-func (r *jsiiProxy_RelayHybridConnectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RelayHybridConnectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RelayHybridConnectionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RelayHybridConnectionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

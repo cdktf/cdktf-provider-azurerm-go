@@ -43,7 +43,7 @@ func (f *jsiiProxy_FrontdoorBackendPoolOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (f *jsiiProxy_FrontdoorBackendPoolOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FrontdoorBackendPoolOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (f *jsiiProxy_FrontdoorBackendPoolOutputReference) validatePutBackendParame
 	return nil
 }
 
-func (f *jsiiProxy_FrontdoorBackendPoolOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FrontdoorBackendPoolOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

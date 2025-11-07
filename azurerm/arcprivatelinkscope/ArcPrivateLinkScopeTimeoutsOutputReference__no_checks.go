@@ -43,11 +43,11 @@ func (a *jsiiProxy_ArcPrivateLinkScopeTimeoutsOutputReference) validateGetString
 	return nil
 }
 
-func (a *jsiiProxy_ArcPrivateLinkScopeTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ArcPrivateLinkScopeTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ArcPrivateLinkScopeTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ArcPrivateLinkScopeTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

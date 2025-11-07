@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermMonitorActionGroupWebhookReceiverList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMonitorActionGroupWebhookReceiverList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermMonitorActionGroupWebhookReceiverList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

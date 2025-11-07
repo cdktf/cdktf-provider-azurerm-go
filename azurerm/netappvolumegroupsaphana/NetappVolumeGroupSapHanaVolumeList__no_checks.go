@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetappVolumeGroupSapHanaVolumeList) validateGetParameters(ind
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeGroupSapHanaVolumeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetappVolumeGroupSapHanaVolumeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

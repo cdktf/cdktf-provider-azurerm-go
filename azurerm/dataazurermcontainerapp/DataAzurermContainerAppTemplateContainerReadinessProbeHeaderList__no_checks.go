@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermContainerAppTemplateContainerReadinessProbeHeaderL
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermContainerAppTemplateContainerReadinessProbeHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermContainerAppTemplateContainerReadinessProbeHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

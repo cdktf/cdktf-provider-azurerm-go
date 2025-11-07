@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppConfigurationIdentityOutputReference) validateGetStringMap
 	return nil
 }
 
-func (a *jsiiProxy_AppConfigurationIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppConfigurationIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppConfigurationIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppConfigurationIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

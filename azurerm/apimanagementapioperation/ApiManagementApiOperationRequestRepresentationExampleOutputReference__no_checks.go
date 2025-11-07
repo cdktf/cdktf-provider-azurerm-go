@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApiManagementApiOperationRequestRepresentationExampleOutputRe
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementApiOperationRequestRepresentationExampleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiManagementApiOperationRequestRepresentationExampleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementApiOperationRequestRepresentationExampleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementApiOperationRequestRepresentationExampleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

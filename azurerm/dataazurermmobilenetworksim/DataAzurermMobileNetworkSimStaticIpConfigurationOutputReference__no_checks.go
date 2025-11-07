@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermMobileNetworkSimStaticIpConfigurationOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMobileNetworkSimStaticIpConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermMobileNetworkSimStaticIpConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMobileNetworkSimStaticIpConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermMobileNetworkSimStaticIpConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

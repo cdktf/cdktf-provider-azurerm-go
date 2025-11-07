@@ -67,14 +67,14 @@ type ApiManagementApiDiagnosticBackendResponseDataMaskingOutputReference interfa
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutHeaders(value interface{})
 	PutQueryParams(value interface{})
 	ResetHeaders()
 	ResetQueryParams()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -450,8 +450,8 @@ func (a *jsiiProxy_ApiManagementApiDiagnosticBackendResponseDataMaskingOutputRef
 	return returns
 }
 
-func (a *jsiiProxy_ApiManagementApiDiagnosticBackendResponseDataMaskingOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_ApiManagementApiDiagnosticBackendResponseDataMaskingOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -459,7 +459,7 @@ func (a *jsiiProxy_ApiManagementApiDiagnosticBackendResponseDataMaskingOutputRef
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -504,8 +504,8 @@ func (a *jsiiProxy_ApiManagementApiDiagnosticBackendResponseDataMaskingOutputRef
 	)
 }
 
-func (a *jsiiProxy_ApiManagementApiDiagnosticBackendResponseDataMaskingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_ApiManagementApiDiagnosticBackendResponseDataMaskingOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -513,7 +513,7 @@ func (a *jsiiProxy_ApiManagementApiDiagnosticBackendResponseDataMaskingOutputRef
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

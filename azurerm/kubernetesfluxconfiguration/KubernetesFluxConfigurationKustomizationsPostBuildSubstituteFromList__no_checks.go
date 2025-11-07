@@ -15,7 +15,7 @@ func (k *jsiiProxy_KubernetesFluxConfigurationKustomizationsPostBuildSubstituteF
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesFluxConfigurationKustomizationsPostBuildSubstituteFromList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesFluxConfigurationKustomizationsPostBuildSubstituteFromList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

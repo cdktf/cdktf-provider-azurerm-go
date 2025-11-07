@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermNginxDeploymentNetworkInterfaceList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNginxDeploymentNetworkInterfaceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermNginxDeploymentNetworkInterfaceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

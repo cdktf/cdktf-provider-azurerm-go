@@ -43,11 +43,11 @@ func (s *jsiiProxy_SignalrServiceNetworkAclPrivateEndpointOutputReference) valid
 	return nil
 }
 
-func (s *jsiiProxy_SignalrServiceNetworkAclPrivateEndpointOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SignalrServiceNetworkAclPrivateEndpointOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SignalrServiceNetworkAclPrivateEndpointOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SignalrServiceNetworkAclPrivateEndpointOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

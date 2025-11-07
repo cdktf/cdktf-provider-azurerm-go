@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesPlatformTelemetryList) va
 	return nil
 }
 
-func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesPlatformTelemetryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesPlatformTelemetryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

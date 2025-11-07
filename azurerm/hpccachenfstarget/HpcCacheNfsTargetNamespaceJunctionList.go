@@ -41,7 +41,7 @@ type HpcCacheNfsTargetNamespaceJunctionList interface {
 	Get(index *float64) HpcCacheNfsTargetNamespaceJunctionOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (h *jsiiProxy_HpcCacheNfsTargetNamespaceJunctionList) Get(index *float64) H
 	return returns
 }
 
-func (h *jsiiProxy_HpcCacheNfsTargetNamespaceJunctionList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := h.validateResolveParameters(_context); err != nil {
+func (h *jsiiProxy_HpcCacheNfsTargetNamespaceJunctionList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := h.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (h *jsiiProxy_HpcCacheNfsTargetNamespaceJunctionList) Resolve(_context cdkt
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

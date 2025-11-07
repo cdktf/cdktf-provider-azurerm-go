@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageAccountLocalUserPermissionScopePermissionsOutputRefere
 	return nil
 }
 
-func (s *jsiiProxy_StorageAccountLocalUserPermissionScopePermissionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageAccountLocalUserPermissionScopePermissionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageAccountLocalUserPermissionScopePermissionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageAccountLocalUserPermissionScopePermissionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

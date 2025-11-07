@@ -85,17 +85,17 @@ func (d *jsiiProxy_DataAzurermWindowsFunctionAppSiteConfigScmIpRestrictionHeader
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermWindowsFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DataAzurermWindowsFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermWindowsFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataAzurermWindowsFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

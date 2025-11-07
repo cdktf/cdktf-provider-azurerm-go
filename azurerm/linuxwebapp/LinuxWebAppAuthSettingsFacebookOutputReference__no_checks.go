@@ -43,11 +43,11 @@ func (l *jsiiProxy_LinuxWebAppAuthSettingsFacebookOutputReference) validateGetSt
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppAuthSettingsFacebookOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxWebAppAuthSettingsFacebookOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppAuthSettingsFacebookOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxWebAppAuthSettingsFacebookOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

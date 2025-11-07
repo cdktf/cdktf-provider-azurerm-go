@@ -70,10 +70,10 @@ type FunctionAppFlexConsumptionAuthSettingsV2AppleV2OutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -481,8 +481,8 @@ func (f *jsiiProxy_FunctionAppFlexConsumptionAuthSettingsV2AppleV2OutputReferenc
 	return returns
 }
 
-func (f *jsiiProxy_FunctionAppFlexConsumptionAuthSettingsV2AppleV2OutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := f.validateInterpolationForAttributeParameters(property); err != nil {
+func (f *jsiiProxy_FunctionAppFlexConsumptionAuthSettingsV2AppleV2OutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -490,15 +490,15 @@ func (f *jsiiProxy_FunctionAppFlexConsumptionAuthSettingsV2AppleV2OutputReferenc
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FunctionAppFlexConsumptionAuthSettingsV2AppleV2OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FunctionAppFlexConsumptionAuthSettingsV2AppleV2OutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -506,7 +506,7 @@ func (f *jsiiProxy_FunctionAppFlexConsumptionAuthSettingsV2AppleV2OutputReferenc
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

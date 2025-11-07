@@ -43,7 +43,7 @@ func (m *jsiiProxy_MonitorAutoscaleSettingProfileRuleOutputReference) validateGe
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAutoscaleSettingProfileRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorAutoscaleSettingProfileRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (m *jsiiProxy_MonitorAutoscaleSettingProfileRuleOutputReference) validatePu
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAutoscaleSettingProfileRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorAutoscaleSettingProfileRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

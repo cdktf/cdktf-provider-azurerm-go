@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisTimeoutsOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

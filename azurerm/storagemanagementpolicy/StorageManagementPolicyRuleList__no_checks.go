@@ -15,7 +15,7 @@ func (s *jsiiProxy_StorageManagementPolicyRuleList) validateGetParameters(index 
 	return nil
 }
 
-func (s *jsiiProxy_StorageManagementPolicyRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageManagementPolicyRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApiManagementApiOperationRequestQueryParameterExampleList) va
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementApiOperationRequestQueryParameterExampleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementApiOperationRequestQueryParameterExampleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

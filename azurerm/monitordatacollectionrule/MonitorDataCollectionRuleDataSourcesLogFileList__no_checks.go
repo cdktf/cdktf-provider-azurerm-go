@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesLogFileList) validateGetP
 	return nil
 }
 
-func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesLogFileList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesLogFileList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

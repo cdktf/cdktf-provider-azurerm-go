@@ -15,7 +15,7 @@ func (s *jsiiProxy_SentinelAlertRuleScheduledEntityMappingList) validateGetParam
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleScheduledEntityMappingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelAlertRuleScheduledEntityMappingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

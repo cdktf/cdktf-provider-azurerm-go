@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpringCloudAppRedisAssociationTimeoutsOutputReference) valida
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudAppRedisAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpringCloudAppRedisAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudAppRedisAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpringCloudAppRedisAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

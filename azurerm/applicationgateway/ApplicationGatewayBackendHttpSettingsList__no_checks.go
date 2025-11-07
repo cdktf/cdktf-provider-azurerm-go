@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApplicationGatewayBackendHttpSettingsList) validateGetParamet
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayBackendHttpSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationGatewayBackendHttpSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

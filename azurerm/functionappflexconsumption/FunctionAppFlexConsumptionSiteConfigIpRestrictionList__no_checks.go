@@ -15,7 +15,7 @@ func (f *jsiiProxy_FunctionAppFlexConsumptionSiteConfigIpRestrictionList) valida
 	return nil
 }
 
-func (f *jsiiProxy_FunctionAppFlexConsumptionSiteConfigIpRestrictionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FunctionAppFlexConsumptionSiteConfigIpRestrictionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

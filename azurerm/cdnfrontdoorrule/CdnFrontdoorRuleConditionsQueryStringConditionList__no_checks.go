@@ -15,7 +15,7 @@ func (c *jsiiProxy_CdnFrontdoorRuleConditionsQueryStringConditionList) validateG
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorRuleConditionsQueryStringConditionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnFrontdoorRuleConditionsQueryStringConditionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

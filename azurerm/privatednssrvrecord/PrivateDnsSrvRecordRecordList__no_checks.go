@@ -15,7 +15,7 @@ func (p *jsiiProxy_PrivateDnsSrvRecordRecordList) validateGetParameters(index *f
 	return nil
 }
 
-func (p *jsiiProxy_PrivateDnsSrvRecordRecordList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivateDnsSrvRecordRecordList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

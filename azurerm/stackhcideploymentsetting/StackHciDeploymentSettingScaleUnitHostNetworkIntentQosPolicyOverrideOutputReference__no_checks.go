@@ -43,11 +43,11 @@ func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitHostNetworkIntentQosPolicyO
 	return nil
 }
 
-func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitHostNetworkIntentQosPolicyOverrideOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitHostNetworkIntentQosPolicyOverrideOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitHostNetworkIntentQosPolicyOverrideOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitHostNetworkIntentQosPolicyOverrideOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

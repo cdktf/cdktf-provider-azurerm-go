@@ -15,7 +15,7 @@ func (e *jsiiProxy_EventgridSystemTopicEventSubscriptionDeliveryPropertyList) va
 	return nil
 }
 
-func (e *jsiiProxy_EventgridSystemTopicEventSubscriptionDeliveryPropertyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventgridSystemTopicEventSubscriptionDeliveryPropertyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

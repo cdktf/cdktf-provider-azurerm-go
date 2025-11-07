@@ -43,11 +43,11 @@ func (m *jsiiProxy_MysqlFlexibleServerStorageOutputReference) validateGetStringM
 	return nil
 }
 
-func (m *jsiiProxy_MysqlFlexibleServerStorageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MysqlFlexibleServerStorageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MysqlFlexibleServerStorageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MysqlFlexibleServerStorageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

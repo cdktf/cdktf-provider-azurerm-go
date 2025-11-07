@@ -43,11 +43,11 @@ func (c *jsiiProxy_CognitiveAccountNetworkAclsVirtualNetworkRulesOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_CognitiveAccountNetworkAclsVirtualNetworkRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CognitiveAccountNetworkAclsVirtualNetworkRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CognitiveAccountNetworkAclsVirtualNetworkRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitiveAccountNetworkAclsVirtualNetworkRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

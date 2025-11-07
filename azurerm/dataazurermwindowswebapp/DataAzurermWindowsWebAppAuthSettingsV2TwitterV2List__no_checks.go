@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermWindowsWebAppAuthSettingsV2TwitterV2List) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermWindowsWebAppAuthSettingsV2TwitterV2List) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermWindowsWebAppAuthSettingsV2TwitterV2List) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

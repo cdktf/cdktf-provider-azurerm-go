@@ -15,7 +15,7 @@ func (d *jsiiProxy_DnsMxRecordRecordList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (d *jsiiProxy_DnsMxRecordRecordList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DnsMxRecordRecordList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

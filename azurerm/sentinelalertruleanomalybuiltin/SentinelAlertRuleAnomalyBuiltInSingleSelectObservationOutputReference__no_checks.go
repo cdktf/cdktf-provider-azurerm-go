@@ -43,11 +43,11 @@ func (s *jsiiProxy_SentinelAlertRuleAnomalyBuiltInSingleSelectObservationOutputR
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleAnomalyBuiltInSingleSelectObservationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SentinelAlertRuleAnomalyBuiltInSingleSelectObservationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleAnomalyBuiltInSingleSelectObservationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelAlertRuleAnomalyBuiltInSingleSelectObservationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

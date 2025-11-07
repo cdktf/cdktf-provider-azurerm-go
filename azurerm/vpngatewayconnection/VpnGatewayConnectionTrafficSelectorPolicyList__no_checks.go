@@ -15,7 +15,7 @@ func (v *jsiiProxy_VpnGatewayConnectionTrafficSelectorPolicyList) validateGetPar
 	return nil
 }
 
-func (v *jsiiProxy_VpnGatewayConnectionTrafficSelectorPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpnGatewayConnectionTrafficSelectorPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

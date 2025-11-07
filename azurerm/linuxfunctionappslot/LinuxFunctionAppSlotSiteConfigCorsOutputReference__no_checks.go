@@ -43,11 +43,11 @@ func (l *jsiiProxy_LinuxFunctionAppSlotSiteConfigCorsOutputReference) validateGe
 	return nil
 }
 
-func (l *jsiiProxy_LinuxFunctionAppSlotSiteConfigCorsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxFunctionAppSlotSiteConfigCorsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LinuxFunctionAppSlotSiteConfigCorsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxFunctionAppSlotSiteConfigCorsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

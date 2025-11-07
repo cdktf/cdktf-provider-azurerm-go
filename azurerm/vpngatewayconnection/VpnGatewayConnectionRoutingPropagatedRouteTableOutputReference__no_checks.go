@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpnGatewayConnectionRoutingPropagatedRouteTableOutputReferenc
 	return nil
 }
 
-func (v *jsiiProxy_VpnGatewayConnectionRoutingPropagatedRouteTableOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpnGatewayConnectionRoutingPropagatedRouteTableOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpnGatewayConnectionRoutingPropagatedRouteTableOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpnGatewayConnectionRoutingPropagatedRouteTableOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

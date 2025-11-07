@@ -43,11 +43,11 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetScaleInOutputReference) validateGe
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineScaleSetScaleInOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetScaleInOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineScaleSetScaleInOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetScaleInOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

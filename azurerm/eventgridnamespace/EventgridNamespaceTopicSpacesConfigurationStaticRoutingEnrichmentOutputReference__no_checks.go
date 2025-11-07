@@ -43,11 +43,11 @@ func (e *jsiiProxy_EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrich
 	return nil
 }
 
-func (e *jsiiProxy_EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

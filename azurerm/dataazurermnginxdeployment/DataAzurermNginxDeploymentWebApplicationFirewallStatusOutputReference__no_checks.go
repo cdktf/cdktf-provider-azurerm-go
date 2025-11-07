@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermNginxDeploymentWebApplicationFirewallStatusOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNginxDeploymentWebApplicationFirewallStatusOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermNginxDeploymentWebApplicationFirewallStatusOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNginxDeploymentWebApplicationFirewallStatusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermNginxDeploymentWebApplicationFirewallStatusOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

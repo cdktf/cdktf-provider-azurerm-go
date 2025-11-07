@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermNginxDeploymentLoggingStorageAccountOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNginxDeploymentLoggingStorageAccountOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermNginxDeploymentLoggingStorageAccountOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNginxDeploymentLoggingStorageAccountOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermNginxDeploymentLoggingStorageAccountOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

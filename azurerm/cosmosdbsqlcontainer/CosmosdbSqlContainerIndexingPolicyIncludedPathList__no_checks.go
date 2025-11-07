@@ -15,7 +15,7 @@ func (c *jsiiProxy_CosmosdbSqlContainerIndexingPolicyIncludedPathList) validateG
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbSqlContainerIndexingPolicyIncludedPathList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbSqlContainerIndexingPolicyIncludedPathList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

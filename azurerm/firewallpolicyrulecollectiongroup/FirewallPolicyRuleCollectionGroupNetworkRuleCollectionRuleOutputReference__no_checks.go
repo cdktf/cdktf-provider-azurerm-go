@@ -43,11 +43,11 @@ func (f *jsiiProxy_FirewallPolicyRuleCollectionGroupNetworkRuleCollectionRuleOut
 	return nil
 }
 
-func (f *jsiiProxy_FirewallPolicyRuleCollectionGroupNetworkRuleCollectionRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirewallPolicyRuleCollectionGroupNetworkRuleCollectionRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FirewallPolicyRuleCollectionGroupNetworkRuleCollectionRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirewallPolicyRuleCollectionGroupNetworkRuleCollectionRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

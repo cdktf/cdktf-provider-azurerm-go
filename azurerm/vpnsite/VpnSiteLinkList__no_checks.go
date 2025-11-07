@@ -15,7 +15,7 @@ func (v *jsiiProxy_VpnSiteLinkList) validateGetParameters(index *float64) error 
 	return nil
 }
 
-func (v *jsiiProxy_VpnSiteLinkList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpnSiteLinkList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

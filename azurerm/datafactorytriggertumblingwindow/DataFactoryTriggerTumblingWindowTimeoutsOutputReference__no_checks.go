@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFactoryTriggerTumblingWindowTimeoutsOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryTriggerTumblingWindowTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFactoryTriggerTumblingWindowTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryTriggerTumblingWindowTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryTriggerTumblingWindowTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

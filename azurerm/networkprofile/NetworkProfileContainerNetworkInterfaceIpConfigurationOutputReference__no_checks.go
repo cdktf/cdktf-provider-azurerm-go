@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkProfileContainerNetworkInterfaceIpConfigurationOutputR
 	return nil
 }
 
-func (n *jsiiProxy_NetworkProfileContainerNetworkInterfaceIpConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkProfileContainerNetworkInterfaceIpConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkProfileContainerNetworkInterfaceIpConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkProfileContainerNetworkInterfaceIpConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

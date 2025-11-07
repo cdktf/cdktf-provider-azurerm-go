@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermPolicyAssignmentNonComplianceMessageOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermPolicyAssignmentNonComplianceMessageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermPolicyAssignmentNonComplianceMessageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermPolicyAssignmentNonComplianceMessageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermPolicyAssignmentNonComplianceMessageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

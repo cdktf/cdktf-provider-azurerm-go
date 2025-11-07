@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermRecoveryServicesVaultIdentityList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermRecoveryServicesVaultIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermRecoveryServicesVaultIdentityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

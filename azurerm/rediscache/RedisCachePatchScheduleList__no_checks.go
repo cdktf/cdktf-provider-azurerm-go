@@ -15,7 +15,7 @@ func (r *jsiiProxy_RedisCachePatchScheduleList) validateGetParameters(index *flo
 	return nil
 }
 
-func (r *jsiiProxy_RedisCachePatchScheduleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisCachePatchScheduleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (l *jsiiProxy_LinuxFunctionAppSiteConfigApplicationStackOutputReference) va
 	return nil
 }
 
-func (l *jsiiProxy_LinuxFunctionAppSiteConfigApplicationStackOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxFunctionAppSiteConfigApplicationStackOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LinuxFunctionAppSiteConfigApplicationStackOutputReference) va
 	return nil
 }
 
-func (l *jsiiProxy_LinuxFunctionAppSiteConfigApplicationStackOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxFunctionAppSiteConfigApplicationStackOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

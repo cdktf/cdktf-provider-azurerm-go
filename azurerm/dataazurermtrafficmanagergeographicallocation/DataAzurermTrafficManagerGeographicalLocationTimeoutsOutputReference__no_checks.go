@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermTrafficManagerGeographicalLocationTimeoutsOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermTrafficManagerGeographicalLocationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermTrafficManagerGeographicalLocationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermTrafficManagerGeographicalLocationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermTrafficManagerGeographicalLocationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

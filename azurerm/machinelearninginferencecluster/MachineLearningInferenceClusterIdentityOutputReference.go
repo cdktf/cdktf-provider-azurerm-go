@@ -71,11 +71,11 @@ type MachineLearningInferenceClusterIdentityOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetIdentityIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -493,8 +493,8 @@ func (m *jsiiProxy_MachineLearningInferenceClusterIdentityOutputReference) Inter
 	return returns
 }
 
-func (m *jsiiProxy_MachineLearningInferenceClusterIdentityOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MachineLearningInferenceClusterIdentityOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -502,7 +502,7 @@ func (m *jsiiProxy_MachineLearningInferenceClusterIdentityOutputReference) Inter
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -517,8 +517,8 @@ func (m *jsiiProxy_MachineLearningInferenceClusterIdentityOutputReference) Reset
 	)
 }
 
-func (m *jsiiProxy_MachineLearningInferenceClusterIdentityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MachineLearningInferenceClusterIdentityOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -526,7 +526,7 @@ func (m *jsiiProxy_MachineLearningInferenceClusterIdentityOutputReference) Resol
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

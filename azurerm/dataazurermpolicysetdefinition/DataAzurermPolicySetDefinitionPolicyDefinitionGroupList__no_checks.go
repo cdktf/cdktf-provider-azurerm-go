@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermPolicySetDefinitionPolicyDefinitionGroupList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermPolicySetDefinitionPolicyDefinitionGroupList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermPolicySetDefinitionPolicyDefinitionGroupList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

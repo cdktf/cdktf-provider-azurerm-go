@@ -15,7 +15,7 @@ func (h *jsiiProxy_HpcCacheNfsTargetNamespaceJunctionList) validateGetParameters
 	return nil
 }
 
-func (h *jsiiProxy_HpcCacheNfsTargetNamespaceJunctionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HpcCacheNfsTargetNamespaceJunctionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

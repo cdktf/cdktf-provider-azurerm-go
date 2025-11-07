@@ -15,7 +15,7 @@ func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkLi
 	return nil
 }
 
-func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

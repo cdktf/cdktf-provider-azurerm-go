@@ -15,7 +15,7 @@ func (s *jsiiProxy_SpringCloudServiceContainerRegistryList) validateGetParameter
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudServiceContainerRegistryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpringCloudServiceContainerRegistryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

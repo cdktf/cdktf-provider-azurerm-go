@@ -15,7 +15,7 @@ func (c *jsiiProxy_CdnEndpointDeliveryRulePostArgConditionList) validateGetParam
 	return nil
 }
 
-func (c *jsiiProxy_CdnEndpointDeliveryRulePostArgConditionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnEndpointDeliveryRulePostArgConditionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

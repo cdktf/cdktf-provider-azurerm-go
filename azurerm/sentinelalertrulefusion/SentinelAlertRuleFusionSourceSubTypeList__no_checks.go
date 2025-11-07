@@ -15,7 +15,7 @@ func (s *jsiiProxy_SentinelAlertRuleFusionSourceSubTypeList) validateGetParamete
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleFusionSourceSubTypeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelAlertRuleFusionSourceSubTypeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

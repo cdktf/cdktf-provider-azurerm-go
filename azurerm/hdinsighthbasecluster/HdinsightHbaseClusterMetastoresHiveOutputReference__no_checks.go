@@ -43,11 +43,11 @@ func (h *jsiiProxy_HdinsightHbaseClusterMetastoresHiveOutputReference) validateG
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightHbaseClusterMetastoresHiveOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HdinsightHbaseClusterMetastoresHiveOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightHbaseClusterMetastoresHiveOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightHbaseClusterMetastoresHiveOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

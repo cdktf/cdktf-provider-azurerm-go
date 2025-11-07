@@ -43,7 +43,7 @@ func (m *jsiiProxy_MonitorDataCollectionRuleStreamDeclarationOutputReference) va
 	return nil
 }
 
-func (m *jsiiProxy_MonitorDataCollectionRuleStreamDeclarationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorDataCollectionRuleStreamDeclarationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MonitorDataCollectionRuleStreamDeclarationOutputReference) va
 	return nil
 }
 
-func (m *jsiiProxy_MonitorDataCollectionRuleStreamDeclarationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorDataCollectionRuleStreamDeclarationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

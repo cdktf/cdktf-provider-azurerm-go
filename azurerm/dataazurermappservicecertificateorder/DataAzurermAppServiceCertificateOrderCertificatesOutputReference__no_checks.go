@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermAppServiceCertificateOrderCertificatesOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermAppServiceCertificateOrderCertificatesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermAppServiceCertificateOrderCertificatesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermAppServiceCertificateOrderCertificatesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermAppServiceCertificateOrderCertificatesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

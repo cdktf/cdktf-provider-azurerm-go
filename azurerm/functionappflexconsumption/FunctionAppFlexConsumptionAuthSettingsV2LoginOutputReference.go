@@ -96,7 +96,7 @@ type FunctionAppFlexConsumptionAuthSettingsV2LoginOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetAllowedExternalRedirectUrls()
 	ResetCookieExpirationConvention()
 	ResetCookieExpirationTime()
@@ -110,7 +110,7 @@ type FunctionAppFlexConsumptionAuthSettingsV2LoginOutputReference interface {
 	ResetValidateNonce()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -787,8 +787,8 @@ func (f *jsiiProxy_FunctionAppFlexConsumptionAuthSettingsV2LoginOutputReference)
 	return returns
 }
 
-func (f *jsiiProxy_FunctionAppFlexConsumptionAuthSettingsV2LoginOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := f.validateInterpolationForAttributeParameters(property); err != nil {
+func (f *jsiiProxy_FunctionAppFlexConsumptionAuthSettingsV2LoginOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -796,7 +796,7 @@ func (f *jsiiProxy_FunctionAppFlexConsumptionAuthSettingsV2LoginOutputReference)
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -891,8 +891,8 @@ func (f *jsiiProxy_FunctionAppFlexConsumptionAuthSettingsV2LoginOutputReference)
 	)
 }
 
-func (f *jsiiProxy_FunctionAppFlexConsumptionAuthSettingsV2LoginOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FunctionAppFlexConsumptionAuthSettingsV2LoginOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -900,7 +900,7 @@ func (f *jsiiProxy_FunctionAppFlexConsumptionAuthSettingsV2LoginOutputReference)
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -15,7 +15,7 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigura
 	return nil
 }
 
-func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

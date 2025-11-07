@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermExpressRouteCircuitPeeringsOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermExpressRouteCircuitPeeringsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermExpressRouteCircuitPeeringsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermExpressRouteCircuitPeeringsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermExpressRouteCircuitPeeringsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

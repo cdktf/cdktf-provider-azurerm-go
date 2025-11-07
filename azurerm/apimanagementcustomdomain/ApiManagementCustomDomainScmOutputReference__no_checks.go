@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApiManagementCustomDomainScmOutputReference) validateGetStrin
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementCustomDomainScmOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiManagementCustomDomainScmOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementCustomDomainScmOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementCustomDomainScmOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

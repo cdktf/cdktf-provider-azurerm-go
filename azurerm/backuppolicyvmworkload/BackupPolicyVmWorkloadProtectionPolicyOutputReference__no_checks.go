@@ -43,7 +43,7 @@ func (b *jsiiProxy_BackupPolicyVmWorkloadProtectionPolicyOutputReference) valida
 	return nil
 }
 
-func (b *jsiiProxy_BackupPolicyVmWorkloadProtectionPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BackupPolicyVmWorkloadProtectionPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -71,7 +71,7 @@ func (b *jsiiProxy_BackupPolicyVmWorkloadProtectionPolicyOutputReference) valida
 	return nil
 }
 
-func (b *jsiiProxy_BackupPolicyVmWorkloadProtectionPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupPolicyVmWorkloadProtectionPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

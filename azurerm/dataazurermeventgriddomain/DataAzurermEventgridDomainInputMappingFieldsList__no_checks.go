@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermEventgridDomainInputMappingFieldsList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermEventgridDomainInputMappingFieldsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermEventgridDomainInputMappingFieldsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

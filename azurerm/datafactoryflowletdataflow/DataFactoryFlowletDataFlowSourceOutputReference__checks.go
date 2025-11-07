@@ -85,9 +85,9 @@ func (d *jsiiProxy_DataFactoryFlowletDataFlowSourceOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryFlowletDataFlowSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DataFactoryFlowletDataFlowSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -148,9 +148,9 @@ func (d *jsiiProxy_DataFactoryFlowletDataFlowSourceOutputReference) validatePutS
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryFlowletDataFlowSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataFactoryFlowletDataFlowSourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

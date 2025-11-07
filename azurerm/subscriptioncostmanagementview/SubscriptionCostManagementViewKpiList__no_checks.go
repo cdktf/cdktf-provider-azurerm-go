@@ -15,7 +15,7 @@ func (s *jsiiProxy_SubscriptionCostManagementViewKpiList) validateGetParameters(
 	return nil
 }
 
-func (s *jsiiProxy_SubscriptionCostManagementViewKpiList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SubscriptionCostManagementViewKpiList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

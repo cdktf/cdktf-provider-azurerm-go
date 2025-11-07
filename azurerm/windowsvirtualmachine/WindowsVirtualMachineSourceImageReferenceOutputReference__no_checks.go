@@ -43,11 +43,11 @@ func (w *jsiiProxy_WindowsVirtualMachineSourceImageReferenceOutputReference) val
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineSourceImageReferenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsVirtualMachineSourceImageReferenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineSourceImageReferenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsVirtualMachineSourceImageReferenceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

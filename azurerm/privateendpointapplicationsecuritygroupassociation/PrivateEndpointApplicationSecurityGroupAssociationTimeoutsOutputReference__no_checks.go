@@ -43,11 +43,11 @@ func (p *jsiiProxy_PrivateEndpointApplicationSecurityGroupAssociationTimeoutsOut
 	return nil
 }
 
-func (p *jsiiProxy_PrivateEndpointApplicationSecurityGroupAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivateEndpointApplicationSecurityGroupAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrivateEndpointApplicationSecurityGroupAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivateEndpointApplicationSecurityGroupAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServiceFabricManagedClusterNodeTypeVmSecretsList) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricManagedClusterNodeTypeVmSecretsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceFabricManagedClusterNodeTypeVmSecretsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

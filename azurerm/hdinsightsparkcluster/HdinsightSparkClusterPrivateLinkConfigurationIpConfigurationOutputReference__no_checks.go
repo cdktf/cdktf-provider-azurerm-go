@@ -43,11 +43,11 @@ func (h *jsiiProxy_HdinsightSparkClusterPrivateLinkConfigurationIpConfigurationO
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightSparkClusterPrivateLinkConfigurationIpConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HdinsightSparkClusterPrivateLinkConfigurationIpConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightSparkClusterPrivateLinkConfigurationIpConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightSparkClusterPrivateLinkConfigurationIpConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

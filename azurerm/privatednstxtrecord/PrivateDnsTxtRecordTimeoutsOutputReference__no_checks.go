@@ -43,11 +43,11 @@ func (p *jsiiProxy_PrivateDnsTxtRecordTimeoutsOutputReference) validateGetString
 	return nil
 }
 
-func (p *jsiiProxy_PrivateDnsTxtRecordTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivateDnsTxtRecordTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrivateDnsTxtRecordTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivateDnsTxtRecordTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

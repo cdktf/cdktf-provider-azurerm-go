@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConsumptionBudgetResourceGroupFilterDimensionList) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ConsumptionBudgetResourceGroupFilterDimensionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConsumptionBudgetResourceGroupFilterDimensionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

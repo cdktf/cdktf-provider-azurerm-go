@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerAppTemplateOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppTemplateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAppTemplateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (c *jsiiProxy_ContainerAppTemplateOutputReference) validatePutVolumeParamet
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppTemplateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppTemplateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

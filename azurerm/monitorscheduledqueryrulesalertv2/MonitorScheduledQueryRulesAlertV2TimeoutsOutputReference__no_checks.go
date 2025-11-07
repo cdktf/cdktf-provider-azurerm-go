@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitorScheduledQueryRulesAlertV2TimeoutsOutputReference) val
 	return nil
 }
 
-func (m *jsiiProxy_MonitorScheduledQueryRulesAlertV2TimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorScheduledQueryRulesAlertV2TimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorScheduledQueryRulesAlertV2TimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorScheduledQueryRulesAlertV2TimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

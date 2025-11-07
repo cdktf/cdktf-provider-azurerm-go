@@ -215,6 +215,10 @@ func (j *jsiiProxy_WindowsWebApp) validateSetVirtualNetworkBackupRestoreEnabledP
 	return nil
 }
 
+func (j *jsiiProxy_WindowsWebApp) validateSetVirtualNetworkImagePullEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsWebApp) validateSetVirtualNetworkSubnetIdParameters(val *string) error {
 	return nil
 }

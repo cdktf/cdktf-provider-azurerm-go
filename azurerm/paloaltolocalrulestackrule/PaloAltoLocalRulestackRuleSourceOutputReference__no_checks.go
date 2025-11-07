@@ -43,11 +43,11 @@ func (p *jsiiProxy_PaloAltoLocalRulestackRuleSourceOutputReference) validateGetS
 	return nil
 }
 
-func (p *jsiiProxy_PaloAltoLocalRulestackRuleSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PaloAltoLocalRulestackRuleSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PaloAltoLocalRulestackRuleSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PaloAltoLocalRulestackRuleSourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

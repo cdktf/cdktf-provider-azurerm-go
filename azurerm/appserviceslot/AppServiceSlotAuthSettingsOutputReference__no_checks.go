@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppServiceSlotAuthSettingsOutputReference) validateGetStringM
 	return nil
 }
 
-func (a *jsiiProxy_AppServiceSlotAuthSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppServiceSlotAuthSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (a *jsiiProxy_AppServiceSlotAuthSettingsOutputReference) validatePutTwitter
 	return nil
 }
 
-func (a *jsiiProxy_AppServiceSlotAuthSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppServiceSlotAuthSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

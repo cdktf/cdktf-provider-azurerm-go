@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermBackupPolicyFileShareTimeoutsOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermBackupPolicyFileShareTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermBackupPolicyFileShareTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermBackupPolicyFileShareTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermBackupPolicyFileShareTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

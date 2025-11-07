@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermPostgresqlServerIdentityList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermPostgresqlServerIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermPostgresqlServerIdentityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

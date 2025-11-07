@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerAppTemplateTcpScaleRuleAuthenticationList) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppTemplateTcpScaleRuleAuthenticationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppTemplateTcpScaleRuleAuthenticationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

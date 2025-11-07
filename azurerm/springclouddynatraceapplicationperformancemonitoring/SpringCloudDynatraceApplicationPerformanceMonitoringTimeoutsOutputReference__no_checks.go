@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpringCloudDynatraceApplicationPerformanceMonitoringTimeoutsO
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudDynatraceApplicationPerformanceMonitoringTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpringCloudDynatraceApplicationPerformanceMonitoringTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudDynatraceApplicationPerformanceMonitoringTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpringCloudDynatraceApplicationPerformanceMonitoringTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

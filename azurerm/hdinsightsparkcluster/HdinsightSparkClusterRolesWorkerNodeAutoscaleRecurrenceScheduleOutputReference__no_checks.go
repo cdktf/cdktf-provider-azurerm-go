@@ -43,11 +43,11 @@ func (h *jsiiProxy_HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceSchedu
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

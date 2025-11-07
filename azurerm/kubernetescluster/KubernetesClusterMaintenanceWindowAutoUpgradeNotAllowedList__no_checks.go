@@ -15,7 +15,7 @@ func (k *jsiiProxy_KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedList) 
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (l *jsiiProxy_LinuxVirtualMachineOsImageNotificationOutputReference) valida
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineOsImageNotificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxVirtualMachineOsImageNotificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineOsImageNotificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxVirtualMachineOsImageNotificationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

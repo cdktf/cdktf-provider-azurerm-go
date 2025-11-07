@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermKubernetesClusterLinuxProfileSshKeyOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKubernetesClusterLinuxProfileSshKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermKubernetesClusterLinuxProfileSshKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKubernetesClusterLinuxProfileSshKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermKubernetesClusterLinuxProfileSshKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

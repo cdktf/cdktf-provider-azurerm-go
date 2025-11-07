@@ -15,7 +15,7 @@ func (b *jsiiProxy_BatchPoolCertificateList) validateGetParameters(index *float6
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolCertificateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchPoolCertificateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

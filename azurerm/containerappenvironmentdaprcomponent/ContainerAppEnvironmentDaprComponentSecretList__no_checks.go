@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretList) validateGetPa
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

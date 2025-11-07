@@ -43,11 +43,11 @@ func (l *jsiiProxy_LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWit
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

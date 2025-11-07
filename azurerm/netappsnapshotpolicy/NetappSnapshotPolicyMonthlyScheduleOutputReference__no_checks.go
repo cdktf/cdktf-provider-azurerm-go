@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetappSnapshotPolicyMonthlyScheduleOutputReference) validateG
 	return nil
 }
 
-func (n *jsiiProxy_NetappSnapshotPolicyMonthlyScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetappSnapshotPolicyMonthlyScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetappSnapshotPolicyMonthlyScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetappSnapshotPolicyMonthlyScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

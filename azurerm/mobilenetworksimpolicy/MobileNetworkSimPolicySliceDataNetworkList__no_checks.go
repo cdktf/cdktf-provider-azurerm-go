@@ -15,7 +15,7 @@ func (m *jsiiProxy_MobileNetworkSimPolicySliceDataNetworkList) validateGetParame
 	return nil
 }
 
-func (m *jsiiProxy_MobileNetworkSimPolicySliceDataNetworkList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MobileNetworkSimPolicySliceDataNetworkList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

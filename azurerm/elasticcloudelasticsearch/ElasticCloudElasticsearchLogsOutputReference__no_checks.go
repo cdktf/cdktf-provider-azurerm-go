@@ -43,7 +43,7 @@ func (e *jsiiProxy_ElasticCloudElasticsearchLogsOutputReference) validateGetStri
 	return nil
 }
 
-func (e *jsiiProxy_ElasticCloudElasticsearchLogsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElasticCloudElasticsearchLogsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_ElasticCloudElasticsearchLogsOutputReference) validatePutFilt
 	return nil
 }
 
-func (e *jsiiProxy_ElasticCloudElasticsearchLogsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticCloudElasticsearchLogsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

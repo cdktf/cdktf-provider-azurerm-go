@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApiManagementStandaloneGatewaySkuOutputReference) validateGet
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementStandaloneGatewaySkuOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiManagementStandaloneGatewaySkuOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementStandaloneGatewaySkuOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementStandaloneGatewaySkuOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

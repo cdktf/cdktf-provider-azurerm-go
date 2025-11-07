@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesWindowsFirewallLogOutputR
 	return nil
 }
 
-func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesWindowsFirewallLogOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesWindowsFirewallLogOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesWindowsFirewallLogOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesWindowsFirewallLogOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

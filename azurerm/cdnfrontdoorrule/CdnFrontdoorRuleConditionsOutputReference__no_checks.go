@@ -43,7 +43,7 @@ func (c *jsiiProxy_CdnFrontdoorRuleConditionsOutputReference) validateGetStringM
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorRuleConditionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CdnFrontdoorRuleConditionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -123,7 +123,7 @@ func (c *jsiiProxy_CdnFrontdoorRuleConditionsOutputReference) validatePutUrlPath
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorRuleConditionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnFrontdoorRuleConditionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

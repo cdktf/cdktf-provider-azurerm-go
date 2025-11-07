@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualMachinePacketCaptureFilterOutputReference) validateGet
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachinePacketCaptureFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualMachinePacketCaptureFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachinePacketCaptureFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachinePacketCaptureFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

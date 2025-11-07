@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermVpnGatewayBgpSettingsInstance0BgpPeeringAddressOut
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermVpnGatewayBgpSettingsInstance0BgpPeeringAddressOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermVpnGatewayBgpSettingsInstance0BgpPeeringAddressOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermVpnGatewayBgpSettingsInstance0BgpPeeringAddressOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermVpnGatewayBgpSettingsInstance0BgpPeeringAddressOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

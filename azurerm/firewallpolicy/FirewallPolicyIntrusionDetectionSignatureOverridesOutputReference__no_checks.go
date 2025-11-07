@@ -43,11 +43,11 @@ func (f *jsiiProxy_FirewallPolicyIntrusionDetectionSignatureOverridesOutputRefer
 	return nil
 }
 
-func (f *jsiiProxy_FirewallPolicyIntrusionDetectionSignatureOverridesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirewallPolicyIntrusionDetectionSignatureOverridesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FirewallPolicyIntrusionDetectionSignatureOverridesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirewallPolicyIntrusionDetectionSignatureOverridesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

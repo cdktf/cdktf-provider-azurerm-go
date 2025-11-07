@@ -81,12 +81,12 @@ type SynapseWorkspaceGithubRepoOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetGitUrl()
 	ResetLastCommitId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -608,8 +608,8 @@ func (s *jsiiProxy_SynapseWorkspaceGithubRepoOutputReference) InterpolationAsLis
 	return returns
 }
 
-func (s *jsiiProxy_SynapseWorkspaceGithubRepoOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SynapseWorkspaceGithubRepoOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -617,7 +617,7 @@ func (s *jsiiProxy_SynapseWorkspaceGithubRepoOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -640,8 +640,8 @@ func (s *jsiiProxy_SynapseWorkspaceGithubRepoOutputReference) ResetLastCommitId(
 	)
 }
 
-func (s *jsiiProxy_SynapseWorkspaceGithubRepoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SynapseWorkspaceGithubRepoOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -649,7 +649,7 @@ func (s *jsiiProxy_SynapseWorkspaceGithubRepoOutputReference) Resolve(_context c
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

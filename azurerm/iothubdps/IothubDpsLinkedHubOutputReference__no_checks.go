@@ -43,11 +43,11 @@ func (i *jsiiProxy_IothubDpsLinkedHubOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (i *jsiiProxy_IothubDpsLinkedHubOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IothubDpsLinkedHubOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IothubDpsLinkedHubOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IothubDpsLinkedHubOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

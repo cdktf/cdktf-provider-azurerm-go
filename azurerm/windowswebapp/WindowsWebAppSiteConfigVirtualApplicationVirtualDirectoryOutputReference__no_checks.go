@@ -43,11 +43,11 @@ func (w *jsiiProxy_WindowsWebAppSiteConfigVirtualApplicationVirtualDirectoryOutp
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppSiteConfigVirtualApplicationVirtualDirectoryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsWebAppSiteConfigVirtualApplicationVirtualDirectoryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppSiteConfigVirtualApplicationVirtualDirectoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsWebAppSiteConfigVirtualApplicationVirtualDirectoryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

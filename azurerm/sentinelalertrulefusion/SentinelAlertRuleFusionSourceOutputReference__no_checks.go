@@ -43,7 +43,7 @@ func (s *jsiiProxy_SentinelAlertRuleFusionSourceOutputReference) validateGetStri
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleFusionSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SentinelAlertRuleFusionSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SentinelAlertRuleFusionSourceOutputReference) validatePutSubT
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleFusionSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelAlertRuleFusionSourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

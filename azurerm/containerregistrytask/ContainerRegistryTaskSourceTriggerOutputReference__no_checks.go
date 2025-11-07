@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerRegistryTaskSourceTriggerOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ContainerRegistryTaskSourceTriggerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerRegistryTaskSourceTriggerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ContainerRegistryTaskSourceTriggerOutputReference) validatePu
 	return nil
 }
 
-func (c *jsiiProxy_ContainerRegistryTaskSourceTriggerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerRegistryTaskSourceTriggerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (o *jsiiProxy_OracleCloudVmClusterFileSystemConfigurationOutputReference) v
 	return nil
 }
 
-func (o *jsiiProxy_OracleCloudVmClusterFileSystemConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OracleCloudVmClusterFileSystemConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OracleCloudVmClusterFileSystemConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OracleCloudVmClusterFileSystemConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

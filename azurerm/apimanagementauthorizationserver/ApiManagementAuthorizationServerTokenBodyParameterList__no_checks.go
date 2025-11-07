@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApiManagementAuthorizationServerTokenBodyParameterList) valid
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementAuthorizationServerTokenBodyParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementAuthorizationServerTokenBodyParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

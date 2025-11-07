@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApiManagementOpenidConnectProviderTimeoutsOutputReference) va
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementOpenidConnectProviderTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiManagementOpenidConnectProviderTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementOpenidConnectProviderTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementOpenidConnectProviderTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

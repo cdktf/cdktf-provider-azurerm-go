@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermApplicationGatewayCustomErrorConfigurationList) va
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApplicationGatewayCustomErrorConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermApplicationGatewayCustomErrorConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

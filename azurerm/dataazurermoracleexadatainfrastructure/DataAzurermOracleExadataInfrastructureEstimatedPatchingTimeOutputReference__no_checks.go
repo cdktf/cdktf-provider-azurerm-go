@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermOracleExadataInfrastructureEstimatedPatchingTimeOu
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermOracleExadataInfrastructureEstimatedPatchingTimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermOracleExadataInfrastructureEstimatedPatchingTimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermOracleExadataInfrastructureEstimatedPatchingTimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermOracleExadataInfrastructureEstimatedPatchingTimeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

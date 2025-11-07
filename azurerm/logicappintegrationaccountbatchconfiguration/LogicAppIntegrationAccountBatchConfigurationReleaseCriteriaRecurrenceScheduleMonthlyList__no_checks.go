@@ -15,7 +15,7 @@ func (l *jsiiProxy_LogicAppIntegrationAccountBatchConfigurationReleaseCriteriaRe
 	return nil
 }
 
-func (l *jsiiProxy_LogicAppIntegrationAccountBatchConfigurationReleaseCriteriaRecurrenceScheduleMonthlyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogicAppIntegrationAccountBatchConfigurationReleaseCriteriaRecurrenceScheduleMonthlyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

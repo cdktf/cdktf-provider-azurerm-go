@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApplicationGatewayGatewayIpConfigurationList) validateGetPara
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayGatewayIpConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationGatewayGatewayIpConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

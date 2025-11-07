@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermVirtualMachineScaleSetTimeoutsOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermVirtualMachineScaleSetTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermVirtualMachineScaleSetTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermVirtualMachineScaleSetTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermVirtualMachineScaleSetTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

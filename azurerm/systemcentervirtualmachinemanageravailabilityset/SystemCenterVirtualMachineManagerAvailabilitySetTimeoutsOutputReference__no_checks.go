@@ -43,11 +43,11 @@ func (s *jsiiProxy_SystemCenterVirtualMachineManagerAvailabilitySetTimeoutsOutpu
 	return nil
 }
 
-func (s *jsiiProxy_SystemCenterVirtualMachineManagerAvailabilitySetTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SystemCenterVirtualMachineManagerAvailabilitySetTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SystemCenterVirtualMachineManagerAvailabilitySetTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SystemCenterVirtualMachineManagerAvailabilitySetTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

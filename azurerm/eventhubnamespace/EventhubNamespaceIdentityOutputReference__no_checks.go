@@ -43,11 +43,11 @@ func (e *jsiiProxy_EventhubNamespaceIdentityOutputReference) validateGetStringMa
 	return nil
 }
 
-func (e *jsiiProxy_EventhubNamespaceIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventhubNamespaceIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventhubNamespaceIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventhubNamespaceIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

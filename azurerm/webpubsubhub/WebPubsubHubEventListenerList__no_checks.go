@@ -15,7 +15,7 @@ func (w *jsiiProxy_WebPubsubHubEventListenerList) validateGetParameters(index *f
 	return nil
 }
 
-func (w *jsiiProxy_WebPubsubHubEventListenerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WebPubsubHubEventListenerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (h *jsiiProxy_HdinsightHadoopClusterRolesEdgeNodeOutputReference) validateG
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightHadoopClusterRolesEdgeNodeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HdinsightHadoopClusterRolesEdgeNodeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (h *jsiiProxy_HdinsightHadoopClusterRolesEdgeNodeOutputReference) validateP
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightHadoopClusterRolesEdgeNodeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightHadoopClusterRolesEdgeNodeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

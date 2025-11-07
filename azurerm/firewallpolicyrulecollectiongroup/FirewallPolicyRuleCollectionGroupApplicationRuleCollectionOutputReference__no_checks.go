@@ -43,7 +43,7 @@ func (f *jsiiProxy_FirewallPolicyRuleCollectionGroupApplicationRuleCollectionOut
 	return nil
 }
 
-func (f *jsiiProxy_FirewallPolicyRuleCollectionGroupApplicationRuleCollectionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirewallPolicyRuleCollectionGroupApplicationRuleCollectionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (f *jsiiProxy_FirewallPolicyRuleCollectionGroupApplicationRuleCollectionOut
 	return nil
 }
 
-func (f *jsiiProxy_FirewallPolicyRuleCollectionGroupApplicationRuleCollectionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirewallPolicyRuleCollectionGroupApplicationRuleCollectionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

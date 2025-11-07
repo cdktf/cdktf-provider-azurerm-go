@@ -43,11 +43,11 @@ func (e *jsiiProxy_EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGrea
 	return nil
 }
 
-func (e *jsiiProxy_EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

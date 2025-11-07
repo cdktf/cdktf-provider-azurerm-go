@@ -43,11 +43,11 @@ func (a *jsiiProxy_AiServicesCustomerManagedKeyOutputReference) validateGetStrin
 	return nil
 }
 
-func (a *jsiiProxy_AiServicesCustomerManagedKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AiServicesCustomerManagedKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AiServicesCustomerManagedKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AiServicesCustomerManagedKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

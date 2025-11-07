@@ -72,12 +72,12 @@ type WindowsWebAppAuthSettingsTwitterOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetConsumerSecret()
 	ResetConsumerSecretSettingName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -506,8 +506,8 @@ func (w *jsiiProxy_WindowsWebAppAuthSettingsTwitterOutputReference) Interpolatio
 	return returns
 }
 
-func (w *jsiiProxy_WindowsWebAppAuthSettingsTwitterOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+func (w *jsiiProxy_WindowsWebAppAuthSettingsTwitterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -515,7 +515,7 @@ func (w *jsiiProxy_WindowsWebAppAuthSettingsTwitterOutputReference) Interpolatio
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -538,8 +538,8 @@ func (w *jsiiProxy_WindowsWebAppAuthSettingsTwitterOutputReference) ResetConsume
 	)
 }
 
-func (w *jsiiProxy_WindowsWebAppAuthSettingsTwitterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_WindowsWebAppAuthSettingsTwitterOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -547,7 +547,7 @@ func (w *jsiiProxy_WindowsWebAppAuthSettingsTwitterOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

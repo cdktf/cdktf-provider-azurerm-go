@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApplicationGatewayWafConfigurationDisabledRuleGroupList) vali
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayWafConfigurationDisabledRuleGroupList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationGatewayWafConfigurationDisabledRuleGroupList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

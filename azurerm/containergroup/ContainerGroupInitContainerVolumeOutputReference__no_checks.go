@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerGroupInitContainerVolumeOutputReference) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_ContainerGroupInitContainerVolumeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerGroupInitContainerVolumeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ContainerGroupInitContainerVolumeOutputReference) validatePut
 	return nil
 }
 
-func (c *jsiiProxy_ContainerGroupInitContainerVolumeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerGroupInitContainerVolumeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

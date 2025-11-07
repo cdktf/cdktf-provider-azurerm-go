@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppServiceSlotLogsHttpLogsFileSystemOutputReference) validate
 	return nil
 }
 
-func (a *jsiiProxy_AppServiceSlotLogsHttpLogsFileSystemOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppServiceSlotLogsHttpLogsFileSystemOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppServiceSlotLogsHttpLogsFileSystemOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppServiceSlotLogsHttpLogsFileSystemOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

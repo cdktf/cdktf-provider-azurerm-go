@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerAppJobEventTriggerConfigScaleList) validateGetParame
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppJobEventTriggerConfigScaleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppJobEventTriggerConfigScaleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

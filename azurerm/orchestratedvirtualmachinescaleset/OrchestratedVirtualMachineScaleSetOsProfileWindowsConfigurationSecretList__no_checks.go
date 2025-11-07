@@ -15,7 +15,7 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurati
 	return nil
 }
 
-func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

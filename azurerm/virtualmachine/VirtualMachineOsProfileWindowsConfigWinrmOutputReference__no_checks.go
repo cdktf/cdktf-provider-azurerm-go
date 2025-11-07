@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualMachineOsProfileWindowsConfigWinrmOutputReference) val
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineOsProfileWindowsConfigWinrmOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualMachineOsProfileWindowsConfigWinrmOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineOsProfileWindowsConfigWinrmOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineOsProfileWindowsConfigWinrmOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

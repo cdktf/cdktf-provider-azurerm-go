@@ -15,7 +15,7 @@ func (m *jsiiProxy_MssqlJobTargetGroupJobTargetList) validateGetParameters(index
 	return nil
 }
 
-func (m *jsiiProxy_MssqlJobTargetGroupJobTargetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlJobTargetGroupJobTargetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

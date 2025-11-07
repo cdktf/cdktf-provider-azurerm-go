@@ -15,7 +15,7 @@ func (f *jsiiProxy_FirewallPolicyInsightsLogAnalyticsWorkspaceList) validateGetP
 	return nil
 }
 
-func (f *jsiiProxy_FirewallPolicyInsightsLogAnalyticsWorkspaceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirewallPolicyInsightsLogAnalyticsWorkspaceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

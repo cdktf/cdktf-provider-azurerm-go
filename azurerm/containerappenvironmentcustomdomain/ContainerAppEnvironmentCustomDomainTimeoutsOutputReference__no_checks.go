@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerAppEnvironmentCustomDomainTimeoutsOutputReference) v
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppEnvironmentCustomDomainTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAppEnvironmentCustomDomainTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppEnvironmentCustomDomainTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppEnvironmentCustomDomainTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

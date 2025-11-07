@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermStorageAccountAzureFilesAuthenticationActiveDirect
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermStorageAccountAzureFilesAuthenticationActiveDirectoryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermStorageAccountAzureFilesAuthenticationActiveDirectoryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

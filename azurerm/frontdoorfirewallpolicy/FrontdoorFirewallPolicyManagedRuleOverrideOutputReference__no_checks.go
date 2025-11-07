@@ -43,7 +43,7 @@ func (f *jsiiProxy_FrontdoorFirewallPolicyManagedRuleOverrideOutputReference) va
 	return nil
 }
 
-func (f *jsiiProxy_FrontdoorFirewallPolicyManagedRuleOverrideOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FrontdoorFirewallPolicyManagedRuleOverrideOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (f *jsiiProxy_FrontdoorFirewallPolicyManagedRuleOverrideOutputReference) va
 	return nil
 }
 
-func (f *jsiiProxy_FrontdoorFirewallPolicyManagedRuleOverrideOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FrontdoorFirewallPolicyManagedRuleOverrideOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermWindowsWebAppConnectionStringList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermWindowsWebAppConnectionStringList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermWindowsWebAppConnectionStringList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

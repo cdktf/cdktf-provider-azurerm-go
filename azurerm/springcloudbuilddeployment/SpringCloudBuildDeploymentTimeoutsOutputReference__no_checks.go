@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpringCloudBuildDeploymentTimeoutsOutputReference) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudBuildDeploymentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpringCloudBuildDeploymentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudBuildDeploymentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpringCloudBuildDeploymentTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

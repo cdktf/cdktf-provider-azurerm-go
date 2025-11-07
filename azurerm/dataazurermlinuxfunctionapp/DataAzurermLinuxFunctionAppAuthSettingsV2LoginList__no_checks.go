@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermLinuxFunctionAppAuthSettingsV2LoginList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLinuxFunctionAppAuthSettingsV2LoginList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermLinuxFunctionAppAuthSettingsV2LoginList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

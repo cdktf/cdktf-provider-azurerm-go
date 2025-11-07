@@ -85,9 +85,9 @@ func (d *jsiiProxy_DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRu
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -135,9 +135,9 @@ func (d *jsiiProxy_DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRu
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

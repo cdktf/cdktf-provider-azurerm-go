@@ -15,7 +15,7 @@ func (e *jsiiProxy_EventgridPartnerConfigurationPartnerAuthorizationList) valida
 	return nil
 }
 
-func (e *jsiiProxy_EventgridPartnerConfigurationPartnerAuthorizationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventgridPartnerConfigurationPartnerAuthorizationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (i *jsiiProxy_IpGroupCidrTimeoutsOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (i *jsiiProxy_IpGroupCidrTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IpGroupCidrTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IpGroupCidrTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IpGroupCidrTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

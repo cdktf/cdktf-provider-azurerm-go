@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermDiskEncryptionSetIdentityOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDiskEncryptionSetIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermDiskEncryptionSetIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDiskEncryptionSetIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermDiskEncryptionSetIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

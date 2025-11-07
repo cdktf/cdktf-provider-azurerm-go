@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualNetworkGatewayConnectionTimeoutsOutputReference) valid
 	return nil
 }
 
-func (v *jsiiProxy_VirtualNetworkGatewayConnectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualNetworkGatewayConnectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualNetworkGatewayConnectionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualNetworkGatewayConnectionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

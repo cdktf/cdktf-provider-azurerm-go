@@ -43,7 +43,7 @@ func (w *jsiiProxy_WebPubsubHubEventHandlerOutputReference) validateGetStringMap
 	return nil
 }
 
-func (w *jsiiProxy_WebPubsubHubEventHandlerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WebPubsubHubEventHandlerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (w *jsiiProxy_WebPubsubHubEventHandlerOutputReference) validatePutAuthParam
 	return nil
 }
 
-func (w *jsiiProxy_WebPubsubHubEventHandlerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WebPubsubHubEventHandlerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

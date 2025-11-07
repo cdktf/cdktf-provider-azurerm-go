@@ -15,7 +15,7 @@ func (f *jsiiProxy_FunctionAppFlexConsumptionAlwaysReadyList) validateGetParamet
 	return nil
 }
 
-func (f *jsiiProxy_FunctionAppFlexConsumptionAlwaysReadyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FunctionAppFlexConsumptionAlwaysReadyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

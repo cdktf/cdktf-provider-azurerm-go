@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermApplicationGatewayBackendAddressPoolList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApplicationGatewayBackendAddressPoolList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermApplicationGatewayBackendAddressPoolList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

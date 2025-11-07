@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/data_factory_dataset_snowflake azurerm_data_factory_dataset_snowflake}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/data_factory_dataset_snowflake azurerm_data_factory_dataset_snowflake}.
 type DataFactoryDatasetSnowflake interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -595,7 +595,7 @@ func (j *jsiiProxy_DataFactoryDatasetSnowflake) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/data_factory_dataset_snowflake azurerm_data_factory_dataset_snowflake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/data_factory_dataset_snowflake azurerm_data_factory_dataset_snowflake} Resource.
 func NewDataFactoryDatasetSnowflake(scope constructs.Construct, id *string, config *DataFactoryDatasetSnowflakeConfig) DataFactoryDatasetSnowflake {
 	_init_.Initialize()
 
@@ -613,7 +613,7 @@ func NewDataFactoryDatasetSnowflake(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/data_factory_dataset_snowflake azurerm_data_factory_dataset_snowflake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/data_factory_dataset_snowflake azurerm_data_factory_dataset_snowflake} Resource.
 func NewDataFactoryDatasetSnowflake_Override(d DataFactoryDatasetSnowflake, scope constructs.Construct, id *string, config *DataFactoryDatasetSnowflakeConfig) {
 	_init_.Initialize()
 

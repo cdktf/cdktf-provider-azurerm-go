@@ -72,12 +72,12 @@ type DataFactoryFlowletDataFlowTransformationFlowletOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetDatasetParameters()
 	ResetParameters()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -506,8 +506,8 @@ func (d *jsiiProxy_DataFactoryFlowletDataFlowTransformationFlowletOutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DataFactoryFlowletDataFlowTransformationFlowletOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataFactoryFlowletDataFlowTransformationFlowletOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -515,7 +515,7 @@ func (d *jsiiProxy_DataFactoryFlowletDataFlowTransformationFlowletOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -538,8 +538,8 @@ func (d *jsiiProxy_DataFactoryFlowletDataFlowTransformationFlowletOutputReferenc
 	)
 }
 
-func (d *jsiiProxy_DataFactoryFlowletDataFlowTransformationFlowletOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataFactoryFlowletDataFlowTransformationFlowletOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -547,7 +547,7 @@ func (d *jsiiProxy_DataFactoryFlowletDataFlowTransformationFlowletOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

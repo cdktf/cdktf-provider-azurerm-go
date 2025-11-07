@@ -15,7 +15,7 @@ func (k *jsiiProxy_KubernetesClusterMaintenanceWindowNotAllowedList) validateGet
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterMaintenanceWindowNotAllowedList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterMaintenanceWindowNotAllowedList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

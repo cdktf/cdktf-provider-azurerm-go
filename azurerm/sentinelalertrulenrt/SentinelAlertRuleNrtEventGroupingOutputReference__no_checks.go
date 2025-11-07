@@ -43,11 +43,11 @@ func (s *jsiiProxy_SentinelAlertRuleNrtEventGroupingOutputReference) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleNrtEventGroupingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SentinelAlertRuleNrtEventGroupingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleNrtEventGroupingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelAlertRuleNrtEventGroupingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

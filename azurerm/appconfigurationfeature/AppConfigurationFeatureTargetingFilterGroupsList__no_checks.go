@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppConfigurationFeatureTargetingFilterGroupsList) validateGet
 	return nil
 }
 
-func (a *jsiiProxy_AppConfigurationFeatureTargetingFilterGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppConfigurationFeatureTargetingFilterGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermMobileNetworkServicePccRuleList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMobileNetworkServicePccRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermMobileNetworkServicePccRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

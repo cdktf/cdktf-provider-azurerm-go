@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerAppJobScheduleTriggerConfigOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppJobScheduleTriggerConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAppJobScheduleTriggerConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppJobScheduleTriggerConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppJobScheduleTriggerConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

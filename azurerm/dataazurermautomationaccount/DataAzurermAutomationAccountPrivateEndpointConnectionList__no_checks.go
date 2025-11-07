@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermAutomationAccountPrivateEndpointConnectionList) va
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermAutomationAccountPrivateEndpointConnectionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermAutomationAccountPrivateEndpointConnectionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

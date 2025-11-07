@@ -43,11 +43,11 @@ func (m *jsiiProxy_MachineLearningInferenceClusterSslOutputReference) validateGe
 	return nil
 }
 
-func (m *jsiiProxy_MachineLearningInferenceClusterSslOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MachineLearningInferenceClusterSslOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MachineLearningInferenceClusterSslOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MachineLearningInferenceClusterSslOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

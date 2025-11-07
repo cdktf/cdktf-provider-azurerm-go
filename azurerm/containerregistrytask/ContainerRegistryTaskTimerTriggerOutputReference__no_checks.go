@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerRegistryTaskTimerTriggerOutputReference) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_ContainerRegistryTaskTimerTriggerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerRegistryTaskTimerTriggerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerRegistryTaskTimerTriggerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerRegistryTaskTimerTriggerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

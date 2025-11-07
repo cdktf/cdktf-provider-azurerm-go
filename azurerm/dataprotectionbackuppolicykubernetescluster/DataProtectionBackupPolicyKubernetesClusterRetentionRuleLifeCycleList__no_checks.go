@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataProtectionBackupPolicyKubernetesClusterRetentionRuleLifeC
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupPolicyKubernetesClusterRetentionRuleLifeCycleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataProtectionBackupPolicyKubernetesClusterRetentionRuleLifeCycleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

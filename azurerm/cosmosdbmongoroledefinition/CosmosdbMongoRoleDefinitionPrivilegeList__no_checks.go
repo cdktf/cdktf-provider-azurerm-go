@@ -15,7 +15,7 @@ func (c *jsiiProxy_CosmosdbMongoRoleDefinitionPrivilegeList) validateGetParamete
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbMongoRoleDefinitionPrivilegeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbMongoRoleDefinitionPrivilegeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

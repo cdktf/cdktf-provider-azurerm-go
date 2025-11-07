@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitorAlertProcessingRuleSuppressionConditionSignalTypeOutpu
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAlertProcessingRuleSuppressionConditionSignalTypeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorAlertProcessingRuleSuppressionConditionSignalTypeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAlertProcessingRuleSuppressionConditionSignalTypeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorAlertProcessingRuleSuppressionConditionSignalTypeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermConsumptionBudgetResourceGroupNotificationList) va
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermConsumptionBudgetResourceGroupNotificationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermConsumptionBudgetResourceGroupNotificationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

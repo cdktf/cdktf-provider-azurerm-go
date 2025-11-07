@@ -43,11 +43,11 @@ func (m *jsiiProxy_MobileNetworkSliceSingleNetworkSliceSelectionAssistanceInform
 	return nil
 }
 
-func (m *jsiiProxy_MobileNetworkSliceSingleNetworkSliceSelectionAssistanceInformationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MobileNetworkSliceSingleNetworkSliceSelectionAssistanceInformationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MobileNetworkSliceSingleNetworkSliceSelectionAssistanceInformationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MobileNetworkSliceSingleNetworkSliceSelectionAssistanceInformationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

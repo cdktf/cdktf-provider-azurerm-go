@@ -15,7 +15,7 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetDataDiskList) validateGetPa
 	return nil
 }
 
-func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetDataDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetDataDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

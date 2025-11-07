@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataProtectionBackupPolicyDiskTimeoutsOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupPolicyDiskTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataProtectionBackupPolicyDiskTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupPolicyDiskTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataProtectionBackupPolicyDiskTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (m *jsiiProxy_MssqlManagedInstanceIdentityOutputReference) validateGetStrin
 	return nil
 }
 
-func (m *jsiiProxy_MssqlManagedInstanceIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlManagedInstanceIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MssqlManagedInstanceIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlManagedInstanceIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

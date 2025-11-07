@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApiManagementNamedValueValueFromKeyVaultOutputReference) vali
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementNamedValueValueFromKeyVaultOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiManagementNamedValueValueFromKeyVaultOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementNamedValueValueFromKeyVaultOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementNamedValueValueFromKeyVaultOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

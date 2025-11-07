@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermVirtualDesktopHostPoolScheduledAgentUpdatesList) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermVirtualDesktopHostPoolScheduledAgentUpdatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermVirtualDesktopHostPoolScheduledAgentUpdatesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

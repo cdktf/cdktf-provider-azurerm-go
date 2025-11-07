@@ -43,11 +43,11 @@ func (m *jsiiProxy_MaintenanceAssignmentDynamicScopeTimeoutsOutputReference) val
 	return nil
 }
 
-func (m *jsiiProxy_MaintenanceAssignmentDynamicScopeTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MaintenanceAssignmentDynamicScopeTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MaintenanceAssignmentDynamicScopeTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MaintenanceAssignmentDynamicScopeTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

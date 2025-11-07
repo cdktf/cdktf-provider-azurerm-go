@@ -38,6 +38,9 @@ type ApplicationGatewayBackendHttpSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DedicatedBackendConnectionEnabled() interface{}
+	SetDedicatedBackendConnectionEnabled(val interface{})
+	DedicatedBackendConnectionEnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
 	HostName() *string
@@ -102,12 +105,13 @@ type ApplicationGatewayBackendHttpSettingsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAuthenticationCertificate(value interface{})
 	PutConnectionDraining(value *ApplicationGatewayBackendHttpSettingsConnectionDraining)
 	ResetAffinityCookieName()
 	ResetAuthenticationCertificate()
 	ResetConnectionDraining()
+	ResetDedicatedBackendConnectionEnabled()
 	ResetHostName()
 	ResetPath()
 	ResetPickHostNameFromBackendAddress()
@@ -116,7 +120,7 @@ type ApplicationGatewayBackendHttpSettingsOutputReference interface {
 	ResetTrustedRootCertificateNames()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -234,6 +238,26 @@ func (j *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference) Creatio
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference) DedicatedBackendConnectionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dedicatedBackendConnectionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference) DedicatedBackendConnectionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dedicatedBackendConnectionEnabledInput",
 		&returns,
 	)
 	return returns
@@ -551,6 +575,17 @@ func (j *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference)SetCooki
 	)
 }
 
+func (j *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference)SetDedicatedBackendConnectionEnabled(val interface{}) {
+	if err := j.validateSetDedicatedBackendConnectionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dedicatedBackendConnectionEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference)SetHostName(val *string) {
 	if err := j.validateSetHostNameParameters(val); err != nil {
 		panic(err)
@@ -853,8 +888,8 @@ func (a *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference) Interpo
 	return returns
 }
 
-func (a *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -862,7 +897,7 @@ func (a *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference) Interpo
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -915,6 +950,14 @@ func (a *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference) ResetCo
 	)
 }
 
+func (a *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference) ResetDedicatedBackendConnectionEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDedicatedBackendConnectionEnabled",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference) ResetHostName() {
 	_jsii_.InvokeVoid(
 		a,
@@ -963,8 +1006,8 @@ func (a *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference) ResetTr
 	)
 }
 
-func (a *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -972,7 +1015,7 @@ func (a *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference) Resolve
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

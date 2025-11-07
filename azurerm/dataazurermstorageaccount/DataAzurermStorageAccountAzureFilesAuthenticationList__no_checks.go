@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermStorageAccountAzureFilesAuthenticationList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermStorageAccountAzureFilesAuthenticationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermStorageAccountAzureFilesAuthenticationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

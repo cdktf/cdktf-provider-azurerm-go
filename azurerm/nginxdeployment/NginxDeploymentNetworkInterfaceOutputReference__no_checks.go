@@ -43,11 +43,11 @@ func (n *jsiiProxy_NginxDeploymentNetworkInterfaceOutputReference) validateGetSt
 	return nil
 }
 
-func (n *jsiiProxy_NginxDeploymentNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NginxDeploymentNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NginxDeploymentNetworkInterfaceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NginxDeploymentNetworkInterfaceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

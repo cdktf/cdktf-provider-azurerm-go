@@ -43,7 +43,7 @@ func (k *jsiiProxy_KubernetesFluxConfigurationKustomizationsPostBuildOutputRefer
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesFluxConfigurationKustomizationsPostBuildOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesFluxConfigurationKustomizationsPostBuildOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (k *jsiiProxy_KubernetesFluxConfigurationKustomizationsPostBuildOutputRefer
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesFluxConfigurationKustomizationsPostBuildOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesFluxConfigurationKustomizationsPostBuildOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

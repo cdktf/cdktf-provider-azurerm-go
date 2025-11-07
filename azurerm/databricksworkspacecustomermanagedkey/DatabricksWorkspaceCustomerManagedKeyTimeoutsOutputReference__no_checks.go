@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatabricksWorkspaceCustomerManagedKeyTimeoutsOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DatabricksWorkspaceCustomerManagedKeyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabricksWorkspaceCustomerManagedKeyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabricksWorkspaceCustomerManagedKeyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabricksWorkspaceCustomerManagedKeyTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

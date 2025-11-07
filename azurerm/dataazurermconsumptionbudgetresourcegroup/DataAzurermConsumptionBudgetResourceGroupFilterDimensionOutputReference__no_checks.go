@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermConsumptionBudgetResourceGroupFilterDimensionOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermConsumptionBudgetResourceGroupFilterDimensionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermConsumptionBudgetResourceGroupFilterDimensionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermConsumptionBudgetResourceGroupFilterDimensionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermConsumptionBudgetResourceGroupFilterDimensionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

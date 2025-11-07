@@ -43,11 +43,11 @@ func (m *jsiiProxy_ManagementGroupPolicyAssignmentTimeoutsOutputReference) valid
 	return nil
 }
 
-func (m *jsiiProxy_ManagementGroupPolicyAssignmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ManagementGroupPolicyAssignmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ManagementGroupPolicyAssignmentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagementGroupPolicyAssignmentTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

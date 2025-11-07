@@ -43,11 +43,11 @@ func (m *jsiiProxy_MaintenanceAssignmentDedicatedHostTimeoutsOutputReference) va
 	return nil
 }
 
-func (m *jsiiProxy_MaintenanceAssignmentDedicatedHostTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MaintenanceAssignmentDedicatedHostTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MaintenanceAssignmentDedicatedHostTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MaintenanceAssignmentDedicatedHostTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

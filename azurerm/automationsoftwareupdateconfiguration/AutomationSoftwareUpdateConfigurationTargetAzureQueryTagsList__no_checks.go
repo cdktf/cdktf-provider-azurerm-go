@@ -15,7 +15,7 @@ func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationTargetAzureQueryTagsList
 	return nil
 }
 
-func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationTargetAzureQueryTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationTargetAzureQueryTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

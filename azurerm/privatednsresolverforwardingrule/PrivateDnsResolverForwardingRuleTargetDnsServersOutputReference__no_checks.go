@@ -43,11 +43,11 @@ func (p *jsiiProxy_PrivateDnsResolverForwardingRuleTargetDnsServersOutputReferen
 	return nil
 }
 
-func (p *jsiiProxy_PrivateDnsResolverForwardingRuleTargetDnsServersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivateDnsResolverForwardingRuleTargetDnsServersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrivateDnsResolverForwardingRuleTargetDnsServersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivateDnsResolverForwardingRuleTargetDnsServersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

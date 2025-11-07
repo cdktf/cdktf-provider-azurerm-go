@@ -43,7 +43,7 @@ func (b *jsiiProxy_BatchPoolStartTaskContainerOutputReference) validateGetString
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolStartTaskContainerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BatchPoolStartTaskContainerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (b *jsiiProxy_BatchPoolStartTaskContainerOutputReference) validatePutRegist
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolStartTaskContainerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchPoolStartTaskContainerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

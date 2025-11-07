@@ -43,11 +43,11 @@ func (b *jsiiProxy_BotChannelLineLineChannelOutputReference) validateGetStringMa
 	return nil
 }
 
-func (b *jsiiProxy_BotChannelLineLineChannelOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BotChannelLineLineChannelOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BotChannelLineLineChannelOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BotChannelLineLineChannelOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

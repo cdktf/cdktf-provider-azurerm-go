@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerAppTemplateInitContainerVolumeMountsList) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppTemplateInitContainerVolumeMountsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppTemplateInitContainerVolumeMountsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

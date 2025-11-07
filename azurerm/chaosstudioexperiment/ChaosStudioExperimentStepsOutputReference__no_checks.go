@@ -43,7 +43,7 @@ func (c *jsiiProxy_ChaosStudioExperimentStepsOutputReference) validateGetStringM
 	return nil
 }
 
-func (c *jsiiProxy_ChaosStudioExperimentStepsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChaosStudioExperimentStepsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ChaosStudioExperimentStepsOutputReference) validatePutBranchP
 	return nil
 }
 
-func (c *jsiiProxy_ChaosStudioExperimentStepsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChaosStudioExperimentStepsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

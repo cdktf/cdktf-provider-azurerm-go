@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermContainerAppTemplateCustomScaleRuleAuthenticationO
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermContainerAppTemplateCustomScaleRuleAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermContainerAppTemplateCustomScaleRuleAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermContainerAppTemplateCustomScaleRuleAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermContainerAppTemplateCustomScaleRuleAuthenticationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

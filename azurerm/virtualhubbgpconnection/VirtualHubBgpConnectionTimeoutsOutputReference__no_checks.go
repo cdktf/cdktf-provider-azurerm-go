@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualHubBgpConnectionTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (v *jsiiProxy_VirtualHubBgpConnectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualHubBgpConnectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualHubBgpConnectionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualHubBgpConnectionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

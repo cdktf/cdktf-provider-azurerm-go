@@ -43,11 +43,11 @@ func (w *jsiiProxy_WindowsFunctionAppSiteCredentialOutputReference) validateGetS
 	return nil
 }
 
-func (w *jsiiProxy_WindowsFunctionAppSiteCredentialOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsFunctionAppSiteCredentialOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WindowsFunctionAppSiteCredentialOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsFunctionAppSiteCredentialOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

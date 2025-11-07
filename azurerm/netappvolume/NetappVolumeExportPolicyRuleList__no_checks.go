@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetappVolumeExportPolicyRuleList) validateGetParameters(index
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeExportPolicyRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetappVolumeExportPolicyRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

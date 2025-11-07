@@ -15,7 +15,7 @@ func (w *jsiiProxy_WindowsVirtualMachineGalleryApplicationList) validateGetParam
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineGalleryApplicationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsVirtualMachineGalleryApplicationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (p *jsiiProxy_PrivateEndpointPrivateDnsZoneGroupOutputReference) validateGe
 	return nil
 }
 
-func (p *jsiiProxy_PrivateEndpointPrivateDnsZoneGroupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivateEndpointPrivateDnsZoneGroupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrivateEndpointPrivateDnsZoneGroupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivateEndpointPrivateDnsZoneGroupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

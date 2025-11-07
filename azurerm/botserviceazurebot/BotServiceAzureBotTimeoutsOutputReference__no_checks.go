@@ -43,11 +43,11 @@ func (b *jsiiProxy_BotServiceAzureBotTimeoutsOutputReference) validateGetStringM
 	return nil
 }
 
-func (b *jsiiProxy_BotServiceAzureBotTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BotServiceAzureBotTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BotServiceAzureBotTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BotServiceAzureBotTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

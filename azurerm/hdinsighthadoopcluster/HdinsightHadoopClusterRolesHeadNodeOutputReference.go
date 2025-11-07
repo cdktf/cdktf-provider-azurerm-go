@@ -83,7 +83,7 @@ type HdinsightHadoopClusterRolesHeadNodeOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutScriptActions(value interface{})
 	ResetPassword()
 	ResetScriptActions()
@@ -92,7 +92,7 @@ type HdinsightHadoopClusterRolesHeadNodeOutputReference interface {
 	ResetVirtualNetworkId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -634,8 +634,8 @@ func (h *jsiiProxy_HdinsightHadoopClusterRolesHeadNodeOutputReference) Interpola
 	return returns
 }
 
-func (h *jsiiProxy_HdinsightHadoopClusterRolesHeadNodeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := h.validateInterpolationForAttributeParameters(property); err != nil {
+func (h *jsiiProxy_HdinsightHadoopClusterRolesHeadNodeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := h.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -643,7 +643,7 @@ func (h *jsiiProxy_HdinsightHadoopClusterRolesHeadNodeOutputReference) Interpola
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -701,8 +701,8 @@ func (h *jsiiProxy_HdinsightHadoopClusterRolesHeadNodeOutputReference) ResetVirt
 	)
 }
 
-func (h *jsiiProxy_HdinsightHadoopClusterRolesHeadNodeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := h.validateResolveParameters(_context); err != nil {
+func (h *jsiiProxy_HdinsightHadoopClusterRolesHeadNodeOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := h.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -710,7 +710,7 @@ func (h *jsiiProxy_HdinsightHadoopClusterRolesHeadNodeOutputReference) Resolve(_
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

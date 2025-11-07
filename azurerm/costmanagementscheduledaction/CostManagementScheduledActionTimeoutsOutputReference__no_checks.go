@@ -43,11 +43,11 @@ func (c *jsiiProxy_CostManagementScheduledActionTimeoutsOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_CostManagementScheduledActionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CostManagementScheduledActionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CostManagementScheduledActionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CostManagementScheduledActionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

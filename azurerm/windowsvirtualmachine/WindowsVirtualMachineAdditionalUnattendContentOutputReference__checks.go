@@ -85,17 +85,17 @@ func (w *jsiiProxy_WindowsVirtualMachineAdditionalUnattendContentOutputReference
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineAdditionalUnattendContentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (w *jsiiProxy_WindowsVirtualMachineAdditionalUnattendContentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineAdditionalUnattendContentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (w *jsiiProxy_WindowsVirtualMachineAdditionalUnattendContentOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

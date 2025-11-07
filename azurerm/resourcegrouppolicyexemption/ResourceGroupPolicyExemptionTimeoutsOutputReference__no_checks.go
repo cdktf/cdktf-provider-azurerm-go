@@ -43,11 +43,11 @@ func (r *jsiiProxy_ResourceGroupPolicyExemptionTimeoutsOutputReference) validate
 	return nil
 }
 
-func (r *jsiiProxy_ResourceGroupPolicyExemptionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ResourceGroupPolicyExemptionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_ResourceGroupPolicyExemptionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResourceGroupPolicyExemptionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

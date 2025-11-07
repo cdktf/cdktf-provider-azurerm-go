@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApplicationGatewayAuthenticationCertificateList) validateGetP
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayAuthenticationCertificateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationGatewayAuthenticationCertificateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

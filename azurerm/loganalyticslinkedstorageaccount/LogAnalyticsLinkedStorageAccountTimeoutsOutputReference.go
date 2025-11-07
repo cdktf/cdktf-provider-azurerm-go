@@ -75,14 +75,14 @@ type LogAnalyticsLinkedStorageAccountTimeoutsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetRead()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -542,8 +542,8 @@ func (l *jsiiProxy_LogAnalyticsLinkedStorageAccountTimeoutsOutputReference) Inte
 	return returns
 }
 
-func (l *jsiiProxy_LogAnalyticsLinkedStorageAccountTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LogAnalyticsLinkedStorageAccountTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -551,7 +551,7 @@ func (l *jsiiProxy_LogAnalyticsLinkedStorageAccountTimeoutsOutputReference) Inte
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -590,8 +590,8 @@ func (l *jsiiProxy_LogAnalyticsLinkedStorageAccountTimeoutsOutputReference) Rese
 	)
 }
 
-func (l *jsiiProxy_LogAnalyticsLinkedStorageAccountTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LogAnalyticsLinkedStorageAccountTimeoutsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -599,7 +599,7 @@ func (l *jsiiProxy_LogAnalyticsLinkedStorageAccountTimeoutsOutputReference) Reso
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

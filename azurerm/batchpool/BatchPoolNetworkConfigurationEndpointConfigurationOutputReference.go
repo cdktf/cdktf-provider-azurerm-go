@@ -77,12 +77,12 @@ type BatchPoolNetworkConfigurationEndpointConfigurationOutputReference interface
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutNetworkSecurityGroupRules(value interface{})
 	ResetNetworkSecurityGroupRules()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -562,8 +562,8 @@ func (b *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationOutputRefer
 	return returns
 }
 
-func (b *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -571,7 +571,7 @@ func (b *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationOutputRefer
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -597,8 +597,8 @@ func (b *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationOutputRefer
 	)
 }
 
-func (b *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -606,7 +606,7 @@ func (b *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationOutputRefer
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

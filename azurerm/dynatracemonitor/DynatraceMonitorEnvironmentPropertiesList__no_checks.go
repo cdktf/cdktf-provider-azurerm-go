@@ -15,7 +15,7 @@ func (d *jsiiProxy_DynatraceMonitorEnvironmentPropertiesList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DynatraceMonitorEnvironmentPropertiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DynatraceMonitorEnvironmentPropertiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

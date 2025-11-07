@@ -43,7 +43,7 @@ func (k *jsiiProxy_KubernetesFluxConfigurationBlobStorageOutputReference) valida
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesFluxConfigurationBlobStorageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesFluxConfigurationBlobStorageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (k *jsiiProxy_KubernetesFluxConfigurationBlobStorageOutputReference) valida
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesFluxConfigurationBlobStorageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesFluxConfigurationBlobStorageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

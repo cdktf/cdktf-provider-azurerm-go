@@ -43,11 +43,11 @@ func (g *jsiiProxy_GalleryApplicationVersionTargetRegionOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GalleryApplicationVersionTargetRegionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GalleryApplicationVersionTargetRegionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GalleryApplicationVersionTargetRegionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GalleryApplicationVersionTargetRegionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

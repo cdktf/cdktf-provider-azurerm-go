@@ -15,7 +15,7 @@ func (c *jsiiProxy_CustomProviderActionList) validateGetParameters(index *float6
 	return nil
 }
 
-func (c *jsiiProxy_CustomProviderActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomProviderActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermApplicationGatewayProbeMatchList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApplicationGatewayProbeMatchList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermApplicationGatewayProbeMatchList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

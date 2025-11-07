@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerGroupContainerVolumeGitRepoOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_ContainerGroupContainerVolumeGitRepoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerGroupContainerVolumeGitRepoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerGroupContainerVolumeGitRepoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerGroupContainerVolumeGitRepoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

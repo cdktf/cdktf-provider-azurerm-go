@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerAppTemplateContainerVolumeMountsList) validateGetPar
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppTemplateContainerVolumeMountsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppTemplateContainerVolumeMountsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermLocalNetworkGatewayBgpSettingsOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLocalNetworkGatewayBgpSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermLocalNetworkGatewayBgpSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLocalNetworkGatewayBgpSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermLocalNetworkGatewayBgpSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

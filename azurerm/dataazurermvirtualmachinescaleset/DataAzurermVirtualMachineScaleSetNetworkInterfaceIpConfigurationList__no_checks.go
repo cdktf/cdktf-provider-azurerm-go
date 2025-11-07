@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermVirtualMachineScaleSetNetworkInterfaceIpConfigurat
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermVirtualMachineScaleSetNetworkInterfaceIpConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermVirtualMachineScaleSetNetworkInterfaceIpConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

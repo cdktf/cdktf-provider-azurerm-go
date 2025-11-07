@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermArcMachineServiceStatusGuestConfigurationServiceOu
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermArcMachineServiceStatusGuestConfigurationServiceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermArcMachineServiceStatusGuestConfigurationServiceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermArcMachineServiceStatusGuestConfigurationServiceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermArcMachineServiceStatusGuestConfigurationServiceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

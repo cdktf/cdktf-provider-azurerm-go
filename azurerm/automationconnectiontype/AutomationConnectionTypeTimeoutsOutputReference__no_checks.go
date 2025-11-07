@@ -43,11 +43,11 @@ func (a *jsiiProxy_AutomationConnectionTypeTimeoutsOutputReference) validateGetS
 	return nil
 }
 
-func (a *jsiiProxy_AutomationConnectionTypeTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutomationConnectionTypeTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AutomationConnectionTypeTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutomationConnectionTypeTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

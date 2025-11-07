@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermWindowsWebAppAuthSettingsList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermWindowsWebAppAuthSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermWindowsWebAppAuthSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

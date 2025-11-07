@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermLinuxWebAppAuthSettingsV2TwitterV2List) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLinuxWebAppAuthSettingsV2TwitterV2List) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermLinuxWebAppAuthSettingsV2TwitterV2List) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

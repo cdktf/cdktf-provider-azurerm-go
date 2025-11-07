@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConsumptionBudgetSubscriptionNotificationList) validateGetPar
 	return nil
 }
 
-func (c *jsiiProxy_ConsumptionBudgetSubscriptionNotificationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConsumptionBudgetSubscriptionNotificationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

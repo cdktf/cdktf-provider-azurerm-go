@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermPrivateDnsSrvRecordRecordList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermPrivateDnsSrvRecordRecordList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermPrivateDnsSrvRecordRecordList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

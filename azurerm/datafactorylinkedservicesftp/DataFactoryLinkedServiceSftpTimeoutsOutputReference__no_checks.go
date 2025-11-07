@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFactoryLinkedServiceSftpTimeoutsOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryLinkedServiceSftpTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFactoryLinkedServiceSftpTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryLinkedServiceSftpTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryLinkedServiceSftpTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_CapacityReservationSkuOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (c *jsiiProxy_CapacityReservationSkuOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CapacityReservationSkuOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CapacityReservationSkuOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CapacityReservationSkuOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

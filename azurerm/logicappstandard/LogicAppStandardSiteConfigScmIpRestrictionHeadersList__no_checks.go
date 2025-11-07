@@ -15,7 +15,7 @@ func (l *jsiiProxy_LogicAppStandardSiteConfigScmIpRestrictionHeadersList) valida
 	return nil
 }
 
-func (l *jsiiProxy_LogicAppStandardSiteConfigScmIpRestrictionHeadersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogicAppStandardSiteConfigScmIpRestrictionHeadersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

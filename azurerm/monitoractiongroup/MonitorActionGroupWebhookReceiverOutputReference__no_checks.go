@@ -43,7 +43,7 @@ func (m *jsiiProxy_MonitorActionGroupWebhookReceiverOutputReference) validateGet
 	return nil
 }
 
-func (m *jsiiProxy_MonitorActionGroupWebhookReceiverOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorActionGroupWebhookReceiverOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MonitorActionGroupWebhookReceiverOutputReference) validatePut
 	return nil
 }
 
-func (m *jsiiProxy_MonitorActionGroupWebhookReceiverOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorActionGroupWebhookReceiverOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

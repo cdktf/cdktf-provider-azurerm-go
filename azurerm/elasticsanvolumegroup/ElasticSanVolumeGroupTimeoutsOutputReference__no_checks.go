@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElasticSanVolumeGroupTimeoutsOutputReference) validateGetStri
 	return nil
 }
 
-func (e *jsiiProxy_ElasticSanVolumeGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElasticSanVolumeGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElasticSanVolumeGroupTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticSanVolumeGroupTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

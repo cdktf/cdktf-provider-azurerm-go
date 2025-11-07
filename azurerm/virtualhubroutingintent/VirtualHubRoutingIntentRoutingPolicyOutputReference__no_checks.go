@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualHubRoutingIntentRoutingPolicyOutputReference) validate
 	return nil
 }
 
-func (v *jsiiProxy_VirtualHubRoutingIntentRoutingPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualHubRoutingIntentRoutingPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualHubRoutingIntentRoutingPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualHubRoutingIntentRoutingPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

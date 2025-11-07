@@ -15,7 +15,7 @@ func (h *jsiiProxy_HpcCacheDefaultAccessPolicyAccessRuleList) validateGetParamet
 	return nil
 }
 
-func (h *jsiiProxy_HpcCacheDefaultAccessPolicyAccessRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HpcCacheDefaultAccessPolicyAccessRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_CdnFrontdoorFirewallPolicyLogScrubbingScrubbingRuleList) vali
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorFirewallPolicyLogScrubbingScrubbingRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnFrontdoorFirewallPolicyLogScrubbingScrubbingRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

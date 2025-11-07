@@ -43,11 +43,11 @@ func (p *jsiiProxy_PostgresqlActiveDirectoryAdministratorTimeoutsOutputReference
 	return nil
 }
 
-func (p *jsiiProxy_PostgresqlActiveDirectoryAdministratorTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PostgresqlActiveDirectoryAdministratorTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PostgresqlActiveDirectoryAdministratorTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PostgresqlActiveDirectoryAdministratorTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

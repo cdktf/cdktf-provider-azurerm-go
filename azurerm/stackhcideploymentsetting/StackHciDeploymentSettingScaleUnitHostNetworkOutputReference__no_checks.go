@@ -43,7 +43,7 @@ func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitHostNetworkOutputReference)
 	return nil
 }
 
-func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitHostNetworkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitHostNetworkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitHostNetworkOutputReference)
 	return nil
 }
 
-func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitHostNetworkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitHostNetworkOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

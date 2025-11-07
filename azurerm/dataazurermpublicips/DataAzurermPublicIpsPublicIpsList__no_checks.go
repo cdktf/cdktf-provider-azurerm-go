@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermPublicIpsPublicIpsList) validateGetParameters(inde
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermPublicIpsPublicIpsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermPublicIpsPublicIpsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

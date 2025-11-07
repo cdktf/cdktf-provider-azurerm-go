@@ -43,11 +43,11 @@ func (s *jsiiProxy_SentinelDataConnectorAwsS3TimeoutsOutputReference) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_SentinelDataConnectorAwsS3TimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SentinelDataConnectorAwsS3TimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SentinelDataConnectorAwsS3TimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelDataConnectorAwsS3TimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

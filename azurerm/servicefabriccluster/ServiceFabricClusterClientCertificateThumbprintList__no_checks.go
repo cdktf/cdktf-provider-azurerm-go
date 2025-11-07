@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServiceFabricClusterClientCertificateThumbprintList) validate
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricClusterClientCertificateThumbprintList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceFabricClusterClientCertificateThumbprintList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

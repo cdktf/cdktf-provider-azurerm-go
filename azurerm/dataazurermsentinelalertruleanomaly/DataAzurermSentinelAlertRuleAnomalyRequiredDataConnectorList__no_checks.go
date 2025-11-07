@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermSentinelAlertRuleAnomalyRequiredDataConnectorList)
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSentinelAlertRuleAnomalyRequiredDataConnectorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermSentinelAlertRuleAnomalyRequiredDataConnectorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

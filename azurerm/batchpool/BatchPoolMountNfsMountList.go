@@ -41,7 +41,7 @@ type BatchPoolMountNfsMountList interface {
 	Get(index *float64) BatchPoolMountNfsMountOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (b *jsiiProxy_BatchPoolMountNfsMountList) Get(index *float64) BatchPoolMoun
 	return returns
 }
 
-func (b *jsiiProxy_BatchPoolMountNfsMountList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BatchPoolMountNfsMountList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (b *jsiiProxy_BatchPoolMountNfsMountList) Resolve(_context cdktf.IResolveCo
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

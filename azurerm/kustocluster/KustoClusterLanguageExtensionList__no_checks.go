@@ -15,7 +15,7 @@ func (k *jsiiProxy_KustoClusterLanguageExtensionList) validateGetParameters(inde
 	return nil
 }
 
-func (k *jsiiProxy_KustoClusterLanguageExtensionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KustoClusterLanguageExtensionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

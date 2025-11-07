@@ -43,11 +43,11 @@ func (m *jsiiProxy_MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputRe
 	return nil
 }
 
-func (m *jsiiProxy_MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

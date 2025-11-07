@@ -43,11 +43,11 @@ func (m *jsiiProxy_MssqlElasticpoolPerDatabaseSettingsOutputReference) validateG
 	return nil
 }
 
-func (m *jsiiProxy_MssqlElasticpoolPerDatabaseSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlElasticpoolPerDatabaseSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MssqlElasticpoolPerDatabaseSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlElasticpoolPerDatabaseSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

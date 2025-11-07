@@ -15,7 +15,7 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetExtensionList) validateGetP
 	return nil
 }
 
-func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetExtensionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetExtensionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

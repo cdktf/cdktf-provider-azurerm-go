@@ -43,11 +43,11 @@ func (f *jsiiProxy_FunctionAppSlotSiteCredentialOutputReference) validateGetStri
 	return nil
 }
 
-func (f *jsiiProxy_FunctionAppSlotSiteCredentialOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FunctionAppSlotSiteCredentialOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FunctionAppSlotSiteCredentialOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FunctionAppSlotSiteCredentialOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

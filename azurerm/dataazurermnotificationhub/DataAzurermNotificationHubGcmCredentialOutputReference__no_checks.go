@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermNotificationHubGcmCredentialOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNotificationHubGcmCredentialOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermNotificationHubGcmCredentialOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNotificationHubGcmCredentialOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermNotificationHubGcmCredentialOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

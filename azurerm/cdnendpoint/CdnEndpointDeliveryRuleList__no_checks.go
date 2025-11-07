@@ -15,7 +15,7 @@ func (c *jsiiProxy_CdnEndpointDeliveryRuleList) validateGetParameters(index *flo
 	return nil
 }
 
-func (c *jsiiProxy_CdnEndpointDeliveryRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnEndpointDeliveryRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualMachineRunCommandInstanceViewOutputReference) validate
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineRunCommandInstanceViewOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualMachineRunCommandInstanceViewOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineRunCommandInstanceViewOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineRunCommandInstanceViewOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

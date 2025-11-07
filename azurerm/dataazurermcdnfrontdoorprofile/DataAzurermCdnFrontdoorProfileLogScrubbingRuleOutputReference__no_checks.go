@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermCdnFrontdoorProfileLogScrubbingRuleOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermCdnFrontdoorProfileLogScrubbingRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermCdnFrontdoorProfileLogScrubbingRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermCdnFrontdoorProfileLogScrubbingRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermCdnFrontdoorProfileLogScrubbingRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

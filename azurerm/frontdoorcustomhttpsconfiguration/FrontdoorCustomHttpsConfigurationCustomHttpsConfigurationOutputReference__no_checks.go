@@ -43,11 +43,11 @@ func (f *jsiiProxy_FrontdoorCustomHttpsConfigurationCustomHttpsConfigurationOutp
 	return nil
 }
 
-func (f *jsiiProxy_FrontdoorCustomHttpsConfigurationCustomHttpsConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FrontdoorCustomHttpsConfigurationCustomHttpsConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FrontdoorCustomHttpsConfigurationCustomHttpsConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FrontdoorCustomHttpsConfigurationCustomHttpsConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

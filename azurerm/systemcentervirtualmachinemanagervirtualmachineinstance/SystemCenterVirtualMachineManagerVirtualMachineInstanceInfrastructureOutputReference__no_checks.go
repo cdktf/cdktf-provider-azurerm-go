@@ -43,11 +43,11 @@ func (s *jsiiProxy_SystemCenterVirtualMachineManagerVirtualMachineInstanceInfras
 	return nil
 }
 
-func (s *jsiiProxy_SystemCenterVirtualMachineManagerVirtualMachineInstanceInfrastructureOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SystemCenterVirtualMachineManagerVirtualMachineInstanceInfrastructureOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SystemCenterVirtualMachineManagerVirtualMachineInstanceInfrastructureOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SystemCenterVirtualMachineManagerVirtualMachineInstanceInfrastructureOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (a *jsiiProxy_ArcKubernetesClusterTimeoutsOutputReference) validateGetStrin
 	return nil
 }
 
-func (a *jsiiProxy_ArcKubernetesClusterTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ArcKubernetesClusterTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ArcKubernetesClusterTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ArcKubernetesClusterTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

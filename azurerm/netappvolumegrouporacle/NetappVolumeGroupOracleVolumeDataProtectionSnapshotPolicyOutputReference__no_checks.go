@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetappVolumeGroupOracleVolumeDataProtectionSnapshotPolicyOutp
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeGroupOracleVolumeDataProtectionSnapshotPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetappVolumeGroupOracleVolumeDataProtectionSnapshotPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeGroupOracleVolumeDataProtectionSnapshotPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetappVolumeGroupOracleVolumeDataProtectionSnapshotPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

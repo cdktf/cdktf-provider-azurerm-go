@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppServiceSlotSiteConfigIpRestrictionHeadersOutputReference) 
 	return nil
 }
 
-func (a *jsiiProxy_AppServiceSlotSiteConfigIpRestrictionHeadersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppServiceSlotSiteConfigIpRestrictionHeadersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppServiceSlotSiteConfigIpRestrictionHeadersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppServiceSlotSiteConfigIpRestrictionHeadersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

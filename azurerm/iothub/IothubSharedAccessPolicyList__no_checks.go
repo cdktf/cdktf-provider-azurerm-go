@@ -15,7 +15,7 @@ func (i *jsiiProxy_IothubSharedAccessPolicyList) validateGetParameters(index *fl
 	return nil
 }
 
-func (i *jsiiProxy_IothubSharedAccessPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IothubSharedAccessPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

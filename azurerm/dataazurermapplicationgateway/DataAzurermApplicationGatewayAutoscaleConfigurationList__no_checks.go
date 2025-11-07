@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermApplicationGatewayAutoscaleConfigurationList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApplicationGatewayAutoscaleConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermApplicationGatewayAutoscaleConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApiManagementHostnameConfigurationScmList) validateGetParamet
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementHostnameConfigurationScmList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementHostnameConfigurationScmList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

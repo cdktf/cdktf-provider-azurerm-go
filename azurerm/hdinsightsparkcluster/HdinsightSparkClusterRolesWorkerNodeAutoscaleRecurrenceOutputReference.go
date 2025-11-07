@@ -68,11 +68,11 @@ type HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceOutputReference inte
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutSchedule(value interface{})
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -459,8 +459,8 @@ func (h *jsiiProxy_HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceOutput
 	return returns
 }
 
-func (h *jsiiProxy_HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := h.validateInterpolationForAttributeParameters(property); err != nil {
+func (h *jsiiProxy_HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := h.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -468,7 +468,7 @@ func (h *jsiiProxy_HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceOutput
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -486,8 +486,8 @@ func (h *jsiiProxy_HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceOutput
 	)
 }
 
-func (h *jsiiProxy_HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := h.validateResolveParameters(_context); err != nil {
+func (h *jsiiProxy_HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := h.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -495,7 +495,7 @@ func (h *jsiiProxy_HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceOutput
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualHubRouteTableRouteOutputReference) validateGetStringMa
 	return nil
 }
 
-func (v *jsiiProxy_VirtualHubRouteTableRouteOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualHubRouteTableRouteOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualHubRouteTableRouteOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualHubRouteTableRouteOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

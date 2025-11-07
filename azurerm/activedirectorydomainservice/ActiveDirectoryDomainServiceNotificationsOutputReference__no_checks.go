@@ -43,11 +43,11 @@ func (a *jsiiProxy_ActiveDirectoryDomainServiceNotificationsOutputReference) val
 	return nil
 }
 
-func (a *jsiiProxy_ActiveDirectoryDomainServiceNotificationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ActiveDirectoryDomainServiceNotificationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ActiveDirectoryDomainServiceNotificationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ActiveDirectoryDomainServiceNotificationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

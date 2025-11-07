@@ -43,11 +43,11 @@ func (i *jsiiProxy_IothubEndpointServicebusQueueTimeoutsOutputReference) validat
 	return nil
 }
 
-func (i *jsiiProxy_IothubEndpointServicebusQueueTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IothubEndpointServicebusQueueTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IothubEndpointServicebusQueueTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IothubEndpointServicebusQueueTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

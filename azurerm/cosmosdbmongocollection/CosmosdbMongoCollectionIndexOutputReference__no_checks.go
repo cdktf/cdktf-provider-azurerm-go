@@ -43,11 +43,11 @@ func (c *jsiiProxy_CosmosdbMongoCollectionIndexOutputReference) validateGetStrin
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbMongoCollectionIndexOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CosmosdbMongoCollectionIndexOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbMongoCollectionIndexOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbMongoCollectionIndexOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermLbFrontendIpConfigurationList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLbFrontendIpConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermLbFrontendIpConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

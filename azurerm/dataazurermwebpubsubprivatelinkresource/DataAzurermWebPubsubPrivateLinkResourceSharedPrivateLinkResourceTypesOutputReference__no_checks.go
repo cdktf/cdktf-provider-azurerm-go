@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermWebPubsubPrivateLinkResourceSharedPrivateLinkResou
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermWebPubsubPrivateLinkResourceSharedPrivateLinkResourceTypesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermWebPubsubPrivateLinkResourceSharedPrivateLinkResourceTypesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermWebPubsubPrivateLinkResourceSharedPrivateLinkResourceTypesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermWebPubsubPrivateLinkResourceSharedPrivateLinkResourceTypesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (n *jsiiProxy_NginxDeploymentNetworkInterfaceList) validateGetParameters(in
 	return nil
 }
 
-func (n *jsiiProxy_NginxDeploymentNetworkInterfaceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NginxDeploymentNetworkInterfaceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

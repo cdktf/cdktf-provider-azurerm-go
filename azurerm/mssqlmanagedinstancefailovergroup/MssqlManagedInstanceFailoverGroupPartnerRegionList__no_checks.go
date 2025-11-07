@@ -15,7 +15,7 @@ func (m *jsiiProxy_MssqlManagedInstanceFailoverGroupPartnerRegionList) validateG
 	return nil
 }
 
-func (m *jsiiProxy_MssqlManagedInstanceFailoverGroupPartnerRegionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlManagedInstanceFailoverGroupPartnerRegionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

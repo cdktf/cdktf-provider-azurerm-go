@@ -15,7 +15,7 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetAdminSshKeyList) validateGetParame
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineScaleSetAdminSshKeyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetAdminSshKeyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

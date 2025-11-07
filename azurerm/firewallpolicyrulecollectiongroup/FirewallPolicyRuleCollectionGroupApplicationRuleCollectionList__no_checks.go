@@ -15,7 +15,7 @@ func (f *jsiiProxy_FirewallPolicyRuleCollectionGroupApplicationRuleCollectionLis
 	return nil
 }
 
-func (f *jsiiProxy_FirewallPolicyRuleCollectionGroupApplicationRuleCollectionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirewallPolicyRuleCollectionGroupApplicationRuleCollectionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

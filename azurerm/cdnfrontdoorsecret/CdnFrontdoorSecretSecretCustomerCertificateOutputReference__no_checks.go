@@ -43,11 +43,11 @@ func (c *jsiiProxy_CdnFrontdoorSecretSecretCustomerCertificateOutputReference) v
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorSecretSecretCustomerCertificateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CdnFrontdoorSecretSecretCustomerCertificateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorSecretSecretCustomerCertificateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnFrontdoorSecretSecretCustomerCertificateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

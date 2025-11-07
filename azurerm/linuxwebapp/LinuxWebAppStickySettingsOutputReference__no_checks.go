@@ -43,11 +43,11 @@ func (l *jsiiProxy_LinuxWebAppStickySettingsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppStickySettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxWebAppStickySettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppStickySettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxWebAppStickySettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

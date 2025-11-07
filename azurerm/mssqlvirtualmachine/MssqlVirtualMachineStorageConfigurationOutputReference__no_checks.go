@@ -43,7 +43,7 @@ func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationOutputReference) valid
 	return nil
 }
 
-func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationOutputReference) valid
 	return nil
 }
 
-func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

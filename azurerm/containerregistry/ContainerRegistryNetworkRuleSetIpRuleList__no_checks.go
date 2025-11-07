@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerRegistryNetworkRuleSetIpRuleList) validateGetParamet
 	return nil
 }
 
-func (c *jsiiProxy_ContainerRegistryNetworkRuleSetIpRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerRegistryNetworkRuleSetIpRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

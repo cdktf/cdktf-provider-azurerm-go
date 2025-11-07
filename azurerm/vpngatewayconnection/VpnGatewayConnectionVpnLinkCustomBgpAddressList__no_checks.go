@@ -15,7 +15,7 @@ func (v *jsiiProxy_VpnGatewayConnectionVpnLinkCustomBgpAddressList) validateGetP
 	return nil
 }
 
-func (v *jsiiProxy_VpnGatewayConnectionVpnLinkCustomBgpAddressList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpnGatewayConnectionVpnLinkCustomBgpAddressList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

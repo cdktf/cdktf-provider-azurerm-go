@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesClusterUpgradeOverrideOutputReference) validateGetS
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterUpgradeOverrideOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterUpgradeOverrideOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterUpgradeOverrideOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterUpgradeOverrideOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

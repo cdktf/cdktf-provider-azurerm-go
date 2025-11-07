@@ -43,11 +43,11 @@ func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleAssignmentTimeoutsOu
 	return nil
 }
 
-func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleAssignmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleAssignmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleAssignmentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleAssignmentTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

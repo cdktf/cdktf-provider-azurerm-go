@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitorActionGroupVoiceReceiverList) validateGetParameters(in
 	return nil
 }
 
-func (m *jsiiProxy_MonitorActionGroupVoiceReceiverList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorActionGroupVoiceReceiverList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

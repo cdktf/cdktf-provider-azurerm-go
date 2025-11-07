@@ -15,7 +15,7 @@ func (a *jsiiProxy_AutomationAccountPrivateEndpointConnectionList) validateGetPa
 	return nil
 }
 
-func (a *jsiiProxy_AutomationAccountPrivateEndpointConnectionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutomationAccountPrivateEndpointConnectionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

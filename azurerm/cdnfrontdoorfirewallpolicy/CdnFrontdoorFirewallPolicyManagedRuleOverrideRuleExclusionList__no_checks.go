@@ -15,7 +15,7 @@ func (c *jsiiProxy_CdnFrontdoorFirewallPolicyManagedRuleOverrideRuleExclusionLis
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorFirewallPolicyManagedRuleOverrideRuleExclusionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnFrontdoorFirewallPolicyManagedRuleOverrideRuleExclusionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

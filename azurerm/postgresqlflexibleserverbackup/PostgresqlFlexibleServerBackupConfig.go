@@ -22,18 +22,18 @@ type PostgresqlFlexibleServerBackupConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/postgresql_flexible_server_backup#name PostgresqlFlexibleServerBackup#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/postgresql_flexible_server_backup#name PostgresqlFlexibleServerBackup#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/postgresql_flexible_server_backup#server_id PostgresqlFlexibleServerBackup#server_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/postgresql_flexible_server_backup#server_id PostgresqlFlexibleServerBackup#server_id}.
 	ServerId *string `field:"required" json:"serverId" yaml:"serverId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/postgresql_flexible_server_backup#id PostgresqlFlexibleServerBackup#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/postgresql_flexible_server_backup#id PostgresqlFlexibleServerBackup#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/postgresql_flexible_server_backup#timeouts PostgresqlFlexibleServerBackup#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/postgresql_flexible_server_backup#timeouts PostgresqlFlexibleServerBackup#timeouts}
 	Timeouts *PostgresqlFlexibleServerBackupTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

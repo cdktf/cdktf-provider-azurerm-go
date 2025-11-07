@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApiManagementCertificateList) validateGetParameters(index *fl
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementCertificateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementCertificateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

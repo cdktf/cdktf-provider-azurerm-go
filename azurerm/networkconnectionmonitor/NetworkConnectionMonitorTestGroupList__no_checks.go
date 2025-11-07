@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkConnectionMonitorTestGroupList) validateGetParameters(
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectionMonitorTestGroupList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkConnectionMonitorTestGroupList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

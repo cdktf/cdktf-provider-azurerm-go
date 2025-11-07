@@ -41,7 +41,7 @@ type MonitorMetricAlertActionList interface {
 	Get(index *float64) MonitorMetricAlertActionOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (m *jsiiProxy_MonitorMetricAlertActionList) Get(index *float64) MonitorMetr
 	return returns
 }
 
-func (m *jsiiProxy_MonitorMetricAlertActionList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MonitorMetricAlertActionList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (m *jsiiProxy_MonitorMetricAlertActionList) Resolve(_context cdktf.IResolve
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

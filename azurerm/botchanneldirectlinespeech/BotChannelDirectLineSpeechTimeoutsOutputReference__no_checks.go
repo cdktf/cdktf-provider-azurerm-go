@@ -43,11 +43,11 @@ func (b *jsiiProxy_BotChannelDirectLineSpeechTimeoutsOutputReference) validateGe
 	return nil
 }
 
-func (b *jsiiProxy_BotChannelDirectLineSpeechTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BotChannelDirectLineSpeechTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BotChannelDirectLineSpeechTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BotChannelDirectLineSpeechTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignmentConfigurationParam
 	return nil
 }
 
-func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignmentConfigurationParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignmentConfigurationParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApplicationGatewayWafConfigurationExclusionList) validateGetP
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayWafConfigurationExclusionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationGatewayWafConfigurationExclusionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

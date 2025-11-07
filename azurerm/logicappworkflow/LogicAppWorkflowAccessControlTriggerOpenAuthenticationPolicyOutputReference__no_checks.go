@@ -43,7 +43,7 @@ func (l *jsiiProxy_LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyO
 	return nil
 }
 
-func (l *jsiiProxy_LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyO
 	return nil
 }
 
-func (l *jsiiProxy_LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

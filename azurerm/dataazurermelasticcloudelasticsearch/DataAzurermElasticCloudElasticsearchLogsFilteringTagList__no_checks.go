@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermElasticCloudElasticsearchLogsFilteringTagList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermElasticCloudElasticsearchLogsFilteringTagList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermElasticCloudElasticsearchLogsFilteringTagList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

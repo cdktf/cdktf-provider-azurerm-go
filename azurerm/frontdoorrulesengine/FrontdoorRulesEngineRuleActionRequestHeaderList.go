@@ -41,7 +41,7 @@ type FrontdoorRulesEngineRuleActionRequestHeaderList interface {
 	Get(index *float64) FrontdoorRulesEngineRuleActionRequestHeaderOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (f *jsiiProxy_FrontdoorRulesEngineRuleActionRequestHeaderList) Get(index *f
 	return returns
 }
 
-func (f *jsiiProxy_FrontdoorRulesEngineRuleActionRequestHeaderList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FrontdoorRulesEngineRuleActionRequestHeaderList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (f *jsiiProxy_FrontdoorRulesEngineRuleActionRequestHeaderList) Resolve(_con
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -43,7 +43,7 @@ func (c *jsiiProxy_CdnFrontdoorSecurityPolicySecurityPoliciesFirewallOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorSecurityPolicySecurityPoliciesFirewallOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CdnFrontdoorSecurityPolicySecurityPoliciesFirewallOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CdnFrontdoorSecurityPolicySecurityPoliciesFirewallOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorSecurityPolicySecurityPoliciesFirewallOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnFrontdoorSecurityPolicySecurityPoliciesFirewallOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermVpnServerConfigurationRadiusClientRootCertificateL
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermVpnServerConfigurationRadiusClientRootCertificateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermVpnServerConfigurationRadiusClientRootCertificateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (i *jsiiProxy_IothubRouteList) validateGetParameters(index *float64) error 
 	return nil
 }
 
-func (i *jsiiProxy_IothubRouteList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IothubRouteList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

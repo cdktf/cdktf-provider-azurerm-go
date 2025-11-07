@@ -43,11 +43,11 @@ func (m *jsiiProxy_MssqlOutboundFirewallRuleTimeoutsOutputReference) validateGet
 	return nil
 }
 
-func (m *jsiiProxy_MssqlOutboundFirewallRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlOutboundFirewallRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MssqlOutboundFirewallRuleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlOutboundFirewallRuleTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

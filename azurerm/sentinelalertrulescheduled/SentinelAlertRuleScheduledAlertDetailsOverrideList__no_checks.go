@@ -15,7 +15,7 @@ func (s *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideList) validateG
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

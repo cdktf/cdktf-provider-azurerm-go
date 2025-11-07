@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataProtectionBackupPolicyPostgresqlTimeoutsOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupPolicyPostgresqlTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataProtectionBackupPolicyPostgresqlTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupPolicyPostgresqlTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataProtectionBackupPolicyPostgresqlTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

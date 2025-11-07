@@ -43,7 +43,7 @@ func (k *jsiiProxy_KubernetesClusterLinuxProfileOutputReference) validateGetStri
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterLinuxProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterLinuxProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (k *jsiiProxy_KubernetesClusterLinuxProfileOutputReference) validatePutSshK
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterLinuxProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterLinuxProfileOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

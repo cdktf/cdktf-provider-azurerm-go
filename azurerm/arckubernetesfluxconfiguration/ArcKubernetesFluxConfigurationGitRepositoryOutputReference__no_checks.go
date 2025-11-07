@@ -43,11 +43,11 @@ func (a *jsiiProxy_ArcKubernetesFluxConfigurationGitRepositoryOutputReference) v
 	return nil
 }
 
-func (a *jsiiProxy_ArcKubernetesFluxConfigurationGitRepositoryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ArcKubernetesFluxConfigurationGitRepositoryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ArcKubernetesFluxConfigurationGitRepositoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ArcKubernetesFluxConfigurationGitRepositoryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermSpringCloudAppIdentityOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSpringCloudAppIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermSpringCloudAppIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSpringCloudAppIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermSpringCloudAppIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

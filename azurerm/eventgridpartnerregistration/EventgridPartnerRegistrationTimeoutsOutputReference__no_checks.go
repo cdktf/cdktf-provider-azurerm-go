@@ -43,11 +43,11 @@ func (e *jsiiProxy_EventgridPartnerRegistrationTimeoutsOutputReference) validate
 	return nil
 }
 
-func (e *jsiiProxy_EventgridPartnerRegistrationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventgridPartnerRegistrationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventgridPartnerRegistrationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventgridPartnerRegistrationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

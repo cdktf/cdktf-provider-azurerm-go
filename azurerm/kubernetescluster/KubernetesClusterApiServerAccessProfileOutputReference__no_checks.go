@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) valid
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

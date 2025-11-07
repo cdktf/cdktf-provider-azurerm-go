@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServicebusSubscriptionRuleCorrelationFilterOutputReference) v
 	return nil
 }
 
-func (s *jsiiProxy_ServicebusSubscriptionRuleCorrelationFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServicebusSubscriptionRuleCorrelationFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServicebusSubscriptionRuleCorrelationFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServicebusSubscriptionRuleCorrelationFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

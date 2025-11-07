@@ -43,11 +43,11 @@ func (t *jsiiProxy_TrafficManagerAzureEndpointSubnetOutputReference) validateGet
 	return nil
 }
 
-func (t *jsiiProxy_TrafficManagerAzureEndpointSubnetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TrafficManagerAzureEndpointSubnetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TrafficManagerAzureEndpointSubnetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TrafficManagerAzureEndpointSubnetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

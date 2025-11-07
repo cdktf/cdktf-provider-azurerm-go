@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpringCloudServiceConfigServerGitSettingHttpBasicAuthOutputRe
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudServiceConfigServerGitSettingHttpBasicAuthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpringCloudServiceConfigServerGitSettingHttpBasicAuthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudServiceConfigServerGitSettingHttpBasicAuthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpringCloudServiceConfigServerGitSettingHttpBasicAuthOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermPrivateLinkServiceNatIpConfigurationList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermPrivateLinkServiceNatIpConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermPrivateLinkServiceNatIpConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceList) validateGetPara
 	return nil
 }
 
-func (s *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

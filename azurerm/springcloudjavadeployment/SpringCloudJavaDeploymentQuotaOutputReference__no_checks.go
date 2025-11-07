@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpringCloudJavaDeploymentQuotaOutputReference) validateGetStr
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudJavaDeploymentQuotaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpringCloudJavaDeploymentQuotaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudJavaDeploymentQuotaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpringCloudJavaDeploymentQuotaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (b *jsiiProxy_BatchPoolDiskEncryptionList) validateGetParameters(index *flo
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolDiskEncryptionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchPoolDiskEncryptionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

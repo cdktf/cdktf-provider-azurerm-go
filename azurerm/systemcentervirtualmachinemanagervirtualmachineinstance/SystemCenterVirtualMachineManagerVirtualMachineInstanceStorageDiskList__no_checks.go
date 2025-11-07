@@ -15,7 +15,7 @@ func (s *jsiiProxy_SystemCenterVirtualMachineManagerVirtualMachineInstanceStorag
 	return nil
 }
 
-func (s *jsiiProxy_SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (r *jsiiProxy_ResourceGroupCostManagementViewPivotList) validateGetParamete
 	return nil
 }
 
-func (r *jsiiProxy_ResourceGroupCostManagementViewPivotList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResourceGroupCostManagementViewPivotList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

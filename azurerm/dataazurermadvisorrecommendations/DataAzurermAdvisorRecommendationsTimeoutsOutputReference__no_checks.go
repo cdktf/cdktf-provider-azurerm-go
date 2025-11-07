@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermAdvisorRecommendationsTimeoutsOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermAdvisorRecommendationsTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermAdvisorRecommendationsTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermAdvisorRecommendationsTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermAdvisorRecommendationsTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

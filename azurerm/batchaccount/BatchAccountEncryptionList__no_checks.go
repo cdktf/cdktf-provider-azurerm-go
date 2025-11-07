@@ -15,7 +15,7 @@ func (b *jsiiProxy_BatchAccountEncryptionList) validateGetParameters(index *floa
 	return nil
 }
 
-func (b *jsiiProxy_BatchAccountEncryptionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchAccountEncryptionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

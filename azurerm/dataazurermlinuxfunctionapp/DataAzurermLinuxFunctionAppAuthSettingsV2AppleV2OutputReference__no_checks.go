@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermLinuxFunctionAppAuthSettingsV2AppleV2OutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLinuxFunctionAppAuthSettingsV2AppleV2OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermLinuxFunctionAppAuthSettingsV2AppleV2OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLinuxFunctionAppAuthSettingsV2AppleV2OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermLinuxFunctionAppAuthSettingsV2AppleV2OutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermKubernetesClusterLinuxProfileSshKeyList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKubernetesClusterLinuxProfileSshKeyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermKubernetesClusterLinuxProfileSshKeyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

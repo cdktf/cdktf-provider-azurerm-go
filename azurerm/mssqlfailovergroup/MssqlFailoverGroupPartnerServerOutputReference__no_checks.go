@@ -43,11 +43,11 @@ func (m *jsiiProxy_MssqlFailoverGroupPartnerServerOutputReference) validateGetSt
 	return nil
 }
 
-func (m *jsiiProxy_MssqlFailoverGroupPartnerServerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlFailoverGroupPartnerServerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MssqlFailoverGroupPartnerServerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlFailoverGroupPartnerServerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

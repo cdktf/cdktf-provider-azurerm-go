@@ -43,11 +43,11 @@ func (s *jsiiProxy_SentinelAlertRuleScheduledSentinelEntityMappingOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleScheduledSentinelEntityMappingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SentinelAlertRuleScheduledSentinelEntityMappingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleScheduledSentinelEntityMappingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelAlertRuleScheduledSentinelEntityMappingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

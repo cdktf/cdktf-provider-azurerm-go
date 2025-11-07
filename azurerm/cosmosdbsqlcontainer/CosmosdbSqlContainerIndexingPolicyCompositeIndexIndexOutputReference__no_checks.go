@@ -43,11 +43,11 @@ func (c *jsiiProxy_CosmosdbSqlContainerIndexingPolicyCompositeIndexIndexOutputRe
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbSqlContainerIndexingPolicyCompositeIndexIndexOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CosmosdbSqlContainerIndexingPolicyCompositeIndexIndexOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbSqlContainerIndexingPolicyCompositeIndexIndexOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbSqlContainerIndexingPolicyCompositeIndexIndexOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

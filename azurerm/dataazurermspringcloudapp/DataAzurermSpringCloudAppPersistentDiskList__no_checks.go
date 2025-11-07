@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermSpringCloudAppPersistentDiskList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSpringCloudAppPersistentDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermSpringCloudAppPersistentDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

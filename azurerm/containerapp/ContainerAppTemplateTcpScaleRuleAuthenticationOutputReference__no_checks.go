@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerAppTemplateTcpScaleRuleAuthenticationOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppTemplateTcpScaleRuleAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAppTemplateTcpScaleRuleAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppTemplateTcpScaleRuleAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppTemplateTcpScaleRuleAuthenticationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

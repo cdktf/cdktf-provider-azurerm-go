@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermNetappVolumeDataProtectionBackupPolicyList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNetappVolumeDataProtectionBackupPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermNetappVolumeDataProtectionBackupPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

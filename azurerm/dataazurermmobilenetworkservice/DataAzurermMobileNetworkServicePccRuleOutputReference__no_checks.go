@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermMobileNetworkServicePccRuleOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMobileNetworkServicePccRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermMobileNetworkServicePccRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMobileNetworkServicePccRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermMobileNetworkServicePccRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

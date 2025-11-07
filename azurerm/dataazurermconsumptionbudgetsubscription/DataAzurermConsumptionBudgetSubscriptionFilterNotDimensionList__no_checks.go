@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermConsumptionBudgetSubscriptionFilterNotDimensionLis
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermConsumptionBudgetSubscriptionFilterNotDimensionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermConsumptionBudgetSubscriptionFilterNotDimensionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

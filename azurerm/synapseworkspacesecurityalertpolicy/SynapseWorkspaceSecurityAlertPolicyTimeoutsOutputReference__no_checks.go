@@ -43,11 +43,11 @@ func (s *jsiiProxy_SynapseWorkspaceSecurityAlertPolicyTimeoutsOutputReference) v
 	return nil
 }
 
-func (s *jsiiProxy_SynapseWorkspaceSecurityAlertPolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SynapseWorkspaceSecurityAlertPolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SynapseWorkspaceSecurityAlertPolicyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SynapseWorkspaceSecurityAlertPolicyTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

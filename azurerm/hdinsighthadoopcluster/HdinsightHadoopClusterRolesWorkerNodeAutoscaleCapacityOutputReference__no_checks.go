@@ -43,11 +43,11 @@ func (h *jsiiProxy_HdinsightHadoopClusterRolesWorkerNodeAutoscaleCapacityOutputR
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightHadoopClusterRolesWorkerNodeAutoscaleCapacityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HdinsightHadoopClusterRolesWorkerNodeAutoscaleCapacityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightHadoopClusterRolesWorkerNodeAutoscaleCapacityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightHadoopClusterRolesWorkerNodeAutoscaleCapacityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

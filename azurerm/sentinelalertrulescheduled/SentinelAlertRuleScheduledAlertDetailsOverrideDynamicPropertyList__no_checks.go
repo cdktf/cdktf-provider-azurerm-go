@@ -15,7 +15,7 @@ func (s *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideDynamicProperty
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

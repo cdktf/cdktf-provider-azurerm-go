@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityCenterAutomationSourceRuleSetList) validateGetParamet
 	return nil
 }
 
-func (s *jsiiProxy_SecurityCenterAutomationSourceRuleSetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityCenterAutomationSourceRuleSetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

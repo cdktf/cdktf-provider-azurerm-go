@@ -43,11 +43,11 @@ func (o *jsiiProxy_OrbitalContactProfileLinksChannelsEndPointOutputReference) va
 	return nil
 }
 
-func (o *jsiiProxy_OrbitalContactProfileLinksChannelsEndPointOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OrbitalContactProfileLinksChannelsEndPointOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OrbitalContactProfileLinksChannelsEndPointOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrbitalContactProfileLinksChannelsEndPointOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

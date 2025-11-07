@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermBatchPoolCertificateList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermBatchPoolCertificateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermBatchPoolCertificateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

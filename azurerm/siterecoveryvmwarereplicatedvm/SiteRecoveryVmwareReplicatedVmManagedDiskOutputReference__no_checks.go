@@ -43,11 +43,11 @@ func (s *jsiiProxy_SiteRecoveryVmwareReplicatedVmManagedDiskOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_SiteRecoveryVmwareReplicatedVmManagedDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SiteRecoveryVmwareReplicatedVmManagedDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SiteRecoveryVmwareReplicatedVmManagedDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SiteRecoveryVmwareReplicatedVmManagedDiskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_SnapshotEncryptionSettingsKeyEncryptionKeyOutputReference) va
 	return nil
 }
 
-func (s *jsiiProxy_SnapshotEncryptionSettingsKeyEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SnapshotEncryptionSettingsKeyEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SnapshotEncryptionSettingsKeyEncryptionKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SnapshotEncryptionSettingsKeyEncryptionKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

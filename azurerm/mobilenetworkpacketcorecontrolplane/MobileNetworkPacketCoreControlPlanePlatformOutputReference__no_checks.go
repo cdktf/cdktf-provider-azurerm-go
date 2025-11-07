@@ -43,11 +43,11 @@ func (m *jsiiProxy_MobileNetworkPacketCoreControlPlanePlatformOutputReference) v
 	return nil
 }
 
-func (m *jsiiProxy_MobileNetworkPacketCoreControlPlanePlatformOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MobileNetworkPacketCoreControlPlanePlatformOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MobileNetworkPacketCoreControlPlanePlatformOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MobileNetworkPacketCoreControlPlanePlatformOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

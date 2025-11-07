@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermSubscriptionsSubscriptionsList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSubscriptionsSubscriptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermSubscriptionsSubscriptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

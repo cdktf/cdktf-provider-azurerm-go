@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerGroupContainerLivenessProbeHttpGetList) validateGetP
 	return nil
 }
 
-func (c *jsiiProxy_ContainerGroupContainerLivenessProbeHttpGetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerGroupContainerLivenessProbeHttpGetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

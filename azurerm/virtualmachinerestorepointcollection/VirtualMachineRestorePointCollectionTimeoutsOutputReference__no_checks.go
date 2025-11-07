@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualMachineRestorePointCollectionTimeoutsOutputReference) 
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineRestorePointCollectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualMachineRestorePointCollectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineRestorePointCollectionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineRestorePointCollectionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

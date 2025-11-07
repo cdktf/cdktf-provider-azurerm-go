@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApplicationGatewayPrivateLinkConfigurationList) validateGetPa
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayPrivateLinkConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationGatewayPrivateLinkConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

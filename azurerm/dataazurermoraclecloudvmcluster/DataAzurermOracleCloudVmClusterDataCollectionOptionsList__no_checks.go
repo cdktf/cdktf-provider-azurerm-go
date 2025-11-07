@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermOracleCloudVmClusterDataCollectionOptionsList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermOracleCloudVmClusterDataCollectionOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermOracleCloudVmClusterDataCollectionOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (m *jsiiProxy_MssqlDatabaseThreatDetectionPolicyOutputReference) validateGe
 	return nil
 }
 
-func (m *jsiiProxy_MssqlDatabaseThreatDetectionPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlDatabaseThreatDetectionPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MssqlDatabaseThreatDetectionPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlDatabaseThreatDetectionPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

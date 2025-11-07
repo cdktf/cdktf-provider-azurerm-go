@@ -43,11 +43,11 @@ func (e *jsiiProxy_EmailCommunicationServiceDomainVerificationRecordsOutputRefer
 	return nil
 }
 
-func (e *jsiiProxy_EmailCommunicationServiceDomainVerificationRecordsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmailCommunicationServiceDomainVerificationRecordsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmailCommunicationServiceDomainVerificationRecordsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmailCommunicationServiceDomainVerificationRecordsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermVirtualNetworkGatewayConnectionIpsecPolicyList) va
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermVirtualNetworkGatewayConnectionIpsecPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermVirtualNetworkGatewayConnectionIpsecPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

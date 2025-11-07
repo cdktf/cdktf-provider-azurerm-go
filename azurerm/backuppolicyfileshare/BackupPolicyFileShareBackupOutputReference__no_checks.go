@@ -43,7 +43,7 @@ func (b *jsiiProxy_BackupPolicyFileShareBackupOutputReference) validateGetString
 	return nil
 }
 
-func (b *jsiiProxy_BackupPolicyFileShareBackupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BackupPolicyFileShareBackupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (b *jsiiProxy_BackupPolicyFileShareBackupOutputReference) validatePutHourly
 	return nil
 }
 
-func (b *jsiiProxy_BackupPolicyFileShareBackupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupPolicyFileShareBackupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

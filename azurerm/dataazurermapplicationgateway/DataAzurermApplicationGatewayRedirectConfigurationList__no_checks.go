@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermApplicationGatewayRedirectConfigurationList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApplicationGatewayRedirectConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermApplicationGatewayRedirectConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageAccountBlobPropertiesRestorePolicyOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_StorageAccountBlobPropertiesRestorePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageAccountBlobPropertiesRestorePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageAccountBlobPropertiesRestorePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageAccountBlobPropertiesRestorePolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

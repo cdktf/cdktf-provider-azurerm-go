@@ -43,7 +43,7 @@ func (s *jsiiProxy_SpringCloudServiceConfigServerGitSettingOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudServiceConfigServerGitSettingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpringCloudServiceConfigServerGitSettingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (s *jsiiProxy_SpringCloudServiceConfigServerGitSettingOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudServiceConfigServerGitSettingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpringCloudServiceConfigServerGitSettingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

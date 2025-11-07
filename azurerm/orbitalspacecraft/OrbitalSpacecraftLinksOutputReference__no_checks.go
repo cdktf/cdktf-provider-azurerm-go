@@ -43,11 +43,11 @@ func (o *jsiiProxy_OrbitalSpacecraftLinksOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (o *jsiiProxy_OrbitalSpacecraftLinksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OrbitalSpacecraftLinksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OrbitalSpacecraftLinksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrbitalSpacecraftLinksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

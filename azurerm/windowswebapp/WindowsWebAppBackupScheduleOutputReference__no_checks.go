@@ -43,11 +43,11 @@ func (w *jsiiProxy_WindowsWebAppBackupScheduleOutputReference) validateGetString
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppBackupScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsWebAppBackupScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppBackupScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsWebAppBackupScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

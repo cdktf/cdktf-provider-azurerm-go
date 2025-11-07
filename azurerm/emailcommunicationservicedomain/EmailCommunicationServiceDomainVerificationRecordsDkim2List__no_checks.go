@@ -15,7 +15,7 @@ func (e *jsiiProxy_EmailCommunicationServiceDomainVerificationRecordsDkim2List) 
 	return nil
 }
 
-func (e *jsiiProxy_EmailCommunicationServiceDomainVerificationRecordsDkim2List) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmailCommunicationServiceDomainVerificationRecordsDkim2List) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

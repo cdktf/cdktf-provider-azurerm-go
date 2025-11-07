@@ -43,11 +43,11 @@ func (c *jsiiProxy_ConsumptionBudgetManagementGroupNotificationOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_ConsumptionBudgetManagementGroupNotificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConsumptionBudgetManagementGroupNotificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConsumptionBudgetManagementGroupNotificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConsumptionBudgetManagementGroupNotificationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

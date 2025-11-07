@@ -43,11 +43,11 @@ func (l *jsiiProxy_LinuxVirtualMachineTerminationNotificationOutputReference) va
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineTerminationNotificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxVirtualMachineTerminationNotificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineTerminationNotificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxVirtualMachineTerminationNotificationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

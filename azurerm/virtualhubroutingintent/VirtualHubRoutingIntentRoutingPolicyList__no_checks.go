@@ -15,7 +15,7 @@ func (v *jsiiProxy_VirtualHubRoutingIntentRoutingPolicyList) validateGetParamete
 	return nil
 }
 
-func (v *jsiiProxy_VirtualHubRoutingIntentRoutingPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualHubRoutingIntentRoutingPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

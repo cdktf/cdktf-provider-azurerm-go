@@ -41,7 +41,7 @@ type ResourceProviderRegistrationFeatureList interface {
 	Get(index *float64) ResourceProviderRegistrationFeatureOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (r *jsiiProxy_ResourceProviderRegistrationFeatureList) Get(index *float64) 
 	return returns
 }
 
-func (r *jsiiProxy_ResourceProviderRegistrationFeatureList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_ResourceProviderRegistrationFeatureList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (r *jsiiProxy_ResourceProviderRegistrationFeatureList) Resolve(_context cdk
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

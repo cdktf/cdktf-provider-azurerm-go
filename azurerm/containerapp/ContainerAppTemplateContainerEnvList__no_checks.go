@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerAppTemplateContainerEnvList) validateGetParameters(i
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppTemplateContainerEnvList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppTemplateContainerEnvList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

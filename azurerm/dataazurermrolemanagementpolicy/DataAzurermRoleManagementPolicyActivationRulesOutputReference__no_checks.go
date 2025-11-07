@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermRoleManagementPolicyActivationRulesOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermRoleManagementPolicyActivationRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermRoleManagementPolicyActivationRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermRoleManagementPolicyActivationRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermRoleManagementPolicyActivationRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

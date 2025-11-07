@@ -43,11 +43,11 @@ func (o *jsiiProxy_OracleExascaleDatabaseStorageVaultHighCapacityDatabaseStorage
 	return nil
 }
 
-func (o *jsiiProxy_OracleExascaleDatabaseStorageVaultHighCapacityDatabaseStorageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OracleExascaleDatabaseStorageVaultHighCapacityDatabaseStorageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OracleExascaleDatabaseStorageVaultHighCapacityDatabaseStorageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OracleExascaleDatabaseStorageVaultHighCapacityDatabaseStorageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

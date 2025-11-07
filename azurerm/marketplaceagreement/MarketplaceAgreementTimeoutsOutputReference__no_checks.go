@@ -43,11 +43,11 @@ func (m *jsiiProxy_MarketplaceAgreementTimeoutsOutputReference) validateGetStrin
 	return nil
 }
 
-func (m *jsiiProxy_MarketplaceAgreementTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MarketplaceAgreementTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MarketplaceAgreementTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MarketplaceAgreementTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

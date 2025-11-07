@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualMachineScaleSetStorageProfileImageReferenceOutputRefer
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineScaleSetStorageProfileImageReferenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualMachineScaleSetStorageProfileImageReferenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineScaleSetStorageProfileImageReferenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineScaleSetStorageProfileImageReferenceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

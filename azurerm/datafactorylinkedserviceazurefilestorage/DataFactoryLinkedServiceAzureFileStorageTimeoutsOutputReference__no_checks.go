@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFactoryLinkedServiceAzureFileStorageTimeoutsOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryLinkedServiceAzureFileStorageTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureFileStorageTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryLinkedServiceAzureFileStorageTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureFileStorageTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

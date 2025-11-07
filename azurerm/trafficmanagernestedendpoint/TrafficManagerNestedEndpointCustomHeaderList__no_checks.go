@@ -15,7 +15,7 @@ func (t *jsiiProxy_TrafficManagerNestedEndpointCustomHeaderList) validateGetPara
 	return nil
 }
 
-func (t *jsiiProxy_TrafficManagerNestedEndpointCustomHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TrafficManagerNestedEndpointCustomHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

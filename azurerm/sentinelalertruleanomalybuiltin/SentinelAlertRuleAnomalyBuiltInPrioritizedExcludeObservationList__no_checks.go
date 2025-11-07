@@ -15,7 +15,7 @@ func (s *jsiiProxy_SentinelAlertRuleAnomalyBuiltInPrioritizedExcludeObservationL
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleAnomalyBuiltInPrioritizedExcludeObservationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelAlertRuleAnomalyBuiltInPrioritizedExcludeObservationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

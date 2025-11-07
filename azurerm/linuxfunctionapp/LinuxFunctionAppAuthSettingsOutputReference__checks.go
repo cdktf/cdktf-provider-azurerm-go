@@ -85,9 +85,9 @@ func (l *jsiiProxy_LinuxFunctionAppAuthSettingsOutputReference) validateGetStrin
 	return nil
 }
 
-func (l *jsiiProxy_LinuxFunctionAppAuthSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (l *jsiiProxy_LinuxFunctionAppAuthSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -159,9 +159,9 @@ func (l *jsiiProxy_LinuxFunctionAppAuthSettingsOutputReference) validatePutTwitt
 	return nil
 }
 
-func (l *jsiiProxy_LinuxFunctionAppAuthSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (l *jsiiProxy_LinuxFunctionAppAuthSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

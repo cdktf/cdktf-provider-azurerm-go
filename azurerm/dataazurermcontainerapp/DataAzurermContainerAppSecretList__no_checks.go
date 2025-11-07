@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermContainerAppSecretList) validateGetParameters(inde
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermContainerAppSecretList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermContainerAppSecretList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

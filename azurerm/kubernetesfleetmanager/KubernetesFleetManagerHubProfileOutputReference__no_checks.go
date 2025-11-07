@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesFleetManagerHubProfileOutputReference) validateGetS
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesFleetManagerHubProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesFleetManagerHubProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesFleetManagerHubProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesFleetManagerHubProfileOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

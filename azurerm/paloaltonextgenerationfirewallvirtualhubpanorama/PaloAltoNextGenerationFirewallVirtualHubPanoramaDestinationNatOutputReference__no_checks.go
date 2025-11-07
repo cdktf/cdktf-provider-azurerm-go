@@ -43,7 +43,7 @@ func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanoramaDestinationNa
 	return nil
 }
 
-func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanoramaDestinationNatOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanoramaDestinationNatOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanoramaDestinationNa
 	return nil
 }
 
-func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanoramaDestinationNatOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanoramaDestinationNatOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

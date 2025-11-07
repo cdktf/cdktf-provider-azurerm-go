@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermAppConfigurationPrimaryWriteKeyList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermAppConfigurationPrimaryWriteKeyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermAppConfigurationPrimaryWriteKeyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

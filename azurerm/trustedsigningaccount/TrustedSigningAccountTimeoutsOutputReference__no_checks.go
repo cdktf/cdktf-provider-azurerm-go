@@ -43,11 +43,11 @@ func (t *jsiiProxy_TrustedSigningAccountTimeoutsOutputReference) validateGetStri
 	return nil
 }
 
-func (t *jsiiProxy_TrustedSigningAccountTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TrustedSigningAccountTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TrustedSigningAccountTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TrustedSigningAccountTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

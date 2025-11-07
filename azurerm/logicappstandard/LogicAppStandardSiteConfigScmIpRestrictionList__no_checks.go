@@ -15,7 +15,7 @@ func (l *jsiiProxy_LogicAppStandardSiteConfigScmIpRestrictionList) validateGetPa
 	return nil
 }
 
-func (l *jsiiProxy_LogicAppStandardSiteConfigScmIpRestrictionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogicAppStandardSiteConfigScmIpRestrictionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

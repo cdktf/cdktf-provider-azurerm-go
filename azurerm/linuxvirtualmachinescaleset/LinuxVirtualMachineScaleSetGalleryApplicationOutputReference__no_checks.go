@@ -43,11 +43,11 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetGalleryApplicationOutputReference)
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineScaleSetGalleryApplicationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetGalleryApplicationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineScaleSetGalleryApplicationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetGalleryApplicationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (w *jsiiProxy_WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputRefere
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (w *jsiiProxy_WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputRefere
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

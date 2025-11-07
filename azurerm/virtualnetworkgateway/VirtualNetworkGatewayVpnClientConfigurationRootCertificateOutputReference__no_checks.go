@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationRootCertificateOut
 	return nil
 }
 
-func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationRootCertificateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationRootCertificateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationRootCertificateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationRootCertificateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

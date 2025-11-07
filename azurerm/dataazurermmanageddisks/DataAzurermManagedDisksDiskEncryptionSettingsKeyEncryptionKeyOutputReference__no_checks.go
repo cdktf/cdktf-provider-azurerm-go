@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermManagedDisksDiskEncryptionSettingsKeyEncryptionKey
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermManagedDisksDiskEncryptionSettingsKeyEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermManagedDisksDiskEncryptionSettingsKeyEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermManagedDisksDiskEncryptionSettingsKeyEncryptionKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermManagedDisksDiskEncryptionSettingsKeyEncryptionKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

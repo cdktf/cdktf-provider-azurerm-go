@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermSentinelAlertRuleAnomalyPrioritizedExcludeObservat
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSentinelAlertRuleAnomalyPrioritizedExcludeObservationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermSentinelAlertRuleAnomalyPrioritizedExcludeObservationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSentinelAlertRuleAnomalyPrioritizedExcludeObservationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermSentinelAlertRuleAnomalyPrioritizedExcludeObservationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_SynapseLinkedServiceIntegrationRuntimeOutputReference) valida
 	return nil
 }
 
-func (s *jsiiProxy_SynapseLinkedServiceIntegrationRuntimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SynapseLinkedServiceIntegrationRuntimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SynapseLinkedServiceIntegrationRuntimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SynapseLinkedServiceIntegrationRuntimeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

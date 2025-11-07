@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitorScheduledQueryRulesLogCriteriaDimensionList) validateG
 	return nil
 }
 
-func (m *jsiiProxy_MonitorScheduledQueryRulesLogCriteriaDimensionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorScheduledQueryRulesLogCriteriaDimensionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -431,6 +431,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "connectionDraining", GoGetter: "ConnectionDraining"},
 			_jsii_.MemberProperty{JsiiProperty: "cookieBasedAffinity", GoGetter: "CookieBasedAffinity"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dedicatedBackendConnectionEnabled", GoGetter: "DedicatedBackendConnectionEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},

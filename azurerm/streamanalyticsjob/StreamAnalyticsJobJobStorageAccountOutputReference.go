@@ -72,12 +72,12 @@ type StreamAnalyticsJobJobStorageAccountOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetAccountKey()
 	ResetAuthenticationMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -506,8 +506,8 @@ func (s *jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference) Interpola
 	return returns
 }
 
-func (s *jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -515,7 +515,7 @@ func (s *jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference) Interpola
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -538,8 +538,8 @@ func (s *jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference) ResetAuth
 	)
 }
 
-func (s *jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -547,7 +547,7 @@ func (s *jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference) Resolve(_
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

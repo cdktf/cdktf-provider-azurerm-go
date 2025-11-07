@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFactoryDatasetJsonSchemaColumnOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryDatasetJsonSchemaColumnOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFactoryDatasetJsonSchemaColumnOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryDatasetJsonSchemaColumnOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryDatasetJsonSchemaColumnOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

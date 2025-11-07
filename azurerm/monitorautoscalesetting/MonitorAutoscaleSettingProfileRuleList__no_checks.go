@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitorAutoscaleSettingProfileRuleList) validateGetParameters
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAutoscaleSettingProfileRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorAutoscaleSettingProfileRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

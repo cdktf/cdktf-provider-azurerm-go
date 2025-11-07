@@ -15,7 +15,7 @@ func (m *jsiiProxy_MaintenanceConfigurationInstallPatchesWindowsList) validateGe
 	return nil
 }
 
-func (m *jsiiProxy_MaintenanceConfigurationInstallPatchesWindowsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MaintenanceConfigurationInstallPatchesWindowsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

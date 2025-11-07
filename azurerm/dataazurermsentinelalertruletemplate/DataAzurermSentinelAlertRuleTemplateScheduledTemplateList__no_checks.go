@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermSentinelAlertRuleTemplateScheduledTemplateList) va
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSentinelAlertRuleTemplateScheduledTemplateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermSentinelAlertRuleTemplateScheduledTemplateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (h *jsiiProxy_HdinsightHbaseClusterRolesWorkerNodeAutoscaleRecurrenceOutput
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightHbaseClusterRolesWorkerNodeAutoscaleRecurrenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HdinsightHbaseClusterRolesWorkerNodeAutoscaleRecurrenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (h *jsiiProxy_HdinsightHbaseClusterRolesWorkerNodeAutoscaleRecurrenceOutput
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightHbaseClusterRolesWorkerNodeAutoscaleRecurrenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightHbaseClusterRolesWorkerNodeAutoscaleRecurrenceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

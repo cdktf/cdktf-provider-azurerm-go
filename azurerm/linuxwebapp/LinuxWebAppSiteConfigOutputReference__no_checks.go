@@ -43,7 +43,7 @@ func (l *jsiiProxy_LinuxWebAppSiteConfigOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppSiteConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxWebAppSiteConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (l *jsiiProxy_LinuxWebAppSiteConfigOutputReference) validatePutScmIpRestric
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppSiteConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxWebAppSiteConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

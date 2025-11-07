@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermMssqlManagedDatabasePointInTimeRestoreOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMssqlManagedDatabasePointInTimeRestoreOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermMssqlManagedDatabasePointInTimeRestoreOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMssqlManagedDatabasePointInTimeRestoreOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermMssqlManagedDatabasePointInTimeRestoreOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

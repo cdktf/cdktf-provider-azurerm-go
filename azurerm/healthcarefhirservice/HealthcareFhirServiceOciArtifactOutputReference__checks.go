@@ -85,17 +85,17 @@ func (h *jsiiProxy_HealthcareFhirServiceOciArtifactOutputReference) validateGetS
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareFhirServiceOciArtifactOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (h *jsiiProxy_HealthcareFhirServiceOciArtifactOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareFhirServiceOciArtifactOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (h *jsiiProxy_HealthcareFhirServiceOciArtifactOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

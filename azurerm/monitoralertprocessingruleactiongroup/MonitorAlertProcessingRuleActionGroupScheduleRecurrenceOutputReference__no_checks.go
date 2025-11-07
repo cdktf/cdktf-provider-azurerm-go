@@ -43,7 +43,7 @@ func (m *jsiiProxy_MonitorAlertProcessingRuleActionGroupScheduleRecurrenceOutput
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAlertProcessingRuleActionGroupScheduleRecurrenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorAlertProcessingRuleActionGroupScheduleRecurrenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (m *jsiiProxy_MonitorAlertProcessingRuleActionGroupScheduleRecurrenceOutput
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAlertProcessingRuleActionGroupScheduleRecurrenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorAlertProcessingRuleActionGroupScheduleRecurrenceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

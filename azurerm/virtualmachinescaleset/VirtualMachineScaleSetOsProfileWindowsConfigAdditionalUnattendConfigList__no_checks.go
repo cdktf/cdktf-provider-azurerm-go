@@ -15,7 +15,7 @@ func (v *jsiiProxy_VirtualMachineScaleSetOsProfileWindowsConfigAdditionalUnatten
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineScaleSetOsProfileWindowsConfigAdditionalUnattendConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineScaleSetOsProfileWindowsConfigAdditionalUnattendConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

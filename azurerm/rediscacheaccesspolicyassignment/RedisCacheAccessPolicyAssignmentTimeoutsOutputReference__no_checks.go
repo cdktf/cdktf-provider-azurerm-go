@@ -43,11 +43,11 @@ func (r *jsiiProxy_RedisCacheAccessPolicyAssignmentTimeoutsOutputReference) vali
 	return nil
 }
 
-func (r *jsiiProxy_RedisCacheAccessPolicyAssignmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedisCacheAccessPolicyAssignmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RedisCacheAccessPolicyAssignmentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisCacheAccessPolicyAssignmentTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

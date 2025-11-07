@@ -29,9 +29,9 @@ func (h *jsiiProxy_HealthcareFhirServiceOciArtifactList) validateGetParameters(i
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareFhirServiceOciArtifactList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (h *jsiiProxy_HealthcareFhirServiceOciArtifactList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

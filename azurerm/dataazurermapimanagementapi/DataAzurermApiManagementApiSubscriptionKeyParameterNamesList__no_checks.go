@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermApiManagementApiSubscriptionKeyParameterNamesList)
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApiManagementApiSubscriptionKeyParameterNamesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermApiManagementApiSubscriptionKeyParameterNamesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

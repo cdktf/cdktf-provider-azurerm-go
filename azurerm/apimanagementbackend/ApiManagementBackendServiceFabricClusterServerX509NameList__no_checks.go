@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApiManagementBackendServiceFabricClusterServerX509NameList) v
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementBackendServiceFabricClusterServerX509NameList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementBackendServiceFabricClusterServerX509NameList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

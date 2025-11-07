@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermContainerAppTemplateContainerLivenessProbeHeaderOu
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermContainerAppTemplateContainerLivenessProbeHeaderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermContainerAppTemplateContainerLivenessProbeHeaderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermContainerAppTemplateContainerLivenessProbeHeaderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermContainerAppTemplateContainerLivenessProbeHeaderOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

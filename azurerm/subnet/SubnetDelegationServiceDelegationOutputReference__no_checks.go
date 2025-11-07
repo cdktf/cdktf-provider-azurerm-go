@@ -43,11 +43,11 @@ func (s *jsiiProxy_SubnetDelegationServiceDelegationOutputReference) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_SubnetDelegationServiceDelegationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SubnetDelegationServiceDelegationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SubnetDelegationServiceDelegationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SubnetDelegationServiceDelegationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

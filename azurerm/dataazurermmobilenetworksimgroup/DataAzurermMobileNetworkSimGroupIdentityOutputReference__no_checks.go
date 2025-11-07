@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermMobileNetworkSimGroupIdentityOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMobileNetworkSimGroupIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermMobileNetworkSimGroupIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMobileNetworkSimGroupIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermMobileNetworkSimGroupIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

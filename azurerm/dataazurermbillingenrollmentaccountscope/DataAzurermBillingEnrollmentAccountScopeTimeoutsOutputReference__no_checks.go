@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermBillingEnrollmentAccountScopeTimeoutsOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermBillingEnrollmentAccountScopeTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermBillingEnrollmentAccountScopeTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermBillingEnrollmentAccountScopeTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermBillingEnrollmentAccountScopeTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

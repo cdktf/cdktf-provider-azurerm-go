@@ -15,7 +15,7 @@ func (k *jsiiProxy_KubernetesClusterAciConnectorLinuxConnectorIdentityList) vali
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterAciConnectorLinuxConnectorIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterAciConnectorLinuxConnectorIdentityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

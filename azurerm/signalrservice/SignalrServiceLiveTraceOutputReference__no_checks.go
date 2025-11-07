@@ -43,11 +43,11 @@ func (s *jsiiProxy_SignalrServiceLiveTraceOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (s *jsiiProxy_SignalrServiceLiveTraceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SignalrServiceLiveTraceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SignalrServiceLiveTraceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SignalrServiceLiveTraceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

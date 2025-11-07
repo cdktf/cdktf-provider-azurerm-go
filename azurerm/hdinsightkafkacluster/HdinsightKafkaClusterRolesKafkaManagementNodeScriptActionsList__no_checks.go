@@ -15,7 +15,7 @@ func (h *jsiiProxy_HdinsightKafkaClusterRolesKafkaManagementNodeScriptActionsLis
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightKafkaClusterRolesKafkaManagementNodeScriptActionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightKafkaClusterRolesKafkaManagementNodeScriptActionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

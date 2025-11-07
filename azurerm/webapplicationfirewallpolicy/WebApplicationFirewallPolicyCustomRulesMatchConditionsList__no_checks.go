@@ -15,7 +15,7 @@ func (w *jsiiProxy_WebApplicationFirewallPolicyCustomRulesMatchConditionsList) v
 	return nil
 }
 
-func (w *jsiiProxy_WebApplicationFirewallPolicyCustomRulesMatchConditionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WebApplicationFirewallPolicyCustomRulesMatchConditionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

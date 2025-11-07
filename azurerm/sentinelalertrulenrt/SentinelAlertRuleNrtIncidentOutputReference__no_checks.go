@@ -43,7 +43,7 @@ func (s *jsiiProxy_SentinelAlertRuleNrtIncidentOutputReference) validateGetStrin
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleNrtIncidentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SentinelAlertRuleNrtIncidentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SentinelAlertRuleNrtIncidentOutputReference) validatePutGroup
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleNrtIncidentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelAlertRuleNrtIncidentOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (e *jsiiProxy_EventhubNamespaceNetworkRulesetsOutputReference) validateGetS
 	return nil
 }
 
-func (e *jsiiProxy_EventhubNamespaceNetworkRulesetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventhubNamespaceNetworkRulesetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (e *jsiiProxy_EventhubNamespaceNetworkRulesetsOutputReference) validatePutV
 	return nil
 }
 
-func (e *jsiiProxy_EventhubNamespaceNetworkRulesetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventhubNamespaceNetworkRulesetsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

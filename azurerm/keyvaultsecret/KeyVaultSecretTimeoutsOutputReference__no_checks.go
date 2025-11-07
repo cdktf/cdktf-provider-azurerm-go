@@ -43,11 +43,11 @@ func (k *jsiiProxy_KeyVaultSecretTimeoutsOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (k *jsiiProxy_KeyVaultSecretTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KeyVaultSecretTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KeyVaultSecretTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyVaultSecretTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

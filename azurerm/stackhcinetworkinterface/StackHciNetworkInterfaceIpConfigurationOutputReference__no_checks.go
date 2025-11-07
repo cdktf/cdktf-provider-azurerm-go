@@ -43,11 +43,11 @@ func (s *jsiiProxy_StackHciNetworkInterfaceIpConfigurationOutputReference) valid
 	return nil
 }
 
-func (s *jsiiProxy_StackHciNetworkInterfaceIpConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StackHciNetworkInterfaceIpConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StackHciNetworkInterfaceIpConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StackHciNetworkInterfaceIpConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

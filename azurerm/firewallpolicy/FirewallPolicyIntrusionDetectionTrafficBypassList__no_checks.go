@@ -15,7 +15,7 @@ func (f *jsiiProxy_FirewallPolicyIntrusionDetectionTrafficBypassList) validateGe
 	return nil
 }
 
-func (f *jsiiProxy_FirewallPolicyIntrusionDetectionTrafficBypassList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirewallPolicyIntrusionDetectionTrafficBypassList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (k *jsiiProxy_KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference)
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (k *jsiiProxy_KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference)
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServicebusNamespaceDisasterRecoveryConfigTimeoutsOutputRefere
 	return nil
 }
 
-func (s *jsiiProxy_ServicebusNamespaceDisasterRecoveryConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServicebusNamespaceDisasterRecoveryConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServicebusNamespaceDisasterRecoveryConfigTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServicebusNamespaceDisasterRecoveryConfigTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (b *jsiiProxy_BatchAccountNetworkProfileAccountAccessIpRuleOutputReference)
 	return nil
 }
 
-func (b *jsiiProxy_BatchAccountNetworkProfileAccountAccessIpRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BatchAccountNetworkProfileAccountAccessIpRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BatchAccountNetworkProfileAccountAccessIpRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchAccountNetworkProfileAccountAccessIpRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

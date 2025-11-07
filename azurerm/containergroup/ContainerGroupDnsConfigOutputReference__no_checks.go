@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerGroupDnsConfigOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (c *jsiiProxy_ContainerGroupDnsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerGroupDnsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerGroupDnsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerGroupDnsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

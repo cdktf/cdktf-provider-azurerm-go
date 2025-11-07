@@ -43,11 +43,11 @@ func (c *jsiiProxy_ConfidentialLedgerCertificateBasedSecurityPrincipalOutputRefe
 	return nil
 }
 
-func (c *jsiiProxy_ConfidentialLedgerCertificateBasedSecurityPrincipalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConfidentialLedgerCertificateBasedSecurityPrincipalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConfidentialLedgerCertificateBasedSecurityPrincipalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfidentialLedgerCertificateBasedSecurityPrincipalOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -69,12 +69,12 @@ type BatchPoolStartTaskUserIdentityAutoUserOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetElevationLevel()
 	ResetScope()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -472,8 +472,8 @@ func (b *jsiiProxy_BatchPoolStartTaskUserIdentityAutoUserOutputReference) Interp
 	return returns
 }
 
-func (b *jsiiProxy_BatchPoolStartTaskUserIdentityAutoUserOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BatchPoolStartTaskUserIdentityAutoUserOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -481,7 +481,7 @@ func (b *jsiiProxy_BatchPoolStartTaskUserIdentityAutoUserOutputReference) Interp
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -504,8 +504,8 @@ func (b *jsiiProxy_BatchPoolStartTaskUserIdentityAutoUserOutputReference) ResetS
 	)
 }
 
-func (b *jsiiProxy_BatchPoolStartTaskUserIdentityAutoUserOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BatchPoolStartTaskUserIdentityAutoUserOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -513,7 +513,7 @@ func (b *jsiiProxy_BatchPoolStartTaskUserIdentityAutoUserOutputReference) Resolv
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

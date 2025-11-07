@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermApiManagementHostnameConfigurationManagementOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApiManagementHostnameConfigurationManagementOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermApiManagementHostnameConfigurationManagementOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApiManagementHostnameConfigurationManagementOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermApiManagementHostnameConfigurationManagementOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitorMetricAlertCriteriaList) validateGetParameters(index *
 	return nil
 }
 
-func (m *jsiiProxy_MonitorMetricAlertCriteriaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorMetricAlertCriteriaList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

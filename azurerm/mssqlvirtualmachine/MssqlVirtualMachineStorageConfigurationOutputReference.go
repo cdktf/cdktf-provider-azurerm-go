@@ -78,7 +78,7 @@ type MssqlVirtualMachineStorageConfigurationOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutDataSettings(value *MssqlVirtualMachineStorageConfigurationDataSettings)
 	PutLogSettings(value *MssqlVirtualMachineStorageConfigurationLogSettings)
 	PutTempDbSettings(value *MssqlVirtualMachineStorageConfigurationTempDbSettings)
@@ -88,7 +88,7 @@ type MssqlVirtualMachineStorageConfigurationOutputReference interface {
 	ResetTempDbSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -577,8 +577,8 @@ func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationOutputReference) Inter
 	return returns
 }
 
-func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -586,7 +586,7 @@ func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationOutputReference) Inter
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -658,8 +658,8 @@ func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationOutputReference) Reset
 	)
 }
 
-func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -667,7 +667,7 @@ func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationOutputReference) Resol
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

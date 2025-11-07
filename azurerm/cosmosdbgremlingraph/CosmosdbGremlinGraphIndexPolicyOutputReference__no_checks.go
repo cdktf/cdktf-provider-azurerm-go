@@ -43,7 +43,7 @@ func (c *jsiiProxy_CosmosdbGremlinGraphIndexPolicyOutputReference) validateGetSt
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbGremlinGraphIndexPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CosmosdbGremlinGraphIndexPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_CosmosdbGremlinGraphIndexPolicyOutputReference) validatePutSp
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbGremlinGraphIndexPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbGremlinGraphIndexPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

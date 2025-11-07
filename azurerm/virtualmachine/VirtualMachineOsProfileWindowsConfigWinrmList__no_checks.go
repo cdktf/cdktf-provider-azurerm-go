@@ -15,7 +15,7 @@ func (v *jsiiProxy_VirtualMachineOsProfileWindowsConfigWinrmList) validateGetPar
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineOsProfileWindowsConfigWinrmList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineOsProfileWindowsConfigWinrmList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

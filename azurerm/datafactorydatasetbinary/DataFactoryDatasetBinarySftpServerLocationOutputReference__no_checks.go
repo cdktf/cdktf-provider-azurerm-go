@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFactoryDatasetBinarySftpServerLocationOutputReference) va
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryDatasetBinarySftpServerLocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFactoryDatasetBinarySftpServerLocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryDatasetBinarySftpServerLocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryDatasetBinarySftpServerLocationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

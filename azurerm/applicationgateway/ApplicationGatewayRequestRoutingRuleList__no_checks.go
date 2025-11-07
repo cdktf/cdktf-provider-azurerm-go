@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApplicationGatewayRequestRoutingRuleList) validateGetParamete
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayRequestRoutingRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationGatewayRequestRoutingRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

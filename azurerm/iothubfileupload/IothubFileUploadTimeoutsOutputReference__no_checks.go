@@ -43,11 +43,11 @@ func (i *jsiiProxy_IothubFileUploadTimeoutsOutputReference) validateGetStringMap
 	return nil
 }
 
-func (i *jsiiProxy_IothubFileUploadTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IothubFileUploadTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IothubFileUploadTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IothubFileUploadTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

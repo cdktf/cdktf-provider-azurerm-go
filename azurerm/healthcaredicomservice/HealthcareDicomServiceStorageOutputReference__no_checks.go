@@ -43,11 +43,11 @@ func (h *jsiiProxy_HealthcareDicomServiceStorageOutputReference) validateGetStri
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareDicomServiceStorageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HealthcareDicomServiceStorageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareDicomServiceStorageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HealthcareDicomServiceStorageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

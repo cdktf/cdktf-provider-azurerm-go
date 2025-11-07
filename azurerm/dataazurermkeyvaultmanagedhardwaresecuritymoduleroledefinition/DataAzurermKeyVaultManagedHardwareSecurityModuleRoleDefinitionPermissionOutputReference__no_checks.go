@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinitio
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

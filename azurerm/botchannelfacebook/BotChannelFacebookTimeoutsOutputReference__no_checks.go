@@ -43,11 +43,11 @@ func (b *jsiiProxy_BotChannelFacebookTimeoutsOutputReference) validateGetStringM
 	return nil
 }
 
-func (b *jsiiProxy_BotChannelFacebookTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BotChannelFacebookTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BotChannelFacebookTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BotChannelFacebookTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

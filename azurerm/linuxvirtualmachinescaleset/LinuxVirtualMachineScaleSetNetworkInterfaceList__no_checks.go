@@ -15,7 +15,7 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetNetworkInterfaceList) validateGetP
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineScaleSetNetworkInterfaceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetNetworkInterfaceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

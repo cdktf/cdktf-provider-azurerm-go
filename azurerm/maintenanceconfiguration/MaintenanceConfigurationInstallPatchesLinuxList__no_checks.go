@@ -15,7 +15,7 @@ func (m *jsiiProxy_MaintenanceConfigurationInstallPatchesLinuxList) validateGetP
 	return nil
 }
 
-func (m *jsiiProxy_MaintenanceConfigurationInstallPatchesLinuxList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MaintenanceConfigurationInstallPatchesLinuxList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (n *jsiiProxy_NewRelicTagRuleMetricTagFilterOutputReference) validateGetStr
 	return nil
 }
 
-func (n *jsiiProxy_NewRelicTagRuleMetricTagFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NewRelicTagRuleMetricTagFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NewRelicTagRuleMetricTagFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NewRelicTagRuleMetricTagFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

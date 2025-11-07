@@ -43,11 +43,11 @@ func (a *jsiiProxy_AutomationPowershell72ModuleTimeoutsOutputReference) validate
 	return nil
 }
 
-func (a *jsiiProxy_AutomationPowershell72ModuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutomationPowershell72ModuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AutomationPowershell72ModuleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutomationPowershell72ModuleTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

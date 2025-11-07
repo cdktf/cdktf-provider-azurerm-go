@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermFunctionAppSourceControlOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermFunctionAppSourceControlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermFunctionAppSourceControlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermFunctionAppSourceControlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermFunctionAppSourceControlOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

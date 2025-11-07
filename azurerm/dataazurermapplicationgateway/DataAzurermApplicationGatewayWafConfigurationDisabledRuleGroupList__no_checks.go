@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermApplicationGatewayWafConfigurationDisabledRuleGrou
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApplicationGatewayWafConfigurationDisabledRuleGroupList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermApplicationGatewayWafConfigurationDisabledRuleGroupList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

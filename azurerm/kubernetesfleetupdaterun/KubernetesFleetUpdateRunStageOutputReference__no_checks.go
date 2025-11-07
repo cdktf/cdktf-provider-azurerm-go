@@ -43,7 +43,7 @@ func (k *jsiiProxy_KubernetesFleetUpdateRunStageOutputReference) validateGetStri
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesFleetUpdateRunStageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesFleetUpdateRunStageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (k *jsiiProxy_KubernetesFleetUpdateRunStageOutputReference) validatePutGrou
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesFleetUpdateRunStageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesFleetUpdateRunStageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

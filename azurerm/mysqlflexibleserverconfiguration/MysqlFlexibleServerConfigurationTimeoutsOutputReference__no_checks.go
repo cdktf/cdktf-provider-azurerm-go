@@ -43,11 +43,11 @@ func (m *jsiiProxy_MysqlFlexibleServerConfigurationTimeoutsOutputReference) vali
 	return nil
 }
 
-func (m *jsiiProxy_MysqlFlexibleServerConfigurationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MysqlFlexibleServerConfigurationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MysqlFlexibleServerConfigurationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MysqlFlexibleServerConfigurationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

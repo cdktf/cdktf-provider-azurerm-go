@@ -43,11 +43,11 @@ func (m *jsiiProxy_ManagedRedisGeoReplicationTimeoutsOutputReference) validateGe
 	return nil
 }
 
-func (m *jsiiProxy_ManagedRedisGeoReplicationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ManagedRedisGeoReplicationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ManagedRedisGeoReplicationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedRedisGeoReplicationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

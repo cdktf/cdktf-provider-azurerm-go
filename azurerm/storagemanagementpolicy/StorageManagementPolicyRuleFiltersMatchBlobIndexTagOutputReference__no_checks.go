@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageManagementPolicyRuleFiltersMatchBlobIndexTagOutputRefe
 	return nil
 }
 
-func (s *jsiiProxy_StorageManagementPolicyRuleFiltersMatchBlobIndexTagOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageManagementPolicyRuleFiltersMatchBlobIndexTagOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageManagementPolicyRuleFiltersMatchBlobIndexTagOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageManagementPolicyRuleFiltersMatchBlobIndexTagOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

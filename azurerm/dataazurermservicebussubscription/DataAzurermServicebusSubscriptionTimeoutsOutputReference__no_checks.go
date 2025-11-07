@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermServicebusSubscriptionTimeoutsOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermServicebusSubscriptionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermServicebusSubscriptionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermServicebusSubscriptionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermServicebusSubscriptionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

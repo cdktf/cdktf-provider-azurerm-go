@@ -15,7 +15,7 @@ func (f *jsiiProxy_FunctionAppSiteCredentialList) validateGetParameters(index *f
 	return nil
 }
 
-func (f *jsiiProxy_FunctionAppSiteCredentialList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FunctionAppSiteCredentialList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

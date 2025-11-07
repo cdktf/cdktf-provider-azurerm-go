@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatadogMonitorIdentityOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (d *jsiiProxy_DatadogMonitorIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatadogMonitorIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatadogMonitorIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatadogMonitorIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

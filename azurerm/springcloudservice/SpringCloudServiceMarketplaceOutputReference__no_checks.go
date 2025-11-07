@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpringCloudServiceMarketplaceOutputReference) validateGetStri
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudServiceMarketplaceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpringCloudServiceMarketplaceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudServiceMarketplaceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpringCloudServiceMarketplaceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

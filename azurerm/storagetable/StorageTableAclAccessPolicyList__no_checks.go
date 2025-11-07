@@ -15,7 +15,7 @@ func (s *jsiiProxy_StorageTableAclAccessPolicyList) validateGetParameters(index 
 	return nil
 }
 
-func (s *jsiiProxy_StorageTableAclAccessPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageTableAclAccessPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

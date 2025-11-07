@@ -43,11 +43,11 @@ func (s *jsiiProxy_SharedImagePurchasePlanOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (s *jsiiProxy_SharedImagePurchasePlanOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SharedImagePurchasePlanOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SharedImagePurchasePlanOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SharedImagePurchasePlanOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

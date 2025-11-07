@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerAppJobTemplateContainerVolumeMountsList) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppJobTemplateContainerVolumeMountsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppJobTemplateContainerVolumeMountsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

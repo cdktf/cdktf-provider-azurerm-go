@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermContainerAppTemplateTcpScaleRuleAuthenticationList
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermContainerAppTemplateTcpScaleRuleAuthenticationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermContainerAppTemplateTcpScaleRuleAuthenticationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (b *jsiiProxy_BackupPolicyVmTieringPolicyOutputReference) validateGetString
 	return nil
 }
 
-func (b *jsiiProxy_BackupPolicyVmTieringPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BackupPolicyVmTieringPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (b *jsiiProxy_BackupPolicyVmTieringPolicyOutputReference) validatePutArchiv
 	return nil
 }
 
-func (b *jsiiProxy_BackupPolicyVmTieringPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupPolicyVmTieringPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

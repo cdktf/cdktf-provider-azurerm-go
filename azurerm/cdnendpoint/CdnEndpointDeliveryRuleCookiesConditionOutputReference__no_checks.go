@@ -43,11 +43,11 @@ func (c *jsiiProxy_CdnEndpointDeliveryRuleCookiesConditionOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_CdnEndpointDeliveryRuleCookiesConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CdnEndpointDeliveryRuleCookiesConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CdnEndpointDeliveryRuleCookiesConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnEndpointDeliveryRuleCookiesConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

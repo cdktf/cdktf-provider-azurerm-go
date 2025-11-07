@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermStorageAccountAzureFilesAuthenticationOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermStorageAccountAzureFilesAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermStorageAccountAzureFilesAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermStorageAccountAzureFilesAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermStorageAccountAzureFilesAuthenticationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

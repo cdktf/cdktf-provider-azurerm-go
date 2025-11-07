@@ -43,11 +43,11 @@ func (c *jsiiProxy_CosmosdbMongoRoleDefinitionTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbMongoRoleDefinitionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CosmosdbMongoRoleDefinitionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbMongoRoleDefinitionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbMongoRoleDefinitionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

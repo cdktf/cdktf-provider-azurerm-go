@@ -15,7 +15,7 @@ func (k *jsiiProxy_KeyVaultCertificateCertificateAttributeList) validateGetParam
 	return nil
 }
 
-func (k *jsiiProxy_KeyVaultCertificateCertificateAttributeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyVaultCertificateCertificateAttributeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

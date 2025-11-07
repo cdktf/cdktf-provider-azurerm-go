@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermApplicationGatewayFrontendPortList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApplicationGatewayFrontendPortList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermApplicationGatewayFrontendPortList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

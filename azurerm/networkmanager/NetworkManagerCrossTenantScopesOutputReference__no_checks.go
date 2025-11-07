@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkManagerCrossTenantScopesOutputReference) validateGetSt
 	return nil
 }
 
-func (n *jsiiProxy_NetworkManagerCrossTenantScopesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkManagerCrossTenantScopesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkManagerCrossTenantScopesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkManagerCrossTenantScopesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

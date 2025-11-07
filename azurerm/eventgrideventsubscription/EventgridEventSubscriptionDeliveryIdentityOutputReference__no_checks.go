@@ -43,11 +43,11 @@ func (e *jsiiProxy_EventgridEventSubscriptionDeliveryIdentityOutputReference) va
 	return nil
 }
 
-func (e *jsiiProxy_EventgridEventSubscriptionDeliveryIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventgridEventSubscriptionDeliveryIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventgridEventSubscriptionDeliveryIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventgridEventSubscriptionDeliveryIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

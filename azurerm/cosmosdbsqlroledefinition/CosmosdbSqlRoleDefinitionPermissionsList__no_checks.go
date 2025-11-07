@@ -15,7 +15,7 @@ func (c *jsiiProxy_CosmosdbSqlRoleDefinitionPermissionsList) validateGetParamete
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbSqlRoleDefinitionPermissionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbSqlRoleDefinitionPermissionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

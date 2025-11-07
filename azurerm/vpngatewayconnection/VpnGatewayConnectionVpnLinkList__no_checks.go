@@ -15,7 +15,7 @@ func (v *jsiiProxy_VpnGatewayConnectionVpnLinkList) validateGetParameters(index 
 	return nil
 }
 
-func (v *jsiiProxy_VpnGatewayConnectionVpnLinkList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpnGatewayConnectionVpnLinkList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

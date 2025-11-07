@@ -15,7 +15,7 @@ func (r *jsiiProxy_ResourceGroupPolicyAssignmentOverridesSelectorsList) validate
 	return nil
 }
 
-func (r *jsiiProxy_ResourceGroupPolicyAssignmentOverridesSelectorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResourceGroupPolicyAssignmentOverridesSelectorsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

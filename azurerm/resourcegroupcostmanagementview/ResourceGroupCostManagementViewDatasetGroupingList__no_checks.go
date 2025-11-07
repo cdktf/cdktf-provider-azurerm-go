@@ -15,7 +15,7 @@ func (r *jsiiProxy_ResourceGroupCostManagementViewDatasetGroupingList) validateG
 	return nil
 }
 
-func (r *jsiiProxy_ResourceGroupCostManagementViewDatasetGroupingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResourceGroupCostManagementViewDatasetGroupingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

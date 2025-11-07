@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermMonitorActionGroupAzureAppPushReceiverList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMonitorActionGroupAzureAppPushReceiverList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermMonitorActionGroupAzureAppPushReceiverList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

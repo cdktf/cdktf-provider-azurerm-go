@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApplicationInsightsSmartDetectionRuleTimeoutsOutputReference)
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationInsightsSmartDetectionRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApplicationInsightsSmartDetectionRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationInsightsSmartDetectionRuleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationInsightsSmartDetectionRuleTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

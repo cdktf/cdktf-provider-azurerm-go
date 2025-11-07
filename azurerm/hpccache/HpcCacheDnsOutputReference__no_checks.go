@@ -43,11 +43,11 @@ func (h *jsiiProxy_HpcCacheDnsOutputReference) validateGetStringMapAttributePara
 	return nil
 }
 
-func (h *jsiiProxy_HpcCacheDnsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HpcCacheDnsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HpcCacheDnsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HpcCacheDnsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

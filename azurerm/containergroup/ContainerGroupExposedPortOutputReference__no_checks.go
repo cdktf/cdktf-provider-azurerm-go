@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerGroupExposedPortOutputReference) validateGetStringMa
 	return nil
 }
 
-func (c *jsiiProxy_ContainerGroupExposedPortOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerGroupExposedPortOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerGroupExposedPortOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerGroupExposedPortOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermManagedRedisCustomerManagedKeyList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermManagedRedisCustomerManagedKeyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermManagedRedisCustomerManagedKeyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -27,9 +27,9 @@ func (d *jsiiProxy_DataAzurermHealthcareMedtechServiceIdentityList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermHealthcareMedtechServiceIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataAzurermHealthcareMedtechServiceIdentityList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

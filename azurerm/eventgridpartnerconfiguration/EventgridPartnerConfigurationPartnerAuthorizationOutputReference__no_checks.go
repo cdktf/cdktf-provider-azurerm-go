@@ -43,11 +43,11 @@ func (e *jsiiProxy_EventgridPartnerConfigurationPartnerAuthorizationOutputRefere
 	return nil
 }
 
-func (e *jsiiProxy_EventgridPartnerConfigurationPartnerAuthorizationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventgridPartnerConfigurationPartnerAuthorizationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventgridPartnerConfigurationPartnerAuthorizationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventgridPartnerConfigurationPartnerAuthorizationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (o *jsiiProxy_OrbitalContactProfileLinksChannelsList) validateGetParameters
 	return nil
 }
 
-func (o *jsiiProxy_OrbitalContactProfileLinksChannelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrbitalContactProfileLinksChannelsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

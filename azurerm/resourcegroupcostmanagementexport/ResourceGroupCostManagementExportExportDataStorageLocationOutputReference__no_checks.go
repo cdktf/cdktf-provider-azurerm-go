@@ -43,11 +43,11 @@ func (r *jsiiProxy_ResourceGroupCostManagementExportExportDataStorageLocationOut
 	return nil
 }
 
-func (r *jsiiProxy_ResourceGroupCostManagementExportExportDataStorageLocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ResourceGroupCostManagementExportExportDataStorageLocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_ResourceGroupCostManagementExportExportDataStorageLocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResourceGroupCostManagementExportExportDataStorageLocationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

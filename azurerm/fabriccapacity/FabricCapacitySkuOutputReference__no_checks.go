@@ -43,11 +43,11 @@ func (f *jsiiProxy_FabricCapacitySkuOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (f *jsiiProxy_FabricCapacitySkuOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FabricCapacitySkuOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FabricCapacitySkuOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FabricCapacitySkuOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

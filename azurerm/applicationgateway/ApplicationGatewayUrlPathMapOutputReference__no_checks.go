@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApplicationGatewayUrlPathMapOutputReference) validateGetStrin
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayUrlPathMapOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApplicationGatewayUrlPathMapOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_ApplicationGatewayUrlPathMapOutputReference) validatePutPathR
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayUrlPathMapOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationGatewayUrlPathMapOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

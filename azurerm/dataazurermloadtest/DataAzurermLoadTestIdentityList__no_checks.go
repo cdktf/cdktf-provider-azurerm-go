@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermLoadTestIdentityList) validateGetParameters(index 
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLoadTestIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermLoadTestIdentityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

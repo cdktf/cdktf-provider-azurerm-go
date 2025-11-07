@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermLinuxWebAppBackupOutputReference) validateGetStrin
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLinuxWebAppBackupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermLinuxWebAppBackupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLinuxWebAppBackupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermLinuxWebAppBackupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

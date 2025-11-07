@@ -43,11 +43,11 @@ func (m *jsiiProxy_MssqlJobStepOutputTargetOutputReference) validateGetStringMap
 	return nil
 }
 
-func (m *jsiiProxy_MssqlJobStepOutputTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlJobStepOutputTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MssqlJobStepOutputTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlJobStepOutputTargetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

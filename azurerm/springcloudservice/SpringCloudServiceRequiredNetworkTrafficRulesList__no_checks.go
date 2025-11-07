@@ -15,7 +15,7 @@ func (s *jsiiProxy_SpringCloudServiceRequiredNetworkTrafficRulesList) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudServiceRequiredNetworkTrafficRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpringCloudServiceRequiredNetworkTrafficRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

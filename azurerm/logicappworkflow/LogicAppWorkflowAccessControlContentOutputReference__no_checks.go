@@ -43,11 +43,11 @@ func (l *jsiiProxy_LogicAppWorkflowAccessControlContentOutputReference) validate
 	return nil
 }
 
-func (l *jsiiProxy_LogicAppWorkflowAccessControlContentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LogicAppWorkflowAccessControlContentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LogicAppWorkflowAccessControlContentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogicAppWorkflowAccessControlContentOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

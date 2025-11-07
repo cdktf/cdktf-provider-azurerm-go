@@ -15,7 +15,7 @@ func (c *jsiiProxy_CdnEndpointOriginList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (c *jsiiProxy_CdnEndpointOriginList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnEndpointOriginList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

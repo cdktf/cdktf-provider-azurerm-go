@@ -43,7 +43,7 @@ func (s *jsiiProxy_StorageAccountQueuePropertiesOutputReference) validateGetStri
 	return nil
 }
 
-func (s *jsiiProxy_StorageAccountQueuePropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageAccountQueuePropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (s *jsiiProxy_StorageAccountQueuePropertiesOutputReference) validatePutMinu
 	return nil
 }
 
-func (s *jsiiProxy_StorageAccountQueuePropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageAccountQueuePropertiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

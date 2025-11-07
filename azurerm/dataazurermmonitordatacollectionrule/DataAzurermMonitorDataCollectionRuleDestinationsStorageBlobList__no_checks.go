@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermMonitorDataCollectionRuleDestinationsStorageBlobLi
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMonitorDataCollectionRuleDestinationsStorageBlobList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermMonitorDataCollectionRuleDestinationsStorageBlobList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

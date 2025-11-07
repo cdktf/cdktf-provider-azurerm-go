@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationIpsecPolicyOutputR
 	return nil
 }
 
-func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationIpsecPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationIpsecPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationIpsecPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationIpsecPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusC
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

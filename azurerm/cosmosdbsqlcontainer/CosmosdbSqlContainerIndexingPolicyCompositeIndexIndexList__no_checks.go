@@ -15,7 +15,7 @@ func (c *jsiiProxy_CosmosdbSqlContainerIndexingPolicyCompositeIndexIndexList) va
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbSqlContainerIndexingPolicyCompositeIndexIndexList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbSqlContainerIndexingPolicyCompositeIndexIndexList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

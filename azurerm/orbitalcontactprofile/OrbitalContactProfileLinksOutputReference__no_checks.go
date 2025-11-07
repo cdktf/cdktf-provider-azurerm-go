@@ -43,7 +43,7 @@ func (o *jsiiProxy_OrbitalContactProfileLinksOutputReference) validateGetStringM
 	return nil
 }
 
-func (o *jsiiProxy_OrbitalContactProfileLinksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OrbitalContactProfileLinksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OrbitalContactProfileLinksOutputReference) validatePutChannel
 	return nil
 }
 
-func (o *jsiiProxy_OrbitalContactProfileLinksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrbitalContactProfileLinksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

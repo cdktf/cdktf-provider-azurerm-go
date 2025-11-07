@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApiManagementApiImportWsdlSelectorOutputReference) validateGe
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementApiImportWsdlSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiManagementApiImportWsdlSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementApiImportWsdlSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementApiImportWsdlSelectorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

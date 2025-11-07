@@ -15,7 +15,7 @@ func (s *jsiiProxy_SpringCloudBuilderBuildPackGroupList) validateGetParameters(i
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudBuilderBuildPackGroupList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpringCloudBuilderBuildPackGroupList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

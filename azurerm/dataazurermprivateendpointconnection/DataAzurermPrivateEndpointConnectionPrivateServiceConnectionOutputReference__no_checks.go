@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermPrivateEndpointConnectionPrivateServiceConnectionO
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermPrivateEndpointConnectionPrivateServiceConnectionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermPrivateEndpointConnectionPrivateServiceConnectionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermPrivateEndpointConnectionPrivateServiceConnectionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermPrivateEndpointConnectionPrivateServiceConnectionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

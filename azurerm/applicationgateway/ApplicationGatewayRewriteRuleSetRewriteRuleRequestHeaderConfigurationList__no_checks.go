@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfi
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

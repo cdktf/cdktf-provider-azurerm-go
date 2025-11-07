@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermNginxDeploymentWebApplicationFirewallList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNginxDeploymentWebApplicationFirewallList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermNginxDeploymentWebApplicationFirewallList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

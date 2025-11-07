@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesWindowsEventLogOutputRefe
 	return nil
 }
 
-func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesWindowsEventLogOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesWindowsEventLogOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesWindowsEventLogOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesWindowsEventLogOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

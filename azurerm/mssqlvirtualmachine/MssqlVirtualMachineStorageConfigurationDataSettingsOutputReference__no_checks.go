@@ -43,11 +43,11 @@ func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationDataSettingsOutputRefe
 	return nil
 }
 
-func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationDataSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationDataSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationDataSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationDataSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

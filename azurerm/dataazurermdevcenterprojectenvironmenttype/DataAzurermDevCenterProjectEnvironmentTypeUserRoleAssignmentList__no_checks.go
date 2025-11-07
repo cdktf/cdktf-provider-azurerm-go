@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermDevCenterProjectEnvironmentTypeUserRoleAssignmentL
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDevCenterProjectEnvironmentTypeUserRoleAssignmentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermDevCenterProjectEnvironmentTypeUserRoleAssignmentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

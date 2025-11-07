@@ -151,7 +151,7 @@ type LinuxWebAppSiteConfigOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutApplicationStack(value *LinuxWebAppSiteConfigApplicationStack)
 	PutAutoHealSetting(value *LinuxWebAppSiteConfigAutoHealSetting)
 	PutCors(value *LinuxWebAppSiteConfigCors)
@@ -189,7 +189,7 @@ type LinuxWebAppSiteConfigOutputReference interface {
 	ResetWorkerCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -1430,8 +1430,8 @@ func (l *jsiiProxy_LinuxWebAppSiteConfigOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (l *jsiiProxy_LinuxWebAppSiteConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LinuxWebAppSiteConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -1439,7 +1439,7 @@ func (l *jsiiProxy_LinuxWebAppSiteConfigOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1741,8 +1741,8 @@ func (l *jsiiProxy_LinuxWebAppSiteConfigOutputReference) ResetWorkerCount() {
 	)
 }
 
-func (l *jsiiProxy_LinuxWebAppSiteConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LinuxWebAppSiteConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1750,7 +1750,7 @@ func (l *jsiiProxy_LinuxWebAppSiteConfigOutputReference) Resolve(_context cdktf.
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

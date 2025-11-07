@@ -43,7 +43,7 @@ func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignmentConfigurationOutpu
 	return nil
 }
 
-func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignmentConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignmentConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignmentConfigurationOutpu
 	return nil
 }
 
-func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignmentConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignmentConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

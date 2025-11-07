@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFactoryTriggerTumblingWindowRetryOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryTriggerTumblingWindowRetryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFactoryTriggerTumblingWindowRetryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryTriggerTumblingWindowRetryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryTriggerTumblingWindowRetryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

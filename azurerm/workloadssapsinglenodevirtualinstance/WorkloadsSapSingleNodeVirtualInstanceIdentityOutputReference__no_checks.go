@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceIdentityOutputReference)
 	return nil
 }
 
-func (w *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

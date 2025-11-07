@@ -15,7 +15,7 @@ func (e *jsiiProxy_EventhubNamespaceNetworkRulesetsVirtualNetworkRuleList) valid
 	return nil
 }
 
-func (e *jsiiProxy_EventhubNamespaceNetworkRulesetsVirtualNetworkRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventhubNamespaceNetworkRulesetsVirtualNetworkRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

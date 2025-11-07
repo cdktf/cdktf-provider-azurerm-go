@@ -15,7 +15,7 @@ func (s *jsiiProxy_SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionList) 
 	return nil
 }
 
-func (s *jsiiProxy_SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetappVolumeGroupOracleVolumeExportPolicyRuleList) validateGe
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeGroupOracleVolumeExportPolicyRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetappVolumeGroupOracleVolumeExportPolicyRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

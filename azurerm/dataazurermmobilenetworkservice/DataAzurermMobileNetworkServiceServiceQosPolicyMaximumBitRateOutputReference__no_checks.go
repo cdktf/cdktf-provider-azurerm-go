@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermMobileNetworkServiceServiceQosPolicyMaximumBitRate
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMobileNetworkServiceServiceQosPolicyMaximumBitRateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermMobileNetworkServiceServiceQosPolicyMaximumBitRateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMobileNetworkServiceServiceQosPolicyMaximumBitRateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermMobileNetworkServiceServiceQosPolicyMaximumBitRateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

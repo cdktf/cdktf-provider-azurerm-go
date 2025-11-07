@@ -43,11 +43,11 @@ func (m *jsiiProxy_MobileNetworkSimPolicyUserEquipmentAggregateMaximumBitRateOut
 	return nil
 }
 
-func (m *jsiiProxy_MobileNetworkSimPolicyUserEquipmentAggregateMaximumBitRateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MobileNetworkSimPolicyUserEquipmentAggregateMaximumBitRateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MobileNetworkSimPolicyUserEquipmentAggregateMaximumBitRateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MobileNetworkSimPolicyUserEquipmentAggregateMaximumBitRateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

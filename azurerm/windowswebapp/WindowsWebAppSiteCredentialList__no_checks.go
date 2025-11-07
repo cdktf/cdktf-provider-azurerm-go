@@ -15,7 +15,7 @@ func (w *jsiiProxy_WindowsWebAppSiteCredentialList) validateGetParameters(index 
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppSiteCredentialList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsWebAppSiteCredentialList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

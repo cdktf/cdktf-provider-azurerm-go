@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermDashboardGrafanaIdentityOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDashboardGrafanaIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermDashboardGrafanaIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDashboardGrafanaIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermDashboardGrafanaIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

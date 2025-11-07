@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermDashboardGrafanaAzureMonitorWorkspaceIntegrationsL
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDashboardGrafanaAzureMonitorWorkspaceIntegrationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermDashboardGrafanaAzureMonitorWorkspaceIntegrationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

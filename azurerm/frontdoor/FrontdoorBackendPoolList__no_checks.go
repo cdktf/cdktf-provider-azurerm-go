@@ -15,7 +15,7 @@ func (f *jsiiProxy_FrontdoorBackendPoolList) validateGetParameters(index *float6
 	return nil
 }
 
-func (f *jsiiProxy_FrontdoorBackendPoolList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FrontdoorBackendPoolList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

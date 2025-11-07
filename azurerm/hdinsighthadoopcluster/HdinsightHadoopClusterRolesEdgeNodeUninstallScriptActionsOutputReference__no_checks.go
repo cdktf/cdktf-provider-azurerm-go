@@ -43,11 +43,11 @@ func (h *jsiiProxy_HdinsightHadoopClusterRolesEdgeNodeUninstallScriptActionsOutp
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightHadoopClusterRolesEdgeNodeUninstallScriptActionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HdinsightHadoopClusterRolesEdgeNodeUninstallScriptActionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightHadoopClusterRolesEdgeNodeUninstallScriptActionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightHadoopClusterRolesEdgeNodeUninstallScriptActionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

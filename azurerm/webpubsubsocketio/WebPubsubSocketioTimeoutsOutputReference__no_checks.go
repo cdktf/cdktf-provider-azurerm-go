@@ -43,11 +43,11 @@ func (w *jsiiProxy_WebPubsubSocketioTimeoutsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (w *jsiiProxy_WebPubsubSocketioTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WebPubsubSocketioTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WebPubsubSocketioTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WebPubsubSocketioTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

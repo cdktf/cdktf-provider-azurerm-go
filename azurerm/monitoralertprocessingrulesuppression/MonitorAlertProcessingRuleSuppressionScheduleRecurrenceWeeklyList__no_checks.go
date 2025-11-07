@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitorAlertProcessingRuleSuppressionScheduleRecurrenceWeekly
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAlertProcessingRuleSuppressionScheduleRecurrenceWeeklyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorAlertProcessingRuleSuppressionScheduleRecurrenceWeeklyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

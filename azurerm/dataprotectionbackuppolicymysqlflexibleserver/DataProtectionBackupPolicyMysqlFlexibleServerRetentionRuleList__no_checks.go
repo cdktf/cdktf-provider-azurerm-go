@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLis
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

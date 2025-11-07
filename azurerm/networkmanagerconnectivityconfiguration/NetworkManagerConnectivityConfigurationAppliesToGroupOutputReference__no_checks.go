@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkManagerConnectivityConfigurationAppliesToGroupOutputRe
 	return nil
 }
 
-func (n *jsiiProxy_NetworkManagerConnectivityConfigurationAppliesToGroupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkManagerConnectivityConfigurationAppliesToGroupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkManagerConnectivityConfigurationAppliesToGroupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkManagerConnectivityConfigurationAppliesToGroupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

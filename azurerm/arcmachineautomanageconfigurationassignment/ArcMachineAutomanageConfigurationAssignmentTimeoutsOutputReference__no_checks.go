@@ -43,11 +43,11 @@ func (a *jsiiProxy_ArcMachineAutomanageConfigurationAssignmentTimeoutsOutputRefe
 	return nil
 }
 
-func (a *jsiiProxy_ArcMachineAutomanageConfigurationAssignmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ArcMachineAutomanageConfigurationAssignmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ArcMachineAutomanageConfigurationAssignmentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ArcMachineAutomanageConfigurationAssignmentTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

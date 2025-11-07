@@ -43,11 +43,11 @@ func (k *jsiiProxy_KustoClusterSkuOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (k *jsiiProxy_KustoClusterSkuOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KustoClusterSkuOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KustoClusterSkuOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KustoClusterSkuOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

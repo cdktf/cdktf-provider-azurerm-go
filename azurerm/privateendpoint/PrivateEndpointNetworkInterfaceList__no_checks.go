@@ -15,7 +15,7 @@ func (p *jsiiProxy_PrivateEndpointNetworkInterfaceList) validateGetParameters(in
 	return nil
 }
 
-func (p *jsiiProxy_PrivateEndpointNetworkInterfaceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivateEndpointNetworkInterfaceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

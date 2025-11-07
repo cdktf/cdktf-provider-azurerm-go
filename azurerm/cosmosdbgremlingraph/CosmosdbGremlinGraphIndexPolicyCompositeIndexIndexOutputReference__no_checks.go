@@ -43,11 +43,11 @@ func (c *jsiiProxy_CosmosdbGremlinGraphIndexPolicyCompositeIndexIndexOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbGremlinGraphIndexPolicyCompositeIndexIndexOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CosmosdbGremlinGraphIndexPolicyCompositeIndexIndexOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbGremlinGraphIndexPolicyCompositeIndexIndexOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbGremlinGraphIndexPolicyCompositeIndexIndexOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

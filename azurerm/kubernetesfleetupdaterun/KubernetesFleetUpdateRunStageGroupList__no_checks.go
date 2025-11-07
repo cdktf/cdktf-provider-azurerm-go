@@ -15,7 +15,7 @@ func (k *jsiiProxy_KubernetesFleetUpdateRunStageGroupList) validateGetParameters
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesFleetUpdateRunStageGroupList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesFleetUpdateRunStageGroupList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermPolicySetDefinitionPolicyDefinitionReferenceList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermPolicySetDefinitionPolicyDefinitionReferenceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermPolicySetDefinitionPolicyDefinitionReferenceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

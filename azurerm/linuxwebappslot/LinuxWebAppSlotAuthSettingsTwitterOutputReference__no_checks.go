@@ -43,11 +43,11 @@ func (l *jsiiProxy_LinuxWebAppSlotAuthSettingsTwitterOutputReference) validateGe
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppSlotAuthSettingsTwitterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxWebAppSlotAuthSettingsTwitterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppSlotAuthSettingsTwitterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxWebAppSlotAuthSettingsTwitterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

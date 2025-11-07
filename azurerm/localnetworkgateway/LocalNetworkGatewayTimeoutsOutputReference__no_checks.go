@@ -43,11 +43,11 @@ func (l *jsiiProxy_LocalNetworkGatewayTimeoutsOutputReference) validateGetString
 	return nil
 }
 
-func (l *jsiiProxy_LocalNetworkGatewayTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LocalNetworkGatewayTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LocalNetworkGatewayTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LocalNetworkGatewayTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

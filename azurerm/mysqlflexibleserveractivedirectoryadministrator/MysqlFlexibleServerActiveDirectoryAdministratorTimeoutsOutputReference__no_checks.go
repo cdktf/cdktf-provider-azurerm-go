@@ -43,11 +43,11 @@ func (m *jsiiProxy_MysqlFlexibleServerActiveDirectoryAdministratorTimeoutsOutput
 	return nil
 }
 
-func (m *jsiiProxy_MysqlFlexibleServerActiveDirectoryAdministratorTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MysqlFlexibleServerActiveDirectoryAdministratorTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MysqlFlexibleServerActiveDirectoryAdministratorTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MysqlFlexibleServerActiveDirectoryAdministratorTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

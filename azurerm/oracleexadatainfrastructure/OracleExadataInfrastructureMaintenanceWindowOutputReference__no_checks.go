@@ -43,11 +43,11 @@ func (o *jsiiProxy_OracleExadataInfrastructureMaintenanceWindowOutputReference) 
 	return nil
 }
 
-func (o *jsiiProxy_OracleExadataInfrastructureMaintenanceWindowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OracleExadataInfrastructureMaintenanceWindowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OracleExadataInfrastructureMaintenanceWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OracleExadataInfrastructureMaintenanceWindowOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

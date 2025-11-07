@@ -15,7 +15,7 @@ func (m *jsiiProxy_MongoClusterConnectionStringsList) validateGetParameters(inde
 	return nil
 }
 
-func (m *jsiiProxy_MongoClusterConnectionStringsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MongoClusterConnectionStringsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

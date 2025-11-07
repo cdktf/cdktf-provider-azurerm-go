@@ -43,11 +43,11 @@ func (b *jsiiProxy_BatchPoolFixedScaleOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolFixedScaleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BatchPoolFixedScaleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolFixedScaleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchPoolFixedScaleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

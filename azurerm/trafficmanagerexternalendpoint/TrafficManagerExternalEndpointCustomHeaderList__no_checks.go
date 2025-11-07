@@ -15,7 +15,7 @@ func (t *jsiiProxy_TrafficManagerExternalEndpointCustomHeaderList) validateGetPa
 	return nil
 }
 
-func (t *jsiiProxy_TrafficManagerExternalEndpointCustomHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TrafficManagerExternalEndpointCustomHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

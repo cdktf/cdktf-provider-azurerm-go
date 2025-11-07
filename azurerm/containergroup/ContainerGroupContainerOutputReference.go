@@ -100,7 +100,7 @@ type ContainerGroupContainerOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutLivenessProbe(value *ContainerGroupContainerLivenessProbe)
 	PutPorts(value interface{})
 	PutReadinessProbe(value *ContainerGroupContainerReadinessProbe)
@@ -118,7 +118,7 @@ type ContainerGroupContainerOutputReference interface {
 	ResetVolume()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -833,8 +833,8 @@ func (c *jsiiProxy_ContainerGroupContainerOutputReference) InterpolationAsList()
 	return returns
 }
 
-func (c *jsiiProxy_ContainerGroupContainerOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ContainerGroupContainerOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -842,7 +842,7 @@ func (c *jsiiProxy_ContainerGroupContainerOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -984,8 +984,8 @@ func (c *jsiiProxy_ContainerGroupContainerOutputReference) ResetVolume() {
 	)
 }
 
-func (c *jsiiProxy_ContainerGroupContainerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ContainerGroupContainerOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -993,7 +993,7 @@ func (c *jsiiProxy_ContainerGroupContainerOutputReference) Resolve(_context cdkt
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

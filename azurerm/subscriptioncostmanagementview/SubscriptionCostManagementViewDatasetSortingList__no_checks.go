@@ -15,7 +15,7 @@ func (s *jsiiProxy_SubscriptionCostManagementViewDatasetSortingList) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_SubscriptionCostManagementViewDatasetSortingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SubscriptionCostManagementViewDatasetSortingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

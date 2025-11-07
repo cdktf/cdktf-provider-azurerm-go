@@ -43,11 +43,11 @@ func (l *jsiiProxy_LogicAppIntegrationAccountCertificateKeyVaultKeyOutputReferen
 	return nil
 }
 
-func (l *jsiiProxy_LogicAppIntegrationAccountCertificateKeyVaultKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LogicAppIntegrationAccountCertificateKeyVaultKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LogicAppIntegrationAccountCertificateKeyVaultKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogicAppIntegrationAccountCertificateKeyVaultKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

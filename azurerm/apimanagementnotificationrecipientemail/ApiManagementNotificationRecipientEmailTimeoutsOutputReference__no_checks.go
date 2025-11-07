@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApiManagementNotificationRecipientEmailTimeoutsOutputReferenc
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementNotificationRecipientEmailTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiManagementNotificationRecipientEmailTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementNotificationRecipientEmailTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementNotificationRecipientEmailTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

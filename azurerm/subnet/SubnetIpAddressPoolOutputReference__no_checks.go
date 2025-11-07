@@ -43,11 +43,11 @@ func (s *jsiiProxy_SubnetIpAddressPoolOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (s *jsiiProxy_SubnetIpAddressPoolOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SubnetIpAddressPoolOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SubnetIpAddressPoolOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SubnetIpAddressPoolOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

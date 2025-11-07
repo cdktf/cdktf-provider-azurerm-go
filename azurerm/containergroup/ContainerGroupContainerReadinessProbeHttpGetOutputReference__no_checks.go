@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerGroupContainerReadinessProbeHttpGetOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_ContainerGroupContainerReadinessProbeHttpGetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerGroupContainerReadinessProbeHttpGetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerGroupContainerReadinessProbeHttpGetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerGroupContainerReadinessProbeHttpGetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

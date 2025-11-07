@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermHealthcareDicomServicePrivateEndpointList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermHealthcareDicomServicePrivateEndpointList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermHealthcareDicomServicePrivateEndpointList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

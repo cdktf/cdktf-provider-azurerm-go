@@ -43,11 +43,11 @@ func (m *jsiiProxy_MachineLearningWorkspaceNetworkOutboundRulePrivateEndpointTim
 	return nil
 }
 
-func (m *jsiiProxy_MachineLearningWorkspaceNetworkOutboundRulePrivateEndpointTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MachineLearningWorkspaceNetworkOutboundRulePrivateEndpointTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MachineLearningWorkspaceNetworkOutboundRulePrivateEndpointTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MachineLearningWorkspaceNetworkOutboundRulePrivateEndpointTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

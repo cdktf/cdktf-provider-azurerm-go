@@ -43,11 +43,11 @@ func (w *jsiiProxy_WebPubsubLiveTraceOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (w *jsiiProxy_WebPubsubLiveTraceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WebPubsubLiveTraceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WebPubsubLiveTraceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WebPubsubLiveTraceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

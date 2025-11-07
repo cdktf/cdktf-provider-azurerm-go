@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermOracleDbServersDbServersList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermOracleDbServersDbServersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermOracleDbServersDbServersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

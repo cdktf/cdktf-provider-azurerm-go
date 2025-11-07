@@ -43,11 +43,11 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetBootDiagnosticsOutputReference) va
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineScaleSetBootDiagnosticsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetBootDiagnosticsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineScaleSetBootDiagnosticsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetBootDiagnosticsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

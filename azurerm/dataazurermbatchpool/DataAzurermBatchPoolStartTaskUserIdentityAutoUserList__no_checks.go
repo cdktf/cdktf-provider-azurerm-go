@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermBatchPoolStartTaskUserIdentityAutoUserList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermBatchPoolStartTaskUserIdentityAutoUserList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermBatchPoolStartTaskUserIdentityAutoUserList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

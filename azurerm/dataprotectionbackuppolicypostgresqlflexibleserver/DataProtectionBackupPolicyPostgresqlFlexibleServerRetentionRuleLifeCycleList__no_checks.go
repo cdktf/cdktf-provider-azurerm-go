@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRu
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

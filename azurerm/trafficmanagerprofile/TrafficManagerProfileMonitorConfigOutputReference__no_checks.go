@@ -43,7 +43,7 @@ func (t *jsiiProxy_TrafficManagerProfileMonitorConfigOutputReference) validateGe
 	return nil
 }
 
-func (t *jsiiProxy_TrafficManagerProfileMonitorConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TrafficManagerProfileMonitorConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (t *jsiiProxy_TrafficManagerProfileMonitorConfigOutputReference) validatePu
 	return nil
 }
 
-func (t *jsiiProxy_TrafficManagerProfileMonitorConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TrafficManagerProfileMonitorConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_CdnEndpointGeoFilterOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (c *jsiiProxy_CdnEndpointGeoFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CdnEndpointGeoFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CdnEndpointGeoFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnEndpointGeoFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

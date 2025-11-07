@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermOracleExascaleDatabaseStorageVaultHighCapacityData
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermOracleExascaleDatabaseStorageVaultHighCapacityDatabaseStorageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermOracleExascaleDatabaseStorageVaultHighCapacityDatabaseStorageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

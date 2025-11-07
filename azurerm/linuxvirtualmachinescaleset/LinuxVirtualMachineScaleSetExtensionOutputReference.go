@@ -95,7 +95,7 @@ type LinuxVirtualMachineScaleSetExtensionOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutProtectedSettingsFromKeyVault(value *LinuxVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVault)
 	ResetAutomaticUpgradeEnabled()
 	ResetAutoUpgradeMinorVersion()
@@ -106,7 +106,7 @@ type LinuxVirtualMachineScaleSetExtensionOutputReference interface {
 	ResetSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -772,8 +772,8 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetExtensionOutputReference) Interpol
 	return returns
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineScaleSetExtensionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetExtensionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -781,7 +781,7 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetExtensionOutputReference) Interpol
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -855,8 +855,8 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetExtensionOutputReference) ResetSet
 	)
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineScaleSetExtensionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetExtensionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -864,7 +864,7 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetExtensionOutputReference) Resolve(
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_SiteRecoveryVmwareReplicatedVmManagedDiskList) validateGetPar
 	return nil
 }
 
-func (s *jsiiProxy_SiteRecoveryVmwareReplicatedVmManagedDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SiteRecoveryVmwareReplicatedVmManagedDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

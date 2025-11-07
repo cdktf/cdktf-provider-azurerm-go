@@ -43,11 +43,11 @@ func (m *jsiiProxy_MssqlManagedInstanceFailoverGroupPartnerRegionOutputReference
 	return nil
 }
 
-func (m *jsiiProxy_MssqlManagedInstanceFailoverGroupPartnerRegionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlManagedInstanceFailoverGroupPartnerRegionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MssqlManagedInstanceFailoverGroupPartnerRegionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlManagedInstanceFailoverGroupPartnerRegionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

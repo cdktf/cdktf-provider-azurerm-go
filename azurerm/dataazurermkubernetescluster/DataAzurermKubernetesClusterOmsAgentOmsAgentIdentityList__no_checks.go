@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermKubernetesClusterOmsAgentOmsAgentIdentityList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKubernetesClusterOmsAgentOmsAgentIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermKubernetesClusterOmsAgentOmsAgentIdentityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

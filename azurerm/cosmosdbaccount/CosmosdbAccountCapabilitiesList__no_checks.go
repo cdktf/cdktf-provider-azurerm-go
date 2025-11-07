@@ -15,7 +15,7 @@ func (c *jsiiProxy_CosmosdbAccountCapabilitiesList) validateGetParameters(index 
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbAccountCapabilitiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbAccountCapabilitiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

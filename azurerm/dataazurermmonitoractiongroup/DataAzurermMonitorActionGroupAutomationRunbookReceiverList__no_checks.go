@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermMonitorActionGroupAutomationRunbookReceiverList) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMonitorActionGroupAutomationRunbookReceiverList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermMonitorActionGroupAutomationRunbookReceiverList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

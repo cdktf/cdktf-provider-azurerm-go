@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkManagerRoutingRuleCollectionTimeoutsOutputReference) v
 	return nil
 }
 
-func (n *jsiiProxy_NetworkManagerRoutingRuleCollectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkManagerRoutingRuleCollectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkManagerRoutingRuleCollectionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkManagerRoutingRuleCollectionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

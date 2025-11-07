@@ -43,7 +43,7 @@ func (s *jsiiProxy_StorageShareAclOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (s *jsiiProxy_StorageShareAclOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageShareAclOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_StorageShareAclOutputReference) validatePutAccessPolicyParame
 	return nil
 }
 
-func (s *jsiiProxy_StorageShareAclOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageShareAclOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

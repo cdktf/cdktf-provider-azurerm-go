@@ -15,7 +15,7 @@ func (w *jsiiProxy_WebPubsubNetworkAclPrivateEndpointList) validateGetParameters
 	return nil
 }
 
-func (w *jsiiProxy_WebPubsubNetworkAclPrivateEndpointList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WebPubsubNetworkAclPrivateEndpointList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

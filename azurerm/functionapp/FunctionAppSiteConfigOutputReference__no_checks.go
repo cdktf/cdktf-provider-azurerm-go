@@ -43,7 +43,7 @@ func (f *jsiiProxy_FunctionAppSiteConfigOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (f *jsiiProxy_FunctionAppSiteConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FunctionAppSiteConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (f *jsiiProxy_FunctionAppSiteConfigOutputReference) validatePutScmIpRestric
 	return nil
 }
 
-func (f *jsiiProxy_FunctionAppSiteConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FunctionAppSiteConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

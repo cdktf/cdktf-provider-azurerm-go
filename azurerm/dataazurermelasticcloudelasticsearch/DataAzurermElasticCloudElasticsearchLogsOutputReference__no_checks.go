@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermElasticCloudElasticsearchLogsOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermElasticCloudElasticsearchLogsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermElasticCloudElasticsearchLogsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermElasticCloudElasticsearchLogsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermElasticCloudElasticsearchLogsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

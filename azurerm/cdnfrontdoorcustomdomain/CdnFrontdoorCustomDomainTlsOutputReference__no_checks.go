@@ -43,11 +43,11 @@ func (c *jsiiProxy_CdnFrontdoorCustomDomainTlsOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorCustomDomainTlsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CdnFrontdoorCustomDomainTlsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorCustomDomainTlsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnFrontdoorCustomDomainTlsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

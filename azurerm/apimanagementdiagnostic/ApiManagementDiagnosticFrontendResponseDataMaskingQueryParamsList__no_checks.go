@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApiManagementDiagnosticFrontendResponseDataMaskingQueryParams
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementDiagnosticFrontendResponseDataMaskingQueryParamsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementDiagnosticFrontendResponseDataMaskingQueryParamsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

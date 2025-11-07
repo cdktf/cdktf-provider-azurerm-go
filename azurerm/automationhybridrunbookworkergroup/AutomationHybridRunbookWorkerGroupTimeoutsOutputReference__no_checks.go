@@ -43,11 +43,11 @@ func (a *jsiiProxy_AutomationHybridRunbookWorkerGroupTimeoutsOutputReference) va
 	return nil
 }
 
-func (a *jsiiProxy_AutomationHybridRunbookWorkerGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutomationHybridRunbookWorkerGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AutomationHybridRunbookWorkerGroupTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutomationHybridRunbookWorkerGroupTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

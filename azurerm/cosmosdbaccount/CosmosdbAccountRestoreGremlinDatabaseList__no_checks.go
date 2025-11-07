@@ -15,7 +15,7 @@ func (c *jsiiProxy_CosmosdbAccountRestoreGremlinDatabaseList) validateGetParamet
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbAccountRestoreGremlinDatabaseList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbAccountRestoreGremlinDatabaseList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

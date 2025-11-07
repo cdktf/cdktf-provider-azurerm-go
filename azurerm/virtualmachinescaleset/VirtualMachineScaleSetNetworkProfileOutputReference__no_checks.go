@@ -43,7 +43,7 @@ func (v *jsiiProxy_VirtualMachineScaleSetNetworkProfileOutputReference) validate
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineScaleSetNetworkProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualMachineScaleSetNetworkProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (v *jsiiProxy_VirtualMachineScaleSetNetworkProfileOutputReference) validate
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineScaleSetNetworkProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineScaleSetNetworkProfileOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

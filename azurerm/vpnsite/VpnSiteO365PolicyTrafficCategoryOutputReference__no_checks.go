@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpnSiteO365PolicyTrafficCategoryOutputReference) validateGetS
 	return nil
 }
 
-func (v *jsiiProxy_VpnSiteO365PolicyTrafficCategoryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpnSiteO365PolicyTrafficCategoryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpnSiteO365PolicyTrafficCategoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpnSiteO365PolicyTrafficCategoryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

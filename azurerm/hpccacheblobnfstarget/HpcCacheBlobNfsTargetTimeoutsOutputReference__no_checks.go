@@ -43,11 +43,11 @@ func (h *jsiiProxy_HpcCacheBlobNfsTargetTimeoutsOutputReference) validateGetStri
 	return nil
 }
 
-func (h *jsiiProxy_HpcCacheBlobNfsTargetTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HpcCacheBlobNfsTargetTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HpcCacheBlobNfsTargetTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HpcCacheBlobNfsTargetTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

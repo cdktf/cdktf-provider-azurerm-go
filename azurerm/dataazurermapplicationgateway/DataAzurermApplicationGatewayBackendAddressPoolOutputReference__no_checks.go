@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermApplicationGatewayBackendAddressPoolOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApplicationGatewayBackendAddressPoolOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermApplicationGatewayBackendAddressPoolOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApplicationGatewayBackendAddressPoolOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermApplicationGatewayBackendAddressPoolOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

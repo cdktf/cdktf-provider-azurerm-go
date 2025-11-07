@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesClusterWindowsProfileGmsaOutputReference) validateG
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterWindowsProfileGmsaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterWindowsProfileGmsaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterWindowsProfileGmsaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterWindowsProfileGmsaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

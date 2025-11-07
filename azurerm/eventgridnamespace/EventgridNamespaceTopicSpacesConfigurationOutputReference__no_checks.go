@@ -43,7 +43,7 @@ func (e *jsiiProxy_EventgridNamespaceTopicSpacesConfigurationOutputReference) va
 	return nil
 }
 
-func (e *jsiiProxy_EventgridNamespaceTopicSpacesConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventgridNamespaceTopicSpacesConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (e *jsiiProxy_EventgridNamespaceTopicSpacesConfigurationOutputReference) va
 	return nil
 }
 
-func (e *jsiiProxy_EventgridNamespaceTopicSpacesConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventgridNamespaceTopicSpacesConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

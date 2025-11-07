@@ -43,11 +43,11 @@ func (s *jsiiProxy_SynapseFirewallRuleTimeoutsOutputReference) validateGetString
 	return nil
 }
 
-func (s *jsiiProxy_SynapseFirewallRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SynapseFirewallRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SynapseFirewallRuleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SynapseFirewallRuleTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

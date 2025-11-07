@@ -43,11 +43,11 @@ func (s *jsiiProxy_StackHciMarketplaceGalleryImageTimeoutsOutputReference) valid
 	return nil
 }
 
-func (s *jsiiProxy_StackHciMarketplaceGalleryImageTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StackHciMarketplaceGalleryImageTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StackHciMarketplaceGalleryImageTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StackHciMarketplaceGalleryImageTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

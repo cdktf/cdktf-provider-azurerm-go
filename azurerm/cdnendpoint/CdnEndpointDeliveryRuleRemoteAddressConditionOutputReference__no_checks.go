@@ -43,11 +43,11 @@ func (c *jsiiProxy_CdnEndpointDeliveryRuleRemoteAddressConditionOutputReference)
 	return nil
 }
 
-func (c *jsiiProxy_CdnEndpointDeliveryRuleRemoteAddressConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CdnEndpointDeliveryRuleRemoteAddressConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CdnEndpointDeliveryRuleRemoteAddressConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnEndpointDeliveryRuleRemoteAddressConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

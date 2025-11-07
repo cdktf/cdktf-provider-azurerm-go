@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesClusterKeyVaultSecretsProviderSecretIdentityOutputR
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterKeyVaultSecretsProviderSecretIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterKeyVaultSecretsProviderSecretIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterKeyVaultSecretsProviderSecretIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterKeyVaultSecretsProviderSecretIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

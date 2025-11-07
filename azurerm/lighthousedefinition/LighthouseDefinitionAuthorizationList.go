@@ -41,7 +41,7 @@ type LighthouseDefinitionAuthorizationList interface {
 	Get(index *float64) LighthouseDefinitionAuthorizationOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (l *jsiiProxy_LighthouseDefinitionAuthorizationList) Get(index *float64) Li
 	return returns
 }
 
-func (l *jsiiProxy_LighthouseDefinitionAuthorizationList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LighthouseDefinitionAuthorizationList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (l *jsiiProxy_LighthouseDefinitionAuthorizationList) Resolve(_context cdktf
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

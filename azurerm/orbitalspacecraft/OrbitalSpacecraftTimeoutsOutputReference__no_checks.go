@@ -43,11 +43,11 @@ func (o *jsiiProxy_OrbitalSpacecraftTimeoutsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (o *jsiiProxy_OrbitalSpacecraftTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OrbitalSpacecraftTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OrbitalSpacecraftTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrbitalSpacecraftTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

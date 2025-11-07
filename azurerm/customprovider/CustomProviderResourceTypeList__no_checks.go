@@ -15,7 +15,7 @@ func (c *jsiiProxy_CustomProviderResourceTypeList) validateGetParameters(index *
 	return nil
 }
 
-func (c *jsiiProxy_CustomProviderResourceTypeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomProviderResourceTypeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

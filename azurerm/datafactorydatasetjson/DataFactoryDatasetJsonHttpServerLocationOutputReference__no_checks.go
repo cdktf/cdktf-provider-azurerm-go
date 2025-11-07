@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFactoryDatasetJsonHttpServerLocationOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryDatasetJsonHttpServerLocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFactoryDatasetJsonHttpServerLocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryDatasetJsonHttpServerLocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryDatasetJsonHttpServerLocationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

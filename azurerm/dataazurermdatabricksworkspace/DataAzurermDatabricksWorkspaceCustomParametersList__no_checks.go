@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermDatabricksWorkspaceCustomParametersList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDatabricksWorkspaceCustomParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermDatabricksWorkspaceCustomParametersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

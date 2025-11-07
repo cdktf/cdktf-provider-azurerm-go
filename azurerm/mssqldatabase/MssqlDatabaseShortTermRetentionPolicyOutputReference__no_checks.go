@@ -43,11 +43,11 @@ func (m *jsiiProxy_MssqlDatabaseShortTermRetentionPolicyOutputReference) validat
 	return nil
 }
 
-func (m *jsiiProxy_MssqlDatabaseShortTermRetentionPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlDatabaseShortTermRetentionPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MssqlDatabaseShortTermRetentionPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlDatabaseShortTermRetentionPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

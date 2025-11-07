@@ -15,7 +15,7 @@ func (b *jsiiProxy_BackupPolicyVmWorkloadProtectionPolicyList) validateGetParame
 	return nil
 }
 
-func (b *jsiiProxy_BackupPolicyVmWorkloadProtectionPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupPolicyVmWorkloadProtectionPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

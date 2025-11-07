@@ -43,11 +43,11 @@ func (i *jsiiProxy_IothubConsumerGroupTimeoutsOutputReference) validateGetString
 	return nil
 }
 
-func (i *jsiiProxy_IothubConsumerGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IothubConsumerGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IothubConsumerGroupTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IothubConsumerGroupTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

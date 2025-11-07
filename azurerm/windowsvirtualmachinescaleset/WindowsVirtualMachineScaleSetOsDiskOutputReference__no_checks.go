@@ -43,7 +43,7 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSetOsDiskOutputReference) validateG
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineScaleSetOsDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsVirtualMachineScaleSetOsDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSetOsDiskOutputReference) validateP
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineScaleSetOsDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsVirtualMachineScaleSetOsDiskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

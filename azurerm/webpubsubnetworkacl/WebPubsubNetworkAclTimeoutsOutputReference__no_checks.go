@@ -43,11 +43,11 @@ func (w *jsiiProxy_WebPubsubNetworkAclTimeoutsOutputReference) validateGetString
 	return nil
 }
 
-func (w *jsiiProxy_WebPubsubNetworkAclTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WebPubsubNetworkAclTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WebPubsubNetworkAclTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WebPubsubNetworkAclTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

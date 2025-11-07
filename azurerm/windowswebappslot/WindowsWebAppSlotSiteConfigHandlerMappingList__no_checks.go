@@ -15,7 +15,7 @@ func (w *jsiiProxy_WindowsWebAppSlotSiteConfigHandlerMappingList) validateGetPar
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppSlotSiteConfigHandlerMappingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsWebAppSlotSiteConfigHandlerMappingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

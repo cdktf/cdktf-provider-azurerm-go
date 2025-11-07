@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermLbBackendAddressPoolBackendIpConfigurationsOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLbBackendAddressPoolBackendIpConfigurationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermLbBackendAddressPoolBackendIpConfigurationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLbBackendAddressPoolBackendIpConfigurationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermLbBackendAddressPoolBackendIpConfigurationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

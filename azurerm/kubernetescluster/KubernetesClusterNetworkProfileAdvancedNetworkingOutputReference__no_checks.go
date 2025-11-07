@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesClusterNetworkProfileAdvancedNetworkingOutputRefere
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

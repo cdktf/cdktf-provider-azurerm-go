@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataFactoryTriggerTumblingWindowTriggerDependencyList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryTriggerTumblingWindowTriggerDependencyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryTriggerTumblingWindowTriggerDependencyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

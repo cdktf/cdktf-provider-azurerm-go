@@ -15,7 +15,7 @@ func (l *jsiiProxy_LinuxFunctionAppSiteConfigApplicationStackDockerList) validat
 	return nil
 }
 
-func (l *jsiiProxy_LinuxFunctionAppSiteConfigApplicationStackDockerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxFunctionAppSiteConfigApplicationStackDockerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

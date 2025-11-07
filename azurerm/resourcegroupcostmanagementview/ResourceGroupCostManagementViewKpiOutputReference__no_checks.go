@@ -43,11 +43,11 @@ func (r *jsiiProxy_ResourceGroupCostManagementViewKpiOutputReference) validateGe
 	return nil
 }
 
-func (r *jsiiProxy_ResourceGroupCostManagementViewKpiOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ResourceGroupCostManagementViewKpiOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_ResourceGroupCostManagementViewKpiOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResourceGroupCostManagementViewKpiOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

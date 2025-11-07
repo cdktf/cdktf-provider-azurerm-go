@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermKubernetesClusterOmsAgentList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKubernetesClusterOmsAgentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermKubernetesClusterOmsAgentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

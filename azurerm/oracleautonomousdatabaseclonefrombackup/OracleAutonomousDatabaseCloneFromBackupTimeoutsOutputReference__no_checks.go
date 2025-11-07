@@ -43,11 +43,11 @@ func (o *jsiiProxy_OracleAutonomousDatabaseCloneFromBackupTimeoutsOutputReferenc
 	return nil
 }
 
-func (o *jsiiProxy_OracleAutonomousDatabaseCloneFromBackupTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OracleAutonomousDatabaseCloneFromBackupTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OracleAutonomousDatabaseCloneFromBackupTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OracleAutonomousDatabaseCloneFromBackupTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermStreamAnalyticsJobIdentityList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermStreamAnalyticsJobIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermStreamAnalyticsJobIdentityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

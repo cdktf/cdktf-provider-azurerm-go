@@ -43,11 +43,11 @@ func (l *jsiiProxy_LogAnalyticsLinkedStorageAccountTimeoutsOutputReference) vali
 	return nil
 }
 
-func (l *jsiiProxy_LogAnalyticsLinkedStorageAccountTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LogAnalyticsLinkedStorageAccountTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LogAnalyticsLinkedStorageAccountTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogAnalyticsLinkedStorageAccountTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

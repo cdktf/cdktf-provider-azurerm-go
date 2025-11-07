@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkPacketCaptureFilterOutputReference) validateGetStringM
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPacketCaptureFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkPacketCaptureFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPacketCaptureFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkPacketCaptureFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermOracleExascaleDatabaseStorageVaultHighCapacityData
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermOracleExascaleDatabaseStorageVaultHighCapacityDatabaseStorageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermOracleExascaleDatabaseStorageVaultHighCapacityDatabaseStorageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermOracleExascaleDatabaseStorageVaultHighCapacityDatabaseStorageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermOracleExascaleDatabaseStorageVaultHighCapacityDatabaseStorageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

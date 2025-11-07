@@ -15,7 +15,7 @@ func (c *jsiiProxy_CosmosdbAccountVirtualNetworkRuleList) validateGetParameters(
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbAccountVirtualNetworkRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbAccountVirtualNetworkRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

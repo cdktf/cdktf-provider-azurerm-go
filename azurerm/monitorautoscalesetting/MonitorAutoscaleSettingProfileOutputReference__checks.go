@@ -85,9 +85,9 @@ func (m *jsiiProxy_MonitorAutoscaleSettingProfileOutputReference) validateGetStr
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAutoscaleSettingProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (m *jsiiProxy_MonitorAutoscaleSettingProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -157,9 +157,9 @@ func (m *jsiiProxy_MonitorAutoscaleSettingProfileOutputReference) validatePutRul
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAutoscaleSettingProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (m *jsiiProxy_MonitorAutoscaleSettingProfileOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

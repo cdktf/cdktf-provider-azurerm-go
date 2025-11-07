@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkConnectionMonitorTestConfigurationHttpConfigurationReq
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectionMonitorTestConfigurationHttpConfigurationRequestHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkConnectionMonitorTestConfigurationHttpConfigurationRequestHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

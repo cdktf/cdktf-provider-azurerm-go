@@ -15,7 +15,7 @@ func (s *jsiiProxy_SubscriptionCostManagementViewDatasetGroupingList) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_SubscriptionCostManagementViewDatasetGroupingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SubscriptionCostManagementViewDatasetGroupingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

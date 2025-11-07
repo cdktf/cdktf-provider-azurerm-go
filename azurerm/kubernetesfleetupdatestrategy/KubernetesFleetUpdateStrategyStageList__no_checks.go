@@ -15,7 +15,7 @@ func (k *jsiiProxy_KubernetesFleetUpdateStrategyStageList) validateGetParameters
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesFleetUpdateStrategyStageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesFleetUpdateStrategyStageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

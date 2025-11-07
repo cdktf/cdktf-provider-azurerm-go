@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermLinuxFunctionAppBackupList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLinuxFunctionAppBackupList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermLinuxFunctionAppBackupList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

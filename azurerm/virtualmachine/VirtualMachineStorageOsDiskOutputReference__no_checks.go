@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualMachineStorageOsDiskOutputReference) validateGetString
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineStorageOsDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualMachineStorageOsDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineStorageOsDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineStorageOsDiskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

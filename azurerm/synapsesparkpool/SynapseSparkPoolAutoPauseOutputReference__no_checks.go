@@ -43,11 +43,11 @@ func (s *jsiiProxy_SynapseSparkPoolAutoPauseOutputReference) validateGetStringMa
 	return nil
 }
 
-func (s *jsiiProxy_SynapseSparkPoolAutoPauseOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SynapseSparkPoolAutoPauseOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SynapseSparkPoolAutoPauseOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SynapseSparkPoolAutoPauseOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

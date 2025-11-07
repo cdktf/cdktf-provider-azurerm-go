@@ -84,13 +84,13 @@ type LinuxVirtualMachineScaleSetRollingUpgradePolicyOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetCrossZoneUpgradesEnabled()
 	ResetMaximumSurgeInstancesEnabled()
 	ResetPrioritizeUnhealthyInstancesEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -643,8 +643,8 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetRollingUpgradePolicyOutputReferenc
 	return returns
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineScaleSetRollingUpgradePolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetRollingUpgradePolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -652,7 +652,7 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetRollingUpgradePolicyOutputReferenc
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -683,8 +683,8 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetRollingUpgradePolicyOutputReferenc
 	)
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineScaleSetRollingUpgradePolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetRollingUpgradePolicyOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -692,7 +692,7 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetRollingUpgradePolicyOutputReferenc
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

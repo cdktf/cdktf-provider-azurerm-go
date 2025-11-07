@@ -15,7 +15,7 @@ func (l *jsiiProxy_LbOutboundRuleFrontendIpConfigurationList) validateGetParamet
 	return nil
 }
 
-func (l *jsiiProxy_LbOutboundRuleFrontendIpConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbOutboundRuleFrontendIpConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

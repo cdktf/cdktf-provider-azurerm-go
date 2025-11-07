@@ -43,11 +43,11 @@ func (b *jsiiProxy_BackupProtectedFileShareTimeoutsOutputReference) validateGetS
 	return nil
 }
 
-func (b *jsiiProxy_BackupProtectedFileShareTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BackupProtectedFileShareTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BackupProtectedFileShareTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupProtectedFileShareTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

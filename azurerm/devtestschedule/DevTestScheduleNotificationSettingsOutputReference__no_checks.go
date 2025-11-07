@@ -43,11 +43,11 @@ func (d *jsiiProxy_DevTestScheduleNotificationSettingsOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DevTestScheduleNotificationSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DevTestScheduleNotificationSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DevTestScheduleNotificationSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DevTestScheduleNotificationSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

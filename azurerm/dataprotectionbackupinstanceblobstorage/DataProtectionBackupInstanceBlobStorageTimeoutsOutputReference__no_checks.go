@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataProtectionBackupInstanceBlobStorageTimeoutsOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupInstanceBlobStorageTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataProtectionBackupInstanceBlobStorageTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupInstanceBlobStorageTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataProtectionBackupInstanceBlobStorageTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

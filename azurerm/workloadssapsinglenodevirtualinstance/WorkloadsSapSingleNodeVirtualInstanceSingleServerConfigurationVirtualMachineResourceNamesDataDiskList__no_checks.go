@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfiguratio
 	return nil
 }
 
-func (w *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationVirtualMachineResourceNamesDataDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationVirtualMachineResourceNamesDataDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

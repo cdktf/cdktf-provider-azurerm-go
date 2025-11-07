@@ -15,7 +15,7 @@ func (h *jsiiProxy_HealthcareDicomServiceAuthenticationList) validateGetParamete
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareDicomServiceAuthenticationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HealthcareDicomServiceAuthenticationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

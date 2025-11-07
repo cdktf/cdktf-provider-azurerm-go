@@ -43,7 +43,7 @@ func (s *jsiiProxy_ServicebusNamespaceNetworkRuleSetOutputReference) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_ServicebusNamespaceNetworkRuleSetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServicebusNamespaceNetworkRuleSetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_ServicebusNamespaceNetworkRuleSetOutputReference) validatePut
 	return nil
 }
 
-func (s *jsiiProxy_ServicebusNamespaceNetworkRuleSetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServicebusNamespaceNetworkRuleSetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

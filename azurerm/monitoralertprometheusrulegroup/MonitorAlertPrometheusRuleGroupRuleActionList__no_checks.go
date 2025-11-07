@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitorAlertPrometheusRuleGroupRuleActionList) validateGetPar
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAlertPrometheusRuleGroupRuleActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorAlertPrometheusRuleGroupRuleActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

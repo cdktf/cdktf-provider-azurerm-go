@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerAppJobTemplateContainerLivenessProbeHeaderOutputRefe
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppJobTemplateContainerLivenessProbeHeaderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAppJobTemplateContainerLivenessProbeHeaderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppJobTemplateContainerLivenessProbeHeaderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppJobTemplateContainerLivenessProbeHeaderOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

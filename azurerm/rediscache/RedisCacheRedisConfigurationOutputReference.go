@@ -112,7 +112,7 @@ type RedisCacheRedisConfigurationOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetActiveDirectoryAuthenticationEnabled()
 	ResetAofBackupEnabled()
 	ResetAofStorageConnectionString0()
@@ -131,7 +131,7 @@ type RedisCacheRedisConfigurationOutputReference interface {
 	ResetStorageAccountSubscriptionId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -973,8 +973,8 @@ func (r *jsiiProxy_RedisCacheRedisConfigurationOutputReference) InterpolationAsL
 	return returns
 }
 
-func (r *jsiiProxy_RedisCacheRedisConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_RedisCacheRedisConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -982,7 +982,7 @@ func (r *jsiiProxy_RedisCacheRedisConfigurationOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1117,8 +1117,8 @@ func (r *jsiiProxy_RedisCacheRedisConfigurationOutputReference) ResetStorageAcco
 	)
 }
 
-func (r *jsiiProxy_RedisCacheRedisConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_RedisCacheRedisConfigurationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1126,7 +1126,7 @@ func (r *jsiiProxy_RedisCacheRedisConfigurationOutputReference) Resolve(_context
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

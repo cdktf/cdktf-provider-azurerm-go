@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermMonitorScheduledQueryRulesLogCriteriaList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMonitorScheduledQueryRulesLogCriteriaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermMonitorScheduledQueryRulesLogCriteriaList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

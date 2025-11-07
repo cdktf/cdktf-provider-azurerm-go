@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApplicationGatewayRewriteRuleSetOutputReference) validateGetS
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayRewriteRuleSetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApplicationGatewayRewriteRuleSetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_ApplicationGatewayRewriteRuleSetOutputReference) validatePutR
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayRewriteRuleSetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationGatewayRewriteRuleSetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

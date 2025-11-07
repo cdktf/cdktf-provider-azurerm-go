@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitorAutoscaleSettingNotificationWebhookOutputReference) va
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAutoscaleSettingNotificationWebhookOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorAutoscaleSettingNotificationWebhookOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAutoscaleSettingNotificationWebhookOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorAutoscaleSettingNotificationWebhookOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermNetappAccountEncryptionTimeoutsOutputReference) va
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNetappAccountEncryptionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermNetappAccountEncryptionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNetappAccountEncryptionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermNetappAccountEncryptionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

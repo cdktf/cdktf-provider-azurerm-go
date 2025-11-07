@@ -15,7 +15,7 @@ func (f *jsiiProxy_FunctionAppFlexConsumptionConnectionStringList) validateGetPa
 	return nil
 }
 
-func (f *jsiiProxy_FunctionAppFlexConsumptionConnectionStringList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FunctionAppFlexConsumptionConnectionStringList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

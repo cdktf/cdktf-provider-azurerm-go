@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitorActionGroupArmRoleReceiverOutputReference) validateGet
 	return nil
 }
 
-func (m *jsiiProxy_MonitorActionGroupArmRoleReceiverOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorActionGroupArmRoleReceiverOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorActionGroupArmRoleReceiverOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorActionGroupArmRoleReceiverOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

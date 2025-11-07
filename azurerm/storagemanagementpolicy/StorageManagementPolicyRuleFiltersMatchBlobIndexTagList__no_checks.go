@@ -15,7 +15,7 @@ func (s *jsiiProxy_StorageManagementPolicyRuleFiltersMatchBlobIndexTagList) vali
 	return nil
 }
 
-func (s *jsiiProxy_StorageManagementPolicyRuleFiltersMatchBlobIndexTagList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageManagementPolicyRuleFiltersMatchBlobIndexTagList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

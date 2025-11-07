@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServiceFabricClusterFabricSettingsOutputReference) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricClusterFabricSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceFabricClusterFabricSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricClusterFabricSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceFabricClusterFabricSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

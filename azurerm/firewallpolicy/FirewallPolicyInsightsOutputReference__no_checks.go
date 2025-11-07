@@ -43,7 +43,7 @@ func (f *jsiiProxy_FirewallPolicyInsightsOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (f *jsiiProxy_FirewallPolicyInsightsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirewallPolicyInsightsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (f *jsiiProxy_FirewallPolicyInsightsOutputReference) validatePutLogAnalytic
 	return nil
 }
 
-func (f *jsiiProxy_FirewallPolicyInsightsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirewallPolicyInsightsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

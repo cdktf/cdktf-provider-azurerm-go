@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermNetappVolumeGroupOracleTimeoutsOutputReference) va
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNetappVolumeGroupOracleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermNetappVolumeGroupOracleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNetappVolumeGroupOracleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermNetappVolumeGroupOracleTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

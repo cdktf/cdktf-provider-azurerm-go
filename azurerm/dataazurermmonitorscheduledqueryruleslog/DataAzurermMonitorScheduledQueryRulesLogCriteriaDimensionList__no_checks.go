@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermMonitorScheduledQueryRulesLogCriteriaDimensionList
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMonitorScheduledQueryRulesLogCriteriaDimensionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermMonitorScheduledQueryRulesLogCriteriaDimensionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

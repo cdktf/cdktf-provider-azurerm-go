@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermEventgridSystemTopicIdentityOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermEventgridSystemTopicIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermEventgridSystemTopicIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermEventgridSystemTopicIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermEventgridSystemTopicIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApplicationGatewayTrustedRootCertificateList) validateGetPara
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayTrustedRootCertificateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationGatewayTrustedRootCertificateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

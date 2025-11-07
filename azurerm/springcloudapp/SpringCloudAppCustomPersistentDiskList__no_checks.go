@@ -15,7 +15,7 @@ func (s *jsiiProxy_SpringCloudAppCustomPersistentDiskList) validateGetParameters
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudAppCustomPersistentDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpringCloudAppCustomPersistentDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

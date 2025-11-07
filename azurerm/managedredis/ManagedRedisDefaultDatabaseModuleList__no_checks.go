@@ -15,7 +15,7 @@ func (m *jsiiProxy_ManagedRedisDefaultDatabaseModuleList) validateGetParameters(
 	return nil
 }
 
-func (m *jsiiProxy_ManagedRedisDefaultDatabaseModuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedRedisDefaultDatabaseModuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

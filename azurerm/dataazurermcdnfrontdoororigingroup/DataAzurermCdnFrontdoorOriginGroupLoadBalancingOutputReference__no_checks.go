@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermCdnFrontdoorOriginGroupLoadBalancingOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermCdnFrontdoorOriginGroupLoadBalancingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermCdnFrontdoorOriginGroupLoadBalancingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermCdnFrontdoorOriginGroupLoadBalancingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermCdnFrontdoorOriginGroupLoadBalancingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

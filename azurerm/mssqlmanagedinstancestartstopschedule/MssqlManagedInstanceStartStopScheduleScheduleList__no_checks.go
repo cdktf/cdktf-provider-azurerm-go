@@ -15,7 +15,7 @@ func (m *jsiiProxy_MssqlManagedInstanceStartStopScheduleScheduleList) validateGe
 	return nil
 }
 
-func (m *jsiiProxy_MssqlManagedInstanceStartStopScheduleScheduleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlManagedInstanceStartStopScheduleScheduleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

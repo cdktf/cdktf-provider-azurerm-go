@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRu
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRu
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

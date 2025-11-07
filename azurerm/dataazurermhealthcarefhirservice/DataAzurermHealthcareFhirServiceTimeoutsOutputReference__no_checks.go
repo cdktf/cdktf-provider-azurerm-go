@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermHealthcareFhirServiceTimeoutsOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermHealthcareFhirServiceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermHealthcareFhirServiceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermHealthcareFhirServiceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermHealthcareFhirServiceTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

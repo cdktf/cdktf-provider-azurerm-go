@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerConnectedRegistryNotificationList) validateGetParame
 	return nil
 }
 
-func (c *jsiiProxy_ContainerConnectedRegistryNotificationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerConnectedRegistryNotificationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

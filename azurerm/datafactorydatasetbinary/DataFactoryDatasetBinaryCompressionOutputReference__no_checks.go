@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFactoryDatasetBinaryCompressionOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryDatasetBinaryCompressionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFactoryDatasetBinaryCompressionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryDatasetBinaryCompressionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryDatasetBinaryCompressionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

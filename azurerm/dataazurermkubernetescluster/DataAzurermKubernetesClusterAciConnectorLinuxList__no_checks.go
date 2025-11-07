@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermKubernetesClusterAciConnectorLinuxList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKubernetesClusterAciConnectorLinuxList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermKubernetesClusterAciConnectorLinuxList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

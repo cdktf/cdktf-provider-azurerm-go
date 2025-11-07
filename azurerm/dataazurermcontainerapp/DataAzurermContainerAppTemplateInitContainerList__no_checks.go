@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermContainerAppTemplateInitContainerList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermContainerAppTemplateInitContainerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermContainerAppTemplateInitContainerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

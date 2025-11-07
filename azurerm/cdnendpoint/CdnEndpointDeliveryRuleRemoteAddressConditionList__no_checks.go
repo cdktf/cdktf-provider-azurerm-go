@@ -15,7 +15,7 @@ func (c *jsiiProxy_CdnEndpointDeliveryRuleRemoteAddressConditionList) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_CdnEndpointDeliveryRuleRemoteAddressConditionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnEndpointDeliveryRuleRemoteAddressConditionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

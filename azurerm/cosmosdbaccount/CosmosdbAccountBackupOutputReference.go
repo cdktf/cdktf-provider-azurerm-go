@@ -78,14 +78,14 @@ type CosmosdbAccountBackupOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetIntervalInMinutes()
 	ResetRetentionInHours()
 	ResetStorageRedundancy()
 	ResetTier()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -576,8 +576,8 @@ func (c *jsiiProxy_CosmosdbAccountBackupOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (c *jsiiProxy_CosmosdbAccountBackupOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CosmosdbAccountBackupOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -585,7 +585,7 @@ func (c *jsiiProxy_CosmosdbAccountBackupOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -624,8 +624,8 @@ func (c *jsiiProxy_CosmosdbAccountBackupOutputReference) ResetTier() {
 	)
 }
 
-func (c *jsiiProxy_CosmosdbAccountBackupOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CosmosdbAccountBackupOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -633,7 +633,7 @@ func (c *jsiiProxy_CosmosdbAccountBackupOutputReference) Resolve(_context cdktf.
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

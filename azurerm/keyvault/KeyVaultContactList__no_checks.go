@@ -15,7 +15,7 @@ func (k *jsiiProxy_KeyVaultContactList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (k *jsiiProxy_KeyVaultContactList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyVaultContactList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

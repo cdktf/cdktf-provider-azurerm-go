@@ -15,7 +15,7 @@ func (l *jsiiProxy_LbBackendAddressPoolTunnelInterfaceList) validateGetParameter
 	return nil
 }
 
-func (l *jsiiProxy_LbBackendAddressPoolTunnelInterfaceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbBackendAddressPoolTunnelInterfaceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

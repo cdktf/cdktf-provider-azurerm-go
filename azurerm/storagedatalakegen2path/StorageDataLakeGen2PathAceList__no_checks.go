@@ -15,7 +15,7 @@ func (s *jsiiProxy_StorageDataLakeGen2PathAceList) validateGetParameters(index *
 	return nil
 }
 
-func (s *jsiiProxy_StorageDataLakeGen2PathAceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageDataLakeGen2PathAceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

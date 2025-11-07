@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermEventgridPartnerNamespaceInboundIpRuleOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermEventgridPartnerNamespaceInboundIpRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermEventgridPartnerNamespaceInboundIpRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermEventgridPartnerNamespaceInboundIpRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermEventgridPartnerNamespaceInboundIpRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

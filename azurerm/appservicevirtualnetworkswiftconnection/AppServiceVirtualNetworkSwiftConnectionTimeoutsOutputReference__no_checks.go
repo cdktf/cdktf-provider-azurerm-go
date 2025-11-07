@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppServiceVirtualNetworkSwiftConnectionTimeoutsOutputReferenc
 	return nil
 }
 
-func (a *jsiiProxy_AppServiceVirtualNetworkSwiftConnectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppServiceVirtualNetworkSwiftConnectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppServiceVirtualNetworkSwiftConnectionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppServiceVirtualNetworkSwiftConnectionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

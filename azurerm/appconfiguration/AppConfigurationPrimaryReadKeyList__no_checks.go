@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppConfigurationPrimaryReadKeyList) validateGetParameters(ind
 	return nil
 }
 
-func (a *jsiiProxy_AppConfigurationPrimaryReadKeyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppConfigurationPrimaryReadKeyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

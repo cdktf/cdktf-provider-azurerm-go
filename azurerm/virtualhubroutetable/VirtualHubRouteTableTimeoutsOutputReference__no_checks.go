@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualHubRouteTableTimeoutsOutputReference) validateGetStrin
 	return nil
 }
 
-func (v *jsiiProxy_VirtualHubRouteTableTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualHubRouteTableTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualHubRouteTableTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualHubRouteTableTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFactoryTriggerBlobEventTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryTriggerBlobEventTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFactoryTriggerBlobEventTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryTriggerBlobEventTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryTriggerBlobEventTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

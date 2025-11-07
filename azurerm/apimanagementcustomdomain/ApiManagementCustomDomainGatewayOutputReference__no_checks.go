@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApiManagementCustomDomainGatewayOutputReference) validateGetS
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementCustomDomainGatewayOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiManagementCustomDomainGatewayOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementCustomDomainGatewayOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementCustomDomainGatewayOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (b *jsiiProxy_BatchPoolUserAccountsWindowsUserConfigurationOutputReference)
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolUserAccountsWindowsUserConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BatchPoolUserAccountsWindowsUserConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolUserAccountsWindowsUserConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchPoolUserAccountsWindowsUserConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

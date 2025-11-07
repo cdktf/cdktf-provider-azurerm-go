@@ -15,7 +15,7 @@ func (a *jsiiProxy_AutomationConnectionTypeFieldList) validateGetParameters(inde
 	return nil
 }
 
-func (a *jsiiProxy_AutomationConnectionTypeFieldList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutomationConnectionTypeFieldList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

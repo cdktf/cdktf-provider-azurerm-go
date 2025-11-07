@@ -43,11 +43,11 @@ func (g *jsiiProxy_GraphServicesAccountTimeoutsOutputReference) validateGetStrin
 	return nil
 }
 
-func (g *jsiiProxy_GraphServicesAccountTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GraphServicesAccountTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GraphServicesAccountTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GraphServicesAccountTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

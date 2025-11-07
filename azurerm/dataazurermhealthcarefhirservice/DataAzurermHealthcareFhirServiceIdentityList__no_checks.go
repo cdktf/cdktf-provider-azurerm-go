@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermHealthcareFhirServiceIdentityList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermHealthcareFhirServiceIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermHealthcareFhirServiceIdentityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

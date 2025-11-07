@@ -43,7 +43,7 @@ func (v *jsiiProxy_VirtualNetworkGatewayPolicyGroupOutputReference) validateGetS
 	return nil
 }
 
-func (v *jsiiProxy_VirtualNetworkGatewayPolicyGroupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualNetworkGatewayPolicyGroupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (v *jsiiProxy_VirtualNetworkGatewayPolicyGroupOutputReference) validatePutP
 	return nil
 }
 
-func (v *jsiiProxy_VirtualNetworkGatewayPolicyGroupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualNetworkGatewayPolicyGroupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

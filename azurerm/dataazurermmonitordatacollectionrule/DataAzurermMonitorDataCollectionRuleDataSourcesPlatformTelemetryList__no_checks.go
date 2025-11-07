@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermMonitorDataCollectionRuleDataSourcesPlatformTeleme
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMonitorDataCollectionRuleDataSourcesPlatformTelemetryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermMonitorDataCollectionRuleDataSourcesPlatformTelemetryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

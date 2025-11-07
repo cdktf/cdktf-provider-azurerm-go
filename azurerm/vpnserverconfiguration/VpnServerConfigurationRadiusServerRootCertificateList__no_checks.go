@@ -15,7 +15,7 @@ func (v *jsiiProxy_VpnServerConfigurationRadiusServerRootCertificateList) valida
 	return nil
 }
 
-func (v *jsiiProxy_VpnServerConfigurationRadiusServerRootCertificateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpnServerConfigurationRadiusServerRootCertificateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

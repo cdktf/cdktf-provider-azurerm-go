@@ -15,7 +15,7 @@ func (l *jsiiProxy_LinuxWebAppAuthSettingsV2CustomOidcV2List) validateGetParamet
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppAuthSettingsV2CustomOidcV2List) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxWebAppAuthSettingsV2CustomOidcV2List) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

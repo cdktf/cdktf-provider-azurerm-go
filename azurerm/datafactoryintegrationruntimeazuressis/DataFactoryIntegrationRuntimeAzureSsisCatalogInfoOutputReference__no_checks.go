@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisCatalogInfoOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisCatalogInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisCatalogInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisCatalogInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisCatalogInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

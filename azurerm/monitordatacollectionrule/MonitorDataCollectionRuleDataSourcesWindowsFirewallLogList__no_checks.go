@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesWindowsFirewallLogList) v
 	return nil
 }
 
-func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesWindowsFirewallLogList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesWindowsFirewallLogList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

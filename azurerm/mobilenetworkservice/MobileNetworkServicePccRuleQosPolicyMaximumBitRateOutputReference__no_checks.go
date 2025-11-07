@@ -43,11 +43,11 @@ func (m *jsiiProxy_MobileNetworkServicePccRuleQosPolicyMaximumBitRateOutputRefer
 	return nil
 }
 
-func (m *jsiiProxy_MobileNetworkServicePccRuleQosPolicyMaximumBitRateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MobileNetworkServicePccRuleQosPolicyMaximumBitRateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MobileNetworkServicePccRuleQosPolicyMaximumBitRateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MobileNetworkServicePccRuleQosPolicyMaximumBitRateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

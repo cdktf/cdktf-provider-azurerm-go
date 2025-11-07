@@ -15,7 +15,7 @@ func (c *jsiiProxy_CdnFrontdoorRuleActionsRequestHeaderActionList) validateGetPa
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorRuleActionsRequestHeaderActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnFrontdoorRuleActionsRequestHeaderActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

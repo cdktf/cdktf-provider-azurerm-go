@@ -39,7 +39,7 @@ type DataAzurermWindowsFunctionAppAuthSettingsV2LoginList interface {
 	Get(index *float64) DataAzurermWindowsFunctionAppAuthSettingsV2LoginOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (d *jsiiProxy_DataAzurermWindowsFunctionAppAuthSettingsV2LoginList) Get(ind
 	return returns
 }
 
-func (d *jsiiProxy_DataAzurermWindowsFunctionAppAuthSettingsV2LoginList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataAzurermWindowsFunctionAppAuthSettingsV2LoginList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (d *jsiiProxy_DataAzurermWindowsFunctionAppAuthSettingsV2LoginList) Resolve
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFactoryCredentialServicePrincipalServicePrincipalKeyOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryCredentialServicePrincipalServicePrincipalKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFactoryCredentialServicePrincipalServicePrincipalKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryCredentialServicePrincipalServicePrincipalKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryCredentialServicePrincipalServicePrincipalKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

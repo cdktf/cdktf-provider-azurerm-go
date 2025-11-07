@@ -43,7 +43,7 @@ func (b *jsiiProxy_BatchPoolMountOutputReference) validateGetStringMapAttributeP
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolMountOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BatchPoolMountOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (b *jsiiProxy_BatchPoolMountOutputReference) validatePutNfsMountParameters(
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolMountOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchPoolMountOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermCosmosdbAccountGeoLocationList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermCosmosdbAccountGeoLocationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermCosmosdbAccountGeoLocationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

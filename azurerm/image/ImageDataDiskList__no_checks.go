@@ -15,7 +15,7 @@ func (i *jsiiProxy_ImageDataDiskList) validateGetParameters(index *float64) erro
 	return nil
 }
 
-func (i *jsiiProxy_ImageDataDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImageDataDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

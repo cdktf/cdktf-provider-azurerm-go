@@ -43,11 +43,11 @@ func (m *jsiiProxy_ManagedRedisDefaultDatabaseModuleOutputReference) validateGet
 	return nil
 }
 
-func (m *jsiiProxy_ManagedRedisDefaultDatabaseModuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ManagedRedisDefaultDatabaseModuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ManagedRedisDefaultDatabaseModuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedRedisDefaultDatabaseModuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermApplicationGatewaySslProfileSslPolicyList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApplicationGatewaySslProfileSslPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermApplicationGatewaySslProfileSslPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

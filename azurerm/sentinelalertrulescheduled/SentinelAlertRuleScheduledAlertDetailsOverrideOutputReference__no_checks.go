@@ -43,7 +43,7 @@ func (s *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -105,7 +105,7 @@ type IothubEndpointOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetAuthenticationType()
 	ResetBatchFrequencyInSeconds()
 	ResetConnectionString()
@@ -122,7 +122,7 @@ type IothubEndpointOutputReference interface {
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -892,8 +892,8 @@ func (i *jsiiProxy_IothubEndpointOutputReference) InterpolationAsList() cdktf.IR
 	return returns
 }
 
-func (i *jsiiProxy_IothubEndpointOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IothubEndpointOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -901,7 +901,7 @@ func (i *jsiiProxy_IothubEndpointOutputReference) InterpolationForAttribute(prop
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1020,8 +1020,8 @@ func (i *jsiiProxy_IothubEndpointOutputReference) ResetType() {
 	)
 }
 
-func (i *jsiiProxy_IothubEndpointOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IothubEndpointOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1029,7 +1029,7 @@ func (i *jsiiProxy_IothubEndpointOutputReference) Resolve(_context cdktf.IResolv
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

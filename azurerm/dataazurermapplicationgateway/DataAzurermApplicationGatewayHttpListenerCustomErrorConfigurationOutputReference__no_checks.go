@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermApplicationGatewayHttpListenerCustomErrorConfigura
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApplicationGatewayHttpListenerCustomErrorConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermApplicationGatewayHttpListenerCustomErrorConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApplicationGatewayHttpListenerCustomErrorConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermApplicationGatewayHttpListenerCustomErrorConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

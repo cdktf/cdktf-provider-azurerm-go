@@ -43,11 +43,11 @@ func (l *jsiiProxy_LogicAppIntegrationAccountBatchConfigurationTimeoutsOutputRef
 	return nil
 }
 
-func (l *jsiiProxy_LogicAppIntegrationAccountBatchConfigurationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LogicAppIntegrationAccountBatchConfigurationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LogicAppIntegrationAccountBatchConfigurationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogicAppIntegrationAccountBatchConfigurationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

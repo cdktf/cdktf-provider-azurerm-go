@@ -15,7 +15,7 @@ func (v *jsiiProxy_VoiceServicesCommunicationsGatewayServiceLocationList) valida
 	return nil
 }
 
-func (v *jsiiProxy_VoiceServicesCommunicationsGatewayServiceLocationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VoiceServicesCommunicationsGatewayServiceLocationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

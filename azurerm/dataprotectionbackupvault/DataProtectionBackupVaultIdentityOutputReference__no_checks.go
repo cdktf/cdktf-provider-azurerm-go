@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataProtectionBackupVaultIdentityOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupVaultIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataProtectionBackupVaultIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupVaultIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataProtectionBackupVaultIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

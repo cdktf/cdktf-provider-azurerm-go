@@ -43,11 +43,11 @@ func (a *jsiiProxy_AutomanageConfigurationAzureSecurityBaselineOutputReference) 
 	return nil
 }
 
-func (a *jsiiProxy_AutomanageConfigurationAzureSecurityBaselineOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutomanageConfigurationAzureSecurityBaselineOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AutomanageConfigurationAzureSecurityBaselineOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutomanageConfigurationAzureSecurityBaselineOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

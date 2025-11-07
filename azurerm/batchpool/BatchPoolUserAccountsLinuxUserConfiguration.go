@@ -5,11 +5,11 @@ package batchpool
 
 
 type BatchPoolUserAccountsLinuxUserConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/batch_pool#gid BatchPool#gid}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/batch_pool#gid BatchPool#gid}.
 	Gid *float64 `field:"optional" json:"gid" yaml:"gid"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/batch_pool#ssh_private_key BatchPool#ssh_private_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/batch_pool#ssh_private_key BatchPool#ssh_private_key}.
 	SshPrivateKey *string `field:"optional" json:"sshPrivateKey" yaml:"sshPrivateKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/batch_pool#uid BatchPool#uid}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/batch_pool#uid BatchPool#uid}.
 	Uid *float64 `field:"optional" json:"uid" yaml:"uid"`
 }
 

@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitorAutoscaleSettingNotificationWebhookList) validateGetPa
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAutoscaleSettingNotificationWebhookList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorAutoscaleSettingNotificationWebhookList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

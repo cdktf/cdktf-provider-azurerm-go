@@ -43,7 +43,7 @@ func (h *jsiiProxy_HpcCacheDefaultAccessPolicyOutputReference) validateGetString
 	return nil
 }
 
-func (h *jsiiProxy_HpcCacheDefaultAccessPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HpcCacheDefaultAccessPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (h *jsiiProxy_HpcCacheDefaultAccessPolicyOutputReference) validatePutAccess
 	return nil
 }
 
-func (h *jsiiProxy_HpcCacheDefaultAccessPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HpcCacheDefaultAccessPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

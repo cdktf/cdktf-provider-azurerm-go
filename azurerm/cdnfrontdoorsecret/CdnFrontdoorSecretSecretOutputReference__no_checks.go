@@ -43,7 +43,7 @@ func (c *jsiiProxy_CdnFrontdoorSecretSecretOutputReference) validateGetStringMap
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorSecretSecretOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CdnFrontdoorSecretSecretOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CdnFrontdoorSecretSecretOutputReference) validatePutCustomerC
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorSecretSecretOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnFrontdoorSecretSecretOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

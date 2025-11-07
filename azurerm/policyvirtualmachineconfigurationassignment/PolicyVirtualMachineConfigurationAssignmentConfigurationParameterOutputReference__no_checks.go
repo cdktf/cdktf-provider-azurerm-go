@@ -43,11 +43,11 @@ func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignmentConfigurationParam
 	return nil
 }
 
-func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignmentConfigurationParameterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignmentConfigurationParameterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignmentConfigurationParameterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignmentConfigurationParameterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (e *jsiiProxy_ExpressRouteCircuitPeeringMicrosoftPeeringConfigOutputReferen
 	return nil
 }
 
-func (e *jsiiProxy_ExpressRouteCircuitPeeringMicrosoftPeeringConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ExpressRouteCircuitPeeringMicrosoftPeeringConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ExpressRouteCircuitPeeringMicrosoftPeeringConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ExpressRouteCircuitPeeringMicrosoftPeeringConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

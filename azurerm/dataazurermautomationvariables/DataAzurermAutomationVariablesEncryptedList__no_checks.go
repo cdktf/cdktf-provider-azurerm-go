@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermAutomationVariablesEncryptedList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermAutomationVariablesEncryptedList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermAutomationVariablesEncryptedList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

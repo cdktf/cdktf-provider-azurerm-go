@@ -15,7 +15,7 @@ func (t *jsiiProxy_TrafficManagerProfileMonitorConfigCustomHeaderList) validateG
 	return nil
 }
 
-func (t *jsiiProxy_TrafficManagerProfileMonitorConfigCustomHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TrafficManagerProfileMonitorConfigCustomHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

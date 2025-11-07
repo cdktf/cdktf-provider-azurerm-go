@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageAccountQueuePropertiesMinuteMetricsOutputReference) va
 	return nil
 }
 
-func (s *jsiiProxy_StorageAccountQueuePropertiesMinuteMetricsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageAccountQueuePropertiesMinuteMetricsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageAccountQueuePropertiesMinuteMetricsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageAccountQueuePropertiesMinuteMetricsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

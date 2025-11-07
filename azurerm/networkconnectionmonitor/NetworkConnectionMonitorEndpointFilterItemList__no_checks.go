@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkConnectionMonitorEndpointFilterItemList) validateGetPa
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectionMonitorEndpointFilterItemList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkConnectionMonitorEndpointFilterItemList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_SharedImageVersionTargetRegionOutputReference) validateGetStr
 	return nil
 }
 
-func (s *jsiiProxy_SharedImageVersionTargetRegionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SharedImageVersionTargetRegionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SharedImageVersionTargetRegionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SharedImageVersionTargetRegionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

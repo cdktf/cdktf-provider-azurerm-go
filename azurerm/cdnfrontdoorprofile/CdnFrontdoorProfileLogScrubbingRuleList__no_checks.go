@@ -15,7 +15,7 @@ func (c *jsiiProxy_CdnFrontdoorProfileLogScrubbingRuleList) validateGetParameter
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorProfileLogScrubbingRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnFrontdoorProfileLogScrubbingRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

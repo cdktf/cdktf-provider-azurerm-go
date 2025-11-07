@@ -43,11 +43,11 @@ func (l *jsiiProxy_LinuxFunctionAppSlotStorageAccountOutputReference) validateGe
 	return nil
 }
 
-func (l *jsiiProxy_LinuxFunctionAppSlotStorageAccountOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxFunctionAppSlotStorageAccountOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LinuxFunctionAppSlotStorageAccountOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxFunctionAppSlotStorageAccountOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -86,7 +86,7 @@ type LogicAppStandardSiteConfigScmIpRestrictionOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutHeaders(value interface{})
 	ResetAction()
 	ResetDescription()
@@ -98,7 +98,7 @@ type LogicAppStandardSiteConfigScmIpRestrictionOutputReference interface {
 	ResetVirtualNetworkSubnetId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -671,8 +671,8 @@ func (l *jsiiProxy_LogicAppStandardSiteConfigScmIpRestrictionOutputReference) In
 	return returns
 }
 
-func (l *jsiiProxy_LogicAppStandardSiteConfigScmIpRestrictionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LogicAppStandardSiteConfigScmIpRestrictionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -680,7 +680,7 @@ func (l *jsiiProxy_LogicAppStandardSiteConfigScmIpRestrictionOutputReference) In
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -762,8 +762,8 @@ func (l *jsiiProxy_LogicAppStandardSiteConfigScmIpRestrictionOutputReference) Re
 	)
 }
 
-func (l *jsiiProxy_LogicAppStandardSiteConfigScmIpRestrictionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LogicAppStandardSiteConfigScmIpRestrictionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -771,7 +771,7 @@ func (l *jsiiProxy_LogicAppStandardSiteConfigScmIpRestrictionOutputReference) Re
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

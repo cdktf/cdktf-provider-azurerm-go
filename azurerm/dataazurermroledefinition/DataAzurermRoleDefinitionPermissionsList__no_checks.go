@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermRoleDefinitionPermissionsList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermRoleDefinitionPermissionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermRoleDefinitionPermissionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

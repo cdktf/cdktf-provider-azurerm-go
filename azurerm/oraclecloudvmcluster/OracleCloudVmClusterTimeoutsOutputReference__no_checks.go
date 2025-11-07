@@ -43,11 +43,11 @@ func (o *jsiiProxy_OracleCloudVmClusterTimeoutsOutputReference) validateGetStrin
 	return nil
 }
 
-func (o *jsiiProxy_OracleCloudVmClusterTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OracleCloudVmClusterTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OracleCloudVmClusterTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OracleCloudVmClusterTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

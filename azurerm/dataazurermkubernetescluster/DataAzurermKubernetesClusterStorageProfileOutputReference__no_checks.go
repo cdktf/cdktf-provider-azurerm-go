@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermKubernetesClusterStorageProfileOutputReference) va
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKubernetesClusterStorageProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermKubernetesClusterStorageProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKubernetesClusterStorageProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermKubernetesClusterStorageProfileOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

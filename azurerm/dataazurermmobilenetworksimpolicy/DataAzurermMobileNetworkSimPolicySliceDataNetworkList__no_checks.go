@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermMobileNetworkSimPolicySliceDataNetworkList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMobileNetworkSimPolicySliceDataNetworkList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermMobileNetworkSimPolicySliceDataNetworkList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

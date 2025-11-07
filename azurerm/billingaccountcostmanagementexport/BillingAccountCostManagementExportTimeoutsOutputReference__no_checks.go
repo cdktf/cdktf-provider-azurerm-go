@@ -43,11 +43,11 @@ func (b *jsiiProxy_BillingAccountCostManagementExportTimeoutsOutputReference) va
 	return nil
 }
 
-func (b *jsiiProxy_BillingAccountCostManagementExportTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BillingAccountCostManagementExportTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BillingAccountCostManagementExportTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BillingAccountCostManagementExportTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

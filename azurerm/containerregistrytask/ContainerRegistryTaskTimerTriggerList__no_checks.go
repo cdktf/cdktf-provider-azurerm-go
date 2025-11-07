@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerRegistryTaskTimerTriggerList) validateGetParameters(
 	return nil
 }
 
-func (c *jsiiProxy_ContainerRegistryTaskTimerTriggerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerRegistryTaskTimerTriggerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

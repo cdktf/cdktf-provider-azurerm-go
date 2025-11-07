@@ -43,11 +43,11 @@ func (b *jsiiProxy_BatchAccountEncryptionOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (b *jsiiProxy_BatchAccountEncryptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BatchAccountEncryptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BatchAccountEncryptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchAccountEncryptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (b *jsiiProxy_BatchPoolMountCifsMountList) validateGetParameters(index *flo
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolMountCifsMountList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchPoolMountCifsMountList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

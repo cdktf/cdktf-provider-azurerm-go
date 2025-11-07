@@ -43,11 +43,11 @@ func (m *jsiiProxy_MobileNetworkServicePccRuleServiceDataFlowTemplateOutputRefer
 	return nil
 }
 
-func (m *jsiiProxy_MobileNetworkServicePccRuleServiceDataFlowTemplateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MobileNetworkServicePccRuleServiceDataFlowTemplateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MobileNetworkServicePccRuleServiceDataFlowTemplateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MobileNetworkServicePccRuleServiceDataFlowTemplateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

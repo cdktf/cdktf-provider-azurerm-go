@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApplicationGatewayAutoscaleConfigurationOutputReference) vali
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayAutoscaleConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApplicationGatewayAutoscaleConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayAutoscaleConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationGatewayAutoscaleConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

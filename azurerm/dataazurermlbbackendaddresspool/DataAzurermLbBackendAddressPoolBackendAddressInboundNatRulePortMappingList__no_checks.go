@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermLbBackendAddressPoolBackendAddressInboundNatRulePo
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLbBackendAddressPoolBackendAddressInboundNatRulePortMappingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermLbBackendAddressPoolBackendAddressInboundNatRulePortMappingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

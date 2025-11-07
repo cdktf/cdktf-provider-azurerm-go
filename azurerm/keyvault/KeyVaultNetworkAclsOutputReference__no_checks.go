@@ -43,11 +43,11 @@ func (k *jsiiProxy_KeyVaultNetworkAclsOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (k *jsiiProxy_KeyVaultNetworkAclsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KeyVaultNetworkAclsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KeyVaultNetworkAclsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyVaultNetworkAclsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

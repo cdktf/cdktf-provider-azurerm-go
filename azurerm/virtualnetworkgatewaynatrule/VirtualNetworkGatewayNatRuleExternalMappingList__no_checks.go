@@ -15,7 +15,7 @@ func (v *jsiiProxy_VirtualNetworkGatewayNatRuleExternalMappingList) validateGetP
 	return nil
 }
 
-func (v *jsiiProxy_VirtualNetworkGatewayNatRuleExternalMappingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualNetworkGatewayNatRuleExternalMappingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

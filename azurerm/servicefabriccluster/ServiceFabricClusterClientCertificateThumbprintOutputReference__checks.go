@@ -85,17 +85,17 @@ func (s *jsiiProxy_ServiceFabricClusterClientCertificateThumbprintOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricClusterClientCertificateThumbprintOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (s *jsiiProxy_ServiceFabricClusterClientCertificateThumbprintOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricClusterClientCertificateThumbprintOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_ServiceFabricClusterClientCertificateThumbprintOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

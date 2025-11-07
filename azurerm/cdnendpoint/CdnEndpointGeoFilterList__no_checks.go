@@ -15,7 +15,7 @@ func (c *jsiiProxy_CdnEndpointGeoFilterList) validateGetParameters(index *float6
 	return nil
 }
 
-func (c *jsiiProxy_CdnEndpointGeoFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnEndpointGeoFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

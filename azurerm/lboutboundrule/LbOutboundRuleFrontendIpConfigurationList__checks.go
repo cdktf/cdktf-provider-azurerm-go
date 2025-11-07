@@ -29,9 +29,9 @@ func (l *jsiiProxy_LbOutboundRuleFrontendIpConfigurationList) validateGetParamet
 	return nil
 }
 
-func (l *jsiiProxy_LbOutboundRuleFrontendIpConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (l *jsiiProxy_LbOutboundRuleFrontendIpConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

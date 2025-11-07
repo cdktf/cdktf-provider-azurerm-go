@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermStorageManagementPolicyRuleFiltersList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermStorageManagementPolicyRuleFiltersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermStorageManagementPolicyRuleFiltersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

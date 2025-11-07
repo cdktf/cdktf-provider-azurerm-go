@@ -43,7 +43,7 @@ func (s *jsiiProxy_StorageAccountSharePropertiesOutputReference) validateGetStri
 	return nil
 }
 
-func (s *jsiiProxy_StorageAccountSharePropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageAccountSharePropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (s *jsiiProxy_StorageAccountSharePropertiesOutputReference) validatePutSmbP
 	return nil
 }
 
-func (s *jsiiProxy_StorageAccountSharePropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageAccountSharePropertiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataFactoryTriggerCustomEventPipelineList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryTriggerCustomEventPipelineList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryTriggerCustomEventPipelineList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

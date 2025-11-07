@@ -43,11 +43,11 @@ func (s *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalyticsTimeoutsOutp
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalyticsTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalyticsTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalyticsTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalyticsTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

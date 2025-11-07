@@ -15,7 +15,7 @@ func (a *jsiiProxy_AiServicesStorageList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (a *jsiiProxy_AiServicesStorageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AiServicesStorageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

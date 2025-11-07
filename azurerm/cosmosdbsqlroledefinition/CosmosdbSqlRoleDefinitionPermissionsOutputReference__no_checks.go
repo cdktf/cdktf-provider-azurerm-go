@@ -43,11 +43,11 @@ func (c *jsiiProxy_CosmosdbSqlRoleDefinitionPermissionsOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbSqlRoleDefinitionPermissionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CosmosdbSqlRoleDefinitionPermissionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbSqlRoleDefinitionPermissionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbSqlRoleDefinitionPermissionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

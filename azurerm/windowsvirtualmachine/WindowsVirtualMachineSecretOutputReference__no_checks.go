@@ -43,7 +43,7 @@ func (w *jsiiProxy_WindowsVirtualMachineSecretOutputReference) validateGetString
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineSecretOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsVirtualMachineSecretOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (w *jsiiProxy_WindowsVirtualMachineSecretOutputReference) validatePutCertif
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineSecretOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsVirtualMachineSecretOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (v *jsiiProxy_VpnServerConfigurationPolicyGroupPolicyList) validateGetParam
 	return nil
 }
 
-func (v *jsiiProxy_VpnServerConfigurationPolicyGroupPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpnServerConfigurationPolicyGroupPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

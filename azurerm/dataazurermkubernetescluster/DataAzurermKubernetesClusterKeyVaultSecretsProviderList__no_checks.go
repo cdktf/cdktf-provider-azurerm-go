@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermKubernetesClusterKeyVaultSecretsProviderList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKubernetesClusterKeyVaultSecretsProviderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermKubernetesClusterKeyVaultSecretsProviderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

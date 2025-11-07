@@ -43,11 +43,11 @@ func (b *jsiiProxy_BlueprintAssignmentIdentityOutputReference) validateGetString
 	return nil
 }
 
-func (b *jsiiProxy_BlueprintAssignmentIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BlueprintAssignmentIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BlueprintAssignmentIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BlueprintAssignmentIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

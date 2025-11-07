@@ -15,7 +15,7 @@ func (a *jsiiProxy_ArcKubernetesFluxConfigurationKustomizationsList) validateGet
 	return nil
 }
 
-func (a *jsiiProxy_ArcKubernetesFluxConfigurationKustomizationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ArcKubernetesFluxConfigurationKustomizationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

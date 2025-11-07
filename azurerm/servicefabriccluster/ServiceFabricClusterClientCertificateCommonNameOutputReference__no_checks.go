@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServiceFabricClusterClientCertificateCommonNameOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricClusterClientCertificateCommonNameOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceFabricClusterClientCertificateCommonNameOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricClusterClientCertificateCommonNameOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceFabricClusterClientCertificateCommonNameOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

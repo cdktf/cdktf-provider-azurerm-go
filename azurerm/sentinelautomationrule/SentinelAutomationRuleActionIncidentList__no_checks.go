@@ -15,7 +15,7 @@ func (s *jsiiProxy_SentinelAutomationRuleActionIncidentList) validateGetParamete
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAutomationRuleActionIncidentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelAutomationRuleActionIncidentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

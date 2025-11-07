@@ -43,11 +43,11 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetExtensionProtectedSettingsF
 	return nil
 }
 
-func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVaultOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVaultOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVaultOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVaultOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

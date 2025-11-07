@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleUrlList
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleUrlList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleUrlList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

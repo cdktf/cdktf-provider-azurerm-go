@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataProtectionBackupInstanceKubernetesClusterTimeoutsOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupInstanceKubernetesClusterTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataProtectionBackupInstanceKubernetesClusterTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupInstanceKubernetesClusterTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataProtectionBackupInstanceKubernetesClusterTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

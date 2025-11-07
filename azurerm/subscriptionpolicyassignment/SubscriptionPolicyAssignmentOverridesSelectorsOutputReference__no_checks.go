@@ -43,11 +43,11 @@ func (s *jsiiProxy_SubscriptionPolicyAssignmentOverridesSelectorsOutputReference
 	return nil
 }
 
-func (s *jsiiProxy_SubscriptionPolicyAssignmentOverridesSelectorsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SubscriptionPolicyAssignmentOverridesSelectorsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SubscriptionPolicyAssignmentOverridesSelectorsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SubscriptionPolicyAssignmentOverridesSelectorsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_SentinelThreatIntelligenceIndicatorExternalReferenceList) val
 	return nil
 }
 
-func (s *jsiiProxy_SentinelThreatIntelligenceIndicatorExternalReferenceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelThreatIntelligenceIndicatorExternalReferenceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

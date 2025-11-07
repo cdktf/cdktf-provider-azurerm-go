@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermStorageShareAclList) validateGetParameters(index *
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermStorageShareAclList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermStorageShareAclList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

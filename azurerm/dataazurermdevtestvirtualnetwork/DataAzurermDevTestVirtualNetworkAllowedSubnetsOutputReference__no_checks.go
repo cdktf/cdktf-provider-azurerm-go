@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermDevTestVirtualNetworkAllowedSubnetsOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDevTestVirtualNetworkAllowedSubnetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermDevTestVirtualNetworkAllowedSubnetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDevTestVirtualNetworkAllowedSubnetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermDevTestVirtualNetworkAllowedSubnetsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

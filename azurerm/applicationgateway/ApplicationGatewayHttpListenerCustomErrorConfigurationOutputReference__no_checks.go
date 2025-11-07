@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApplicationGatewayHttpListenerCustomErrorConfigurationOutputR
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayHttpListenerCustomErrorConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApplicationGatewayHttpListenerCustomErrorConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayHttpListenerCustomErrorConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationGatewayHttpListenerCustomErrorConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (v *jsiiProxy_VoiceServicesCommunicationsGatewayTimeoutsOutputReference) va
 	return nil
 }
 
-func (v *jsiiProxy_VoiceServicesCommunicationsGatewayTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VoiceServicesCommunicationsGatewayTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VoiceServicesCommunicationsGatewayTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VoiceServicesCommunicationsGatewayTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -29,9 +29,9 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetExtensionList) validateGetParamete
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineScaleSetExtensionList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetExtensionList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

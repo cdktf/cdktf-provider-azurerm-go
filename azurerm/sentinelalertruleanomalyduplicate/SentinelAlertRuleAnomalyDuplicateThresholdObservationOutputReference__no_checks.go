@@ -43,11 +43,11 @@ func (s *jsiiProxy_SentinelAlertRuleAnomalyDuplicateThresholdObservationOutputRe
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleAnomalyDuplicateThresholdObservationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SentinelAlertRuleAnomalyDuplicateThresholdObservationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleAnomalyDuplicateThresholdObservationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelAlertRuleAnomalyDuplicateThresholdObservationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

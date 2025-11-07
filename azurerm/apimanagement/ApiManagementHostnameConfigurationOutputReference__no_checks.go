@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApiManagementHostnameConfigurationOutputReference) validateGe
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementHostnameConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiManagementHostnameConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (a *jsiiProxy_ApiManagementHostnameConfigurationOutputReference) validatePu
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementHostnameConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementHostnameConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

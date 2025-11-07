@@ -15,7 +15,7 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSetNetworkInterfaceIpConfigurationL
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineScaleSetNetworkInterfaceIpConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsVirtualMachineScaleSetNetworkInterfaceIpConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

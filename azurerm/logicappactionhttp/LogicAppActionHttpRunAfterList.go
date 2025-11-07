@@ -41,7 +41,7 @@ type LogicAppActionHttpRunAfterList interface {
 	Get(index *float64) LogicAppActionHttpRunAfterOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (l *jsiiProxy_LogicAppActionHttpRunAfterList) Get(index *float64) LogicAppA
 	return returns
 }
 
-func (l *jsiiProxy_LogicAppActionHttpRunAfterList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LogicAppActionHttpRunAfterList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (l *jsiiProxy_LogicAppActionHttpRunAfterList) Resolve(_context cdktf.IResol
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

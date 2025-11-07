@@ -78,12 +78,12 @@ type PrivateLinkServiceNatIpConfigurationOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetPrivateIpAddress()
 	ResetPrivateIpAddressVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -574,8 +574,8 @@ func (p *jsiiProxy_PrivateLinkServiceNatIpConfigurationOutputReference) Interpol
 	return returns
 }
 
-func (p *jsiiProxy_PrivateLinkServiceNatIpConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PrivateLinkServiceNatIpConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -583,7 +583,7 @@ func (p *jsiiProxy_PrivateLinkServiceNatIpConfigurationOutputReference) Interpol
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -606,8 +606,8 @@ func (p *jsiiProxy_PrivateLinkServiceNatIpConfigurationOutputReference) ResetPri
 	)
 }
 
-func (p *jsiiProxy_PrivateLinkServiceNatIpConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PrivateLinkServiceNatIpConfigurationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -615,7 +615,7 @@ func (p *jsiiProxy_PrivateLinkServiceNatIpConfigurationOutputReference) Resolve(
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

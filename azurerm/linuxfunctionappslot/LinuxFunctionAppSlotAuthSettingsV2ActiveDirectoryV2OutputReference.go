@@ -99,7 +99,7 @@ type LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference interfac
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetAllowedApplications()
 	ResetAllowedAudiences()
 	ResetAllowedGroups()
@@ -112,7 +112,7 @@ type LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference interfac
 	ResetWwwAuthenticationDisabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -820,8 +820,8 @@ func (l *jsiiProxy_LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputRefe
 	return returns
 }
 
-func (l *jsiiProxy_LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -829,7 +829,7 @@ func (l *jsiiProxy_LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputRefe
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -916,8 +916,8 @@ func (l *jsiiProxy_LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputRefe
 	)
 }
 
-func (l *jsiiProxy_LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -925,7 +925,7 @@ func (l *jsiiProxy_LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputRefe
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

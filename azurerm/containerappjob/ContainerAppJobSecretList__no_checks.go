@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerAppJobSecretList) validateGetParameters(index *float
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppJobSecretList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppJobSecretList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_SynapseWorkspaceAzureDevopsRepoOutputReference) validateGetSt
 	return nil
 }
 
-func (s *jsiiProxy_SynapseWorkspaceAzureDevopsRepoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SynapseWorkspaceAzureDevopsRepoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SynapseWorkspaceAzureDevopsRepoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SynapseWorkspaceAzureDevopsRepoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

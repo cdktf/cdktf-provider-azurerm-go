@@ -43,7 +43,7 @@ func (b *jsiiProxy_BatchPoolUserAccountsOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolUserAccountsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BatchPoolUserAccountsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (b *jsiiProxy_BatchPoolUserAccountsOutputReference) validatePutWindowsUserC
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolUserAccountsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchPoolUserAccountsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (m *jsiiProxy_ManagedDiskSasTokenTimeoutsOutputReference) validateGetString
 	return nil
 }
 
-func (m *jsiiProxy_ManagedDiskSasTokenTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ManagedDiskSasTokenTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ManagedDiskSasTokenTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedDiskSasTokenTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComma
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

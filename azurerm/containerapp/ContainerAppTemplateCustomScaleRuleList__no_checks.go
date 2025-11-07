@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerAppTemplateCustomScaleRuleList) validateGetParameter
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppTemplateCustomScaleRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppTemplateCustomScaleRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

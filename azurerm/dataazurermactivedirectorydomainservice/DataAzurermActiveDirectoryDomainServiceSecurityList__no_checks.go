@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermActiveDirectoryDomainServiceSecurityList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermActiveDirectoryDomainServiceSecurityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermActiveDirectoryDomainServiceSecurityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

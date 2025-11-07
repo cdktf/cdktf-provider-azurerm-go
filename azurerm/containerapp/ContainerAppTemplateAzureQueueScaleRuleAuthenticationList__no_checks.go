@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerAppTemplateAzureQueueScaleRuleAuthenticationList) va
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppTemplateAzureQueueScaleRuleAuthenticationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppTemplateAzureQueueScaleRuleAuthenticationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermExpressRouteCircuitPeeringsList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermExpressRouteCircuitPeeringsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermExpressRouteCircuitPeeringsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

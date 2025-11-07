@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApiManagementApiImportOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementApiImportOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiManagementApiImportOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_ApiManagementApiImportOutputReference) validatePutWsdlSelecto
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementApiImportOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementApiImportOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

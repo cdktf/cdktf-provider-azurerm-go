@@ -43,11 +43,11 @@ func (p *jsiiProxy_PimEligibleRoleAssignmentScheduleExpirationOutputReference) v
 	return nil
 }
 
-func (p *jsiiProxy_PimEligibleRoleAssignmentScheduleExpirationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PimEligibleRoleAssignmentScheduleExpirationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PimEligibleRoleAssignmentScheduleExpirationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PimEligibleRoleAssignmentScheduleExpirationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

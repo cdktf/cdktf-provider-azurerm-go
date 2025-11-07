@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualMachinePacketCaptureStorageLocationOutputReference) va
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachinePacketCaptureStorageLocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualMachinePacketCaptureStorageLocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachinePacketCaptureStorageLocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachinePacketCaptureStorageLocationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

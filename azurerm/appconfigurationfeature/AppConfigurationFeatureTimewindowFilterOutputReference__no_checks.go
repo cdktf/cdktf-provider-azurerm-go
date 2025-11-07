@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppConfigurationFeatureTimewindowFilterOutputReference) valid
 	return nil
 }
 
-func (a *jsiiProxy_AppConfigurationFeatureTimewindowFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppConfigurationFeatureTimewindowFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppConfigurationFeatureTimewindowFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppConfigurationFeatureTimewindowFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

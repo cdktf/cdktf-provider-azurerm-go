@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppServiceSlotCustomHostnameBindingTimeoutsOutputReference) v
 	return nil
 }
 
-func (a *jsiiProxy_AppServiceSlotCustomHostnameBindingTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppServiceSlotCustomHostnameBindingTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppServiceSlotCustomHostnameBindingTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppServiceSlotCustomHostnameBindingTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

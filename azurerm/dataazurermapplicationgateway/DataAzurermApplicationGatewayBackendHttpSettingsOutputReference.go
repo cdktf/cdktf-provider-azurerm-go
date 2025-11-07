@@ -32,6 +32,7 @@ type DataAzurermApplicationGatewayBackendHttpSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DedicatedBackendConnectionEnabled() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	HostName() *string
@@ -78,10 +79,10 @@ type DataAzurermApplicationGatewayBackendHttpSettingsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -159,6 +160,16 @@ func (j *jsiiProxy_DataAzurermApplicationGatewayBackendHttpSettingsOutputReferen
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGatewayBackendHttpSettingsOutputReference) DedicatedBackendConnectionEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"dedicatedBackendConnectionEnabled",
 		&returns,
 	)
 	return returns
@@ -567,8 +578,8 @@ func (d *jsiiProxy_DataAzurermApplicationGatewayBackendHttpSettingsOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DataAzurermApplicationGatewayBackendHttpSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataAzurermApplicationGatewayBackendHttpSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -576,15 +587,15 @@ func (d *jsiiProxy_DataAzurermApplicationGatewayBackendHttpSettingsOutputReferen
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataAzurermApplicationGatewayBackendHttpSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataAzurermApplicationGatewayBackendHttpSettingsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -592,7 +603,7 @@ func (d *jsiiProxy_DataAzurermApplicationGatewayBackendHttpSettingsOutputReferen
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

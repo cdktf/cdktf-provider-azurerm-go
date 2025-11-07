@@ -15,7 +15,7 @@ func (r *jsiiProxy_ResourcePolicyAssignmentNonComplianceMessageList) validateGet
 	return nil
 }
 
-func (r *jsiiProxy_ResourcePolicyAssignmentNonComplianceMessageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResourcePolicyAssignmentNonComplianceMessageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

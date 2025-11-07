@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermAppServiceEnvironmentV3InboundNetworkDependenciesO
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermAppServiceEnvironmentV3InboundNetworkDependenciesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermAppServiceEnvironmentV3InboundNetworkDependenciesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermAppServiceEnvironmentV3InboundNetworkDependenciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermAppServiceEnvironmentV3InboundNetworkDependenciesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServiceFabricManagedClusterAuthenticationCertificateList) val
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricManagedClusterAuthenticationCertificateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceFabricManagedClusterAuthenticationCertificateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

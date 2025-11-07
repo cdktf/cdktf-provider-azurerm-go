@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApiManagementApiDiagnosticFrontendRequestDataMaskingOutputRef
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementApiDiagnosticFrontendRequestDataMaskingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiManagementApiDiagnosticFrontendRequestDataMaskingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (a *jsiiProxy_ApiManagementApiDiagnosticFrontendRequestDataMaskingOutputRef
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementApiDiagnosticFrontendRequestDataMaskingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementApiDiagnosticFrontendRequestDataMaskingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

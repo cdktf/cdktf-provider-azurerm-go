@@ -150,7 +150,7 @@ type KubernetesClusterNodePoolLinuxOsConfigSysctlConfigOutputReference interface
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetFsAioMaxNr()
 	ResetFsFileMax()
 	ResetFsInotifyMaxUserWatches()
@@ -182,7 +182,7 @@ type KubernetesClusterNodePoolLinuxOsConfigSysctlConfigOutputReference interface
 	ResetVmVfsCachePressure()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -1417,8 +1417,8 @@ func (k *jsiiProxy_KubernetesClusterNodePoolLinuxOsConfigSysctlConfigOutputRefer
 	return returns
 }
 
-func (k *jsiiProxy_KubernetesClusterNodePoolLinuxOsConfigSysctlConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := k.validateInterpolationForAttributeParameters(property); err != nil {
+func (k *jsiiProxy_KubernetesClusterNodePoolLinuxOsConfigSysctlConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -1426,7 +1426,7 @@ func (k *jsiiProxy_KubernetesClusterNodePoolLinuxOsConfigSysctlConfigOutputRefer
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1665,8 +1665,8 @@ func (k *jsiiProxy_KubernetesClusterNodePoolLinuxOsConfigSysctlConfigOutputRefer
 	)
 }
 
-func (k *jsiiProxy_KubernetesClusterNodePoolLinuxOsConfigSysctlConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := k.validateResolveParameters(_context); err != nil {
+func (k *jsiiProxy_KubernetesClusterNodePoolLinuxOsConfigSysctlConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := k.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1674,7 +1674,7 @@ func (k *jsiiProxy_KubernetesClusterNodePoolLinuxOsConfigSysctlConfigOutputRefer
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

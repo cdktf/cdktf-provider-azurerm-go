@@ -43,11 +43,11 @@ func (m *jsiiProxy_ManagementGroupPolicyAssignmentOverridesSelectorsOutputRefere
 	return nil
 }
 
-func (m *jsiiProxy_ManagementGroupPolicyAssignmentOverridesSelectorsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ManagementGroupPolicyAssignmentOverridesSelectorsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ManagementGroupPolicyAssignmentOverridesSelectorsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagementGroupPolicyAssignmentOverridesSelectorsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

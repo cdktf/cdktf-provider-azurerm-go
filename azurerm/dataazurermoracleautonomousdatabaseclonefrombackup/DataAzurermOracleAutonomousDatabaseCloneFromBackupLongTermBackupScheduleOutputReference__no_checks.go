@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermOracleAutonomousDatabaseCloneFromBackupLongTermBac
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermOracleAutonomousDatabaseCloneFromBackupLongTermBackupScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermOracleAutonomousDatabaseCloneFromBackupLongTermBackupScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermOracleAutonomousDatabaseCloneFromBackupLongTermBackupScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermOracleAutonomousDatabaseCloneFromBackupLongTermBackupScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

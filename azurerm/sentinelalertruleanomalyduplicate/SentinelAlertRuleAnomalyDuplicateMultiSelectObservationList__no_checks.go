@@ -15,7 +15,7 @@ func (s *jsiiProxy_SentinelAlertRuleAnomalyDuplicateMultiSelectObservationList) 
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleAnomalyDuplicateMultiSelectObservationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelAlertRuleAnomalyDuplicateMultiSelectObservationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

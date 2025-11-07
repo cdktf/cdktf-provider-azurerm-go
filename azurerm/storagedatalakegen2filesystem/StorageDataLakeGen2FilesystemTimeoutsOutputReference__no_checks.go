@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageDataLakeGen2FilesystemTimeoutsOutputReference) validat
 	return nil
 }
 
-func (s *jsiiProxy_StorageDataLakeGen2FilesystemTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageDataLakeGen2FilesystemTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageDataLakeGen2FilesystemTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageDataLakeGen2FilesystemTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

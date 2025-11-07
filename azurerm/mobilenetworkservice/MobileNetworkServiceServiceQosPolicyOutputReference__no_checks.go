@@ -43,7 +43,7 @@ func (m *jsiiProxy_MobileNetworkServiceServiceQosPolicyOutputReference) validate
 	return nil
 }
 
-func (m *jsiiProxy_MobileNetworkServiceServiceQosPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MobileNetworkServiceServiceQosPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MobileNetworkServiceServiceQosPolicyOutputReference) validate
 	return nil
 }
 
-func (m *jsiiProxy_MobileNetworkServiceServiceQosPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MobileNetworkServiceServiceQosPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

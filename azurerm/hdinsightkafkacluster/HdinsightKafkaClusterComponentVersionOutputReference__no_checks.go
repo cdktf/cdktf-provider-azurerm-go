@@ -43,11 +43,11 @@ func (h *jsiiProxy_HdinsightKafkaClusterComponentVersionOutputReference) validat
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightKafkaClusterComponentVersionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HdinsightKafkaClusterComponentVersionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightKafkaClusterComponentVersionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightKafkaClusterComponentVersionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

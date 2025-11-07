@@ -15,7 +15,7 @@ func (l *jsiiProxy_LinuxWebAppSlotStorageAccountList) validateGetParameters(inde
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppSlotStorageAccountList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxWebAppSlotStorageAccountList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_StorageAccountBlobPropertiesCorsRuleList) validateGetParamete
 	return nil
 }
 
-func (s *jsiiProxy_StorageAccountBlobPropertiesCorsRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageAccountBlobPropertiesCorsRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (l *jsiiProxy_LinuxWebAppSlotLogsHttpLogsOutputReference) validateGetString
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppSlotLogsHttpLogsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxWebAppSlotLogsHttpLogsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (l *jsiiProxy_LinuxWebAppSlotLogsHttpLogsOutputReference) validatePutFileSy
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppSlotLogsHttpLogsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxWebAppSlotLogsHttpLogsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

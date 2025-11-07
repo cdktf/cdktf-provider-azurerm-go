@@ -15,7 +15,7 @@ func (v *jsiiProxy_VirtualNetworkGatewayBgpSettingsPeeringAddressesList) validat
 	return nil
 }
 
-func (v *jsiiProxy_VirtualNetworkGatewayBgpSettingsPeeringAddressesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualNetworkGatewayBgpSettingsPeeringAddressesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

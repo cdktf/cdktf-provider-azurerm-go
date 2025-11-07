@@ -43,7 +43,7 @@ func (h *jsiiProxy_HdinsightInteractiveQueryClusterPrivateLinkConfigurationOutpu
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightInteractiveQueryClusterPrivateLinkConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HdinsightInteractiveQueryClusterPrivateLinkConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (h *jsiiProxy_HdinsightInteractiveQueryClusterPrivateLinkConfigurationOutpu
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightInteractiveQueryClusterPrivateLinkConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightInteractiveQueryClusterPrivateLinkConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

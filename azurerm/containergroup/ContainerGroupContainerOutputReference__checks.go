@@ -85,9 +85,9 @@ func (c *jsiiProxy_ContainerGroupContainerOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (c *jsiiProxy_ContainerGroupContainerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (c *jsiiProxy_ContainerGroupContainerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -208,9 +208,9 @@ func (c *jsiiProxy_ContainerGroupContainerOutputReference) validatePutVolumePara
 	return nil
 }
 
-func (c *jsiiProxy_ContainerGroupContainerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_ContainerGroupContainerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

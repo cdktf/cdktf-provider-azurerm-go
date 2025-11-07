@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermStorageEncryptionScopeTimeoutsOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermStorageEncryptionScopeTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermStorageEncryptionScopeTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermStorageEncryptionScopeTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermStorageEncryptionScopeTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

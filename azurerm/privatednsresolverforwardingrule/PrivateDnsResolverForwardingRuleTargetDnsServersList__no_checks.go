@@ -15,7 +15,7 @@ func (p *jsiiProxy_PrivateDnsResolverForwardingRuleTargetDnsServersList) validat
 	return nil
 }
 
-func (p *jsiiProxy_PrivateDnsResolverForwardingRuleTargetDnsServersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivateDnsResolverForwardingRuleTargetDnsServersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideDynamicProperty
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

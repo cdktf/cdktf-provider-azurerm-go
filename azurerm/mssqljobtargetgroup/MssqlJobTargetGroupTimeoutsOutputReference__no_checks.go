@@ -43,11 +43,11 @@ func (m *jsiiProxy_MssqlJobTargetGroupTimeoutsOutputReference) validateGetString
 	return nil
 }
 
-func (m *jsiiProxy_MssqlJobTargetGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlJobTargetGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MssqlJobTargetGroupTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlJobTargetGroupTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

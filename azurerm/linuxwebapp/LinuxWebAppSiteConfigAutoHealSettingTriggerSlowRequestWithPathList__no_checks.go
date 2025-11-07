@@ -15,7 +15,7 @@ func (l *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPat
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPathList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPathList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

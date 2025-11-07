@@ -43,11 +43,11 @@ func (l *jsiiProxy_LinuxVirtualMachineSecretCertificateOutputReference) validate
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineSecretCertificateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxVirtualMachineSecretCertificateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineSecretCertificateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxVirtualMachineSecretCertificateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

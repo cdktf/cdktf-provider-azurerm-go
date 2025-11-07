@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElasticCloudElasticsearchLogsFilteringTagList) validateGetPar
 	return nil
 }
 
-func (e *jsiiProxy_ElasticCloudElasticsearchLogsFilteringTagList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticCloudElasticsearchLogsFilteringTagList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

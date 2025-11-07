@@ -43,11 +43,11 @@ func (k *jsiiProxy_KeyVaultContactOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (k *jsiiProxy_KeyVaultContactOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KeyVaultContactOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KeyVaultContactOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyVaultContactOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

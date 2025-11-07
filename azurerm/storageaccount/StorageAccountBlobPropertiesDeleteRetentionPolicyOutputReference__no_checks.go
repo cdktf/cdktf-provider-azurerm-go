@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageAccountBlobPropertiesDeleteRetentionPolicyOutputRefere
 	return nil
 }
 
-func (s *jsiiProxy_StorageAccountBlobPropertiesDeleteRetentionPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageAccountBlobPropertiesDeleteRetentionPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageAccountBlobPropertiesDeleteRetentionPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageAccountBlobPropertiesDeleteRetentionPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

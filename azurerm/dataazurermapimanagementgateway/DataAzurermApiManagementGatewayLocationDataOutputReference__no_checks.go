@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermApiManagementGatewayLocationDataOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApiManagementGatewayLocationDataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermApiManagementGatewayLocationDataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApiManagementGatewayLocationDataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermApiManagementGatewayLocationDataOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

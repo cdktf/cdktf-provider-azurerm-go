@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermMonitorActionGroupAzureFunctionReceiverOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMonitorActionGroupAzureFunctionReceiverOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermMonitorActionGroupAzureFunctionReceiverOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMonitorActionGroupAzureFunctionReceiverOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermMonitorActionGroupAzureFunctionReceiverOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

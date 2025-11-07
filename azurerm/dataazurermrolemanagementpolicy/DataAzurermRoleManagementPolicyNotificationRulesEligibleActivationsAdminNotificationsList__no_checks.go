@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermRoleManagementPolicyNotificationRulesEligibleActiv
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

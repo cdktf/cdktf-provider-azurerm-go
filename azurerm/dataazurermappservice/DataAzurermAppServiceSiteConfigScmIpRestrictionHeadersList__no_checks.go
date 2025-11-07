@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermAppServiceSiteConfigScmIpRestrictionHeadersList) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermAppServiceSiteConfigScmIpRestrictionHeadersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermAppServiceSiteConfigScmIpRestrictionHeadersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

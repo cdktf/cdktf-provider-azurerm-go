@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermApplicationGatewayBackendHttpSettingsConnectionDra
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApplicationGatewayBackendHttpSettingsConnectionDrainingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermApplicationGatewayBackendHttpSettingsConnectionDrainingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

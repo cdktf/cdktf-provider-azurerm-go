@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermWindowsFunctionAppSiteConfigAppServiceLogsList) va
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermWindowsFunctionAppSiteConfigAppServiceLogsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermWindowsFunctionAppSiteConfigAppServiceLogsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

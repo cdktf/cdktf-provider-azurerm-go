@@ -15,7 +15,7 @@ func (n *jsiiProxy_NewRelicTagRuleLogTagFilterList) validateGetParameters(index 
 	return nil
 }
 
-func (n *jsiiProxy_NewRelicTagRuleLogTagFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NewRelicTagRuleLogTagFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

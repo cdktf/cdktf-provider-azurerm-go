@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerRegistryGeoreplicationsOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_ContainerRegistryGeoreplicationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerRegistryGeoreplicationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerRegistryGeoreplicationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerRegistryGeoreplicationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

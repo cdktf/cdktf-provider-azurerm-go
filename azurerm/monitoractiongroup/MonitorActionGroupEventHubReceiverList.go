@@ -41,7 +41,7 @@ type MonitorActionGroupEventHubReceiverList interface {
 	Get(index *float64) MonitorActionGroupEventHubReceiverOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (m *jsiiProxy_MonitorActionGroupEventHubReceiverList) Get(index *float64) M
 	return returns
 }
 
-func (m *jsiiProxy_MonitorActionGroupEventHubReceiverList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MonitorActionGroupEventHubReceiverList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (m *jsiiProxy_MonitorActionGroupEventHubReceiverList) Resolve(_context cdkt
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermLinuxFunctionAppAuthSettingsV2ActiveDirectoryV2Lis
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLinuxFunctionAppAuthSettingsV2ActiveDirectoryV2List) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermLinuxFunctionAppAuthSettingsV2ActiveDirectoryV2List) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApplicationInsightsWorkbookTemplateGalleriesOutputReference) 
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationInsightsWorkbookTemplateGalleriesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApplicationInsightsWorkbookTemplateGalleriesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationInsightsWorkbookTemplateGalleriesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationInsightsWorkbookTemplateGalleriesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

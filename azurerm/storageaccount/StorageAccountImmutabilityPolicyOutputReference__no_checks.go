@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageAccountImmutabilityPolicyOutputReference) validateGetS
 	return nil
 }
 
-func (s *jsiiProxy_StorageAccountImmutabilityPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageAccountImmutabilityPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageAccountImmutabilityPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageAccountImmutabilityPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

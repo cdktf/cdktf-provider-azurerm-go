@@ -15,7 +15,7 @@ func (d *jsiiProxy_DevTestWindowsVirtualMachineInboundNatRuleList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DevTestWindowsVirtualMachineInboundNatRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DevTestWindowsVirtualMachineInboundNatRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

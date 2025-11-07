@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociationTimeoutsOutputRe
 	return nil
 }
 
-func (n *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

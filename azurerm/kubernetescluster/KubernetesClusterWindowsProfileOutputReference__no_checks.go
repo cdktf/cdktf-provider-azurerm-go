@@ -43,7 +43,7 @@ func (k *jsiiProxy_KubernetesClusterWindowsProfileOutputReference) validateGetSt
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterWindowsProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterWindowsProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (k *jsiiProxy_KubernetesClusterWindowsProfileOutputReference) validatePutGm
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterWindowsProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterWindowsProfileOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

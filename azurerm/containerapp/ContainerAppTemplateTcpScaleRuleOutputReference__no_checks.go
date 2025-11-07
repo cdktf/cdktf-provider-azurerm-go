@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerAppTemplateTcpScaleRuleOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppTemplateTcpScaleRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAppTemplateTcpScaleRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ContainerAppTemplateTcpScaleRuleOutputReference) validatePutA
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppTemplateTcpScaleRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppTemplateTcpScaleRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

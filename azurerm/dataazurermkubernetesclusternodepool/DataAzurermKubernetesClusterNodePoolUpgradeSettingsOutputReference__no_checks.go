@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermKubernetesClusterNodePoolUpgradeSettingsOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKubernetesClusterNodePoolUpgradeSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermKubernetesClusterNodePoolUpgradeSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKubernetesClusterNodePoolUpgradeSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermKubernetesClusterNodePoolUpgradeSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

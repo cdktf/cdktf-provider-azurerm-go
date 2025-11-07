@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermKubernetesClusterServiceMeshProfileCertificateAuth
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKubernetesClusterServiceMeshProfileCertificateAuthorityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermKubernetesClusterServiceMeshProfileCertificateAuthorityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

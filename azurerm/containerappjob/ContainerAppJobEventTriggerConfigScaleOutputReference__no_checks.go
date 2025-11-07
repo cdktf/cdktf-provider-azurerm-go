@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerAppJobEventTriggerConfigScaleOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppJobEventTriggerConfigScaleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAppJobEventTriggerConfigScaleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ContainerAppJobEventTriggerConfigScaleOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppJobEventTriggerConfigScaleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppJobEventTriggerConfigScaleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermKeyVaultCertificateCertificatePolicyIssuerParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKeyVaultCertificateCertificatePolicyIssuerParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermKeyVaultCertificateCertificatePolicyIssuerParametersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

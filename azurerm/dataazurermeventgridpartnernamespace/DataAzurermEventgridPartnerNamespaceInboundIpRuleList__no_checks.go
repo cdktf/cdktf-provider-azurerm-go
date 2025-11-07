@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermEventgridPartnerNamespaceInboundIpRuleList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermEventgridPartnerNamespaceInboundIpRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermEventgridPartnerNamespaceInboundIpRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

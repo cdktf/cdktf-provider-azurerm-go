@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApplicationGatewayRedirectConfigurationList) validateGetParam
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayRedirectConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationGatewayRedirectConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

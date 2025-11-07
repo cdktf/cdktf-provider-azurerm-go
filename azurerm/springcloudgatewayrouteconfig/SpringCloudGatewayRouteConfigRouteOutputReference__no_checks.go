@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpringCloudGatewayRouteConfigRouteOutputReference) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudGatewayRouteConfigRouteOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpringCloudGatewayRouteConfigRouteOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudGatewayRouteConfigRouteOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpringCloudGatewayRouteConfigRouteOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

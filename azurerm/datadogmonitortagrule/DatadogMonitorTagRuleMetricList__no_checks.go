@@ -15,7 +15,7 @@ func (d *jsiiProxy_DatadogMonitorTagRuleMetricList) validateGetParameters(index 
 	return nil
 }
 
-func (d *jsiiProxy_DatadogMonitorTagRuleMetricList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatadogMonitorTagRuleMetricList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

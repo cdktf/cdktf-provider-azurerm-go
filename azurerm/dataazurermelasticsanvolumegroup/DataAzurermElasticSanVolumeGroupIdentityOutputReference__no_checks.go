@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermElasticSanVolumeGroupIdentityOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermElasticSanVolumeGroupIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermElasticSanVolumeGroupIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermElasticSanVolumeGroupIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermElasticSanVolumeGroupIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

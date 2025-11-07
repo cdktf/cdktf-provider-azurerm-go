@@ -15,7 +15,7 @@ func (c *jsiiProxy_CdnEndpointDeliveryRuleQueryStringConditionList) validateGetP
 	return nil
 }
 
-func (c *jsiiProxy_CdnEndpointDeliveryRuleQueryStringConditionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnEndpointDeliveryRuleQueryStringConditionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

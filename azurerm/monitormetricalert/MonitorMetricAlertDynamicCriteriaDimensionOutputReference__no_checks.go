@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitorMetricAlertDynamicCriteriaDimensionOutputReference) va
 	return nil
 }
 
-func (m *jsiiProxy_MonitorMetricAlertDynamicCriteriaDimensionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorMetricAlertDynamicCriteriaDimensionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorMetricAlertDynamicCriteriaDimensionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorMetricAlertDynamicCriteriaDimensionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

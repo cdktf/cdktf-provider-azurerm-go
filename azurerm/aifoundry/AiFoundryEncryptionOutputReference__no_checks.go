@@ -43,11 +43,11 @@ func (a *jsiiProxy_AiFoundryEncryptionOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (a *jsiiProxy_AiFoundryEncryptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AiFoundryEncryptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AiFoundryEncryptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AiFoundryEncryptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

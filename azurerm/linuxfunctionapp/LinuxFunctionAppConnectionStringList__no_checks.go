@@ -15,7 +15,7 @@ func (l *jsiiProxy_LinuxFunctionAppConnectionStringList) validateGetParameters(i
 	return nil
 }
 
-func (l *jsiiProxy_LinuxFunctionAppConnectionStringList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxFunctionAppConnectionStringList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

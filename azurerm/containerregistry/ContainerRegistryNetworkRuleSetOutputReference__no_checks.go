@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerRegistryNetworkRuleSetOutputReference) validateGetSt
 	return nil
 }
 
-func (c *jsiiProxy_ContainerRegistryNetworkRuleSetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerRegistryNetworkRuleSetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ContainerRegistryNetworkRuleSetOutputReference) validatePutIp
 	return nil
 }
 
-func (c *jsiiProxy_ContainerRegistryNetworkRuleSetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerRegistryNetworkRuleSetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

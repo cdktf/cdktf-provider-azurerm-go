@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpnSiteLinkBgpOutputReference) validateGetStringMapAttributeP
 	return nil
 }
 
-func (v *jsiiProxy_VpnSiteLinkBgpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpnSiteLinkBgpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpnSiteLinkBgpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpnSiteLinkBgpOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

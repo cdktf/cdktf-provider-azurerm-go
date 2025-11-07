@@ -43,11 +43,11 @@ func (r *jsiiProxy_RelayNamespaceAuthorizationRuleTimeoutsOutputReference) valid
 	return nil
 }
 
-func (r *jsiiProxy_RelayNamespaceAuthorizationRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RelayNamespaceAuthorizationRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RelayNamespaceAuthorizationRuleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RelayNamespaceAuthorizationRuleTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

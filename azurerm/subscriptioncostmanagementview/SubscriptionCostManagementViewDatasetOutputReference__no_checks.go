@@ -43,7 +43,7 @@ func (s *jsiiProxy_SubscriptionCostManagementViewDatasetOutputReference) validat
 	return nil
 }
 
-func (s *jsiiProxy_SubscriptionCostManagementViewDatasetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SubscriptionCostManagementViewDatasetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (s *jsiiProxy_SubscriptionCostManagementViewDatasetOutputReference) validat
 	return nil
 }
 
-func (s *jsiiProxy_SubscriptionCostManagementViewDatasetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SubscriptionCostManagementViewDatasetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

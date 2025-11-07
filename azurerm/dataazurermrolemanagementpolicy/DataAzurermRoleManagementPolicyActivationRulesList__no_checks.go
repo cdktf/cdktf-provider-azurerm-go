@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermRoleManagementPolicyActivationRulesList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermRoleManagementPolicyActivationRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermRoleManagementPolicyActivationRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

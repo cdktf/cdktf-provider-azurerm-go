@@ -79,7 +79,7 @@ type MobileNetworkServicePccRuleQosPolicyOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutGuaranteedBitRate(value *MobileNetworkServicePccRuleQosPolicyGuaranteedBitRate)
 	PutMaximumBitRate(value *MobileNetworkServicePccRuleQosPolicyMaximumBitRate)
 	ResetAllocationAndRetentionPriorityLevel()
@@ -88,7 +88,7 @@ type MobileNetworkServicePccRuleQosPolicyOutputReference interface {
 	ResetPreemptionVulnerability()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -588,8 +588,8 @@ func (m *jsiiProxy_MobileNetworkServicePccRuleQosPolicyOutputReference) Interpol
 	return returns
 }
 
-func (m *jsiiProxy_MobileNetworkServicePccRuleQosPolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MobileNetworkServicePccRuleQosPolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -597,7 +597,7 @@ func (m *jsiiProxy_MobileNetworkServicePccRuleQosPolicyOutputReference) Interpol
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -658,8 +658,8 @@ func (m *jsiiProxy_MobileNetworkServicePccRuleQosPolicyOutputReference) ResetPre
 	)
 }
 
-func (m *jsiiProxy_MobileNetworkServicePccRuleQosPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MobileNetworkServicePccRuleQosPolicyOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -667,7 +667,7 @@ func (m *jsiiProxy_MobileNetworkServicePccRuleQosPolicyOutputReference) Resolve(
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -43,11 +43,11 @@ func (e *jsiiProxy_EventhubNamespaceSchemaGroupTimeoutsOutputReference) validate
 	return nil
 }
 
-func (e *jsiiProxy_EventhubNamespaceSchemaGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventhubNamespaceSchemaGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventhubNamespaceSchemaGroupTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventhubNamespaceSchemaGroupTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

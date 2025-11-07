@@ -43,11 +43,11 @@ func (e *jsiiProxy_ExtendedCustomLocationAuthenticationOutputReference) validate
 	return nil
 }
 
-func (e *jsiiProxy_ExtendedCustomLocationAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ExtendedCustomLocationAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ExtendedCustomLocationAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ExtendedCustomLocationAuthenticationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -85,9 +85,9 @@ func (s *jsiiProxy_SentinelAlertRuleNrtEntityMappingOutputReference) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleNrtEntityMappingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (s *jsiiProxy_SentinelAlertRuleNrtEntityMappingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -124,9 +124,9 @@ func (s *jsiiProxy_SentinelAlertRuleNrtEntityMappingOutputReference) validatePut
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleNrtEntityMappingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_SentinelAlertRuleNrtEntityMappingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

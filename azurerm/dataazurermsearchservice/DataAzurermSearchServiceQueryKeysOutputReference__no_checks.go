@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermSearchServiceQueryKeysOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSearchServiceQueryKeysOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermSearchServiceQueryKeysOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSearchServiceQueryKeysOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermSearchServiceQueryKeysOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermCognitiveAccountIdentityList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermCognitiveAccountIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermCognitiveAccountIdentityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

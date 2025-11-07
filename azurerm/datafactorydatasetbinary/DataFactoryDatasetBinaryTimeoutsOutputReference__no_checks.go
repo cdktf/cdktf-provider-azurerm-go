@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFactoryDatasetBinaryTimeoutsOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryDatasetBinaryTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFactoryDatasetBinaryTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryDatasetBinaryTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryDatasetBinaryTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

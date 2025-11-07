@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesClusterServiceMeshProfileCertificateAuthorityOutput
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterServiceMeshProfileCertificateAuthorityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterServiceMeshProfileCertificateAuthorityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterServiceMeshProfileCertificateAuthorityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterServiceMeshProfileCertificateAuthorityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

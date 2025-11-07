@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermApplicationGatewayTrustedRootCertificateList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApplicationGatewayTrustedRootCertificateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermApplicationGatewayTrustedRootCertificateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

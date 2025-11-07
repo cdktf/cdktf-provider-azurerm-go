@@ -43,11 +43,11 @@ func (l *jsiiProxy_LogicAppIntegrationAccountAgreementHostIdentityOutputReferenc
 	return nil
 }
 
-func (l *jsiiProxy_LogicAppIntegrationAccountAgreementHostIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LogicAppIntegrationAccountAgreementHostIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LogicAppIntegrationAccountAgreementHostIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogicAppIntegrationAccountAgreementHostIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

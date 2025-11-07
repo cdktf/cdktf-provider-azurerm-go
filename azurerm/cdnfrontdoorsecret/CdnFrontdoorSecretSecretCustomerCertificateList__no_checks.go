@@ -15,7 +15,7 @@ func (c *jsiiProxy_CdnFrontdoorSecretSecretCustomerCertificateList) validateGetP
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorSecretSecretCustomerCertificateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnFrontdoorSecretSecretCustomerCertificateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

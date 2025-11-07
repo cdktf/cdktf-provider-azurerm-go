@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesClusterConfidentialComputingOutputReference) valida
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterConfidentialComputingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterConfidentialComputingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterConfidentialComputingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterConfidentialComputingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

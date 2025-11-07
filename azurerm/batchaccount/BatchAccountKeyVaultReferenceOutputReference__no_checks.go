@@ -43,11 +43,11 @@ func (b *jsiiProxy_BatchAccountKeyVaultReferenceOutputReference) validateGetStri
 	return nil
 }
 
-func (b *jsiiProxy_BatchAccountKeyVaultReferenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BatchAccountKeyVaultReferenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BatchAccountKeyVaultReferenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchAccountKeyVaultReferenceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

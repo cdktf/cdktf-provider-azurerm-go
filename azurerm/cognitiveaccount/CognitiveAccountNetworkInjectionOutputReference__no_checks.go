@@ -43,11 +43,11 @@ func (c *jsiiProxy_CognitiveAccountNetworkInjectionOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_CognitiveAccountNetworkInjectionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CognitiveAccountNetworkInjectionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CognitiveAccountNetworkInjectionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitiveAccountNetworkInjectionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

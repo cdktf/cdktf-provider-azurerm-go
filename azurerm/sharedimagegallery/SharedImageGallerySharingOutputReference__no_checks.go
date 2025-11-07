@@ -43,7 +43,7 @@ func (s *jsiiProxy_SharedImageGallerySharingOutputReference) validateGetStringMa
 	return nil
 }
 
-func (s *jsiiProxy_SharedImageGallerySharingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SharedImageGallerySharingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SharedImageGallerySharingOutputReference) validatePutCommunit
 	return nil
 }
 
-func (s *jsiiProxy_SharedImageGallerySharingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SharedImageGallerySharingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApplicationGatewayHttpListenerCustomErrorConfigurationList) v
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayHttpListenerCustomErrorConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationGatewayHttpListenerCustomErrorConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

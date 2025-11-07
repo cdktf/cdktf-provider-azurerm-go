@@ -15,7 +15,7 @@ func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListenerReplicaList) vali
 	return nil
 }
 
-func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListenerReplicaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListenerReplicaList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

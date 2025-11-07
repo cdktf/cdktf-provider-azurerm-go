@@ -43,11 +43,11 @@ func (s *jsiiProxy_SubscriptionCostManagementExportExportDataStorageLocationOutp
 	return nil
 }
 
-func (s *jsiiProxy_SubscriptionCostManagementExportExportDataStorageLocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SubscriptionCostManagementExportExportDataStorageLocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SubscriptionCostManagementExportExportDataStorageLocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SubscriptionCostManagementExportExportDataStorageLocationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

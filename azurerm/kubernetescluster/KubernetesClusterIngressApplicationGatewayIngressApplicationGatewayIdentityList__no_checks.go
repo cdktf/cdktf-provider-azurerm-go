@@ -15,7 +15,7 @@ func (k *jsiiProxy_KubernetesClusterIngressApplicationGatewayIngressApplicationG
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

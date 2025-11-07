@@ -15,7 +15,7 @@ func (c *jsiiProxy_CognitiveAccountRaiPolicyContentFilterList) validateGetParame
 	return nil
 }
 
-func (c *jsiiProxy_CognitiveAccountRaiPolicyContentFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitiveAccountRaiPolicyContentFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

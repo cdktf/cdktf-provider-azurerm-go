@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermBatchPoolStartTaskContainerOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermBatchPoolStartTaskContainerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermBatchPoolStartTaskContainerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermBatchPoolStartTaskContainerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermBatchPoolStartTaskContainerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

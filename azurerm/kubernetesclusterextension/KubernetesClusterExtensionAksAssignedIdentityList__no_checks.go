@@ -15,7 +15,7 @@ func (k *jsiiProxy_KubernetesClusterExtensionAksAssignedIdentityList) validateGe
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterExtensionAksAssignedIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterExtensionAksAssignedIdentityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_SentinelDataConnectorDynamics365TimeoutsOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_SentinelDataConnectorDynamics365TimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SentinelDataConnectorDynamics365TimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SentinelDataConnectorDynamics365TimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelDataConnectorDynamics365TimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

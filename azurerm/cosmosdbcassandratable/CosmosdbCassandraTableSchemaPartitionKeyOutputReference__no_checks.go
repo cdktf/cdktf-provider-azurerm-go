@@ -43,11 +43,11 @@ func (c *jsiiProxy_CosmosdbCassandraTableSchemaPartitionKeyOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbCassandraTableSchemaPartitionKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CosmosdbCassandraTableSchemaPartitionKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbCassandraTableSchemaPartitionKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbCassandraTableSchemaPartitionKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

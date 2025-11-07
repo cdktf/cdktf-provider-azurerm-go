@@ -43,11 +43,11 @@ func (l *jsiiProxy_LbBackendAddressPoolAddressTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (l *jsiiProxy_LbBackendAddressPoolAddressTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LbBackendAddressPoolAddressTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LbBackendAddressPoolAddressTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbBackendAddressPoolAddressTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

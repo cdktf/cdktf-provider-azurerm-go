@@ -15,7 +15,7 @@ func (v *jsiiProxy_VirtualMachineRunCommandInstanceViewList) validateGetParamete
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineRunCommandInstanceViewList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineRunCommandInstanceViewList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

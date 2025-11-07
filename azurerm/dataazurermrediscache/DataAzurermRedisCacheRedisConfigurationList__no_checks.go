@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermRedisCacheRedisConfigurationList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermRedisCacheRedisConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermRedisCacheRedisConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

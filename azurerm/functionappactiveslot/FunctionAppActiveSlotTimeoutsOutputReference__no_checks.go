@@ -43,11 +43,11 @@ func (f *jsiiProxy_FunctionAppActiveSlotTimeoutsOutputReference) validateGetStri
 	return nil
 }
 
-func (f *jsiiProxy_FunctionAppActiveSlotTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FunctionAppActiveSlotTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FunctionAppActiveSlotTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FunctionAppActiveSlotTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

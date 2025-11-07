@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermStorageTableEntitiesItemsOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermStorageTableEntitiesItemsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermStorageTableEntitiesItemsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermStorageTableEntitiesItemsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermStorageTableEntitiesItemsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

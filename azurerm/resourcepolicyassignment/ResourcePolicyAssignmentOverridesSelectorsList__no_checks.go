@@ -15,7 +15,7 @@ func (r *jsiiProxy_ResourcePolicyAssignmentOverridesSelectorsList) validateGetPa
 	return nil
 }
 
-func (r *jsiiProxy_ResourcePolicyAssignmentOverridesSelectorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResourcePolicyAssignmentOverridesSelectorsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

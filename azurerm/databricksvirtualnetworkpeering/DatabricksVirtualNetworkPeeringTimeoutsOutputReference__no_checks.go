@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatabricksVirtualNetworkPeeringTimeoutsOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DatabricksVirtualNetworkPeeringTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabricksVirtualNetworkPeeringTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabricksVirtualNetworkPeeringTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabricksVirtualNetworkPeeringTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

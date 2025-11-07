@@ -43,7 +43,7 @@ func (h *jsiiProxy_HdinsightKafkaClusterMetastoresOutputReference) validateGetSt
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightKafkaClusterMetastoresOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HdinsightKafkaClusterMetastoresOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (h *jsiiProxy_HdinsightKafkaClusterMetastoresOutputReference) validatePutOo
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightKafkaClusterMetastoresOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightKafkaClusterMetastoresOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

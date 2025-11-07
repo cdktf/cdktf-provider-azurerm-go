@@ -43,7 +43,7 @@ func (m *jsiiProxy_MonitorAlertProcessingRuleActionGroupScheduleOutputReference)
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAlertProcessingRuleActionGroupScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorAlertProcessingRuleActionGroupScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MonitorAlertProcessingRuleActionGroupScheduleOutputReference)
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAlertProcessingRuleActionGroupScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorAlertProcessingRuleActionGroupScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

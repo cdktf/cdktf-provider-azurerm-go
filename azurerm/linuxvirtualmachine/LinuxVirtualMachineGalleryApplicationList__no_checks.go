@@ -15,7 +15,7 @@ func (l *jsiiProxy_LinuxVirtualMachineGalleryApplicationList) validateGetParamet
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineGalleryApplicationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxVirtualMachineGalleryApplicationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

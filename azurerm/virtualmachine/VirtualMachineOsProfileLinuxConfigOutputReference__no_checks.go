@@ -43,7 +43,7 @@ func (v *jsiiProxy_VirtualMachineOsProfileLinuxConfigOutputReference) validateGe
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineOsProfileLinuxConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualMachineOsProfileLinuxConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (v *jsiiProxy_VirtualMachineOsProfileLinuxConfigOutputReference) validatePu
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineOsProfileLinuxConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineOsProfileLinuxConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

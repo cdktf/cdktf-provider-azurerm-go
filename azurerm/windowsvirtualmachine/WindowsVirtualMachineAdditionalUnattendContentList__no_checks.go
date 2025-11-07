@@ -15,7 +15,7 @@ func (w *jsiiProxy_WindowsVirtualMachineAdditionalUnattendContentList) validateG
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineAdditionalUnattendContentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsVirtualMachineAdditionalUnattendContentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

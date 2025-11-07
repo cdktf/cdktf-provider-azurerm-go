@@ -15,7 +15,7 @@ func (c *jsiiProxy_CdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociation
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociationDomainList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociationDomainList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

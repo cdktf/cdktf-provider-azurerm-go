@@ -15,7 +15,7 @@ func (s *jsiiProxy_SubscriptionPolicyAssignmentResourceSelectorsSelectorsList) v
 	return nil
 }
 
-func (s *jsiiProxy_SubscriptionPolicyAssignmentResourceSelectorsSelectorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SubscriptionPolicyAssignmentResourceSelectorsSelectorsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

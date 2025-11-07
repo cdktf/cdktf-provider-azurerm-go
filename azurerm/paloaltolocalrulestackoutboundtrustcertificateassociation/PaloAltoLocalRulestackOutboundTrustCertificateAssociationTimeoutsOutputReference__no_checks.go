@@ -43,11 +43,11 @@ func (p *jsiiProxy_PaloAltoLocalRulestackOutboundTrustCertificateAssociationTime
 	return nil
 }
 
-func (p *jsiiProxy_PaloAltoLocalRulestackOutboundTrustCertificateAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PaloAltoLocalRulestackOutboundTrustCertificateAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PaloAltoLocalRulestackOutboundTrustCertificateAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PaloAltoLocalRulestackOutboundTrustCertificateAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermDataFactoryVstsConfigurationList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDataFactoryVstsConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermDataFactoryVstsConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

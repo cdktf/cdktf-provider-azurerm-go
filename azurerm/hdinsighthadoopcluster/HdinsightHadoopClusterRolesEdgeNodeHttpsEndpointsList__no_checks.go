@@ -15,7 +15,7 @@ func (h *jsiiProxy_HdinsightHadoopClusterRolesEdgeNodeHttpsEndpointsList) valida
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightHadoopClusterRolesEdgeNodeHttpsEndpointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightHadoopClusterRolesEdgeNodeHttpsEndpointsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

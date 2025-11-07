@@ -43,11 +43,11 @@ func (m *jsiiProxy_MachineLearningDatastoreBlobstorageTimeoutsOutputReference) v
 	return nil
 }
 
-func (m *jsiiProxy_MachineLearningDatastoreBlobstorageTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MachineLearningDatastoreBlobstorageTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MachineLearningDatastoreBlobstorageTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MachineLearningDatastoreBlobstorageTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

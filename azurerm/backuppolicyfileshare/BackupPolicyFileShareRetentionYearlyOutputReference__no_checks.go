@@ -43,11 +43,11 @@ func (b *jsiiProxy_BackupPolicyFileShareRetentionYearlyOutputReference) validate
 	return nil
 }
 
-func (b *jsiiProxy_BackupPolicyFileShareRetentionYearlyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BackupPolicyFileShareRetentionYearlyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BackupPolicyFileShareRetentionYearlyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupPolicyFileShareRetentionYearlyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

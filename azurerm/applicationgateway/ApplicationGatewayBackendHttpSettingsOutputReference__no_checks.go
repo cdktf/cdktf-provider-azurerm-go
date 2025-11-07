@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference) validat
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (a *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference) validat
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
@@ -72,6 +72,10 @@ func (j *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference) validat
 }
 
 func (j *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference) validateSetCookieBasedAffinityParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationGatewayBackendHttpSettingsOutputReference) validateSetDedicatedBackendConnectionEnabledParameters(val interface{}) error {
 	return nil
 }
 

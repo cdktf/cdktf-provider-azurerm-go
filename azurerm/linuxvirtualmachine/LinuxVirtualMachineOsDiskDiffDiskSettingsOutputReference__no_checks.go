@@ -43,11 +43,11 @@ func (l *jsiiProxy_LinuxVirtualMachineOsDiskDiffDiskSettingsOutputReference) val
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineOsDiskDiffDiskSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxVirtualMachineOsDiskDiffDiskSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineOsDiskDiffDiskSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxVirtualMachineOsDiskDiffDiskSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

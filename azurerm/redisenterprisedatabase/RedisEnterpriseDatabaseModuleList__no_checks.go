@@ -15,7 +15,7 @@ func (r *jsiiProxy_RedisEnterpriseDatabaseModuleList) validateGetParameters(inde
 	return nil
 }
 
-func (r *jsiiProxy_RedisEnterpriseDatabaseModuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisEnterpriseDatabaseModuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

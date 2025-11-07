@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesClusterStorageProfileOutputReference) validateGetSt
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterStorageProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterStorageProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterStorageProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterStorageProfileOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

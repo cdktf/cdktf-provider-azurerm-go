@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermFirewallManagementIpConfigurationList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermFirewallManagementIpConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermFirewallManagementIpConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationList)
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

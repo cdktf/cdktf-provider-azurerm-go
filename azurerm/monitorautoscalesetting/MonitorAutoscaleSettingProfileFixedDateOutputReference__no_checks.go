@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitorAutoscaleSettingProfileFixedDateOutputReference) valid
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAutoscaleSettingProfileFixedDateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorAutoscaleSettingProfileFixedDateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAutoscaleSettingProfileFixedDateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorAutoscaleSettingProfileFixedDateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

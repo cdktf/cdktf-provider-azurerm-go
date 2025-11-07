@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermEventgridPartnerNamespaceTimeoutsOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermEventgridPartnerNamespaceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermEventgridPartnerNamespaceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermEventgridPartnerNamespaceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermEventgridPartnerNamespaceTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

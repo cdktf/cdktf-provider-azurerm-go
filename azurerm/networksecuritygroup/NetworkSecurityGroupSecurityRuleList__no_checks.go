@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkSecurityGroupSecurityRuleList) validateGetParameters(i
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityGroupSecurityRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkSecurityGroupSecurityRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

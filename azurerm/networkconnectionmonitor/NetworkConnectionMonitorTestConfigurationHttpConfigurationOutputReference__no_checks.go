@@ -43,7 +43,7 @@ func (n *jsiiProxy_NetworkConnectionMonitorTestConfigurationHttpConfigurationOut
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectionMonitorTestConfigurationHttpConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkConnectionMonitorTestConfigurationHttpConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (n *jsiiProxy_NetworkConnectionMonitorTestConfigurationHttpConfigurationOut
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectionMonitorTestConfigurationHttpConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkConnectionMonitorTestConfigurationHttpConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (l *jsiiProxy_LinuxVirtualMachineSecretCertificateList) validateGetParamete
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineSecretCertificateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxVirtualMachineSecretCertificateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

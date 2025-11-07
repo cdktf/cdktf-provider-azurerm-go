@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServiceFabricClusterAzureActiveDirectoryOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricClusterAzureActiveDirectoryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceFabricClusterAzureActiveDirectoryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricClusterAzureActiveDirectoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceFabricClusterAzureActiveDirectoryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

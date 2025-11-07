@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermKeyVaultCertificateCertificatePolicyLifetimeAction
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKeyVaultCertificateCertificatePolicyLifetimeActionActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermKeyVaultCertificateCertificatePolicyLifetimeActionActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

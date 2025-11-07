@@ -43,7 +43,7 @@ func (f *jsiiProxy_FunctionAppFlexConsumptionSiteConfigIpRestrictionOutputRefere
 	return nil
 }
 
-func (f *jsiiProxy_FunctionAppFlexConsumptionSiteConfigIpRestrictionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FunctionAppFlexConsumptionSiteConfigIpRestrictionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (f *jsiiProxy_FunctionAppFlexConsumptionSiteConfigIpRestrictionOutputRefere
 	return nil
 }
 
-func (f *jsiiProxy_FunctionAppFlexConsumptionSiteConfigIpRestrictionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FunctionAppFlexConsumptionSiteConfigIpRestrictionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

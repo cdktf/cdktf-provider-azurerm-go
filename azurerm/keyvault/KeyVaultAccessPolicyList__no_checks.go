@@ -15,7 +15,7 @@ func (k *jsiiProxy_KeyVaultAccessPolicyList) validateGetParameters(index *float6
 	return nil
 }
 
-func (k *jsiiProxy_KeyVaultAccessPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyVaultAccessPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

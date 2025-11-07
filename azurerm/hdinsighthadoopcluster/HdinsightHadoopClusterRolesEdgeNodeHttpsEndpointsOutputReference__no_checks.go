@@ -43,11 +43,11 @@ func (h *jsiiProxy_HdinsightHadoopClusterRolesEdgeNodeHttpsEndpointsOutputRefere
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightHadoopClusterRolesEdgeNodeHttpsEndpointsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HdinsightHadoopClusterRolesEdgeNodeHttpsEndpointsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightHadoopClusterRolesEdgeNodeHttpsEndpointsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightHadoopClusterRolesEdgeNodeHttpsEndpointsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

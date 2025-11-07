@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpringCloudCustomizedAcceleratorGitRepositorySshAuthOutputRef
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudCustomizedAcceleratorGitRepositorySshAuthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpringCloudCustomizedAcceleratorGitRepositorySshAuthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudCustomizedAcceleratorGitRepositorySshAuthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpringCloudCustomizedAcceleratorGitRepositorySshAuthOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

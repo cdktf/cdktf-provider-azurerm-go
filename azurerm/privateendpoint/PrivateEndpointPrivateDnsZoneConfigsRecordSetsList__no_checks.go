@@ -15,7 +15,7 @@ func (p *jsiiProxy_PrivateEndpointPrivateDnsZoneConfigsRecordSetsList) validateG
 	return nil
 }
 
-func (p *jsiiProxy_PrivateEndpointPrivateDnsZoneConfigsRecordSetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivateEndpointPrivateDnsZoneConfigsRecordSetsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageMoverJobDefinitionTimeoutsOutputReference) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_StorageMoverJobDefinitionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageMoverJobDefinitionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageMoverJobDefinitionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageMoverJobDefinitionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

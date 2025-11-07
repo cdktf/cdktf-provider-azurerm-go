@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitorAlertPrometheusRuleGroupRuleActionOutputReference) val
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAlertPrometheusRuleGroupRuleActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorAlertPrometheusRuleGroupRuleActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAlertPrometheusRuleGroupRuleActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorAlertPrometheusRuleGroupRuleActionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

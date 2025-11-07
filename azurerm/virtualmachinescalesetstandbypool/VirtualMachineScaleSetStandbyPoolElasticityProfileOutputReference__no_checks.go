@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualMachineScaleSetStandbyPoolElasticityProfileOutputRefer
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineScaleSetStandbyPoolElasticityProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualMachineScaleSetStandbyPoolElasticityProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineScaleSetStandbyPoolElasticityProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineScaleSetStandbyPoolElasticityProfileOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

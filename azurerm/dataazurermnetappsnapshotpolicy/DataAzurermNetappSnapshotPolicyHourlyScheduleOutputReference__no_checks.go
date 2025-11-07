@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermNetappSnapshotPolicyHourlyScheduleOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNetappSnapshotPolicyHourlyScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermNetappSnapshotPolicyHourlyScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNetappSnapshotPolicyHourlyScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermNetappSnapshotPolicyHourlyScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

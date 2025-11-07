@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApplicationGatewayCustomErrorConfigurationOutputReference) va
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayCustomErrorConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApplicationGatewayCustomErrorConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayCustomErrorConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationGatewayCustomErrorConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

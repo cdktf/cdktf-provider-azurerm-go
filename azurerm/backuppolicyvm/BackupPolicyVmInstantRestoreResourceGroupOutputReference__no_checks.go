@@ -43,11 +43,11 @@ func (b *jsiiProxy_BackupPolicyVmInstantRestoreResourceGroupOutputReference) val
 	return nil
 }
 
-func (b *jsiiProxy_BackupPolicyVmInstantRestoreResourceGroupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BackupPolicyVmInstantRestoreResourceGroupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BackupPolicyVmInstantRestoreResourceGroupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupPolicyVmInstantRestoreResourceGroupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

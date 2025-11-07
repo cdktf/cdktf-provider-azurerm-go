@@ -43,7 +43,7 @@ func (h *jsiiProxy_HdinsightKafkaClusterPrivateLinkConfigurationOutputReference)
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightKafkaClusterPrivateLinkConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HdinsightKafkaClusterPrivateLinkConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (h *jsiiProxy_HdinsightKafkaClusterPrivateLinkConfigurationOutputReference)
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightKafkaClusterPrivateLinkConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightKafkaClusterPrivateLinkConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_SubnetNetworkSecurityGroupAssociationTimeoutsOutputReference)
 	return nil
 }
 
-func (s *jsiiProxy_SubnetNetworkSecurityGroupAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SubnetNetworkSecurityGroupAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SubnetNetworkSecurityGroupAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SubnetNetworkSecurityGroupAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

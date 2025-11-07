@@ -15,7 +15,7 @@ func (s *jsiiProxy_StorageAccountNetworkRulesPrivateLinkAccessList) validateGetP
 	return nil
 }
 
-func (s *jsiiProxy_StorageAccountNetworkRulesPrivateLinkAccessList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageAccountNetworkRulesPrivateLinkAccessList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

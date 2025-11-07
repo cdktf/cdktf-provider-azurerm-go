@@ -15,7 +15,7 @@ func (k *jsiiProxy_KubernetesClusterMaintenanceWindowAllowedList) validateGetPar
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterMaintenanceWindowAllowedList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterMaintenanceWindowAllowedList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

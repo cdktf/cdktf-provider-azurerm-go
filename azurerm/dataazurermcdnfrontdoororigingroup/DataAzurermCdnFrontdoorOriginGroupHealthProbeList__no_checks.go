@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermCdnFrontdoorOriginGroupHealthProbeList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermCdnFrontdoorOriginGroupHealthProbeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermCdnFrontdoorOriginGroupHealthProbeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

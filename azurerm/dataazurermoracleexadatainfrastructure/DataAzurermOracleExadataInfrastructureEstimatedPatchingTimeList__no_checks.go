@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermOracleExadataInfrastructureEstimatedPatchingTimeLi
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermOracleExadataInfrastructureEstimatedPatchingTimeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermOracleExadataInfrastructureEstimatedPatchingTimeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

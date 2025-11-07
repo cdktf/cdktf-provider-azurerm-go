@@ -15,7 +15,7 @@ func (w *jsiiProxy_WindowsWebAppSiteConfigVirtualApplicationVirtualDirectoryList
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppSiteConfigVirtualApplicationVirtualDirectoryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsWebAppSiteConfigVirtualApplicationVirtualDirectoryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

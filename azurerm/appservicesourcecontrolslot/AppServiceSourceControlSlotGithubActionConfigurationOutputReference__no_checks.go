@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppServiceSourceControlSlotGithubActionConfigurationOutputRef
 	return nil
 }
 
-func (a *jsiiProxy_AppServiceSourceControlSlotGithubActionConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppServiceSourceControlSlotGithubActionConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (a *jsiiProxy_AppServiceSourceControlSlotGithubActionConfigurationOutputRef
 	return nil
 }
 
-func (a *jsiiProxy_AppServiceSourceControlSlotGithubActionConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppServiceSourceControlSlotGithubActionConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

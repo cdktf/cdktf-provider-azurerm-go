@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermNotificationHubNamespaceSkuList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNotificationHubNamespaceSkuList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermNotificationHubNamespaceSkuList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

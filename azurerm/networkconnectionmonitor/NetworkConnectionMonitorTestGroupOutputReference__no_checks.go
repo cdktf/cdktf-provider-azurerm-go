@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkConnectionMonitorTestGroupOutputReference) validateGet
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectionMonitorTestGroupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkConnectionMonitorTestGroupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectionMonitorTestGroupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkConnectionMonitorTestGroupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

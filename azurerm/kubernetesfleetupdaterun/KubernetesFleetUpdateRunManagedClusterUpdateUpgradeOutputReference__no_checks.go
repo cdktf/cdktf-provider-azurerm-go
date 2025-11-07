@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesFleetUpdateRunManagedClusterUpdateUpgradeOutputRefe
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesFleetUpdateRunManagedClusterUpdateUpgradeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesFleetUpdateRunManagedClusterUpdateUpgradeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesFleetUpdateRunManagedClusterUpdateUpgradeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesFleetUpdateRunManagedClusterUpdateUpgradeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

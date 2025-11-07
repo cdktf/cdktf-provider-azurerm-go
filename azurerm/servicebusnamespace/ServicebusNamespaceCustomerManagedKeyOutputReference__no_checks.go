@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServicebusNamespaceCustomerManagedKeyOutputReference) validat
 	return nil
 }
 
-func (s *jsiiProxy_ServicebusNamespaceCustomerManagedKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServicebusNamespaceCustomerManagedKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServicebusNamespaceCustomerManagedKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServicebusNamespaceCustomerManagedKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

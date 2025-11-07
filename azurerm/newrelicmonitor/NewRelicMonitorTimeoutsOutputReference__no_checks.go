@@ -43,11 +43,11 @@ func (n *jsiiProxy_NewRelicMonitorTimeoutsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (n *jsiiProxy_NewRelicMonitorTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NewRelicMonitorTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NewRelicMonitorTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NewRelicMonitorTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

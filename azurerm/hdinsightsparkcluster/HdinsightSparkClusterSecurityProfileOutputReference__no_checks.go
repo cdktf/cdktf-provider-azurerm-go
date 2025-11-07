@@ -43,11 +43,11 @@ func (h *jsiiProxy_HdinsightSparkClusterSecurityProfileOutputReference) validate
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightSparkClusterSecurityProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HdinsightSparkClusterSecurityProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightSparkClusterSecurityProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightSparkClusterSecurityProfileOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

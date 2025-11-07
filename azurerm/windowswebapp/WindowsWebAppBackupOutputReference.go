@@ -74,12 +74,12 @@ type WindowsWebAppBackupOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutSchedule(value *WindowsWebAppBackupSchedule)
 	ResetEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -528,8 +528,8 @@ func (w *jsiiProxy_WindowsWebAppBackupOutputReference) InterpolationAsList() cdk
 	return returns
 }
 
-func (w *jsiiProxy_WindowsWebAppBackupOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+func (w *jsiiProxy_WindowsWebAppBackupOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -537,7 +537,7 @@ func (w *jsiiProxy_WindowsWebAppBackupOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -563,8 +563,8 @@ func (w *jsiiProxy_WindowsWebAppBackupOutputReference) ResetEnabled() {
 	)
 }
 
-func (w *jsiiProxy_WindowsWebAppBackupOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_WindowsWebAppBackupOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -572,7 +572,7 @@ func (w *jsiiProxy_WindowsWebAppBackupOutputReference) Resolve(_context cdktf.IR
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -15,7 +15,7 @@ func (b *jsiiProxy_BatchPoolNodePlacementList) validateGetParameters(index *floa
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolNodePlacementList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchPoolNodePlacementList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

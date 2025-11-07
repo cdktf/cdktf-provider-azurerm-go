@@ -43,11 +43,11 @@ func (m *jsiiProxy_MongoClusterConnectionStringsOutputReference) validateGetStri
 	return nil
 }
 
-func (m *jsiiProxy_MongoClusterConnectionStringsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MongoClusterConnectionStringsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MongoClusterConnectionStringsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MongoClusterConnectionStringsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

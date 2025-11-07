@@ -43,11 +43,11 @@ func (i *jsiiProxy_IothubDeviceUpdateInstanceDiagnosticStorageAccountOutputRefer
 	return nil
 }
 
-func (i *jsiiProxy_IothubDeviceUpdateInstanceDiagnosticStorageAccountOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IothubDeviceUpdateInstanceDiagnosticStorageAccountOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IothubDeviceUpdateInstanceDiagnosticStorageAccountOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IothubDeviceUpdateInstanceDiagnosticStorageAccountOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

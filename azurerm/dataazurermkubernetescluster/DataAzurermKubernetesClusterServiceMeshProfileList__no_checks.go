@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermKubernetesClusterServiceMeshProfileList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKubernetesClusterServiceMeshProfileList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermKubernetesClusterServiceMeshProfileList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_SubscriptionPolicyAssignmentOverridesSelectorsList) validateG
 	return nil
 }
 
-func (s *jsiiProxy_SubscriptionPolicyAssignmentOverridesSelectorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SubscriptionPolicyAssignmentOverridesSelectorsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

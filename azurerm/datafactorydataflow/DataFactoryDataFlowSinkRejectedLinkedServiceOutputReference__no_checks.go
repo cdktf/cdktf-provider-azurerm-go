@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFactoryDataFlowSinkRejectedLinkedServiceOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryDataFlowSinkRejectedLinkedServiceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFactoryDataFlowSinkRejectedLinkedServiceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryDataFlowSinkRejectedLinkedServiceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryDataFlowSinkRejectedLinkedServiceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

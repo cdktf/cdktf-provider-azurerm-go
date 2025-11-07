@@ -41,7 +41,7 @@ type MonitorScheduledQueryRulesAlertV2CriteriaList interface {
 	Get(index *float64) MonitorScheduledQueryRulesAlertV2CriteriaOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (m *jsiiProxy_MonitorScheduledQueryRulesAlertV2CriteriaList) Get(index *flo
 	return returns
 }
 
-func (m *jsiiProxy_MonitorScheduledQueryRulesAlertV2CriteriaList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MonitorScheduledQueryRulesAlertV2CriteriaList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (m *jsiiProxy_MonitorScheduledQueryRulesAlertV2CriteriaList) Resolve(_conte
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

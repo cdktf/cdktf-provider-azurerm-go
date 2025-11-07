@@ -15,7 +15,7 @@ func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostA
 	return nil
 }
 
-func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermCdnFrontdoorSecretSecretList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermCdnFrontdoorSecretSecretList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermCdnFrontdoorSecretSecretList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

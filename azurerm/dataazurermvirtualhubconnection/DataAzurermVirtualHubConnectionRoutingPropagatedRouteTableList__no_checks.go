@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermVirtualHubConnectionRoutingPropagatedRouteTableLis
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermVirtualHubConnectionRoutingPropagatedRouteTableList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermVirtualHubConnectionRoutingPropagatedRouteTableList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

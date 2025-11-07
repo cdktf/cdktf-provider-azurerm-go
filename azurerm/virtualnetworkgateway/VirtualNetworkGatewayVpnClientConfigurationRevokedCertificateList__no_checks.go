@@ -15,7 +15,7 @@ func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationRevokedCertificate
 	return nil
 }
 
-func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationRevokedCertificateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationRevokedCertificateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

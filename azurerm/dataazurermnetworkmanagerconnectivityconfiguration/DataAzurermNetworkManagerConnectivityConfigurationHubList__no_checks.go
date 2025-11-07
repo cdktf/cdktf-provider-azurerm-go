@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermNetworkManagerConnectivityConfigurationHubList) va
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNetworkManagerConnectivityConfigurationHubList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermNetworkManagerConnectivityConfigurationHubList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

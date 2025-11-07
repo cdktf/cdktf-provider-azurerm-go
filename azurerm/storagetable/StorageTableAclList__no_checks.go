@@ -15,7 +15,7 @@ func (s *jsiiProxy_StorageTableAclList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (s *jsiiProxy_StorageTableAclList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageTableAclList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

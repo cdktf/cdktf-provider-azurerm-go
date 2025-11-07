@@ -15,7 +15,7 @@ func (k *jsiiProxy_KeyVaultCertificateCertificatePolicyLifetimeActionList) valid
 	return nil
 }
 
-func (k *jsiiProxy_KeyVaultCertificateCertificatePolicyLifetimeActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyVaultCertificateCertificatePolicyLifetimeActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

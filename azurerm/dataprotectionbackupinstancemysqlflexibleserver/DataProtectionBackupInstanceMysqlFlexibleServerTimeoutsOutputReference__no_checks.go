@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataProtectionBackupInstanceMysqlFlexibleServerTimeoutsOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupInstanceMysqlFlexibleServerTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataProtectionBackupInstanceMysqlFlexibleServerTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupInstanceMysqlFlexibleServerTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataProtectionBackupInstanceMysqlFlexibleServerTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

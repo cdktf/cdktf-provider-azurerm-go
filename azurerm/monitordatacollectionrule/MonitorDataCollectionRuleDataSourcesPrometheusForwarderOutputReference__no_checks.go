@@ -43,7 +43,7 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesPrometheusForwarderOutput
 	return nil
 }
 
-func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesPrometheusForwarderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesPrometheusForwarderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesPrometheusForwarderOutput
 	return nil
 }
 
-func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesPrometheusForwarderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesPrometheusForwarderOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

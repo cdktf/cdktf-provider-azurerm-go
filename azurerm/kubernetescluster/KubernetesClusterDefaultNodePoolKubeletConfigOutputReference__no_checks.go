@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesClusterDefaultNodePoolKubeletConfigOutputReference)
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterDefaultNodePoolKubeletConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterDefaultNodePoolKubeletConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterDefaultNodePoolKubeletConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterDefaultNodePoolKubeletConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

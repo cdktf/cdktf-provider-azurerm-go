@@ -43,7 +43,7 @@ func (s *jsiiProxy_ServiceFabricClusterUpgradePolicyOutputReference) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricClusterUpgradePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceFabricClusterUpgradePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_ServiceFabricClusterUpgradePolicyOutputReference) validatePut
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricClusterUpgradePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceFabricClusterUpgradePolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

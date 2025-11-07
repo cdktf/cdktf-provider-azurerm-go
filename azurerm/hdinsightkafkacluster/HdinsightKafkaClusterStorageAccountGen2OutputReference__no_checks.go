@@ -43,11 +43,11 @@ func (h *jsiiProxy_HdinsightKafkaClusterStorageAccountGen2OutputReference) valid
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightKafkaClusterStorageAccountGen2OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HdinsightKafkaClusterStorageAccountGen2OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightKafkaClusterStorageAccountGen2OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightKafkaClusterStorageAccountGen2OutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

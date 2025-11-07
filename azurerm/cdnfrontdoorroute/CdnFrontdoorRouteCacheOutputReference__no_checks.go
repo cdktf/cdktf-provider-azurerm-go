@@ -43,11 +43,11 @@ func (c *jsiiProxy_CdnFrontdoorRouteCacheOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorRouteCacheOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CdnFrontdoorRouteCacheOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorRouteCacheOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnFrontdoorRouteCacheOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

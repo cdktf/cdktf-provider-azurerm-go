@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataProtectionBackupPolicyKubernetesClusterRetentionRuleOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupPolicyKubernetesClusterRetentionRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataProtectionBackupPolicyKubernetesClusterRetentionRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DataProtectionBackupPolicyKubernetesClusterRetentionRuleOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupPolicyKubernetesClusterRetentionRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataProtectionBackupPolicyKubernetesClusterRetentionRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

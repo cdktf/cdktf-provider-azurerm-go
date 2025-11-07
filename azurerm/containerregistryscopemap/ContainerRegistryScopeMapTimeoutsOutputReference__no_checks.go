@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerRegistryScopeMapTimeoutsOutputReference) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_ContainerRegistryScopeMapTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerRegistryScopeMapTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerRegistryScopeMapTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerRegistryScopeMapTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

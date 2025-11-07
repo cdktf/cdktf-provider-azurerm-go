@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermEventgridSystemTopicIdentityList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermEventgridSystemTopicIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermEventgridSystemTopicIdentityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

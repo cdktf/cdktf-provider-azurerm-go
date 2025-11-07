@@ -15,7 +15,7 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSetDataDiskList) validateGetParamet
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineScaleSetDataDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsVirtualMachineScaleSetDataDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

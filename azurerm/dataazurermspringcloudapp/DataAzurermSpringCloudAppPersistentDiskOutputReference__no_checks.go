@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermSpringCloudAppPersistentDiskOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSpringCloudAppPersistentDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermSpringCloudAppPersistentDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSpringCloudAppPersistentDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermSpringCloudAppPersistentDiskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

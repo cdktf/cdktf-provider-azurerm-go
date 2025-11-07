@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerAppRegistryList) validateGetParameters(index *float6
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppRegistryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppRegistryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

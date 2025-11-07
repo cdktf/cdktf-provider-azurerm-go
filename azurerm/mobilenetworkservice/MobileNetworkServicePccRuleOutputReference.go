@@ -76,14 +76,14 @@ type MobileNetworkServicePccRuleOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutQosPolicy(value *MobileNetworkServicePccRuleQosPolicy)
 	PutServiceDataFlowTemplate(value interface{})
 	ResetQosPolicy()
 	ResetTrafficControlEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -552,8 +552,8 @@ func (m *jsiiProxy_MobileNetworkServicePccRuleOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (m *jsiiProxy_MobileNetworkServicePccRuleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MobileNetworkServicePccRuleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -561,7 +561,7 @@ func (m *jsiiProxy_MobileNetworkServicePccRuleOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -606,8 +606,8 @@ func (m *jsiiProxy_MobileNetworkServicePccRuleOutputReference) ResetTrafficContr
 	)
 }
 
-func (m *jsiiProxy_MobileNetworkServicePccRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MobileNetworkServicePccRuleOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -615,7 +615,7 @@ func (m *jsiiProxy_MobileNetworkServicePccRuleOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

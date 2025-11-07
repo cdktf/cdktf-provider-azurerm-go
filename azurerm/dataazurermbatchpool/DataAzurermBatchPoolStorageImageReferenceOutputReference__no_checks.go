@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermBatchPoolStorageImageReferenceOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermBatchPoolStorageImageReferenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermBatchPoolStorageImageReferenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermBatchPoolStorageImageReferenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermBatchPoolStorageImageReferenceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

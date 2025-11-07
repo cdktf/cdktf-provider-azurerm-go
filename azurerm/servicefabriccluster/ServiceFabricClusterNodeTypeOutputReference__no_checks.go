@@ -43,7 +43,7 @@ func (s *jsiiProxy_ServiceFabricClusterNodeTypeOutputReference) validateGetStrin
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricClusterNodeTypeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceFabricClusterNodeTypeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_ServiceFabricClusterNodeTypeOutputReference) validatePutEphem
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricClusterNodeTypeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceFabricClusterNodeTypeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

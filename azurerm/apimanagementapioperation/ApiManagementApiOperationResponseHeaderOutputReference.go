@@ -89,7 +89,7 @@ type ApiManagementApiOperationResponseHeaderOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutExample(value interface{})
 	ResetDefaultValue()
 	ResetDescription()
@@ -99,7 +99,7 @@ type ApiManagementApiOperationResponseHeaderOutputReference interface {
 	ResetValues()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -703,8 +703,8 @@ func (a *jsiiProxy_ApiManagementApiOperationResponseHeaderOutputReference) Inter
 	return returns
 }
 
-func (a *jsiiProxy_ApiManagementApiOperationResponseHeaderOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_ApiManagementApiOperationResponseHeaderOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -712,7 +712,7 @@ func (a *jsiiProxy_ApiManagementApiOperationResponseHeaderOutputReference) Inter
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -778,8 +778,8 @@ func (a *jsiiProxy_ApiManagementApiOperationResponseHeaderOutputReference) Reset
 	)
 }
 
-func (a *jsiiProxy_ApiManagementApiOperationResponseHeaderOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_ApiManagementApiOperationResponseHeaderOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -787,7 +787,7 @@ func (a *jsiiProxy_ApiManagementApiOperationResponseHeaderOutputReference) Resol
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

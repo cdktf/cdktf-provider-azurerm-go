@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermStorageShareAclOutputReference) validateGetStringM
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermStorageShareAclOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermStorageShareAclOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermStorageShareAclOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermStorageShareAclOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

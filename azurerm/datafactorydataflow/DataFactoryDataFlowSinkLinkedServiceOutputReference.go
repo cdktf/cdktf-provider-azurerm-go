@@ -69,11 +69,11 @@ type DataFactoryDataFlowSinkLinkedServiceOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetParameters()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -471,8 +471,8 @@ func (d *jsiiProxy_DataFactoryDataFlowSinkLinkedServiceOutputReference) Interpol
 	return returns
 }
 
-func (d *jsiiProxy_DataFactoryDataFlowSinkLinkedServiceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataFactoryDataFlowSinkLinkedServiceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -480,7 +480,7 @@ func (d *jsiiProxy_DataFactoryDataFlowSinkLinkedServiceOutputReference) Interpol
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -495,8 +495,8 @@ func (d *jsiiProxy_DataFactoryDataFlowSinkLinkedServiceOutputReference) ResetPar
 	)
 }
 
-func (d *jsiiProxy_DataFactoryDataFlowSinkLinkedServiceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataFactoryDataFlowSinkLinkedServiceOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -504,7 +504,7 @@ func (d *jsiiProxy_DataFactoryDataFlowSinkLinkedServiceOutputReference) Resolve(
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermVirtualHubConnectionRoutingOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermVirtualHubConnectionRoutingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermVirtualHubConnectionRoutingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermVirtualHubConnectionRoutingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermVirtualHubConnectionRoutingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermOracleAdbsNationalCharacterSetsCharacterSetsList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermOracleAdbsNationalCharacterSetsCharacterSetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermOracleAdbsNationalCharacterSetsCharacterSetsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

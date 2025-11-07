@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermSentinelAlertRuleAnomalyRequiredDataConnectorOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSentinelAlertRuleAnomalyRequiredDataConnectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermSentinelAlertRuleAnomalyRequiredDataConnectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSentinelAlertRuleAnomalyRequiredDataConnectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermSentinelAlertRuleAnomalyRequiredDataConnectorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -84,12 +84,12 @@ type LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetNameClaimType()
 	ResetScopes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -640,8 +640,8 @@ func (l *jsiiProxy_LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference
 	return returns
 }
 
-func (l *jsiiProxy_LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -649,7 +649,7 @@ func (l *jsiiProxy_LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -672,8 +672,8 @@ func (l *jsiiProxy_LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference
 	)
 }
 
-func (l *jsiiProxy_LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -681,7 +681,7 @@ func (l *jsiiProxy_LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

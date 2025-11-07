@@ -15,7 +15,7 @@ func (w *jsiiProxy_WindowsFunctionAppSiteConfigIpRestrictionHeadersList) validat
 	return nil
 }
 
-func (w *jsiiProxy_WindowsFunctionAppSiteConfigIpRestrictionHeadersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsFunctionAppSiteConfigIpRestrictionHeadersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

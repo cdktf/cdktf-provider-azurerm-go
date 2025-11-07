@@ -43,11 +43,11 @@ func (m *jsiiProxy_MssqlVirtualMachineAutoPatchingOutputReference) validateGetSt
 	return nil
 }
 
-func (m *jsiiProxy_MssqlVirtualMachineAutoPatchingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlVirtualMachineAutoPatchingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MssqlVirtualMachineAutoPatchingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlVirtualMachineAutoPatchingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

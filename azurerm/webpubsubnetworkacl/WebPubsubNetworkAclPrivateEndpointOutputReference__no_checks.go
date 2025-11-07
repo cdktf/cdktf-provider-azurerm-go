@@ -43,11 +43,11 @@ func (w *jsiiProxy_WebPubsubNetworkAclPrivateEndpointOutputReference) validateGe
 	return nil
 }
 
-func (w *jsiiProxy_WebPubsubNetworkAclPrivateEndpointOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WebPubsubNetworkAclPrivateEndpointOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WebPubsubNetworkAclPrivateEndpointOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WebPubsubNetworkAclPrivateEndpointOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

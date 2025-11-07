@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermBatchPoolStorageImageReferenceList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermBatchPoolStorageImageReferenceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermBatchPoolStorageImageReferenceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

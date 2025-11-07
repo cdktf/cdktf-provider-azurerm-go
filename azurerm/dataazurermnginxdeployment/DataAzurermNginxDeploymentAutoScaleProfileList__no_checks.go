@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermNginxDeploymentAutoScaleProfileList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNginxDeploymentAutoScaleProfileList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermNginxDeploymentAutoScaleProfileList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

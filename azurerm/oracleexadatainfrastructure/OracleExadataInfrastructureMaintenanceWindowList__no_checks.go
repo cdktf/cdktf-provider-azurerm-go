@@ -15,7 +15,7 @@ func (o *jsiiProxy_OracleExadataInfrastructureMaintenanceWindowList) validateGet
 	return nil
 }
 
-func (o *jsiiProxy_OracleExadataInfrastructureMaintenanceWindowList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OracleExadataInfrastructureMaintenanceWindowList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (e *jsiiProxy_EventgridEventSubscriptionDeliveryPropertyList) validateGetPa
 	return nil
 }
 
-func (e *jsiiProxy_EventgridEventSubscriptionDeliveryPropertyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventgridEventSubscriptionDeliveryPropertyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

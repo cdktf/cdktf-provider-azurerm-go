@@ -43,11 +43,11 @@ func (l *jsiiProxy_LocalNetworkGatewayBgpSettingsOutputReference) validateGetStr
 	return nil
 }
 
-func (l *jsiiProxy_LocalNetworkGatewayBgpSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LocalNetworkGatewayBgpSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LocalNetworkGatewayBgpSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LocalNetworkGatewayBgpSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

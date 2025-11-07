@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServiceFabricClusterNodeTypeApplicationPortsOutputReference) 
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricClusterNodeTypeApplicationPortsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceFabricClusterNodeTypeApplicationPortsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricClusterNodeTypeApplicationPortsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceFabricClusterNodeTypeApplicationPortsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

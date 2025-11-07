@@ -43,7 +43,7 @@ func (k *jsiiProxy_KeyVaultKeyRotationPolicyOutputReference) validateGetStringMa
 	return nil
 }
 
-func (k *jsiiProxy_KeyVaultKeyRotationPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KeyVaultKeyRotationPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (k *jsiiProxy_KeyVaultKeyRotationPolicyOutputReference) validatePutAutomati
 	return nil
 }
 
-func (k *jsiiProxy_KeyVaultKeyRotationPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyVaultKeyRotationPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

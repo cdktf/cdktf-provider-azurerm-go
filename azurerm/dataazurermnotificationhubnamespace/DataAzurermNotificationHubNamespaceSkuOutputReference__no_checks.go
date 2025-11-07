@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermNotificationHubNamespaceSkuOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNotificationHubNamespaceSkuOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermNotificationHubNamespaceSkuOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNotificationHubNamespaceSkuOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermNotificationHubNamespaceSkuOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

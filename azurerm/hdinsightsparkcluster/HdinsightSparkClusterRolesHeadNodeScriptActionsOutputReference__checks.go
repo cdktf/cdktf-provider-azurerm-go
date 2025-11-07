@@ -85,17 +85,17 @@ func (h *jsiiProxy_HdinsightSparkClusterRolesHeadNodeScriptActionsOutputReferenc
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightSparkClusterRolesHeadNodeScriptActionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (h *jsiiProxy_HdinsightSparkClusterRolesHeadNodeScriptActionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightSparkClusterRolesHeadNodeScriptActionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (h *jsiiProxy_HdinsightSparkClusterRolesHeadNodeScriptActionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

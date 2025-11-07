@@ -43,7 +43,7 @@ func (l *jsiiProxy_LogicAppWorkflowAccessControlTriggerOutputReference) validate
 	return nil
 }
 
-func (l *jsiiProxy_LogicAppWorkflowAccessControlTriggerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LogicAppWorkflowAccessControlTriggerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LogicAppWorkflowAccessControlTriggerOutputReference) validate
 	return nil
 }
 
-func (l *jsiiProxy_LogicAppWorkflowAccessControlTriggerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogicAppWorkflowAccessControlTriggerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

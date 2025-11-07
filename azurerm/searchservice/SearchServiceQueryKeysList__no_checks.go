@@ -15,7 +15,7 @@ func (s *jsiiProxy_SearchServiceQueryKeysList) validateGetParameters(index *floa
 	return nil
 }
 
-func (s *jsiiProxy_SearchServiceQueryKeysList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SearchServiceQueryKeysList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

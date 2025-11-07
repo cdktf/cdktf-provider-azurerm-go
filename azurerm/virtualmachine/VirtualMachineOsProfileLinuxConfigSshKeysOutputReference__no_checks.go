@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualMachineOsProfileLinuxConfigSshKeysOutputReference) val
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineOsProfileLinuxConfigSshKeysOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualMachineOsProfileLinuxConfigSshKeysOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineOsProfileLinuxConfigSshKeysOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineOsProfileLinuxConfigSshKeysOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

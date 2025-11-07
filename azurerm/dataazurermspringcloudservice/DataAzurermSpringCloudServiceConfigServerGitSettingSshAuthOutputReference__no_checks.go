@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermSpringCloudServiceConfigServerGitSettingSshAuthOut
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSpringCloudServiceConfigServerGitSettingSshAuthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermSpringCloudServiceConfigServerGitSettingSshAuthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSpringCloudServiceConfigServerGitSettingSshAuthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermSpringCloudServiceConfigServerGitSettingSshAuthOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

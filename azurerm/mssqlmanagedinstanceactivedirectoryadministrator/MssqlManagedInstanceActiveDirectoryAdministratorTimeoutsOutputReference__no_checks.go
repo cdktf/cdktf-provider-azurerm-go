@@ -43,11 +43,11 @@ func (m *jsiiProxy_MssqlManagedInstanceActiveDirectoryAdministratorTimeoutsOutpu
 	return nil
 }
 
-func (m *jsiiProxy_MssqlManagedInstanceActiveDirectoryAdministratorTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlManagedInstanceActiveDirectoryAdministratorTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MssqlManagedInstanceActiveDirectoryAdministratorTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlManagedInstanceActiveDirectoryAdministratorTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

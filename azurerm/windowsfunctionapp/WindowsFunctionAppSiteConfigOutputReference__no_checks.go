@@ -43,7 +43,7 @@ func (w *jsiiProxy_WindowsFunctionAppSiteConfigOutputReference) validateGetStrin
 	return nil
 }
 
-func (w *jsiiProxy_WindowsFunctionAppSiteConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsFunctionAppSiteConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (w *jsiiProxy_WindowsFunctionAppSiteConfigOutputReference) validatePutScmIp
 	return nil
 }
 
-func (w *jsiiProxy_WindowsFunctionAppSiteConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsFunctionAppSiteConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (k *jsiiProxy_KubernetesClusterOmsAgentOmsAgentIdentityList) validateGetPar
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterOmsAgentOmsAgentIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterOmsAgentOmsAgentIdentityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

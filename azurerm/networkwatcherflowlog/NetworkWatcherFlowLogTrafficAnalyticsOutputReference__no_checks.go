@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkWatcherFlowLogTrafficAnalyticsOutputReference) validat
 	return nil
 }
 
-func (n *jsiiProxy_NetworkWatcherFlowLogTrafficAnalyticsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkWatcherFlowLogTrafficAnalyticsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkWatcherFlowLogTrafficAnalyticsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkWatcherFlowLogTrafficAnalyticsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

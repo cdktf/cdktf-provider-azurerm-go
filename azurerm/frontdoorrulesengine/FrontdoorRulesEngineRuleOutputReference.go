@@ -73,14 +73,14 @@ type FrontdoorRulesEngineRuleOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAction(value *FrontdoorRulesEngineRuleAction)
 	PutMatchCondition(value interface{})
 	ResetAction()
 	ResetMatchCondition()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -518,8 +518,8 @@ func (f *jsiiProxy_FrontdoorRulesEngineRuleOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (f *jsiiProxy_FrontdoorRulesEngineRuleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := f.validateInterpolationForAttributeParameters(property); err != nil {
+func (f *jsiiProxy_FrontdoorRulesEngineRuleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -527,7 +527,7 @@ func (f *jsiiProxy_FrontdoorRulesEngineRuleOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -572,8 +572,8 @@ func (f *jsiiProxy_FrontdoorRulesEngineRuleOutputReference) ResetMatchCondition(
 	)
 }
 
-func (f *jsiiProxy_FrontdoorRulesEngineRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FrontdoorRulesEngineRuleOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -581,7 +581,7 @@ func (f *jsiiProxy_FrontdoorRulesEngineRuleOutputReference) Resolve(_context cdk
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

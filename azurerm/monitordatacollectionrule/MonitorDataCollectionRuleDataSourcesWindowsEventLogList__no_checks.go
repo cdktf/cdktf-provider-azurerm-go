@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesWindowsEventLogList) vali
 	return nil
 }
 
-func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesWindowsEventLogList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesWindowsEventLogList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

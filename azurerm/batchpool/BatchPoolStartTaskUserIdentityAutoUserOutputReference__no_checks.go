@@ -43,11 +43,11 @@ func (b *jsiiProxy_BatchPoolStartTaskUserIdentityAutoUserOutputReference) valida
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolStartTaskUserIdentityAutoUserOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BatchPoolStartTaskUserIdentityAutoUserOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolStartTaskUserIdentityAutoUserOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchPoolStartTaskUserIdentityAutoUserOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

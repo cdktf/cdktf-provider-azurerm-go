@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermBastionHostIpConfigurationOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermBastionHostIpConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermBastionHostIpConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermBastionHostIpConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermBastionHostIpConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

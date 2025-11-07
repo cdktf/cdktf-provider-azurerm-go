@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermNetworkManagerConnectivityConfigurationAppliesToGr
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNetworkManagerConnectivityConfigurationAppliesToGroupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermNetworkManagerConnectivityConfigurationAppliesToGroupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNetworkManagerConnectivityConfigurationAppliesToGroupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermNetworkManagerConnectivityConfigurationAppliesToGroupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

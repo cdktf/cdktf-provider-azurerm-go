@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppServiceEnvironmentV3ClusterSettingList) validateGetParamet
 	return nil
 }
 
-func (a *jsiiProxy_AppServiceEnvironmentV3ClusterSettingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppServiceEnvironmentV3ClusterSettingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

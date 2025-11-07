@@ -43,7 +43,7 @@ func (s *jsiiProxy_StorageManagementPolicyRuleOutputReference) validateGetString
 	return nil
 }
 
-func (s *jsiiProxy_StorageManagementPolicyRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageManagementPolicyRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_StorageManagementPolicyRuleOutputReference) validatePutFilter
 	return nil
 }
 
-func (s *jsiiProxy_StorageManagementPolicyRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageManagementPolicyRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

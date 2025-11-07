@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppServiceSlotLogsHttpLogsOutputReference) validateGetStringM
 	return nil
 }
 
-func (a *jsiiProxy_AppServiceSlotLogsHttpLogsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppServiceSlotLogsHttpLogsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (a *jsiiProxy_AppServiceSlotLogsHttpLogsOutputReference) validatePutFileSys
 	return nil
 }
 
-func (a *jsiiProxy_AppServiceSlotLogsHttpLogsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppServiceSlotLogsHttpLogsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

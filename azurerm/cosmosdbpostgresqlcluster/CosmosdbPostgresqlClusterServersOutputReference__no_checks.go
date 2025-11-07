@@ -43,11 +43,11 @@ func (c *jsiiProxy_CosmosdbPostgresqlClusterServersOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbPostgresqlClusterServersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CosmosdbPostgresqlClusterServersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbPostgresqlClusterServersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbPostgresqlClusterServersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppServiceCertificateOrderCertificatesList) validateGetParame
 	return nil
 }
 
-func (a *jsiiProxy_AppServiceCertificateOrderCertificatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppServiceCertificateOrderCertificatesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

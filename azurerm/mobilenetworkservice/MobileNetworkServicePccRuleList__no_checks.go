@@ -15,7 +15,7 @@ func (m *jsiiProxy_MobileNetworkServicePccRuleList) validateGetParameters(index 
 	return nil
 }
 
-func (m *jsiiProxy_MobileNetworkServicePccRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MobileNetworkServicePccRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

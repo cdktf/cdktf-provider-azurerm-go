@@ -15,7 +15,7 @@ func (h *jsiiProxy_HdinsightKafkaClusterDiskEncryptionList) validateGetParameter
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightKafkaClusterDiskEncryptionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightKafkaClusterDiskEncryptionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

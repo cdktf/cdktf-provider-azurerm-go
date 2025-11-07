@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualMachineDataDiskAttachmentTimeoutsOutputReference) vali
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineDataDiskAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualMachineDataDiskAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineDataDiskAttachmentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineDataDiskAttachmentTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

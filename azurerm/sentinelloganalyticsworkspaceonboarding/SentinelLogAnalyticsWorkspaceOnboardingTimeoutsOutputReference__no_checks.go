@@ -43,11 +43,11 @@ func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboardingTimeoutsOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboardingTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboardingTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboardingTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboardingTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

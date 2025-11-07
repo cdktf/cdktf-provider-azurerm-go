@@ -15,7 +15,7 @@ func (e *jsiiProxy_EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrich
 	return nil
 }
 
-func (e *jsiiProxy_EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

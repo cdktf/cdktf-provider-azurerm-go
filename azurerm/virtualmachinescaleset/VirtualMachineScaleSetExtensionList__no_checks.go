@@ -15,7 +15,7 @@ func (v *jsiiProxy_VirtualMachineScaleSetExtensionList) validateGetParameters(in
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineScaleSetExtensionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineScaleSetExtensionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (e *jsiiProxy_ExpressRouteCircuitPeeringIpv6OutputReference) validateGetStr
 	return nil
 }
 
-func (e *jsiiProxy_ExpressRouteCircuitPeeringIpv6OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ExpressRouteCircuitPeeringIpv6OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_ExpressRouteCircuitPeeringIpv6OutputReference) validatePutMic
 	return nil
 }
 
-func (e *jsiiProxy_ExpressRouteCircuitPeeringIpv6OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ExpressRouteCircuitPeeringIpv6OutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

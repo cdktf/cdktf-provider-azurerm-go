@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataProtectionBackupInstanceKubernetesClusterBackupDatasource
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupInstanceKubernetesClusterBackupDatasourceParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataProtectionBackupInstanceKubernetesClusterBackupDatasourceParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataProtectionBackupInstanceKubernetesClusterBackupDatasourceParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataProtectionBackupInstanceKubernetesClusterBackupDatasourceParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermFunctionAppConnectionStringList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermFunctionAppConnectionStringList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermFunctionAppConnectionStringList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

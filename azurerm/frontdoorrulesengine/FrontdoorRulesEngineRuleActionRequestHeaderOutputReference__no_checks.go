@@ -43,11 +43,11 @@ func (f *jsiiProxy_FrontdoorRulesEngineRuleActionRequestHeaderOutputReference) v
 	return nil
 }
 
-func (f *jsiiProxy_FrontdoorRulesEngineRuleActionRequestHeaderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FrontdoorRulesEngineRuleActionRequestHeaderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FrontdoorRulesEngineRuleActionRequestHeaderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FrontdoorRulesEngineRuleActionRequestHeaderOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApiManagementBackendServiceFabricClusterServerX509NameOutputR
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementBackendServiceFabricClusterServerX509NameOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiManagementBackendServiceFabricClusterServerX509NameOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementBackendServiceFabricClusterServerX509NameOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementBackendServiceFabricClusterServerX509NameOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

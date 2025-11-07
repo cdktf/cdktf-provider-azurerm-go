@@ -15,7 +15,7 @@ func (v *jsiiProxy_VirtualHubConnectionRoutingStaticVnetRouteList) validateGetPa
 	return nil
 }
 
-func (v *jsiiProxy_VirtualHubConnectionRoutingStaticVnetRouteList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualHubConnectionRoutingStaticVnetRouteList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

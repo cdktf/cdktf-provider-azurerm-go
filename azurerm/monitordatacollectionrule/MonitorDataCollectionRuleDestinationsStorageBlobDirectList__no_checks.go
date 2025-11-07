@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsStorageBlobDirectList) v
 	return nil
 }
 
-func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsStorageBlobDirectList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsStorageBlobDirectList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

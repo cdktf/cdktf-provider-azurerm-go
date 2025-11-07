@@ -43,7 +43,7 @@ func (f *jsiiProxy_FrontdoorRulesEngineRuleOutputReference) validateGetStringMap
 	return nil
 }
 
-func (f *jsiiProxy_FrontdoorRulesEngineRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FrontdoorRulesEngineRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (f *jsiiProxy_FrontdoorRulesEngineRuleOutputReference) validatePutMatchCond
 	return nil
 }
 
-func (f *jsiiProxy_FrontdoorRulesEngineRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FrontdoorRulesEngineRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

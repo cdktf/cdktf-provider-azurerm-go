@@ -15,7 +15,7 @@ func (i *jsiiProxy_IothubCloudToDeviceFeedbackList) validateGetParameters(index 
 	return nil
 }
 
-func (i *jsiiProxy_IothubCloudToDeviceFeedbackList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IothubCloudToDeviceFeedbackList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

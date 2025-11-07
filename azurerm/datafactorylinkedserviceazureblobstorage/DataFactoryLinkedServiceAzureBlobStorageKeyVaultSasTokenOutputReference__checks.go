@@ -85,17 +85,17 @@ func (d *jsiiProxy_DataFactoryLinkedServiceAzureBlobStorageKeyVaultSasTokenOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryLinkedServiceAzureBlobStorageKeyVaultSasTokenOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureBlobStorageKeyVaultSasTokenOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryLinkedServiceAzureBlobStorageKeyVaultSasTokenOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureBlobStorageKeyVaultSasTokenOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

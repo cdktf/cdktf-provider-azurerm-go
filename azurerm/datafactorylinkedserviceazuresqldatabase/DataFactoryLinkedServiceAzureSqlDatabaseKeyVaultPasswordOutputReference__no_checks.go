@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabaseKeyVaultPasswordOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabaseKeyVaultPasswordOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabaseKeyVaultPasswordOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabaseKeyVaultPasswordOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabaseKeyVaultPasswordOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (b *jsiiProxy_BotChannelFacebookPageList) validateGetParameters(index *floa
 	return nil
 }
 
-func (b *jsiiProxy_BotChannelFacebookPageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BotChannelFacebookPageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

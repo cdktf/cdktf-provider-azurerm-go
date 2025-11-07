@@ -15,7 +15,7 @@ func (e *jsiiProxy_EventhubNamespaceNetworkRulesetsIpRuleList) validateGetParame
 	return nil
 }
 
-func (e *jsiiProxy_EventhubNamespaceNetworkRulesetsIpRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventhubNamespaceNetworkRulesetsIpRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

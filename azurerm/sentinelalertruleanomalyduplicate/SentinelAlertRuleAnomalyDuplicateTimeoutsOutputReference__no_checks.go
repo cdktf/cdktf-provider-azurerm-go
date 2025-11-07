@@ -43,11 +43,11 @@ func (s *jsiiProxy_SentinelAlertRuleAnomalyDuplicateTimeoutsOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleAnomalyDuplicateTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SentinelAlertRuleAnomalyDuplicateTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleAnomalyDuplicateTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelAlertRuleAnomalyDuplicateTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

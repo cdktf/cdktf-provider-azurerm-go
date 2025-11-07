@@ -43,11 +43,11 @@ func (l *jsiiProxy_LinuxWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

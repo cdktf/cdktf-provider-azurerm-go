@@ -15,7 +15,7 @@ func (w *jsiiProxy_WindowsWebAppSlotSiteConfigVirtualApplicationList) validateGe
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppSlotSiteConfigVirtualApplicationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsWebAppSlotSiteConfigVirtualApplicationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

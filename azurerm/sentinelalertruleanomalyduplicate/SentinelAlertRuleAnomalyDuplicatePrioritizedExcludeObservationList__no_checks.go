@@ -15,7 +15,7 @@ func (s *jsiiProxy_SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservatio
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

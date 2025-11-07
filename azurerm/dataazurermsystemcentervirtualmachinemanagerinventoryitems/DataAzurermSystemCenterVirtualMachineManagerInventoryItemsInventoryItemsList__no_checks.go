@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermSystemCenterVirtualMachineManagerInventoryItemsInv
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSystemCenterVirtualMachineManagerInventoryItemsInventoryItemsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermSystemCenterVirtualMachineManagerInventoryItemsInventoryItemsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

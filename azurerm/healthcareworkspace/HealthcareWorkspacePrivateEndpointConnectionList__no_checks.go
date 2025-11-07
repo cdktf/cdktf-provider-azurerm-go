@@ -15,7 +15,7 @@ func (h *jsiiProxy_HealthcareWorkspacePrivateEndpointConnectionList) validateGet
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareWorkspacePrivateEndpointConnectionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HealthcareWorkspacePrivateEndpointConnectionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConfidentialLedgerCertificateBasedSecurityPrincipalList) vali
 	return nil
 }
 
-func (c *jsiiProxy_ConfidentialLedgerCertificateBasedSecurityPrincipalList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfidentialLedgerCertificateBasedSecurityPrincipalList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

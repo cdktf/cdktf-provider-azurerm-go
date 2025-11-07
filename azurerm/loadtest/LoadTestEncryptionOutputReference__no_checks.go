@@ -43,7 +43,7 @@ func (l *jsiiProxy_LoadTestEncryptionOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (l *jsiiProxy_LoadTestEncryptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoadTestEncryptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LoadTestEncryptionOutputReference) validatePutIdentityParamet
 	return nil
 }
 
-func (l *jsiiProxy_LoadTestEncryptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoadTestEncryptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

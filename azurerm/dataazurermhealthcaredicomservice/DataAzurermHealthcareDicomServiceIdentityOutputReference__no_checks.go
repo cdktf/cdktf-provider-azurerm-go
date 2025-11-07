@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermHealthcareDicomServiceIdentityOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermHealthcareDicomServiceIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermHealthcareDicomServiceIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermHealthcareDicomServiceIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermHealthcareDicomServiceIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

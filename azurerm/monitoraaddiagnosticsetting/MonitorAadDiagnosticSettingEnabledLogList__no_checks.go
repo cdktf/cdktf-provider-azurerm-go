@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitorAadDiagnosticSettingEnabledLogList) validateGetParamet
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAadDiagnosticSettingEnabledLogList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorAadDiagnosticSettingEnabledLogList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (i *jsiiProxy_IothubDpsSharedAccessPolicyTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (i *jsiiProxy_IothubDpsSharedAccessPolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IothubDpsSharedAccessPolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IothubDpsSharedAccessPolicyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IothubDpsSharedAccessPolicyTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

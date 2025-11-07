@@ -43,7 +43,7 @@ func (k *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) validateG
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (k *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) validateP
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

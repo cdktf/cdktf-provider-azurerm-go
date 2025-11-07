@@ -85,17 +85,17 @@ func (k *jsiiProxy_KustoAttachedDatabaseConfigurationSharingOutputReference) val
 	return nil
 }
 
-func (k *jsiiProxy_KustoAttachedDatabaseConfigurationSharingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (k *jsiiProxy_KustoAttachedDatabaseConfigurationSharingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (k *jsiiProxy_KustoAttachedDatabaseConfigurationSharingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (k *jsiiProxy_KustoAttachedDatabaseConfigurationSharingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

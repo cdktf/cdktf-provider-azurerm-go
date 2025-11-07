@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConfidentialLedgerAzureadBasedServicePrincipalList) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ConfidentialLedgerAzureadBasedServicePrincipalList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfidentialLedgerAzureadBasedServicePrincipalList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

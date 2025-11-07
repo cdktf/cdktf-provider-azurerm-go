@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitorDataCollectionRuleStreamDeclarationColumnList) validat
 	return nil
 }
 
-func (m *jsiiProxy_MonitorDataCollectionRuleStreamDeclarationColumnList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorDataCollectionRuleStreamDeclarationColumnList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

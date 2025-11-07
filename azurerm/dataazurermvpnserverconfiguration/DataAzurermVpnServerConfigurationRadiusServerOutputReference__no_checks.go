@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermVpnServerConfigurationRadiusServerOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermVpnServerConfigurationRadiusServerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermVpnServerConfigurationRadiusServerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermVpnServerConfigurationRadiusServerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermVpnServerConfigurationRadiusServerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

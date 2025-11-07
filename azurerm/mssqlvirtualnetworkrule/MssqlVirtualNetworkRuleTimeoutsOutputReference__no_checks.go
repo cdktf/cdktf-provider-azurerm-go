@@ -43,11 +43,11 @@ func (m *jsiiProxy_MssqlVirtualNetworkRuleTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (m *jsiiProxy_MssqlVirtualNetworkRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlVirtualNetworkRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MssqlVirtualNetworkRuleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlVirtualNetworkRuleTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (b *jsiiProxy_BlueprintAssignmentTimeoutsOutputReference) validateGetString
 	return nil
 }
 
-func (b *jsiiProxy_BlueprintAssignmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BlueprintAssignmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BlueprintAssignmentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BlueprintAssignmentTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

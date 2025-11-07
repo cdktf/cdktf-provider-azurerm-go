@@ -43,11 +43,11 @@ func (l *jsiiProxy_LogicAppTriggerRecurrenceScheduleOutputReference) validateGet
 	return nil
 }
 
-func (l *jsiiProxy_LogicAppTriggerRecurrenceScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LogicAppTriggerRecurrenceScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LogicAppTriggerRecurrenceScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogicAppTriggerRecurrenceScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

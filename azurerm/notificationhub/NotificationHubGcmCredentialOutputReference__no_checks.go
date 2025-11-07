@@ -43,11 +43,11 @@ func (n *jsiiProxy_NotificationHubGcmCredentialOutputReference) validateGetStrin
 	return nil
 }
 
-func (n *jsiiProxy_NotificationHubGcmCredentialOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NotificationHubGcmCredentialOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NotificationHubGcmCredentialOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotificationHubGcmCredentialOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermOracleAutonomousDatabaseLongTermBackupScheduleList
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermOracleAutonomousDatabaseLongTermBackupScheduleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermOracleAutonomousDatabaseLongTermBackupScheduleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (v *jsiiProxy_VpnServerConfigurationRadiusOutputReference) validateGetStrin
 	return nil
 }
 
-func (v *jsiiProxy_VpnServerConfigurationRadiusOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpnServerConfigurationRadiusOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (v *jsiiProxy_VpnServerConfigurationRadiusOutputReference) validatePutServe
 	return nil
 }
 
-func (v *jsiiProxy_VpnServerConfigurationRadiusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpnServerConfigurationRadiusOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_CdnFrontdoorRuleConditionsServerPortConditionList) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorRuleConditionsServerPortConditionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnFrontdoorRuleConditionsServerPortConditionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

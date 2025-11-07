@@ -43,11 +43,11 @@ func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConf
 	return nil
 }
 
-func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

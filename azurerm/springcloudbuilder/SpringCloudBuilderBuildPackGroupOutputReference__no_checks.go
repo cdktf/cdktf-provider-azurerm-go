@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpringCloudBuilderBuildPackGroupOutputReference) validateGetS
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudBuilderBuildPackGroupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpringCloudBuilderBuildPackGroupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudBuilderBuildPackGroupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpringCloudBuilderBuildPackGroupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

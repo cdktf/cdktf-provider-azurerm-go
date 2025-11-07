@@ -15,7 +15,7 @@ func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermission
 	return nil
 }
 
-func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

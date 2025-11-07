@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermSharedImageVersionTargetRegionOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSharedImageVersionTargetRegionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermSharedImageVersionTargetRegionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSharedImageVersionTargetRegionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermSharedImageVersionTargetRegionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (m *jsiiProxy_MysqlFlexibleServerHighAvailabilityOutputReference) validateG
 	return nil
 }
 
-func (m *jsiiProxy_MysqlFlexibleServerHighAvailabilityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MysqlFlexibleServerHighAvailabilityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MysqlFlexibleServerHighAvailabilityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MysqlFlexibleServerHighAvailabilityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

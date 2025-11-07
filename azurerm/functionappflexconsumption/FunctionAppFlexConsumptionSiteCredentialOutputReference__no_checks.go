@@ -43,11 +43,11 @@ func (f *jsiiProxy_FunctionAppFlexConsumptionSiteCredentialOutputReference) vali
 	return nil
 }
 
-func (f *jsiiProxy_FunctionAppFlexConsumptionSiteCredentialOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FunctionAppFlexConsumptionSiteCredentialOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FunctionAppFlexConsumptionSiteCredentialOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FunctionAppFlexConsumptionSiteCredentialOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

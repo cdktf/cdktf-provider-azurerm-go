@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermDynatraceMonitorPlanOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDynatraceMonitorPlanOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermDynatraceMonitorPlanOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDynatraceMonitorPlanOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermDynatraceMonitorPlanOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

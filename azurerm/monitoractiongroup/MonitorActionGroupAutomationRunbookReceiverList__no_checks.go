@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitorActionGroupAutomationRunbookReceiverList) validateGetP
 	return nil
 }
 
-func (m *jsiiProxy_MonitorActionGroupAutomationRunbookReceiverList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorActionGroupAutomationRunbookReceiverList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

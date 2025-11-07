@@ -15,7 +15,7 @@ func (f *jsiiProxy_FunctionAppSlotSiteConfigIpRestrictionHeadersList) validateGe
 	return nil
 }
 
-func (f *jsiiProxy_FunctionAppSlotSiteConfigIpRestrictionHeadersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FunctionAppSlotSiteConfigIpRestrictionHeadersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

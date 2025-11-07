@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermOracleDbSystemShapesDbSystemShapesOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermOracleDbSystemShapesDbSystemShapesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermOracleDbSystemShapesDbSystemShapesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermOracleDbSystemShapesDbSystemShapesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermOracleDbSystemShapesDbSystemShapesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

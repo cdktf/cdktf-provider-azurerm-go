@@ -15,7 +15,7 @@ func (s *jsiiProxy_SpringCloudGatewayRouteConfigRouteList) validateGetParameters
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudGatewayRouteConfigRouteList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpringCloudGatewayRouteConfigRouteList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

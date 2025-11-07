@@ -43,11 +43,11 @@ func (s *jsiiProxy_StreamAnalyticsReferenceInputMssqlTimeoutsOutputReference) va
 	return nil
 }
 
-func (s *jsiiProxy_StreamAnalyticsReferenceInputMssqlTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StreamAnalyticsReferenceInputMssqlTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StreamAnalyticsReferenceInputMssqlTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StreamAnalyticsReferenceInputMssqlTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

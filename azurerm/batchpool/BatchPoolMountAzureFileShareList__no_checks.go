@@ -15,7 +15,7 @@ func (b *jsiiProxy_BatchPoolMountAzureFileShareList) validateGetParameters(index
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolMountAzureFileShareList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchPoolMountAzureFileShareList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

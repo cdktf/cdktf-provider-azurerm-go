@@ -15,7 +15,7 @@ func (c *jsiiProxy_CosmosdbPostgresqlClusterServersList) validateGetParameters(i
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbPostgresqlClusterServersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbPostgresqlClusterServersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

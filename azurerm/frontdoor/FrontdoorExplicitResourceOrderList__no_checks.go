@@ -15,7 +15,7 @@ func (f *jsiiProxy_FrontdoorExplicitResourceOrderList) validateGetParameters(ind
 	return nil
 }
 
-func (f *jsiiProxy_FrontdoorExplicitResourceOrderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FrontdoorExplicitResourceOrderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (r *jsiiProxy_ResourcePolicyAssignmentResourceSelectorsSelectorsList) valid
 	return nil
 }
 
-func (r *jsiiProxy_ResourcePolicyAssignmentResourceSelectorsSelectorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResourcePolicyAssignmentResourceSelectorsSelectorsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

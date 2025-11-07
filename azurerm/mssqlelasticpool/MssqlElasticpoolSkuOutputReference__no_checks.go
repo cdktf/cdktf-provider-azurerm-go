@@ -43,11 +43,11 @@ func (m *jsiiProxy_MssqlElasticpoolSkuOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (m *jsiiProxy_MssqlElasticpoolSkuOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlElasticpoolSkuOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MssqlElasticpoolSkuOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlElasticpoolSkuOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

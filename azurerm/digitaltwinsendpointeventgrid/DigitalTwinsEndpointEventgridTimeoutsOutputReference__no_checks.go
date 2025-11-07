@@ -43,11 +43,11 @@ func (d *jsiiProxy_DigitalTwinsEndpointEventgridTimeoutsOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DigitalTwinsEndpointEventgridTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DigitalTwinsEndpointEventgridTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DigitalTwinsEndpointEventgridTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DigitalTwinsEndpointEventgridTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

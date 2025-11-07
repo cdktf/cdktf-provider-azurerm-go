@@ -43,11 +43,11 @@ func (s *jsiiProxy_SentinelAlertRuleThreatIntelligenceTimeoutsOutputReference) v
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleThreatIntelligenceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SentinelAlertRuleThreatIntelligenceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleThreatIntelligenceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelAlertRuleThreatIntelligenceTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

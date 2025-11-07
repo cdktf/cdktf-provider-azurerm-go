@@ -15,7 +15,7 @@ func (s *jsiiProxy_SentinelAlertRuleAnomalyDuplicateThresholdObservationList) va
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleAnomalyDuplicateThresholdObservationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelAlertRuleAnomalyDuplicateThresholdObservationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

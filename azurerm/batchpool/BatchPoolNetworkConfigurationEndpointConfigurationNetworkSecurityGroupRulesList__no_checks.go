@@ -15,7 +15,7 @@ func (b *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecu
 	return nil
 }
 
-func (b *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

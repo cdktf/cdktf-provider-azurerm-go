@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppConfigurationReplicaList) validateGetParameters(index *flo
 	return nil
 }
 
-func (a *jsiiProxy_AppConfigurationReplicaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppConfigurationReplicaList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

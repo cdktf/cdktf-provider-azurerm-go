@@ -43,7 +43,7 @@ func (c *jsiiProxy_ConsumptionBudgetSubscriptionFilterOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ConsumptionBudgetSubscriptionFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConsumptionBudgetSubscriptionFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_ConsumptionBudgetSubscriptionFilterOutputReference) validateP
 	return nil
 }
 
-func (c *jsiiProxy_ConsumptionBudgetSubscriptionFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConsumptionBudgetSubscriptionFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

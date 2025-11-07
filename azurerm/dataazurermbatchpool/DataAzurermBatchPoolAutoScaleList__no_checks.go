@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermBatchPoolAutoScaleList) validateGetParameters(inde
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermBatchPoolAutoScaleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermBatchPoolAutoScaleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualNetworkGatewayConnectionTrafficSelectorPolicyOutputRef
 	return nil
 }
 
-func (v *jsiiProxy_VirtualNetworkGatewayConnectionTrafficSelectorPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualNetworkGatewayConnectionTrafficSelectorPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualNetworkGatewayConnectionTrafficSelectorPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualNetworkGatewayConnectionTrafficSelectorPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

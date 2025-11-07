@@ -15,7 +15,7 @@ func (h *jsiiProxy_HdinsightHadoopClusterRolesEdgeNodeInstallScriptActionList) v
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightHadoopClusterRolesEdgeNodeInstallScriptActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightHadoopClusterRolesEdgeNodeInstallScriptActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_SentinelThreatIntelligenceIndicatorParsedPatternPatternTypeVa
 	return nil
 }
 
-func (s *jsiiProxy_SentinelThreatIntelligenceIndicatorParsedPatternPatternTypeValuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelThreatIntelligenceIndicatorParsedPatternPatternTypeValuesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

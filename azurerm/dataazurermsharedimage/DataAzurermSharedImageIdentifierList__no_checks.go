@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermSharedImageIdentifierList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSharedImageIdentifierList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermSharedImageIdentifierList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

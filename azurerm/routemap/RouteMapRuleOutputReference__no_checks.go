@@ -43,7 +43,7 @@ func (r *jsiiProxy_RouteMapRuleOutputReference) validateGetStringMapAttributePar
 	return nil
 }
 
-func (r *jsiiProxy_RouteMapRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RouteMapRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (r *jsiiProxy_RouteMapRuleOutputReference) validatePutMatchCriterionParamet
 	return nil
 }
 
-func (r *jsiiProxy_RouteMapRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RouteMapRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

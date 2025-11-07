@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermSharedImageVersionTargetRegionList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSharedImageVersionTargetRegionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermSharedImageVersionTargetRegionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetNetworkInterfaceIpConfigurationPub
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

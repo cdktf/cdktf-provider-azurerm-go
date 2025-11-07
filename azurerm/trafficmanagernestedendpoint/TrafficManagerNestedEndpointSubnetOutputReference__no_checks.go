@@ -43,11 +43,11 @@ func (t *jsiiProxy_TrafficManagerNestedEndpointSubnetOutputReference) validateGe
 	return nil
 }
 
-func (t *jsiiProxy_TrafficManagerNestedEndpointSubnetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TrafficManagerNestedEndpointSubnetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TrafficManagerNestedEndpointSubnetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TrafficManagerNestedEndpointSubnetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

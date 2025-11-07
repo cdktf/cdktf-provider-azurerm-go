@@ -15,7 +15,7 @@ func (l *jsiiProxy_LighthouseDefinitionAuthorizationList) validateGetParameters(
 	return nil
 }
 
-func (l *jsiiProxy_LighthouseDefinitionAuthorizationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LighthouseDefinitionAuthorizationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

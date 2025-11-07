@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermCdnFrontdoorCustomDomainTlsOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermCdnFrontdoorCustomDomainTlsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermCdnFrontdoorCustomDomainTlsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermCdnFrontdoorCustomDomainTlsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermCdnFrontdoorCustomDomainTlsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

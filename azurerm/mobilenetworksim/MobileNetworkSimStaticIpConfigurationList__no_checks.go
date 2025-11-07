@@ -15,7 +15,7 @@ func (m *jsiiProxy_MobileNetworkSimStaticIpConfigurationList) validateGetParamet
 	return nil
 }
 
-func (m *jsiiProxy_MobileNetworkSimStaticIpConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MobileNetworkSimStaticIpConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

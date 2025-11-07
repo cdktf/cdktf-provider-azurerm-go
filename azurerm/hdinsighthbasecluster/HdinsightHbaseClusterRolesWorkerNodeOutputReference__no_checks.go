@@ -43,7 +43,7 @@ func (h *jsiiProxy_HdinsightHbaseClusterRolesWorkerNodeOutputReference) validate
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightHbaseClusterRolesWorkerNodeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HdinsightHbaseClusterRolesWorkerNodeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (h *jsiiProxy_HdinsightHbaseClusterRolesWorkerNodeOutputReference) validate
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightHbaseClusterRolesWorkerNodeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightHbaseClusterRolesWorkerNodeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

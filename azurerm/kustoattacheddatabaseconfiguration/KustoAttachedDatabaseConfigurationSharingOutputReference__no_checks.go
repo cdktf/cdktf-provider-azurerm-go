@@ -43,11 +43,11 @@ func (k *jsiiProxy_KustoAttachedDatabaseConfigurationSharingOutputReference) val
 	return nil
 }
 
-func (k *jsiiProxy_KustoAttachedDatabaseConfigurationSharingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KustoAttachedDatabaseConfigurationSharingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KustoAttachedDatabaseConfigurationSharingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KustoAttachedDatabaseConfigurationSharingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

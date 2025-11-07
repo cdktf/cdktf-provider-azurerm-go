@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApiManagementAdditionalLocationOutputReference) validateGetSt
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementAdditionalLocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiManagementAdditionalLocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_ApiManagementAdditionalLocationOutputReference) validatePutVi
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementAdditionalLocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementAdditionalLocationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

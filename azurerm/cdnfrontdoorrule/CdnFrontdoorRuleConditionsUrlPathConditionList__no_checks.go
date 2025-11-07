@@ -15,7 +15,7 @@ func (c *jsiiProxy_CdnFrontdoorRuleConditionsUrlPathConditionList) validateGetPa
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorRuleConditionsUrlPathConditionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnFrontdoorRuleConditionsUrlPathConditionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

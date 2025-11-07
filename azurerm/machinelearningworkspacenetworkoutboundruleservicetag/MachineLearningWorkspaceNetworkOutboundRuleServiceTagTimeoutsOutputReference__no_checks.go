@@ -43,11 +43,11 @@ func (m *jsiiProxy_MachineLearningWorkspaceNetworkOutboundRuleServiceTagTimeouts
 	return nil
 }
 
-func (m *jsiiProxy_MachineLearningWorkspaceNetworkOutboundRuleServiceTagTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MachineLearningWorkspaceNetworkOutboundRuleServiceTagTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MachineLearningWorkspaceNetworkOutboundRuleServiceTagTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MachineLearningWorkspaceNetworkOutboundRuleServiceTagTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

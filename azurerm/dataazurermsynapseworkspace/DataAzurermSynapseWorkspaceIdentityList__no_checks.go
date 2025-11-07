@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermSynapseWorkspaceIdentityList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermSynapseWorkspaceIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermSynapseWorkspaceIdentityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

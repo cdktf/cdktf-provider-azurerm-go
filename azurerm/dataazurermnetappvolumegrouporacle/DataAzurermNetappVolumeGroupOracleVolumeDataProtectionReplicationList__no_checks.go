@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermNetappVolumeGroupOracleVolumeDataProtectionReplica
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNetappVolumeGroupOracleVolumeDataProtectionReplicationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermNetappVolumeGroupOracleVolumeDataProtectionReplicationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (t *jsiiProxy_TrafficManagerAzureEndpointCustomHeaderList) validateGetParam
 	return nil
 }
 
-func (t *jsiiProxy_TrafficManagerAzureEndpointCustomHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TrafficManagerAzureEndpointCustomHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

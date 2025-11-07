@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerRegistryTaskRegistryCredentialCustomList) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ContainerRegistryTaskRegistryCredentialCustomList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerRegistryTaskRegistryCredentialCustomList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

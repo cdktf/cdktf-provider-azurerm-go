@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermConfidentialLedgerCertificateBasedSecurityPrincipa
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermConfidentialLedgerCertificateBasedSecurityPrincipalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermConfidentialLedgerCertificateBasedSecurityPrincipalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermConfidentialLedgerCertificateBasedSecurityPrincipalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermConfidentialLedgerCertificateBasedSecurityPrincipalOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

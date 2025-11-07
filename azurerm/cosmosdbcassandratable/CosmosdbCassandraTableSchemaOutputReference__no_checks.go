@@ -43,7 +43,7 @@ func (c *jsiiProxy_CosmosdbCassandraTableSchemaOutputReference) validateGetStrin
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbCassandraTableSchemaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CosmosdbCassandraTableSchemaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (c *jsiiProxy_CosmosdbCassandraTableSchemaOutputReference) validatePutParti
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbCassandraTableSchemaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbCassandraTableSchemaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

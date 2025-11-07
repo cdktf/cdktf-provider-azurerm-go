@@ -15,7 +15,7 @@ func (n *jsiiProxy_NginxDeploymentLoggingStorageAccountList) validateGetParamete
 	return nil
 }
 
-func (n *jsiiProxy_NginxDeploymentLoggingStorageAccountList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NginxDeploymentLoggingStorageAccountList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

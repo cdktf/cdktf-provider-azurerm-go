@@ -85,17 +85,17 @@ func (m *jsiiProxy_MssqlVirtualMachineAssessmentScheduleOutputReference) validat
 	return nil
 }
 
-func (m *jsiiProxy_MssqlVirtualMachineAssessmentScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (m *jsiiProxy_MssqlVirtualMachineAssessmentScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (m *jsiiProxy_MssqlVirtualMachineAssessmentScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (m *jsiiProxy_MssqlVirtualMachineAssessmentScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

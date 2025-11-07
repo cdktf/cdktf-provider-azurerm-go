@@ -15,7 +15,7 @@ func (g *jsiiProxy_GalleryApplicationVersionTargetRegionList) validateGetParamet
 	return nil
 }
 
-func (g *jsiiProxy_GalleryApplicationVersionTargetRegionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GalleryApplicationVersionTargetRegionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

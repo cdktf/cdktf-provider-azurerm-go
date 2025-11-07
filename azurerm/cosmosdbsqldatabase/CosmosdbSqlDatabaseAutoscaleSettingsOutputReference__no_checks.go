@@ -43,11 +43,11 @@ func (c *jsiiProxy_CosmosdbSqlDatabaseAutoscaleSettingsOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbSqlDatabaseAutoscaleSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CosmosdbSqlDatabaseAutoscaleSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbSqlDatabaseAutoscaleSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbSqlDatabaseAutoscaleSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

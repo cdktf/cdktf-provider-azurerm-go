@@ -15,7 +15,7 @@ func (c *jsiiProxy_CosmosdbMongoCollectionIndexList) validateGetParameters(index
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbMongoCollectionIndexList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbMongoCollectionIndexList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitorMetricAlertDynamicCriteriaDimensionList) validateGetPa
 	return nil
 }
 
-func (m *jsiiProxy_MonitorMetricAlertDynamicCriteriaDimensionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorMetricAlertDynamicCriteriaDimensionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

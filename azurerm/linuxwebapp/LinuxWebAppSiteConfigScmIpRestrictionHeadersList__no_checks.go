@@ -15,7 +15,7 @@ func (l *jsiiProxy_LinuxWebAppSiteConfigScmIpRestrictionHeadersList) validateGet
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppSiteConfigScmIpRestrictionHeadersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxWebAppSiteConfigScmIpRestrictionHeadersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

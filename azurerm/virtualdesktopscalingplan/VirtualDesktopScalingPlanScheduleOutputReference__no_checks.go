@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualDesktopScalingPlanScheduleOutputReference) validateGet
 	return nil
 }
 
-func (v *jsiiProxy_VirtualDesktopScalingPlanScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualDesktopScalingPlanScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualDesktopScalingPlanScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualDesktopScalingPlanScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

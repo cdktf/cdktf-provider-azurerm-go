@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitorAutoscaleSettingProfileRuleMetricTriggerDimensionsOutp
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAutoscaleSettingProfileRuleMetricTriggerDimensionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorAutoscaleSettingProfileRuleMetricTriggerDimensionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAutoscaleSettingProfileRuleMetricTriggerDimensionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorAutoscaleSettingProfileRuleMetricTriggerDimensionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

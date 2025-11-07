@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermElasticSanVolumeSnapshotTimeoutsOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermElasticSanVolumeSnapshotTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermElasticSanVolumeSnapshotTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermElasticSanVolumeSnapshotTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermElasticSanVolumeSnapshotTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

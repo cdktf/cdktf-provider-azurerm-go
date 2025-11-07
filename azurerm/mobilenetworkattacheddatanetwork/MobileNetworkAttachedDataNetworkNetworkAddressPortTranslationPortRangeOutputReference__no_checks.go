@@ -43,11 +43,11 @@ func (m *jsiiProxy_MobileNetworkAttachedDataNetworkNetworkAddressPortTranslation
 	return nil
 }
 
-func (m *jsiiProxy_MobileNetworkAttachedDataNetworkNetworkAddressPortTranslationPortRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MobileNetworkAttachedDataNetworkNetworkAddressPortTranslationPortRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MobileNetworkAttachedDataNetworkNetworkAddressPortTranslationPortRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MobileNetworkAttachedDataNetworkNetworkAddressPortTranslationPortRangeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

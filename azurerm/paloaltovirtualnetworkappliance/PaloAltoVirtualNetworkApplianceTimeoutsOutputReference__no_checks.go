@@ -43,11 +43,11 @@ func (p *jsiiProxy_PaloAltoVirtualNetworkApplianceTimeoutsOutputReference) valid
 	return nil
 }
 
-func (p *jsiiProxy_PaloAltoVirtualNetworkApplianceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PaloAltoVirtualNetworkApplianceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PaloAltoVirtualNetworkApplianceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PaloAltoVirtualNetworkApplianceTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

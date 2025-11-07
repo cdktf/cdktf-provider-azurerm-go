@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkManagerConnectivityConfigurationAppliesToGroupList) va
 	return nil
 }
 
-func (n *jsiiProxy_NetworkManagerConnectivityConfigurationAppliesToGroupList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkManagerConnectivityConfigurationAppliesToGroupList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

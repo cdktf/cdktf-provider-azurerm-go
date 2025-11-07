@@ -43,11 +43,11 @@ func (p *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputRefere
 	return nil
 }
 
-func (p *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

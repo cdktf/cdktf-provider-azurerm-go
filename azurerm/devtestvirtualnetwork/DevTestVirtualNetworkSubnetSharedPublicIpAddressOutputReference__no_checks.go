@@ -43,7 +43,7 @@ func (d *jsiiProxy_DevTestVirtualNetworkSubnetSharedPublicIpAddressOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DevTestVirtualNetworkSubnetSharedPublicIpAddressOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DevTestVirtualNetworkSubnetSharedPublicIpAddressOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DevTestVirtualNetworkSubnetSharedPublicIpAddressOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DevTestVirtualNetworkSubnetSharedPublicIpAddressOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DevTestVirtualNetworkSubnetSharedPublicIpAddressOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

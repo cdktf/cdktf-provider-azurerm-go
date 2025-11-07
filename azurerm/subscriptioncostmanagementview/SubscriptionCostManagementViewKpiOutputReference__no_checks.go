@@ -43,11 +43,11 @@ func (s *jsiiProxy_SubscriptionCostManagementViewKpiOutputReference) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_SubscriptionCostManagementViewKpiOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SubscriptionCostManagementViewKpiOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SubscriptionCostManagementViewKpiOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SubscriptionCostManagementViewKpiOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

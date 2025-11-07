@@ -43,11 +43,11 @@ func (m *jsiiProxy_ManagedLustreFileSystemEncryptionKeyOutputReference) validate
 	return nil
 }
 
-func (m *jsiiProxy_ManagedLustreFileSystemEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ManagedLustreFileSystemEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ManagedLustreFileSystemEncryptionKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedLustreFileSystemEncryptionKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_SignalrServiceNetworkAclPrivateEndpointList) validateGetParam
 	return nil
 }
 
-func (s *jsiiProxy_SignalrServiceNetworkAclPrivateEndpointList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SignalrServiceNetworkAclPrivateEndpointList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

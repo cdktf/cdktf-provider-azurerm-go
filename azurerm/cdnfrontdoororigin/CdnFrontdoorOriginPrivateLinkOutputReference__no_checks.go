@@ -43,11 +43,11 @@ func (c *jsiiProxy_CdnFrontdoorOriginPrivateLinkOutputReference) validateGetStri
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorOriginPrivateLinkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CdnFrontdoorOriginPrivateLinkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorOriginPrivateLinkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnFrontdoorOriginPrivateLinkOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

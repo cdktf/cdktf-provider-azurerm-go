@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermPolicyVirtualMachineConfigurationAssignmentTimeout
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermPolicyVirtualMachineConfigurationAssignmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermPolicyVirtualMachineConfigurationAssignmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermPolicyVirtualMachineConfigurationAssignmentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermPolicyVirtualMachineConfigurationAssignmentTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

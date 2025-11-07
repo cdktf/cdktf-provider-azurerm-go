@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermLocalNetworkGatewayBgpSettingsList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLocalNetworkGatewayBgpSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermLocalNetworkGatewayBgpSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (r *jsiiProxy_RedisLinkedServerTimeoutsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (r *jsiiProxy_RedisLinkedServerTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedisLinkedServerTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RedisLinkedServerTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisLinkedServerTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

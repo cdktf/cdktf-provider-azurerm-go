@@ -102,7 +102,7 @@ type WindowsWebAppSlotAuthSettingsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutActiveDirectory(value *WindowsWebAppSlotAuthSettingsActiveDirectory)
 	PutFacebook(value *WindowsWebAppSlotAuthSettingsFacebook)
 	PutGithub(value *WindowsWebAppSlotAuthSettingsGithub)
@@ -125,7 +125,7 @@ type WindowsWebAppSlotAuthSettingsOutputReference interface {
 	ResetUnauthenticatedClientAction()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -860,8 +860,8 @@ func (w *jsiiProxy_WindowsWebAppSlotAuthSettingsOutputReference) InterpolationAs
 	return returns
 }
 
-func (w *jsiiProxy_WindowsWebAppSlotAuthSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+func (w *jsiiProxy_WindowsWebAppSlotAuthSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -869,7 +869,7 @@ func (w *jsiiProxy_WindowsWebAppSlotAuthSettingsOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1054,8 +1054,8 @@ func (w *jsiiProxy_WindowsWebAppSlotAuthSettingsOutputReference) ResetUnauthenti
 	)
 }
 
-func (w *jsiiProxy_WindowsWebAppSlotAuthSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_WindowsWebAppSlotAuthSettingsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1063,7 +1063,7 @@ func (w *jsiiProxy_WindowsWebAppSlotAuthSettingsOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

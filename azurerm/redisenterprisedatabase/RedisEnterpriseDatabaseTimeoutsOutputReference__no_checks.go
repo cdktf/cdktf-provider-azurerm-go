@@ -43,11 +43,11 @@ func (r *jsiiProxy_RedisEnterpriseDatabaseTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (r *jsiiProxy_RedisEnterpriseDatabaseTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedisEnterpriseDatabaseTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RedisEnterpriseDatabaseTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisEnterpriseDatabaseTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

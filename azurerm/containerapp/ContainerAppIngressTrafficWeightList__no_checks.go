@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerAppIngressTrafficWeightList) validateGetParameters(i
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppIngressTrafficWeightList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppIngressTrafficWeightList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

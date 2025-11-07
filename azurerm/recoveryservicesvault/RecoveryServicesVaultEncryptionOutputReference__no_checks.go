@@ -43,11 +43,11 @@ func (r *jsiiProxy_RecoveryServicesVaultEncryptionOutputReference) validateGetSt
 	return nil
 }
 
-func (r *jsiiProxy_RecoveryServicesVaultEncryptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RecoveryServicesVaultEncryptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RecoveryServicesVaultEncryptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RecoveryServicesVaultEncryptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

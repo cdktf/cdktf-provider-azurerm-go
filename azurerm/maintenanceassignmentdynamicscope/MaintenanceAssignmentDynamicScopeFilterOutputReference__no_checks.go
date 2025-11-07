@@ -43,7 +43,7 @@ func (m *jsiiProxy_MaintenanceAssignmentDynamicScopeFilterOutputReference) valid
 	return nil
 }
 
-func (m *jsiiProxy_MaintenanceAssignmentDynamicScopeFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MaintenanceAssignmentDynamicScopeFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MaintenanceAssignmentDynamicScopeFilterOutputReference) valid
 	return nil
 }
 
-func (m *jsiiProxy_MaintenanceAssignmentDynamicScopeFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MaintenanceAssignmentDynamicScopeFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

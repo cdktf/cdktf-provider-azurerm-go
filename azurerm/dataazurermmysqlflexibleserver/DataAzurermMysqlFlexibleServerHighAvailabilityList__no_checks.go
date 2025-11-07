@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermMysqlFlexibleServerHighAvailabilityList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMysqlFlexibleServerHighAvailabilityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermMysqlFlexibleServerHighAvailabilityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

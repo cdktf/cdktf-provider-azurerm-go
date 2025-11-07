@@ -15,7 +15,7 @@ func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPool
 	return nil
 }
 
-func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPoolList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPoolList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

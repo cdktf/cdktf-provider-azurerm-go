@@ -43,11 +43,11 @@ func (n *jsiiProxy_NginxDeploymentLoggingStorageAccountOutputReference) validate
 	return nil
 }
 
-func (n *jsiiProxy_NginxDeploymentLoggingStorageAccountOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NginxDeploymentLoggingStorageAccountOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NginxDeploymentLoggingStorageAccountOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NginxDeploymentLoggingStorageAccountOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (v *jsiiProxy_VirtualNetworkGatewayPolicyGroupPolicyMemberList) validateGet
 	return nil
 }
 
-func (v *jsiiProxy_VirtualNetworkGatewayPolicyGroupPolicyMemberList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualNetworkGatewayPolicyGroupPolicyMemberList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

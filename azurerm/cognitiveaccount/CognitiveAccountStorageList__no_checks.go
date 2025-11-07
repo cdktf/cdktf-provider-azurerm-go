@@ -15,7 +15,7 @@ func (c *jsiiProxy_CognitiveAccountStorageList) validateGetParameters(index *flo
 	return nil
 }
 
-func (c *jsiiProxy_CognitiveAccountStorageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitiveAccountStorageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

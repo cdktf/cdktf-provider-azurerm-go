@@ -43,7 +43,7 @@ func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitOutputReference) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -71,7 +71,7 @@ func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitOutputReference) validatePu
 	return nil
 }
 
-func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

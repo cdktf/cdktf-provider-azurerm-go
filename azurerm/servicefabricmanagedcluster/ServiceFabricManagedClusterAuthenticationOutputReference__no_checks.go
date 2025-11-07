@@ -43,7 +43,7 @@ func (s *jsiiProxy_ServiceFabricManagedClusterAuthenticationOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricManagedClusterAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceFabricManagedClusterAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_ServiceFabricManagedClusterAuthenticationOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricManagedClusterAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceFabricManagedClusterAuthenticationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesClusterNodePoolNodeNetworkProfileAllowedHostPortsOu
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterNodePoolNodeNetworkProfileAllowedHostPortsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterNodePoolNodeNetworkProfileAllowedHostPortsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterNodePoolNodeNetworkProfileAllowedHostPortsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterNodePoolNodeNetworkProfileAllowedHostPortsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

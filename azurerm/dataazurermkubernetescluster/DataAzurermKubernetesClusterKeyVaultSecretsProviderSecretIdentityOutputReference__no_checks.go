@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermKubernetesClusterKeyVaultSecretsProviderSecretIden
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKubernetesClusterKeyVaultSecretsProviderSecretIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermKubernetesClusterKeyVaultSecretsProviderSecretIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKubernetesClusterKeyVaultSecretsProviderSecretIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermKubernetesClusterKeyVaultSecretsProviderSecretIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

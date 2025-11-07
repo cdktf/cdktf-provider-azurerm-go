@@ -43,11 +43,11 @@ func (e *jsiiProxy_ExtendedCustomLocationTimeoutsOutputReference) validateGetStr
 	return nil
 }
 
-func (e *jsiiProxy_ExtendedCustomLocationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ExtendedCustomLocationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ExtendedCustomLocationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ExtendedCustomLocationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

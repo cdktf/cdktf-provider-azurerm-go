@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermDevCenterCatalogCatalogGithubList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDevCenterCatalogCatalogGithubList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermDevCenterCatalogCatalogGithubList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

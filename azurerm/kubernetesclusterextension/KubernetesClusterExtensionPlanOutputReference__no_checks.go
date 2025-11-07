@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesClusterExtensionPlanOutputReference) validateGetStr
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterExtensionPlanOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterExtensionPlanOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterExtensionPlanOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterExtensionPlanOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

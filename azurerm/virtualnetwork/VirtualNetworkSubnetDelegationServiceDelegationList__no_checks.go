@@ -15,7 +15,7 @@ func (v *jsiiProxy_VirtualNetworkSubnetDelegationServiceDelegationList) validate
 	return nil
 }
 
-func (v *jsiiProxy_VirtualNetworkSubnetDelegationServiceDelegationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualNetworkSubnetDelegationServiceDelegationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

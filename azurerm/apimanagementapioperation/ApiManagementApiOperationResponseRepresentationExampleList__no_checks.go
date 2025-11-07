@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApiManagementApiOperationResponseRepresentationExampleList) v
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementApiOperationResponseRepresentationExampleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementApiOperationResponseRepresentationExampleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

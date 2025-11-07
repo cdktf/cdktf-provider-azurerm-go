@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermLinuxWebAppLogsApplicationLogsList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermLinuxWebAppLogsApplicationLogsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermLinuxWebAppLogsApplicationLogsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

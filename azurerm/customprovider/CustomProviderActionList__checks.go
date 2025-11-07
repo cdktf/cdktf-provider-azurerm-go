@@ -29,9 +29,9 @@ func (c *jsiiProxy_CustomProviderActionList) validateGetParameters(index *float6
 	return nil
 }
 
-func (c *jsiiProxy_CustomProviderActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_CustomProviderActionList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

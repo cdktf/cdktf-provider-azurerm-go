@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpringCloudElasticApplicationPerformanceMonitoringTimeoutsOut
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudElasticApplicationPerformanceMonitoringTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpringCloudElasticApplicationPerformanceMonitoringTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudElasticApplicationPerformanceMonitoringTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpringCloudElasticApplicationPerformanceMonitoringTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

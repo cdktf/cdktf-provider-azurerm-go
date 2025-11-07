@@ -43,11 +43,11 @@ func (m *jsiiProxy_MachineLearningInferenceClusterIdentityOutputReference) valid
 	return nil
 }
 
-func (m *jsiiProxy_MachineLearningInferenceClusterIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MachineLearningInferenceClusterIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MachineLearningInferenceClusterIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MachineLearningInferenceClusterIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

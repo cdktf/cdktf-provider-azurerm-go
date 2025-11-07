@@ -43,11 +43,11 @@ func (n *jsiiProxy_NotificationHubApnsCredentialOutputReference) validateGetStri
 	return nil
 }
 
-func (n *jsiiProxy_NotificationHubApnsCredentialOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NotificationHubApnsCredentialOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NotificationHubApnsCredentialOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotificationHubApnsCredentialOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

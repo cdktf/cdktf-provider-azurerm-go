@@ -43,11 +43,11 @@ func (h *jsiiProxy_HdinsightKafkaClusterComputeIsolationOutputReference) validat
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightKafkaClusterComputeIsolationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HdinsightKafkaClusterComputeIsolationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightKafkaClusterComputeIsolationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HdinsightKafkaClusterComputeIsolationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

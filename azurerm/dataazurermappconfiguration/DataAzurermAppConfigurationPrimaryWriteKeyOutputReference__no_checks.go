@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermAppConfigurationPrimaryWriteKeyOutputReference) va
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermAppConfigurationPrimaryWriteKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermAppConfigurationPrimaryWriteKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermAppConfigurationPrimaryWriteKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermAppConfigurationPrimaryWriteKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

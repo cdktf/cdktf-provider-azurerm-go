@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermKubernetesClusterAgentPoolProfileList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKubernetesClusterAgentPoolProfileList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermKubernetesClusterAgentPoolProfileList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

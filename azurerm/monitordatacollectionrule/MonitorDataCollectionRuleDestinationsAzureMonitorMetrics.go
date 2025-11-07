@@ -5,7 +5,7 @@ package monitordatacollectionrule
 
 
 type MonitorDataCollectionRuleDestinationsAzureMonitorMetrics struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

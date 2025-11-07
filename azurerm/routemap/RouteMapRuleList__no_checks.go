@@ -15,7 +15,7 @@ func (r *jsiiProxy_RouteMapRuleList) validateGetParameters(index *float64) error
 	return nil
 }
 
-func (r *jsiiProxy_RouteMapRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RouteMapRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

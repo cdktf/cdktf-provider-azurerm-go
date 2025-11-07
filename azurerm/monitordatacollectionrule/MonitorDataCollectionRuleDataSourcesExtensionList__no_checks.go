@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesExtensionList) validateGe
 	return nil
 }
 
-func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesExtensionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesExtensionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

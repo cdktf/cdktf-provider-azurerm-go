@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualHubSecurityPartnerProviderTimeoutsOutputReference) val
 	return nil
 }
 
-func (v *jsiiProxy_VirtualHubSecurityPartnerProviderTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualHubSecurityPartnerProviderTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualHubSecurityPartnerProviderTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualHubSecurityPartnerProviderTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

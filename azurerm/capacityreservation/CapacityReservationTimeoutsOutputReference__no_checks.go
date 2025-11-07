@@ -43,11 +43,11 @@ func (c *jsiiProxy_CapacityReservationTimeoutsOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_CapacityReservationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CapacityReservationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CapacityReservationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CapacityReservationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

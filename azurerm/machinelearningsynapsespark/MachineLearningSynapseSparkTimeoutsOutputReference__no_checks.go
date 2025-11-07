@@ -43,11 +43,11 @@ func (m *jsiiProxy_MachineLearningSynapseSparkTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (m *jsiiProxy_MachineLearningSynapseSparkTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MachineLearningSynapseSparkTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MachineLearningSynapseSparkTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MachineLearningSynapseSparkTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

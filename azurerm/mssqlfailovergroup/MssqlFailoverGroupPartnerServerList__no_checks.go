@@ -15,7 +15,7 @@ func (m *jsiiProxy_MssqlFailoverGroupPartnerServerList) validateGetParameters(in
 	return nil
 }
 
-func (m *jsiiProxy_MssqlFailoverGroupPartnerServerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlFailoverGroupPartnerServerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

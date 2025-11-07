@@ -15,7 +15,7 @@ func (m *jsiiProxy_MaintenanceAssignmentDynamicScopeFilterTagsList) validateGetP
 	return nil
 }
 
-func (m *jsiiProxy_MaintenanceAssignmentDynamicScopeFilterTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MaintenanceAssignmentDynamicScopeFilterTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

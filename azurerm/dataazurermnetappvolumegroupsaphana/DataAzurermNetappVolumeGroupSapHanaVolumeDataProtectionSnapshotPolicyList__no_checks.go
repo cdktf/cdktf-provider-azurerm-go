@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionSnapsh
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionSnapshotPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionSnapshotPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

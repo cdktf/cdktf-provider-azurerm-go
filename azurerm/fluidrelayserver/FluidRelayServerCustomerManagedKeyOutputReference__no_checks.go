@@ -43,11 +43,11 @@ func (f *jsiiProxy_FluidRelayServerCustomerManagedKeyOutputReference) validateGe
 	return nil
 }
 
-func (f *jsiiProxy_FluidRelayServerCustomerManagedKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FluidRelayServerCustomerManagedKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FluidRelayServerCustomerManagedKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FluidRelayServerCustomerManagedKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

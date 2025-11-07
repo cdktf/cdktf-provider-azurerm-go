@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualDesktopHostPoolTimeoutsOutputReference) validateGetStr
 	return nil
 }
 
-func (v *jsiiProxy_VirtualDesktopHostPoolTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualDesktopHostPoolTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualDesktopHostPoolTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualDesktopHostPoolTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

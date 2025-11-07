@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermConfidentialLedgerAzureadBasedServicePrincipalOutp
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermConfidentialLedgerAzureadBasedServicePrincipalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermConfidentialLedgerAzureadBasedServicePrincipalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermConfidentialLedgerAzureadBasedServicePrincipalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermConfidentialLedgerAzureadBasedServicePrincipalOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

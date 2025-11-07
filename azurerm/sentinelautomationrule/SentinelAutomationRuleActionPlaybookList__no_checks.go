@@ -15,7 +15,7 @@ func (s *jsiiProxy_SentinelAutomationRuleActionPlaybookList) validateGetParamete
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAutomationRuleActionPlaybookList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelAutomationRuleActionPlaybookList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

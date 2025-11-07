@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppServiceSlotSiteConfigScmIpRestrictionList) validateGetPara
 	return nil
 }
 
-func (a *jsiiProxy_AppServiceSlotSiteConfigScmIpRestrictionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppServiceSlotSiteConfigScmIpRestrictionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

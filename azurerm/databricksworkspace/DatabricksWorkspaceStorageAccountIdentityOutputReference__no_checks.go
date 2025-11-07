@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatabricksWorkspaceStorageAccountIdentityOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DatabricksWorkspaceStorageAccountIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabricksWorkspaceStorageAccountIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabricksWorkspaceStorageAccountIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabricksWorkspaceStorageAccountIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

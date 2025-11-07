@@ -15,7 +15,7 @@ func (v *jsiiProxy_VpnGatewayNatRuleInternalMappingList) validateGetParameters(i
 	return nil
 }
 
-func (v *jsiiProxy_VpnGatewayNatRuleInternalMappingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpnGatewayNatRuleInternalMappingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

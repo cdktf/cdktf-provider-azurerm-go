@@ -15,7 +15,7 @@ func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanoramaDestinationNa
 	return nil
 }
 
-func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanoramaDestinationNatList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanoramaDestinationNatList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

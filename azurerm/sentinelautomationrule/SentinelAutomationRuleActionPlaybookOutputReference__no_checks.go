@@ -43,11 +43,11 @@ func (s *jsiiProxy_SentinelAutomationRuleActionPlaybookOutputReference) validate
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAutomationRuleActionPlaybookOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SentinelAutomationRuleActionPlaybookOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAutomationRuleActionPlaybookOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelAutomationRuleActionPlaybookOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

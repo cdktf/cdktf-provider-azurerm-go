@@ -43,11 +43,11 @@ func (c *jsiiProxy_CosmosdbSqlTriggerTimeoutsOutputReference) validateGetStringM
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbSqlTriggerTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CosmosdbSqlTriggerTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbSqlTriggerTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbSqlTriggerTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermMaintenanceConfigurationInstallPatchesWindowsOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMaintenanceConfigurationInstallPatchesWindowsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermMaintenanceConfigurationInstallPatchesWindowsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermMaintenanceConfigurationInstallPatchesWindowsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermMaintenanceConfigurationInstallPatchesWindowsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

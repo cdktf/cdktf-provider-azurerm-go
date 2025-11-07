@@ -15,7 +15,7 @@ func (s *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionList) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

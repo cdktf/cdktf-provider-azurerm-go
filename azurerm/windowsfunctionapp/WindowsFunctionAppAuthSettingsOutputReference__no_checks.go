@@ -43,7 +43,7 @@ func (w *jsiiProxy_WindowsFunctionAppAuthSettingsOutputReference) validateGetStr
 	return nil
 }
 
-func (w *jsiiProxy_WindowsFunctionAppAuthSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsFunctionAppAuthSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -71,7 +71,7 @@ func (w *jsiiProxy_WindowsFunctionAppAuthSettingsOutputReference) validatePutTwi
 	return nil
 }
 
-func (w *jsiiProxy_WindowsFunctionAppAuthSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsFunctionAppAuthSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermVpnGatewayBgpSettingsInstance1BgpPeeringAddressLis
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermVpnGatewayBgpSettingsInstance1BgpPeeringAddressList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermVpnGatewayBgpSettingsInstance1BgpPeeringAddressList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

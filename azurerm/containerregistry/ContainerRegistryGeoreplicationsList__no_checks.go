@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerRegistryGeoreplicationsList) validateGetParameters(i
 	return nil
 }
 
-func (c *jsiiProxy_ContainerRegistryGeoreplicationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerRegistryGeoreplicationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

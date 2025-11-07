@@ -43,11 +43,11 @@ func (s *jsiiProxy_SearchSharedPrivateLinkServiceTimeoutsOutputReference) valida
 	return nil
 }
 
-func (s *jsiiProxy_SearchSharedPrivateLinkServiceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SearchSharedPrivateLinkServiceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SearchSharedPrivateLinkServiceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SearchSharedPrivateLinkServiceTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

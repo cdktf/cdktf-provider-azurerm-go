@@ -43,11 +43,11 @@ func (m *jsiiProxy_MssqlDatabaseExtendedAuditingPolicyTimeoutsOutputReference) v
 	return nil
 }
 
-func (m *jsiiProxy_MssqlDatabaseExtendedAuditingPolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlDatabaseExtendedAuditingPolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MssqlDatabaseExtendedAuditingPolicyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlDatabaseExtendedAuditingPolicyTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

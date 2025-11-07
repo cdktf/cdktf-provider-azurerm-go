@@ -15,7 +15,7 @@ func (o *jsiiProxy_OrbitalSpacecraftLinksList) validateGetParameters(index *floa
 	return nil
 }
 
-func (o *jsiiProxy_OrbitalSpacecraftLinksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrbitalSpacecraftLinksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

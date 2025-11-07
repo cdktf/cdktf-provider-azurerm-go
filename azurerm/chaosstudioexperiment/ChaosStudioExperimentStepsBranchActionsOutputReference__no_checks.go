@@ -43,11 +43,11 @@ func (c *jsiiProxy_ChaosStudioExperimentStepsBranchActionsOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_ChaosStudioExperimentStepsBranchActionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChaosStudioExperimentStepsBranchActionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChaosStudioExperimentStepsBranchActionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChaosStudioExperimentStepsBranchActionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

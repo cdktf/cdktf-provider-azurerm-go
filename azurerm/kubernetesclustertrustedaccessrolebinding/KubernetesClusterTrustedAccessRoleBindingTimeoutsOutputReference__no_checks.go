@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesClusterTrustedAccessRoleBindingTimeoutsOutputRefere
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterTrustedAccessRoleBindingTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterTrustedAccessRoleBindingTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterTrustedAccessRoleBindingTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterTrustedAccessRoleBindingTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

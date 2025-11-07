@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesPrometheusForwarderList) 
 	return nil
 }
 
-func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesPrometheusForwarderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesPrometheusForwarderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

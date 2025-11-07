@@ -43,7 +43,7 @@ func (w *jsiiProxy_WindowsWebAppSiteConfigOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppSiteConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsWebAppSiteConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (w *jsiiProxy_WindowsWebAppSiteConfigOutputReference) validatePutVirtualApp
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppSiteConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsWebAppSiteConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

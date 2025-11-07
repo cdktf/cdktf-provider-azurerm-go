@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobStorageLocationOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobStorageLocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobStorageLocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobStorageLocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobStorageLocationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

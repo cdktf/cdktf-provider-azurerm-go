@@ -15,7 +15,7 @@ func (c *jsiiProxy_CosmosdbAccountGeoLocationList) validateGetParameters(index *
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbAccountGeoLocationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbAccountGeoLocationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

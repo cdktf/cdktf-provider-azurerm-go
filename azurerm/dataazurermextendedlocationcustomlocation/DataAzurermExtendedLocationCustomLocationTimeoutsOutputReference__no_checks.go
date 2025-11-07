@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermExtendedLocationCustomLocationTimeoutsOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermExtendedLocationCustomLocationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermExtendedLocationCustomLocationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermExtendedLocationCustomLocationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermExtendedLocationCustomLocationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermRecoveryServicesVaultIdentityOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermRecoveryServicesVaultIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermRecoveryServicesVaultIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermRecoveryServicesVaultIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermRecoveryServicesVaultIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

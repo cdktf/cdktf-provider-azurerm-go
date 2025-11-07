@@ -43,11 +43,11 @@ func (w *jsiiProxy_WindowsFunctionAppStickySettingsOutputReference) validateGetS
 	return nil
 }
 
-func (w *jsiiProxy_WindowsFunctionAppStickySettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WindowsFunctionAppStickySettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WindowsFunctionAppStickySettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsFunctionAppStickySettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

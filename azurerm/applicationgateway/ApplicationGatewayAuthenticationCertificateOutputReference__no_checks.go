@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApplicationGatewayAuthenticationCertificateOutputReference) v
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayAuthenticationCertificateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApplicationGatewayAuthenticationCertificateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationGatewayAuthenticationCertificateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationGatewayAuthenticationCertificateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

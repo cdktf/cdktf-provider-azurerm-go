@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermDatabricksWorkspaceEnhancedSecurityComplianceList)
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermDatabricksWorkspaceEnhancedSecurityComplianceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermDatabricksWorkspaceEnhancedSecurityComplianceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

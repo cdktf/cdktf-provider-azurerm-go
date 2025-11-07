@@ -15,7 +15,7 @@ func (c *jsiiProxy_CosmosdbSqlContainerUniqueKeyList) validateGetParameters(inde
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbSqlContainerUniqueKeyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbSqlContainerUniqueKeyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

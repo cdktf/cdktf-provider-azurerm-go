@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataFactoryDatasetAzureBlobSchemaColumnList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryDatasetAzureBlobSchemaColumnList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryDatasetAzureBlobSchemaColumnList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

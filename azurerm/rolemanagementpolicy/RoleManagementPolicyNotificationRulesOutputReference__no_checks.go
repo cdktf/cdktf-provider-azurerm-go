@@ -43,7 +43,7 @@ func (r *jsiiProxy_RoleManagementPolicyNotificationRulesOutputReference) validat
 	return nil
 }
 
-func (r *jsiiProxy_RoleManagementPolicyNotificationRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RoleManagementPolicyNotificationRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (r *jsiiProxy_RoleManagementPolicyNotificationRulesOutputReference) validat
 	return nil
 }
 
-func (r *jsiiProxy_RoleManagementPolicyNotificationRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RoleManagementPolicyNotificationRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

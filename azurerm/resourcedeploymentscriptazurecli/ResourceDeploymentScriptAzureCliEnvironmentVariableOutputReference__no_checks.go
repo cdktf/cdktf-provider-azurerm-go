@@ -43,11 +43,11 @@ func (r *jsiiProxy_ResourceDeploymentScriptAzureCliEnvironmentVariableOutputRefe
 	return nil
 }
 
-func (r *jsiiProxy_ResourceDeploymentScriptAzureCliEnvironmentVariableOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ResourceDeploymentScriptAzureCliEnvironmentVariableOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_ResourceDeploymentScriptAzureCliEnvironmentVariableOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResourceDeploymentScriptAzureCliEnvironmentVariableOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

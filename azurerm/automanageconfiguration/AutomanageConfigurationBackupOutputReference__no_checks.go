@@ -43,7 +43,7 @@ func (a *jsiiProxy_AutomanageConfigurationBackupOutputReference) validateGetStri
 	return nil
 }
 
-func (a *jsiiProxy_AutomanageConfigurationBackupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutomanageConfigurationBackupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (a *jsiiProxy_AutomanageConfigurationBackupOutputReference) validatePutSche
 	return nil
 }
 
-func (a *jsiiProxy_AutomanageConfigurationBackupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutomanageConfigurationBackupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServiceFabricClusterCertificateCommonNamesCommonNamesList) va
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricClusterCertificateCommonNamesCommonNamesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceFabricClusterCertificateCommonNamesCommonNamesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

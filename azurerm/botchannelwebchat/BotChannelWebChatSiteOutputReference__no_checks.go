@@ -43,11 +43,11 @@ func (b *jsiiProxy_BotChannelWebChatSiteOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (b *jsiiProxy_BotChannelWebChatSiteOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BotChannelWebChatSiteOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BotChannelWebChatSiteOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BotChannelWebChatSiteOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

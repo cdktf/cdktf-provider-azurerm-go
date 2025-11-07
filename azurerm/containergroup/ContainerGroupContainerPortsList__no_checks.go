@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerGroupContainerPortsList) validateGetParameters(index
 	return nil
 }
 
-func (c *jsiiProxy_ContainerGroupContainerPortsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerGroupContainerPortsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (k *jsiiProxy_KubernetesClusterKubeAdminConfigList) validateGetParameters(i
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterKubeAdminConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterKubeAdminConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

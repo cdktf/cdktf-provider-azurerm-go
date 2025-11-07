@@ -43,11 +43,11 @@ func (f *jsiiProxy_FunctionAppFlexConsumptionStickySettingsOutputReference) vali
 	return nil
 }
 
-func (f *jsiiProxy_FunctionAppFlexConsumptionStickySettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FunctionAppFlexConsumptionStickySettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FunctionAppFlexConsumptionStickySettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FunctionAppFlexConsumptionStickySettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (v *jsiiProxy_VirtualMachineScaleSetOsProfileWindowsConfigWinrmList) valida
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineScaleSetOsProfileWindowsConfigWinrmList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineScaleSetOsProfileWindowsConfigWinrmList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

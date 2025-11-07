@@ -43,11 +43,11 @@ func (n *jsiiProxy_NewRelicMonitorIdentityOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (n *jsiiProxy_NewRelicMonitorIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NewRelicMonitorIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NewRelicMonitorIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NewRelicMonitorIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

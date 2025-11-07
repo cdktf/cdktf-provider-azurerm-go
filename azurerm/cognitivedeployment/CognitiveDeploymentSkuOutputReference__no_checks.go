@@ -43,11 +43,11 @@ func (c *jsiiProxy_CognitiveDeploymentSkuOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (c *jsiiProxy_CognitiveDeploymentSkuOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CognitiveDeploymentSkuOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CognitiveDeploymentSkuOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitiveDeploymentSkuOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

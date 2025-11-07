@@ -15,7 +15,7 @@ func (v *jsiiProxy_VpnServerConfigurationAzureActiveDirectoryAuthenticationList)
 	return nil
 }
 
-func (v *jsiiProxy_VpnServerConfigurationAzureActiveDirectoryAuthenticationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpnServerConfigurationAzureActiveDirectoryAuthenticationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

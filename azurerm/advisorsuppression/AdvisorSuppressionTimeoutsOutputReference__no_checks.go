@@ -43,11 +43,11 @@ func (a *jsiiProxy_AdvisorSuppressionTimeoutsOutputReference) validateGetStringM
 	return nil
 }
 
-func (a *jsiiProxy_AdvisorSuppressionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AdvisorSuppressionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AdvisorSuppressionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AdvisorSuppressionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

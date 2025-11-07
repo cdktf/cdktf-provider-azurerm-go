@@ -15,7 +15,7 @@ func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConf
 	return nil
 }
 
-func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

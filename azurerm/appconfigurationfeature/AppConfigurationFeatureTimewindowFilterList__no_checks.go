@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppConfigurationFeatureTimewindowFilterList) validateGetParam
 	return nil
 }
 
-func (a *jsiiProxy_AppConfigurationFeatureTimewindowFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppConfigurationFeatureTimewindowFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

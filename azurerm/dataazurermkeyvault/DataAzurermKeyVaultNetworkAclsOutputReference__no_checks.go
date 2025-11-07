@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermKeyVaultNetworkAclsOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKeyVaultNetworkAclsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermKeyVaultNetworkAclsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKeyVaultNetworkAclsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermKeyVaultNetworkAclsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerAppJobTemplateInitContainerOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppJobTemplateInitContainerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAppJobTemplateInitContainerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_ContainerAppJobTemplateInitContainerOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppJobTemplateInitContainerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppJobTemplateInitContainerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

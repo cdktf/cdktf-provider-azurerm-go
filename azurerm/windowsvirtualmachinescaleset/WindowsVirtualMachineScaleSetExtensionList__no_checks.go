@@ -15,7 +15,7 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSetExtensionList) validateGetParame
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineScaleSetExtensionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsVirtualMachineScaleSetExtensionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataShareDatasetKustoClusterTimeoutsOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataShareDatasetKustoClusterTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataShareDatasetKustoClusterTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataShareDatasetKustoClusterTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataShareDatasetKustoClusterTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

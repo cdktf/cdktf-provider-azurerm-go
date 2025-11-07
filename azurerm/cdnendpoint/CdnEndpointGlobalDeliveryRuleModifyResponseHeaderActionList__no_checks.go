@@ -15,7 +15,7 @@ func (c *jsiiProxy_CdnEndpointGlobalDeliveryRuleModifyResponseHeaderActionList) 
 	return nil
 }
 
-func (c *jsiiProxy_CdnEndpointGlobalDeliveryRuleModifyResponseHeaderActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnEndpointGlobalDeliveryRuleModifyResponseHeaderActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

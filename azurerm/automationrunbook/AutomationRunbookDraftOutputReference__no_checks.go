@@ -43,7 +43,7 @@ func (a *jsiiProxy_AutomationRunbookDraftOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (a *jsiiProxy_AutomationRunbookDraftOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutomationRunbookDraftOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (a *jsiiProxy_AutomationRunbookDraftOutputReference) validatePutParametersP
 	return nil
 }
 
-func (a *jsiiProxy_AutomationRunbookDraftOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutomationRunbookDraftOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (m *jsiiProxy_ManagedLustreFileSystemRootSquashOutputReference) validateGet
 	return nil
 }
 
-func (m *jsiiProxy_ManagedLustreFileSystemRootSquashOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ManagedLustreFileSystemRootSquashOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ManagedLustreFileSystemRootSquashOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedLustreFileSystemRootSquashOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

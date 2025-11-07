@@ -43,11 +43,11 @@ func (s *jsiiProxy_StackHciLogicalNetworkTimeoutsOutputReference) validateGetStr
 	return nil
 }
 
-func (s *jsiiProxy_StackHciLogicalNetworkTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StackHciLogicalNetworkTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StackHciLogicalNetworkTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StackHciLogicalNetworkTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

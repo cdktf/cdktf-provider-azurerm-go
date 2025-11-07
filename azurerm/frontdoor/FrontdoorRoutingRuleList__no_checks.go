@@ -15,7 +15,7 @@ func (f *jsiiProxy_FrontdoorRoutingRuleList) validateGetParameters(index *float6
 	return nil
 }
 
-func (f *jsiiProxy_FrontdoorRoutingRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FrontdoorRoutingRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

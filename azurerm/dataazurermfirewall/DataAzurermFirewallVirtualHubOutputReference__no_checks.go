@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermFirewallVirtualHubOutputReference) validateGetStri
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermFirewallVirtualHubOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermFirewallVirtualHubOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermFirewallVirtualHubOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermFirewallVirtualHubOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

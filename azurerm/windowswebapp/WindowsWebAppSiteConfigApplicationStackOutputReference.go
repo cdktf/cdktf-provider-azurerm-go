@@ -108,7 +108,7 @@ type WindowsWebAppSiteConfigApplicationStackOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetCurrentStack()
 	ResetDockerImageName()
 	ResetDockerRegistryPassword()
@@ -126,7 +126,7 @@ type WindowsWebAppSiteConfigApplicationStackOutputReference interface {
 	ResetTomcatVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -927,8 +927,8 @@ func (w *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) Inter
 	return returns
 }
 
-func (w *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+func (w *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -936,7 +936,7 @@ func (w *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) Inter
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1063,8 +1063,8 @@ func (w *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) Reset
 	)
 }
 
-func (w *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1072,7 +1072,7 @@ func (w *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) Resol
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

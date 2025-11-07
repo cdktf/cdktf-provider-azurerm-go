@@ -43,7 +43,7 @@ func (f *jsiiProxy_FirewallPolicyIntrusionDetectionOutputReference) validateGetS
 	return nil
 }
 
-func (f *jsiiProxy_FirewallPolicyIntrusionDetectionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirewallPolicyIntrusionDetectionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (f *jsiiProxy_FirewallPolicyIntrusionDetectionOutputReference) validatePutT
 	return nil
 }
 
-func (f *jsiiProxy_FirewallPolicyIntrusionDetectionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirewallPolicyIntrusionDetectionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

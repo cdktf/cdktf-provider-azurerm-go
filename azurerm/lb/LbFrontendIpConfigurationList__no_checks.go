@@ -15,7 +15,7 @@ func (l *jsiiProxy_LbFrontendIpConfigurationList) validateGetParameters(index *f
 	return nil
 }
 
-func (l *jsiiProxy_LbFrontendIpConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbFrontendIpConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

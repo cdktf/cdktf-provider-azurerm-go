@@ -43,11 +43,11 @@ func (r *jsiiProxy_ResourceDeploymentScriptAzureCliTimeoutsOutputReference) vali
 	return nil
 }
 
-func (r *jsiiProxy_ResourceDeploymentScriptAzureCliTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ResourceDeploymentScriptAzureCliTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_ResourceDeploymentScriptAzureCliTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResourceDeploymentScriptAzureCliTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -29,9 +29,9 @@ func (l *jsiiProxy_LinuxWebAppAuthSettingsV2CustomOidcV2List) validateGetParamet
 	return nil
 }
 
-func (l *jsiiProxy_LinuxWebAppAuthSettingsV2CustomOidcV2List) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (l *jsiiProxy_LinuxWebAppAuthSettingsV2CustomOidcV2List) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

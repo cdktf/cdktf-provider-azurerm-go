@@ -43,11 +43,11 @@ func (d *jsiiProxy_DevTestScheduleWeeklyRecurrenceOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DevTestScheduleWeeklyRecurrenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DevTestScheduleWeeklyRecurrenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DevTestScheduleWeeklyRecurrenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DevTestScheduleWeeklyRecurrenceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

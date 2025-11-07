@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermOracleExadataInfrastructureDefinedFileSystemConfig
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermOracleExadataInfrastructureDefinedFileSystemConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermOracleExadataInfrastructureDefinedFileSystemConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

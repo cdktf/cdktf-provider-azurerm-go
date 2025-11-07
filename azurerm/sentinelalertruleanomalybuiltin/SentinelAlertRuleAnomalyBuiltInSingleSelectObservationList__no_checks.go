@@ -15,7 +15,7 @@ func (s *jsiiProxy_SentinelAlertRuleAnomalyBuiltInSingleSelectObservationList) v
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleAnomalyBuiltInSingleSelectObservationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelAlertRuleAnomalyBuiltInSingleSelectObservationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

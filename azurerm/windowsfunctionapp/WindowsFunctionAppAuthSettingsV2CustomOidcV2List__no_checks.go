@@ -15,7 +15,7 @@ func (w *jsiiProxy_WindowsFunctionAppAuthSettingsV2CustomOidcV2List) validateGet
 	return nil
 }
 
-func (w *jsiiProxy_WindowsFunctionAppAuthSettingsV2CustomOidcV2List) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsFunctionAppAuthSettingsV2CustomOidcV2List) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

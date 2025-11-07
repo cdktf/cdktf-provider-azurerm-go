@@ -15,7 +15,7 @@ func (w *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerStatusCodeList) 
 	return nil
 }
 
-func (w *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerStatusCodeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerStatusCodeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

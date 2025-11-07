@@ -43,7 +43,7 @@ func (e *jsiiProxy_EventhubCaptureDescriptionOutputReference) validateGetStringM
 	return nil
 }
 
-func (e *jsiiProxy_EventhubCaptureDescriptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventhubCaptureDescriptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_EventhubCaptureDescriptionOutputReference) validatePutDestina
 	return nil
 }
 
-func (e *jsiiProxy_EventhubCaptureDescriptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventhubCaptureDescriptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

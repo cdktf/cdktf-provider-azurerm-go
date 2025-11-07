@@ -15,7 +15,7 @@ func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitPhysicalNodeList) validateG
 	return nil
 }
 
-func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitPhysicalNodeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StackHciDeploymentSettingScaleUnitPhysicalNodeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

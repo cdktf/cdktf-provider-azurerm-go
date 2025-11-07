@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfigO
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerAppJobTemplateContainerStartupProbeList) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppJobTemplateContainerStartupProbeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppJobTemplateContainerStartupProbeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (m *jsiiProxy_MssqlVirtualMachineAutoBackupOutputReference) validateGetStri
 	return nil
 }
 
-func (m *jsiiProxy_MssqlVirtualMachineAutoBackupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlVirtualMachineAutoBackupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MssqlVirtualMachineAutoBackupOutputReference) validatePutManu
 	return nil
 }
 
-func (m *jsiiProxy_MssqlVirtualMachineAutoBackupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlVirtualMachineAutoBackupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

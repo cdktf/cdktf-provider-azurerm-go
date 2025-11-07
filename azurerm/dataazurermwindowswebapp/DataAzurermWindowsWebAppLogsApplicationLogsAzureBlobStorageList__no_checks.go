@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermWindowsWebAppLogsApplicationLogsAzureBlobStorageLi
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermWindowsWebAppLogsApplicationLogsAzureBlobStorageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermWindowsWebAppLogsApplicationLogsAzureBlobStorageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

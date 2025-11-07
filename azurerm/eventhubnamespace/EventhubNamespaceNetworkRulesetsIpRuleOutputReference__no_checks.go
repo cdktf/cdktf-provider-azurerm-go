@@ -43,11 +43,11 @@ func (e *jsiiProxy_EventhubNamespaceNetworkRulesetsIpRuleOutputReference) valida
 	return nil
 }
 
-func (e *jsiiProxy_EventhubNamespaceNetworkRulesetsIpRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventhubNamespaceNetworkRulesetsIpRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventhubNamespaceNetworkRulesetsIpRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventhubNamespaceNetworkRulesetsIpRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

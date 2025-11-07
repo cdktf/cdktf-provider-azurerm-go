@@ -43,11 +43,11 @@ func (b *jsiiProxy_BotChannelFacebookPageOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (b *jsiiProxy_BotChannelFacebookPageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BotChannelFacebookPageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BotChannelFacebookPageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BotChannelFacebookPageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

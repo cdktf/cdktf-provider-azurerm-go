@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApiManagementApiOperationRequestHeaderList) validateGetParame
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementApiOperationRequestHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementApiOperationRequestHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

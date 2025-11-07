@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermOracleAdbsNationalCharacterSetsCharacterSetsOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermOracleAdbsNationalCharacterSetsCharacterSetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermOracleAdbsNationalCharacterSetsCharacterSetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermOracleAdbsNationalCharacterSetsCharacterSetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermOracleAdbsNationalCharacterSetsCharacterSetsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

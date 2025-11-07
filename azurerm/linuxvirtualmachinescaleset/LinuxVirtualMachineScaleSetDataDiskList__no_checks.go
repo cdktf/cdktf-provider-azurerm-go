@@ -15,7 +15,7 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetDataDiskList) validateGetParameter
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineScaleSetDataDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetDataDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

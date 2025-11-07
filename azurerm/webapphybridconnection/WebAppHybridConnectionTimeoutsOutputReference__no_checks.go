@@ -43,11 +43,11 @@ func (w *jsiiProxy_WebAppHybridConnectionTimeoutsOutputReference) validateGetStr
 	return nil
 }
 
-func (w *jsiiProxy_WebAppHybridConnectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WebAppHybridConnectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WebAppHybridConnectionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WebAppHybridConnectionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

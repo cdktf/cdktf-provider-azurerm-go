@@ -43,11 +43,11 @@ func (m *jsiiProxy_MssqlManagedInstanceStartStopScheduleScheduleOutputReference)
 	return nil
 }
 
-func (m *jsiiProxy_MssqlManagedInstanceStartStopScheduleScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlManagedInstanceStartStopScheduleScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MssqlManagedInstanceStartStopScheduleScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlManagedInstanceStartStopScheduleScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

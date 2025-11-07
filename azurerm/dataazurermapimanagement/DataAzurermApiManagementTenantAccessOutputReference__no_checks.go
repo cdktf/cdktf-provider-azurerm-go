@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermApiManagementTenantAccessOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApiManagementTenantAccessOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermApiManagementTenantAccessOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApiManagementTenantAccessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermApiManagementTenantAccessOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

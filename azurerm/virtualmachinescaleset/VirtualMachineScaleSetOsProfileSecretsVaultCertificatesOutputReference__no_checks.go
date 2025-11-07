@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualMachineScaleSetOsProfileSecretsVaultCertificatesOutput
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineScaleSetOsProfileSecretsVaultCertificatesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualMachineScaleSetOsProfileSecretsVaultCertificatesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineScaleSetOsProfileSecretsVaultCertificatesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineScaleSetOsProfileSecretsVaultCertificatesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFactoryTriggerBlobEventPipelineOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryTriggerBlobEventPipelineOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFactoryTriggerBlobEventPipelineOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryTriggerBlobEventPipelineOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryTriggerBlobEventPipelineOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

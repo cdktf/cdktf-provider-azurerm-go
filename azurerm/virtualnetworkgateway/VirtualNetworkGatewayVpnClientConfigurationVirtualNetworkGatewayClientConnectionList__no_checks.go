@@ -15,7 +15,7 @@ func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationVirtualNetworkGate
 	return nil
 }
 
-func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationVirtualNetworkGatewayClientConnectionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationVirtualNetworkGatewayClientConnectionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

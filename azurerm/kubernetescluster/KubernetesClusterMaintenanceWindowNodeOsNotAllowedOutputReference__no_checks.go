@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesClusterMaintenanceWindowNodeOsNotAllowedOutputRefer
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterMaintenanceWindowNodeOsNotAllowedOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterMaintenanceWindowNodeOsNotAllowedOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterMaintenanceWindowNodeOsNotAllowedOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterMaintenanceWindowNodeOsNotAllowedOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

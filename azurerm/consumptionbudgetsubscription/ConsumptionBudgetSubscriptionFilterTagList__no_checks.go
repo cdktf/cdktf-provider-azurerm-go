@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConsumptionBudgetSubscriptionFilterTagList) validateGetParame
 	return nil
 }
 
-func (c *jsiiProxy_ConsumptionBudgetSubscriptionFilterTagList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConsumptionBudgetSubscriptionFilterTagList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApiManagementAdditionalLocationList) validateGetParameters(in
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagementAdditionalLocationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiManagementAdditionalLocationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

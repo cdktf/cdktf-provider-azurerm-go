@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitorActionGroupWebhookReceiverList) validateGetParameters(
 	return nil
 }
 
-func (m *jsiiProxy_MonitorActionGroupWebhookReceiverList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorActionGroupWebhookReceiverList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

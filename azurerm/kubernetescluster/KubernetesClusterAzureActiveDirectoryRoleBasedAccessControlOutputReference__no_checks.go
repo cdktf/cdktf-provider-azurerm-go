@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOu
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DevCenterProjectEnvironmentTypeUserRoleAssignmentOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DevCenterProjectEnvironmentTypeUserRoleAssignmentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DevCenterProjectEnvironmentTypeUserRoleAssignmentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DevCenterProjectEnvironmentTypeUserRoleAssignmentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DevCenterProjectEnvironmentTypeUserRoleAssignmentOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

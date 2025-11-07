@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApplicationInsightsStandardWebTestRequestHeaderList) validate
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationInsightsStandardWebTestRequestHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationInsightsStandardWebTestRequestHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

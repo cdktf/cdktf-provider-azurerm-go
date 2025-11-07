@@ -43,11 +43,11 @@ func (f *jsiiProxy_FrontdoorFrontendEndpointOutputReference) validateGetStringMa
 	return nil
 }
 
-func (f *jsiiProxy_FrontdoorFrontendEndpointOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FrontdoorFrontendEndpointOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FrontdoorFrontendEndpointOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FrontdoorFrontendEndpointOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

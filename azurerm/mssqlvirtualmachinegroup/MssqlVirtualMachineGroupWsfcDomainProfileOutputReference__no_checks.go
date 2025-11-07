@@ -43,11 +43,11 @@ func (m *jsiiProxy_MssqlVirtualMachineGroupWsfcDomainProfileOutputReference) val
 	return nil
 }
 
-func (m *jsiiProxy_MssqlVirtualMachineGroupWsfcDomainProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlVirtualMachineGroupWsfcDomainProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MssqlVirtualMachineGroupWsfcDomainProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlVirtualMachineGroupWsfcDomainProfileOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

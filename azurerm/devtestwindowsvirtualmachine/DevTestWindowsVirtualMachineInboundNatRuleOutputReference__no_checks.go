@@ -43,11 +43,11 @@ func (d *jsiiProxy_DevTestWindowsVirtualMachineInboundNatRuleOutputReference) va
 	return nil
 }
 
-func (d *jsiiProxy_DevTestWindowsVirtualMachineInboundNatRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DevTestWindowsVirtualMachineInboundNatRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DevTestWindowsVirtualMachineInboundNatRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DevTestWindowsVirtualMachineInboundNatRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

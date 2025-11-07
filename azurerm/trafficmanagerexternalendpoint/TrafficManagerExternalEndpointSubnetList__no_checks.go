@@ -15,7 +15,7 @@ func (t *jsiiProxy_TrafficManagerExternalEndpointSubnetList) validateGetParamete
 	return nil
 }
 
-func (t *jsiiProxy_TrafficManagerExternalEndpointSubnetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TrafficManagerExternalEndpointSubnetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

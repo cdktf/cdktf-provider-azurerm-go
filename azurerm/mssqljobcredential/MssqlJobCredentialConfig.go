@@ -22,26 +22,26 @@ type MssqlJobCredentialConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/mssql_job_credential#job_agent_id MssqlJobCredential#job_agent_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/mssql_job_credential#job_agent_id MssqlJobCredential#job_agent_id}.
 	JobAgentId *string `field:"required" json:"jobAgentId" yaml:"jobAgentId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/mssql_job_credential#name MssqlJobCredential#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/mssql_job_credential#name MssqlJobCredential#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/mssql_job_credential#username MssqlJobCredential#username}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/mssql_job_credential#username MssqlJobCredential#username}.
 	Username *string `field:"required" json:"username" yaml:"username"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/mssql_job_credential#id MssqlJobCredential#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/mssql_job_credential#id MssqlJobCredential#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/mssql_job_credential#password MssqlJobCredential#password}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/mssql_job_credential#password MssqlJobCredential#password}.
 	Password *string `field:"optional" json:"password" yaml:"password"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/mssql_job_credential#password_wo MssqlJobCredential#password_wo}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/mssql_job_credential#password_wo MssqlJobCredential#password_wo}.
 	PasswordWo *string `field:"optional" json:"passwordWo" yaml:"passwordWo"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/mssql_job_credential#password_wo_version MssqlJobCredential#password_wo_version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/mssql_job_credential#password_wo_version MssqlJobCredential#password_wo_version}.
 	PasswordWoVersion *float64 `field:"optional" json:"passwordWoVersion" yaml:"passwordWoVersion"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/mssql_job_credential#timeouts MssqlJobCredential#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/mssql_job_credential#timeouts MssqlJobCredential#timeouts}
 	Timeouts *MssqlJobCredentialTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataFactoryDatasetCosmosdbSqlapiSchemaColumnList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryDatasetCosmosdbSqlapiSchemaColumnList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryDatasetCosmosdbSqlapiSchemaColumnList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

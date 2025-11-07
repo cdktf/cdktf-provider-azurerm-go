@@ -15,7 +15,7 @@ func (a *jsiiProxy_AnalysisServicesServerIpv4FirewallRuleList) validateGetParame
 	return nil
 }
 
-func (a *jsiiProxy_AnalysisServicesServerIpv4FirewallRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AnalysisServicesServerIpv4FirewallRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

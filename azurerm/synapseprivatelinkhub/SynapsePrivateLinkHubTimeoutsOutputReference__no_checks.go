@@ -43,11 +43,11 @@ func (s *jsiiProxy_SynapsePrivateLinkHubTimeoutsOutputReference) validateGetStri
 	return nil
 }
 
-func (s *jsiiProxy_SynapsePrivateLinkHubTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SynapsePrivateLinkHubTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SynapsePrivateLinkHubTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SynapsePrivateLinkHubTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

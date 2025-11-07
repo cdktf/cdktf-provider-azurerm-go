@@ -43,11 +43,11 @@ func (w *jsiiProxy_WebPubsubCustomCertificateTimeoutsOutputReference) validateGe
 	return nil
 }
 
-func (w *jsiiProxy_WebPubsubCustomCertificateTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WebPubsubCustomCertificateTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WebPubsubCustomCertificateTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WebPubsubCustomCertificateTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

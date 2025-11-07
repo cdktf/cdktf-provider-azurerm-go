@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualNetworkGatewayBgpSettingsPeeringAddressesOutputReferen
 	return nil
 }
 
-func (v *jsiiProxy_VirtualNetworkGatewayBgpSettingsPeeringAddressesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualNetworkGatewayBgpSettingsPeeringAddressesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualNetworkGatewayBgpSettingsPeeringAddressesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualNetworkGatewayBgpSettingsPeeringAddressesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

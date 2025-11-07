@@ -43,11 +43,11 @@ func (i *jsiiProxy_IothubEndpointCosmosdbAccountTimeoutsOutputReference) validat
 	return nil
 }
 
-func (i *jsiiProxy_IothubEndpointCosmosdbAccountTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IothubEndpointCosmosdbAccountTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IothubEndpointCosmosdbAccountTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IothubEndpointCosmosdbAccountTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

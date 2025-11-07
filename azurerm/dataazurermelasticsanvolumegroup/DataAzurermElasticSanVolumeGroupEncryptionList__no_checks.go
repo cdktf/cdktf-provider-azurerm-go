@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermElasticSanVolumeGroupEncryptionList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermElasticSanVolumeGroupEncryptionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermElasticSanVolumeGroupEncryptionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermOracleDbSystemShapesDbSystemShapesList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermOracleDbSystemShapesDbSystemShapesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermOracleDbSystemShapesDbSystemShapesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

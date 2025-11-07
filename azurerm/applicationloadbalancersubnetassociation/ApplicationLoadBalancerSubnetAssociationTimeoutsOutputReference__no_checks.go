@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApplicationLoadBalancerSubnetAssociationTimeoutsOutputReferen
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationLoadBalancerSubnetAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApplicationLoadBalancerSubnetAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationLoadBalancerSubnetAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationLoadBalancerSubnetAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

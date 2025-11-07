@@ -43,11 +43,11 @@ func (c *jsiiProxy_CdnEndpointCustomDomainUserManagedHttpsOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_CdnEndpointCustomDomainUserManagedHttpsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CdnEndpointCustomDomainUserManagedHttpsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CdnEndpointCustomDomainUserManagedHttpsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnEndpointCustomDomainUserManagedHttpsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

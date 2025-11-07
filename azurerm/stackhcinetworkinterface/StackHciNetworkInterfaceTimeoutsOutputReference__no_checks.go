@@ -43,11 +43,11 @@ func (s *jsiiProxy_StackHciNetworkInterfaceTimeoutsOutputReference) validateGetS
 	return nil
 }
 
-func (s *jsiiProxy_StackHciNetworkInterfaceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StackHciNetworkInterfaceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StackHciNetworkInterfaceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StackHciNetworkInterfaceTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

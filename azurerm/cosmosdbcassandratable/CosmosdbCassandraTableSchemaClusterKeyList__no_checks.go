@@ -15,7 +15,7 @@ func (c *jsiiProxy_CosmosdbCassandraTableSchemaClusterKeyList) validateGetParame
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbCassandraTableSchemaClusterKeyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbCassandraTableSchemaClusterKeyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

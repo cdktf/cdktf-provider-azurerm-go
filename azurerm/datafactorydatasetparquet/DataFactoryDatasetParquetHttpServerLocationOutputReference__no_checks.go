@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFactoryDatasetParquetHttpServerLocationOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryDatasetParquetHttpServerLocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFactoryDatasetParquetHttpServerLocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryDatasetParquetHttpServerLocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryDatasetParquetHttpServerLocationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

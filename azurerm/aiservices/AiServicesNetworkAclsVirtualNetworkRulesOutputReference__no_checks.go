@@ -43,11 +43,11 @@ func (a *jsiiProxy_AiServicesNetworkAclsVirtualNetworkRulesOutputReference) vali
 	return nil
 }
 
-func (a *jsiiProxy_AiServicesNetworkAclsVirtualNetworkRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AiServicesNetworkAclsVirtualNetworkRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AiServicesNetworkAclsVirtualNetworkRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AiServicesNetworkAclsVirtualNetworkRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

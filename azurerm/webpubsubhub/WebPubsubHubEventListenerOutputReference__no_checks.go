@@ -43,11 +43,11 @@ func (w *jsiiProxy_WebPubsubHubEventListenerOutputReference) validateGetStringMa
 	return nil
 }
 
-func (w *jsiiProxy_WebPubsubHubEventListenerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WebPubsubHubEventListenerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WebPubsubHubEventListenerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WebPubsubHubEventListenerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

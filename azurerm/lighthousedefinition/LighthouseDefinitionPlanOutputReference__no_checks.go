@@ -43,11 +43,11 @@ func (l *jsiiProxy_LighthouseDefinitionPlanOutputReference) validateGetStringMap
 	return nil
 }
 
-func (l *jsiiProxy_LighthouseDefinitionPlanOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LighthouseDefinitionPlanOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LighthouseDefinitionPlanOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LighthouseDefinitionPlanOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

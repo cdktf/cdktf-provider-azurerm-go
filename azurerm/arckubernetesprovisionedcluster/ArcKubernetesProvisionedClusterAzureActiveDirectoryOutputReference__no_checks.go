@@ -43,11 +43,11 @@ func (a *jsiiProxy_ArcKubernetesProvisionedClusterAzureActiveDirectoryOutputRefe
 	return nil
 }
 
-func (a *jsiiProxy_ArcKubernetesProvisionedClusterAzureActiveDirectoryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ArcKubernetesProvisionedClusterAzureActiveDirectoryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ArcKubernetesProvisionedClusterAzureActiveDirectoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ArcKubernetesProvisionedClusterAzureActiveDirectoryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

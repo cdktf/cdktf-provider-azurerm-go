@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerAppIngressIpSecurityRestrictionList) validateGetPara
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppIngressIpSecurityRestrictionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppIngressIpSecurityRestrictionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

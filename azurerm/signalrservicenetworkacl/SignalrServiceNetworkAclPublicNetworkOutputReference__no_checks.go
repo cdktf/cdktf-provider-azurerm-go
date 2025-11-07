@@ -43,11 +43,11 @@ func (s *jsiiProxy_SignalrServiceNetworkAclPublicNetworkOutputReference) validat
 	return nil
 }
 
-func (s *jsiiProxy_SignalrServiceNetworkAclPublicNetworkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SignalrServiceNetworkAclPublicNetworkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SignalrServiceNetworkAclPublicNetworkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SignalrServiceNetworkAclPublicNetworkOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

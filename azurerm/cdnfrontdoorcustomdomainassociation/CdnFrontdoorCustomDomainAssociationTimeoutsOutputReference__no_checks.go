@@ -43,11 +43,11 @@ func (c *jsiiProxy_CdnFrontdoorCustomDomainAssociationTimeoutsOutputReference) v
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorCustomDomainAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CdnFrontdoorCustomDomainAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CdnFrontdoorCustomDomainAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnFrontdoorCustomDomainAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

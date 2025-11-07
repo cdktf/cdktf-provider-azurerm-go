@@ -43,11 +43,11 @@ func (p *jsiiProxy_PrivateEndpointNetworkInterfaceOutputReference) validateGetSt
 	return nil
 }
 
-func (p *jsiiProxy_PrivateEndpointNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivateEndpointNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrivateEndpointNetworkInterfaceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivateEndpointNetworkInterfaceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

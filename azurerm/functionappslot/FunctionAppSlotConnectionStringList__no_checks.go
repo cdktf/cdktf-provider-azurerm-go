@@ -15,7 +15,7 @@ func (f *jsiiProxy_FunctionAppSlotConnectionStringList) validateGetParameters(in
 	return nil
 }
 
-func (f *jsiiProxy_FunctionAppSlotConnectionStringList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FunctionAppSlotConnectionStringList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

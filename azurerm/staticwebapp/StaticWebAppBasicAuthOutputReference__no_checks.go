@@ -43,11 +43,11 @@ func (s *jsiiProxy_StaticWebAppBasicAuthOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (s *jsiiProxy_StaticWebAppBasicAuthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StaticWebAppBasicAuthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StaticWebAppBasicAuthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StaticWebAppBasicAuthOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

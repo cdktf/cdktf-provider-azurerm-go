@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitorAutoscaleSettingPredictiveOutputReference) validateGet
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAutoscaleSettingPredictiveOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorAutoscaleSettingPredictiveOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAutoscaleSettingPredictiveOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorAutoscaleSettingPredictiveOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

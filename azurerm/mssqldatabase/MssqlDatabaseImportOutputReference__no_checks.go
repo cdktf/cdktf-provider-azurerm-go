@@ -43,11 +43,11 @@ func (m *jsiiProxy_MssqlDatabaseImportOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (m *jsiiProxy_MssqlDatabaseImportOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlDatabaseImportOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MssqlDatabaseImportOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlDatabaseImportOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

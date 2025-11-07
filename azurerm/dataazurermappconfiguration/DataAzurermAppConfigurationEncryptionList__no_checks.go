@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermAppConfigurationEncryptionList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermAppConfigurationEncryptionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermAppConfigurationEncryptionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerAppIngressCustomDomainOutputReference) validateGetSt
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppIngressCustomDomainOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAppIngressCustomDomainOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppIngressCustomDomainOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAppIngressCustomDomainOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

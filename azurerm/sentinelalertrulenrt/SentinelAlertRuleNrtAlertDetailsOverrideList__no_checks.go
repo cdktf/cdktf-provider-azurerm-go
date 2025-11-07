@@ -15,7 +15,7 @@ func (s *jsiiProxy_SentinelAlertRuleNrtAlertDetailsOverrideList) validateGetPara
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAlertRuleNrtAlertDetailsOverrideList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelAlertRuleNrtAlertDetailsOverrideList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

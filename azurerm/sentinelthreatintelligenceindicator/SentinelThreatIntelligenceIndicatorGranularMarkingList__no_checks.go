@@ -15,7 +15,7 @@ func (s *jsiiProxy_SentinelThreatIntelligenceIndicatorGranularMarkingList) valid
 	return nil
 }
 
-func (s *jsiiProxy_SentinelThreatIntelligenceIndicatorGranularMarkingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelThreatIntelligenceIndicatorGranularMarkingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (r *jsiiProxy_RedhatOpenshiftClusterIngressProfileOutputReference) validate
 	return nil
 }
 
-func (r *jsiiProxy_RedhatOpenshiftClusterIngressProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedhatOpenshiftClusterIngressProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RedhatOpenshiftClusterIngressProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedhatOpenshiftClusterIngressProfileOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

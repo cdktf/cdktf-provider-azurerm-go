@@ -15,7 +15,7 @@ func (n *jsiiProxy_NginxDeploymentAutoScaleProfileList) validateGetParameters(in
 	return nil
 }
 
-func (n *jsiiProxy_NginxDeploymentAutoScaleProfileList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NginxDeploymentAutoScaleProfileList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

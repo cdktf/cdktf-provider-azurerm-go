@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermOracleDbNodesDbNodesOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermOracleDbNodesDbNodesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermOracleDbNodesDbNodesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermOracleDbNodesDbNodesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermOracleDbNodesDbNodesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

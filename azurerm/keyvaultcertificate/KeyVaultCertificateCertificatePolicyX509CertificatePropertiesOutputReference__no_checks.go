@@ -43,7 +43,7 @@ func (k *jsiiProxy_KeyVaultCertificateCertificatePolicyX509CertificateProperties
 	return nil
 }
 
-func (k *jsiiProxy_KeyVaultCertificateCertificatePolicyX509CertificatePropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KeyVaultCertificateCertificatePolicyX509CertificatePropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (k *jsiiProxy_KeyVaultCertificateCertificatePolicyX509CertificateProperties
 	return nil
 }
 
-func (k *jsiiProxy_KeyVaultCertificateCertificatePolicyX509CertificatePropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyVaultCertificateCertificatePolicyX509CertificatePropertiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

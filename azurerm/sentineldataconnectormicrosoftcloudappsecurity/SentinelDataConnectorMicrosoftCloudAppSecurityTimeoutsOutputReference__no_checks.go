@@ -43,11 +43,11 @@ func (s *jsiiProxy_SentinelDataConnectorMicrosoftCloudAppSecurityTimeoutsOutputR
 	return nil
 }
 
-func (s *jsiiProxy_SentinelDataConnectorMicrosoftCloudAppSecurityTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SentinelDataConnectorMicrosoftCloudAppSecurityTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SentinelDataConnectorMicrosoftCloudAppSecurityTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SentinelDataConnectorMicrosoftCloudAppSecurityTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (a *jsiiProxy_AutomationRunbookPublishContentLinkOutputReference) validateG
 	return nil
 }
 
-func (a *jsiiProxy_AutomationRunbookPublishContentLinkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutomationRunbookPublishContentLinkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AutomationRunbookPublishContentLinkOutputReference) validateP
 	return nil
 }
 
-func (a *jsiiProxy_AutomationRunbookPublishContentLinkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutomationRunbookPublishContentLinkOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

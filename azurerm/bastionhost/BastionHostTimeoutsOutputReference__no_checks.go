@@ -43,11 +43,11 @@ func (b *jsiiProxy_BastionHostTimeoutsOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (b *jsiiProxy_BastionHostTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BastionHostTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BastionHostTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BastionHostTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurermApplicationGatewayFrontendPortOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApplicationGatewayFrontendPortOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurermApplicationGatewayFrontendPortOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermApplicationGatewayFrontendPortOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermApplicationGatewayFrontendPortOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentIpTr
 	return nil
 }
 
-func (n *jsiiProxy_NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentIpTrafficOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentIpTrafficOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentIpTrafficOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentIpTrafficOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

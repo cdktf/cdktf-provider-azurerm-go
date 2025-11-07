@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFactoryLinkedServiceOdbcBasicAuthenticationOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryLinkedServiceOdbcBasicAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFactoryLinkedServiceOdbcBasicAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryLinkedServiceOdbcBasicAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryLinkedServiceOdbcBasicAuthenticationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

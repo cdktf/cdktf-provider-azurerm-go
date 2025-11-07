@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualDesktopHostPoolScheduledAgentUpdatesScheduleOutputRefe
 	return nil
 }
 
-func (v *jsiiProxy_VirtualDesktopHostPoolScheduledAgentUpdatesScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualDesktopHostPoolScheduledAgentUpdatesScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualDesktopHostPoolScheduledAgentUpdatesScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualDesktopHostPoolScheduledAgentUpdatesScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

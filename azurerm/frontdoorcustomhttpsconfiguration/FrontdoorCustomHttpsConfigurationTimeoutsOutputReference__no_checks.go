@@ -43,11 +43,11 @@ func (f *jsiiProxy_FrontdoorCustomHttpsConfigurationTimeoutsOutputReference) val
 	return nil
 }
 
-func (f *jsiiProxy_FrontdoorCustomHttpsConfigurationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FrontdoorCustomHttpsConfigurationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FrontdoorCustomHttpsConfigurationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FrontdoorCustomHttpsConfigurationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

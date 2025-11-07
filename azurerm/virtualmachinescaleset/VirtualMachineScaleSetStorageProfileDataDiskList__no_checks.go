@@ -15,7 +15,7 @@ func (v *jsiiProxy_VirtualMachineScaleSetStorageProfileDataDiskList) validateGet
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineScaleSetStorageProfileDataDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineScaleSetStorageProfileDataDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

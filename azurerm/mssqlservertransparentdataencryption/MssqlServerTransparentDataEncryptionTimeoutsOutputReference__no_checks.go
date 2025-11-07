@@ -43,11 +43,11 @@ func (m *jsiiProxy_MssqlServerTransparentDataEncryptionTimeoutsOutputReference) 
 	return nil
 }
 
-func (m *jsiiProxy_MssqlServerTransparentDataEncryptionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MssqlServerTransparentDataEncryptionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MssqlServerTransparentDataEncryptionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MssqlServerTransparentDataEncryptionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

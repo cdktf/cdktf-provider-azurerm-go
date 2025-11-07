@@ -76,13 +76,13 @@ type FrontdoorBackendPoolLoadBalancingOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetAdditionalLatencyMilliseconds()
 	ResetSampleSize()
 	ResetSuccessfulSamplesRequired()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -552,8 +552,8 @@ func (f *jsiiProxy_FrontdoorBackendPoolLoadBalancingOutputReference) Interpolati
 	return returns
 }
 
-func (f *jsiiProxy_FrontdoorBackendPoolLoadBalancingOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := f.validateInterpolationForAttributeParameters(property); err != nil {
+func (f *jsiiProxy_FrontdoorBackendPoolLoadBalancingOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -561,7 +561,7 @@ func (f *jsiiProxy_FrontdoorBackendPoolLoadBalancingOutputReference) Interpolati
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -592,8 +592,8 @@ func (f *jsiiProxy_FrontdoorBackendPoolLoadBalancingOutputReference) ResetSucces
 	)
 }
 
-func (f *jsiiProxy_FrontdoorBackendPoolLoadBalancingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FrontdoorBackendPoolLoadBalancingOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -601,7 +601,7 @@ func (f *jsiiProxy_FrontdoorBackendPoolLoadBalancingOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

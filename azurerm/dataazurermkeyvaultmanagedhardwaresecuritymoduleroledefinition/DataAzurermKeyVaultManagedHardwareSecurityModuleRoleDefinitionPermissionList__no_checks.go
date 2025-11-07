@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinitio
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

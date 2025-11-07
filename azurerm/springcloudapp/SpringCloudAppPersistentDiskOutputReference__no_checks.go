@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpringCloudAppPersistentDiskOutputReference) validateGetStrin
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudAppPersistentDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpringCloudAppPersistentDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpringCloudAppPersistentDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpringCloudAppPersistentDiskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

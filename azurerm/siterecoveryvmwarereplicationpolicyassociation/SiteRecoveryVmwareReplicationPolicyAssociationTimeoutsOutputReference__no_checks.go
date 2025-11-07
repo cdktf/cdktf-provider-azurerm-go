@@ -43,11 +43,11 @@ func (s *jsiiProxy_SiteRecoveryVmwareReplicationPolicyAssociationTimeoutsOutputR
 	return nil
 }
 
-func (s *jsiiProxy_SiteRecoveryVmwareReplicationPolicyAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SiteRecoveryVmwareReplicationPolicyAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SiteRecoveryVmwareReplicationPolicyAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SiteRecoveryVmwareReplicationPolicyAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

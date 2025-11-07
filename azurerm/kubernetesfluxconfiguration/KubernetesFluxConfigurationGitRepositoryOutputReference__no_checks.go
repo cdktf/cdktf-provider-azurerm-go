@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesFluxConfigurationGitRepositoryOutputReference) vali
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesFluxConfigurationGitRepositoryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesFluxConfigurationGitRepositoryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesFluxConfigurationGitRepositoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesFluxConfigurationGitRepositoryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

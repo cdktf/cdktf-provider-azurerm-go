@@ -43,7 +43,7 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetOsDiskOutputReference) validateGet
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineScaleSetOsDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetOsDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetOsDiskOutputReference) validatePut
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineScaleSetOsDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetOsDiskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

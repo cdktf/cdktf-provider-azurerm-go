@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermArcMachineServiceStatusGuestConfigurationServiceLi
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermArcMachineServiceStatusGuestConfigurationServiceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermArcMachineServiceStatusGuestConfigurationServiceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

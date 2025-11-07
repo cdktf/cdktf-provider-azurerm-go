@@ -43,11 +43,11 @@ func (m *jsiiProxy_MachineLearningDatastoreFileshareTimeoutsOutputReference) val
 	return nil
 }
 
-func (m *jsiiProxy_MachineLearningDatastoreFileshareTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MachineLearningDatastoreFileshareTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MachineLearningDatastoreFileshareTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MachineLearningDatastoreFileshareTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

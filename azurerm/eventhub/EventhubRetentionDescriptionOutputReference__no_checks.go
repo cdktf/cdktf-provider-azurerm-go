@@ -43,11 +43,11 @@ func (e *jsiiProxy_EventhubRetentionDescriptionOutputReference) validateGetStrin
 	return nil
 }
 
-func (e *jsiiProxy_EventhubRetentionDescriptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventhubRetentionDescriptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventhubRetentionDescriptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventhubRetentionDescriptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

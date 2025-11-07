@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurermStackHciClusterIdentityList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermStackHciClusterIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurermStackHciClusterIdentityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_ChaosStudioExperimentStepsBranchList) validateGetParameters(i
 	return nil
 }
 
-func (c *jsiiProxy_ChaosStudioExperimentStepsBranchList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChaosStudioExperimentStepsBranchList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

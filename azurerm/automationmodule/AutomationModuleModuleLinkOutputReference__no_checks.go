@@ -43,7 +43,7 @@ func (a *jsiiProxy_AutomationModuleModuleLinkOutputReference) validateGetStringM
 	return nil
 }
 
-func (a *jsiiProxy_AutomationModuleModuleLinkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutomationModuleModuleLinkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AutomationModuleModuleLinkOutputReference) validatePutHashPar
 	return nil
 }
 
-func (a *jsiiProxy_AutomationModuleModuleLinkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutomationModuleModuleLinkOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

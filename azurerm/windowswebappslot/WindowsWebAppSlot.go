@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/windows_web_app_slot azurerm_windows_web_app_slot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/windows_web_app_slot azurerm_windows_web_app_slot}.
 type WindowsWebAppSlot interface {
 	cdktf.TerraformResource
 	AppServiceId() *string
@@ -136,6 +136,9 @@ type WindowsWebAppSlot interface {
 	VirtualNetworkBackupRestoreEnabled() interface{}
 	SetVirtualNetworkBackupRestoreEnabled(val interface{})
 	VirtualNetworkBackupRestoreEnabledInput() interface{}
+	VirtualNetworkImagePullEnabled() interface{}
+	SetVirtualNetworkImagePullEnabled(val interface{})
+	VirtualNetworkImagePullEnabledInput() interface{}
 	VirtualNetworkSubnetId() *string
 	SetVirtualNetworkSubnetId(val *string)
 	VirtualNetworkSubnetIdInput() *string
@@ -222,6 +225,7 @@ type WindowsWebAppSlot interface {
 	ResetTags()
 	ResetTimeouts()
 	ResetVirtualNetworkBackupRestoreEnabled()
+	ResetVirtualNetworkImagePullEnabled()
 	ResetVirtualNetworkSubnetId()
 	ResetWebdeployPublishBasicAuthenticationEnabled()
 	ResetZipDeployFile()
@@ -993,6 +997,26 @@ func (j *jsiiProxy_WindowsWebAppSlot) VirtualNetworkBackupRestoreEnabledInput() 
 	return returns
 }
 
+func (j *jsiiProxy_WindowsWebAppSlot) VirtualNetworkImagePullEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"virtualNetworkImagePullEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlot) VirtualNetworkImagePullEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"virtualNetworkImagePullEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WindowsWebAppSlot) VirtualNetworkSubnetId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1054,7 +1078,7 @@ func (j *jsiiProxy_WindowsWebAppSlot) ZipDeployFileInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/windows_web_app_slot azurerm_windows_web_app_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/windows_web_app_slot azurerm_windows_web_app_slot} Resource.
 func NewWindowsWebAppSlot(scope constructs.Construct, id *string, config *WindowsWebAppSlotConfig) WindowsWebAppSlot {
 	_init_.Initialize()
 
@@ -1072,7 +1096,7 @@ func NewWindowsWebAppSlot(scope constructs.Construct, id *string, config *Window
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.51.0/docs/resources/windows_web_app_slot azurerm_windows_web_app_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/windows_web_app_slot azurerm_windows_web_app_slot} Resource.
 func NewWindowsWebAppSlot_Override(w WindowsWebAppSlot, scope constructs.Construct, id *string, config *WindowsWebAppSlotConfig) {
 	_init_.Initialize()
 
@@ -1323,6 +1347,17 @@ func (j *jsiiProxy_WindowsWebAppSlot)SetVirtualNetworkBackupRestoreEnabled(val i
 	_jsii_.Set(
 		j,
 		"virtualNetworkBackupRestoreEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsWebAppSlot)SetVirtualNetworkImagePullEnabled(val interface{}) {
+	if err := j.validateSetVirtualNetworkImagePullEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"virtualNetworkImagePullEnabled",
 		val,
 	)
 }
@@ -1992,6 +2027,14 @@ func (w *jsiiProxy_WindowsWebAppSlot) ResetVirtualNetworkBackupRestoreEnabled() 
 	_jsii_.InvokeVoid(
 		w,
 		"resetVirtualNetworkBackupRestoreEnabled",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsWebAppSlot) ResetVirtualNetworkImagePullEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetVirtualNetworkImagePullEnabled",
 		nil, // no parameters
 	)
 }

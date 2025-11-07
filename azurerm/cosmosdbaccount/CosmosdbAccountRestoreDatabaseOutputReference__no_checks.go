@@ -43,11 +43,11 @@ func (c *jsiiProxy_CosmosdbAccountRestoreDatabaseOutputReference) validateGetStr
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbAccountRestoreDatabaseOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CosmosdbAccountRestoreDatabaseOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CosmosdbAccountRestoreDatabaseOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CosmosdbAccountRestoreDatabaseOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

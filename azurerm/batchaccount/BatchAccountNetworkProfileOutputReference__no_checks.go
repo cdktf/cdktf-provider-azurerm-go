@@ -43,7 +43,7 @@ func (b *jsiiProxy_BatchAccountNetworkProfileOutputReference) validateGetStringM
 	return nil
 }
 
-func (b *jsiiProxy_BatchAccountNetworkProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BatchAccountNetworkProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (b *jsiiProxy_BatchAccountNetworkProfileOutputReference) validatePutNodeMan
 	return nil
 }
 
-func (b *jsiiProxy_BatchAccountNetworkProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchAccountNetworkProfileOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

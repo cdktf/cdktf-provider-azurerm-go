@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServiceFabricClusterFabricSettingsList) validateGetParameters
 	return nil
 }
 
-func (s *jsiiProxy_ServiceFabricClusterFabricSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceFabricClusterFabricSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

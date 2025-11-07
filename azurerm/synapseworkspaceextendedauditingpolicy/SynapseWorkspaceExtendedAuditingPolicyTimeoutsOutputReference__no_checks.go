@@ -43,11 +43,11 @@ func (s *jsiiProxy_SynapseWorkspaceExtendedAuditingPolicyTimeoutsOutputReference
 	return nil
 }
 
-func (s *jsiiProxy_SynapseWorkspaceExtendedAuditingPolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SynapseWorkspaceExtendedAuditingPolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SynapseWorkspaceExtendedAuditingPolicyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SynapseWorkspaceExtendedAuditingPolicyTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (s *jsiiProxy_SubscriptionPolicyAssignmentOverridesOutputReference) validat
 	return nil
 }
 
-func (s *jsiiProxy_SubscriptionPolicyAssignmentOverridesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SubscriptionPolicyAssignmentOverridesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SubscriptionPolicyAssignmentOverridesOutputReference) validat
 	return nil
 }
 
-func (s *jsiiProxy_SubscriptionPolicyAssignmentOverridesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SubscriptionPolicyAssignmentOverridesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

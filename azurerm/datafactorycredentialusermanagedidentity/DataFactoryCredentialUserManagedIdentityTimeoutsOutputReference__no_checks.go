@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFactoryCredentialUserManagedIdentityTimeoutsOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryCredentialUserManagedIdentityTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFactoryCredentialUserManagedIdentityTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFactoryCredentialUserManagedIdentityTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFactoryCredentialUserManagedIdentityTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

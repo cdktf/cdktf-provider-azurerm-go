@@ -15,7 +15,7 @@ func (e *jsiiProxy_EventgridDomainInboundIpRuleList) validateGetParameters(index
 	return nil
 }
 
-func (e *jsiiProxy_EventgridDomainInboundIpRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventgridDomainInboundIpRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

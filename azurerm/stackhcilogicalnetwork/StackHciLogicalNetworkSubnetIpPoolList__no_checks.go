@@ -15,7 +15,7 @@ func (s *jsiiProxy_StackHciLogicalNetworkSubnetIpPoolList) validateGetParameters
 	return nil
 }
 
-func (s *jsiiProxy_StackHciLogicalNetworkSubnetIpPoolList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StackHciLogicalNetworkSubnetIpPoolList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
