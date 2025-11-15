@@ -34,6 +34,7 @@ type DataAzurermKubernetesClusterAgentPoolProfileUpgradeSettingsOutputReference 
 	InternalValue() *DataAzurermKubernetesClusterAgentPoolProfileUpgradeSettings
 	SetInternalValue(val *DataAzurermKubernetesClusterAgentPoolProfileUpgradeSettings)
 	MaxSurge() *string
+	MaxUnavailable() *string
 	NodeSoakDurationInMinutes() *float64
 	// Experimental.
 	TerraformAttribute() *string
@@ -43,6 +44,7 @@ type DataAzurermKubernetesClusterAgentPoolProfileUpgradeSettingsOutputReference 
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UndrainableNodeBehavior() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -152,6 +154,16 @@ func (j *jsiiProxy_DataAzurermKubernetesClusterAgentPoolProfileUpgradeSettingsOu
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermKubernetesClusterAgentPoolProfileUpgradeSettingsOutputReference) MaxUnavailable() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxUnavailable",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermKubernetesClusterAgentPoolProfileUpgradeSettingsOutputReference) NodeSoakDurationInMinutes() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -177,6 +189,16 @@ func (j *jsiiProxy_DataAzurermKubernetesClusterAgentPoolProfileUpgradeSettingsOu
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermKubernetesClusterAgentPoolProfileUpgradeSettingsOutputReference) UndrainableNodeBehavior() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"undrainableNodeBehavior",
 		&returns,
 	)
 	return returns

@@ -1184,10 +1184,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "nodeSoakDurationInMinutesInput", GoGetter: "NodeSoakDurationInMinutesInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDrainTimeoutInMinutes", GoMethod: "ResetDrainTimeoutInMinutes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNodeSoakDurationInMinutes", GoMethod: "ResetNodeSoakDurationInMinutes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUndrainableNodeBehavior", GoMethod: "ResetUndrainableNodeBehavior"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "undrainableNodeBehavior", GoGetter: "UndrainableNodeBehavior"},
+			_jsii_.MemberProperty{JsiiProperty: "undrainableNodeBehaviorInput", GoGetter: "UndrainableNodeBehaviorInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference{}

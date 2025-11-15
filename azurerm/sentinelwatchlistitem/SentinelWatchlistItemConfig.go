@@ -22,20 +22,20 @@ type SentinelWatchlistItemConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/sentinel_watchlist_item#properties SentinelWatchlistItem#properties}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/sentinel_watchlist_item#properties SentinelWatchlistItem#properties}.
 	Properties *map[string]*string `field:"required" json:"properties" yaml:"properties"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/sentinel_watchlist_item#watchlist_id SentinelWatchlistItem#watchlist_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/sentinel_watchlist_item#watchlist_id SentinelWatchlistItem#watchlist_id}.
 	WatchlistId *string `field:"required" json:"watchlistId" yaml:"watchlistId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/sentinel_watchlist_item#id SentinelWatchlistItem#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/sentinel_watchlist_item#id SentinelWatchlistItem#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/sentinel_watchlist_item#name SentinelWatchlistItem#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/sentinel_watchlist_item#name SentinelWatchlistItem#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/sentinel_watchlist_item#timeouts SentinelWatchlistItem#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/sentinel_watchlist_item#timeouts SentinelWatchlistItem#timeouts}
 	Timeouts *SentinelWatchlistItemTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

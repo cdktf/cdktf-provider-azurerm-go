@@ -139,6 +139,10 @@ func (j *jsiiProxy_ManagedRedis) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_ManagedRedis) validateSetPublicNetworkAccessParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ManagedRedis) validateSetResourceGroupNameParameters(val *string) error {
 	return nil
 }

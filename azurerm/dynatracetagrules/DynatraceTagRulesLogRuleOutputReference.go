@@ -76,6 +76,7 @@ type DynatraceTagRulesLogRuleOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutFilteringTag(value interface{})
+	ResetFilteringTag()
 	ResetSendActivityLogsEnabled()
 	ResetSendAzureActiveDirectoryLogsEnabled()
 	ResetSendSubscriptionLogsEnabled()
@@ -554,6 +555,14 @@ func (d *jsiiProxy_DynatraceTagRulesLogRuleOutputReference) PutFilteringTag(valu
 		d,
 		"putFilteringTag",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DynatraceTagRulesLogRuleOutputReference) ResetFilteringTag() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilteringTag",
+		nil, // no parameters
 	)
 }
 

@@ -49,6 +49,9 @@ type KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UndrainableNodeBehavior() *string
+	SetUndrainableNodeBehavior(val *string)
+	UndrainableNodeBehaviorInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -75,6 +78,7 @@ type KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetDrainTimeoutInMinutes()
 	ResetNodeSoakDurationInMinutes()
+	ResetUndrainableNodeBehavior()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktf.IResolveContext) interface{}
@@ -220,6 +224,26 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference) UndrainableNodeBehavior() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"undrainableNodeBehavior",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference) UndrainableNodeBehaviorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"undrainableNodeBehaviorInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewKubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference {
 	_init_.Initialize()
@@ -332,6 +356,17 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReferenc
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference)SetUndrainableNodeBehavior(val *string) {
+	if err := j.validateSetUndrainableNodeBehaviorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"undrainableNodeBehavior",
 		val,
 	)
 }
@@ -534,6 +569,14 @@ func (k *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReferenc
 	_jsii_.InvokeVoid(
 		k,
 		"resetNodeSoakDurationInMinutes",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference) ResetUndrainableNodeBehavior() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetUndrainableNodeBehavior",
 		nil, // no parameters
 	)
 }

@@ -5,7 +5,7 @@ package arcmachine
 
 
 type ArcMachineIdentity struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/arc_machine#type ArcMachine#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/arc_machine#type ArcMachine#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

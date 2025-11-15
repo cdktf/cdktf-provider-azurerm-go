@@ -5,9 +5,9 @@ package firewallpolicy
 
 
 type FirewallPolicyThreatIntelligenceAllowlistStruct struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/firewall_policy#fqdns FirewallPolicy#fqdns}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/firewall_policy#fqdns FirewallPolicy#fqdns}.
 	Fqdns *[]*string `field:"optional" json:"fqdns" yaml:"fqdns"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/firewall_policy#ip_addresses FirewallPolicy#ip_addresses}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/firewall_policy#ip_addresses FirewallPolicy#ip_addresses}.
 	IpAddresses *[]*string `field:"optional" json:"ipAddresses" yaml:"ipAddresses"`
 }
 

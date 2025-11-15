@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/data-sources/postgresql_flexible_server azurerm_postgresql_flexible_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/data-sources/postgresql_flexible_server azurerm_postgresql_flexible_server}.
 type DataAzurermPostgresqlFlexibleServer interface {
 	cdktf.TerraformDataSource
 	AdministratorLogin() *string
@@ -40,6 +40,7 @@ type DataAzurermPostgresqlFlexibleServer interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HighAvailability() DataAzurermPostgresqlFlexibleServerHighAvailabilityList
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -75,6 +76,7 @@ type DataAzurermPostgresqlFlexibleServer interface {
 	Timeouts() DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	Version() *string
+	Zone() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -240,6 +242,16 @@ func (j *jsiiProxy_DataAzurermPostgresqlFlexibleServer) FriendlyUniqueId() *stri
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermPostgresqlFlexibleServer) HighAvailability() DataAzurermPostgresqlFlexibleServerHighAvailabilityList {
+	var returns DataAzurermPostgresqlFlexibleServerHighAvailabilityList
+	_jsii_.Get(
+		j,
+		"highAvailability",
 		&returns,
 	)
 	return returns
@@ -455,8 +467,18 @@ func (j *jsiiProxy_DataAzurermPostgresqlFlexibleServer) Version() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermPostgresqlFlexibleServer) Zone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zone",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/data-sources/postgresql_flexible_server azurerm_postgresql_flexible_server} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/data-sources/postgresql_flexible_server azurerm_postgresql_flexible_server} Data Source.
 func NewDataAzurermPostgresqlFlexibleServer(scope constructs.Construct, id *string, config *DataAzurermPostgresqlFlexibleServerConfig) DataAzurermPostgresqlFlexibleServer {
 	_init_.Initialize()
 
@@ -474,7 +496,7 @@ func NewDataAzurermPostgresqlFlexibleServer(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/data-sources/postgresql_flexible_server azurerm_postgresql_flexible_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/data-sources/postgresql_flexible_server azurerm_postgresql_flexible_server} Data Source.
 func NewDataAzurermPostgresqlFlexibleServer_Override(d DataAzurermPostgresqlFlexibleServer, scope constructs.Construct, id *string, config *DataAzurermPostgresqlFlexibleServerConfig) {
 	_init_.Initialize()
 

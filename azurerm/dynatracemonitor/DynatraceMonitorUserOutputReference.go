@@ -79,6 +79,8 @@ type DynatraceMonitorUserOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	ResetCountry()
+	ResetPhoneNumber()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktf.IResolveContext) interface{}
@@ -586,6 +588,22 @@ func (d *jsiiProxy_DynatraceMonitorUserOutputReference) InterpolationForAttribut
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DynatraceMonitorUserOutputReference) ResetCountry() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCountry",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DynatraceMonitorUserOutputReference) ResetPhoneNumber() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPhoneNumber",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DynatraceMonitorUserOutputReference) Resolve(context cdktf.IResolveContext) interface{} {

@@ -70,6 +70,7 @@ type DynatraceTagRulesMetricRuleOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutFilteringTag(value interface{})
+	ResetFilteringTag()
 	ResetSendingMetricsEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -484,6 +485,14 @@ func (d *jsiiProxy_DynatraceTagRulesMetricRuleOutputReference) PutFilteringTag(v
 		d,
 		"putFilteringTag",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DynatraceTagRulesMetricRuleOutputReference) ResetFilteringTag() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilteringTag",
+		nil, // no parameters
 	)
 }
 

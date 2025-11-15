@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/api_management_backend azurerm_api_management_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/api_management_backend azurerm_api_management_backend}.
 type ApiManagementBackend interface {
 	cdktf.TerraformResource
 	ApiManagementName() *string
@@ -20,6 +20,8 @@ type ApiManagementBackend interface {
 	ApiManagementNameInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CircuitBreakerRule() ApiManagementBackendCircuitBreakerRuleOutputReference
+	CircuitBreakerRuleInput() *ApiManagementBackendCircuitBreakerRule
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -141,11 +143,13 @@ type ApiManagementBackend interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCircuitBreakerRule(value *ApiManagementBackendCircuitBreakerRule)
 	PutCredentials(value *ApiManagementBackendCredentials)
 	PutProxy(value *ApiManagementBackendProxy)
 	PutServiceFabricCluster(value *ApiManagementBackendServiceFabricCluster)
 	PutTimeouts(value *ApiManagementBackendTimeouts)
 	PutTls(value *ApiManagementBackendTls)
+	ResetCircuitBreakerRule()
 	ResetCredentials()
 	ResetDescription()
 	ResetId()
@@ -201,6 +205,26 @@ func (j *jsiiProxy_ApiManagementBackend) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementBackend) CircuitBreakerRule() ApiManagementBackendCircuitBreakerRuleOutputReference {
+	var returns ApiManagementBackendCircuitBreakerRuleOutputReference
+	_jsii_.Get(
+		j,
+		"circuitBreakerRule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementBackend) CircuitBreakerRuleInput() *ApiManagementBackendCircuitBreakerRule {
+	var returns *ApiManagementBackendCircuitBreakerRule
+	_jsii_.Get(
+		j,
+		"circuitBreakerRuleInput",
 		&returns,
 	)
 	return returns
@@ -617,7 +641,7 @@ func (j *jsiiProxy_ApiManagementBackend) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/api_management_backend azurerm_api_management_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/api_management_backend azurerm_api_management_backend} Resource.
 func NewApiManagementBackend(scope constructs.Construct, id *string, config *ApiManagementBackendConfig) ApiManagementBackend {
 	_init_.Initialize()
 
@@ -635,7 +659,7 @@ func NewApiManagementBackend(scope constructs.Construct, id *string, config *Api
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/api_management_backend azurerm_api_management_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/api_management_backend azurerm_api_management_backend} Resource.
 func NewApiManagementBackend_Override(a ApiManagementBackend, scope constructs.Construct, id *string, config *ApiManagementBackendConfig) {
 	_init_.Initialize()
 
@@ -1166,6 +1190,17 @@ func (a *jsiiProxy_ApiManagementBackend) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
+func (a *jsiiProxy_ApiManagementBackend) PutCircuitBreakerRule(value *ApiManagementBackendCircuitBreakerRule) {
+	if err := a.validatePutCircuitBreakerRuleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putCircuitBreakerRule",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_ApiManagementBackend) PutCredentials(value *ApiManagementBackendCredentials) {
 	if err := a.validatePutCredentialsParameters(value); err != nil {
 		panic(err)
@@ -1218,6 +1253,14 @@ func (a *jsiiProxy_ApiManagementBackend) PutTls(value *ApiManagementBackendTls) 
 		a,
 		"putTls",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ApiManagementBackend) ResetCircuitBreakerRule() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCircuitBreakerRule",
+		nil, // no parameters
 	)
 }
 

@@ -71,6 +71,10 @@ func (j *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference) validateSetMaxUnavailableParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference) validateSetNodeSoakDurationInMinutesParameters(val *float64) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (j *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference) vali
 }
 
 func (j *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference) validateSetUndrainableNodeBehaviorParameters(val *string) error {
 	return nil
 }
 

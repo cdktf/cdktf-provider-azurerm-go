@@ -83,6 +83,10 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference) validateSetUndrainableNodeBehaviorParameters(val *string) error {
+	return nil
+}
+
 func validateNewKubernetesClusterDefaultNodePoolUpgradeSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

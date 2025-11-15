@@ -75,6 +75,10 @@ func (a *jsiiProxy_ApiManagementBackend) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (a *jsiiProxy_ApiManagementBackend) validatePutCircuitBreakerRuleParameters(value *ApiManagementBackendCircuitBreakerRule) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementBackend) validatePutCredentialsParameters(value *ApiManagementBackendCredentials) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/managed_redis azurerm_managed_redis}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/managed_redis azurerm_managed_redis}.
 type ManagedRedis interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -72,6 +72,9 @@ type ManagedRedis interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicNetworkAccess() *string
+	SetPublicNetworkAccess(val *string)
+	PublicNetworkAccessInput() *string
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceGroupName() *string
@@ -146,6 +149,7 @@ type ManagedRedis interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPublicNetworkAccess()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -436,6 +440,26 @@ func (j *jsiiProxy_ManagedRedis) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ManagedRedis) PublicNetworkAccess() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicNetworkAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedRedis) PublicNetworkAccessInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ManagedRedis) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -557,7 +581,7 @@ func (j *jsiiProxy_ManagedRedis) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/managed_redis azurerm_managed_redis} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/managed_redis azurerm_managed_redis} Resource.
 func NewManagedRedis(scope constructs.Construct, id *string, config *ManagedRedisConfig) ManagedRedis {
 	_init_.Initialize()
 
@@ -575,7 +599,7 @@ func NewManagedRedis(scope constructs.Construct, id *string, config *ManagedRedi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/managed_redis azurerm_managed_redis} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/managed_redis azurerm_managed_redis} Resource.
 func NewManagedRedis_Override(m ManagedRedis, scope constructs.Construct, id *string, config *ManagedRedisConfig) {
 	_init_.Initialize()
 
@@ -694,6 +718,17 @@ func (j *jsiiProxy_ManagedRedis)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ManagedRedis)SetPublicNetworkAccess(val *string) {
+	if err := j.validateSetPublicNetworkAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publicNetworkAccess",
 		val,
 	)
 }
@@ -1172,6 +1207,14 @@ func (m *jsiiProxy_ManagedRedis) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ManagedRedis) ResetPublicNetworkAccess() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPublicNetworkAccess",
 		nil, // no parameters
 	)
 }

@@ -38,6 +38,9 @@ type KubernetesClusterNodePoolUpgradeSettingsOutputReference interface {
 	MaxSurge() *string
 	SetMaxSurge(val *string)
 	MaxSurgeInput() *string
+	MaxUnavailable() *string
+	SetMaxUnavailable(val *string)
+	MaxUnavailableInput() *string
 	NodeSoakDurationInMinutes() *float64
 	SetNodeSoakDurationInMinutes(val *float64)
 	NodeSoakDurationInMinutesInput() *float64
@@ -49,6 +52,9 @@ type KubernetesClusterNodePoolUpgradeSettingsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UndrainableNodeBehavior() *string
+	SetUndrainableNodeBehavior(val *string)
+	UndrainableNodeBehaviorInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -74,7 +80,10 @@ type KubernetesClusterNodePoolUpgradeSettingsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetDrainTimeoutInMinutes()
+	ResetMaxSurge()
+	ResetMaxUnavailable()
 	ResetNodeSoakDurationInMinutes()
+	ResetUndrainableNodeBehavior()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktf.IResolveContext) interface{}
@@ -180,6 +189,26 @@ func (j *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference) MaxS
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference) MaxUnavailable() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxUnavailable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference) MaxUnavailableInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxUnavailableInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference) NodeSoakDurationInMinutes() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -215,6 +244,26 @@ func (j *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference) Terr
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference) UndrainableNodeBehavior() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"undrainableNodeBehavior",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference) UndrainableNodeBehaviorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"undrainableNodeBehaviorInput",
 		&returns,
 	)
 	return returns
@@ -303,6 +352,17 @@ func (j *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference)SetMa
 	)
 }
 
+func (j *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference)SetMaxUnavailable(val *string) {
+	if err := j.validateSetMaxUnavailableParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxUnavailable",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference)SetNodeSoakDurationInMinutes(val *float64) {
 	if err := j.validateSetNodeSoakDurationInMinutesParameters(val); err != nil {
 		panic(err)
@@ -332,6 +392,17 @@ func (j *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference)SetTe
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference)SetUndrainableNodeBehavior(val *string) {
+	if err := j.validateSetUndrainableNodeBehaviorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"undrainableNodeBehavior",
 		val,
 	)
 }
@@ -530,10 +601,34 @@ func (k *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference) Rese
 	)
 }
 
+func (k *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference) ResetMaxSurge() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetMaxSurge",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference) ResetMaxUnavailable() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetMaxUnavailable",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference) ResetNodeSoakDurationInMinutes() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetNodeSoakDurationInMinutes",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference) ResetUndrainableNodeBehavior() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetUndrainableNodeBehavior",
 		nil, // no parameters
 	)
 }

@@ -389,6 +389,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lastNameInput", GoGetter: "LastNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "phoneNumber", GoGetter: "PhoneNumber"},
 			_jsii_.MemberProperty{JsiiProperty: "phoneNumberInput", GoGetter: "PhoneNumberInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCountry", GoMethod: "ResetCountry"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPhoneNumber", GoMethod: "ResetPhoneNumber"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

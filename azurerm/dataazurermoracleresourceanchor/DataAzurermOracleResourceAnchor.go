@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/data-sources/oracle_resource_anchor azurerm_oracle_resource_anchor}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/data-sources/oracle_resource_anchor azurerm_oracle_resource_anchor}.
 type DataAzurermOracleResourceAnchor interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -368,7 +368,7 @@ func (j *jsiiProxy_DataAzurermOracleResourceAnchor) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/data-sources/oracle_resource_anchor azurerm_oracle_resource_anchor} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/data-sources/oracle_resource_anchor azurerm_oracle_resource_anchor} Data Source.
 func NewDataAzurermOracleResourceAnchor(scope constructs.Construct, id *string, config *DataAzurermOracleResourceAnchorConfig) DataAzurermOracleResourceAnchor {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewDataAzurermOracleResourceAnchor(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/data-sources/oracle_resource_anchor azurerm_oracle_resource_anchor} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/data-sources/oracle_resource_anchor azurerm_oracle_resource_anchor} Data Source.
 func NewDataAzurermOracleResourceAnchor_Override(d DataAzurermOracleResourceAnchor, scope constructs.Construct, id *string, config *DataAzurermOracleResourceAnchorConfig) {
 	_init_.Initialize()
 

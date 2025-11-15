@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/data-sources/managed_redis azurerm_managed_redis}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/data-sources/managed_redis azurerm_managed_redis}.
 type DataAzurermManagedRedis interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -57,6 +57,7 @@ type DataAzurermManagedRedis interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	PublicNetworkAccess() *string
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceGroupName() *string
@@ -322,6 +323,16 @@ func (j *jsiiProxy_DataAzurermManagedRedis) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermManagedRedis) PublicNetworkAccess() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicNetworkAccess",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermManagedRedis) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -423,7 +434,7 @@ func (j *jsiiProxy_DataAzurermManagedRedis) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/data-sources/managed_redis azurerm_managed_redis} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/data-sources/managed_redis azurerm_managed_redis} Data Source.
 func NewDataAzurermManagedRedis(scope constructs.Construct, id *string, config *DataAzurermManagedRedisConfig) DataAzurermManagedRedis {
 	_init_.Initialize()
 
@@ -441,7 +452,7 @@ func NewDataAzurermManagedRedis(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/data-sources/managed_redis azurerm_managed_redis} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/data-sources/managed_redis azurerm_managed_redis} Data Source.
 func NewDataAzurermManagedRedis_Override(d DataAzurermManagedRedis, scope constructs.Construct, id *string, config *DataAzurermManagedRedisConfig) {
 	_init_.Initialize()
 

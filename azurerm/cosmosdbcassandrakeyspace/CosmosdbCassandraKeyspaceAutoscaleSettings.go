@@ -5,7 +5,7 @@ package cosmosdbcassandrakeyspace
 
 
 type CosmosdbCassandraKeyspaceAutoscaleSettings struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/cosmosdb_cassandra_keyspace#max_throughput CosmosdbCassandraKeyspace#max_throughput}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/cosmosdb_cassandra_keyspace#max_throughput CosmosdbCassandraKeyspace#max_throughput}.
 	MaxThroughput *float64 `field:"optional" json:"maxThroughput" yaml:"maxThroughput"`
 }
 

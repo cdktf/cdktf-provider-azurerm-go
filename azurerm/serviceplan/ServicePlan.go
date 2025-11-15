@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/service_plan azurerm_service_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/service_plan azurerm_service_plan}.
 type ServicePlan interface {
 	cdktf.TerraformResource
 	AppServiceEnvironmentId() *string
@@ -639,7 +639,7 @@ func (j *jsiiProxy_ServicePlan) ZoneBalancingEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/service_plan azurerm_service_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/service_plan azurerm_service_plan} Resource.
 func NewServicePlan(scope constructs.Construct, id *string, config *ServicePlanConfig) ServicePlan {
 	_init_.Initialize()
 
@@ -657,7 +657,7 @@ func NewServicePlan(scope constructs.Construct, id *string, config *ServicePlanC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/resources/service_plan azurerm_service_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/service_plan azurerm_service_plan} Resource.
 func NewServicePlan_Override(s ServicePlan, scope constructs.Construct, id *string, config *ServicePlanConfig) {
 	_init_.Initialize()
 

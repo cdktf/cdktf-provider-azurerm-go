@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/data-sources/oracle_db_servers azurerm_oracle_db_servers}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/data-sources/oracle_db_servers azurerm_oracle_db_servers}.
 type DataAzurermOracleDbServers interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataAzurermOracleDbServers) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/data-sources/oracle_db_servers azurerm_oracle_db_servers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/data-sources/oracle_db_servers azurerm_oracle_db_servers} Data Source.
 func NewDataAzurermOracleDbServers(scope constructs.Construct, id *string, config *DataAzurermOracleDbServersConfig) DataAzurermOracleDbServers {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataAzurermOracleDbServers(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.52.0/docs/data-sources/oracle_db_servers azurerm_oracle_db_servers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/data-sources/oracle_db_servers azurerm_oracle_db_servers} Data Source.
 func NewDataAzurermOracleDbServers_Override(d DataAzurermOracleDbServers, scope constructs.Construct, id *string, config *DataAzurermOracleDbServersConfig) {
 	_init_.Initialize()
 
