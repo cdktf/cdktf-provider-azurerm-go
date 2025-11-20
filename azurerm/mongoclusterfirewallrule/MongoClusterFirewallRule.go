@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/mongo_cluster_firewall_rule azurerm_mongo_cluster_firewall_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/mongo_cluster_firewall_rule azurerm_mongo_cluster_firewall_rule}.
 type MongoClusterFirewallRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_MongoClusterFirewallRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/mongo_cluster_firewall_rule azurerm_mongo_cluster_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/mongo_cluster_firewall_rule azurerm_mongo_cluster_firewall_rule} Resource.
 func NewMongoClusterFirewallRule(scope constructs.Construct, id *string, config *MongoClusterFirewallRuleConfig) MongoClusterFirewallRule {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewMongoClusterFirewallRule(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/mongo_cluster_firewall_rule azurerm_mongo_cluster_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/mongo_cluster_firewall_rule azurerm_mongo_cluster_firewall_rule} Resource.
 func NewMongoClusterFirewallRule_Override(m MongoClusterFirewallRule, scope constructs.Construct, id *string, config *MongoClusterFirewallRuleConfig) {
 	_init_.Initialize()
 

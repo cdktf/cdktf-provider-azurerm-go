@@ -22,22 +22,22 @@ type RouteServerBgpConnectionConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/route_server_bgp_connection#name RouteServerBgpConnection#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/route_server_bgp_connection#name RouteServerBgpConnection#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/route_server_bgp_connection#peer_asn RouteServerBgpConnection#peer_asn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/route_server_bgp_connection#peer_asn RouteServerBgpConnection#peer_asn}.
 	PeerAsn *float64 `field:"required" json:"peerAsn" yaml:"peerAsn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/route_server_bgp_connection#peer_ip RouteServerBgpConnection#peer_ip}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/route_server_bgp_connection#peer_ip RouteServerBgpConnection#peer_ip}.
 	PeerIp *string `field:"required" json:"peerIp" yaml:"peerIp"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/route_server_bgp_connection#route_server_id RouteServerBgpConnection#route_server_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/route_server_bgp_connection#route_server_id RouteServerBgpConnection#route_server_id}.
 	RouteServerId *string `field:"required" json:"routeServerId" yaml:"routeServerId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/route_server_bgp_connection#id RouteServerBgpConnection#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/route_server_bgp_connection#id RouteServerBgpConnection#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/route_server_bgp_connection#timeouts RouteServerBgpConnection#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/route_server_bgp_connection#timeouts RouteServerBgpConnection#timeouts}
 	Timeouts *RouteServerBgpConnectionTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -25,6 +25,7 @@ type DataAzurermContainerAppTemplateOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	Container() DataAzurermContainerAppTemplateContainerList
+	CooldownPeriodInSeconds() *float64
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -39,6 +40,7 @@ type DataAzurermContainerAppTemplateOutputReference interface {
 	SetInternalValue(val *DataAzurermContainerAppTemplate)
 	MaxReplicas() *float64
 	MinReplicas() *float64
+	PollingIntervalInSeconds() *float64
 	RevisionSuffix() *string
 	TcpScaleRule() DataAzurermContainerAppTemplateTcpScaleRuleList
 	TerminationGracePeriodSeconds() *float64
@@ -130,6 +132,16 @@ func (j *jsiiProxy_DataAzurermContainerAppTemplateOutputReference) Container() D
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermContainerAppTemplateOutputReference) CooldownPeriodInSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"cooldownPeriodInSeconds",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermContainerAppTemplateOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -205,6 +217,16 @@ func (j *jsiiProxy_DataAzurermContainerAppTemplateOutputReference) MinReplicas()
 	_jsii_.Get(
 		j,
 		"minReplicas",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermContainerAppTemplateOutputReference) PollingIntervalInSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"pollingIntervalInSeconds",
 		&returns,
 	)
 	return returns

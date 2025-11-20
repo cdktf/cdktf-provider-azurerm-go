@@ -127,6 +127,10 @@ func (j *jsiiProxy_StorageShareDirectory) validateSetStorageShareIdParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_StorageShareDirectory) validateSetStorageShareUrlParameters(val *string) error {
+	return nil
+}
+
 func validateNewStorageShareDirectoryParameters(scope constructs.Construct, id *string, config *StorageShareDirectoryConfig) error {
 	return nil
 }

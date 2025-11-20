@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/data_protection_backup_instance_postgresql azurerm_data_protection_backup_instance_postgresql}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/data_protection_backup_instance_postgresql azurerm_data_protection_backup_instance_postgresql}.
 type DataProtectionBackupInstancePostgresql interface {
 	cdktf.TerraformResource
 	BackupPolicyId() *string
@@ -63,6 +63,7 @@ type DataProtectionBackupInstancePostgresql interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	ProtectionState() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -372,6 +373,16 @@ func (j *jsiiProxy_DataProtectionBackupInstancePostgresql) Node() constructs.Nod
 	return returns
 }
 
+func (j *jsiiProxy_DataProtectionBackupInstancePostgresql) ProtectionState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protectionState",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataProtectionBackupInstancePostgresql) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -473,7 +484,7 @@ func (j *jsiiProxy_DataProtectionBackupInstancePostgresql) VaultIdInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/data_protection_backup_instance_postgresql azurerm_data_protection_backup_instance_postgresql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/data_protection_backup_instance_postgresql azurerm_data_protection_backup_instance_postgresql} Resource.
 func NewDataProtectionBackupInstancePostgresql(scope constructs.Construct, id *string, config *DataProtectionBackupInstancePostgresqlConfig) DataProtectionBackupInstancePostgresql {
 	_init_.Initialize()
 
@@ -491,7 +502,7 @@ func NewDataProtectionBackupInstancePostgresql(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/data_protection_backup_instance_postgresql azurerm_data_protection_backup_instance_postgresql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/data_protection_backup_instance_postgresql azurerm_data_protection_backup_instance_postgresql} Resource.
 func NewDataProtectionBackupInstancePostgresql_Override(d DataProtectionBackupInstancePostgresql, scope constructs.Construct, id *string, config *DataProtectionBackupInstancePostgresqlConfig) {
 	_init_.Initialize()
 

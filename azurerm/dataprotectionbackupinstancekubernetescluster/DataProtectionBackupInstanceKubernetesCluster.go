@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/data_protection_backup_instance_kubernetes_cluster azurerm_data_protection_backup_instance_kubernetes_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/data_protection_backup_instance_kubernetes_cluster azurerm_data_protection_backup_instance_kubernetes_cluster}.
 type DataProtectionBackupInstanceKubernetesCluster interface {
 	cdktf.TerraformResource
 	BackupDatasourceParameters() DataProtectionBackupInstanceKubernetesClusterBackupDatasourceParametersOutputReference
@@ -62,6 +62,7 @@ type DataProtectionBackupInstanceKubernetesCluster interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	ProtectionState() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -375,6 +376,16 @@ func (j *jsiiProxy_DataProtectionBackupInstanceKubernetesCluster) Node() constru
 	return returns
 }
 
+func (j *jsiiProxy_DataProtectionBackupInstanceKubernetesCluster) ProtectionState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protectionState",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataProtectionBackupInstanceKubernetesCluster) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -496,7 +507,7 @@ func (j *jsiiProxy_DataProtectionBackupInstanceKubernetesCluster) VaultIdInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/data_protection_backup_instance_kubernetes_cluster azurerm_data_protection_backup_instance_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/data_protection_backup_instance_kubernetes_cluster azurerm_data_protection_backup_instance_kubernetes_cluster} Resource.
 func NewDataProtectionBackupInstanceKubernetesCluster(scope constructs.Construct, id *string, config *DataProtectionBackupInstanceKubernetesClusterConfig) DataProtectionBackupInstanceKubernetesCluster {
 	_init_.Initialize()
 
@@ -514,7 +525,7 @@ func NewDataProtectionBackupInstanceKubernetesCluster(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/data_protection_backup_instance_kubernetes_cluster azurerm_data_protection_backup_instance_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/data_protection_backup_instance_kubernetes_cluster azurerm_data_protection_backup_instance_kubernetes_cluster} Resource.
 func NewDataProtectionBackupInstanceKubernetesCluster_Override(d DataProtectionBackupInstanceKubernetesCluster, scope constructs.Construct, id *string, config *DataProtectionBackupInstanceKubernetesClusterConfig) {
 	_init_.Initialize()
 

@@ -5,7 +5,7 @@ package dataazurermadvisorrecommendations
 
 
 type DataAzurermAdvisorRecommendationsTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/data-sources/advisor_recommendations#read DataAzurermAdvisorRecommendations#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/data-sources/advisor_recommendations#read DataAzurermAdvisorRecommendations#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

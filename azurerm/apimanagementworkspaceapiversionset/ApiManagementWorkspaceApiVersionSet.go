@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/api_management_workspace_api_version_set azurerm_api_management_workspace_api_version_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/api_management_workspace_api_version_set azurerm_api_management_workspace_api_version_set}.
 type ApiManagementWorkspaceApiVersionSet interface {
 	cdktf.TerraformResource
 	ApiManagementWorkspaceId() *string
@@ -498,7 +498,7 @@ func (j *jsiiProxy_ApiManagementWorkspaceApiVersionSet) VersionQueryNameInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/api_management_workspace_api_version_set azurerm_api_management_workspace_api_version_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/api_management_workspace_api_version_set azurerm_api_management_workspace_api_version_set} Resource.
 func NewApiManagementWorkspaceApiVersionSet(scope constructs.Construct, id *string, config *ApiManagementWorkspaceApiVersionSetConfig) ApiManagementWorkspaceApiVersionSet {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewApiManagementWorkspaceApiVersionSet(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/api_management_workspace_api_version_set azurerm_api_management_workspace_api_version_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/api_management_workspace_api_version_set azurerm_api_management_workspace_api_version_set} Resource.
 func NewApiManagementWorkspaceApiVersionSet_Override(a ApiManagementWorkspaceApiVersionSet, scope constructs.Construct, id *string, config *ApiManagementWorkspaceApiVersionSetConfig) {
 	_init_.Initialize()
 

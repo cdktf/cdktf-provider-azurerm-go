@@ -5,13 +5,13 @@ package apimanagementauthorizationserver
 
 
 type ApiManagementAuthorizationServerTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/api_management_authorization_server#create ApiManagementAuthorizationServer#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/api_management_authorization_server#create ApiManagementAuthorizationServer#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/api_management_authorization_server#delete ApiManagementAuthorizationServer#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/api_management_authorization_server#delete ApiManagementAuthorizationServer#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/api_management_authorization_server#read ApiManagementAuthorizationServer#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/api_management_authorization_server#read ApiManagementAuthorizationServer#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/api_management_authorization_server#update ApiManagementAuthorizationServer#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/api_management_authorization_server#update ApiManagementAuthorizationServer#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

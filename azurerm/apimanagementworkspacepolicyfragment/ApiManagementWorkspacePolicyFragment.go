@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/api_management_workspace_policy_fragment azurerm_api_management_workspace_policy_fragment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/api_management_workspace_policy_fragment azurerm_api_management_workspace_policy_fragment}.
 type ApiManagementWorkspacePolicyFragment interface {
 	cdktf.TerraformResource
 	ApiManagementWorkspaceId() *string
@@ -451,7 +451,7 @@ func (j *jsiiProxy_ApiManagementWorkspacePolicyFragment) XmlFormatInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/api_management_workspace_policy_fragment azurerm_api_management_workspace_policy_fragment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/api_management_workspace_policy_fragment azurerm_api_management_workspace_policy_fragment} Resource.
 func NewApiManagementWorkspacePolicyFragment(scope constructs.Construct, id *string, config *ApiManagementWorkspacePolicyFragmentConfig) ApiManagementWorkspacePolicyFragment {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewApiManagementWorkspacePolicyFragment(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/api_management_workspace_policy_fragment azurerm_api_management_workspace_policy_fragment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/api_management_workspace_policy_fragment azurerm_api_management_workspace_policy_fragment} Resource.
 func NewApiManagementWorkspacePolicyFragment_Override(a ApiManagementWorkspacePolicyFragment, scope constructs.Construct, id *string, config *ApiManagementWorkspacePolicyFragmentConfig) {
 	_init_.Initialize()
 

@@ -27,6 +27,9 @@ type ContainerAppTemplateOutputReference interface {
 	SetComplexObjectIsFromSet(val *bool)
 	Container() ContainerAppTemplateContainerList
 	ContainerInput() interface{}
+	CooldownPeriodInSeconds() *float64
+	SetCooldownPeriodInSeconds(val *float64)
+	CooldownPeriodInSecondsInput() *float64
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -48,6 +51,9 @@ type ContainerAppTemplateOutputReference interface {
 	MinReplicas() *float64
 	SetMinReplicas(val *float64)
 	MinReplicasInput() *float64
+	PollingIntervalInSeconds() *float64
+	SetPollingIntervalInSeconds(val *float64)
+	PollingIntervalInSecondsInput() *float64
 	RevisionSuffix() *string
 	SetRevisionSuffix(val *string)
 	RevisionSuffixInput() *string
@@ -98,11 +104,13 @@ type ContainerAppTemplateOutputReference interface {
 	PutTcpScaleRule(value interface{})
 	PutVolume(value interface{})
 	ResetAzureQueueScaleRule()
+	ResetCooldownPeriodInSeconds()
 	ResetCustomScaleRule()
 	ResetHttpScaleRule()
 	ResetInitContainer()
 	ResetMaxReplicas()
 	ResetMinReplicas()
+	ResetPollingIntervalInSeconds()
 	ResetRevisionSuffix()
 	ResetTcpScaleRule()
 	ResetTerminationGracePeriodSeconds()
@@ -177,6 +185,26 @@ func (j *jsiiProxy_ContainerAppTemplateOutputReference) ContainerInput() interfa
 	_jsii_.Get(
 		j,
 		"containerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppTemplateOutputReference) CooldownPeriodInSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"cooldownPeriodInSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppTemplateOutputReference) CooldownPeriodInSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"cooldownPeriodInSecondsInput",
 		&returns,
 	)
 	return returns
@@ -307,6 +335,26 @@ func (j *jsiiProxy_ContainerAppTemplateOutputReference) MinReplicasInput() *floa
 	_jsii_.Get(
 		j,
 		"minReplicasInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppTemplateOutputReference) PollingIntervalInSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"pollingIntervalInSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppTemplateOutputReference) PollingIntervalInSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"pollingIntervalInSecondsInput",
 		&returns,
 	)
 	return returns
@@ -462,6 +510,17 @@ func (j *jsiiProxy_ContainerAppTemplateOutputReference)SetComplexObjectIsFromSet
 	)
 }
 
+func (j *jsiiProxy_ContainerAppTemplateOutputReference)SetCooldownPeriodInSeconds(val *float64) {
+	if err := j.validateSetCooldownPeriodInSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cooldownPeriodInSeconds",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ContainerAppTemplateOutputReference)SetInternalValue(val *ContainerAppTemplate) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -491,6 +550,17 @@ func (j *jsiiProxy_ContainerAppTemplateOutputReference)SetMinReplicas(val *float
 	_jsii_.Set(
 		j,
 		"minReplicas",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAppTemplateOutputReference)SetPollingIntervalInSeconds(val *float64) {
+	if err := j.validateSetPollingIntervalInSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pollingIntervalInSeconds",
 		val,
 	)
 }
@@ -810,6 +880,14 @@ func (c *jsiiProxy_ContainerAppTemplateOutputReference) ResetAzureQueueScaleRule
 	)
 }
 
+func (c *jsiiProxy_ContainerAppTemplateOutputReference) ResetCooldownPeriodInSeconds() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCooldownPeriodInSeconds",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerAppTemplateOutputReference) ResetCustomScaleRule() {
 	_jsii_.InvokeVoid(
 		c,
@@ -846,6 +924,14 @@ func (c *jsiiProxy_ContainerAppTemplateOutputReference) ResetMinReplicas() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetMinReplicas",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAppTemplateOutputReference) ResetPollingIntervalInSeconds() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPollingIntervalInSeconds",
 		nil, // no parameters
 	)
 }

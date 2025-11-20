@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/synapse_workspace_aad_admin azurerm_synapse_workspace_aad_admin}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/synapse_workspace_aad_admin azurerm_synapse_workspace_aad_admin}.
 type SynapseWorkspaceAadAdmin interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_SynapseWorkspaceAadAdmin) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/synapse_workspace_aad_admin azurerm_synapse_workspace_aad_admin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/synapse_workspace_aad_admin azurerm_synapse_workspace_aad_admin} Resource.
 func NewSynapseWorkspaceAadAdmin(scope constructs.Construct, id *string, config *SynapseWorkspaceAadAdminConfig) SynapseWorkspaceAadAdmin {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewSynapseWorkspaceAadAdmin(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/synapse_workspace_aad_admin azurerm_synapse_workspace_aad_admin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/synapse_workspace_aad_admin azurerm_synapse_workspace_aad_admin} Resource.
 func NewSynapseWorkspaceAadAdmin_Override(s SynapseWorkspaceAadAdmin, scope constructs.Construct, id *string, config *SynapseWorkspaceAadAdminConfig) {
 	_init_.Initialize()
 

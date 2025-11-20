@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/stack_hci_network_interface azurerm_stack_hci_network_interface}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/stack_hci_network_interface azurerm_stack_hci_network_interface}.
 type StackHciNetworkInterface interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -521,7 +521,7 @@ func (j *jsiiProxy_StackHciNetworkInterface) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/stack_hci_network_interface azurerm_stack_hci_network_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/stack_hci_network_interface azurerm_stack_hci_network_interface} Resource.
 func NewStackHciNetworkInterface(scope constructs.Construct, id *string, config *StackHciNetworkInterfaceConfig) StackHciNetworkInterface {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewStackHciNetworkInterface(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/stack_hci_network_interface azurerm_stack_hci_network_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/stack_hci_network_interface azurerm_stack_hci_network_interface} Resource.
 func NewStackHciNetworkInterface_Override(s StackHciNetworkInterface, scope constructs.Construct, id *string, config *StackHciNetworkInterfaceConfig) {
 	_init_.Initialize()
 

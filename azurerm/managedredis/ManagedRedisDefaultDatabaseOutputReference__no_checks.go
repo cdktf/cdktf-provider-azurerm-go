@@ -87,6 +87,14 @@ func (j *jsiiProxy_ManagedRedisDefaultDatabaseOutputReference) validateSetIntern
 	return nil
 }
 
+func (j *jsiiProxy_ManagedRedisDefaultDatabaseOutputReference) validateSetPersistenceAppendOnlyFileBackupFrequencyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ManagedRedisDefaultDatabaseOutputReference) validateSetPersistenceRedisDatabaseBackupFrequencyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ManagedRedisDefaultDatabaseOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

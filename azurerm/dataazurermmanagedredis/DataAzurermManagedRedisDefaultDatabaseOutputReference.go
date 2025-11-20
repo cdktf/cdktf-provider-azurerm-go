@@ -36,9 +36,12 @@ type DataAzurermManagedRedisDefaultDatabaseOutputReference interface {
 	Fqn() *string
 	GeoReplicationGroupName() *string
 	GeoReplicationLinkedDatabaseIds() *[]*string
+	Id() *string
 	InternalValue() *DataAzurermManagedRedisDefaultDatabase
 	SetInternalValue(val *DataAzurermManagedRedisDefaultDatabase)
 	Module() DataAzurermManagedRedisDefaultDatabaseModuleList
+	PersistenceAppendOnlyFileBackupFrequency() *string
+	PersistenceRedisDatabaseBackupFrequency() *string
 	Port() *float64
 	PrimaryAccessKey() *string
 	SecondaryAccessKey() *string
@@ -189,6 +192,16 @@ func (j *jsiiProxy_DataAzurermManagedRedisDefaultDatabaseOutputReference) GeoRep
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermManagedRedisDefaultDatabaseOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermManagedRedisDefaultDatabaseOutputReference) InternalValue() *DataAzurermManagedRedisDefaultDatabase {
 	var returns *DataAzurermManagedRedisDefaultDatabase
 	_jsii_.Get(
@@ -204,6 +217,26 @@ func (j *jsiiProxy_DataAzurermManagedRedisDefaultDatabaseOutputReference) Module
 	_jsii_.Get(
 		j,
 		"module",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermManagedRedisDefaultDatabaseOutputReference) PersistenceAppendOnlyFileBackupFrequency() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"persistenceAppendOnlyFileBackupFrequency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermManagedRedisDefaultDatabaseOutputReference) PersistenceRedisDatabaseBackupFrequency() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"persistenceRedisDatabaseBackupFrequency",
 		&returns,
 	)
 	return returns

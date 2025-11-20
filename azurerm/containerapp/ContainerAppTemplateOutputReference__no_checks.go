@@ -87,6 +87,10 @@ func (j *jsiiProxy_ContainerAppTemplateOutputReference) validateSetComplexObject
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAppTemplateOutputReference) validateSetCooldownPeriodInSecondsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAppTemplateOutputReference) validateSetInternalValueParameters(val *ContainerAppTemplate) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (j *jsiiProxy_ContainerAppTemplateOutputReference) validateSetMaxReplicasPa
 }
 
 func (j *jsiiProxy_ContainerAppTemplateOutputReference) validateSetMinReplicasParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerAppTemplateOutputReference) validateSetPollingIntervalInSecondsParameters(val *float64) error {
 	return nil
 }
 

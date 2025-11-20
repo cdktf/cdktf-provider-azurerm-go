@@ -5,9 +5,9 @@ package consumptionbudgetsubscription
 
 
 type ConsumptionBudgetSubscriptionTimePeriod struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/consumption_budget_subscription#start_date ConsumptionBudgetSubscription#start_date}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/consumption_budget_subscription#start_date ConsumptionBudgetSubscription#start_date}.
 	StartDate *string `field:"required" json:"startDate" yaml:"startDate"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/consumption_budget_subscription#end_date ConsumptionBudgetSubscription#end_date}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/consumption_budget_subscription#end_date ConsumptionBudgetSubscription#end_date}.
 	EndDate *string `field:"optional" json:"endDate" yaml:"endDate"`
 }
 

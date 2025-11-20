@@ -45,10 +45,17 @@ type ManagedRedisDefaultDatabaseOutputReference interface {
 	GeoReplicationGroupName() *string
 	SetGeoReplicationGroupName(val *string)
 	GeoReplicationGroupNameInput() *string
+	Id() *string
 	InternalValue() *ManagedRedisDefaultDatabase
 	SetInternalValue(val *ManagedRedisDefaultDatabase)
 	Module() ManagedRedisDefaultDatabaseModuleList
 	ModuleInput() interface{}
+	PersistenceAppendOnlyFileBackupFrequency() *string
+	SetPersistenceAppendOnlyFileBackupFrequency(val *string)
+	PersistenceAppendOnlyFileBackupFrequencyInput() *string
+	PersistenceRedisDatabaseBackupFrequency() *string
+	SetPersistenceRedisDatabaseBackupFrequency(val *string)
+	PersistenceRedisDatabaseBackupFrequencyInput() *string
 	Port() *float64
 	PrimaryAccessKey() *string
 	SecondaryAccessKey() *string
@@ -91,6 +98,8 @@ type ManagedRedisDefaultDatabaseOutputReference interface {
 	ResetEvictionPolicy()
 	ResetGeoReplicationGroupName()
 	ResetModule()
+	ResetPersistenceAppendOnlyFileBackupFrequency()
+	ResetPersistenceRedisDatabaseBackupFrequency()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktf.IResolveContext) interface{}
@@ -246,6 +255,16 @@ func (j *jsiiProxy_ManagedRedisDefaultDatabaseOutputReference) GeoReplicationGro
 	return returns
 }
 
+func (j *jsiiProxy_ManagedRedisDefaultDatabaseOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ManagedRedisDefaultDatabaseOutputReference) InternalValue() *ManagedRedisDefaultDatabase {
 	var returns *ManagedRedisDefaultDatabase
 	_jsii_.Get(
@@ -271,6 +290,46 @@ func (j *jsiiProxy_ManagedRedisDefaultDatabaseOutputReference) ModuleInput() int
 	_jsii_.Get(
 		j,
 		"moduleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedRedisDefaultDatabaseOutputReference) PersistenceAppendOnlyFileBackupFrequency() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"persistenceAppendOnlyFileBackupFrequency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedRedisDefaultDatabaseOutputReference) PersistenceAppendOnlyFileBackupFrequencyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"persistenceAppendOnlyFileBackupFrequencyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedRedisDefaultDatabaseOutputReference) PersistenceRedisDatabaseBackupFrequency() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"persistenceRedisDatabaseBackupFrequency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedRedisDefaultDatabaseOutputReference) PersistenceRedisDatabaseBackupFrequencyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"persistenceRedisDatabaseBackupFrequencyInput",
 		&returns,
 	)
 	return returns
@@ -438,6 +497,28 @@ func (j *jsiiProxy_ManagedRedisDefaultDatabaseOutputReference)SetInternalValue(v
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ManagedRedisDefaultDatabaseOutputReference)SetPersistenceAppendOnlyFileBackupFrequency(val *string) {
+	if err := j.validateSetPersistenceAppendOnlyFileBackupFrequencyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"persistenceAppendOnlyFileBackupFrequency",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ManagedRedisDefaultDatabaseOutputReference)SetPersistenceRedisDatabaseBackupFrequency(val *string) {
+	if err := j.validateSetPersistenceRedisDatabaseBackupFrequencyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"persistenceRedisDatabaseBackupFrequency",
 		val,
 	)
 }
@@ -705,6 +786,22 @@ func (m *jsiiProxy_ManagedRedisDefaultDatabaseOutputReference) ResetModule() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetModule",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ManagedRedisDefaultDatabaseOutputReference) ResetPersistenceAppendOnlyFileBackupFrequency() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPersistenceAppendOnlyFileBackupFrequency",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ManagedRedisDefaultDatabaseOutputReference) ResetPersistenceRedisDatabaseBackupFrequency() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPersistenceRedisDatabaseBackupFrequency",
 		nil, // no parameters
 	)
 }

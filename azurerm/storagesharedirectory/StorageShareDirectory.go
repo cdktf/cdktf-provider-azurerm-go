@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/storage_share_directory azurerm_storage_share_directory}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/storage_share_directory azurerm_storage_share_directory}.
 type StorageShareDirectory interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,6 +67,9 @@ type StorageShareDirectory interface {
 	StorageShareId() *string
 	SetStorageShareId(val *string)
 	StorageShareIdInput() *string
+	StorageShareUrl() *string
+	SetStorageShareUrl(val *string)
+	StorageShareUrlInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -124,6 +127,8 @@ type StorageShareDirectory interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStorageShareId()
+	ResetStorageShareUrl()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -353,6 +358,26 @@ func (j *jsiiProxy_StorageShareDirectory) StorageShareIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StorageShareDirectory) StorageShareUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageShareUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageShareDirectory) StorageShareUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageShareUrlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageShareDirectory) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -404,7 +429,7 @@ func (j *jsiiProxy_StorageShareDirectory) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/storage_share_directory azurerm_storage_share_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/storage_share_directory azurerm_storage_share_directory} Resource.
 func NewStorageShareDirectory(scope constructs.Construct, id *string, config *StorageShareDirectoryConfig) StorageShareDirectory {
 	_init_.Initialize()
 
@@ -422,7 +447,7 @@ func NewStorageShareDirectory(scope constructs.Construct, id *string, config *St
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.53.0/docs/resources/storage_share_directory azurerm_storage_share_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.54.0/docs/resources/storage_share_directory azurerm_storage_share_directory} Resource.
 func NewStorageShareDirectory_Override(s StorageShareDirectory, scope constructs.Construct, id *string, config *StorageShareDirectoryConfig) {
 	_init_.Initialize()
 
@@ -541,6 +566,17 @@ func (j *jsiiProxy_StorageShareDirectory)SetStorageShareId(val *string) {
 	_jsii_.Set(
 		j,
 		"storageShareId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageShareDirectory)SetStorageShareUrl(val *string) {
+	if err := j.validateSetStorageShareUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageShareUrl",
 		val,
 	)
 }
@@ -929,6 +965,22 @@ func (s *jsiiProxy_StorageShareDirectory) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageShareDirectory) ResetStorageShareId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStorageShareId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageShareDirectory) ResetStorageShareUrl() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStorageShareUrl",
 		nil, // no parameters
 	)
 }
